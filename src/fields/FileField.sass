@@ -1,0 +1,118 @@
+@import variables
+
+.FileField
+  align-items: flex-start
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+
+.FileField__label
+  display: flex
+  flex-direction: column
+
+
+.FileField__label-text
+  color: lighten($text, 25)
+  font-size: $s
+  margin: .5rem 0
+  order: -1
+  padding-left: .5em
+
+
+.FileField__dropzone
+  align-items: center
+  align-self: stretch
+  box-sizing: border-box
+  cursor: pointer
+  display: flex
+  flex: 2
+  flex-direction: column
+  font-size: $s
+  justify-content: center
+  margin: $vertical-margin $horizontal-margin
+  min-height: 15em
+  padding: 1em
+  text-align: center
+
+  svg
+    display: block
+    font-size: $xl
+    margin: 0 auto .5em
+
+
+  .SmallLoading
+    position: absolute
+
+
+.FileField__placeholder
+  width: 100%
+
+
+.FileField
+  display: flex
+
+
+.FileField__preview
+  border: 0
+  flex: 1 15em
+  margin: $vertical-margin $horizontal-margin
+  max-width: 15em
+  position: relative
+  text-align: left
+
+  &-caption
+    box-sizing: border-box
+    font-size: $s
+    padding: .5em
+
+  &-name, &-size, &-type
+    display: block
+    margin: .25rem .5rem
+
+  &-name
+    line-height: 1.5
+    max-height: calc(1rem * 1.5)
+    overflow: hidden
+    text-overflow: ellipsis
+    transition: max-height $time
+    width: calc(100% - 1rem)
+
+    &:hover
+      max-height: 10em
+
+  .Preview
+    display: block
+    margin: 0 auto
+    max-width: 100%
+
+
+.FileField__close
+  font-size: 0
+  background-color: $primary
+  color: $light
+  padding: 0
+  position: absolute
+  right: 0
+  top: 0
+  transition: background-color $time
+
+  svg
+    font-size: $s
+    margin-right: 0
+    margin: .75em
+
+  &:hover
+    background-color: $secondary
+
+
+.FileField--error, .FileField--error:hover, .FileField__wrong-type
+  border-bottom-color: $error
+  color: $error
+
+.FileField__label--error, .FileField__label--error:hover
+  .File__label-text
+    color: $error
+
+  .File__field
+    border-bottom: solid 2px $error

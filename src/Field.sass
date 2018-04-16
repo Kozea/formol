@@ -1,0 +1,88 @@
+@import variables
+
+
+.Field
+  border: 0
+  margin: 2rem 0
+  min-width: 0
+  padding: 0
+
+  &__label
+    cursor: pointer
+    display: flex
+    flex-direction: column
+
+    &-text
+      color: lighten($text, 25)
+      font-size: $s
+      margin-bottom: .5rem
+      order: -1
+
+  &__field
+    box-shadow: 0 0 0 $light
+    color: $text
+    cursor: pointer
+    font: $m $font-family
+    outline: none
+    padding: 1em .5em
+
+    &:focus, &--focus
+      box-shadow: 0 0 0 $light
+      cursor: text
+      outline: none
+
+    &:required + .Field__label-text
+      &::after
+        content: '*'
+        font-size: .8em
+        margin-left: .5em
+        vertical-align: top
+
+
+    &--type-area
+      height: 100%
+      margin: 0
+      min-height: 6em
+
+
+  &--name-password
+    position: relative
+
+    button
+      bottom: 0
+      color: $text
+      padding: 0 .5em
+      position: absolute
+      right: .25em
+      top: 0
+
+
+  &--type-checkbox
+    > label
+      align-items: flex-start
+
+  &--group
+    &.Field--type-checkbox, &.Field--type-radio
+      > label
+        pointer-events: none
+
+        label
+          display: inline-block
+          margin: .5em 1em .5em 0
+          padding: 1em
+          pointer-events: auto
+
+          input
+            margin: 0 .5em 0 0
+
+  &__error
+    color: $error
+    font-size: $s
+    margin: .5em 0
+
+  &--readOnly
+    pointer-events: none
+
+  &--readOnly &
+    &__field
+      background-color: transparent

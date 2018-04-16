@@ -1,0 +1,97 @@
+@import variables
+
+
+.SwitchButton
+  box-sizing: border-box
+  display: inline-block
+  line-height: 100%
+  margin: 0
+  position: relative
+  vertical-align: middle
+
+  label
+    cursor: pointer
+
+  &--disabled
+    label
+      cursor: not-allowed
+
+  // Hide the default input checkbox
+  input[type='checkbox']
+    margin-left: -9999px
+    position: absolute
+    visibility: hidden
+
+  // Default left label
+  > label:first-child
+    display: inline-block
+    margin: 0 6px 0 0
+
+  // Right label
+  label + label
+    margin-left: 6px
+
+  input[type='checkbox'] + label
+    box-sizing: border-box
+    display: inline-block
+    margin: 0
+    outline: none
+    position: relative
+    user-select: none
+
+  input[type='checkbox'] + label
+    background-color: $primary-hue-1
+    border-radius: 60px
+    height: 24px
+    padding: 2px
+    transition: background-color .4s
+    vertical-align: middle
+    width: 48px
+
+
+  &--disabled input[type='checkbox'] + label
+    background-color: $primary-hue-1
+
+
+  &:hover input[type='checkbox'] + label
+    background-color: $primary
+
+
+  &--disabled:hover input[type='checkbox'] + label
+    background-color: $primary-hue-1
+
+  input[type='checkbox'] + label::before,
+  input[type='checkbox'] + label::after
+    background-color: #fff
+    border-radius: 60px
+    bottom: 2px
+    content: ''
+    display: inline-block
+    left: 2px
+    position: absolute
+    right: 2px
+    top: 2px
+    transition: background-color .4s
+
+  input[type='checkbox'] + label::after
+    background-color: $primary
+    border-radius: 52px
+    bottom: 4px
+    left: 4px
+    top: 4px
+    transition: margin .4s, background-color .4s
+    width: 16px
+
+  input[type='checkbox']:checked + label::after
+    // background-color: $primary
+    margin-left: 24px
+
+  &--disabled input[type='checkbox']:checked + label::after
+    // background-color: $primary-hue-1
+    margin-left: 24px
+
+  &--mode-select
+    input[type='checkbox'] + label::after,
+    &:hover input[type='checkbox']:checked + label,
+    input[type='checkbox'] + label
+      background-color: $secondary !important

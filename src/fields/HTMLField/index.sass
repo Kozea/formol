@@ -1,0 +1,38 @@
+@import variables
+
+
+.HTMLField
+  padding: 0
+  position: relative
+
+  img
+    max-width: 100%
+
+  .rdw-editor
+    &-toolbar
+      opacity: 1
+      transition: padding $time, opacity $time
+      transition-delay: $time / 2, $time
+
+      & > *
+        margin-top: 0
+        transition: margin $time
+        transition-delay: $time / 2
+
+    &-main
+      max-height: 50vh
+      min-height: 8em
+      overflow: auto
+      padding: 0 1em
+
+
+.Field__field--type-html
+  &:not(.Field__field--focus)
+    overflow: hidden
+
+    .rdw-editor-toolbar
+      opacity: 0
+      padding: 0
+
+      & > *
+        margin-top: -5em

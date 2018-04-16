@@ -1,0 +1,19 @@
+@import variables
+
+
+.Form
+  &__submit, &__cancel
+    margin-top: 1em
+    opacity: 1
+
+  &--errors
+    position: relative
+
+    &::before
+      background-color: $error
+      content: ''
+      height: 100%
+      position: absolute
+      right: calc(100% + #{$horizontal-padding} + #{$horizontal-border})
+      top: 0
+      width: 2px
