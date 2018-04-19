@@ -1,23 +1,24 @@
 import './SwitchButton.sass'
 
-import block from 'bemboo'
 import React from 'react'
 
-const b = block('SwitchButton')
+import { block } from '../utils'
 
-export function SwitchButton({
+const b = block('SwitchButton')
+export default function SwitchButton({
   name,
   label,
   labelRight,
   disabled,
   mode,
+  className,
   onChange,
   ...props
 }) {
   mode = mode === 'select' ? 'select' : 'switch'
   name = name || Math.random()
   return (
-    <div className={b.m({ mode, disabled })}>
+    <div className={b.mix(className).m({ mode, disabled })}>
       {label && <label htmlFor={name}>{label}</label>}
       <input
         onChange={onChange}

@@ -1,16 +1,12 @@
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
-import 'draft-js/dist/Draft.css'
-
 import './index.sass'
 
-import block from 'bemboo'
 import React from 'react'
-import { Editor } from 'react-draft-wysiwyg'
+import regeneratorRuntime from 'regenerator-runtime'
 
-import { readAsBase64 } from '../../utils'
+import ReactDraftWysiwygEditor from '../../async/ReactDraftWysiwyg'
+import { block, readAsBase64 } from '../../utils'
 
-const b = block('HTMLField')
-
+@block
 export default class HTMLField extends React.Component {
   onChange(editorState) {
     this.props.onChange({ target: { value: editorState } })
@@ -20,7 +16,7 @@ export default class HTMLField extends React.Component {
     return true
   }
 
-  render() {
+  render(b) {
     const {
       value,
       className,
@@ -42,7 +38,7 @@ export default class HTMLField extends React.Component {
     }
     return (
       <div className={b.mix(className)}>
-        <Editor
+        <ReactDraftWysiwygEditor
           editorClassName={b.e('editor')}
           editorState={value}
           localization={{

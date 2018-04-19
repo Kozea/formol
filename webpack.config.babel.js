@@ -1,21 +1,35 @@
 import path from 'path'
 
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
 export default {
-  mode: 'production',
+  mode: 'development' || 'production',
   entry: ['./src/index'],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'lib'),
+    publicPath: 'assets/formol/',
     filename: 'formol.js',
     library: 'formol',
     libraryTarget: 'umd',
+    umdNamedDefine: true,
+    globalObject: 'this',
   },
-  target: 'web',
-  externals: {
-    react: 'react',
-  },
-  plugins: [new MiniCssExtractPlugin('formol.css')],
+  externals: [
+    'date-fns',
+    'react',
+    'react-dom',
+    'react-dropzone',
+    'react-icons',
+  ],
+  plugins: [
+    new MiniCssExtractPlugin({ filename: 'formol.css' }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+      logLevel: 'error',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -48,7 +62,7 @@ export default {
       },
       {
         test: /\.css$/,
-        loader: 'css-loader',
+        loader: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.sass$/,

@@ -1,7 +1,8 @@
 import './Preview.sass'
 
-import block from 'bemboo'
 import React from 'react'
+
+import { block } from './'
 
 const b = block('Preview')
 

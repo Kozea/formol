@@ -1,5 +1,4 @@
-import { parse } from 'date-fns'
-import { format, toDate } from 'date-fns'
+import { format, parse, toDate } from 'date-fns'
 import localeFr from 'date-fns/locale/fr'
 
 export const locale = localeFr

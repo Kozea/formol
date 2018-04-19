@@ -1,11 +1,9 @@
-import 'react-select/dist/react-select.css'
-
-import block from 'bemboo'
 import React from 'react'
-import Select from 'react-select'
 
-const b = block('SelectField')
+import Select from '../async/ReactSelect'
+import { block } from '../utils'
 
+@block
 export default class SelectField extends React.Component {
   handleChange(newValue) {
     const { multiple, nonStringValue, onChange } = this.props
@@ -18,7 +16,7 @@ export default class SelectField extends React.Component {
     )
   }
 
-  render() {
+  render(b) {
     const {
       className,
       multiple,

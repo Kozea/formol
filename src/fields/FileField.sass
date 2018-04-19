@@ -1,18 +1,18 @@
 @import variables
 
-.FileField
+.Formol_FileField
   align-items: flex-start
   display: flex
   flex-wrap: wrap
   position: relative
 
 
-.FileField__label
+.Formol_FileField__label
   display: flex
   flex-direction: column
 
 
-.FileField__label-text
+.Formol_FileField__label-text
   color: lighten($text, 25)
   font-size: $s
   margin: .5rem 0
@@ -20,7 +20,7 @@
   padding-left: .5em
 
 
-.FileField__dropzone
+.Formol_FileField__dropzone
   align-items: center
   align-self: stretch
   box-sizing: border-box
@@ -45,15 +45,15 @@
     position: absolute
 
 
-.FileField__placeholder
+.Formol_FileField__placeholder
   width: 100%
 
 
-.FileField
+.Formol_FileField
   display: flex
 
 
-.FileField__preview
+.Formol_FileField__preview
   border: 0
   flex: 1 15em
   margin: $vertical-margin $horizontal-margin
@@ -87,7 +87,7 @@
     max-width: 100%
 
 
-.FileField__close
+.Formol_FileField__close
   font-size: 0
   background-color: $primary
   color: $light
@@ -106,11 +106,11 @@
     background-color: $secondary
 
 
-.FileField--error, .FileField--error:hover, .FileField__wrong-type
+.Formol_FileField--error, .Formol_FileField--error:hover, .Formol_FileField__wrong-type
   border-bottom-color: $error
   color: $error
 
-.FileField__label--error, .FileField__label--error:hover
+.Formol_FileField__label--error, .Formol_FileField__label--error:hover
   .File__label-text
     color: $error
 

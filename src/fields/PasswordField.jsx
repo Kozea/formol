@@ -1,14 +1,17 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react'
-import ReactPasswordStrength from 'react-password-strength'
 
+import ReactPasswordStrength from '../async/ReactPasswordStrength'
+import { block } from '../utils'
+
+@block
 export default class PasswordField extends React.Component {
-  render() {
+  render(b) {
     const { className, login, name, onChange, ...props } = this.props
     if (login) {
       return (
         <input
-          className={className}
+          className={b.mix(className)}
           name={name}
           onChange={onChange}
           type="password"
@@ -21,7 +24,7 @@ export default class PasswordField extends React.Component {
         changeCallback={({ password, isValid }) =>
           onChange({ target: { value: isValid ? password : false } })
         }
-        className={className.s}
+        className={b.mix(className).s}
         inputProps={{ name, ...props }}
         scoreWords={[
           'très peu sécurisé',

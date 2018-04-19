@@ -1,8 +1,7 @@
-import block from 'bemboo'
 import React from 'react'
 
-import { moneyFormat } from '../../utils'
-import Field from './Field'
+import Field from '../Field'
+import { block, moneyFormat } from '../utils'
 
 @block
 export default class MoneyField extends React.Component {

@@ -1,12 +1,12 @@
 import './FileField.sass'
 
-import block from 'bemboo'
 import React, { Fragment } from 'react'
 import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
 import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
+import regeneratorRuntime from 'regenerator-runtime'
 
-import { fileSize, nameExt, readAsBase64, staticUrl } from '../utils'
+import { block, fileSize, nameExt, readAsBase64, staticUrl } from '../utils'
 import Preview from '../utils/Preview'
 
 const key = file => [file.name, file.ext].join('.')
@@ -25,7 +25,7 @@ const nonExistingFileName = ([name, ext], value) => {
   return [fn, ext]
 }
 
-const b = block('FileField')
+@block
 export default class FileField extends React.Component {
   constructor(props) {
     super(props)
@@ -103,7 +103,7 @@ export default class FileField extends React.Component {
     })
   }
 
-  render() {
+  render(b) {
     const {
       name,
       accept,

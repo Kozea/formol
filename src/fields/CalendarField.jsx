@@ -1,18 +1,17 @@
 import './CalendarField.sass'
 
-import block from 'bemboo'
 import { format, parse } from 'date-fns'
 import React from 'react'
-import DayPickerInput from 'react-day-picker/DayPickerInput'
 
-import CalendarLocale, { locale } from './CalendarLocale'
-
-const b = block('CalendarField')
+import ReactDayPicker from '../async/ReactDayPicker'
+import { block } from '../utils'
+import CalendarLocale, { locale } from '../utils/locale'
 
 const isDate = d => d instanceof Date && !isNaN(d.valueOf())
 const datePattern = /^([0-2][0-9]|30|31)\/(0[0-9]|10|11|12)\/[0-9]{4}$/
 const voidIfNaN = d => (isNaN(d.valueOf()) ? void 0 : d)
 
+@block
 export default class CalendarField extends React.Component {
   handleChange(newDate) {
     const { onChange } = this.props
@@ -23,7 +22,7 @@ export default class CalendarField extends React.Component {
     }
   }
 
-  render() {
+  render(b) {
     const {
       className,
       format: userFormat,
@@ -39,7 +38,7 @@ export default class CalendarField extends React.Component {
       return (
         <input
           type="text"
-          className={className}
+          className={b.mix(className)}
           readOnly={readOnly}
           disabled={disabled}
           value={isDate(maybeDate) ? format(date, dateFormat) : value}
@@ -47,7 +46,7 @@ export default class CalendarField extends React.Component {
       )
     }
     return (
-      <DayPickerInput
+      <ReactDayPicker
         classNames={{
           container: b.mix('DayPickerInput').s,
           overlayWrapper: b

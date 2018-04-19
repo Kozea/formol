@@ -1,6 +1,5 @@
 import './Field.sass'
 
-import block from 'bemboo'
 import React from 'react'
 
 import CalendarField from './fields/CalendarField'
@@ -9,6 +8,7 @@ import HTMLField from './fields/HTMLField'
 import PasswordField from './fields/PasswordField'
 import SelectField from './fields/SelectField'
 import SwitchField from './fields/SwitchField'
+import { block } from './utils'
 import { get } from './utils/object'
 
 const b = block('Field')

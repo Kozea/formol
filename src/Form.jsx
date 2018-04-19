@@ -1,13 +1,16 @@
 import './Form.sass'
 
-import block from 'bemboo'
 import deepEqual from 'deep-equal'
-import React from 'react'
-import { error, info } from 'react-notification-system-redux'
-import { connect } from 'react-redux'
-import { Prompt } from 'react-router-dom'
-import { goBack } from 'react-router-redux'
+import React, { Fragment } from 'react'
+import regeneratorRuntime from 'regenerator-runtime'
 
+import {
+  emptyContent,
+  isStateEqual,
+  stateFromValue,
+  stateToValue,
+} from './fields/HTMLField/utils'
+import { block } from './utils'
 import {
   alignKeysRec,
   clone,
@@ -17,16 +20,9 @@ import {
   nullVoidValuesRec,
   set,
 } from './utils/object'
-import {
-  isStateEqual,
-  emptyContent,
-  stateFromValue,
-  stateToValue,
-} from './fields/HTMLField/utils'
 
 const b = block('Form')
-
-class Form extends React.Component {
+export default class Form extends React.Component {
   constructor(props) {
     super(props)
     const { item } = props
@@ -276,12 +272,14 @@ class Form extends React.Component {
       noCancel,
       forceAlwaysSubmit,
       forceDisablePrompt,
+      Prompt,
+      Button,
     } = this.props
     const { errors, disablePrompt } = this.state
     // We add edited keys to item in comparison and then null all undefined
     const modified = this.isModified()
     const submitDisabled = !forceAlwaysSubmit && !modified
-
+    const Btn = Button || 'button'
     return (
       <form
         className={b.mix(className).m({
@@ -291,23 +289,25 @@ class Form extends React.Component {
         onSubmit={e => e.preventDefault()}
         ref={ref => (this.ref.form = ref)}
       >
-        <Prompt
-          when={!forceDisablePrompt && !disablePrompt && modified}
-          message={
-            'Vous avez des modifications en cours. ' +
-            'Voulez-vous vraiment changer de page ?'
-          }
-        />
+        {Prompt && (
+          <Prompt
+            when={!forceDisablePrompt && !disablePrompt && modified}
+            message={
+              'Vous avez des modifications en cours. ' +
+              'Voulez-vous vraiment changer de page ?'
+            }
+          />
+        )}
         {children}
         {/* This input is required to validate the form */}
         {!readOnly && (
-          <>
+          <Fragment>
             <input
               type="submit"
               ref={ref => (this.ref.submit = ref)}
               style={{ display: 'none' }}
             />
-            <button
+            <Btn
               onClick={this.handleSubmit}
               className={b.e('submit')}
               disabled={submitDisabled}
@@ -315,9 +315,9 @@ class Form extends React.Component {
               kind={submitKind || 'important'}
             >
               {submitText || 'Envoyer'}
-            </button>
+            </Btn>
             {!noCancel && (
-              <button
+              <Btn
                 onClick={this.handleCancel}
                 className={b.e('cancel')}
                 disabled={submitDisabled}
@@ -325,54 +325,14 @@ class Form extends React.Component {
                 kind="mute"
               >
                 Annuler
-              </button>
+              </Btn>
             )}
-          </>
+          </Fragment>
         )}
       </form>
     )
   }
 }
-
-export default connect(
-  () => ({}),
-  dispatch => ({
-    onBack: () => dispatch(goBack()),
-    onHTMLFieldRequired: labels => {
-      const plural = labels.length > 1
-      return dispatch(
-        error({
-          title: 'Erreur',
-          message: `Le${plural ? 's' : ''} champ${plural ? 's' : ''}
-          « ${labels.join(', ')} » ${plural ? 'sont' : 'est'} requis.`,
-          position: 'br',
-          autoDismiss: 4,
-        })
-      )
-    },
-    onValid: text =>
-      dispatch(
-        info({
-          title: 'Succès',
-          message: text || 'Vos modifications ont bien été enregistrées.',
-          position: 'br',
-          autoDismiss: 4,
-        })
-      ),
-    onError: text =>
-      dispatch(
-        error({
-          title: 'Erreur',
-          message:
-            text ||
-            'Vos modifications n’ont pu être enregistrées. ' +
-              'Veuillez vérifier vos données ou réessayer ultérieurement.',
-          position: 'br',
-          autoDismiss: 4,
-        })
-      ),
-  })
-)(Form)
 
 Form.childContextTypes = {
   edited: () => null, // PropTypes.object,
