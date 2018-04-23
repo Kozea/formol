@@ -7,18 +7,7 @@ import { block } from '../utils'
 @block
 export default class PasswordField extends React.Component {
   render(b) {
-    const { className, login, name, onChange, ...props } = this.props
-    if (login) {
-      return (
-        <input
-          className={b.mix(className)}
-          name={name}
-          onChange={onChange}
-          type="password"
-          {...props}
-        />
-      )
-    }
+    const { className, name, onChange, ...props } = this.props
     return (
       <ReactPasswordStrength
         changeCallback={({ password, isValid }) =>

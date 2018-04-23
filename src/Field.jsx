@@ -173,7 +173,7 @@ export default function Field(
       input = <FileField {...props} {...commonProps} {...valueProp} />
     } else if (type === 'files') {
       input = <FileField multiple {...props} {...commonProps} {...valueProp} />
-    } else if (type === 'password') {
+    } else if (type === 'password-strengh') {
       input = <PasswordField {...props} {...commonProps} {...valueProp} />
     } else if (type === 'select') {
       input = (
