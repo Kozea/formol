@@ -8,7 +8,12 @@ import Formol from '../src/Formol'
 storiesOf('Formol', module)
   .add('An empty form', () => <Formol />)
   .add('A simple form with a field', () => (
-    <Formol onCreate={action('item created')} onPatch={action('item patched')}>
+    <Formol
+      onSubmit={(...args) => {
+        action('item submited')(...args)
+        return false
+      }}
+    >
       <Field name="field">Field</Field>
     </Formol>
   ))
