@@ -5,7 +5,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
 export default {
   mode: 'development' || 'production',
-  entry: ['./src/index'],
+  entry: ['regenerator-runtime/runtime.js', './src/index'],
   output: {
     path: path.join(__dirname, 'lib'),
     publicPath: 'assets/formol/',
@@ -57,7 +57,7 @@ export default {
             'add-react-static-displayname',
             ['@babel/plugin-proposal-class-properties', { loose: true }],
             '@babel/plugin-transform-classes',
-          ].filter(_ => _),
+          ],
         },
       },
       {

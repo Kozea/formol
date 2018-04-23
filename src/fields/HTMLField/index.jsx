@@ -1,7 +1,6 @@
 import './index.sass'
 
 import React from 'react'
-import regeneratorRuntime from 'regenerator-runtime'
 
 import ReactDraftWysiwygEditor from '../../async/ReactDraftWysiwyg'
 import { block, readAsBase64 } from '../../utils'

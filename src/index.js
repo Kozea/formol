@@ -1,6 +1,6 @@
 // This is not optimal, we might need to find a better solution
-export default from './Form'
-export Form from './Form'
+export default from './Formol'
+export Formol from './Formol'
 export Field from './Field'
 
 export HTMLField from './fields/HTMLField'

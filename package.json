@@ -12,7 +12,9 @@
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook-debug": "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -45,6 +47,9 @@
     "@babel/preset-env": "^7.0.0-beta.44",
     "@babel/preset-react": "^7.0.0-beta.44",
     "@babel/register": "^7.0.0-beta.44",
+    "@storybook/addon-actions": "^3.4.2",
+    "@storybook/addons": "^3.4.2",
+    "@storybook/react": "^3.4.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.0-alpha.6r",
@@ -92,6 +97,7 @@
   "dependencies": {
     "bemboo": "^1.3.3",
     "deep-equal": "^1.0.1",
+    "prop-types": "^15.6.1",
     "react-day-picker": "^7.1.6",
     "react-draft-wysiwyg": "^1.12.12",
     "regenerator-runtime": "^0.11.1"

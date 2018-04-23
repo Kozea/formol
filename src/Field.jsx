@@ -1,5 +1,6 @@
 import './Field.sass'
 
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import CalendarField from './fields/CalendarField'
@@ -252,16 +253,16 @@ export default function Field(
 }
 
 Field.contextTypes = {
-  edited: () => null, // PropTypes.object,
-  item: () => null, // PropTypes.object,
-  editedHtml: () => null, // PropTypes.object,
-  refs: () => null, // PropTypes.object,
-  errors: () => null, // PropTypes.object,
-  focused: () => null, // PropTypes.string,
-  state: () => null, // PropTypes.object,
-  readOnly: () => null, // PropTypes.bool,
-  handleFocus: () => null, // PropTypes.func,
-  handleBlur: () => null, // PropTypes.func,
-  handleChange: () => null, // PropTypes.func,
-  handleSubmit: () => null, // PropTypes.func,
+  edited: PropTypes.object,
+  item: PropTypes.object,
+  editedHtml: PropTypes.object,
+  refs: PropTypes.object,
+  errors: PropTypes.object,
+  focused: PropTypes.string,
+  state: PropTypes.object,
+  readOnly: PropTypes.bool,
+  handleFocus: PropTypes.func,
+  handleBlur: PropTypes.func,
+  handleChange: PropTypes.func,
+  handleSubmit: PropTypes.func,
 }

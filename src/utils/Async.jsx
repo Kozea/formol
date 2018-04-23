@@ -1,5 +1,4 @@
 import React from 'react'
-import regeneratorRuntime from 'regenerator-runtime'
 
 export default (resolve, options) => {
   const { path, Loading, Error } = options || {}

@@ -1,10 +1,10 @@
 import './FileField.sass'
 
+import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
 import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
 import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
-import regeneratorRuntime from 'regenerator-runtime'
 
 import { block, fileSize, nameExt, readAsBase64, staticUrl } from '../utils'
 import Preview from '../utils/Preview'
@@ -27,6 +27,10 @@ const nonExistingFileName = ([name, ext], value) => {
 
 @block
 export default class FileField extends React.Component {
+  static contextTypes = {
+    edited: PropTypes.object,
+  }
+
   constructor(props) {
     super(props)
     this.state = {
@@ -198,8 +202,4 @@ export default class FileField extends React.Component {
       </div>
     )
   }
-}
-
-FileField.contextTypes = {
-  edited: () => null, // PropTypes.object,
 }

@@ -61,7 +61,7 @@ export const set = (data, key, value) =>
     )[key.split('.').slice(-1)[0]] = emptyStringToNull(value))
 
 // Clone recursively object with json
-export const clone = o => JSON.parse(JSON.stringify(o))
+export const clone = o => o && JSON.parse(JSON.stringify(o))
 
 // If path points to key remove path point otherwise remove
 const popKey = (paths, key) =>

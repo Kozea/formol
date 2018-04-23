@@ -1,8 +1,8 @@
-import './Form.sass'
+import './Formol.sass'
 
 import deepEqual from 'deep-equal'
+import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
-import regeneratorRuntime from 'regenerator-runtime'
 
 import {
   emptyContent,
@@ -21,8 +21,27 @@ import {
   set,
 } from './utils/object'
 
-const b = block('Form')
-export default class Form extends React.Component {
+@block
+export default class Formol extends React.Component {
+  static defaultProps = {
+    item: {},
+  }
+
+  static childContextTypes = {
+    edited: PropTypes.object,
+    item: PropTypes.object,
+    editedHtml: PropTypes.object,
+    refs: PropTypes.object,
+    errors: PropTypes.object,
+    focused: PropTypes.string,
+    state: PropTypes.object,
+    readOnly: PropTypes.bool,
+    handleFocus: PropTypes.func,
+    handleBlur: PropTypes.func,
+    handleChange: PropTypes.func,
+    handleSubmit: PropTypes.func,
+  }
+
   constructor(props) {
     super(props)
     const { item } = props
@@ -261,7 +280,7 @@ export default class Form extends React.Component {
     )
   }
 
-  render() {
+  render(b) {
     const {
       add,
       children,
@@ -332,19 +351,4 @@ export default class Form extends React.Component {
       </form>
     )
   }
-}
-
-Form.childContextTypes = {
-  edited: () => null, // PropTypes.object,
-  item: () => null, // PropTypes.object,
-  editedHtml: () => null, // PropTypes.object,
-  refs: () => null, // PropTypes.object,
-  errors: () => null, // PropTypes.object,
-  focused: () => null, // PropTypes.string,
-  state: () => null, // PropTypes.object,
-  readOnly: () => null, // PropTypes.bool,
-  handleFocus: () => null, // PropTypes.func,
-  handleBlur: () => null, // PropTypes.func,
-  handleChange: () => null, // PropTypes.func,
-  handleSubmit: () => null, // PropTypes.func,
 }
