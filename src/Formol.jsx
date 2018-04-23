@@ -25,6 +25,8 @@ import {
 export default class Formol extends React.Component {
   static defaultProps = {
     item: {},
+    getPk: item => item,
+    onError: console.error.bind(console),
   }
 
   static childContextTypes = {

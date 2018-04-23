@@ -6,9 +6,9 @@ import { Field } from '../src'
 import Formol from '../src/Formol'
 
 storiesOf('Formol', module)
-  .add('with nothing', () => <Formol />)
-  .add('with a field', () => (
-    <Formol>
-      <Field name="field" />
+  .add('An empty form', () => <Formol />)
+  .add('A simple form with a field', () => (
+    <Formol onCreate={action('item created')} onPatch={action('item patched')}>
+      <Field name="field">Field</Field>
     </Formol>
   ))
