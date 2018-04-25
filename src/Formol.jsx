@@ -156,11 +156,13 @@ export default class Formol extends React.Component {
   }
 
   handleChange(name, value) {
+    const { onChange } = this.props
     const newEdited = clone(this.state.edited)
     set(newEdited, name, value)
     this.setState({
       edited: newEdited,
     })
+    onChange && onChange(newEdited)
   }
 
   validateState() {
