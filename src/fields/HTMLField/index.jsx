@@ -4,11 +4,46 @@ import React from 'react'
 
 import ReactDraftWysiwygEditor from '../../async/ReactDraftWysiwyg'
 import { block, readAsBase64 } from '../../utils'
+import { stateFromValue, stateToValue } from './utils'
 
 @block
 export default class HTMLField extends React.Component {
+  constructor(props) {
+    super(props)
+    this.value = null
+    this.state = {
+      editorState: null,
+    }
+  }
+
+  componentWillMount() {
+    const { value } = this.props
+    this.newState(value || '')
+  }
+
+  componentWillReceiveProps({ value }) {
+    if (value !== this.value) {
+      this.newState(value)
+    }
+  }
+
+  prepareValue(value) {
+    return value === '<p></p>\n' ? '' : value ? value.trim() : ''
+  }
+
+  newState(value) {
+    const newValue = this.prepareValue(value)
+    this.value = newValue
+    this.setState({
+      editorState: stateFromValue(newValue),
+    })
+  }
+
   onChange(editorState) {
-    this.props.onChange({ target: { value: editorState } })
+    const value = this.prepareValue(stateToValue(editorState))
+    this.value = value
+    this.setState({ editorState })
+    this.props.onChange({ target: { value } })
   }
 
   checkValidity() {
@@ -17,7 +52,6 @@ export default class HTMLField extends React.Component {
 
   render(b) {
     const {
-      value,
       className,
       readOnly,
       onFocus,
@@ -26,6 +60,7 @@ export default class HTMLField extends React.Component {
       required,
       toolbar,
     } = this.props
+    const { editorState } = this.state
     const HTMLToolbar = toolbar || {
       image: {
         uploadCallback: async file => ({
@@ -39,7 +74,7 @@ export default class HTMLField extends React.Component {
       <div className={b.mix(className)}>
         <ReactDraftWysiwygEditor
           editorClassName={b.e('editor')}
-          editorState={value}
+          editorState={editorState}
           localization={{
             locale: 'fr',
           }}

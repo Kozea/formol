@@ -4,19 +4,11 @@ import deepEqual from 'deep-equal'
 import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
 
-import {
-  emptyContent,
-  isStateEqual,
-  stateFromValue,
-  stateToValue,
-} from './fields/HTMLField/utils'
 import { block } from './utils'
 import {
   alignKeysRec,
   clone,
   diffObject,
-  entriesToObj,
-  get,
   nullVoidValuesRec,
   set,
 } from './utils/object'
@@ -32,7 +24,6 @@ export default class Formol extends React.Component {
   static childContextTypes = {
     edited: PropTypes.object,
     item: PropTypes.object,
-    editedHtml: PropTypes.object,
     refs: PropTypes.object,
     errors: PropTypes.object,
     focused: PropTypes.string,
@@ -53,7 +44,6 @@ export default class Formol extends React.Component {
       errors: {},
       ...this.newEdited(item),
     }
-    this.initHtmlFields()
     this.ref = {}
     this.handleCancel = this.handleCancel.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -61,11 +51,10 @@ export default class Formol extends React.Component {
 
   getChildContext() {
     const { item, readOnly, state } = this.props
-    const { edited, editedHtml, focused, errors } = this.state
+    const { edited, focused, errors } = this.state
     return {
       edited,
       item,
-      editedHtml,
       refs: this.ref,
       errors,
       focused,
@@ -84,27 +73,12 @@ export default class Formol extends React.Component {
     }
   }
 
-  initHtmlFields(edited) {
-    const { htmlFields } = this.props
-    if (!htmlFields) {
-      return {}
-    }
-    return entriesToObj(
-      htmlFields.map(name => [name, stateFromValue(get(edited, name))])
-    )
-  }
-
   fromItem(item) {
     return nullVoidValuesRec(clone(item))
   }
 
   newEdited(item) {
-    const edited = this.fromItem(item)
-    return {
-      edited,
-      initialHtml: this.initHtmlFields(edited),
-      editedHtml: this.initHtmlFields(edited),
-    }
+    return { edited: this.fromItem(item) }
   }
 
   handleCancel() {
@@ -115,35 +89,16 @@ export default class Formol extends React.Component {
   async handleSubmit(e) {
     const {
       add,
-      htmlFields,
-      htmlFieldsRequired,
       getPk,
       item,
       noRecursiveKeys,
       forceAlwaysSubmit,
       onCreate,
-      onHTMLFieldRequired,
       onPatch,
       onSubmit,
     } = this.props
-    const { edited, editedHtml } = this.state
+    const { edited } = this.state
     if (this.ref.form.checkValidity()) {
-      if (htmlFieldsRequired) {
-        const emptyFields = []
-        Object.entries(htmlFieldsRequired).forEach(([name, label]) => {
-          if (emptyContent(stateToValue(editedHtml[name]))) {
-            emptyFields.push(label)
-          }
-        })
-        if (emptyFields.length) {
-          return onHTMLFieldRequired(emptyFields)
-        }
-      }
-      if (htmlFields) {
-        htmlFields.forEach(name => {
-          set(edited, name, stateToValue(editedHtml[name]))
-        })
-      }
       if (onSubmit) {
         try {
           const report = await onSubmit(edited)
@@ -201,16 +156,6 @@ export default class Formol extends React.Component {
   }
 
   handleChange(name, value) {
-    const { htmlFields } = this.props
-    if ((htmlFields || []).includes(name)) {
-      this.setState({
-        editedHtml: {
-          ...this.state.editedHtml,
-          [name]: value,
-        },
-      })
-      return
-    }
     const newEdited = clone(this.state.edited)
     set(newEdited, name, value)
     this.setState({
@@ -219,10 +164,9 @@ export default class Formol extends React.Component {
   }
 
   validateState() {
-    const { htmlFields } = this.props
     const edited = Object.entries(this.state.edited).reduce(
       (rv, [key, value]) => {
-        if (!(htmlFields || []).includes(key) && value && value.trim) {
+        if (value && value.trim) {
           value = value.trim()
         }
         rv[key] = value
@@ -273,13 +217,9 @@ export default class Formol extends React.Component {
 
   isModified() {
     const { item } = this.props
-    const { edited, initialHtml, editedHtml } = this.state
-    return (
-      !deepEqual(alignKeysRec(nullVoidValuesRec(item), edited), edited) ||
-      !Object.keys(editedHtml).every(key =>
-        isStateEqual(initialHtml[key], editedHtml[key])
-      )
-    )
+    const { edited } = this.state
+    console.log(alignKeysRec(nullVoidValuesRec(item), edited), edited)
+    return !deepEqual(alignKeysRec(nullVoidValuesRec(item), edited), edited)
   }
 
   render(b) {

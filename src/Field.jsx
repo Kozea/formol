@@ -34,7 +34,6 @@ export default function Field(
   },
   {
     edited,
-    editedHtml,
     item,
     refs,
     errors,
@@ -140,9 +139,7 @@ export default function Field(
       },
       onInput: e => {
         if (customValidator) {
-          e.target.setCustomValidity(
-            customValidator(getVal(e), edited, editedHtml)
-          )
+          e.target.setCustomValidity(customValidator(getVal(e), edited))
         }
       },
     }
@@ -159,14 +156,7 @@ export default function Field(
     }
 
     if (type === 'html') {
-      input = (
-        <HTMLField
-          {...props}
-          {...commonProps}
-          {...valueProp}
-          value={editedHtml[name]}
-        />
-      )
+      input = <HTMLField {...props} {...commonProps} {...valueProp} />
     } else if (type === 'area') {
       input = <textarea {...props} {...commonProps} {...valueProp} />
     } else if (type === 'calendar') {
@@ -257,7 +247,6 @@ export default function Field(
 Field.contextTypes = {
   edited: PropTypes.object,
   item: PropTypes.object,
-  editedHtml: PropTypes.object,
   refs: PropTypes.object,
   errors: PropTypes.object,
   focused: PropTypes.string,

@@ -4,9 +4,10 @@ import React from 'react'
 
 import Formol, { Field } from '../src'
 import { PersonForm, personExemple } from './exemples'
-import { typeFields } from './fields'
+import { testFieldValue, typeFields } from './fields'
 
 const log = (...args) => {
+  console.log('Submited', args[0])
   action('item submited')(...args)
   return false
 }
@@ -126,7 +127,7 @@ storiesOf('Field Test')
 const fieldStory = storiesOf('Field Test/Available fields', module)
 Object.entries(typeFields).forEach(([name, TypeField]) => {
   fieldStory.add(`${name} field`, () => (
-    <Formol onSubmit={log} htmlFields={['Html']}>
+    <Formol onSubmit={log}>
       <h1>{name}</h1>
       <TypeField />
     </Formol>
@@ -136,7 +137,7 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
 const requiredFieldStory = storiesOf('Field Test/Required attribute', module)
 Object.entries(typeFields).forEach(([name, TypeField]) => {
   requiredFieldStory.add(`${name} field`, () => (
-    <Formol onSubmit={log} item={{ [name]: 'a' }}>
+    <Formol onSubmit={log} item={{ [name]: testFieldValue(name) }}>
       <h1>{name}</h1>
       <TypeField required />
     </Formol>
