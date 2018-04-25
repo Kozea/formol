@@ -218,7 +218,6 @@ export default class Formol extends React.Component {
   isModified() {
     const { item } = this.props
     const { edited } = this.state
-    console.log(alignKeysRec(nullVoidValuesRec(item), edited), edited)
     return !deepEqual(alignKeysRec(nullVoidValuesRec(item), edited), edited)
   }
 
