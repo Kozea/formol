@@ -1,4 +1,5 @@
 import { withState } from '@dump247/storybook-state'
+import { boolean, withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
@@ -134,20 +135,28 @@ storiesOf('Native and Contrib fields', module)
 
 storiesOf('Field Test', module)
 
-const fieldStory = storiesOf('Field Test/Available fields', module)
+const fieldStory = storiesOf('Field Test/Fields', module).addDecorator(
+  withKnobs
+)
 Object.entries(typeFields).forEach(([name, TypeField]) => {
   fieldStory.add(
     `${name} field`,
     withStateForm(props => (
       <Formol {...props}>
         <h1>{name}</h1>
-        <TypeField />
+        <TypeField
+          required={boolean('Required', false)}
+          readOnly={boolean('Read Only', false)}
+        />
       </Formol>
     ))
   )
 })
 
-const requiredFieldStory = storiesOf('Field Test/Required attribute', module)
+const requiredFieldStory = storiesOf(
+  'Field Test/Fields with initial value',
+  module
+).addDecorator(withKnobs)
 Object.entries(typeFields).forEach(([name, TypeField]) => {
   requiredFieldStory.add(
     `${name} field`,
@@ -155,23 +164,13 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
       props => (
         <Formol {...props}>
           <h1>{name}</h1>
-          <TypeField required />
+          <TypeField
+            required={boolean('Required', false)}
+            readOnly={boolean('Read Only', false)}
+          />
         </Formol>
       ),
       { [name]: testFieldValue(name) }
     )
-  )
-})
-
-const readOnlyFieldStory = storiesOf('Field Test/Read only attribute', module)
-Object.entries(typeFields).forEach(([name, TypeField]) => {
-  readOnlyFieldStory.add(
-    `${name} field`,
-    withStateForm(props => (
-      <Formol {...props}>
-        <h1>{name}</h1>
-        <TypeField readOnly />
-      </Formol>
-    ))
   )
 })

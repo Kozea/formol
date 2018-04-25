@@ -155,26 +155,23 @@ export default function Field(
       }
     }
 
+    const fieldProps = { ...commonProps, ...valueProp, ...props }
+
     if (type === 'html') {
-      input = <HTMLField {...props} {...commonProps} {...valueProp} />
+      input = <HTMLField {...fieldProps} />
     } else if (type === 'area') {
-      input = <textarea {...props} {...commonProps} {...valueProp} />
+      input = <textarea {...fieldProps} />
     } else if (type === 'calendar') {
-      input = <CalendarField {...props} {...commonProps} {...valueProp} />
+      input = <CalendarField {...fieldProps} />
     } else if (type === 'file') {
-      input = <FileField {...props} {...commonProps} {...valueProp} />
+      input = <FileField {...fieldProps} />
     } else if (type === 'files') {
-      input = <FileField multiple {...props} {...commonProps} {...valueProp} />
+      input = <FileField multiple {...fieldProps} />
     } else if (type === 'password-strengh') {
-      input = <PasswordField {...props} {...commonProps} {...valueProp} />
+      input = <PasswordField {...fieldProps} />
     } else if (type === 'select') {
       input = (
-        <select
-          {...props}
-          {...commonProps}
-          {...valueProp}
-          disabled={readOnly /* There's no readOnly */}
-        >
+        <select {...fieldProps} disabled={readOnly /* There's no readOnly */}>
           {choices.every(([k]) => k) && <option value="" />}
           {choices.map(([key, val]) => (
             <option key={key} value={key}>
@@ -189,24 +186,13 @@ export default function Field(
           choices={choices}
           name={name}
           choiceGetter={choiceGetter}
-          {...props}
-          {...commonProps}
-          {...valueProp}
+          {...fieldProps}
         />
       )
     } else if (type === 'switch') {
-      input = (
-        <SwitchField name={name} {...props} {...commonProps} {...valueProp} />
-      )
+      input = <SwitchField name={name} {...fieldProps} />
     } else {
-      input = (
-        <input
-          {...props}
-          type={type || 'text'}
-          {...commonProps}
-          {...valueProp}
-        />
-      )
+      input = <input {...fieldProps} type={type || 'text'} />
     }
   }
   if (sub) {
