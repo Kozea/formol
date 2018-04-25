@@ -1,10 +1,35 @@
-import './index.sass'
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
+import 'draft-js/dist/Draft.css'
 
+import './HTMLField.sass'
+
+import { ContentState, EditorState, convertToRaw } from 'draft-js'
+import draftToHtml from 'draftjs-to-html'
+import htmlToDraft from 'html-to-draftjs'
 import React from 'react'
+import { Editor } from 'react-draft-wysiwyg'
 
-import ReactDraftWysiwygEditor from '../../async/ReactDraftWysiwyg'
-import { block, readAsBase64 } from '../../utils'
-import { stateFromValue, stateToValue } from './utils'
+import { block } from '../utils'
+
+const stateFromValue = value => {
+  if (!value) {
+    return EditorState.createEmpty()
+  }
+  const contentBlock = htmlToDraft(value)
+  const editorContent = EditorState.createWithContent(
+    ContentState.createFromBlockArray(contentBlock.contentBlocks)
+  )
+  // const contentToHtml = draftToHtml(
+  //   convertToRaw(editorContent.getCurrentContent())
+  // )
+  // if (emptyContent(contentToHtml)) {
+  //   return EditorState.createEmpty()
+  // }
+  return editorContent
+}
+
+export const stateToValue = editorState =>
+  draftToHtml(convertToRaw(editorState.getCurrentContent()))
 
 @block
 export default class HTMLField extends React.Component {
@@ -72,7 +97,7 @@ export default class HTMLField extends React.Component {
     }
     return (
       <div className={b.mix(className)}>
-        <ReactDraftWysiwygEditor
+        <Editor
           editorClassName={b.e('editor')}
           editorState={editorState}
           localization={{

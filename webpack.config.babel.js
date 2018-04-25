@@ -3,8 +3,10 @@ import path from 'path'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
+import config from './package.json'
+
 export default {
-  mode: 'development' || 'production',
+  mode: 'production',
   entry: ['regenerator-runtime/runtime.js', './src/index'],
   output: {
     path: path.join(__dirname, 'lib'),
@@ -15,13 +17,7 @@ export default {
     umdNamedDefine: true,
     globalObject: 'this',
   },
-  externals: [
-    'date-fns',
-    'react',
-    'react-dom',
-    'react-dropzone',
-    'react-icons',
-  ],
+  externals: Object.keys(config.peerDependencies),
   plugins: [
     new MiniCssExtractPlugin({ filename: 'formol.css' }),
     new BundleAnalyzerPlugin({

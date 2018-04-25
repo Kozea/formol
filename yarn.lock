@@ -5044,6 +5044,10 @@ html-to-draftjs@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/html-to-draftjs/-/html-to-draftjs-1.3.0.tgz#9de3de81d8ff801f167ef34a6b93cbd7a9c2f85c"
 
+html-to-draftjs@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/html-to-draftjs/-/html-to-draftjs-1.3.1.tgz#51dda1cbc26dfa86259270f2805e21ecdb6c06ca"
+
 html-webpack-plugin@^2.30.1:
   version "2.30.1"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-2.30.1.tgz#7f9c421b7ea91ec460f56527d78df484ee7537d5"
