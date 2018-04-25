@@ -30,7 +30,6 @@ module.exports = (baseConfig, env) => {
         '@babel/plugin-proposal-decorators',
         'add-react-static-displayname',
         ['@babel/plugin-proposal-class-properties', { loose: true }],
-        '@babel/plugin-transform-classes',
       ],
     },
   }

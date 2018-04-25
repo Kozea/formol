@@ -2,23 +2,22 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import { Field } from '../src'
-import Formol from '../src/Formol'
+import Formol, { Field } from '../src'
+import { PersonForm, personExemple } from './exemples'
+import { typeFields } from './fields'
 
 const log = (...args) => {
   action('item submited')(...args)
   return false
 }
 
-storiesOf('Formol', module)
-  .add('An empty form', () => <Formol />)
-  .add('A simple form with a field', () => (
-    <Formol onSubmit={log}>
-      <Field name="field">Field</Field>
-    </Formol>
+storiesOf('Formol exemples', module)
+  .add('Adding a person', () => <PersonForm onSubmit={log} />)
+  .add('Editing a person', () => (
+    <PersonForm onSubmit={log} item={personExemple} />
   ))
 
-storiesOf('Formol fields', module)
+storiesOf('Native and Contrib fields', module)
   .add('Native fields', () => (
     <Formol onSubmit={log}>
       <Field name="text">Text</Field>
@@ -121,3 +120,35 @@ storiesOf('Formol fields', module)
       </Field>
     </Formol>
   ))
+
+storiesOf('Field Test')
+
+const fieldStory = storiesOf('Field Test/Available fields', module)
+Object.entries(typeFields).forEach(([name, TypeField]) => {
+  fieldStory.add(`${name} field`, () => (
+    <Formol onSubmit={log}>
+      <h1>{name}</h1>
+      <TypeField />
+    </Formol>
+  ))
+})
+
+const requiredFieldStory = storiesOf('Field Test/Required attribute', module)
+Object.entries(typeFields).forEach(([name, TypeField]) => {
+  requiredFieldStory.add(`${name} field`, () => (
+    <Formol onSubmit={log} item={{ [name]: 'a' }}>
+      <h1>{name}</h1>
+      <TypeField required />
+    </Formol>
+  ))
+})
+
+const readOnlyFieldStory = storiesOf('Field Test/Read only attribute', module)
+Object.entries(typeFields).forEach(([name, TypeField]) => {
+  readOnlyFieldStory.add(`${name} field`, () => (
+    <Formol onSubmit={log}>
+      <h1>{name}</h1>
+      <TypeField readOnly />
+    </Formol>
+  ))
+})

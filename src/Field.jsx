@@ -51,7 +51,9 @@ export default function Field(
     throw new Error('Field must be used inside Form')
   }
   const modified = get(item, name) !== get(edited, name)
-
+  if (choices && !Array.isArray(choices) && choices instanceof Object) {
+    choices = Object.entries(choices)
+  }
   let input
   if (values) {
     input = (
