@@ -126,7 +126,7 @@ storiesOf('Field Test')
 const fieldStory = storiesOf('Field Test/Available fields', module)
 Object.entries(typeFields).forEach(([name, TypeField]) => {
   fieldStory.add(`${name} field`, () => (
-    <Formol onSubmit={log}>
+    <Formol onSubmit={log} htmlFields={['Html']}>
       <h1>{name}</h1>
       <TypeField />
     </Formol>
