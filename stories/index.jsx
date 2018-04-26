@@ -10,7 +10,7 @@ import { knobs, testFieldValue, typeFields } from './fields'
 const withStateForm = (form, initial) =>
   withState({ transient: initial, item: initial })(({ store }) =>
     form({
-      onSubmit: item => store.set({ item }),
+      onSubmit: item => store.set({ item }) || false, // TODO: Fix that
       onChange: transient => store.set({ transient }),
       item: store.state.item,
     })

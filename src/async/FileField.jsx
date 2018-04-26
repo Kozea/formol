@@ -1,6 +1,5 @@
 import './FileField.sass'
 
-import PropTypes from 'prop-types'
 import React, { Fragment } from 'react'
 import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
@@ -27,10 +26,6 @@ const nonExistingFileName = ([name, ext], value) => {
 
 @block
 export default class FileField extends React.Component {
-  static contextTypes = {
-    edited: PropTypes.object,
-  }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -44,7 +39,7 @@ export default class FileField extends React.Component {
   }
 
   async handleDrop(accepted, rejected, { target }) {
-    const { fKey, multiple, rejectedMessage, onChange } = this.props
+    const { multiple, rejectedMessage, onChange } = this.props
     const value = multiple ? this.props.value || [] : []
     accepted = await Promise.all(
       accepted.map(async file => ({
@@ -62,12 +57,13 @@ export default class FileField extends React.Component {
         ...newFiles,
       ])
       const fks = {}
-      if (fKey) {
-        const fKeys = typeof fKey === 'string' ? [fKey] : fKey
-        fKeys.map(fk => {
-          fks[fk] = this.context.edited[fk]
-        })
-      }
+      // TOOD: fix that
+      // if (fKey) {
+      //   const fKeys = typeof fKey === 'string' ? [fKey] : fKey
+      //   fKeys.map(fk => {
+      //     fks[fk] = this.context.edited[fk]
+      //   })
+      // }
       newFiles.push({
         name: newName,
         ext,
