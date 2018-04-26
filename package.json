@@ -52,6 +52,7 @@
     "@storybook/addon-actions": "^3.4.2",
     "@storybook/addon-console": "^1.0.0",
     "@storybook/addon-knobs": "^3.4.2",
+    "@storybook/addon-options": "^3.4.2",
     "@storybook/addons": "^3.4.2",
     "@storybook/react": "^3.4.2",
     "@storybook/storybook-deployer": "^2.3.0",
