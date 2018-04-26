@@ -34,6 +34,17 @@
   min-height: 15em
   padding: 1em
   text-align: center
+  position: relative
+
+  > input[type="file"]
+    // This is an important hack to avoid the :
+    // "An invalid form control with name="..."
+    // is not focusable." error at validation
+    display: block !important
+    opacity: 0
+    z-index: -1
+    position: absolute
+
 
   svg
     display: block
