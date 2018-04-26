@@ -1,3 +1,4 @@
+import { boolean, number, text } from '@storybook/addon-knobs/react'
 import React from 'react'
 
 import { Field } from '../src'
@@ -49,6 +50,13 @@ export const typeFields = {}
   'Tel',
   'Checkbox',
   'Radio',
+  'Color',
+  'Date',
+  'Time',
+  'DatetimeLocal',
+  'Month',
+  'Week',
+  'Range',
   'Calendar',
   'Switch',
   'Html',
@@ -86,4 +94,24 @@ export const testFieldValue = name =>
         type: 'image/svg+xml',
       },
     ],
+    Files: [],
   }[name] || name)
+
+export const knobs = name => {
+  const knob = {
+    required: boolean('Required', false),
+    readOnly: boolean('Read Only', false),
+    disabled: boolean('Disabled', false),
+    autoFocus: boolean('AutoFocus', false),
+    placeholder: text('PlaceHolder', name),
+  }
+  if (name === 'File') {
+    knob.accept = text('Accept', 'image/*')
+  }
+  if (name === 'Number') {
+    knob.min = number('Min', 0)
+    knob.max = number('Max', 100)
+    knob.step = number('Step', 5)
+  }
+  return knob
+}

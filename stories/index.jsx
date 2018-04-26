@@ -1,11 +1,11 @@
 import { withState } from '@dump247/storybook-state'
-import { boolean, withKnobs } from '@storybook/addon-knobs/react'
+import { withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
 import { PersonForm, personExemple } from './exemples'
-import { testFieldValue, typeFields } from './fields'
+import { knobs, testFieldValue, typeFields } from './fields'
 
 const withStateForm = (form, initial) =>
   withState({ transient: initial, item: initial })(({ store }) =>
@@ -143,10 +143,7 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
     withStateForm(props => (
       <Formol {...props}>
         <h1>{name}</h1>
-        <TypeField
-          required={boolean('Required', false)}
-          readOnly={boolean('Read Only', false)}
-        />
+        <TypeField {...knobs(name)} />
       </Formol>
     ))
   )
@@ -163,10 +160,7 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
       props => (
         <Formol {...props}>
           <h1>{name}</h1>
-          <TypeField
-            required={boolean('Required', false)}
-            readOnly={boolean('Read Only', false)}
-          />
+          <TypeField {...knobs(name)} />
         </Formol>
       ),
       { [name]: testFieldValue(name) }
