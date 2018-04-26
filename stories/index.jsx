@@ -122,7 +122,6 @@ storiesOf('Native and Contrib fields', module)
           name="file"
           accept="image/*"
           placeholder="Drop an image"
-          rejectedMessage="Your image is invalid"
         >
           File
         </Field>

@@ -53,6 +53,7 @@ export const typeFields = {}
   'Switch',
   'Html',
   'File',
+  'Files',
 ].forEach(name => {
   typeFields[name] = makeField(name)
 })
