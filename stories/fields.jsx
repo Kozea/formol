@@ -1,7 +1,7 @@
 import { boolean, number, text } from '@storybook/addon-knobs/react'
 import React from 'react'
 
-import { Field } from '../src'
+import Formol from '../src/Formol'
 
 const choices = {
   '#ffffff': 'White',
@@ -29,14 +29,14 @@ const pascalCaseToKebabCase = word =>
 
 // eslint-disable-next-line react/display-name
 const makeField = (name, specificProps) => props => (
-  <Field
+  <Formol.Field
     type={pascalCaseToKebabCase(name)}
     name={name}
     {...specificProps}
     {...props}
   >
     {name}
-  </Field>
+  </Formol.Field>
 )
 
 export const typeFields = {}

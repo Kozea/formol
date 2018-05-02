@@ -1,20 +1,20 @@
 import React from 'react'
 
-import Formol, { Field, MutantField } from '../src'
+import Formol from '../src'
 
 export const PersonForm = props => (
   <Formol {...props}>
     <h1>Create your profile</h1>
-    <Field autoFocus required name="firstname">
+    <Formol.Field autoFocus required name="firstname">
       First name
-    </Field>
-    <Field required name="name">
+    </Formol.Field>
+    <Formol.Field required name="name">
       Name
-    </Field>
-    <Field required type="email" name="email">
+    </Formol.Field>
+    <Formol.Field required type="email" name="email">
       E-mail
-    </Field>
-    <Field
+    </Formol.Field>
+    <Formol.Field
       type="file"
       name="avatar"
       accept="image/*"
@@ -22,8 +22,8 @@ export const PersonForm = props => (
       rejectedMessage="Your avatar is invalid"
     >
       Avatar
-    </Field>
-    <Field
+    </Formol.Field>
+    <Formol.Field
       required
       type="radio"
       name="sex"
@@ -33,24 +33,24 @@ export const PersonForm = props => (
       }}
     >
       Gender
-    </Field>
-    <MutantField show={item => item && item.sex}>
-      <Field name="pregnant" type="switch">
+    </Formol.Field>
+    <Formol.Conditional show={item => item && item.sex}>
+      <Formol.Field name="pregnant" type="switch">
         Pregnant
-      </Field>
-    </MutantField>
-    <Field type="number" name="weight" min="0" step="1">
+      </Formol.Field>
+    </Formol.Conditional>
+    <Formol.Field type="number" name="weight" min="0" step="1">
       Weight
-    </Field>
-    <Field type="number" name="height" min="0" step="0.01" max="3">
+    </Formol.Field>
+    <Formol.Field type="number" name="height" min="0" step="0.01" max="3">
       Height
-    </Field>
-    <Field type="tel" name="phone">
+    </Formol.Field>
+    <Formol.Field type="tel" name="phone">
       Phone Number
-    </Field>
-    <Field name="address">Adress</Field>
-    <Field name="zip">Zip code</Field>
-    <Field name="city">City</Field>
+    </Formol.Field>
+    <Formol.Field name="address">Adress</Formol.Field>
+    <Formol.Field name="zip">Zip code</Formol.Field>
+    <Formol.Field name="city">City</Formol.Field>
   </Formol>
 )
 

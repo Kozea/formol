@@ -482,7 +482,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ffffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffffff
+          </span>
         </label>
         <label
           className={
@@ -540,7 +559,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #c0c0c0
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #c0c0c0
+          </span>
         </label>
         <label
           className={
@@ -598,7 +636,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #808080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808080
+          </span>
         </label>
         <label
           className={
@@ -656,7 +713,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #000000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000000
+          </span>
         </label>
         <label
           className={
@@ -714,7 +790,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ff0000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff0000
+          </span>
         </label>
         <label
           className={
@@ -772,7 +867,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #800000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800000
+          </span>
         </label>
         <label
           className={
@@ -830,7 +944,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ffff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffff00
+          </span>
         </label>
         <label
           className={
@@ -888,7 +1021,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #808000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808000
+          </span>
         </label>
         <label
           className={
@@ -946,7 +1098,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #00ff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ff00
+          </span>
         </label>
         <label
           className={
@@ -1004,7 +1175,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #008000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008000
+          </span>
         </label>
         <label
           className={
@@ -1062,7 +1252,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #00ffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ffff
+          </span>
         </label>
         <label
           className={
@@ -1120,7 +1329,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #008080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008080
+          </span>
         </label>
         <label
           className={
@@ -1178,7 +1406,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #0000ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #0000ff
+          </span>
         </label>
         <label
           className={
@@ -1236,7 +1483,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #000080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000080
+          </span>
         </label>
         <label
           className={
@@ -1294,7 +1560,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ff00ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff00ff
+          </span>
         </label>
         <label
           className={
@@ -1352,7 +1637,26 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #800080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800080
+          </span>
         </label>
       </div>
       <span
@@ -3500,7 +3804,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ffffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffffff
+          </span>
         </label>
         <label
           className={
@@ -3558,7 +3881,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #c0c0c0
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #c0c0c0
+          </span>
         </label>
         <label
           className={
@@ -3616,7 +3958,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #808080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808080
+          </span>
         </label>
         <label
           className={
@@ -3674,7 +4035,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #000000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000000
+          </span>
         </label>
         <label
           className={
@@ -3732,7 +4112,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ff0000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff0000
+          </span>
         </label>
         <label
           className={
@@ -3790,7 +4189,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #800000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800000
+          </span>
         </label>
         <label
           className={
@@ -3848,7 +4266,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ffff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffff00
+          </span>
         </label>
         <label
           className={
@@ -3906,7 +4343,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #808000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808000
+          </span>
         </label>
         <label
           className={
@@ -3964,7 +4420,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #00ff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ff00
+          </span>
         </label>
         <label
           className={
@@ -4022,7 +4497,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #008000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008000
+          </span>
         </label>
         <label
           className={
@@ -4080,7 +4574,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #00ffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ffff
+          </span>
         </label>
         <label
           className={
@@ -4138,7 +4651,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #008080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008080
+          </span>
         </label>
         <label
           className={
@@ -4196,7 +4728,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #0000ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #0000ff
+          </span>
         </label>
         <label
           className={
@@ -4254,7 +4805,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #000080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000080
+          </span>
         </label>
         <label
           className={
@@ -4312,7 +4882,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ff00ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff00ff
+          </span>
         </label>
         <label
           className={
@@ -4370,7 +4959,26 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #800080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800080
+          </span>
         </label>
       </div>
       <span
@@ -6666,7 +7274,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ffffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffffff
+          </span>
         </label>
         <label
           className={
@@ -6724,7 +7351,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #c0c0c0
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #c0c0c0
+          </span>
         </label>
         <label
           className={
@@ -6782,7 +7428,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #808080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808080
+          </span>
         </label>
         <label
           className={
@@ -6840,7 +7505,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #000000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000000
+          </span>
         </label>
         <label
           className={
@@ -6898,7 +7582,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ff0000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff0000
+          </span>
         </label>
         <label
           className={
@@ -6956,7 +7659,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #800000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800000
+          </span>
         </label>
         <label
           className={
@@ -7014,7 +7736,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ffff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffff00
+          </span>
         </label>
         <label
           className={
@@ -7072,7 +7813,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #808000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808000
+          </span>
         </label>
         <label
           className={
@@ -7130,7 +7890,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #00ff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ff00
+          </span>
         </label>
         <label
           className={
@@ -7188,7 +7967,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #008000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008000
+          </span>
         </label>
         <label
           className={
@@ -7246,7 +8044,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #00ffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ffff
+          </span>
         </label>
         <label
           className={
@@ -7304,7 +8121,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #008080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008080
+          </span>
         </label>
         <label
           className={
@@ -7362,7 +8198,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #0000ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #0000ff
+          </span>
         </label>
         <label
           className={
@@ -7420,7 +8275,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #000080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000080
+          </span>
         </label>
         <label
           className={
@@ -7478,7 +8352,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #ff00ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff00ff
+          </span>
         </label>
         <label
           className={
@@ -7536,7 +8429,26 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             required={false}
             type="checkbox"
           />
-          #800080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800080
+          </span>
         </label>
       </div>
       <span
@@ -9684,7 +10596,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ffffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffffff
+          </span>
         </label>
         <label
           className={
@@ -9742,7 +10673,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #c0c0c0
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #c0c0c0
+          </span>
         </label>
         <label
           className={
@@ -9800,7 +10750,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #808080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808080
+          </span>
         </label>
         <label
           className={
@@ -9858,7 +10827,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #000000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000000
+          </span>
         </label>
         <label
           className={
@@ -9916,7 +10904,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ff0000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff0000
+          </span>
         </label>
         <label
           className={
@@ -9974,7 +10981,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #800000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800000
+          </span>
         </label>
         <label
           className={
@@ -10032,7 +11058,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ffff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ffff00
+          </span>
         </label>
         <label
           className={
@@ -10090,7 +11135,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #808000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #808000
+          </span>
         </label>
         <label
           className={
@@ -10148,7 +11212,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #00ff00
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ff00
+          </span>
         </label>
         <label
           className={
@@ -10206,7 +11289,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #008000
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008000
+          </span>
         </label>
         <label
           className={
@@ -10264,7 +11366,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #00ffff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #00ffff
+          </span>
         </label>
         <label
           className={
@@ -10322,7 +11443,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #008080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #008080
+          </span>
         </label>
         <label
           className={
@@ -10380,7 +11520,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #0000ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #0000ff
+          </span>
         </label>
         <label
           className={
@@ -10438,7 +11597,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #000080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #000080
+          </span>
         </label>
         <label
           className={
@@ -10496,7 +11674,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #ff00ff
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #ff00ff
+          </span>
         </label>
         <label
           className={
@@ -10554,7 +11751,26 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             required={false}
             type="radio"
           />
-          #800080
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            #800080
+          </span>
         </label>
       </div>
       <span
@@ -12874,7 +14090,26 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             required={true}
             type="radio"
           />
-          Woman
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Woman
+          </span>
         </label>
         <label
           className={
@@ -12930,7 +14165,26 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             required={true}
             type="radio"
           />
-          Man or other
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Man or other
+          </span>
         </label>
       </div>
       <span
@@ -14114,7 +15368,26 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             required={true}
             type="radio"
           />
-          Woman
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Woman
+          </span>
         </label>
         <label
           className={
@@ -14170,7 +15443,26 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             required={true}
             type="radio"
           />
-          Man or other
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Man or other
+          </span>
         </label>
       </div>
       <span
@@ -14286,6 +15578,30 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         <input
           checked={true}
           disabled={undefined}
+          edited={
+            Object {
+              "address": "12 Norfolk St",
+              "avatar": Array [
+                Object {
+                  "data": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHZpZXdCb3g9IjAgMCA5MzMgODgyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxnIHN0eWxlPSJmb250LXNpemU6MjM4LjcwMzY4OTU4cHg7Zm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDtsaW5lLWhlaWdodDoxMDAlO3dyaXRpbmctbW9kZTpsci10Yjt0ZXh0LWFuY2hvcjpzdGFydDtmaWxsOmJsYWNrO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoxcHQ7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MTtmb250LWZhbWlseTpBcmlhbCI+CiAgICA8dGV4dCB4PSIzNzEuMzkwMTQiIHk9IjIzMS43ODY1Ij5PPC90ZXh0PgogICAgPHRleHQgeD0iMzUuNzQxNTU0IiB5PSI4MjkuMjk0MzEiPkg8L3RleHQ+CiAgICA8dGV4dCB4PSI3MjYuNzMzNjQiIHk9IjgyOS4yOTQzMSI+SDwvdGV4dD4KICAgIDx0ZXh0IHg9IjM3OS4xMzQyMiIgeT0iNjI2LjU0NTA0Ij5DPC90ZXh0PgogIDwvZz4KICA8ZyBzdHlsZT0iZmlsbDpub25lO2ZpbGwtb3BhY2l0eTowLjc1O2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MTU7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSI+CiAgICA8cGF0aCBkPSJNIDIzMC44Nzc2LDY3Ny44MjAwMSBMIDM2OS44OTY5Myw1OTcuNTU3MTYiIC8+CiAgICA8cGF0aCBkPSJNIDcwMy43NzcxNSw2NzcuODIwMDEgTCA1NjQuNzU3ODIsNTk3LjU1NzE2IiAvPgogICAgPHBhdGggZD0iTSA0MzYuNDg3MzIsMjU5Ljg0MjcxIEwgNDM2LjQ4NzMyLDQyNC4zMzk3OSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDk3LjU2Mjk3LDI1OS44NDI3MSBMIDQ5Ny41NjI5Nyw0MjQuMzM5NzkiIC8+CiAgPC9nPgo8L3N2Zz4K",
+                  "ext": "svg",
+                  "name": "formol",
+                  "size": 1086,
+                  "type": "image/svg+xml",
+                },
+              ],
+              "city": "Haigler",
+              "email": "houston.liza@exemple.com",
+              "firstname": "Liza",
+              "height": 1.78,
+              "name": "Houston",
+              "phone": "1-541-754-3010",
+              "pregnant": true,
+              "sex": true,
+              "weight": 64,
+              "zip": "69030",
+            }
+          }
           id="pregnant"
           name="pregnant"
           onBlur={[Function]}
@@ -16437,7 +17753,26 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             readOnly={undefined}
             type="checkbox"
           />
-          Choice 1
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 1
+          </span>
         </label>
         <label
           className={
@@ -16492,7 +17827,26 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             readOnly={undefined}
             type="checkbox"
           />
-          Choice 2
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 2
+          </span>
         </label>
       </div>
       <span
@@ -16632,7 +17986,26 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             readOnly={undefined}
             type="radio"
           />
-          Choice 1
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 1
+          </span>
         </label>
         <label
           className={
@@ -16687,7 +18060,26 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             readOnly={undefined}
             type="radio"
           />
-          Choice 2
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 2
+          </span>
         </label>
       </div>
       <span

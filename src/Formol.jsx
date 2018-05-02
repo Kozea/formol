@@ -3,8 +3,10 @@ import './Formol.sass'
 import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'
 
-import FormolContext from './FormolContext'
+import Field from './Field'
+import FormolContextWrapper, { FormolContext } from './FormolContext'
 import { block } from './utils'
+import Conditional from './utils/Conditional'
 import {
   alignKeysRec,
   clone,
@@ -20,6 +22,9 @@ export default class Formol extends React.Component {
     getPk: item => item,
     onError: console.error.bind(console),
   }
+
+  static Field = FormolContextWrapper(Field)
+  static Conditional = FormolContextWrapper(Conditional)
 
   constructor(props) {
     super(props)
@@ -55,7 +60,11 @@ export default class Formol extends React.Component {
   }
 
   setContextState(context) {
+    const { onChange } = this.props
     this.setState({ context: { ...this.state.context, ...context } })
+    if ('edited' in context) {
+      onChange && onChange(context.edited)
+    }
   }
 
   fromItem(item) {
@@ -145,13 +154,11 @@ export default class Formol extends React.Component {
   }
 
   handleChange(name, value) {
-    const { onChange } = this.props
     const newEdited = clone(this.state.context.edited)
     set(newEdited, name, value)
     this.setContextState({
       edited: newEdited,
     })
-    onChange && onChange(newEdited)
   }
 
   validateState() {

@@ -8,28 +8,12 @@ import HTMLField from './fields/HTMLField'
 import PasswordField from './fields/PasswordField'
 import SelectField from './fields/SelectField'
 import SwitchField from './fields/SwitchField'
-import FormolContext from './FormolContext'
 import { block } from './utils'
 import { get } from './utils/object'
 
 @block
 export default class Field extends React.Component {
-  renderField(
-    b,
-    {
-      edited,
-      item,
-      refs,
-      errors,
-      focused,
-      state,
-      readOnly,
-      handleFocus,
-      handleBlur,
-      handleChange,
-      handleSubmit,
-    }
-  ) {
+  render(b) {
     const {
       asyncChoices,
       children,
@@ -44,8 +28,22 @@ export default class Field extends React.Component {
       value,
       valueFormatter,
       values,
+      context,
       ...props
     } = this.props
+    const {
+      edited,
+      item,
+      refs,
+      errors,
+      focused,
+      state,
+      readOnly,
+      handleFocus,
+      handleBlur,
+      handleChange,
+      handleSubmit,
+    } = context
     let { choices } = this.props
     delete props.choices
     if (!edited) {
@@ -60,7 +58,15 @@ export default class Field extends React.Component {
       input = (
         <div className={b.e('group')}>
           {Object.entries(values).map(([key, val]) => (
-            <Field key={key} name={name} type={type} value={val} sub {...props}>
+            <Field
+              key={key}
+              name={name}
+              type={type}
+              value={val}
+              sub
+              {...props}
+              context={context}
+            >
               {key}
             </Field>
           ))}
@@ -166,7 +172,7 @@ export default class Field extends React.Component {
       } else if (type === 'calendar') {
         input = <CalendarField {...fieldProps} />
       } else if (type === 'file') {
-        input = <FileField {...fieldProps} />
+        input = <FileField multiple={false} {...fieldProps} />
       } else if (type === 'files') {
         input = <FileField multiple {...fieldProps} />
       } else if (type === 'password-strengh') {
@@ -201,7 +207,7 @@ export default class Field extends React.Component {
       return (
         <label className={b.e('label').m({ on: get(edited, name) === value })}>
           {input}
-          {children}
+          {children && <span className={b.e('label-text')}>{children}</span>}
           {extras}
         </label>
       )
@@ -229,13 +235,6 @@ export default class Field extends React.Component {
         </Label>
         {error && <div className={b.e('error')}>{error}</div>}
       </fieldset>
-    )
-  }
-  render(b) {
-    return (
-      <FormolContext.Consumer>
-        {context => this.renderField(b, context)}
-      </FormolContext.Consumer>
     )
   }
 }
