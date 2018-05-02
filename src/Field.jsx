@@ -13,6 +13,15 @@ import { get } from './utils/object'
 
 @block
 export default class Field extends React.Component {
+  componentWillUnmount() {
+    // This is mandatory for removing values when using Conditional
+    const {
+      name,
+      context: { handleChange },
+    } = this.props
+    handleChange(name, void 0)
+  }
+
   render(b) {
     const {
       asyncChoices,
