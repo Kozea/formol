@@ -9,7 +9,7 @@ import htmlToDraft from 'html-to-draftjs'
 import React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
 
-import { block } from '../utils'
+import { block, readAsBase64 } from '../utils'
 
 const stateFromValue = value => {
   if (!value) {
@@ -65,10 +65,11 @@ export default class HTMLField extends React.Component {
   }
 
   onChange(editorState) {
+    const { onChange } = this.props
     const value = this.prepareValue(stateToValue(editorState))
     this.value = value
     this.setState({ editorState })
-    this.props.onChange({ target: { value } })
+    onChange(value)
   }
 
   checkValidity() {

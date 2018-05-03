@@ -6,7 +6,7 @@ import Select from 'react-select'
 import { block } from '../utils'
 
 @block
-export default class SelectField extends React.Component {
+export default class SelectMenuField extends React.Component {
   handleChange(newValue) {
     const { multiple, nonStringValue, onChange } = this.props
     const maybeParse = v => (nonStringValue ? JSON.parse(v) : v)
@@ -32,7 +32,7 @@ export default class SelectField extends React.Component {
     const maybeStringify = v =>
       nonStringValue ? JSON.stringify(choiceGetter(v)[0]) : v
     const { choices } = this.props
-    const options = choices.map(([key, val]) => ({
+    const options = Object.entries(choices).map(([key, val]) => ({
       value: maybeStringify(key),
       label: val,
     }))

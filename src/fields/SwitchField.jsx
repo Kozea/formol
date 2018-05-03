@@ -7,7 +7,7 @@ import SwitchButton from '../utils/SwitchButton'
 @block
 export default class SwitchField extends React.Component {
   render(b) {
-    const { switchLabels, ...props } = this.props
+    const { switchLabels, type, ...props } = this.props
     const [leftLabel, rightLabel] = switchLabels || ['Non', 'Oui']
     return (
       <SwitchButton

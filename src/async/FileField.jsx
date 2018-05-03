@@ -95,12 +95,10 @@ export default class FileField extends React.Component {
       this.setState({ error: null })
       target.setCustomValidity('')
     }
-    onChange({
-      target: {
-        // Removing error files and adding new files and new errors
-        value: [...value.filter(f => f.data), ...newFiles, ...erroredFiles],
-      },
-    })
+    onChange(
+      // Removing error files and adding new files and new errors
+      [...value.filter(f => f.data), ...newFiles, ...erroredFiles]
+    )
   }
 
   render(b) {
@@ -136,11 +134,7 @@ export default class FileField extends React.Component {
                   className={b.e('close')}
                   kind="disabled"
                   onClick={e => {
-                    onChange({
-                      target: {
-                        value: value.filter(f => key(f) !== key(file)),
-                      },
-                    })
+                    onChange(value.filter(f => key(f) !== key(file)))
                     this.setState({ error: null })
                     e.stopPropagation()
                   }}

@@ -67,8 +67,8 @@ export const typeFields = {}
 })
 
 typeFields.Select = makeField('Select', { choices })
-typeFields.Checkbox = makeField('Checkbox', { values: choices })
-typeFields.Radio = makeField('Radio', { values: choices })
+typeFields.Checkboxes = makeField('Checkboxes', { choices })
+typeFields.Radios = makeField('Radios', { choices })
 typeFields.SelectMenu = makeField('SelectMenu', { choices })
 typeFields.SelectMenuMultiple = makeField('SelectMenu', {
   choices,
@@ -81,9 +81,22 @@ export const testFieldValue = name =>
     Email: 'email@exemple.com',
     Number: 12,
     Tel: '1-541-754-3010',
+    Radio: true,
+    Checkbox: true,
+    Checkboxes: ['#800000', '#ffff00'],
+    Radios: '#ffff00',
+    Select: '#800000',
+    SelectMenu: '#800000',
+    SelectMenuMultiple: ['#800000', '#ffff00'],
+    Color: '#123456',
     Html:
       '<p><span style="color: rgb(251,160,38);">H</span><b>T</b><del>M</del><em>L</em></p>', // eslint-disable-line max-len
     Calendar: '2018-08-01',
+    Date: '2018-08-01',
+    Time: '17:14',
+    DatetimeLocal: '2018-08-01T17:14',
+    Week: '2018-W12',
+    Month: '2018-08',
     File: [
       {
         data:

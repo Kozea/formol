@@ -7,14 +7,15 @@ import { block } from '../utils'
 @block
 export default class PasswordField extends React.Component {
   render(b) {
-    const { className, name, onChange, ...props } = this.props
+    const { className, name, value, onChange, ...props } = this.props
     return (
       <ReactPasswordStrength
         changeCallback={({ password, isValid }) =>
-          onChange({ target: { value: isValid ? password : false } })
+          onChange(isValid ? password : false)
         }
+        defaultValue={value}
         className={b.mix(className).s}
-        inputProps={{ name, ...props }}
+        inputProps={{ name, ...props, type: 'password' }}
         scoreWords={[
           'très peu sécurisé',
           'peu sécurisé',

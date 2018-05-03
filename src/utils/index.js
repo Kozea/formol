@@ -28,3 +28,13 @@ export const moneyFormat = price =>
   )
 
 export const block = blockMaker({ namespace: 'Formol_' })
+
+export const normalizeChoices = ({ choices, choiceGetter }) =>
+  Object.entries(
+    choices && choices.objects && !choices.loading
+      ? choices.objects.map(choiceGetter)
+      : choices || {}
+  )
+
+// eslint-disable-next-line no-unused-vars
+export const cleanProps = ({ choices, asyncChoices, ...props }) => props

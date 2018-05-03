@@ -17,11 +17,11 @@ const voidIfNaN = d => (isNaN(d.valueOf()) ? void 0 : d)
 export default class CalendarField extends React.Component {
   handleChange(newDate) {
     const { onChange } = this.props
-    if (isDate(newDate)) {
-      onChange({ target: { value: format(newDate, 'YYYY-MM-DD', { locale }) } })
-    } else {
-      onChange({ target: { value: newDate || null } })
-    }
+    onChange(
+      isDate(newDate)
+        ? format(newDate, 'YYYY-MM-DD', { locale })
+        : newDate || null
+    )
   }
 
   render(b) {

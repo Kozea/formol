@@ -2,17 +2,18 @@ import './SwitchButton.sass'
 
 import React from 'react'
 
+import BooleanField from '../fields/BooleanField'
 import { block } from '../utils'
 
 const b = block('SwitchButton')
+
 export default function SwitchButton({
   name,
   label,
   labelRight,
-  disabled,
   mode,
   className,
-  onChange,
+  disabled,
   ...props
 }) {
   mode = mode === 'select' ? 'select' : 'switch'
@@ -20,8 +21,7 @@ export default function SwitchButton({
   return (
     <div className={b.mix(className).m({ mode, disabled })}>
       {label && <label htmlFor={name}>{label}</label>}
-      <input
-        onChange={onChange}
+      <BooleanField
         id={name}
         name={name}
         type="checkbox"
