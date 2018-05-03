@@ -33,7 +33,7 @@ export default class Formol extends React.Component {
     this.state = {
       disablePrompt: false,
       context: {
-        edited: this.fromItem(item),
+        transientItem: this.fromItem(item),
         item,
         refs: this.ref,
         errors: {},
@@ -54,7 +54,7 @@ export default class Formol extends React.Component {
     if (!deepEqual(nextProps.item, this.props.item)) {
       this.setContextState({
         item: nextProps.item,
-        edited: this.fromItem(nextProps.item),
+        transientItem: this.fromItem(nextProps.item),
       })
     }
   }
@@ -62,8 +62,8 @@ export default class Formol extends React.Component {
   setContextState(context) {
     const { onChange } = this.props
     this.setState({ context: { ...this.state.context, ...context } })
-    if ('edited' in context) {
-      onChange && onChange(context.edited)
+    if ('transientItem' in context) {
+      onChange && onChange(context.transientItem)
     }
   }
 
@@ -74,7 +74,7 @@ export default class Formol extends React.Component {
   handleCancel() {
     const { item } = this.props
     this.setContextState({
-      edited: this.fromItem(item),
+      transientItem: this.fromItem(item),
     })
   }
 
@@ -89,11 +89,11 @@ export default class Formol extends React.Component {
       onPatch,
       onSubmit,
     } = this.props
-    const { edited } = this.state.context
+    const { transientItem } = this.state.context
     if (this.ref.form.checkValidity()) {
       if (onSubmit) {
         try {
-          const report = await onSubmit(edited)
+          const report = await onSubmit(transientItem)
           if (report === false) {
             // We manually force return at some point
             return
@@ -111,7 +111,7 @@ export default class Formol extends React.Component {
       } else if (add) {
         this.setState({ disablePrompt: true })
         try {
-          const report = await onCreate(edited)
+          const report = await onCreate(transientItem)
           if (report === false) {
             // We manually force return at some point
             return
@@ -127,9 +127,9 @@ export default class Formol extends React.Component {
           this.handleError(err)
         }
         this.setState({ disablePrompt: false })
-      } else if (forceAlwaysSubmit || !deepEqual(item, edited)) {
+      } else if (forceAlwaysSubmit || !deepEqual(item, transientItem)) {
         const pk = getPk(item)
-        const diff = diffObject(edited, item, noRecursiveKeys)
+        const diff = diffObject(transientItem, item, noRecursiveKeys)
         try {
           const report = await onPatch(pk, diff)
           if (report === false) {
@@ -154,27 +154,26 @@ export default class Formol extends React.Component {
   }
 
   handleChange(name, value) {
-    const newEdited = clone(this.state.context.edited)
-    set(newEdited, name, value)
+    const newtransientItem = clone(this.state.context.transientItem)
+    set(newtransientItem, name, value)
     this.setContextState({
-      edited: newEdited,
+      transientItem: newtransientItem,
     })
   }
 
   validateState() {
-    const edited = Object.entries(this.state.context.edited).reduce(
-      (rv, [key, value]) => {
-        if (value && value.trim) {
-          value = value.trim()
-        }
-        rv[key] = value
-        return rv
-      },
-      {}
-    )
-    if (!deepEqual(edited, this.state.context.edited)) {
+    const transientItem = Object.entries(
+      this.state.context.transientItem
+    ).reduce((rv, [key, value]) => {
+      if (value && value.trim) {
+        value = value.trim()
+      }
+      rv[key] = value
+      return rv
+    }, {})
+    if (!deepEqual(transientItem, this.state.context.transientItem)) {
       this.setContextState({
-        edited,
+        transientItem,
       })
     }
   }
@@ -207,7 +206,7 @@ export default class Formol extends React.Component {
     // We reset form from state since it must be synced with the server
     this.setContextState({
       errors: {},
-      edited: this.fromItem(item),
+      transientItem: this.fromItem(item),
     })
     noNotifications || noValidNotification || onValid(validNotificationText)
   }
@@ -225,8 +224,11 @@ export default class Formol extends React.Component {
 
   isModified() {
     const { item } = this.props
-    const { edited } = this.state.context
-    return !deepEqual(alignKeysRec(nullVoidValuesRec(item), edited), edited)
+    const { transientItem } = this.state.context
+    return !deepEqual(
+      alignKeysRec(nullVoidValuesRec(item), transientItem),
+      transientItem
+    )
   }
 
   render(b) {
@@ -244,7 +246,7 @@ export default class Formol extends React.Component {
       Button,
     } = this.props
     const { disablePrompt, context } = this.state
-    // We add edited keys to item in comparison and then null all undefined
+    // We add transientItem keys to item in comparison and then null all undefined
     const modified = this.isModified()
     const submitDisabled = !forceAlwaysSubmit && !modified
     const Btn = Button || 'button'

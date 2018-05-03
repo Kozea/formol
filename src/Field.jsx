@@ -62,7 +62,7 @@ export default class Field extends React.Component {
       ...props
     } = this.props
     const {
-      edited,
+      transientItem,
       item,
       refs,
       errors,
@@ -74,10 +74,10 @@ export default class Field extends React.Component {
       handleChange,
       handleSubmit,
     } = context
-    if (!edited) {
+    if (!transientItem) {
       throw new Error('Field must be used inside Form')
     }
-    const modified = get(item, name) !== get(edited, name)
+    const modified = get(item, name) !== get(transientItem, name)
     // if (['checkbox', 'radio', 'switch'].includes(type)) {
     //   commonProps.disabled = commonProps.readOnly
     // }
@@ -98,7 +98,11 @@ export default class Field extends React.Component {
         <Label className={b.e('label')}>
           <TypeField
             name={name}
-            value={formatter ? formatter(get(edited, name)) : get(edited, name)}
+            value={
+              formatter
+                ? formatter(get(transientItem, name))
+                : get(transientItem, name)
+            }
             type={type}
             ref={ref => (refs[name] = ref)}
             readOnly={readOnly}
@@ -113,7 +117,7 @@ export default class Field extends React.Component {
             onChange={v => {
               v = valueFormatter ? valueFormatter(v) : v
               customValidator &&
-                refs[name].setCustomValidity(customValidator(v, edited))
+                refs[name].setCustomValidity(customValidator(v, transientItem))
               return handleChange(name, v)
             }}
             onKeyDown={e => {

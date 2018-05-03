@@ -15824,7 +15824,14 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         <input
           checked={true}
           disabled={undefined}
-          edited={
+          id="pregnant"
+          name="pregnant"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          readOnly={undefined}
+          transientItem={
             Object {
               "address": "12 Norfolk St",
               "avatar": Array [
@@ -15848,13 +15855,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               "zip": "69030",
             }
           }
-          id="pregnant"
-          name="pregnant"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          readOnly={undefined}
           type="checkbox"
         />
         <label
