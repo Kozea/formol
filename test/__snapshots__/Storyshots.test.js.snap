@@ -599,11 +599,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
       <fieldset
         className={
           Block {
-            "block": "CheckboxesField",
+            "block": "FieldSet",
             "element": null,
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_CheckboxesField",
+            "s": "Formol_FieldSet",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -617,13 +617,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -673,11 +673,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -694,13 +694,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -750,11 +750,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -771,13 +771,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -827,11 +827,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -848,13 +848,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -904,11 +904,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -925,13 +925,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -981,11 +981,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1002,13 +1002,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1058,11 +1058,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1079,13 +1079,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1135,11 +1135,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1156,13 +1156,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1212,11 +1212,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1233,13 +1233,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1289,11 +1289,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1310,13 +1310,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1366,11 +1366,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1387,13 +1387,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1443,11 +1443,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1464,13 +1464,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1520,11 +1520,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1541,13 +1541,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1597,11 +1597,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1618,13 +1618,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1674,11 +1674,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1695,13 +1695,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1751,11 +1751,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -1772,13 +1772,13 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -1828,11 +1828,11 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4109,11 +4109,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
       <fieldset
         className={
           Block {
-            "block": "RadiosField",
+            "block": "FieldSet",
             "element": null,
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_RadiosField",
+            "s": "Formol_FieldSet",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -4127,13 +4127,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4183,11 +4183,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4204,13 +4204,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4260,11 +4260,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4281,13 +4281,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4337,11 +4337,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4358,13 +4358,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4414,11 +4414,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4435,13 +4435,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4491,11 +4491,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4512,13 +4512,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4568,11 +4568,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4589,13 +4589,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4645,11 +4645,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4666,13 +4666,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4722,11 +4722,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4743,13 +4743,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4799,11 +4799,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4820,13 +4820,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4876,11 +4876,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4897,13 +4897,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -4953,11 +4953,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -4974,13 +4974,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -5030,11 +5030,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -5051,13 +5051,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -5107,11 +5107,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -5128,13 +5128,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -5184,11 +5184,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -5205,13 +5205,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -5261,11 +5261,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -5282,13 +5282,13 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -5338,11 +5338,11 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -7768,11 +7768,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
       <fieldset
         className={
           Block {
-            "block": "CheckboxesField",
+            "block": "FieldSet",
             "element": null,
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_CheckboxesField",
+            "s": "Formol_FieldSet",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -7786,13 +7786,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -7842,11 +7842,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -7863,13 +7863,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -7919,11 +7919,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -7940,13 +7940,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -7996,11 +7996,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8017,13 +8017,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8073,11 +8073,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8094,13 +8094,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8150,11 +8150,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8171,13 +8171,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
-                "on": true,
+                "on": false,
               },
-              "s": "Formol_CheckboxesField__label Formol_CheckboxesField__label--on",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8227,11 +8227,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8248,13 +8248,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
-                "on": true,
+                "on": false,
               },
-              "s": "Formol_CheckboxesField__label Formol_CheckboxesField__label--on",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8304,11 +8304,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8325,13 +8325,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8381,11 +8381,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8402,13 +8402,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8458,11 +8458,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8479,13 +8479,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8535,11 +8535,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8556,13 +8556,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8612,11 +8612,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8633,13 +8633,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8689,11 +8689,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8710,13 +8710,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8766,11 +8766,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8787,13 +8787,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8843,11 +8843,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8864,13 +8864,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8920,11 +8920,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8941,13 +8941,13 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         <label
           className={
             Block {
-              "block": "CheckboxesField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_CheckboxesField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8997,11 +8997,11 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           <span
             className={
               Block {
-                "block": "CheckboxesField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_CheckboxesField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11278,11 +11278,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
       <fieldset
         className={
           Block {
-            "block": "RadiosField",
+            "block": "FieldSet",
             "element": null,
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_RadiosField",
+            "s": "Formol_FieldSet",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -11296,13 +11296,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11352,11 +11352,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11373,13 +11373,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11429,11 +11429,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11450,13 +11450,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11506,11 +11506,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11527,13 +11527,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11583,11 +11583,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11604,13 +11604,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11660,11 +11660,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11681,13 +11681,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11737,11 +11737,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11758,13 +11758,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": true,
               },
-              "s": "Formol_RadiosField__label Formol_RadiosField__label--on",
+              "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11814,11 +11814,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11835,13 +11835,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11891,11 +11891,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11912,13 +11912,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -11968,11 +11968,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -11989,13 +11989,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12045,11 +12045,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -12066,13 +12066,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12122,11 +12122,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -12143,13 +12143,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12199,11 +12199,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -12220,13 +12220,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12276,11 +12276,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -12297,13 +12297,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12353,11 +12353,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -12374,13 +12374,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12430,11 +12430,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -12451,13 +12451,13 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         <label
           className={
             Block {
-              "block": "RadiosField",
+              "block": "FieldSet",
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
                 "on": false,
               },
-              "s": "Formol_RadiosField__label",
+              "s": "Formol_FieldSet__label",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -12507,11 +12507,11 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           <span
             className={
               Block {
-                "block": "RadiosField",
+                "block": "FieldSet",
                 "element": "label-text",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_RadiosField__label-text",
+                "s": "Formol_FieldSet__label-text",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",

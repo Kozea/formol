@@ -1,35 +1,26 @@
 import React from 'react'
 
-import { block, cleanProps, normalizeChoices } from '../utils'
+import { block } from '../utils'
+import FieldSet from '../utils/FieldSet'
 
 @block
 export default class CheckboxesField extends React.Component {
+  static defaultProps = { value: [] }
+
   render(b) {
-    const { value, onChange, ...props } = this.props
-    const values = value || []
+    const { onChange, ...props } = this.props
     return (
-      <fieldset className={b}>
-        {normalizeChoices(props).map(([choice, choiceLabel]) => (
-          <label
-            key={choice}
-            className={b.e('label').m({ on: values.includes(choice) })}
-          >
-            <input
-              {...cleanProps(props)}
-              type="checkbox"
-              checked={values.includes(choice)}
-              onChange={e =>
-                onChange(
-                  e.target.checked
-                    ? [...values, choice]
-                    : values.filter(val => val !== choice)
-                )
-              }
-            />
-            <span className={b.e('label-text')}>{choiceLabel}</span>
-          </label>
-        ))}
-      </fieldset>
+      <FieldSet
+        className={b}
+        isChecked={(choice, value) => value.includes(choice)}
+        onChange={(choice, value, checked) =>
+          onChange(
+            checked ? [...value, choice] : value.filter(val => val !== choice)
+          )
+        }
+        {...props}
+        type="checkbox"
+      />
     )
   }
 }
