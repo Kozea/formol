@@ -50,17 +50,14 @@ export default class Field extends React.Component {
 
   render(b) {
     const {
-      asyncChoices,
-      children,
-      choiceGetter,
-      customValidator,
-      extras,
-      fieldsetClassName,
-      formatter,
       name,
       type,
+      className,
+      customValidator,
+      extras,
+      formatter,
       valueFormatter,
-      values,
+      children,
       context,
       ...props
     } = this.props
@@ -81,95 +78,71 @@ export default class Field extends React.Component {
       throw new Error('Field must be used inside Form')
     }
     const modified = get(item, name) !== get(edited, name)
-
-    const valueProp = {}
-    if (['checkbox', 'switch', 'radio'].includes(type)) {
-      valueProp.checked = get(edited, name)
-      valueProp.id = name
-    } else {
-      valueProp.value =
-        (formatter && formatter(get(edited, name))) || get(edited, name)
-    }
-
-    const commonProps = {
-      name,
-      type,
-      ref: ref => (refs[name] = ref),
-      readOnly,
-      className: b.e('field').m({
-        type,
-        focus: focused === name,
-        modified,
-        loading:
-          (modified && (state && state.loading)) ||
-          (asyncChoices && asyncChoices.loading),
-      }),
-      onFocus: e => handleFocus(name, e),
-      onBlur: e => handleBlur(name, e),
-      onChange: v => handleChange(name, valueFormatter ? valueFormatter(v) : v),
-      onKeyDown: e => {
-        // This is not registered on most external fields
-        if (e.keyCode === 13 && (e.shiftKey || type !== 'area')) {
-          const fields = Object.keys(refs)
-          const current = fields.indexOf(name)
-
-          for (let i = current + 1; i < current + fields.length; i++) {
-            const nextName = fields[i % fields.length]
-            const next = refs[nextName]
-            if (nextName === 'submit') {
-              handleSubmit(e)
-              break
-            }
-            if (
-              nextName !== 'form' &&
-              next.offsetParent !== null &&
-              next.focus
-            ) {
-              next.focus()
-              e.preventDefault()
-              break
-            }
-          }
-        }
-      },
-      onInput: e => {
-        if (customValidator) {
-          e.target.setCustomValidity(customValidator(getVal(e), edited))
-        }
-      },
-    }
-    if (['checkbox', 'radio', 'switch'].includes(type)) {
-      commonProps.disabled = commonProps.readOnly
-    }
-
-    // if (['select', 'select-menu'].includes(type)) {
-    //   if (asyncChoices && !asyncChoices.loading) {
-    //     choices = asyncChoices.objects.map(choiceGetter)
-    //   } else {
-    //     choices = choices || []
-    //   }
+    // if (['checkbox', 'radio', 'switch'].includes(type)) {
+    //   commonProps.disabled = commonProps.readOnly
     // }
 
-    const fieldProps = { ...commonProps, ...valueProp, ...props }
-    const TypeField = Fields[type] || InputField
-    const input = <TypeField {...fieldProps} />
     const Label = type && type.match(/files?/) ? 'span' : 'label'
-
+    const TypeField = Fields[type] || InputField
     const error = errors[name]
     return (
       <fieldset
-        className={b.m({
+        className={b.mix(className).m({
           type,
           name,
           error: !!error,
           readOnly,
           modified,
-          group: !!values,
-          [fieldsetClassName]: !!fieldsetClassName,
         })}
       >
         <Label className={b.e('label')}>
-          {input}
+          <TypeField
+            name={name}
+            value={formatter ? formatter(get(edited, name)) : get(edited, name)}
+            type={type}
+            ref={ref => (refs[name] = ref)}
+            readOnly={readOnly}
+            className={b.e('field').m({
+              type,
+              focus: focused === name,
+              modified,
+              loading: modified && (state && state.loading),
+            })}
+            onFocus={e => handleFocus(name, e)}
+            onBlur={e => handleBlur(name, e)}
+            onChange={v => {
+              v = valueFormatter ? valueFormatter(v) : v
+              customValidator &&
+                refs[name].setCustomValidity(customValidator(v, edited))
+              return handleChange(name, v)
+            }}
+            onKeyDown={e => {
+              // This is not registered on most external fields
+              if (e.keyCode === 13 && (e.shiftKey || type !== 'area')) {
+                const fields = Object.keys(refs)
+                const current = fields.indexOf(name)
+
+                for (let i = current + 1; i < current + fields.length; i++) {
+                  const nextName = fields[i % fields.length]
+                  const next = refs[nextName]
+                  if (nextName === 'submit') {
+                    handleSubmit(e)
+                    break
+                  }
+                  if (
+                    nextName !== 'form' &&
+                    next.offsetParent !== null &&
+                    next.focus
+                  ) {
+                    next.focus()
+                    e.preventDefault()
+                    break
+                  }
+                }
+              }
+            }}
+            {...props}
+          />
           {children && <span className={b.e('label-text')}>{children}</span>}
           {extras}
         </Label>

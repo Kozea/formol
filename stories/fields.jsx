@@ -121,7 +121,7 @@ export const knobs = name => {
   if (name === 'File') {
     knob.accept = text('Accept', 'image/*')
   }
-  if (name === 'Number') {
+  if (['Number', 'Range'].includes(name)) {
     knob.min = number('Min', 0)
     knob.max = number('Max', 100)
     knob.step = number('Step', 5)
