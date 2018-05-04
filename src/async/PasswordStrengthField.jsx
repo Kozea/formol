@@ -5,7 +5,7 @@ import ReactPasswordStrength from 'react-password-strength'
 import { block } from '../utils'
 
 @block
-export default class PasswordField extends React.Component {
+export default class PasswordStrengthField extends React.Component {
   render(b) {
     const { className, name, value, i18n, onChange, ...props } = this.props
     return (

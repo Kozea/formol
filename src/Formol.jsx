@@ -10,7 +10,7 @@ import FileField from './fields/FileField'
 import HTMLField from './fields/HTMLField'
 import InputField from './fields/InputField'
 import NumberField from './fields/NumberField'
-import PasswordField from './fields/PasswordField'
+import PasswordStrengthField from './fields/PasswordStrengthField'
 import RadiosField from './fields/RadiosField'
 import SelectField from './fields/SelectField'
 import SelectMenuField from './fields/SelectMenuField'
@@ -39,7 +39,7 @@ export default class Formol extends React.Component {
     calendar: CalendarField,
     file: FileField,
     files: FileField,
-    'password-strength': PasswordField,
+    'password-strength': PasswordStrengthField,
     select: SelectField,
     'select-menu': SelectMenuField,
     switch: SwitchField,
