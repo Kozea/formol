@@ -8,7 +8,7 @@ export default class FieldSet extends React.Component {
     const { type, isChecked, value, onChange, ...props } = this.props
     return (
       <fieldset className={b}>
-        {normalizeChoices(props).map(([choice, choiceLabel]) => (
+        {normalizeChoices(props).map(([choiceLabel, choice]) => (
           <label
             key={choice}
             className={b.e('label').m({ on: choice === value })}

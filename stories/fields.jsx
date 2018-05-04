@@ -4,22 +4,22 @@ import React from 'react'
 import { Field } from '../src'
 
 const choices = {
-  '#ffffff': 'White',
-  '#c0c0c0': 'Silver',
-  '#808080': 'Gray',
-  '#000000': 'Black',
-  '#ff0000': 'Red',
-  '#800000': 'Maroon',
-  '#ffff00': 'Yellow',
-  '#808000': 'Olive',
-  '#00ff00': 'Lime',
-  '#008000': 'Green',
-  '#00ffff': 'Aqua',
-  '#008080': 'Teal',
-  '#0000ff': 'Blue',
-  '#000080': 'Navy',
-  '#ff00ff': 'Fuchsia',
-  '#800080': 'Purple',
+  White: '#ffffff',
+  Silver: '#c0c0c0',
+  Gray: '#808080',
+  Black: 0,
+  Red: '#ff0000',
+  Maroon: '#800000',
+  Yellow: '#ffff00',
+  Olive: '#808000',
+  Lime: '#00ff00',
+  Green: '#008000',
+  Aqua: '#00ffff',
+  Teal: '#008080',
+  Blue: '#0000ff',
+  Navy: '#000080',
+  Fuchsia: '#ff00ff',
+  Purple: '#800080',
 }
 
 const pascalCaseToKebabCase = word =>

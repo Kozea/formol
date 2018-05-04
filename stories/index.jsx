@@ -51,11 +51,11 @@ storiesOf('Native and Contrib fields', module)
         <Field
           name="select"
           type="select"
-          choices={[
-            ['key1', 'Choice 1'],
-            ['key2', 'Choice 2'],
-            ['key3', 'Choice 3'],
-          ]}
+          choices={{
+            'Choice 1': 'key1',
+            'Choice 2': 'key2',
+            'Choice 3': 'key3',
+          }}
         >
           Select
         </Field>
@@ -95,11 +95,11 @@ storiesOf('Native and Contrib fields', module)
         <Field
           name="select-menu"
           type="select-menu"
-          choices={[
-            ['key1', 'Choice 1'],
-            ['key2', 'Choice 2'],
-            ['key3', 'Choice 3'],
-          ]}
+          choices={{
+            'Choice 1': 'key1',
+            'Choice 2': 'key2',
+            'Choice 3': 'key3',
+          }}
         >
           Select Menu
         </Field>
@@ -107,11 +107,11 @@ storiesOf('Native and Contrib fields', module)
           name="select-menu-multiple"
           type="select-menu"
           multiple
-          choices={[
-            ['key1', 'Choice 1'],
-            ['key2', 'Choice 2'],
-            ['key3', 'Choice 3'],
-          ]}
+          choices={{
+            'Choice 1': 'key1',
+            'Choice 2': 'key2',
+            'Choice 3': 'key3',
+          }}
         >
           Multiple Select Menu
         </Field>

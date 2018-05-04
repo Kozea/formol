@@ -5590,7 +5590,7 @@ exports[`Storyshots Field Test/Fields Select field 1`] = `
           Gray
         </option>
         <option
-          value="#000000"
+          value={0}
         >
           Black
         </option>
@@ -12575,7 +12575,7 @@ exports[`Storyshots Field Test/Fields with initial value Select field 1`] = `
           Gray
         </option>
         <option
-          value="#000000"
+          value={0}
         >
           Black
         </option>
@@ -17592,21 +17592,18 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           value=""
         />
         <option
-          value="0"
+          value="key1"
         >
-          key1
           Choice 1
         </option>
         <option
-          value="1"
+          value="key2"
         >
-          key2
           Choice 2
         </option>
         <option
-          value="2"
+          value="key3"
         >
-          key3
           Choice 3
         </option>
       </select>

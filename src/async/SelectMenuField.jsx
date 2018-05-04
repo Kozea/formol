@@ -20,7 +20,7 @@ export default class SelectMenuField extends React.Component {
 
   render(b) {
     const {
-      i18n,
+      i18n, // eslint-disable-line no-unused-vars
       className,
       multiple,
       readOnly,
@@ -33,9 +33,9 @@ export default class SelectMenuField extends React.Component {
     const maybeStringify = v =>
       nonStringValue ? JSON.stringify(choiceGetter(v)[0]) : v
     const { choices } = this.props
-    const options = Object.entries(choices).map(([key, val]) => ({
-      value: maybeStringify(key),
-      label: val,
+    const options = Object.entries(choices).map(([choiceLabel, choice]) => ({
+      value: maybeStringify(choice),
+      label: choiceLabel,
     }))
     const strValue = multiple
       ? (value || []).map(maybeStringify)

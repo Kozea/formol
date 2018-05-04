@@ -14,9 +14,9 @@ export default class SelectField extends React.Component {
     return (
       <select onChange={e => onChange(e.target.value)} {...cleanProps(props)}>
         {choices.every(([k]) => k) && <option value="" />}
-        {choices.map(([key, val]) => (
+        {choices.map(([label, key]) => (
           <option key={key} value={key}>
-            {val}
+            {label}
           </option>
         ))}
       </select>
