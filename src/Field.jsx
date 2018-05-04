@@ -85,10 +85,10 @@ export default class Field extends React.Component {
     const itemValue = get(item, name)
     const transientValue = get(transientItem, name)
     const modified = itemValue !== transientValue
-
-    const Label = type && type.match(/files?/) ? 'div' : 'label'
-    const TypeField = Fields[type] || InputField
     const error = errors[name]
+
+    const TypeField = Fields[type] || InputField
+    const Label = TypeField.formolFieldLabelElement || 'label'
     return (
       <fieldset
         className={b.mix(className).m({

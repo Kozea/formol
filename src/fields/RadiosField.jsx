@@ -5,6 +5,8 @@ import FieldSet from '../utils/FieldSet'
 
 @block
 export default class RadiosField extends React.Component {
+  static formolFieldLabelElement = 'div'
+
   render(b) {
     const { onChange, readOnly, ...props } = this.props
     if (readOnly) {

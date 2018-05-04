@@ -564,7 +564,7 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -1805,7 +1805,7 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
       >
         Checkboxes
       </span>
-    </label>
+    </div>
   </fieldset>
   <input
     style={
@@ -3982,7 +3982,7 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -5223,7 +5223,7 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
       >
         Radios
       </span>
-    </label>
+    </div>
   </fieldset>
   <input
     style={
@@ -7550,7 +7550,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -8791,7 +8791,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
       >
         Checkboxes
       </span>
-    </label>
+    </div>
   </fieldset>
   <input
     style={
@@ -10968,7 +10968,7 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -12209,7 +12209,7 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
       >
         Radios
       </span>
-    </label>
+    </div>
   </fieldset>
   <input
     style={
