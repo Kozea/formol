@@ -28,7 +28,7 @@ export default class Formol extends React.Component {
 
   constructor(props) {
     super(props)
-    const { item, state, readOnly } = props
+    const { item, readOnly } = props
     this.ref = {}
     this.state = {
       disablePrompt: false,
@@ -38,8 +38,7 @@ export default class Formol extends React.Component {
         refs: this.ref,
         errors: {},
         focused: null,
-        state,
-        readOnly, // TODO: Change that
+        readOnly,
         handleFocus: this.handleFocus.bind(this),
         handleBlur: this.handleBlur.bind(this),
         handleChange: this.handleChange.bind(this),
@@ -246,7 +245,6 @@ export default class Formol extends React.Component {
       Button,
     } = this.props
     const { disablePrompt, context } = this.state
-    // We add transientItem keys to item in comparison and then null all undefined
     const modified = this.isModified()
     const submitDisabled = !forceAlwaysSubmit && !modified
     const Btn = Button || 'button'

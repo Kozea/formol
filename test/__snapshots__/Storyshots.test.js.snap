@@ -77,7 +77,6 @@ exports[`Storyshots Field Test/Fields Area field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "area",
             },
@@ -411,7 +410,6 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "checkbox",
             },
@@ -432,7 +430,6 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Checkbox"
-        readOnly={false}
         required={false}
         type="checkbox"
       />
@@ -633,7 +630,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -654,7 +650,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -709,7 +704,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -730,7 +724,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -785,7 +778,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -806,7 +798,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -861,7 +852,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -882,7 +872,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -937,7 +926,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -958,7 +946,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1013,7 +1000,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1034,7 +1020,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1089,7 +1074,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1110,7 +1094,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1165,7 +1148,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1186,7 +1168,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1241,7 +1222,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1262,7 +1242,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1317,7 +1296,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1338,7 +1316,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1393,7 +1370,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1414,7 +1390,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1469,7 +1444,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1490,7 +1464,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1545,7 +1518,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1566,7 +1538,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1621,7 +1592,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1642,7 +1612,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1697,7 +1666,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1718,7 +1686,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1773,7 +1740,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "checkboxes",
                 },
@@ -1794,7 +1760,6 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -1978,7 +1943,6 @@ exports[`Storyshots Field Test/Fields Color field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "color",
             },
@@ -2162,7 +2126,6 @@ exports[`Storyshots Field Test/Fields Date field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "date",
             },
@@ -2346,7 +2309,6 @@ exports[`Storyshots Field Test/Fields DatetimeLocal field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "datetime-local",
             },
@@ -2530,7 +2492,6 @@ exports[`Storyshots Field Test/Fields Email field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "email",
             },
@@ -2687,7 +2648,7 @@ exports[`Storyshots Field Test/Fields File field 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -2726,7 +2687,7 @@ exports[`Storyshots Field Test/Fields File field 1`] = `
       >
         File
       </span>
-    </span>
+    </div>
   </fieldset>
   <input
     style={
@@ -2837,7 +2798,7 @@ exports[`Storyshots Field Test/Fields Files field 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -2876,7 +2837,7 @@ exports[`Storyshots Field Test/Fields Files field 1`] = `
       >
         Files
       </span>
-    </span>
+    </div>
   </fieldset>
   <input
     style={
@@ -3164,7 +3125,6 @@ exports[`Storyshots Field Test/Fields Month field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "month",
             },
@@ -3348,7 +3308,6 @@ exports[`Storyshots Field Test/Fields Number field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -3535,7 +3494,6 @@ exports[`Storyshots Field Test/Fields Password field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "password",
             },
@@ -3870,7 +3828,6 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "radio",
             },
@@ -3891,7 +3848,6 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Radio"
-        readOnly={false}
         required={false}
         type="radio"
       />
@@ -4092,7 +4048,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4113,7 +4068,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4168,7 +4122,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4189,7 +4142,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4244,7 +4196,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4265,7 +4216,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4320,7 +4270,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4341,7 +4290,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4396,7 +4344,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4417,7 +4364,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4472,7 +4418,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4493,7 +4438,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4548,7 +4492,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4569,7 +4512,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4624,7 +4566,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4645,7 +4586,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4700,7 +4640,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4721,7 +4660,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4776,7 +4714,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4797,7 +4734,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4852,7 +4788,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4873,7 +4808,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -4928,7 +4862,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -4949,7 +4882,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -5004,7 +4936,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -5025,7 +4956,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -5080,7 +5010,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -5101,7 +5030,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -5156,7 +5084,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -5177,7 +5104,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -5232,7 +5158,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -5253,7 +5178,6 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -5437,7 +5361,6 @@ exports[`Storyshots Field Test/Fields Range field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "range",
             },
@@ -5624,7 +5547,6 @@ exports[`Storyshots Field Test/Fields Select field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "select",
             },
@@ -6238,7 +6160,6 @@ exports[`Storyshots Field Test/Fields Switch field 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="Switch"
-          readOnly={false}
           required={false}
           type="checkbox"
         />
@@ -6409,7 +6330,6 @@ exports[`Storyshots Field Test/Fields Tel field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "tel",
             },
@@ -6593,7 +6513,6 @@ exports[`Storyshots Field Test/Fields Text field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "text",
             },
@@ -6777,7 +6696,6 @@ exports[`Storyshots Field Test/Fields Time field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "time",
             },
@@ -6961,7 +6879,6 @@ exports[`Storyshots Field Test/Fields Week field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "week",
             },
@@ -7145,7 +7062,6 @@ exports[`Storyshots Field Test/Fields with initial value Area field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "area",
             },
@@ -7480,7 +7396,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "checkbox",
             },
@@ -7501,7 +7416,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Checkbox"
-        readOnly={false}
         required={false}
         type="checkbox"
       />
@@ -7702,7 +7616,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -7723,7 +7636,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -7778,7 +7690,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -7799,7 +7710,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -7854,7 +7764,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -7875,7 +7784,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -7930,7 +7838,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -7951,7 +7858,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8006,7 +7912,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8027,7 +7932,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8082,7 +7986,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8103,7 +8006,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8158,7 +8060,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8179,7 +8080,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8234,7 +8134,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8255,7 +8154,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8310,7 +8208,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8331,7 +8228,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8386,7 +8282,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8407,7 +8302,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8462,7 +8356,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8483,7 +8376,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8538,7 +8430,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8559,7 +8450,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8614,7 +8504,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8635,7 +8524,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8690,7 +8578,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8711,7 +8598,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8766,7 +8652,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8787,7 +8672,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -8842,7 +8726,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": undefined,
                   "modified": true,
                   "type": "checkboxes",
                 },
@@ -8863,7 +8746,6 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Checkboxes"
-            readOnly={false}
             required={false}
             type="checkbox"
           />
@@ -9047,7 +8929,6 @@ exports[`Storyshots Field Test/Fields with initial value Color field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "color",
             },
@@ -9231,7 +9112,6 @@ exports[`Storyshots Field Test/Fields with initial value Date field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "date",
             },
@@ -9415,7 +9295,6 @@ exports[`Storyshots Field Test/Fields with initial value DatetimeLocal field 1`]
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "datetime-local",
             },
@@ -9599,7 +9478,6 @@ exports[`Storyshots Field Test/Fields with initial value Email field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "email",
             },
@@ -9756,7 +9634,7 @@ exports[`Storyshots Field Test/Fields with initial value File field 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -9795,7 +9673,7 @@ exports[`Storyshots Field Test/Fields with initial value File field 1`] = `
       >
         File
       </span>
-    </span>
+    </div>
   </fieldset>
   <input
     style={
@@ -9906,7 +9784,7 @@ exports[`Storyshots Field Test/Fields with initial value Files field 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -9945,7 +9823,7 @@ exports[`Storyshots Field Test/Fields with initial value Files field 1`] = `
       >
         Files
       </span>
-    </span>
+    </div>
   </fieldset>
   <input
     style={
@@ -10233,7 +10111,6 @@ exports[`Storyshots Field Test/Fields with initial value Month field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "month",
             },
@@ -10417,7 +10294,6 @@ exports[`Storyshots Field Test/Fields with initial value Number field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -10604,7 +10480,6 @@ exports[`Storyshots Field Test/Fields with initial value Password field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "password",
             },
@@ -10939,7 +10814,6 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "radio",
             },
@@ -10960,7 +10834,6 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Radio"
-        readOnly={false}
         required={false}
         type="radio"
       />
@@ -11161,7 +11034,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11182,7 +11054,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11237,7 +11108,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11258,7 +11128,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11313,7 +11182,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11334,7 +11202,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11389,7 +11256,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11410,7 +11276,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11465,7 +11330,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11486,7 +11350,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11541,7 +11404,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11562,7 +11424,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11617,7 +11478,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11638,7 +11498,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11693,7 +11552,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11714,7 +11572,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11769,7 +11626,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11790,7 +11646,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11845,7 +11700,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11866,7 +11720,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11921,7 +11774,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -11942,7 +11794,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -11997,7 +11848,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -12018,7 +11868,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -12073,7 +11922,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -12094,7 +11942,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -12149,7 +11996,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -12170,7 +12016,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -12225,7 +12070,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -12246,7 +12090,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -12301,7 +12144,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
                 "mixed": Array [],
                 "modifier": Object {
                   "focus": false,
-                  "loading": false,
                   "modified": false,
                   "type": "radios",
                 },
@@ -12322,7 +12164,6 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="Radios"
-            readOnly={false}
             required={false}
             type="radio"
           />
@@ -12506,7 +12347,6 @@ exports[`Storyshots Field Test/Fields with initial value Range field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "range",
             },
@@ -12693,7 +12533,6 @@ exports[`Storyshots Field Test/Fields with initial value Select field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "select",
             },
@@ -13307,7 +13146,6 @@ exports[`Storyshots Field Test/Fields with initial value Switch field 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="Switch"
-          readOnly={false}
           required={false}
           type="checkbox"
         />
@@ -13478,7 +13316,6 @@ exports[`Storyshots Field Test/Fields with initial value Tel field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "tel",
             },
@@ -13662,7 +13499,6 @@ exports[`Storyshots Field Test/Fields with initial value Text field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "text",
             },
@@ -13846,7 +13682,6 @@ exports[`Storyshots Field Test/Fields with initial value Time field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "time",
             },
@@ -14030,7 +13865,6 @@ exports[`Storyshots Field Test/Fields with initial value Week field 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "week",
             },
@@ -14214,7 +14048,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -14310,7 +14143,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -14406,7 +14238,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "email",
             },
@@ -14476,7 +14307,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -14515,7 +14346,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       >
         Avatar
       </span>
-    </span>
+    </div>
   </fieldset>
   <fieldset
     className={
@@ -14568,7 +14399,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "radio",
             },
@@ -14587,7 +14417,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
         required={true}
         type="radio"
         values={
@@ -14669,7 +14498,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -14766,7 +14594,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -14864,7 +14691,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "tel",
             },
@@ -14959,7 +14785,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -15054,7 +14879,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -15149,7 +14973,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -15330,7 +15153,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -15426,7 +15248,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -15522,7 +15343,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "email",
             },
@@ -15592,7 +15412,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -15631,7 +15451,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       >
         Avatar
       </span>
-    </span>
+    </div>
   </fieldset>
   <fieldset
     className={
@@ -15684,7 +15504,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "radio",
             },
@@ -15703,7 +15522,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
         required={true}
         type="radio"
         values={
@@ -15830,7 +15648,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           onChange={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          readOnly={undefined}
           transientItem={
             Object {
               "address": "12 Norfolk St",
@@ -15938,7 +15755,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -16035,7 +15851,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -16133,7 +15948,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "tel",
             },
@@ -16228,7 +16042,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -16323,7 +16136,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -16418,7 +16230,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -16640,7 +16451,6 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           onChange={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          readOnly={undefined}
           type="checkbox"
         />
         <label
@@ -16958,7 +16768,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
       }
     }
   >
-    <span
+    <div
       className={
         Block {
           "block": "Field",
@@ -16997,7 +16807,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
       >
         File
       </span>
-    </span>
+    </div>
   </fieldset>
   <fieldset
     className={
@@ -17196,7 +17006,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": undefined,
             },
@@ -17291,7 +17100,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "area",
             },
@@ -17385,7 +17193,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "email",
             },
@@ -17480,7 +17287,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "number",
             },
@@ -17575,7 +17381,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "password",
             },
@@ -17670,7 +17475,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "tel",
             },
@@ -17765,7 +17569,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "select",
             },
@@ -17883,7 +17686,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "checkbox",
             },
@@ -17902,7 +17704,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
         type="checkbox"
         values={
           Object {
@@ -17984,7 +17785,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "radio",
             },
@@ -18003,7 +17803,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
         type="radio"
         values={
           Object {
@@ -18085,7 +17884,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "mixed": Array [],
             "modifier": Object {
               "focus": false,
-              "loading": false,
               "modified": false,
               "type": "checkbox",
             },
@@ -18104,7 +17902,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
         type="checkbox"
       />
       <span

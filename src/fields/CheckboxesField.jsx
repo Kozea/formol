@@ -8,7 +8,10 @@ export default class CheckboxesField extends React.Component {
   static defaultProps = { value: [] }
 
   render(b) {
-    const { onChange, ...props } = this.props
+    const { onChange, readOnly, ...props } = this.props
+    if (readOnly) {
+      props.disabled = true
+    }
     return (
       <FieldSet
         className={b}

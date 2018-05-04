@@ -39,6 +39,11 @@ const Fields = {
 
 @block
 export default class Field extends React.Component {
+  static defaultProps = {
+    formatter: v => v,
+    valueFormatter: v => v,
+  }
+
   componentWillUnmount() {
     // This is mandatory for removing values when using Conditional
     const {
@@ -62,12 +67,11 @@ export default class Field extends React.Component {
       ...props
     } = this.props
     const {
-      transientItem,
       item,
+      transientItem,
       refs,
       errors,
       focused,
-      state,
       readOnly,
       handleFocus,
       handleBlur,
@@ -77,12 +81,12 @@ export default class Field extends React.Component {
     if (!transientItem) {
       throw new Error('Field must be used inside Form')
     }
-    const modified = get(item, name) !== get(transientItem, name)
-    // if (['checkbox', 'radio', 'switch'].includes(type)) {
-    //   commonProps.disabled = commonProps.readOnly
-    // }
 
-    const Label = type && type.match(/files?/) ? 'span' : 'label'
+    const itemValue = get(item, name)
+    const transientValue = get(transientItem, name)
+    const modified = itemValue !== transientValue
+
+    const Label = type && type.match(/files?/) ? 'div' : 'label'
     const TypeField = Fields[type] || InputField
     const error = errors[name]
     return (
@@ -98,11 +102,7 @@ export default class Field extends React.Component {
         <Label className={b.e('label')}>
           <TypeField
             name={name}
-            value={
-              formatter
-                ? formatter(get(transientItem, name))
-                : get(transientItem, name)
-            }
+            value={formatter(transientValue)}
             type={type}
             ref={ref => (refs[name] = ref)}
             readOnly={readOnly}
@@ -110,12 +110,11 @@ export default class Field extends React.Component {
               type,
               focus: focused === name,
               modified,
-              loading: modified && (state && state.loading),
             })}
             onFocus={e => handleFocus(name, e)}
             onBlur={e => handleBlur(name, e)}
             onChange={v => {
-              v = valueFormatter ? valueFormatter(v) : v
+              v = valueFormatter(v)
               customValidator &&
                 refs[name].setCustomValidity(customValidator(v, transientItem))
               return handleChange(name, v)

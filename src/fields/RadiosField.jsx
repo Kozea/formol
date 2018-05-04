@@ -6,7 +6,10 @@ import FieldSet from '../utils/FieldSet'
 @block
 export default class RadiosField extends React.Component {
   render(b) {
-    const { onChange, ...props } = this.props
+    const { onChange, readOnly, ...props } = this.props
+    if (readOnly) {
+      props.disabled = true
+    }
     return (
       <FieldSet
         className={b}
