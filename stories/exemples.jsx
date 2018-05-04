@@ -1,20 +1,20 @@
 import React from 'react'
 
-import Formol from '../src'
+import Formol, { Conditional, Field } from '../src'
 
 export const PersonForm = props => (
   <Formol {...props}>
     <h1>Create your profile</h1>
-    <Formol.Field autoFocus required name="firstname">
+    <Field autoFocus required name="firstname">
       First name
-    </Formol.Field>
-    <Formol.Field required name="name">
+    </Field>
+    <Field required name="name">
       Name
-    </Formol.Field>
-    <Formol.Field required type="email" name="email">
+    </Field>
+    <Field required type="email" name="email">
       E-mail
-    </Formol.Field>
-    <Formol.Field
+    </Field>
+    <Field
       type="file"
       name="avatar"
       accept="image/*"
@@ -22,8 +22,8 @@ export const PersonForm = props => (
       rejectedMessage="Your avatar is invalid"
     >
       Avatar
-    </Formol.Field>
-    <Formol.Field
+    </Field>
+    <Field
       required
       type="radio"
       name="sex"
@@ -33,24 +33,24 @@ export const PersonForm = props => (
       }}
     >
       Gender
-    </Formol.Field>
-    <Formol.Conditional show={item => item && item.sex}>
-      <Formol.Field name="pregnant" type="switch">
+    </Field>
+    <Conditional show={item => item && item.sex}>
+      <Field name="pregnant" type="switch">
         Pregnant
-      </Formol.Field>
-    </Formol.Conditional>
-    <Formol.Field type="number" name="weight" min="0" step="1">
+      </Field>
+    </Conditional>
+    <Field type="number" name="weight" min="0" step="1">
       Weight
-    </Formol.Field>
-    <Formol.Field type="number" name="height" min="0" step="0.01" max="3">
+    </Field>
+    <Field type="number" name="height" min="0" step="0.01" max="3">
       Height
-    </Formol.Field>
-    <Formol.Field type="tel" name="phone">
+    </Field>
+    <Field type="tel" name="phone">
       Phone Number
-    </Formol.Field>
-    <Formol.Field name="address">Adress</Formol.Field>
-    <Formol.Field name="zip">Zip code</Formol.Field>
-    <Formol.Field name="city">City</Formol.Field>
+    </Field>
+    <Field name="address">Adress</Field>
+    <Field name="zip">Zip code</Field>
+    <Field name="city">City</Field>
   </Formol>
 )
 

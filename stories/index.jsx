@@ -3,7 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Formol from '../src'
+import Formol, { Field } from '../src'
 import { PersonForm, personExemple } from './exemples'
 import { knobs, testFieldValue, typeFields } from './fields'
 
@@ -28,23 +28,23 @@ storiesOf('Native and Contrib fields', module)
     'Native fields',
     withStateForm(props => (
       <Formol {...props}>
-        <Formol.Field name="text">Text</Formol.Field>
-        <Formol.Field type="area" name="area">
+        <Field name="text">Text</Field>
+        <Field type="area" name="area">
           Area
-        </Formol.Field>
-        <Formol.Field type="email" name="email">
+        </Field>
+        <Field type="email" name="email">
           E-mail
-        </Formol.Field>
-        <Formol.Field type="number" name="number">
+        </Field>
+        <Field type="number" name="number">
           Number
-        </Formol.Field>
-        <Formol.Field type="password" name="password">
+        </Field>
+        <Field type="password" name="password">
           Password
-        </Formol.Field>
-        <Formol.Field type="tel" name="tel">
+        </Field>
+        <Field type="tel" name="tel">
           Phone number
-        </Formol.Field>
-        <Formol.Field
+        </Field>
+        <Field
           name="select"
           type="select"
           choices={[
@@ -54,8 +54,8 @@ storiesOf('Native and Contrib fields', module)
           ]}
         >
           Select
-        </Formol.Field>
-        <Formol.Field
+        </Field>
+        <Field
           type="checkbox"
           name="checkbox"
           values={{
@@ -64,8 +64,8 @@ storiesOf('Native and Contrib fields', module)
           }}
         >
           Checkbox
-        </Formol.Field>
-        <Formol.Field
+        </Field>
+        <Field
           type="radio"
           name="radio"
           values={{
@@ -74,10 +74,10 @@ storiesOf('Native and Contrib fields', module)
           }}
         >
           Radio
-        </Formol.Field>
-        <Formol.Field type="checkbox" name="simple-checkbox">
+        </Field>
+        <Field type="checkbox" name="simple-checkbox">
           Checkbox
-        </Formol.Field>
+        </Field>
       </Formol>
     ))
   )
@@ -85,10 +85,10 @@ storiesOf('Native and Contrib fields', module)
     'From libraries',
     withStateForm(props => (
       <Formol {...props}>
-        <Formol.Field type="switch" name="switch">
+        <Field type="switch" name="switch">
           Switch
-        </Formol.Field>
-        <Formol.Field
+        </Field>
+        <Field
           name="select-menu"
           type="select-menu"
           choices={[
@@ -98,8 +98,8 @@ storiesOf('Native and Contrib fields', module)
           ]}
         >
           Select Menu
-        </Formol.Field>
-        <Formol.Field
+        </Field>
+        <Field
           name="select-menu-multiple"
           type="select-menu"
           multiple
@@ -110,24 +110,24 @@ storiesOf('Native and Contrib fields', module)
           ]}
         >
           Multiple Select Menu
-        </Formol.Field>
-        <Formol.Field type="calendar" name="calendar">
+        </Field>
+        <Field type="calendar" name="calendar">
           Calendar
-        </Formol.Field>
-        <Formol.Field type="html" name="html">
+        </Field>
+        <Field type="html" name="html">
           HTML
-        </Formol.Field>
-        <Formol.Field
+        </Field>
+        <Field
           type="file"
           name="file"
           accept="image/*"
           placeholder="Drop an image"
         >
           File
-        </Formol.Field>
-        <Formol.Field type="password-strengh" name="password-strengh">
+        </Field>
+        <Field type="password-strengh" name="password-strengh">
           Password strengh
-        </Formol.Field>
+        </Field>
       </Formol>
     ))
   )

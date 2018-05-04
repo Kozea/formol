@@ -26,7 +26,7 @@ exports[`Storyshots Field Test/Fields Area field 1`] = `
   <h1>
     Area
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -122,7 +122,7 @@ exports[`Storyshots Field Test/Fields Area field 1`] = `
         Area
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -208,7 +208,7 @@ exports[`Storyshots Field Test/Fields Calendar field 1`] = `
   <h1>
     Calendar
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -272,7 +272,7 @@ exports[`Storyshots Field Test/Fields Calendar field 1`] = `
         Calendar
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -358,7 +358,7 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
   <h1>
     Checkbox
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -454,7 +454,7 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
         Checkbox
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -540,7 +540,7 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
   <h1>
     Checkboxes
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -1806,7 +1806,7 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
         Checkboxes
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -1892,7 +1892,7 @@ exports[`Storyshots Field Test/Fields Color field 1`] = `
   <h1>
     Color
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -1989,7 +1989,7 @@ exports[`Storyshots Field Test/Fields Color field 1`] = `
         Color
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -2075,7 +2075,7 @@ exports[`Storyshots Field Test/Fields Date field 1`] = `
   <h1>
     Date
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -2172,7 +2172,7 @@ exports[`Storyshots Field Test/Fields Date field 1`] = `
         Date
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -2258,7 +2258,7 @@ exports[`Storyshots Field Test/Fields DatetimeLocal field 1`] = `
   <h1>
     DatetimeLocal
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -2355,7 +2355,7 @@ exports[`Storyshots Field Test/Fields DatetimeLocal field 1`] = `
         DatetimeLocal
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -2441,7 +2441,7 @@ exports[`Storyshots Field Test/Fields Email field 1`] = `
   <h1>
     Email
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -2538,7 +2538,7 @@ exports[`Storyshots Field Test/Fields Email field 1`] = `
         Email
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -2624,7 +2624,7 @@ exports[`Storyshots Field Test/Fields File field 1`] = `
   <h1>
     File
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -2688,7 +2688,7 @@ exports[`Storyshots Field Test/Fields File field 1`] = `
         File
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -2774,7 +2774,7 @@ exports[`Storyshots Field Test/Fields Files field 1`] = `
   <h1>
     Files
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -2838,7 +2838,7 @@ exports[`Storyshots Field Test/Fields Files field 1`] = `
         Files
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -2924,7 +2924,7 @@ exports[`Storyshots Field Test/Fields Html field 1`] = `
   <h1>
     Html
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -2988,7 +2988,7 @@ exports[`Storyshots Field Test/Fields Html field 1`] = `
         Html
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -3074,7 +3074,7 @@ exports[`Storyshots Field Test/Fields Month field 1`] = `
   <h1>
     Month
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -3171,7 +3171,7 @@ exports[`Storyshots Field Test/Fields Month field 1`] = `
         Month
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -3257,7 +3257,7 @@ exports[`Storyshots Field Test/Fields Number field 1`] = `
   <h1>
     Number
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -3357,7 +3357,7 @@ exports[`Storyshots Field Test/Fields Number field 1`] = `
         Number
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -3443,7 +3443,7 @@ exports[`Storyshots Field Test/Fields Password field 1`] = `
   <h1>
     Password
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -3540,7 +3540,7 @@ exports[`Storyshots Field Test/Fields Password field 1`] = `
         Password
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -3626,7 +3626,7 @@ exports[`Storyshots Field Test/Fields PasswordStrengh field 1`] = `
   <h1>
     PasswordStrengh
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -3690,7 +3690,7 @@ exports[`Storyshots Field Test/Fields PasswordStrengh field 1`] = `
         PasswordStrengh
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -3776,7 +3776,7 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
   <h1>
     Radio
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -3872,7 +3872,7 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
         Radio
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -3958,7 +3958,7 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
   <h1>
     Radios
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -5224,7 +5224,7 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
         Radios
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -5310,7 +5310,7 @@ exports[`Storyshots Field Test/Fields Range field 1`] = `
   <h1>
     Range
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -5410,7 +5410,7 @@ exports[`Storyshots Field Test/Fields Range field 1`] = `
         Range
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -5496,7 +5496,7 @@ exports[`Storyshots Field Test/Fields Select field 1`] = `
   <h1>
     Select
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -5677,7 +5677,7 @@ exports[`Storyshots Field Test/Fields Select field 1`] = `
         Select
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -5763,7 +5763,7 @@ exports[`Storyshots Field Test/Fields SelectMenu field 1`] = `
   <h1>
     SelectMenu
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -5827,7 +5827,7 @@ exports[`Storyshots Field Test/Fields SelectMenu field 1`] = `
         SelectMenu
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -5913,7 +5913,7 @@ exports[`Storyshots Field Test/Fields SelectMenuMultiple field 1`] = `
   <h1>
     SelectMenuMultiple
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -5977,7 +5977,7 @@ exports[`Storyshots Field Test/Fields SelectMenuMultiple field 1`] = `
         SelectMenu
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -6063,7 +6063,7 @@ exports[`Storyshots Field Test/Fields Switch field 1`] = `
   <h1>
     Switch
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -6193,7 +6193,7 @@ exports[`Storyshots Field Test/Fields Switch field 1`] = `
         Switch
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -6279,7 +6279,7 @@ exports[`Storyshots Field Test/Fields Tel field 1`] = `
   <h1>
     Tel
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -6376,7 +6376,7 @@ exports[`Storyshots Field Test/Fields Tel field 1`] = `
         Tel
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -6462,7 +6462,7 @@ exports[`Storyshots Field Test/Fields Text field 1`] = `
   <h1>
     Text
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -6559,7 +6559,7 @@ exports[`Storyshots Field Test/Fields Text field 1`] = `
         Text
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -6645,7 +6645,7 @@ exports[`Storyshots Field Test/Fields Time field 1`] = `
   <h1>
     Time
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -6742,7 +6742,7 @@ exports[`Storyshots Field Test/Fields Time field 1`] = `
         Time
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -6828,7 +6828,7 @@ exports[`Storyshots Field Test/Fields Week field 1`] = `
   <h1>
     Week
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -6925,7 +6925,7 @@ exports[`Storyshots Field Test/Fields Week field 1`] = `
         Week
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -7011,7 +7011,7 @@ exports[`Storyshots Field Test/Fields with initial value Area field 1`] = `
   <h1>
     Area
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -7108,7 +7108,7 @@ Area"
         Area
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -7194,7 +7194,7 @@ exports[`Storyshots Field Test/Fields with initial value Calendar field 1`] = `
   <h1>
     Calendar
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -7258,7 +7258,7 @@ exports[`Storyshots Field Test/Fields with initial value Calendar field 1`] = `
         Calendar
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -7344,7 +7344,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
   <h1>
     Checkbox
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -7440,7 +7440,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
         Checkbox
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -7526,7 +7526,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
   <h1>
     Checkboxes
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -8792,7 +8792,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
         Checkboxes
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -8878,7 +8878,7 @@ exports[`Storyshots Field Test/Fields with initial value Color field 1`] = `
   <h1>
     Color
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -8975,7 +8975,7 @@ exports[`Storyshots Field Test/Fields with initial value Color field 1`] = `
         Color
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -9061,7 +9061,7 @@ exports[`Storyshots Field Test/Fields with initial value Date field 1`] = `
   <h1>
     Date
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -9158,7 +9158,7 @@ exports[`Storyshots Field Test/Fields with initial value Date field 1`] = `
         Date
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -9244,7 +9244,7 @@ exports[`Storyshots Field Test/Fields with initial value DatetimeLocal field 1`]
   <h1>
     DatetimeLocal
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -9341,7 +9341,7 @@ exports[`Storyshots Field Test/Fields with initial value DatetimeLocal field 1`]
         DatetimeLocal
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -9427,7 +9427,7 @@ exports[`Storyshots Field Test/Fields with initial value Email field 1`] = `
   <h1>
     Email
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -9524,7 +9524,7 @@ exports[`Storyshots Field Test/Fields with initial value Email field 1`] = `
         Email
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -9610,7 +9610,7 @@ exports[`Storyshots Field Test/Fields with initial value File field 1`] = `
   <h1>
     File
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -9674,7 +9674,7 @@ exports[`Storyshots Field Test/Fields with initial value File field 1`] = `
         File
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -9760,7 +9760,7 @@ exports[`Storyshots Field Test/Fields with initial value Files field 1`] = `
   <h1>
     Files
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -9824,7 +9824,7 @@ exports[`Storyshots Field Test/Fields with initial value Files field 1`] = `
         Files
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -9910,7 +9910,7 @@ exports[`Storyshots Field Test/Fields with initial value Html field 1`] = `
   <h1>
     Html
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -9974,7 +9974,7 @@ exports[`Storyshots Field Test/Fields with initial value Html field 1`] = `
         Html
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -10060,7 +10060,7 @@ exports[`Storyshots Field Test/Fields with initial value Month field 1`] = `
   <h1>
     Month
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -10157,7 +10157,7 @@ exports[`Storyshots Field Test/Fields with initial value Month field 1`] = `
         Month
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -10243,7 +10243,7 @@ exports[`Storyshots Field Test/Fields with initial value Number field 1`] = `
   <h1>
     Number
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -10343,7 +10343,7 @@ exports[`Storyshots Field Test/Fields with initial value Number field 1`] = `
         Number
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -10429,7 +10429,7 @@ exports[`Storyshots Field Test/Fields with initial value Password field 1`] = `
   <h1>
     Password
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -10526,7 +10526,7 @@ exports[`Storyshots Field Test/Fields with initial value Password field 1`] = `
         Password
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -10612,7 +10612,7 @@ exports[`Storyshots Field Test/Fields with initial value PasswordStrengh field 1
   <h1>
     PasswordStrengh
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -10676,7 +10676,7 @@ exports[`Storyshots Field Test/Fields with initial value PasswordStrengh field 1
         PasswordStrengh
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -10762,7 +10762,7 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
   <h1>
     Radio
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -10858,7 +10858,7 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
         Radio
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -10944,7 +10944,7 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
   <h1>
     Radios
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -12210,7 +12210,7 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
         Radios
       </span>
     </div>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -12296,7 +12296,7 @@ exports[`Storyshots Field Test/Fields with initial value Range field 1`] = `
   <h1>
     Range
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -12396,7 +12396,7 @@ exports[`Storyshots Field Test/Fields with initial value Range field 1`] = `
         Range
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -12482,7 +12482,7 @@ exports[`Storyshots Field Test/Fields with initial value Select field 1`] = `
   <h1>
     Select
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -12663,7 +12663,7 @@ exports[`Storyshots Field Test/Fields with initial value Select field 1`] = `
         Select
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -12749,7 +12749,7 @@ exports[`Storyshots Field Test/Fields with initial value SelectMenu field 1`] = 
   <h1>
     SelectMenu
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -12813,7 +12813,7 @@ exports[`Storyshots Field Test/Fields with initial value SelectMenu field 1`] = 
         SelectMenu
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -12899,7 +12899,7 @@ exports[`Storyshots Field Test/Fields with initial value SelectMenuMultiple fiel
   <h1>
     SelectMenuMultiple
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -12963,7 +12963,7 @@ exports[`Storyshots Field Test/Fields with initial value SelectMenuMultiple fiel
         SelectMenu
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -13049,7 +13049,7 @@ exports[`Storyshots Field Test/Fields with initial value Switch field 1`] = `
   <h1>
     Switch
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -13179,7 +13179,7 @@ exports[`Storyshots Field Test/Fields with initial value Switch field 1`] = `
         Switch
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -13265,7 +13265,7 @@ exports[`Storyshots Field Test/Fields with initial value Tel field 1`] = `
   <h1>
     Tel
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -13362,7 +13362,7 @@ exports[`Storyshots Field Test/Fields with initial value Tel field 1`] = `
         Tel
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -13448,7 +13448,7 @@ exports[`Storyshots Field Test/Fields with initial value Text field 1`] = `
   <h1>
     Text
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -13545,7 +13545,7 @@ exports[`Storyshots Field Test/Fields with initial value Text field 1`] = `
         Text
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -13631,7 +13631,7 @@ exports[`Storyshots Field Test/Fields with initial value Time field 1`] = `
   <h1>
     Time
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -13728,7 +13728,7 @@ exports[`Storyshots Field Test/Fields with initial value Time field 1`] = `
         Time
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -13814,7 +13814,7 @@ exports[`Storyshots Field Test/Fields with initial value Week field 1`] = `
   <h1>
     Week
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -13911,7 +13911,7 @@ exports[`Storyshots Field Test/Fields with initial value Week field 1`] = `
         Week
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -13997,7 +13997,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
   <h1>
     Create your profile
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -14092,8 +14092,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         First name
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14187,8 +14187,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Name
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14282,8 +14282,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         E-mail
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14347,8 +14347,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Avatar
       </span>
     </div>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14447,8 +14447,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Gender
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14543,8 +14543,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Weight
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14640,8 +14640,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Height
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14734,8 +14734,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Phone Number
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14828,8 +14828,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Adress
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -14922,8 +14922,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         Zip code
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15016,7 +15016,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         City
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -15102,7 +15102,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
   <h1>
     Create your profile
   </h1>
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -15197,8 +15197,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         First name
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15292,8 +15292,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Name
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15387,8 +15387,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         E-mail
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15452,8 +15452,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Avatar
       </span>
     </div>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15552,8 +15552,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Gender
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15704,8 +15704,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Pregnant
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15800,8 +15800,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Weight
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15897,8 +15897,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Height
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -15991,8 +15991,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Phone Number
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16085,8 +16085,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Adress
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16179,8 +16179,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         Zip code
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16273,7 +16273,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         City
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -16356,7 +16356,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
   }
   onSubmit={[Function]}
 >
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -16483,8 +16483,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         Switch
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16548,8 +16548,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         Select Menu
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16613,8 +16613,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         Multiple Select Menu
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16678,8 +16678,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         Calendar
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16743,8 +16743,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         HTML
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16808,8 +16808,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         File
       </span>
     </div>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -16873,7 +16873,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         Password strengh
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {
@@ -16956,7 +16956,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
   }
   onSubmit={[Function]}
 >
-  <fieldset
+  <div
     className={
       Block {
         "block": "Field",
@@ -17049,8 +17049,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Text
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17142,8 +17142,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Area
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17236,8 +17236,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         E-mail
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17330,8 +17330,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Number
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17424,8 +17424,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Password
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17518,8 +17518,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Phone number
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17634,8 +17634,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Select
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17733,8 +17733,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Checkbox
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17832,8 +17832,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Radio
       </span>
     </label>
-  </fieldset>
-  <fieldset
+  </div>
+  <div
     className={
       Block {
         "block": "Field",
@@ -17925,7 +17925,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         Checkbox
       </span>
     </label>
-  </fieldset>
+  </div>
   <input
     style={
       Object {

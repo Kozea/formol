@@ -3,10 +3,21 @@ import './Formol.sass'
 import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'
 
-import Field from './Field'
-import FormolContextWrapper, { FormolContext } from './FormolContext'
+import BooleanField from './fields/BooleanField'
+import CalendarField from './fields/CalendarField'
+import CheckboxesField from './fields/CheckboxesField'
+import FileField from './fields/FileField'
+import HTMLField from './fields/HTMLField'
+import InputField from './fields/InputField'
+import NumberField from './fields/NumberField'
+import PasswordField from './fields/PasswordField'
+import RadiosField from './fields/RadiosField'
+import SelectField from './fields/SelectField'
+import SelectMenuField from './fields/SelectMenuField'
+import SwitchField from './fields/SwitchField'
+import TextareaField from './fields/TextareaField'
+import { FormolContext } from './FormolContext'
 import { block } from './utils'
-import Conditional from './utils/Conditional'
 import {
   alignKeysRec,
   clone,
@@ -17,24 +28,41 @@ import {
 
 @block
 export default class Formol extends React.Component {
+  static defaultFields = {
+    text: InputField,
+    number: NumberField,
+    range: NumberField,
+    html: HTMLField,
+    area: TextareaField,
+    calendar: CalendarField,
+    file: FileField,
+    files: FileField,
+    'password-strengh': PasswordField,
+    select: SelectField,
+    'select-menu': SelectMenuField,
+    switch: SwitchField,
+    radio: BooleanField,
+    checkbox: BooleanField,
+    radios: RadiosField,
+    checkboxes: CheckboxesField,
+  }
   static defaultProps = {
     item: {},
+    fields: {},
     getPk: item => item,
     onError: console.error.bind(console),
   }
 
-  static Field = FormolContextWrapper(Field)
-  static Conditional = FormolContextWrapper(Conditional)
-
   constructor(props) {
     super(props)
-    const { item, readOnly } = props
+    const { item, fields, readOnly } = props
     this.ref = {}
     this.state = {
       disablePrompt: false,
       context: {
-        transientItem: this.fromItem(item),
         item,
+        transientItem: this.fromItem(item),
+        fields: { ...Formol.defaultFields, ...fields },
         refs: this.ref,
         errors: {},
         focused: null,

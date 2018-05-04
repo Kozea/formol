@@ -1,6 +1,13 @@
 import React from 'react'
 
-export default function Conditional({ children, show, context, ...props }) {
+import FormolContextWrapper from './FormolContext'
+
+export default FormolContextWrapper(function Conditional({
+  children,
+  show,
+  context,
+  ...props
+}) {
   const { transientItem } = context
   if (show && !show(transientItem)) {
     return null
@@ -10,4 +17,4 @@ export default function Conditional({ children, show, context, ...props }) {
     children,
     child => child && React.cloneElement(child, { transientItem, ...props })
   )
-}
+})
