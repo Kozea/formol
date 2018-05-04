@@ -17,6 +17,8 @@ import SelectMenuField from './fields/SelectMenuField'
 import SwitchField from './fields/SwitchField'
 import TextareaField from './fields/TextareaField'
 import { FormolContext } from './FormolContext'
+import en from './i18n/en'
+import fr from './i18n/fr'
 import { block } from './utils'
 import {
   alignKeysRec,
@@ -37,7 +39,7 @@ export default class Formol extends React.Component {
     calendar: CalendarField,
     file: FileField,
     files: FileField,
-    'password-strengh': PasswordField,
+    'password-strength': PasswordField,
     select: SelectField,
     'select-menu': SelectMenuField,
     switch: SwitchField,
@@ -46,16 +48,23 @@ export default class Formol extends React.Component {
     radios: RadiosField,
     checkboxes: CheckboxesField,
   }
+
+  static i18n = {
+    en,
+    fr,
+  }
+
   static defaultProps = {
     item: {},
     fields: {},
+    i18n: 'en',
     getPk: item => item,
     onError: console.error.bind(console),
   }
 
   constructor(props) {
     super(props)
-    const { item, fields, readOnly } = props
+    const { item, fields, i18n, readOnly } = props
     this.ref = {}
     this.state = {
       disablePrompt: false,
@@ -63,6 +72,7 @@ export default class Formol extends React.Component {
         item,
         transientItem: this.fromItem(item),
         fields: { ...Formol.defaultFields, ...fields },
+        i18n: Formol.i18n[i18n],
         refs: this.ref,
         errors: {},
         focused: null,
@@ -82,6 +92,21 @@ export default class Formol extends React.Component {
       this.setContextState({
         item: nextProps.item,
         transientItem: this.fromItem(nextProps.item),
+      })
+    }
+    if (nextProps.readOnly !== this.props.readOnly) {
+      this.setContextState({
+        readOnly: nextProps.readOnly,
+      })
+    }
+    if (nextProps.fields !== this.props.fields) {
+      this.setContextState({
+        fields: { ...Formol.defaultFields, ...nextProps.fields },
+      })
+    }
+    if (nextProps.i18n !== this.props.i18n) {
+      this.setContextState({
+        i18n: Formol.i18n[nextProps.i18n],
       })
     }
   }

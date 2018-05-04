@@ -79,12 +79,14 @@ export default class HTMLField extends React.Component {
   render(b) {
     const {
       className,
+      i18n,
       readOnly,
       onFocus,
       onBlur,
       onKeyDown,
       required,
       toolbar,
+      placeholder,
     } = this.props
     const { editorState } = this.state
     const HTMLToolbar = toolbar || {
@@ -108,7 +110,7 @@ export default class HTMLField extends React.Component {
           onEditorStateChange={state => this.onChange(state)}
           onFocus={e => onFocus(e)}
           onKeyDown={e => onKeyDown(e)}
-          placeholder="Entrez votre texte ici…"
+          placeholder={placeholder || i18n.html.placeholder}
           readOnly={readOnly}
           required={required}
           toolbar={HTMLToolbar}

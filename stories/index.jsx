@@ -1,5 +1,5 @@
 import { withState } from '@dump247/storybook-state'
-import { withKnobs } from '@storybook/addon-knobs/react'
+import { boolean, selectV2, withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
@@ -13,10 +13,13 @@ const withStateForm = (form, initial) =>
       onSubmit: item => store.set({ item }) || false, // TODO: Fix that
       onChange: transient => store.set({ transient }),
       item: store.state.item,
+      readOnly: boolean('Form read only'),
+      i18n: selectV2('I18n', Object.keys(Formol.i18n)),
     })
   )
 
 storiesOf('Formol exemples', module)
+  .addDecorator(withKnobs)
   .add('Adding a person', withStateForm(props => <PersonForm {...props} />))
   .add(
     'Editing a person',
@@ -24,6 +27,7 @@ storiesOf('Formol exemples', module)
   )
 
 storiesOf('Native and Contrib fields', module)
+  .addDecorator(withKnobs)
   .add(
     'Native fields',
     withStateForm(props => (
@@ -125,8 +129,8 @@ storiesOf('Native and Contrib fields', module)
         >
           File
         </Field>
-        <Field type="password-strengh" name="password-strengh">
-          Password strengh
+        <Field type="password-strength" name="password-strength">
+          Password strength
         </Field>
       </Formol>
     ))

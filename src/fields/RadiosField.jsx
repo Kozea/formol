@@ -8,7 +8,8 @@ export default class RadiosField extends React.Component {
   static formolFieldLabelElement = 'div'
 
   render(b) {
-    const { onChange, readOnly, ...props } = this.props
+    // eslint-disable-next-line no-unused-vars
+    const { i18n, onChange, readOnly, ...props } = this.props
     if (readOnly) {
       props.disabled = true
     }

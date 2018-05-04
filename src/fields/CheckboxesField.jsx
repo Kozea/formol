@@ -9,7 +9,8 @@ export default class CheckboxesField extends React.Component {
   static formolFieldLabelElement = 'div'
 
   render(b) {
-    const { onChange, readOnly, ...props } = this.props
+    // eslint-disable-next-line no-unused-vars
+    const { i18n, type, onChange, readOnly, ...props } = this.props
     if (readOnly) {
       props.disabled = true
     }
@@ -22,8 +23,8 @@ export default class CheckboxesField extends React.Component {
             checked ? [...value, choice] : value.filter(val => val !== choice)
           )
         }
-        {...props}
         type="checkbox"
+        {...props}
       />
     )
   }

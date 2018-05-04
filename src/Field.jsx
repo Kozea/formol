@@ -41,6 +41,7 @@ class Field extends React.Component {
       item,
       transientItem,
       fields,
+      i18n,
       refs,
       errors,
       focused,
@@ -54,7 +55,6 @@ class Field extends React.Component {
     if (!transientItem) {
       throw new Error('Field must be used inside Form')
     }
-
     const itemValue = get(item, name)
     const transientValue = get(transientItem, name)
     const modified = itemValue !== transientValue
@@ -81,6 +81,7 @@ class Field extends React.Component {
             type={type}
             ref={ref => (refs[name] = ref)}
             readOnly={readOnly}
+            i18n={i18n}
             className={b.e('field').m({ type, focus, modified })}
             onFocus={e => handleFocus(name, e)}
             onBlur={e => handleBlur(name, e)}

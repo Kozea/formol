@@ -39,7 +39,7 @@ export default class FileField extends React.Component {
   }
 
   async handleDrop(accepted, rejected, { target }) {
-    const { multiple, rejectedMessage, onChange } = this.props
+    const { multiple, rejectedMessage, i18n, onChange } = this.props
     const value = multiple ? this.props.value || [] : []
     accepted = await Promise.all(
       accepted.map(async file => ({
@@ -86,9 +86,7 @@ export default class FileField extends React.Component {
     if (erroredFiles.length) {
       const err =
         rejectedMessage ||
-        (multiple
-          ? 'Certains de vos fichier ne sont pas valides.'
-          : 'Veuillez sélectionner un fichier valide.')
+        (multiple ? i18n.file.rejectedMultiple : i18n.file.rejected)
       this.setState({ error: err })
       target.setCustomValidity(err)
     } else {
@@ -104,8 +102,9 @@ export default class FileField extends React.Component {
   render(b) {
     const {
       name,
-      accept,
       value,
+      i18n,
+      accept,
       placeholder,
       onChange,
       className,
@@ -160,7 +159,7 @@ export default class FileField extends React.Component {
     ) : null
     if (readOnly || disabled) {
       return (
-        <div className={b.mix(className)}>{preview || 'Aucun fichier'}</div>
+        <div className={b.mix(className)}>{preview || i18n.file.noFile}</div>
       )
     }
 

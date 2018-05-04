@@ -46,7 +46,7 @@ export const typeFields = {}
   'Email',
   'Number',
   'Password',
-  'PasswordStrengh',
+  'PasswordStrength',
   'Tel',
   'Checkbox',
   'Radio',

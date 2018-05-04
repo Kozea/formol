@@ -3600,7 +3600,7 @@ exports[`Storyshots Field Test/Fields Password field 1`] = `
 </form>
 `;
 
-exports[`Storyshots Field Test/Fields PasswordStrengh field 1`] = `
+exports[`Storyshots Field Test/Fields PasswordStrength field 1`] = `
 <form
   className={
     Block {
@@ -3624,7 +3624,7 @@ exports[`Storyshots Field Test/Fields PasswordStrengh field 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    PasswordStrengh
+    PasswordStrength
   </h1>
   <div
     className={
@@ -3635,11 +3635,11 @@ exports[`Storyshots Field Test/Fields PasswordStrengh field 1`] = `
         "modifier": Object {
           "error": false,
           "modified": false,
-          "name": "PasswordStrengh",
+          "name": "PasswordStrength",
           "readOnly": undefined,
-          "type": "password-strengh",
+          "type": "password-strength",
         },
-        "s": "Formol_Field Formol_Field--type-password-strengh Formol_Field--name-PasswordStrengh",
+        "s": "Formol_Field Formol_Field--type-password-strength Formol_Field--name-PasswordStrength",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -3687,7 +3687,7 @@ exports[`Storyshots Field Test/Fields PasswordStrengh field 1`] = `
           }
         }
       >
-        PasswordStrengh
+        PasswordStrength
       </span>
     </label>
   </div>
@@ -5567,7 +5567,6 @@ exports[`Storyshots Field Test/Fields Select field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Select"
-        readOnly={false}
         required={false}
         type="select"
         value=""
@@ -6147,7 +6146,7 @@ exports[`Storyshots Field Test/Fields Switch field 1`] = `
         <label
           htmlFor="Switch"
         >
-          Non
+          No
         </label>
         <input
           autoFocus={false}
@@ -6169,7 +6168,7 @@ exports[`Storyshots Field Test/Fields Switch field 1`] = `
         <label
           htmlFor="Switch"
         >
-          Oui
+          Yes
         </label>
       </div>
       <span
@@ -10586,7 +10585,7 @@ exports[`Storyshots Field Test/Fields with initial value Password field 1`] = `
 </form>
 `;
 
-exports[`Storyshots Field Test/Fields with initial value PasswordStrengh field 1`] = `
+exports[`Storyshots Field Test/Fields with initial value PasswordStrength field 1`] = `
 <form
   className={
     Block {
@@ -10610,7 +10609,7 @@ exports[`Storyshots Field Test/Fields with initial value PasswordStrengh field 1
   onSubmit={[Function]}
 >
   <h1>
-    PasswordStrengh
+    PasswordStrength
   </h1>
   <div
     className={
@@ -10621,11 +10620,11 @@ exports[`Storyshots Field Test/Fields with initial value PasswordStrengh field 1
         "modifier": Object {
           "error": false,
           "modified": false,
-          "name": "PasswordStrengh",
+          "name": "PasswordStrength",
           "readOnly": undefined,
-          "type": "password-strengh",
+          "type": "password-strength",
         },
-        "s": "Formol_Field Formol_Field--type-password-strengh Formol_Field--name-PasswordStrengh",
+        "s": "Formol_Field Formol_Field--type-password-strength Formol_Field--name-PasswordStrength",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -10673,7 +10672,7 @@ exports[`Storyshots Field Test/Fields with initial value PasswordStrengh field 1
           }
         }
       >
-        PasswordStrengh
+        PasswordStrength
       </span>
     </label>
   </div>
@@ -12553,7 +12552,6 @@ exports[`Storyshots Field Test/Fields with initial value Select field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Select"
-        readOnly={false}
         required={false}
         type="select"
         value="#800000"
@@ -13133,7 +13131,7 @@ exports[`Storyshots Field Test/Fields with initial value Switch field 1`] = `
         <label
           htmlFor="Switch"
         >
-          Non
+          No
         </label>
         <input
           autoFocus={false}
@@ -13155,7 +13153,7 @@ exports[`Storyshots Field Test/Fields with initial value Switch field 1`] = `
         <label
           htmlFor="Switch"
         >
-          Oui
+          Yes
         </label>
       </div>
       <span
@@ -15637,7 +15635,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         <label
           htmlFor="pregnant"
         >
-          Non
+          No
         </label>
         <input
           checked={true}
@@ -15680,7 +15678,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         <label
           htmlFor="pregnant"
         >
-          Oui
+          Yes
         </label>
       </div>
       <span
@@ -16440,7 +16438,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         <label
           htmlFor="switch"
         >
-          Non
+          No
         </label>
         <input
           checked=""
@@ -16459,7 +16457,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         <label
           htmlFor="switch"
         >
-          Oui
+          Yes
         </label>
       </div>
       <span
@@ -16818,11 +16816,11 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "modifier": Object {
           "error": false,
           "modified": false,
-          "name": "password-strengh",
+          "name": "password-strength",
           "readOnly": undefined,
-          "type": "password-strengh",
+          "type": "password-strength",
         },
-        "s": "Formol_Field Formol_Field--type-password-strengh Formol_Field--name-password-strengh",
+        "s": "Formol_Field Formol_Field--type-password-strength Formol_Field--name-password-strength",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -16870,7 +16868,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           }
         }
       >
-        Password strengh
+        Password strength
       </span>
     </label>
   </div>
@@ -17587,7 +17585,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
         type="select"
         value=""
       >

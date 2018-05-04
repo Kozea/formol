@@ -6,8 +6,11 @@ import { cleanProps, normalizeChoices } from '../utils'
 export default class SelectField extends React.Component {
   render() {
     const choices = normalizeChoices(this.props)
-    const { onChange, ...props } = this.props
-    // TODO: handle no readonly: disabled={readOnly /* There's no readOnly */}
+    // eslint-disable-next-line no-unused-vars
+    const { i18n, readOnly, onChange, ...props } = this.props
+    if (readOnly) {
+      props.disabled = true
+    }
     return (
       <select onChange={e => onChange(e.target.value)} {...cleanProps(props)}>
         {choices.every(([k]) => k) && <option value="" />}
