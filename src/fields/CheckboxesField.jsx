@@ -18,9 +18,10 @@ export default class CheckboxesField extends React.Component {
       <FieldSet
         className={b}
         isChecked={(choice, value) => value.includes(choice)}
-        onChange={(choice, value, checked) =>
+        onChange={(choice, value, checked, target) =>
           onChange(
-            checked ? [...value, choice] : value.filter(val => val !== choice)
+            checked ? [...value, choice] : value.filter(val => val !== choice),
+            target
           )
         }
         type="checkbox"

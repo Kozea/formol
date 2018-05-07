@@ -21,7 +21,8 @@ export default class CalendarField extends React.Component {
     onChange(
       isDate(newDate)
         ? format(newDate, 'YYYY-MM-DD', { locale })
-        : newDate || null
+        : newDate || null,
+      this.daypicker.input
     )
   }
 
@@ -61,6 +62,7 @@ export default class CalendarField extends React.Component {
           overlay: b.e('overlay').mix('DayPickerInput-Overlay').s,
         }}
         value={date}
+        ref={ref => (this.daypicker = ref)}
         placeholder={placeholder || dateFormat}
         format={dateFormat}
         formatDate={(value_, format_) => format(value_, format_, { locale })}

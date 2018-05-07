@@ -65,8 +65,9 @@ export default class Formol extends React.Component {
 
   constructor(props) {
     super(props)
-    const { item, fields, i18n, readOnly, focusNextOnEnter } = props
-    this.ref = {}
+    const { item, fields, i18n, readOnly } = props
+    this.form = null
+    this.submit = null
     this.state = {
       disablePrompt: false,
       context: {
@@ -74,15 +75,13 @@ export default class Formol extends React.Component {
         transientItem: this.fromItem(item),
         fields: { ...Formol.defaultFields, ...fields },
         i18n: Formol.i18n[i18n],
-        focusNextOnEnter,
-        refs: this.ref,
         errors: {},
         focused: null,
         readOnly,
+        handleKeyDown: this.handleKeyDown.bind(this),
         handleFocus: this.handleFocus.bind(this),
         handleBlur: this.handleBlur.bind(this),
         handleChange: this.handleChange.bind(this),
-        handleSubmit: this.handleSubmit.bind(this),
       },
     }
     this.handleCancel = this.handleCancel.bind(this)
@@ -99,11 +98,6 @@ export default class Formol extends React.Component {
     if (nextProps.readOnly !== this.props.readOnly) {
       this.setContextState({
         readOnly: nextProps.readOnly,
-      })
-    }
-    if (nextProps.focusNextOnEnter !== this.props.focusNextOnEnter) {
-      this.setContextState({
-        focusNextOnEnter: nextProps.focusNextOnEnter,
       })
     }
     if (nextProps.fields !== this.props.fields) {
@@ -149,7 +143,7 @@ export default class Formol extends React.Component {
       onSubmit,
     } = this.props
     const { transientItem } = this.state.context
-    if (this.ref.form.checkValidity()) {
+    if (this.form.checkValidity()) {
       if (onSubmit) {
         try {
           const report = await onSubmit(transientItem)
@@ -207,7 +201,7 @@ export default class Formol extends React.Component {
         }
       }
     } else {
-      this.ref.submit && this.ref.submit.click()
+      this.submit && this.submit.click()
       e.preventDefault()
     }
   }
@@ -241,6 +235,47 @@ export default class Formol extends React.Component {
     this.setContextState({
       focused: name,
     })
+  }
+
+  handleKeyDown(e) {
+    const { focusNextOnEnter } = this.props
+    if (focusNextOnEnter && e.keyCode === 13) {
+      // GORE HACK but it makes everything simpler
+      const focused = e.target
+      if (!e.ctrlKey) {
+        if (focused.tagName === 'TEXTAREA') {
+          return
+        }
+        if (focused.getAttribute('contenteditable')) {
+          return
+        }
+      }
+      const fields = [...this.form.querySelectorAll('.Formol_Field')]
+      const focusables = fields.map(field => [
+        ...field.querySelectorAll(`
+            input:not([disabled]):not([tabindex='-1']),
+            select:not([disabled]):not([tabindex='-1']),
+            textarea:not([disabled]):not([tabindex='-1']),
+            [tabindex]:not([tabindex='-1']),
+            [contentEditable=true]:not([tabindex='-1'])
+          `),
+      ])
+      const focusedFieldIndex = focusables.findIndex(focusableFields =>
+        focusableFields.includes(focused)
+      )
+      const step = e.shiftKey ? -1 : +1
+      const nextFieldIndex = (focusedFieldIndex + step) % fields.length
+      if (step === 1 && focusedFieldIndex === fields.length - 1) {
+        this.handleSubmit(e)
+        e.preventDefault()
+        return false
+      }
+      // Let's focus the first focusable
+      const [nextFieldFirstFocusable] = focusables[nextFieldIndex]
+      nextFieldFirstFocusable.focus()
+      e.preventDefault()
+      return false
+    }
   }
 
   handleError(err) {
@@ -315,7 +350,7 @@ export default class Formol extends React.Component {
           errors: !!Object.keys(context.errors).length,
         })}
         onSubmit={e => e.preventDefault()}
-        ref={ref => (this.ref.form = ref)}
+        ref={ref => (this.form = ref)}
       >
         {Prompt && (
           <Prompt
@@ -334,7 +369,7 @@ export default class Formol extends React.Component {
           <Fragment>
             <input
               type="submit"
-              ref={ref => (this.ref.submit = ref)}
+              ref={ref => (this.submit = ref)}
               style={{ display: 'none' }}
             />
             <Btn

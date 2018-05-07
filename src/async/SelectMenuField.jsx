@@ -14,7 +14,8 @@ export default class SelectMenuField extends React.Component {
       newValue &&
         (multiple
           ? newValue.map(({ value }) => maybeParse(value))
-          : maybeParse(newValue.value))
+          : maybeParse(newValue.value)),
+      this.select.input.input
     )
   }
 
@@ -43,6 +44,7 @@ export default class SelectMenuField extends React.Component {
     return (
       <Select
         className={b.mix(className).s}
+        ref={ref => (this.select = ref)}
         disabled={readOnly /* There's no readOnly */}
         options={options}
         multi={multiple}

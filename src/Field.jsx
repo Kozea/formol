@@ -42,15 +42,13 @@ class Field extends React.Component {
       transientItem,
       fields,
       i18n,
-      refs,
       errors,
       focused,
       readOnly,
-      focusNextOnEnter,
       handleFocus,
       handleBlur,
+      handleKeyDown,
       handleChange,
-      handleSubmit,
     } = context
 
     if (!transientItem) {
@@ -67,10 +65,6 @@ class Field extends React.Component {
     const Label = TypeField.formolFieldLabelElement || 'label'
 
     const options = {}
-    if (focusNextOnEnter) {
-      options.onKeyDown = e => focusNext(e, name, type, refs, handleSubmit)
-    }
-
     return (
       <div
         className={b.mix(className).m({
@@ -86,18 +80,19 @@ class Field extends React.Component {
             name={name}
             value={value}
             type={type}
-            ref={ref => (refs[name] = ref)}
             readOnly={readOnly}
             i18n={i18n}
             className={b.e('field').m({ type, focus, modified })}
             onFocus={e => handleFocus(name, e)}
             onBlur={e => handleBlur(name, e)}
-            onChange={v => {
+            onChange={(v, target) => {
               v = valueFormatter(v)
               customValidator &&
-                refs[name].setCustomValidity(customValidator(v, transientItem))
+                target &&
+                target.setCustomValidity(customValidator(v, transientItem))
               return handleChange(name, v)
             }}
+            onKeyDown={handleKeyDown}
             {...options}
             {...props}
           />
