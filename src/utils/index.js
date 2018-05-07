@@ -38,3 +38,30 @@ export const normalizeChoices = ({ choices, choiceGetter }) =>
 
 // eslint-disable-next-line no-unused-vars
 export const cleanProps = ({ choices, asyncChoices, ...props }) => props
+
+export const focusNext = (e, name, type, refs, handleSubmit) => {
+  // This is not registered on most external fields
+  if (e.keyCode === 13 && (e.ctrlKey || type !== 'area')) {
+    const fieldRefs = Object.keys(refs)
+    const current = fieldRefs.indexOf(name)
+    const step = e.shiftKey ? -1 : 1
+    const nextName = fieldRefs[current + step % fieldRefs.length]
+    if (nextName === 'submit') {
+      handleSubmit(e)
+      return
+    }
+    const next = refs[nextName]
+    if (next.focus) {
+      next.focus()
+      e.preventDefault()
+      return
+    }
+    console.error(
+      'No focusable/submitable field found for',
+      name,
+      'next was',
+      nextName,
+      next
+    )
+  }
+}

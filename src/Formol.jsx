@@ -58,13 +58,14 @@ export default class Formol extends React.Component {
     item: {},
     fields: {},
     i18n: 'en',
+    focusNextOnEnter: false,
     getPk: item => item,
     onError: console.error.bind(console),
   }
 
   constructor(props) {
     super(props)
-    const { item, fields, i18n, readOnly } = props
+    const { item, fields, i18n, readOnly, focusNextOnEnter } = props
     this.ref = {}
     this.state = {
       disablePrompt: false,
@@ -73,6 +74,7 @@ export default class Formol extends React.Component {
         transientItem: this.fromItem(item),
         fields: { ...Formol.defaultFields, ...fields },
         i18n: Formol.i18n[i18n],
+        focusNextOnEnter,
         refs: this.ref,
         errors: {},
         focused: null,
@@ -97,6 +99,11 @@ export default class Formol extends React.Component {
     if (nextProps.readOnly !== this.props.readOnly) {
       this.setContextState({
         readOnly: nextProps.readOnly,
+      })
+    }
+    if (nextProps.focusNextOnEnter !== this.props.focusNextOnEnter) {
+      this.setContextState({
+        focusNextOnEnter: nextProps.focusNextOnEnter,
       })
     }
     if (nextProps.fields !== this.props.fields) {

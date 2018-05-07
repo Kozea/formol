@@ -13,7 +13,8 @@ const withStateForm = (form, initial) =>
       onSubmit: item => store.set({ item }) || false, // TODO: Fix that
       onChange: transient => store.set({ transient }),
       item: store.state.item,
-      readOnly: boolean('Form read only'),
+      readOnly: boolean('Form read only', false),
+      focusNextOnEnter: boolean('Focus next field with [Enter]', false),
       i18n: selectV2('I18n', Object.keys(Formol.i18n)),
     })
   )

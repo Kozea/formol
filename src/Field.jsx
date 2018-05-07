@@ -4,7 +4,7 @@ import React from 'react'
 
 import InputField from './fields/InputField'
 import FormolContextWrapper from './FormolContext'
-import { block } from './utils'
+import { block, focusNext } from './utils'
 import { get } from './utils/object'
 
 @block
@@ -46,6 +46,7 @@ class Field extends React.Component {
       errors,
       focused,
       readOnly,
+      focusNextOnEnter,
       handleFocus,
       handleBlur,
       handleChange,
@@ -64,6 +65,12 @@ class Field extends React.Component {
 
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
+
+    const options = {}
+    if (focusNextOnEnter) {
+      options.onKeyDown = e => focusNext(e, name, type, refs, handleSubmit)
+    }
+
     return (
       <div
         className={b.mix(className).m({
@@ -91,31 +98,7 @@ class Field extends React.Component {
                 refs[name].setCustomValidity(customValidator(v, transientItem))
               return handleChange(name, v)
             }}
-            onKeyDown={e => {
-              // This is not registered on most external fields
-              if (e.keyCode === 13 && (e.shiftKey || type !== 'area')) {
-                const fieldRefs = Object.keys(refs)
-                const current = fields.indexOf(name)
-
-                for (let i = current + 1; i < current + fieldRefs.length; i++) {
-                  const nextName = fieldRefs[i % fieldRefs.length]
-                  const next = refs[nextName]
-                  if (nextName === 'submit') {
-                    handleSubmit(e)
-                    break
-                  }
-                  if (
-                    nextName !== 'form' &&
-                    next.offsetParent !== null &&
-                    next.focus
-                  ) {
-                    next.focus()
-                    e.preventDefault()
-                    break
-                  }
-                }
-              }
-            }}
+            {...options}
             {...props}
           />
           {children && <span className={b.e('label-text')}>{children}</span>}
