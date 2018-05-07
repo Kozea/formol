@@ -17,7 +17,9 @@ export default class RadiosField extends React.Component {
       <FieldSet
         className={b}
         isChecked={(choice, value) => choice === value}
-        onChange={(choice, value, checked) => checked && onChange(choice)}
+        onChange={(choice, value, checked, target) =>
+          checked && onChange(choice, target)
+        }
         {...props}
         type="radio"
       />

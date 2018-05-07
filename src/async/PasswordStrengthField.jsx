@@ -8,15 +8,28 @@ import { block } from '../utils'
 
 @block
 export default class PasswordStrengthField extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange({ password, isValid }) {
+    const { onChange } = this.props
+    onChange(
+      isValid ? password : void 0,
+      this.passwordInput.reactPasswordStrengthInput
+    )
+  }
+
   render(b) {
-    const { className, name, value, i18n, onChange, ...props } = this.props
+    const { className, name, value, i18n, ...props } = this.props
     return (
       <ReactPasswordStrength
-        changeCallback={({ password, isValid }) =>
-          onChange(isValid ? password : void 0)
-        }
+        /* eslint-disable-next-line react/jsx-handler-names */
+        changeCallback={this.handleChange}
         defaultValue={value}
         className={b.mix(className).s}
+        ref={ref => (this.passwordInput = ref)}
         inputProps={{ name, ...props, type: 'password' }}
         scoreWords={[
           i18n.passwordStrength.weak,

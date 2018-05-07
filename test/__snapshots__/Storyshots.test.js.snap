@@ -36,7 +36,7 @@ exports[`Storyshots Field Test/Fields Area field 1`] = `
           "error": false,
           "modified": false,
           "name": "Area",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "area",
         },
         "s": "Formol_Field Formol_Field--type-area Formol_Field--name-Area",
@@ -218,7 +218,7 @@ exports[`Storyshots Field Test/Fields Calendar field 1`] = `
           "error": false,
           "modified": false,
           "name": "Calendar",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "calendar",
         },
         "s": "Formol_Field Formol_Field--type-calendar Formol_Field--name-Calendar",
@@ -368,7 +368,7 @@ exports[`Storyshots Field Test/Fields Checkbox field 1`] = `
           "error": false,
           "modified": false,
           "name": "Checkbox",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "checkbox",
         },
         "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-Checkbox",
@@ -550,7 +550,7 @@ exports[`Storyshots Field Test/Fields Checkboxes field 1`] = `
           "error": false,
           "modified": false,
           "name": "Checkboxes",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "checkboxes",
         },
         "s": "Formol_Field Formol_Field--type-checkboxes Formol_Field--name-Checkboxes",
@@ -1902,7 +1902,7 @@ exports[`Storyshots Field Test/Fields Color field 1`] = `
           "error": false,
           "modified": false,
           "name": "Color",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "color",
         },
         "s": "Formol_Field Formol_Field--type-color Formol_Field--name-Color",
@@ -2085,7 +2085,7 @@ exports[`Storyshots Field Test/Fields Date field 1`] = `
           "error": false,
           "modified": false,
           "name": "Date",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "date",
         },
         "s": "Formol_Field Formol_Field--type-date Formol_Field--name-Date",
@@ -2268,7 +2268,7 @@ exports[`Storyshots Field Test/Fields DatetimeLocal field 1`] = `
           "error": false,
           "modified": false,
           "name": "DatetimeLocal",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "datetime-local",
         },
         "s": "Formol_Field Formol_Field--type-datetime-local Formol_Field--name-DatetimeLocal",
@@ -2451,7 +2451,7 @@ exports[`Storyshots Field Test/Fields Email field 1`] = `
           "error": false,
           "modified": false,
           "name": "Email",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "email",
         },
         "s": "Formol_Field Formol_Field--type-email Formol_Field--name-Email",
@@ -2634,7 +2634,7 @@ exports[`Storyshots Field Test/Fields File field 1`] = `
           "error": false,
           "modified": false,
           "name": "File",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "file",
         },
         "s": "Formol_Field Formol_Field--type-file Formol_Field--name-File",
@@ -2784,7 +2784,7 @@ exports[`Storyshots Field Test/Fields Files field 1`] = `
           "error": false,
           "modified": false,
           "name": "Files",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "files",
         },
         "s": "Formol_Field Formol_Field--type-files Formol_Field--name-Files",
@@ -2934,7 +2934,7 @@ exports[`Storyshots Field Test/Fields Html field 1`] = `
           "error": false,
           "modified": false,
           "name": "Html",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "html",
         },
         "s": "Formol_Field Formol_Field--type-html Formol_Field--name-Html",
@@ -3084,7 +3084,7 @@ exports[`Storyshots Field Test/Fields Month field 1`] = `
           "error": false,
           "modified": false,
           "name": "Month",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "month",
         },
         "s": "Formol_Field Formol_Field--type-month Formol_Field--name-Month",
@@ -3267,7 +3267,7 @@ exports[`Storyshots Field Test/Fields Number field 1`] = `
           "error": false,
           "modified": false,
           "name": "Number",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-Number",
@@ -3453,7 +3453,7 @@ exports[`Storyshots Field Test/Fields Password field 1`] = `
           "error": false,
           "modified": false,
           "name": "Password",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "password",
         },
         "s": "Formol_Field Formol_Field--type-password Formol_Field--name-Password",
@@ -3636,7 +3636,7 @@ exports[`Storyshots Field Test/Fields PasswordStrength field 1`] = `
           "error": false,
           "modified": false,
           "name": "PasswordStrength",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "password-strength",
         },
         "s": "Formol_Field Formol_Field--type-password-strength Formol_Field--name-PasswordStrength",
@@ -3786,7 +3786,7 @@ exports[`Storyshots Field Test/Fields Radio field 1`] = `
           "error": false,
           "modified": false,
           "name": "Radio",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radio",
         },
         "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-Radio",
@@ -3968,7 +3968,7 @@ exports[`Storyshots Field Test/Fields Radios field 1`] = `
           "error": false,
           "modified": false,
           "name": "Radios",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radios",
         },
         "s": "Formol_Field Formol_Field--type-radios Formol_Field--name-Radios",
@@ -5320,7 +5320,7 @@ exports[`Storyshots Field Test/Fields Range field 1`] = `
           "error": false,
           "modified": false,
           "name": "Range",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "range",
         },
         "s": "Formol_Field Formol_Field--type-range Formol_Field--name-Range",
@@ -5506,7 +5506,7 @@ exports[`Storyshots Field Test/Fields Select field 1`] = `
           "error": false,
           "modified": false,
           "name": "Select",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select",
         },
         "s": "Formol_Field Formol_Field--type-select Formol_Field--name-Select",
@@ -5772,7 +5772,7 @@ exports[`Storyshots Field Test/Fields SelectMenu field 1`] = `
           "error": false,
           "modified": false,
           "name": "SelectMenu",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select-menu",
         },
         "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-SelectMenu",
@@ -5922,7 +5922,7 @@ exports[`Storyshots Field Test/Fields SelectMenuMultiple field 1`] = `
           "error": false,
           "modified": false,
           "name": "SelectMenu",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select-menu",
         },
         "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-SelectMenu",
@@ -6072,7 +6072,7 @@ exports[`Storyshots Field Test/Fields Switch field 1`] = `
           "error": false,
           "modified": false,
           "name": "Switch",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "switch",
         },
         "s": "Formol_Field Formol_Field--type-switch Formol_Field--name-Switch",
@@ -6288,7 +6288,7 @@ exports[`Storyshots Field Test/Fields Tel field 1`] = `
           "error": false,
           "modified": false,
           "name": "Tel",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "tel",
         },
         "s": "Formol_Field Formol_Field--type-tel Formol_Field--name-Tel",
@@ -6471,7 +6471,7 @@ exports[`Storyshots Field Test/Fields Text field 1`] = `
           "error": false,
           "modified": false,
           "name": "Text",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "text",
         },
         "s": "Formol_Field Formol_Field--type-text Formol_Field--name-Text",
@@ -6654,7 +6654,7 @@ exports[`Storyshots Field Test/Fields Time field 1`] = `
           "error": false,
           "modified": false,
           "name": "Time",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "time",
         },
         "s": "Formol_Field Formol_Field--type-time Formol_Field--name-Time",
@@ -6837,7 +6837,7 @@ exports[`Storyshots Field Test/Fields Week field 1`] = `
           "error": false,
           "modified": false,
           "name": "Week",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "week",
         },
         "s": "Formol_Field Formol_Field--type-week Formol_Field--name-Week",
@@ -7020,7 +7020,7 @@ exports[`Storyshots Field Test/Fields with initial value Area field 1`] = `
           "error": false,
           "modified": false,
           "name": "Area",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "area",
         },
         "s": "Formol_Field Formol_Field--type-area Formol_Field--name-Area",
@@ -7203,7 +7203,7 @@ exports[`Storyshots Field Test/Fields with initial value Calendar field 1`] = `
           "error": false,
           "modified": false,
           "name": "Calendar",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "calendar",
         },
         "s": "Formol_Field Formol_Field--type-calendar Formol_Field--name-Calendar",
@@ -7353,7 +7353,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkbox field 1`] = `
           "error": false,
           "modified": false,
           "name": "Checkbox",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "checkbox",
         },
         "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-Checkbox",
@@ -7535,7 +7535,7 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
           "error": false,
           "modified": true,
           "name": "Checkboxes",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "checkboxes",
         },
         "s": "Formol_Field Formol_Field--type-checkboxes Formol_Field--name-Checkboxes Formol_Field--modified",
@@ -7962,9 +7962,9 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
-                "on": false,
+                "on": true,
               },
-              "s": "Formol_FieldSet__label",
+              "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8036,9 +8036,9 @@ exports[`Storyshots Field Test/Fields with initial value Checkboxes field 1`] = 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
-                "on": false,
+                "on": true,
               },
-              "s": "Formol_FieldSet__label",
+              "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -8887,7 +8887,7 @@ exports[`Storyshots Field Test/Fields with initial value Color field 1`] = `
           "error": false,
           "modified": false,
           "name": "Color",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "color",
         },
         "s": "Formol_Field Formol_Field--type-color Formol_Field--name-Color",
@@ -9070,7 +9070,7 @@ exports[`Storyshots Field Test/Fields with initial value Date field 1`] = `
           "error": false,
           "modified": false,
           "name": "Date",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "date",
         },
         "s": "Formol_Field Formol_Field--type-date Formol_Field--name-Date",
@@ -9253,7 +9253,7 @@ exports[`Storyshots Field Test/Fields with initial value DatetimeLocal field 1`]
           "error": false,
           "modified": false,
           "name": "DatetimeLocal",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "datetime-local",
         },
         "s": "Formol_Field Formol_Field--type-datetime-local Formol_Field--name-DatetimeLocal",
@@ -9436,7 +9436,7 @@ exports[`Storyshots Field Test/Fields with initial value Email field 1`] = `
           "error": false,
           "modified": false,
           "name": "Email",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "email",
         },
         "s": "Formol_Field Formol_Field--type-email Formol_Field--name-Email",
@@ -9619,7 +9619,7 @@ exports[`Storyshots Field Test/Fields with initial value File field 1`] = `
           "error": false,
           "modified": true,
           "name": "File",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "file",
         },
         "s": "Formol_Field Formol_Field--type-file Formol_Field--name-File Formol_Field--modified",
@@ -9769,7 +9769,7 @@ exports[`Storyshots Field Test/Fields with initial value Files field 1`] = `
           "error": false,
           "modified": true,
           "name": "Files",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "files",
         },
         "s": "Formol_Field Formol_Field--type-files Formol_Field--name-Files Formol_Field--modified",
@@ -9919,7 +9919,7 @@ exports[`Storyshots Field Test/Fields with initial value Html field 1`] = `
           "error": false,
           "modified": false,
           "name": "Html",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "html",
         },
         "s": "Formol_Field Formol_Field--type-html Formol_Field--name-Html",
@@ -10069,7 +10069,7 @@ exports[`Storyshots Field Test/Fields with initial value Month field 1`] = `
           "error": false,
           "modified": false,
           "name": "Month",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "month",
         },
         "s": "Formol_Field Formol_Field--type-month Formol_Field--name-Month",
@@ -10252,7 +10252,7 @@ exports[`Storyshots Field Test/Fields with initial value Number field 1`] = `
           "error": false,
           "modified": false,
           "name": "Number",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-Number",
@@ -10438,7 +10438,7 @@ exports[`Storyshots Field Test/Fields with initial value Password field 1`] = `
           "error": false,
           "modified": false,
           "name": "Password",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "password",
         },
         "s": "Formol_Field Formol_Field--type-password Formol_Field--name-Password",
@@ -10621,7 +10621,7 @@ exports[`Storyshots Field Test/Fields with initial value PasswordStrength field 
           "error": false,
           "modified": false,
           "name": "PasswordStrength",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "password-strength",
         },
         "s": "Formol_Field Formol_Field--type-password-strength Formol_Field--name-PasswordStrength",
@@ -10771,7 +10771,7 @@ exports[`Storyshots Field Test/Fields with initial value Radio field 1`] = `
           "error": false,
           "modified": false,
           "name": "Radio",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radio",
         },
         "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-Radio",
@@ -10953,7 +10953,7 @@ exports[`Storyshots Field Test/Fields with initial value Radios field 1`] = `
           "error": false,
           "modified": false,
           "name": "Radios",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radios",
         },
         "s": "Formol_Field Formol_Field--type-radios Formol_Field--name-Radios",
@@ -12305,7 +12305,7 @@ exports[`Storyshots Field Test/Fields with initial value Range field 1`] = `
           "error": false,
           "modified": false,
           "name": "Range",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "range",
         },
         "s": "Formol_Field Formol_Field--type-range Formol_Field--name-Range",
@@ -12491,7 +12491,7 @@ exports[`Storyshots Field Test/Fields with initial value Select field 1`] = `
           "error": false,
           "modified": false,
           "name": "Select",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select",
         },
         "s": "Formol_Field Formol_Field--type-select Formol_Field--name-Select",
@@ -12757,7 +12757,7 @@ exports[`Storyshots Field Test/Fields with initial value SelectMenu field 1`] = 
           "error": false,
           "modified": false,
           "name": "SelectMenu",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select-menu",
         },
         "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-SelectMenu",
@@ -12907,7 +12907,7 @@ exports[`Storyshots Field Test/Fields with initial value SelectMenuMultiple fiel
           "error": false,
           "modified": false,
           "name": "SelectMenu",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select-menu",
         },
         "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-SelectMenu",
@@ -13057,7 +13057,7 @@ exports[`Storyshots Field Test/Fields with initial value Switch field 1`] = `
           "error": false,
           "modified": false,
           "name": "Switch",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "switch",
         },
         "s": "Formol_Field Formol_Field--type-switch Formol_Field--name-Switch",
@@ -13273,7 +13273,7 @@ exports[`Storyshots Field Test/Fields with initial value Tel field 1`] = `
           "error": false,
           "modified": false,
           "name": "Tel",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "tel",
         },
         "s": "Formol_Field Formol_Field--type-tel Formol_Field--name-Tel",
@@ -13456,7 +13456,7 @@ exports[`Storyshots Field Test/Fields with initial value Text field 1`] = `
           "error": false,
           "modified": false,
           "name": "Text",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "text",
         },
         "s": "Formol_Field Formol_Field--type-text Formol_Field--name-Text",
@@ -13639,7 +13639,7 @@ exports[`Storyshots Field Test/Fields with initial value Time field 1`] = `
           "error": false,
           "modified": false,
           "name": "Time",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "time",
         },
         "s": "Formol_Field Formol_Field--type-time Formol_Field--name-Time",
@@ -13822,7 +13822,7 @@ exports[`Storyshots Field Test/Fields with initial value Week field 1`] = `
           "error": false,
           "modified": false,
           "name": "Week",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "week",
         },
         "s": "Formol_Field Formol_Field--type-week Formol_Field--name-Week",
@@ -14005,7 +14005,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "firstname",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-firstname",
@@ -14064,7 +14064,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         required={true}
         type="text"
         value=""
@@ -14101,7 +14101,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "name",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-name",
@@ -14159,7 +14159,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         required={true}
         type="text"
         value=""
@@ -14196,7 +14196,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "email",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "email",
         },
         "s": "Formol_Field Formol_Field--type-email Formol_Field--name-email",
@@ -14254,7 +14254,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         required={true}
         type="email"
         value=""
@@ -14291,7 +14291,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "avatar",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "file",
         },
         "s": "Formol_Field Formol_Field--type-file Formol_Field--name-avatar",
@@ -14356,7 +14356,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "sex",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radio",
         },
         "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-sex",
@@ -14456,7 +14456,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "weight",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-weight",
@@ -14515,7 +14515,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         step="1"
         type="number"
         value=""
@@ -14552,7 +14552,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "height",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-height",
@@ -14612,7 +14612,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         step="0.01"
         type="number"
         value=""
@@ -14649,7 +14649,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "phone",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "tel",
         },
         "s": "Formol_Field Formol_Field--type-tel Formol_Field--name-phone",
@@ -14707,7 +14707,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="tel"
         value=""
       />
@@ -14743,7 +14743,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "address",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-address",
@@ -14801,7 +14801,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value=""
       />
@@ -14837,7 +14837,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "zip",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-zip",
@@ -14895,7 +14895,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value=""
       />
@@ -14931,7 +14931,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "modified": false,
           "name": "city",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-city",
@@ -14989,7 +14989,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value=""
       />
@@ -15110,7 +15110,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "firstname",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-firstname",
@@ -15169,7 +15169,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         required={true}
         type="text"
         value="Liza"
@@ -15206,7 +15206,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "name",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-name",
@@ -15264,7 +15264,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         required={true}
         type="text"
         value="Houston"
@@ -15301,7 +15301,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "email",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "email",
         },
         "s": "Formol_Field Formol_Field--type-email Formol_Field--name-email",
@@ -15359,7 +15359,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         required={true}
         type="email"
         value="houston.liza@exemple.com"
@@ -15396,7 +15396,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": true,
           "name": "avatar",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "file",
         },
         "s": "Formol_Field Formol_Field--type-file Formol_Field--name-avatar Formol_Field--modified",
@@ -15461,7 +15461,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "sex",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radio",
         },
         "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-sex",
@@ -15561,7 +15561,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "pregnant",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "switch",
         },
         "s": "Formol_Field Formol_Field--type-switch Formol_Field--name-pregnant",
@@ -15713,7 +15713,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "weight",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-weight",
@@ -15772,7 +15772,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         step="1"
         type="number"
         value={64}
@@ -15809,7 +15809,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "height",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-height",
@@ -15869,7 +15869,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         step="0.01"
         type="number"
         value={1.78}
@@ -15906,7 +15906,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "phone",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "tel",
         },
         "s": "Formol_Field Formol_Field--type-tel Formol_Field--name-phone",
@@ -15964,7 +15964,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="tel"
         value="1-541-754-3010"
       />
@@ -16000,7 +16000,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "address",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-address",
@@ -16058,7 +16058,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value="12 Norfolk St"
       />
@@ -16094,7 +16094,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "zip",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-zip",
@@ -16152,7 +16152,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value="69030"
       />
@@ -16188,7 +16188,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "error": false,
           "modified": false,
           "name": "city",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-city",
@@ -16246,7 +16246,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value="Haigler"
       />
@@ -16364,7 +16364,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "switch",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "switch",
         },
         "s": "Formol_Field Formol_Field--type-switch Formol_Field--name-switch",
@@ -16492,7 +16492,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "select-menu",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select-menu",
         },
         "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-select-menu",
@@ -16557,7 +16557,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "select-menu-multiple",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select-menu",
         },
         "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-select-menu-multiple",
@@ -16622,7 +16622,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "calendar",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "calendar",
         },
         "s": "Formol_Field Formol_Field--type-calendar Formol_Field--name-calendar",
@@ -16687,7 +16687,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "html",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "html",
         },
         "s": "Formol_Field Formol_Field--type-html Formol_Field--name-html",
@@ -16752,7 +16752,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "file",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "file",
         },
         "s": "Formol_Field Formol_Field--type-file Formol_Field--name-file",
@@ -16817,7 +16817,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "modified": false,
           "name": "password-strength",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "password-strength",
         },
         "s": "Formol_Field Formol_Field--type-password-strength Formol_Field--name-password-strength",
@@ -16964,7 +16964,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "text",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": undefined,
         },
         "s": "Formol_Field Formol_Field--name-text",
@@ -17022,7 +17022,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="text"
         value=""
       />
@@ -17058,7 +17058,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "area",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "area",
         },
         "s": "Formol_Field Formol_Field--type-area Formol_Field--name-area",
@@ -17116,7 +17116,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         value=""
       />
       <span
@@ -17151,7 +17151,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "email",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "email",
         },
         "s": "Formol_Field Formol_Field--type-email Formol_Field--name-email",
@@ -17209,7 +17209,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="email"
         value=""
       />
@@ -17245,7 +17245,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "number",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "number",
         },
         "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number",
@@ -17303,7 +17303,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="number"
         value=""
       />
@@ -17339,7 +17339,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "password",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "password",
         },
         "s": "Formol_Field Formol_Field--type-password Formol_Field--name-password",
@@ -17397,7 +17397,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="password"
         value=""
       />
@@ -17433,7 +17433,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "tel",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "tel",
         },
         "s": "Formol_Field Formol_Field--type-tel Formol_Field--name-tel",
@@ -17491,7 +17491,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={undefined}
+        readOnly={false}
         type="tel"
         value=""
       />
@@ -17527,7 +17527,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "select",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "select",
         },
         "s": "Formol_Field Formol_Field--type-select Formol_Field--name-select",
@@ -17639,7 +17639,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "checkbox",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "checkbox",
         },
         "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-checkbox",
@@ -17738,7 +17738,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "radio",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "radio",
         },
         "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-radio",
@@ -17837,7 +17837,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "error": false,
           "modified": false,
           "name": "simple-checkbox",
-          "readOnly": undefined,
+          "readOnly": false,
           "type": "checkbox",
         },
         "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-simple-checkbox",

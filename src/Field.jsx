@@ -4,7 +4,7 @@ import React from 'react'
 
 import InputField from './fields/InputField'
 import FormolContextWrapper from './FormolContext'
-import { block } from './utils'
+import { block, focusNext } from './utils'
 import { get } from './utils/object'
 
 @block
@@ -42,14 +42,13 @@ class Field extends React.Component {
       transientItem,
       fields,
       i18n,
-      refs,
       errors,
       focused,
       readOnly,
       handleFocus,
       handleBlur,
+      handleKeyDown,
       handleChange,
-      handleSubmit,
     } = context
 
     if (!transientItem) {
@@ -64,6 +63,8 @@ class Field extends React.Component {
 
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
+
+    const options = {}
     return (
       <div
         className={b.mix(className).m({
@@ -79,43 +80,20 @@ class Field extends React.Component {
             name={name}
             value={value}
             type={type}
-            ref={ref => (refs[name] = ref)}
             readOnly={readOnly}
             i18n={i18n}
             className={b.e('field').m({ type, focus, modified })}
             onFocus={e => handleFocus(name, e)}
             onBlur={e => handleBlur(name, e)}
-            onChange={v => {
+            onChange={(v, target) => {
               v = valueFormatter(v)
               customValidator &&
-                refs[name].setCustomValidity(customValidator(v, transientItem))
+                target &&
+                target.setCustomValidity(customValidator(v, transientItem))
               return handleChange(name, v)
             }}
-            onKeyDown={e => {
-              // This is not registered on most external fields
-              if (e.keyCode === 13 && (e.shiftKey || type !== 'area')) {
-                const fieldRefs = Object.keys(refs)
-                const current = fields.indexOf(name)
-
-                for (let i = current + 1; i < current + fieldRefs.length; i++) {
-                  const nextName = fieldRefs[i % fieldRefs.length]
-                  const next = refs[nextName]
-                  if (nextName === 'submit') {
-                    handleSubmit(e)
-                    break
-                  }
-                  if (
-                    nextName !== 'form' &&
-                    next.offsetParent !== null &&
-                    next.focus
-                  ) {
-                    next.focus()
-                    e.preventDefault()
-                    break
-                  }
-                }
-              }
-            }}
+            onKeyDown={handleKeyDown}
+            {...options}
             {...props}
           />
           {children && <span className={b.e('label-text')}>{children}</span>}

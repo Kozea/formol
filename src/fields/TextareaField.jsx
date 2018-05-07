@@ -5,6 +5,8 @@ export default class TextAreaField extends React.Component {
   render() {
     // eslint-disable-next-line no-unused-vars
     const { type, i18n, onChange, ...props } = this.props
-    return <textarea {...props} onChange={e => onChange(e.target.value)} />
+    return (
+      <textarea {...props} onChange={e => onChange(e.target.value, e.target)} />
+    )
   }
 }

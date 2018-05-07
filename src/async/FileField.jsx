@@ -95,7 +95,8 @@ export default class FileField extends React.Component {
     }
     onChange(
       // Removing error files and adding new files and new errors
-      [...value.filter(f => f.data), ...newFiles, ...erroredFiles]
+      [...value.filter(f => f.data), ...newFiles, ...erroredFiles],
+      this.dropzone.fileInputEl
     )
   }
 
@@ -173,6 +174,7 @@ export default class FileField extends React.Component {
           rejectClassName={b.e('dropzone').m({ reject: true }).s}
           disabledClassName={b.e('dropzone').m({ disabled: true }).s}
           name={name}
+          ref={ref => (this.dropzone = ref)}
           multiple={multiple}
           onDrop={this.handleDrop}
           inputProps={inputProps}

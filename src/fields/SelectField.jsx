@@ -12,7 +12,10 @@ export default class SelectField extends React.Component {
       props.disabled = true
     }
     return (
-      <select onChange={e => onChange(e.target.value)} {...cleanProps(props)}>
+      <select
+        onChange={e => onChange(e.target.value, e.target)}
+        {...cleanProps(props)}
+      >
         {choices.every(([k]) => k) && <option value="" />}
         {choices.map(([label, key]) => (
           <option key={key} value={key}>

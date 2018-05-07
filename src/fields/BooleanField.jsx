@@ -11,7 +11,7 @@ export default class BooleanField extends React.Component {
     return (
       <input
         checked={value}
-        onChange={e => onChange(e.target.checked)}
+        onChange={e => onChange(e.target.checked, e.target)}
         {...props}
       />
     )
