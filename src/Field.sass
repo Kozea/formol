@@ -1,7 +1,32 @@
 @import variables
 
 
-.Formol_Field
+label, .Formol_Field__label
+  align-items: flex-start
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+
+  input, textarea, select
+    color: inherit
+    font: inherit
+    margin: .5em 0
+
+  input, textarea
+    border: solid 1px
+    border-radius: .15em
+    box-sizing: border-box
+    max-width: 100%
+    padding: .75em
+
+  textarea
+    width: 100%
+
+  input[type=checkbox], input[type=radio]
+    margin: .25em
+
+
+// .Formol_Field
   border: 0
   margin: 2rem 0
   min-width: 0
@@ -9,14 +34,11 @@
 
   &__label
     cursor: pointer
-    display: flex
-    flex-direction: column
 
     &-text
       color: lighten($text, 25)
       font-size: $s
       margin-bottom: .5rem
-      order: -1
 
       box-shadow: 0 0 0 $light
   &__field

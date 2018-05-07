@@ -182,7 +182,10 @@ export default class FileField extends React.Component {
               preview
             ) : (
               <Fragment>
-                <MdCloudUpload /> {placeholder}
+                <MdCloudUpload />
+                <span>
+                  {placeholder}
+                </span>
               </Fragment>
             )}
           </div>

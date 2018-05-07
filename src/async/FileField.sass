@@ -1,40 +1,16 @@
 @import variables
 
+
 .Formol_FileField
-  align-items: flex-start
-  display: flex
-  flex-wrap: wrap
+  margin: .5em 0
   position: relative
-
-
-.Formol_FileField__label
-  display: flex
-  flex-direction: column
-
-
-.Formol_FileField__label-text
-  color: lighten($text, 25)
-  font-size: $s
-  margin: .5rem 0
-  order: -1
-  padding-left: .5em
+  width: 100%
 
 
 .Formol_FileField__dropzone
-  align-items: center
-  align-self: stretch
-  box-sizing: border-box
+  border: dashed 1px
   cursor: pointer
-  display: flex
-  flex: 2
-  flex-direction: column
-  font-size: $s
-  justify-content: center
-  margin: $vertical-margin $horizontal-margin
-  min-height: 15em
-  padding: 1em
-  text-align: center
-  position: relative
+  width: 100%
 
   > input[type="file"]
     // This is an important hack to avoid the :
@@ -46,35 +22,37 @@
     position: absolute
 
 
-  svg
-    display: block
-    font-size: $xl
-    margin: 0 auto .5em
-
-
-  .SmallLoading
-    position: absolute
-
-
 .Formol_FileField__placeholder
+  align-items: flex-start
+  display: flex
+  flex-wrap: wrap
   width: 100%
 
+  > svg
+    display: block
+    font-size: $font-size * 2
+    margin: 1em auto .1em
+    width: 100%
 
-.Formol_FileField
-  display: flex
+  > span
+    display: block
+    font-size: $font-size * .85
+    margin: 0 auto 3em
 
 
 .Formol_FileField__preview
-  border: 0
-  flex: 1 15em
-  margin: $vertical-margin $horizontal-margin
-  max-width: 15em
+  border: solid 1px
+  flex: 1
+  margin: 1em
+  max-width: 10em
   position: relative
-  text-align: left
+
+  img
+    max-width: 100%
 
   &-caption
     box-sizing: border-box
-    font-size: $s
+    font-size: $font-size * .75
     padding: .5em
 
   &-name, &-size, &-type
@@ -83,7 +61,7 @@
 
   &-name
     line-height: 1.5
-    max-height: calc(1rem * 1.5)
+    max-height: calc(1em * 1.5)
     overflow: hidden
     text-overflow: ellipsis
     transition: max-height $time
@@ -92,38 +70,18 @@
     &:hover
       max-height: 10em
 
-  .Preview
-    display: block
-    margin: 0 auto
-    max-width: 100%
-
 
 .Formol_FileField__close
+  border: solid 1px
+  cursor: pointer
   font-size: 0
-  background-color: $primary
-  color: $light
+  background-color: #fff
   padding: 0
   position: absolute
-  right: 0
-  top: 0
+  right: -1px
+  top: -1px
   transition: background-color $time
 
   svg
-    font-size: $s
-    margin-right: 0
-    margin: .75em
-
-  &:hover
-    background-color: $secondary
-
-
-.Formol_FileField--error, .Formol_FileField--error:hover, .Formol_FileField__wrong-type
-  border-bottom-color: $error
-  color: $error
-
-.Formol_FileField__label--error, .Formol_FileField__label--error:hover
-  .File__label-text
-    color: $error
-
-  .File__field
-    border-bottom: solid 2px $error
+    font-size: 1rem
+    margin: .5em

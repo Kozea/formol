@@ -2,28 +2,40 @@
 
 
 .Formol_HTMLField
-  padding: 0
-  position: relative
+  border: solid 1px
+  border-radius: .15em
+  margin: .5em 0
+
+
+  .rdw-editor-toolbar
+    border-bottom-color: $color
+    margin-bottom: 0
+    opacity: 1
+    transition: padding $time, opacity $time
+    transition-delay: $time / 2, $time
+
+    & > *
+      margin-top: 0
+      transition: margin $time
+      transition-delay: $time / 2
+
+
+  .rdw-editor-main
+    max-height: 50vh
+    min-height: 8em
+    overflow: auto
+    padding: 0 .75em
+
+
+  .rdw-option-wrapper:hover
+    border-color: $color
+
+  .rdw-option-active
+    border-color: inherit
+
 
   img
     max-width: 100%
-
-  .rdw-editor
-    &-toolbar
-      opacity: 1
-      transition: padding $time, opacity $time
-      transition-delay: $time / 2, $time
-
-      & > *
-        margin-top: 0
-        transition: margin $time
-        transition-delay: $time / 2
-
-    &-main
-      max-height: 50vh
-      min-height: 8em
-      overflow: auto
-      padding: 0 1em
 
 
 .Formol_Field__field--type-html

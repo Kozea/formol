@@ -1,19 +1,77 @@
 @import variables
 
 
-.Formol_Formol
-  &__submit, &__cancel
-    margin-top: 1em
-    opacity: 1
+form
+  color: $color
+  font-size: $font-size
 
-  &--errors
-    position: relative
 
-    &::before
-      background-color: $error
-      content: ''
-      height: 100%
-      position: absolute
-      right: calc(100% + #{$horizontal-padding} + #{$horizontal-border})
-      top: 0
-      width: 2px
+.Formol_Field
+  color: rgba($color, .65)
+  margin: 1em 0
+
+  &:hover, &:focus
+    color: $color
+
+.Formol_Field--modified
+  color: $color
+
+.Formol_Field--invalid
+  color: $error
+  box-shadow: none
+
+
+.Formol_Field__label-text
+  font-size: $font-size * .85
+  order: -1
+
+
+// Radios and Checkboxes
+.Formol_FieldSet
+  align-items: flex-start
+  border: 0
+  display: flex
+  flex-wrap: wrap
+  margin: .5em 0
+  padding: 0
+  width: 100%
+
+  > label
+    align-items: center
+    border: solid 1px
+    border-radius: .15em
+    box-sizing: border-box
+    flex-direction: row
+    margin: .25em
+    padding: .5em
+
+    &:not(.Formol_FieldSet__label--on)
+      color: rgba($color, .65)
+
+    &:hover
+      color: $color
+
+
+// Color picker
+.Formol_Field--type-color
+  .Formol_Field__field--type-color
+    box-sizing: content-box
+    height: 1.5em
+    padding: .25em
+    width: 1.5em
+
+
+// Form submit and cancel buttons
+.Formol_Formol__submit, .Formol_Formol__cancel
+  cursor: pointer
+  font: inherit
+
+.Formol_Formol__submit
+  margin-right: 1em
+  margin-top: 1.5em
+
+.Formol_Formol__cancel
+  background: 0
+  border: 0
+  font-size: $font-size * .85
+  padding: 0
