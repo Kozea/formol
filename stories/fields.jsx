@@ -82,22 +82,22 @@ export const testFieldValue = name =>
 
 export const knobs = name => {
   const knob = {
-    required: boolean('Required', false),
-    readOnly: boolean('Read Only', false),
-    disabled: boolean('Disabled', false),
-    autoFocus: boolean('AutoFocus', false),
-    placeholder: text('PlaceHolder', name),
+    required: boolean('Required', false, name),
+    readOnly: boolean('Read Only', false, name),
+    disabled: boolean('Disabled', false, name),
+    autoFocus: boolean('AutoFocus', false, name),
+    placeholder: text('PlaceHolder', name, name),
   }
   if (name === 'file') {
-    knob.accept = text('Accept', 'image/*')
+    knob.accept = text('Accept', 'image/*', name)
   }
   if (['file', 'select-menu'].includes(name)) {
-    knob.multiple = boolean('Multiple', false)
+    knob.multiple = boolean('Multiple', false, name)
   }
   if (['number', 'range'].includes(name)) {
-    knob.min = number('Min', 0)
-    knob.max = number('Max', 100)
-    knob.step = number('Step', 5)
+    knob.min = number('Min', 0, name)
+    knob.max = number('Max', 100, name)
+    knob.step = number('Step', 5, name)
   }
   return knob
 }
