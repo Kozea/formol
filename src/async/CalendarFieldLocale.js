@@ -24,11 +24,11 @@ export const getMonthsFr = () =>
     .fill()
     .map((_, i) => localeFr.localize.months(i, { type: 'long' }))
 
-export const formatDateFr = (date, format = 'L') =>
-  localeDateFormatFr(date, format)
+export const formatDateFr = (date, format_ = 'L') =>
+  localeDateFormatFr(date, format_)
 
-export const parseDateFr = (str, format = 'L') =>
-  parse(str, format, new Date(), { locale: localeFr })
+export const parseDateFr = (str, format_ = 'L') =>
+  parse(str, format_, new Date(), { locale: localeFr })
 
 export const CalendarFr = {
   formatDay: formatDayFr,
