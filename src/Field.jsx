@@ -4,7 +4,7 @@ import React from 'react'
 
 import InputField from './fields/InputField'
 import FormolContextWrapper from './FormolContext'
-import { block, focusNext } from './utils'
+import { block } from './utils'
 import { get } from './utils/object'
 
 @block
@@ -12,6 +12,16 @@ class Field extends React.Component {
   static defaultProps = {
     formatter: v => v,
     valueFormatter: v => v,
+  }
+
+  constructor(props) {
+    super(props)
+    if (props.value) {
+      throw new Error(
+        `Do not use value on fields.
+        Set a value for this field in the form item attribute.`
+      )
+    }
   }
 
   componentWillUnmount() {
@@ -64,7 +74,6 @@ class Field extends React.Component {
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
 
-    const options = {}
     return (
       <div
         className={b.mix(className).m({
@@ -93,7 +102,6 @@ class Field extends React.Component {
               return handleChange(name, v)
             }}
             onKeyDown={handleKeyDown}
-            {...options}
             {...props}
           />
           {children && <span className={b.e('label-text')}>{children}</span>}
