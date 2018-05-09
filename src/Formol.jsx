@@ -5,17 +5,27 @@ import React, { Fragment } from 'react'
 
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
-import CheckboxesField from './fields/CheckboxesField'
+import CheckboxSetField from './fields/CheckboxSetField'
+import ColorField from './fields/ColorField'
+import DateField from './fields/DateField'
+import DatetimeLocalField from './fields/DatetimeLocalField'
+import EmailField from './fields/EmailField'
 import FileField from './fields/FileField'
 import HTMLField from './fields/HTMLField'
 import InputField from './fields/InputField'
+import MonthField from './fields/MonthField'
 import NumberField from './fields/NumberField'
+import PasswordField from './fields/PasswordField'
 import PasswordStrengthField from './fields/PasswordStrengthField'
-import RadiosField from './fields/RadiosField'
+import RadioSetField from './fields/RadioSetField'
+import RangeField from './fields/RangeField'
 import SelectField from './fields/SelectField'
 import SelectMenuField from './fields/SelectMenuField'
 import SwitchField from './fields/SwitchField'
+import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
+import TimeField from './fields/TimeField'
+import WeekField from './fields/WeekField'
 import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
@@ -32,21 +42,29 @@ import {
 export default class Formol extends React.Component {
   static defaultFields = {
     text: InputField,
-    number: NumberField,
-    range: NumberField,
-    html: HTMLField,
     area: TextareaField,
-    calendar: CalendarField,
-    file: FileField,
-    files: FileField,
+    email: EmailField,
+    number: NumberField,
+    password: PasswordField,
     'password-strength': PasswordStrengthField,
+    tel: TelField,
+    color: ColorField,
+    date: DateField,
+    time: TimeField,
+    datetimelocal: DatetimeLocalField,
+    month: MonthField,
+    week: WeekField,
+    range: RangeField,
+    calendar: CalendarField,
+    switch: SwitchField,
+    html: HTMLField,
+    radio: BooleanField,
+    'radio-set': RadioSetField,
+    checkbox: BooleanField,
+    'checkbox-set': CheckboxSetField,
+    file: FileField,
     select: SelectField,
     'select-menu': SelectMenuField,
-    switch: SwitchField,
-    radio: BooleanField,
-    checkbox: BooleanField,
-    radios: RadiosField,
-    checkboxes: CheckboxesField,
   }
 
   static i18n = {

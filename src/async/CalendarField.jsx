@@ -54,14 +54,15 @@ export default class CalendarField extends React.Component {
         />
       )
     }
+    const bem = b.mix(className)
     return (
       <DayPickerInput
         classNames={{
-          container: b.mix('DayPickerInput').s,
-          overlayWrapper: b
+          container: bem.mix('DayPickerInput').s,
+          overlayWrapper: bem
             .e('overlay-wrapper')
             .mix('DayPickerInput-OverlayWrapper').s,
-          overlay: b.e('overlay').mix('DayPickerInput-Overlay').s,
+          overlay: bem.e('overlay').mix('DayPickerInput-Overlay').s,
         }}
         value={date}
         ref={ref => (this.daypicker = ref)}

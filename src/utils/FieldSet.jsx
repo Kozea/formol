@@ -5,9 +5,9 @@ import { block, cleanProps, normalizeChoices } from '../utils'
 @block
 export default class FieldSet extends React.Component {
   render(b) {
-    const { type, isChecked, value, onChange, ...props } = this.props
+    const { type, isChecked, value, className, onChange, ...props } = this.props
     return (
-      <fieldset className={b} ref={ref => (this.fieldset = ref)}>
+      <fieldset className={b.mix(className)} ref={ref => (this.fieldset = ref)}>
         {normalizeChoices(props).map(([choiceLabel, choice]) => (
           <label
             key={choice}

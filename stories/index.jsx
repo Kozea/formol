@@ -123,8 +123,8 @@ storiesOf('Native and Contrib fields', module)
           HTML
         </Field>
         <Field
-          type="file"
-          name="file"
+          type="filedrop"
+          name="filedrop"
           accept="image/*"
           placeholder="Drop an image"
         >

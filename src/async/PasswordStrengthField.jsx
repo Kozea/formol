@@ -25,10 +25,10 @@ export default class PasswordStrengthField extends React.Component {
     const { className, name, value, i18n, ...props } = this.props
     return (
       <ReactPasswordStrength
+        className={b.mix(className).s}
         /* eslint-disable-next-line react/jsx-handler-names */
         changeCallback={this.handleChange}
         defaultValue={value}
-        className={b.mix(className).s}
         ref={ref => (this.passwordInput = ref)}
         inputProps={{ name, ...props, type: 'password' }}
         scoreWords={[

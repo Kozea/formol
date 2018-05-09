@@ -1,19 +1,32 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-// eslint-disable-next-line react/prefer-stateless-function
+import { block } from '../utils'
+
+@block
 export default class BooleanField extends React.Component {
-  render() {
-    // eslint-disable-next-line no-unused-vars
-    const { value, i18n, readOnly, onChange, ...props } = this.props
+  render(b) {
+    const {
+      value,
+      i18n, // eslint-disable-line no-unused-vars
+      readOnly,
+      className,
+      onChange,
+      extraLabel,
+      ...props
+    } = this.props
     if (readOnly) {
       props.disabled = true
     }
     return (
-      <input
-        checked={value}
-        onChange={e => onChange(e.target.checked, e.target)}
-        {...props}
-      />
+      <Fragment>
+        <input
+          className={b.mix(className)}
+          checked={value}
+          onChange={e => onChange(e.target.checked, e.target)}
+          {...props}
+        />
+        {extraLabel}
+      </Fragment>
     )
   }
 }

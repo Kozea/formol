@@ -1,14 +1,20 @@
 import React from 'react'
 
-// eslint-disable-next-line react/prefer-stateless-function
+import { block } from '../utils'
+
+@block
 export default class InputField extends React.Component {
   static defaultProps = { type: 'text' }
 
-  render() {
+  render(b) {
     // eslint-disable-next-line no-unused-vars
-    const { i18n, onChange, ...props } = this.props
+    const { i18n, className, onChange, ...props } = this.props
     return (
-      <input {...props} onChange={e => onChange(e.target.value, e.target)} />
+      <input
+        className={b.mix(className)}
+        onChange={e => onChange(e.target.value, e.target)}
+        {...props}
+      />
     )
   }
 }

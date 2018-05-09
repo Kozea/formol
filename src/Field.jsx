@@ -81,7 +81,6 @@ class Field extends React.Component {
           name,
           error: !!error,
           readOnly,
-          modified,
         })}
       >
         <Label className={b.e('label')}>
@@ -91,7 +90,7 @@ class Field extends React.Component {
             type={type}
             readOnly={readOnly}
             i18n={i18n}
-            className={b.e('field').m({ type, focus, modified })}
+            className={b.e('field').m({ focus, modified })}
             onFocus={e => handleFocus(name, e)}
             onBlur={e => handleBlur(name, e)}
             onChange={(v, target) => {

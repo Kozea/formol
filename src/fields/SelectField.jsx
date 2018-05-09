@@ -1,18 +1,19 @@
 import React from 'react'
 
-import { cleanProps, normalizeChoices } from '../utils'
+import { block, cleanProps, normalizeChoices } from '../utils'
 
-// eslint-disable-next-line react/prefer-stateless-function
+@block
 export default class SelectField extends React.Component {
-  render() {
+  render(b) {
     const choices = normalizeChoices(this.props)
     // eslint-disable-next-line no-unused-vars
-    const { i18n, readOnly, onChange, ...props } = this.props
+    const { i18n, readOnly, className, onChange, ...props } = this.props
     if (readOnly) {
       props.disabled = true
     }
     return (
       <select
+        className={b.mix(className)}
         onChange={e => onChange(e.target.value, e.target)}
         {...cleanProps(props)}
       >

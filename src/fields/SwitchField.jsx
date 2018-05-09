@@ -7,15 +7,21 @@ import SwitchButton from '../utils/SwitchButton'
 @block
 export default class SwitchField extends React.Component {
   render(b) {
-    // eslint-disable-next-line no-unused-vars
-    const { type, i18n, leftLabel, rightLabel, ...props } = this.props
+    const {
+      type, // eslint-disable-line no-unused-vars
+      i18n,
+      leftLabel,
+      rightLabel,
+      className,
+      ...props
+    } = this.props
 
     return (
       <SwitchButton
+        className={b.mix(className)}
         label={leftLabel || i18n.no}
         labelRight={rightLabel || i18n.yes}
         {...props}
-        className={b}
       />
     )
   }

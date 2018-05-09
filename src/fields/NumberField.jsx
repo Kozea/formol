@@ -1,16 +1,17 @@
 import React from 'react'
 
+import { block } from '../utils'
 import InputField from './InputField'
 
-// eslint-disable-next-line react/prefer-stateless-function
+@block
 export default class NumberField extends React.Component {
-  render() {
-    // eslint-disable-next-line no-unused-vars
-    const { i18n, onChange, ...props } = this.props
+  render(b) {
+    const { className, onChange, ...props } = this.props
     return (
       <InputField
-        {...props}
+        className={b.mix(className)}
         onChange={(v, target) => onChange(parseInt(v), target)}
+        {...props}
       />
     )
   }

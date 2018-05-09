@@ -118,9 +118,10 @@ export default class FileField extends React.Component {
     delete inputProps.rejectedMessage
 
     const { error } = this.state
-    const preview = value.length ? (
+    const files = value || []
+    const preview = files.length ? (
       <Fragment>
-        {value.map(file => (
+        {files.map(file => (
           <figure className={b.e('preview')} key={`${file.name}.${file.ext}`}>
             <div className={b.e('image-delete')}>
               <Preview
@@ -134,7 +135,7 @@ export default class FileField extends React.Component {
                   className={b.e('close')}
                   kind="disabled"
                   onClick={e => {
-                    onChange(value.filter(f => key(f) !== key(file)))
+                    onChange(files.filter(f => key(f) !== key(file)))
                     this.setState({ error: null })
                     e.stopPropagation()
                   }}
@@ -185,9 +186,7 @@ export default class FileField extends React.Component {
             ) : (
               <Fragment>
                 <MdCloudUpload />
-                <span>
-                  {placeholder}
-                </span>
+                <span>{placeholder}</span>
               </Fragment>
             )}
           </div>

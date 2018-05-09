@@ -70,7 +70,6 @@ export default class HTMLField extends React.Component {
     const value = this.prepareValue(stateToValue(editorState))
     this.value = value
     this.setState({ editorState })
-    debugger
     onChange(value)
   }
 
