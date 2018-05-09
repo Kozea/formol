@@ -5108,6 +5108,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           }
         }
         disabled={false}
+        multiple={false}
         name="select"
         onBlur={[Function]}
         onChange={[Function]}
@@ -11621,6 +11622,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           }
         }
         disabled={false}
+        multiple={false}
         name="select"
         onBlur={[Function]}
         onChange={[Function]}
@@ -17274,6 +17276,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "subs": Array [],
           }
         }
+        multiple={undefined}
         name="select"
         onBlur={[Function]}
         onChange={[Function]}

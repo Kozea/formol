@@ -1,11 +1,11 @@
-import './SelectMenuField.sass'
-
 import 'react-select/dist/react-select.css'
+
+import './SelectMenuField.sass'
 
 import React from 'react'
 import Select from 'react-select'
 
-import { block } from '../utils'
+import { block, normalizeMultipleProps } from '../utils'
 
 @block
 export default class SelectMenuField extends React.Component {
@@ -31,7 +31,7 @@ export default class SelectMenuField extends React.Component {
       nonStringValue,
       choiceGetter,
       ...inputProps
-    } = this.props
+    } = normalizeMultipleProps(this.props)
     delete inputProps.onChange
     const maybeStringify = v =>
       nonStringValue ? JSON.stringify(choiceGetter(v)[0]) : v
@@ -41,7 +41,7 @@ export default class SelectMenuField extends React.Component {
       label: choiceLabel,
     }))
     const strValue = multiple
-      ? (value || []).map(maybeStringify)
+      ? value.map(maybeStringify)
       : maybeStringify(value)
     return (
       <Select

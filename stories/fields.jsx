@@ -91,7 +91,7 @@ export const knobs = name => {
   if (name === 'file') {
     knob.accept = text('Accept', 'image/*', name)
   }
-  if (['file', 'select-menu'].includes(name)) {
+  if (['file', 'select', 'select-menu'].includes(name)) {
     knob.multiple = boolean('Multiple', false, name)
   }
   if (['number', 'range'].includes(name)) {

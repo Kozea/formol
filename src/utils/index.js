@@ -35,6 +35,19 @@ export const normalizeChoices = ({ choices, choiceGetter }) =>
       ? choices.objects.map(choiceGetter)
       : choices || {}
   )
+export const normalizeMultipleProps = ({ value, multiple, ...props }) => {
+  if (!multiple && Array.isArray(value)) {
+    value = value.length ? value[0] : null
+  }
+  if (multiple && !Array.isArray(value)) {
+    value = value !== null && value !== void 0 ? [value] : []
+  }
+  return {
+    value,
+    multiple,
+    ...props,
+  }
+}
 
 // eslint-disable-next-line no-unused-vars
 export const cleanProps = ({ choices, asyncChoices, ...props }) => props

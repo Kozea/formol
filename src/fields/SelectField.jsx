@@ -1,9 +1,29 @@
 import React from 'react'
 
-import { block, cleanProps, normalizeChoices } from '../utils'
+import {
+  block,
+  cleanProps,
+  normalizeChoices,
+  normalizeMultipleProps,
+} from '../utils'
 
 @block
 export default class SelectField extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(e) {
+    const { multiple, onChange } = this.props
+    return onChange(
+      multiple
+        ? [...e.target.options].filter(o => o.selected).map(o => o.value)
+        : e.target.value,
+      e.target
+    )
+  }
+
   render(b) {
     const choices = normalizeChoices(this.props)
     // eslint-disable-next-line no-unused-vars
@@ -11,11 +31,12 @@ export default class SelectField extends React.Component {
     if (readOnly) {
       props.disabled = true
     }
+
     return (
       <select
         className={b.mix(className)}
-        onChange={e => onChange(e.target.value, e.target)}
-        {...cleanProps(props)}
+        onChange={this.handleChange}
+        {...cleanProps(normalizeMultipleProps(props))}
       >
         {choices.every(([k]) => k) && <option value="" />}
         {choices.map(([label, key]) => (
