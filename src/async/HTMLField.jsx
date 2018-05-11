@@ -73,10 +73,6 @@ export default class HTMLField extends React.Component {
     onChange(value)
   }
 
-  checkValidity() {
-    return true
-  }
-
   render(b) {
     const {
       className,

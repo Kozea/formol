@@ -2,6 +2,7 @@ export default {
   // General
   yes: 'Oui',
   no: 'Non',
+  required: 'Veuillez renseigner ce champ',
   // CalendarField
   calendar: {
     dateFormat: 'DD/MM/YYYY',

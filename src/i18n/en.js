@@ -2,6 +2,7 @@ export default {
   // General
   yes: 'Yes',
   no: 'No',
+  required: 'Please fill out this field',
   // CalendarField
   calendar: {
     dateFormat: 'MM/DD/YYYY',
@@ -10,7 +11,7 @@ export default {
   },
   file: {
     rejected: 'Please select a valid file.',
-    rejectedMultiple: 'Some of you files are invalid.',
+    rejectedMultiple: 'Some of your files are invalid.',
     noFile: 'No file',
   },
   html: {

@@ -40,7 +40,7 @@ export const normalizeMultipleProps = ({ value, multiple, ...props }) => {
     value = value.length ? value[0] : null
   }
   if (multiple && !Array.isArray(value)) {
-    value = value !== null && value !== void 0 ? [value] : []
+    value = value !== null && value !== void 0 && value !== '' ? [value] : []
   }
   return {
     value,

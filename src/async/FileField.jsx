@@ -5,7 +5,14 @@ import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
 import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
 
-import { block, fileSize, nameExt, readAsBase64, staticUrl } from '../utils'
+import {
+  block,
+  fileSize,
+  nameExt,
+  normalizeMultipleProps,
+  readAsBase64,
+  staticUrl,
+} from '../utils'
 import Preview from '../utils/Preview'
 
 const key = file => [file.name, file.ext].join('.')
@@ -32,71 +39,145 @@ export default class FileField extends React.Component {
       error: null,
     }
     this.handleDrop = this.handleDrop.bind(this)
+    this.handleRemove = this.handleRemove.bind(this)
   }
 
-  checkValidity() {
-    return !this.state.error
+  async fileToObject(file) {
+    return {
+      name: file.name,
+      type: file.type,
+      size: file.size,
+      data: (await readAsBase64(file)).split(',', 2)[1],
+    }
   }
 
   async handleDrop(accepted, rejected, { target }) {
-    const { multiple, rejectedMessage, i18n, onChange } = this.props
-    const value = multiple ? this.props.value || [] : []
-    accepted = await Promise.all(
-      accepted.map(async file => ({
-        name: file.name,
-        type: file.type,
-        size: file.size,
-        data: (await readAsBase64(file)).split(',', 2)[1],
-      }))
-    )
-    // We can't map here because of name checking (prevent collisions)
-    const newFiles = []
-    accepted.forEach(({ name: fn, type, size, data }) => {
-      const [newName, ext] = nonExistingFileName(nameExt(fn), [
-        ...value.filter(f => f.data),
-        ...newFiles,
-      ])
-      const fks = {}
-      // TOOD: fix that
-      // if (fKey) {
-      //   const fKeys = typeof fKey === 'string' ? [fKey] : fKey
-      //   fKeys.map(fk => {
-      //     fks[fk] = this.context.edited[fk]
-      //   })
-      // }
-      newFiles.push({
-        name: newName,
-        ext,
-        type,
-        size,
-        data,
-        ...fks,
-      })
-    })
+    const {
+      value,
+      multiple,
+      rejectedMessage,
+      i18n,
+      onChange,
+    } = normalizeMultipleProps(this.props)
+    let changed = null
+    if (multiple) {
+      accepted = await Promise.all(accepted.map(this.fileToObject))
 
-    const erroredFiles = rejected.map(({ name: fn, type, size }) => {
-      const [newName, ext] = nameExt(fn)
-      return {
-        name: newName,
-        ext,
-        type,
-        size,
+      // We can't map here because of name checking (prevent collisions)
+      const newFiles = []
+      accepted.forEach(({ name: fn, type, size, data }) => {
+        const [newName, ext] = nonExistingFileName(nameExt(fn), [
+          ...value.filter(f => f.data),
+          ...newFiles,
+        ])
+        const fks = {}
+        // TOOD: fix that
+        // if (fKey) {
+        //   const fKeys = typeof fKey === 'string' ? [fKey] : fKey
+        //   fKeys.map(fk => {
+        //     fks[fk] = this.context.edited[fk]
+        //   })
+        // }
+        newFiles.push({
+          name: newName,
+          ext,
+          type,
+          size,
+          data,
+          ...fks,
+        })
+      })
+
+      const erroredFiles = rejected.map(({ name: fn, type, size }) => {
+        const [newName, ext] = nameExt(fn)
+        return {
+          name: newName,
+          ext,
+          type,
+          size,
+        }
+      })
+
+      // Removing error files and adding new files and new errors
+      changed = [...value.filter(f => f.data), ...newFiles, ...erroredFiles]
+    } else {
+      if (!accepted.length && !rejected.length) {
+        console.warn('Nothing sent on onDrop')
+        return
       }
-    })
-    if (erroredFiles.length) {
-      const err =
+      changed = await this.fileToObject(accepted[0] || rejected[0])
+    }
+    let err = null
+    if (rejected.length) {
+      err =
         rejectedMessage ||
         (multiple ? i18n.file.rejectedMultiple : i18n.file.rejected)
+    }
+
+    if (err) {
       this.setState({ error: err })
       target.setCustomValidity(err)
+      target.reportValidity && target.reportValidity()
     } else {
       this.setState({ error: null })
       target.setCustomValidity('')
     }
-    onChange(
-      // Removing error files and adding new files and new errors
-      [...value.filter(f => f.data), ...newFiles, ...erroredFiles],
-      this.dropzone.fileInputEl
+    onChange(changed, target)
+  }
+
+  handleRemove(e, file) {
+    const { value, multiple, onChange } = normalizeMultipleProps(this.props)
+    let changed = null
+    if (multiple) {
+      if (file) {
+        changed = value.filter(f => key(f) !== key(file))
+      } else {
+        changed = []
+      }
+    }
+    onChange(changed, this.dropzone.fileInputEl)
+    if (!changed || (multiple && !changed.length)) {
+      // This ensure required is checked
+      this.dropzone.fileInputEl.value = null
+    }
+    // TODO: This is wrong:
+    this.setState({ error: null })
+    e && e.stopPropagation()
+  }
+
+  renderPreview(b, file) {
+    const { error, readOnly, disabled } = this.state
+    return (
+      <figure
+        className={b.e('preview', { error })}
+        key={`${file.name}.${file.ext}`}
+      >
+        <div className={b.e('image-delete')}>
+          <Preview
+            src={file.url && staticUrl(file.url)}
+            data={file.data}
+            mime={file.type}
+            ext={file.ext}
+          />
+          {!readOnly && !disabled ? (
+            <button
+              className={b.e('close')}
+              onClick={e => this.handleRemove(e, file)}
+            >
+              <FaTrash /> Enlever
+            </button>
+          ) : null}
+        </div>
+        <figcaption className={b.e('preview-caption')}>
+          <span className={b.e('preview-name')}>{key(file)} </span>
+          {file.size && (
+            <span className={b.e('preview-size')}>{fileSize(file.size)} </span>
+          )}
+          {file.type && (
+            <span className={b.e('preview-type')}>{file.type}</span>
+          )}
+        </figcaption>
+      </figure>
     )
   }
 
@@ -107,58 +188,25 @@ export default class FileField extends React.Component {
       i18n,
       accept,
       placeholder,
-      onChange,
       className,
       multiple,
       readOnly,
       disabled,
       ...inputProps
-    } = this.props
+    } = normalizeMultipleProps(this.props)
     delete inputProps.fKey
     delete inputProps.rejectedMessage
 
     const { error } = this.state
-    const files = value || []
-    const preview = files.length ? (
-      <Fragment>
-        {files.map(file => (
-          <figure className={b.e('preview')} key={`${file.name}.${file.ext}`}>
-            <div className={b.e('image-delete')}>
-              <Preview
-                src={file.url && staticUrl(file.url)}
-                data={file.data}
-                mime={file.type}
-                ext={file.ext}
-              />
-              {!readOnly && !disabled ? (
-                <button
-                  className={b.e('close')}
-                  kind="disabled"
-                  onClick={e => {
-                    onChange(files.filter(f => key(f) !== key(file)))
-                    this.setState({ error: null })
-                    e.stopPropagation()
-                  }}
-                >
-                  <FaTrash /> Enlever
-                </button>
-              ) : null}
-            </div>
-            <figcaption className={b.e('preview-caption')}>
-              <span className={b.e('preview-name')}>{key(file)} </span>
-              {file.size && (
-                <span className={b.e('preview-size')}>
-                  {fileSize(file.size)}{' '}
-                </span>
-              )}
-              {file.type && (
-                <span className={b.e('preview-type')}>{file.type}</span>
-              )}
-            </figcaption>
-          </figure>
-        ))}
-      </Fragment>
-    ) : null
+    let preview = null
+    if (multiple) {
+      preview = (
+        <Fragment>{value.map(file => this.renderPreview(b, file))}</Fragment>
+      )
+    } else if (value) {
+      preview = this.renderPreview(b, value)
+    }
+
     if (readOnly || disabled) {
       return (
         <div className={b.mix(className)}>{preview || i18n.file.noFile}</div>
@@ -174,6 +222,8 @@ export default class FileField extends React.Component {
           acceptClassName={b.e('dropzone').m({ accept: true }).s}
           rejectClassName={b.e('dropzone').m({ reject: true }).s}
           disabledClassName={b.e('dropzone').m({ disabled: true }).s}
+          // Since value of input is nulled we have to remove the files
+          onFileDialogCancel={this.handleRemove}
           name={name}
           ref={ref => (this.dropzone = ref)}
           multiple={multiple}
