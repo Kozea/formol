@@ -84,8 +84,8 @@ export default class Formol extends React.Component {
   constructor(props) {
     super(props)
     const { item, fields, i18n, readOnly } = props
-    this.form = null
-    this.submit = null
+    this.form = React.createRef()
+    this.submit = React.createRef()
     this.state = {
       disablePrompt: false,
       context: {
@@ -163,7 +163,7 @@ export default class Formol extends React.Component {
       onSubmit,
     } = this.props
     const { transientItem } = this.state.context
-    if (this.form.checkValidity()) {
+    if (this.form.current && this.form.current.checkValidity()) {
       if (onSubmit) {
         try {
           const report = await onSubmit(transientItem)
@@ -220,9 +220,12 @@ export default class Formol extends React.Component {
           this.handleError(err)
         }
       }
+    } else if (this.form.current.reportValidity) {
+      this.form.current.reportValidity()
     } else {
-      this.submit && this.submit.click()
-      e.preventDefault()
+      // Would be better to always use this.form.current.reportValidity
+      // but browser support is not as good
+      this.submit.current && this.submit.current.click()
     }
   }
 
@@ -281,7 +284,7 @@ export default class Formol extends React.Component {
           return
         }
       }
-      const fields = [...this.form.querySelectorAll('.Formol_Field')]
+      const fields = [...this.form.current.querySelectorAll('.Formol_Field')]
       const focusables = fields.map(field => [
         ...field.querySelectorAll(`
             input:not([disabled]):not([tabindex='-1']),
@@ -381,7 +384,7 @@ export default class Formol extends React.Component {
           errors: !!Object.keys(context.errors).length,
         })}
         onSubmit={e => e.preventDefault()}
-        ref={ref => (this.form = ref)}
+        ref={this.form}
       >
         {Prompt && (
           <Prompt
