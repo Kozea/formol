@@ -72,6 +72,7 @@ export default class HTMLField extends React.Component {
       className,
       i18n,
       readOnly,
+      disabled,
       onFocus,
       onBlur,
       onKeyDown,
@@ -104,7 +105,7 @@ export default class HTMLField extends React.Component {
           onFocus={onFocus}
           handleReturn={onKeyDown}
           placeholder={placeholder || i18n.html.placeholder}
-          readOnly={readOnly}
+          readOnly={readOnly || disabled}
           toolbar={HTMLToolbar}
           toolbarClassName={b.e('toolbar')}
           wrapperClassName={b.e('wrapper')}
