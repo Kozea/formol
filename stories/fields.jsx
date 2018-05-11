@@ -65,6 +65,7 @@ export const testFieldValue = name =>
     calendar: '2018-08-01',
     date: '2018-08-01',
     time: '17:14',
+    switch: true,
     datetimelocal: '2018-08-01T17:14',
     week: '2018-W12',
     month: '2018-08',

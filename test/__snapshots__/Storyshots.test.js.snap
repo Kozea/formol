@@ -5515,7 +5515,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "disabled": false,
                       "focus": false,
                       "mode": "switch",
                       "modified": false,
@@ -5531,7 +5530,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
                   },
                 ],
                 "modifier": Object {
-                  "disabled": false,
                   "mode": "switch",
                 },
                 "s": "Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -5545,7 +5543,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
               },
             ],
             "modifier": Object {
-              "disabled": false,
               "mode": "switch",
             },
             "s": "Formol_SwitchButton Formol_SwitchButton--mode-switch Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -12029,7 +12026,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "disabled": false,
                       "focus": false,
                       "mode": "switch",
                       "modified": false,
@@ -12045,7 +12041,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
                   },
                 ],
                 "modifier": Object {
-                  "disabled": false,
                   "mode": "switch",
                 },
                 "s": "Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -12059,7 +12054,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
               },
             ],
             "modifier": Object {
-              "disabled": false,
               "mode": "switch",
             },
             "s": "Formol_SwitchButton Formol_SwitchButton--mode-switch Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -12080,7 +12074,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
         </label>
         <input
           autoFocus={false}
-          checked="switch"
+          checked={true}
           className={
             Block {
               "block": "BooleanField",
@@ -14920,7 +14914,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "disabled": undefined,
                       "focus": false,
                       "mode": "switch",
                       "modified": false,
@@ -14936,7 +14929,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                   },
                 ],
                 "modifier": Object {
-                  "disabled": undefined,
                   "mode": "switch",
                 },
                 "s": "Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -14950,7 +14942,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               },
             ],
             "modifier": Object {
-              "disabled": undefined,
               "mode": "switch",
             },
             "s": "Formol_SwitchButton Formol_SwitchButton--mode-switch Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -14987,7 +14978,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               "subs": Array [],
             }
           }
-          disabled={undefined}
           id="pregnant"
           name="pregnant"
           onBlur={[Function]}
@@ -15881,7 +15871,6 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "disabled": undefined,
                       "focus": false,
                       "mode": "switch",
                       "modified": false,
@@ -15897,7 +15886,6 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
                   },
                 ],
                 "modifier": Object {
-                  "disabled": undefined,
                   "mode": "switch",
                 },
                 "s": "Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -15911,7 +15899,6 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
               },
             ],
             "modifier": Object {
-              "disabled": undefined,
               "mode": "switch",
             },
             "s": "Formol_SwitchButton Formol_SwitchButton--mode-switch Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
@@ -15948,7 +15935,6 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
               "subs": Array [],
             }
           }
-          disabled={undefined}
           id="switch"
           name="switch"
           onBlur={[Function]}

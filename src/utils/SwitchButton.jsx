@@ -5,31 +5,30 @@ import React from 'react'
 import BooleanField from '../fields/BooleanField'
 import { block } from '../utils'
 
-const b = block('SwitchButton')
-
-export default function SwitchButton({
-  name,
-  label,
-  labelRight,
-  mode,
-  className,
-  disabled,
-  ...props
-}) {
-  mode = mode === 'select' ? 'select' : 'switch'
-  name = name || Math.random()
-  return (
-    <div className={b.mix(className).m({ mode, disabled })}>
-      {label && <label htmlFor={name}>{label}</label>}
-      <BooleanField
-        id={name}
-        name={name}
-        type="checkbox"
-        disabled={disabled}
-        {...props}
-      />
-      <label htmlFor={name} />
-      {labelRight && <label htmlFor={name}>{labelRight}</label>}
-    </div>
-  )
+// eslint-disable-next-line react/prefer-stateless-function
+@block
+export default class SwitchButton extends React.Component {
+  static defaultProps = {
+    mode: 'switch',
+    name: Math.random(),
+  }
+  render(b) {
+    const {
+      type, // eslint-disable-line no-unused-vars
+      name,
+      label,
+      labelRight,
+      mode,
+      className,
+      ...props
+    } = this.props
+    return (
+      <div className={b.mix(className).m({ mode })}>
+        {label && <label htmlFor={name}>{label}</label>}
+        <BooleanField id={name} name={name} type="checkbox" {...props} />
+        <label htmlFor={name} />
+        {labelRight && <label htmlFor={name}>{labelRight}</label>}
+      </div>
+    )
+  }
 }

@@ -1,5 +1,8 @@
+@import mixins
+
 .Formol_SwitchButton
   margin: 1em 0
+  position: relative
 
   label
     cursor: pointer
@@ -36,6 +39,4 @@
 
   // Hide the default input checkbox
   input[type='checkbox']
-    margin-left: -9999px
-    position: absolute
-    visibility: hidden
+    +hidden-input
