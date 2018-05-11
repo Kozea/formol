@@ -6,11 +6,12 @@ import { block } from '../utils'
 export default class TextAreaField extends React.Component {
   render(b) {
     // eslint-disable-next-line no-unused-vars
-    const { type, i18n, className, onChange, ...props } = this.props
+    const { type, i18n, className, elementRef, onChange, ...props } = this.props
     return (
       <textarea
+        ref={elementRef}
         className={b.mix(className)}
-        onChange={e => onChange(e.target.value, e.target)}
+        onChange={e => onChange(e.target.value)}
         {...props}
       />
     )

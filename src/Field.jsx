@@ -22,6 +22,7 @@ class Field extends React.Component {
         Set a value for this field in the form item attribute.`
       )
     }
+    this.element = React.createRef()
   }
 
   componentWillUnmount() {
@@ -38,7 +39,7 @@ class Field extends React.Component {
       name,
       type,
       className,
-      customValidator,
+      validator,
       extras,
       formatter,
       valueFormatter,
@@ -51,6 +52,8 @@ class Field extends React.Component {
       item,
       transientItem,
       fields,
+      elements,
+      validators,
       i18n,
       errors,
       focused,
@@ -73,6 +76,8 @@ class Field extends React.Component {
 
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
+    elements[name] = this.element
+    validators[name] = validator
 
     return (
       <div
@@ -90,16 +95,11 @@ class Field extends React.Component {
             type={type}
             readOnly={readOnly}
             i18n={i18n}
+            elementRef={this.element}
             className={b.e('field').m({ focus, modified })}
-            onFocus={e => handleFocus(name, e)}
-            onBlur={e => handleBlur(name, e)}
-            onChange={(v, target) => {
-              v = valueFormatter(v)
-              customValidator &&
-                target &&
-                target.setCustomValidity(customValidator(v, transientItem))
-              return handleChange(name, v)
-            }}
+            onFocus={() => handleFocus(name)}
+            onBlur={() => handleBlur(name)}
+            onChange={v => handleChange(name, valueFormatter(v))}
             onKeyDown={handleKeyDown}
             {...props}
           />

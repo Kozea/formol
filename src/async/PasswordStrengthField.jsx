@@ -13,12 +13,19 @@ export default class PasswordStrengthField extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
+  componentDidMount() {
+    const { elementRef } = this.props
+    elementRef.current = this.passwordInput.reactPasswordStrengthInput
+  }
+
+  componentWillUnmount() {
+    const { elementRef } = this.props
+    elementRef.current = null
+  }
+
   handleChange({ password, isValid }) {
     const { onChange } = this.props
-    onChange(
-      isValid ? password : void 0,
-      this.passwordInput.reactPasswordStrengthInput
-    )
+    onChange(isValid ? password : void 0)
   }
 
   render(b) {

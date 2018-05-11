@@ -9,6 +9,15 @@ import { block, normalizeMultipleProps } from '../utils'
 
 @block
 export default class SelectMenuField extends React.Component {
+  componentDidMount() {
+    const { elementRef } = this.props
+    elementRef.current = this.select.input.input
+  }
+
+  componentWillUnmount() {
+    const { elementRef } = this.props
+    elementRef.current = null
+  }
   handleChange(newValue) {
     const { multiple, nonStringValue, onChange } = this.props
     const maybeParse = v => (nonStringValue ? JSON.parse(v) : v)
@@ -16,8 +25,7 @@ export default class SelectMenuField extends React.Component {
       newValue &&
         (multiple
           ? newValue.map(({ value }) => maybeParse(value))
-          : maybeParse(newValue.value)),
-      this.select.input.input
+          : maybeParse(newValue.value))
     )
   }
 

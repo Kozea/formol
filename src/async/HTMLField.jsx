@@ -40,8 +40,8 @@ export default class HTMLField extends React.Component {
     this.newState(value || '')
   }
 
-  componentWillReceiveProps({ value }) {
-    if (value !== this.input.value) {
+  componentWillReceiveProps({ elementRef: { current }, value }) {
+    if (value !== current.value) {
       this.newState(value)
     }
   }
@@ -51,25 +51,32 @@ export default class HTMLField extends React.Component {
   }
 
   newState(value) {
+    const {
+      elementRef: { current },
+    } = this.props
     const newValue = this.prepareValue(value)
-    this.value = newValue
+    current.value = newValue
     this.setState({
       editorState: stateFromValue(newValue),
     })
   }
 
   onChange(editorState) {
-    const { onChange } = this.props
+    const {
+      elementRef: { current },
+      onChange,
+    } = this.props
     const value = this.prepareValue(stateToValue(editorState))
     // Synchronise value with input for html5 form validation
-    this.input.value = value
+    current.value = value
     this.setState({ editorState })
-    onChange(value, this.input)
+    onChange(value)
   }
 
   render(b) {
     const {
       className,
+      elementRef,
       i18n,
       readOnly,
       disabled,
@@ -110,11 +117,7 @@ export default class HTMLField extends React.Component {
           toolbarClassName={b.e('toolbar')}
           wrapperClassName={b.e('wrapper')}
         />
-        <input
-          className={b.e('hidden-input')}
-          ref={ref => (this.input = ref)}
-          {...props}
-        />
+        <input className={b.e('hidden-input')} ref={elementRef} {...props} />
       </div>
     )
   }

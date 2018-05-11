@@ -26,14 +26,21 @@ export default class SelectField extends React.Component {
 
   render(b) {
     const choices = normalizeChoices(this.props)
-    // eslint-disable-next-line no-unused-vars
-    const { i18n, readOnly, className, onChange, ...props } = this.props
+    const {
+      i18n, // eslint-disable-line no-unused-vars
+      readOnly,
+      className,
+      elementRef,
+      onChange, // eslint-disable-line no-unused-vars
+      ...props
+    } = this.props
     if (readOnly) {
       props.disabled = true
     }
 
     return (
       <select
+        ref={elementRef}
         className={b.mix(className)}
         onChange={this.handleChange}
         {...cleanProps(normalizeMultipleProps(props))}

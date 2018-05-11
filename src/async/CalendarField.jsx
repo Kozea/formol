@@ -15,20 +15,32 @@ const voidIfNaN = d => (isNaN(d.valueOf()) ? void 0 : d)
 
 @block
 export default class CalendarField extends React.Component {
+  componentDidMount() {
+    const { readOnly, disabled, elementRef } = this.props
+    if (!(readOnly || disabled)) {
+      elementRef.current = this.daypicker.input
+    }
+  }
+
+  componentWillUnmount() {
+    const { elementRef } = this.props
+    elementRef.current = null
+  }
+
   handleChange(newDate) {
     const { i18n, onChange } = this.props
     const locale = i18n.calendar.locale === 'fr' ? localeFr : void 0
     onChange(
       isDate(newDate)
         ? format(newDate, 'YYYY-MM-DD', { locale })
-        : newDate || null,
-      this.daypicker.input
+        : newDate || null
     )
   }
 
   render(b) {
     const {
       className,
+      elementRef,
       i18n,
       placeholder,
       format: userFormat,
@@ -46,6 +58,7 @@ export default class CalendarField extends React.Component {
     if (readOnly || disabled) {
       return (
         <input
+          ref={elementRef}
           type="text"
           className={b.mix(className)}
           readOnly={readOnly}

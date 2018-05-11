@@ -10,6 +10,7 @@ export default class BooleanField extends React.Component {
       i18n, // eslint-disable-line no-unused-vars
       readOnly,
       className,
+      elementRef,
       onChange,
       extraLabel,
       ...props
@@ -20,9 +21,10 @@ export default class BooleanField extends React.Component {
     return (
       <Fragment>
         <input
+          ref={elementRef}
           className={b.mix(className)}
           checked={value}
-          onChange={e => onChange(e.target.checked, e.target)}
+          onChange={e => onChange(e.target.checked)}
           {...props}
         />
         {extraLabel}

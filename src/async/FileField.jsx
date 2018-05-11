@@ -42,6 +42,16 @@ export default class FileField extends React.Component {
     this.handleRemove = this.handleRemove.bind(this)
   }
 
+  componentDidMount() {
+    const { elementRef } = this.props
+    elementRef.current = this.dropzone.fileInputEl
+  }
+
+  componentWillUnmount() {
+    const { elementRef } = this.props
+    elementRef.current = null
+  }
+
   async fileToObject(file) {
     return {
       name: file.name,
@@ -122,7 +132,7 @@ export default class FileField extends React.Component {
       this.setState({ error: null })
       target.setCustomValidity('')
     }
-    onChange(changed, target)
+    onChange(changed)
   }
 
   handleRemove(e, file) {
@@ -135,7 +145,7 @@ export default class FileField extends React.Component {
         changed = []
       }
     }
-    onChange(changed, this.dropzone.fileInputEl)
+    onChange(changed)
     if (!changed || (multiple && !changed.length)) {
       // This ensure required is checked
       this.dropzone.fileInputEl.value = null
@@ -192,6 +202,7 @@ export default class FileField extends React.Component {
       multiple,
       readOnly,
       disabled,
+      elementRef, // eslint-disable-line no-unused-vars
       ...inputProps
     } = normalizeMultipleProps(this.props)
     delete inputProps.fKey

@@ -172,3 +172,36 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
     )
   )
 })
+
+storiesOf('Validators', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Cross field validation',
+    withStateForm(props => (
+      <Formol
+        {...props}
+        validator={({ text1, text2 }) => ({
+          text1: text2 === text1 ? 'Text1 must be different from text2' : null,
+          text2: text2 === text1 ? 'Text2 must be different from text1' : null,
+        })}
+      >
+        <h1>Cross field validation</h1>
+        <Field
+          name="text1"
+          validator={v =>
+            v && v.length > 2 ? '' : 'Text1 must be more than 2 character long'
+          }
+        >
+          Text 1
+        </Field>
+        <Field
+          name="text2"
+          validator={v =>
+            v && v.length > 4 ? '' : 'Text2 must be more than 4 character long'
+          }
+        >
+          Text 2
+        </Field>
+      </Formol>
+    ))
+  )

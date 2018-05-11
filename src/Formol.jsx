@@ -92,6 +92,8 @@ export default class Formol extends React.Component {
         item,
         transientItem: this.fromItem(item),
         fields: { ...Formol.defaultFields, ...fields },
+        elements: {},
+        validators: {},
         i18n: Formol.i18n[i18n],
         errors: {},
         focused: null,
@@ -230,6 +232,7 @@ export default class Formol extends React.Component {
     this.setContextState({
       transientItem: newtransientItem,
     })
+    this.validateForm(newtransientItem)
   }
 
   validateState() {
@@ -246,7 +249,17 @@ export default class Formol extends React.Component {
       this.setContextState({
         transientItem,
       })
+      this.validateForm(transientItem)
     }
+  }
+
+  validateForm(newTransientItem) {
+    const { transientItem, elements, validators } = this.state.context
+    const item = newTransientItem || transientItem
+    Object.entries(elements).forEach(([name, element]) => {
+      const validity = (validators[name] && validators[name](item[name])) || ''
+      element.current && element.current.setCustomValidity(validity)
+    })
   }
 
   handleFocus(name) {
