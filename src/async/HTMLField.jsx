@@ -70,7 +70,9 @@ export default class HTMLField extends React.Component {
     const value = this.prepareValue(stateToValue(editorState))
     this.value = value
     this.setState({ editorState })
-    onChange(value)
+    // Synchronise value with input for html5 form validation
+    this.input.value = value
+    onChange(value, this.input)
   }
 
   render(b) {
@@ -81,9 +83,9 @@ export default class HTMLField extends React.Component {
       onFocus,
       onBlur,
       onKeyDown,
-      required,
       toolbar,
       placeholder,
+      ...props
     } = this.props
     const { editorState } = this.state
     const HTMLToolbar = toolbar || {
@@ -111,10 +113,14 @@ export default class HTMLField extends React.Component {
           handleReturn={onKeyDown}
           placeholder={placeholder || i18n.html.placeholder}
           readOnly={readOnly}
-          required={required}
           toolbar={HTMLToolbar}
           toolbarClassName={b.e('toolbar')}
           wrapperClassName={b.e('wrapper')}
+        />
+        <input
+          className={b.e('hidden-input')}
+          ref={ref => (this.input = ref)}
+          {...props}
         />
       </div>
     )

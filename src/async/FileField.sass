@@ -1,3 +1,4 @@
+@import mixins
 @import variables
 
 
@@ -17,14 +18,7 @@
     // "An invalid form control with name="..."
     // is not focusable." error at validation
     display: block !important
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    opacity: 0
-    z-index: -1
-    margin: 1em
-    position: absolute
+    +hidden-input
 
 
 .Formol_FileField__placeholder
