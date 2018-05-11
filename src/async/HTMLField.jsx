@@ -19,12 +19,6 @@ const stateFromValue = value => {
   const editorContent = EditorState.createWithContent(
     ContentState.createFromBlockArray(contentBlock.contentBlocks)
   )
-  // const contentToHtml = draftToHtml(
-  //   convertToRaw(editorContent.getCurrentContent())
-  // )
-  // if (emptyContent(contentToHtml)) {
-  //   return EditorState.createEmpty()
-  // }
   return editorContent
 }
 
@@ -35,7 +29,6 @@ export const stateToValue = editorState =>
 export default class HTMLField extends React.Component {
   constructor(props) {
     super(props)
-    this.value = null
     this.state = {
       editorState: null,
     }
@@ -48,7 +41,7 @@ export default class HTMLField extends React.Component {
   }
 
   componentWillReceiveProps({ value }) {
-    if (value !== this.value) {
+    if (value !== this.input.value) {
       this.newState(value)
     }
   }
@@ -68,10 +61,9 @@ export default class HTMLField extends React.Component {
   onChange(editorState) {
     const { onChange } = this.props
     const value = this.prepareValue(stateToValue(editorState))
-    this.value = value
-    this.setState({ editorState })
     // Synchronise value with input for html5 form validation
     this.input.value = value
+    this.setState({ editorState })
     onChange(value, this.input)
   }
 
