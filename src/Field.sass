@@ -2,16 +2,18 @@
 
 .Formol_Field
   .Formol_Field__field
-    outline: 2px solid
+    box-shadow: none
     border: none
   &--focus
     .Formol_Field__field
-      outline-color: cyan
+      outline: 1px solid cyan
   &--modified
     .Formol_Field__field
+      box-shadow: 0 0 1.5px 1px green
       outline-color: green
   &--error
     .Formol_Field__field
+      box-shadow: 0 0 1.5px 1px red
       outline-color: red
 
 label, .Formol_Field__label
