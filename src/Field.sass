@@ -1,9 +1,17 @@
 @import variables
 
 .Formol_Field
+  .Formol_Field__field
+    outline: 2px solid
+    border: none
+  &--focus
+    .Formol_Field__field
+      outline-color: cyan
+  &--modified
+    .Formol_Field__field
+      outline-color: green
   &--error
     .Formol_Field__field
-      border-color: red
       outline-color: red
 
 label, .Formol_Field__label
