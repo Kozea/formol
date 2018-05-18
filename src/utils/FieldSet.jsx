@@ -1,5 +1,6 @@
 import React from 'react'
 
+import BooleanField from '../fields/BooleanField'
 import { block, cleanProps, normalizeChoices } from '../utils'
 
 @block
@@ -21,11 +22,11 @@ export default class FieldSet extends React.Component {
             key={choice}
             className={b.e('label').m({ on: isChecked(choice, value) })}
           >
-            <input
+            <BooleanField
               {...cleanProps(props)}
               type={type}
               checked={isChecked(choice, value)}
-              onChange={e => onChange(choice, value, e.target.checked)}
+              onChange={checked => onChange(choice, value, checked)}
             />
             <span className={b.e('label-text')}>{choiceLabel}</span>
           </label>

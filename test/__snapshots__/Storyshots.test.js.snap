@@ -680,6 +680,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -734,6 +750,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -788,6 +820,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -842,6 +890,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -896,6 +960,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -950,6 +1030,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1004,6 +1100,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1058,6 +1170,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1112,6 +1240,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1166,6 +1310,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1220,6 +1380,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1274,6 +1450,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1328,6 +1520,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1382,6 +1590,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1436,6 +1660,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -1490,6 +1730,22 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -3864,6 +4120,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -3918,6 +4190,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -3972,6 +4260,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4026,6 +4330,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4080,6 +4400,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4134,6 +4470,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4188,6 +4540,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4242,6 +4610,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4296,6 +4680,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4350,6 +4750,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4404,6 +4820,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4458,6 +4890,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4512,6 +4960,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4566,6 +5030,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4620,6 +5100,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -4674,6 +5170,22 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -7183,6 +7695,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7237,6 +7765,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7291,6 +7835,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7345,6 +7905,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7399,6 +7975,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7453,6 +8045,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={true}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7507,6 +8115,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={true}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7561,6 +8185,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7615,6 +8255,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7669,6 +8325,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7723,6 +8395,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7777,6 +8465,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7831,6 +8535,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7885,6 +8605,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7939,6 +8675,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -7993,6 +8745,22 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
@@ -10367,6 +11135,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10421,6 +11205,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10475,6 +11275,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10529,6 +11345,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10583,6 +11415,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10637,6 +11485,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10691,6 +11555,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={true}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10745,6 +11625,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10799,6 +11695,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10853,6 +11765,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10907,6 +11835,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -10961,6 +11905,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -11015,6 +11975,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -11069,6 +12045,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -11123,6 +12115,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
@@ -11177,6 +12185,22 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           <input
             autoFocus={false}
             checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
             disabled={false}
             name="radio-set"
             onBlur={[Function]}
