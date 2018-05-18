@@ -35,7 +35,7 @@ export default class HTMLField extends React.Component {
     this.onChange = this.onChange.bind(this)
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { value } = this.props
     this.newState(value || '')
   }
