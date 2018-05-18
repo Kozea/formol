@@ -96,7 +96,6 @@ export default class Formol extends React.Component {
         validators: {},
         i18n: Formol.i18n[i18n],
         errors: {},
-        focused: null,
         readOnly,
         handleKeyDown: this.handleKeyDown.bind(this),
         handleFocus: this.handleFocus.bind(this),
@@ -151,7 +150,7 @@ export default class Formol extends React.Component {
     })
   }
 
-  async handleSubmit(e) {
+  async handleSubmit() {
     const {
       add,
       getPk,
@@ -163,6 +162,7 @@ export default class Formol extends React.Component {
       onSubmit,
     } = this.props
     const { transientItem } = this.state.context
+    this.validateForm()
     if (this.form.current && this.form.current.checkValidity()) {
       if (onSubmit) {
         try {
@@ -173,7 +173,7 @@ export default class Formol extends React.Component {
           }
           if (report.metadata.code === 202) {
             this.setContextState({
-              errors: report.metadata.errors[0].fields,
+              re: report.metadata.errors[0].fields,
             })
             throw new Error('Validation error')
           }
@@ -257,18 +257,43 @@ export default class Formol extends React.Component {
   }
 
   validateForm(newTransientItem) {
+    const { validator } = this.props
     const { transientItem, elements, validators } = this.state.context
     const item = newTransientItem || transientItem
+    const validity = validator ? validator(item) : {}
     Object.entries(elements).forEach(([name, element]) => {
-      const validity = (validators[name] && validators[name](item[name])) || ''
-      element.current && element.current.setCustomValidity(validity)
+      if (validators[name]) {
+        validity[name] = validators[name](item[name]) || validity[name]
+      }
+      validity[name] = validity[name] || ''
+
+      if (!element.current) {
+        return
+      }
+      // Return if there's already a DOM validation error
+      if (element.current.validity) {
+        // Can't use Object.values here...
+        if (
+          [
+            'patternMismatch',
+            'rangeOverflow',
+            'rangeUnderflow',
+            'stepMismatch',
+            'tooLong',
+            'typeMismatch',
+            'valueMissing',
+          ].some(key => element.current.validity[key])
+        ) {
+          return
+        }
+      }
+      element.current.setCustomValidity(validity[name])
     })
   }
 
+  // eslint-disable-next-line no-unused-vars
   handleFocus(name) {
-    this.setContextState({
-      focused: name,
-    })
+    // name is focused
   }
 
   handleKeyDown(e) {
@@ -344,9 +369,6 @@ export default class Formol extends React.Component {
     if (readOnly) {
       return
     }
-    this.setContextState({
-      focused: null,
-    })
     this.validateState()
   }
 

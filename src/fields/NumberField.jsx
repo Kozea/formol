@@ -10,7 +10,7 @@ export default class NumberField extends React.Component {
     return (
       <InputField
         className={b.mix(className)}
-        onChange={v => onChange(parseInt(v))}
+        onChange={v => onChange(isNaN(parseInt(v)) ? null : parseInt(v))}
         {...props}
       />
     )

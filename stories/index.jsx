@@ -176,7 +176,45 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
 storiesOf('Validators', module)
   .addDecorator(withKnobs)
   .add(
-    'Cross field validation',
+    'Cross field validation 1',
+    withStateForm(props => (
+      <Formol
+        {...props}
+        item={new Array(10).fill().reduce((item, _, i) => {
+          item[`number-${i}`] = i
+          return item
+        }, {})}
+        validator={item =>
+          new Array(10).fill().reduce((validators, _, i) => {
+            if (i !== 0) {
+              validators[`number-${i}`] =
+                item[`number-${i}`] <= item[`number-${i - 1}`]
+                  ? `Number ${i} must be superior to Number ${i}: ${
+                      item[`number-${i}`]
+                    } > ${item[`number-${i - 1}`]}`
+                  : null
+            }
+            return validators
+          }, {})
+        }
+      >
+        <h1>Cross field validation</h1>
+        {new Array(10).fill().map((_, i) => (
+          <Field
+            key={`number-${i}`} // eslint-disable-line react/no-array-index-key
+            name={`number-${i}`}
+            type="number"
+            required
+            validator={v => (v <= 1000 ? '' : 'Number can’t exceed 1000')}
+          >
+            Number {i}
+          </Field>
+        ))}
+      </Formol>
+    ))
+  )
+  .add(
+    'Cross field validation 2',
     withStateForm(props => (
       <Formol
         {...props}

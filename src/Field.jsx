@@ -56,7 +56,6 @@ class Field extends React.Component {
       validators,
       i18n,
       errors,
-      focused,
       readOnly,
       handleFocus,
       handleBlur,
@@ -71,11 +70,14 @@ class Field extends React.Component {
     const transientValue = get(transientItem, name)
     const modified = itemValue !== transientValue
     const value = formatter(transientValue)
-    const focus = focused === name
-    const error = errors[name]
+    const error =
+      errors[name] ||
+      (this.element.current ? this.element.current.validationMessage : '')
 
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
+
+    // Antipattern ahead, setting field info to form context
     elements[name] = this.element
     validators[name] = validator
 
@@ -96,7 +98,7 @@ class Field extends React.Component {
             readOnly={readOnly}
             i18n={i18n}
             elementRef={this.element}
-            className={b.e('field').m({ focus, modified })}
+            className={b.e('field').m({ modified })}
             onFocus={() => handleFocus(name)}
             onBlur={() => handleBlur(name)}
             onChange={v => handleChange(name, valueFormatter(v))}
