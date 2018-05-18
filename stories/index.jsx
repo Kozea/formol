@@ -180,10 +180,13 @@ storiesOf('Validators', module)
     withStateForm(props => (
       <Formol
         {...props}
-        item={new Array(10).fill().reduce((item, _, i) => {
-          item[`number-${i}`] = i
-          return item
-        }, {})}
+        item={
+          {} ||
+          new Array(10).fill().reduce((item, _, i) => {
+            item[`number-${i}`] = i
+            return item
+          }, {})
+        }
         validator={item =>
           new Array(10).fill().reduce((validators, _, i) => {
             if (i !== 0) {

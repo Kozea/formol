@@ -291,11 +291,6 @@ export default class Formol extends React.Component {
     })
   }
 
-  // eslint-disable-next-line no-unused-vars
-  handleFocus(name) {
-    // name is focused
-  }
-
   handleKeyDown(e) {
     const { focusNextOnEnter } = this.props
     if (focusNextOnEnter && e.keyCode === 13) {
@@ -362,6 +357,11 @@ export default class Formol extends React.Component {
       transientItem: this.fromItem(item),
     })
     noNotifications || noValidNotification || onValid(validNotificationText)
+  }
+
+  // eslint-disable-next-line no-unused-vars
+  handleFocus(name) {
+    // name is focused
   }
 
   handleBlur() {

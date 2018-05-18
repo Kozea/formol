@@ -34,6 +34,8 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "area",
           "readOnly": false,
           "type": "area",
@@ -78,10 +80,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -229,6 +228,8 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "calendar",
           "readOnly": false,
           "type": "calendar",
@@ -378,6 +379,8 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "checkbox",
           "readOnly": false,
           "type": "checkbox",
@@ -423,10 +426,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -574,6 +574,8 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "checkbox-set",
           "readOnly": false,
           "type": "checkbox-set",
@@ -621,10 +623,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -1638,6 +1637,8 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "color",
           "readOnly": false,
           "type": "color",
@@ -1686,10 +1687,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -1849,6 +1847,8 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "date",
           "readOnly": false,
           "type": "date",
@@ -1897,10 +1897,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -2060,6 +2057,8 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "datetimelocal",
           "readOnly": false,
           "type": "datetimelocal",
@@ -2108,10 +2107,7 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -2271,6 +2267,8 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "email",
           "readOnly": false,
           "type": "email",
@@ -2319,10 +2317,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -2482,6 +2477,8 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "file",
           "readOnly": false,
           "type": "file",
@@ -2631,6 +2628,8 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "html",
           "readOnly": false,
           "type": "html",
@@ -2780,6 +2779,8 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "month",
           "readOnly": false,
           "type": "month",
@@ -2828,10 +2829,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -2991,6 +2989,8 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "number",
           "readOnly": false,
           "type": "number",
@@ -3039,10 +3039,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -3205,6 +3202,8 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "password",
           "readOnly": false,
           "type": "password",
@@ -3253,10 +3252,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -3416,6 +3412,8 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "password-strength",
           "readOnly": false,
           "type": "password-strength",
@@ -3565,6 +3563,8 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "radio",
           "readOnly": false,
           "type": "radio",
@@ -3610,10 +3610,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -3761,6 +3758,8 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "radio-set",
           "readOnly": false,
           "type": "radio-set",
@@ -3808,10 +3807,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -4825,6 +4821,8 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "range",
           "readOnly": false,
           "type": "range",
@@ -4874,10 +4872,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -5038,6 +5033,8 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select",
           "readOnly": false,
           "type": "select",
@@ -5082,10 +5079,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -5318,6 +5312,8 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select-menu",
           "readOnly": false,
           "type": "select-menu",
@@ -5467,6 +5463,8 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "switch",
           "readOnly": false,
           "type": "switch",
@@ -5515,9 +5513,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "focus": false,
                       "mode": "switch",
-                      "modified": false,
                     },
                     "s": "Formol_Field__field Formol_Field__field--mode-switch",
                     "settings": Object {
@@ -5715,6 +5711,8 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "tel",
           "readOnly": false,
           "type": "tel",
@@ -5763,10 +5761,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -5926,6 +5921,8 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "text",
           "readOnly": false,
           "type": "text",
@@ -5970,10 +5967,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -6122,6 +6116,8 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "time",
           "readOnly": false,
           "type": "time",
@@ -6170,10 +6166,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -6333,6 +6326,8 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "week",
           "readOnly": false,
           "type": "week",
@@ -6381,10 +6376,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -6544,6 +6536,8 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "area",
           "readOnly": false,
           "type": "area",
@@ -6588,10 +6582,7 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -6740,6 +6731,8 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "calendar",
           "readOnly": false,
           "type": "calendar",
@@ -6889,6 +6882,8 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "checkbox",
           "readOnly": false,
           "type": "checkbox",
@@ -6934,10 +6929,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -7085,11 +7077,13 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": true,
           "name": "checkbox-set",
           "readOnly": false,
           "type": "checkbox-set",
         },
-        "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-checkbox-set",
+        "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-checkbox-set Formol_Field--modified",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -7132,11 +7126,8 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": true,
-                    },
-                    "s": "Formol_Field__field Formol_Field__field--modified",
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
                       "modifierDelimiter": "--",
@@ -7147,7 +7138,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_CheckboxSetField Formol_Field__field Formol_Field__field--modified",
+                "s": "Formol_CheckboxSetField Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -7158,7 +7149,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               },
             ],
             "modifier": Object {},
-            "s": "Formol_FieldSet Formol_CheckboxSetField Formol_Field__field Formol_Field__field--modified",
+            "s": "Formol_FieldSet Formol_CheckboxSetField Formol_Field__field",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -8149,6 +8140,8 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "color",
           "readOnly": false,
           "type": "color",
@@ -8197,10 +8190,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -8360,6 +8350,8 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "date",
           "readOnly": false,
           "type": "date",
@@ -8408,10 +8400,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -8571,6 +8560,8 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "datetimelocal",
           "readOnly": false,
           "type": "datetimelocal",
@@ -8619,10 +8610,7 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -8782,6 +8770,8 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "email",
           "readOnly": false,
           "type": "email",
@@ -8830,10 +8820,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -8993,11 +8980,13 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": true,
           "name": "file",
           "readOnly": false,
           "type": "file",
         },
-        "s": "Formol_Field Formol_Field--type-file Formol_Field--name-file",
+        "s": "Formol_Field Formol_Field--type-file Formol_Field--name-file Formol_Field--modified",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -9142,6 +9131,8 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "html",
           "readOnly": false,
           "type": "html",
@@ -9291,6 +9282,8 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "month",
           "readOnly": false,
           "type": "month",
@@ -9339,10 +9332,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -9502,6 +9492,8 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "number",
           "readOnly": false,
           "type": "number",
@@ -9550,10 +9542,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -9716,6 +9705,8 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "password",
           "readOnly": false,
           "type": "password",
@@ -9764,10 +9755,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -9927,6 +9915,8 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "password-strength",
           "readOnly": false,
           "type": "password-strength",
@@ -10076,6 +10066,8 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "radio",
           "readOnly": false,
           "type": "radio",
@@ -10121,10 +10113,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -10272,6 +10261,8 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "radio-set",
           "readOnly": false,
           "type": "radio-set",
@@ -10319,10 +10310,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -11336,6 +11324,8 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "range",
           "readOnly": false,
           "type": "range",
@@ -11385,10 +11375,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -11549,6 +11536,8 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select",
           "readOnly": false,
           "type": "select",
@@ -11593,10 +11582,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -11829,6 +11815,8 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select-menu",
           "readOnly": false,
           "type": "select-menu",
@@ -11978,6 +11966,8 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "switch",
           "readOnly": false,
           "type": "switch",
@@ -12026,9 +12016,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "focus": false,
                       "mode": "switch",
-                      "modified": false,
                     },
                     "s": "Formol_Field__field Formol_Field__field--mode-switch",
                     "settings": Object {
@@ -12226,6 +12214,8 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "tel",
           "readOnly": false,
           "type": "tel",
@@ -12274,10 +12264,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -12437,6 +12424,8 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "text",
           "readOnly": false,
           "type": "text",
@@ -12481,10 +12470,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -12633,6 +12619,8 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "time",
           "readOnly": false,
           "type": "time",
@@ -12681,10 +12669,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -12844,6 +12829,8 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "week",
           "readOnly": false,
           "type": "week",
@@ -12892,10 +12879,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -13055,6 +13039,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "firstname",
           "readOnly": false,
           "type": undefined,
@@ -13099,10 +13085,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -13164,6 +13147,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "name",
           "readOnly": false,
           "type": undefined,
@@ -13207,10 +13192,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -13272,6 +13254,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "email",
           "readOnly": false,
           "type": "email",
@@ -13319,10 +13303,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -13395,6 +13376,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "avatar",
           "readOnly": false,
           "type": "file",
@@ -13459,6 +13442,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "sex",
           "readOnly": false,
           "type": "radio",
@@ -13503,10 +13488,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -13572,6 +13554,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "weight",
           "readOnly": false,
           "type": "number",
@@ -13619,10 +13603,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -13696,6 +13677,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "height",
           "readOnly": false,
           "type": "number",
@@ -13743,10 +13726,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -13821,6 +13801,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "phone",
           "readOnly": false,
           "type": "tel",
@@ -13868,10 +13850,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -13943,6 +13922,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "address",
           "readOnly": false,
           "type": undefined,
@@ -13986,10 +13967,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -14050,6 +14028,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "zip",
           "readOnly": false,
           "type": undefined,
@@ -14093,10 +14073,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -14157,6 +14134,8 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "city",
           "readOnly": false,
           "type": undefined,
@@ -14200,10 +14179,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -14349,6 +14325,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "firstname",
           "readOnly": false,
           "type": undefined,
@@ -14393,10 +14371,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -14458,6 +14433,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "name",
           "readOnly": false,
           "type": undefined,
@@ -14501,10 +14478,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -14566,6 +14540,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "email",
           "readOnly": false,
           "type": "email",
@@ -14613,10 +14589,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -14689,11 +14662,13 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": true,
           "name": "avatar",
           "readOnly": false,
           "type": "file",
         },
-        "s": "Formol_Field Formol_Field--type-file Formol_Field--name-avatar",
+        "s": "Formol_Field Formol_Field--type-file Formol_Field--name-avatar Formol_Field--modified",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -14753,6 +14728,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "sex",
           "readOnly": false,
           "type": "radio",
@@ -14797,10 +14774,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -14866,6 +14840,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "pregnant",
           "readOnly": false,
           "type": "switch",
@@ -14914,9 +14890,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "focus": false,
                       "mode": "switch",
-                      "modified": false,
                     },
                     "s": "Formol_Field__field Formol_Field__field--mode-switch",
                     "settings": Object {
@@ -15049,6 +15023,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "weight",
           "readOnly": false,
           "type": "number",
@@ -15096,10 +15072,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -15173,6 +15146,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "height",
           "readOnly": false,
           "type": "number",
@@ -15220,10 +15195,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -15298,6 +15270,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "phone",
           "readOnly": false,
           "type": "tel",
@@ -15345,10 +15319,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -15420,6 +15391,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "address",
           "readOnly": false,
           "type": undefined,
@@ -15463,10 +15436,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -15527,6 +15497,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "zip",
           "readOnly": false,
           "type": undefined,
@@ -15570,10 +15542,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -15634,6 +15603,8 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "city",
           "readOnly": false,
           "type": undefined,
@@ -15677,10 +15648,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -15823,6 +15791,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "switch",
           "readOnly": false,
           "type": "switch",
@@ -15871,9 +15841,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
                     "element": "field",
                     "mixed": Array [],
                     "modifier": Object {
-                      "focus": false,
                       "mode": "switch",
-                      "modified": false,
                     },
                     "s": "Formol_Field__field Formol_Field__field--mode-switch",
                     "settings": Object {
@@ -15982,6 +15950,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select-menu",
           "readOnly": false,
           "type": "select-menu",
@@ -16046,6 +16016,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select-menu-multiple",
           "readOnly": false,
           "type": "select-menu",
@@ -16110,6 +16082,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "calendar",
           "readOnly": false,
           "type": "calendar",
@@ -16174,6 +16148,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "html",
           "readOnly": false,
           "type": "html",
@@ -16238,6 +16214,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "filedrop",
           "readOnly": false,
           "type": "filedrop",
@@ -16282,10 +16260,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -16347,6 +16322,8 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "password-strength",
           "readOnly": false,
           "type": "password-strength",
@@ -16493,6 +16470,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "text",
           "readOnly": false,
           "type": undefined,
@@ -16536,10 +16515,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -16600,6 +16576,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "area",
           "readOnly": false,
           "type": "area",
@@ -16643,10 +16621,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -16706,6 +16681,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "email",
           "readOnly": false,
           "type": "email",
@@ -16753,10 +16730,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -16828,6 +16802,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "number",
           "readOnly": false,
           "type": "number",
@@ -16875,10 +16851,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -16950,6 +16923,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "password",
           "readOnly": false,
           "type": "password",
@@ -16997,10 +16972,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -17072,6 +17044,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "tel",
           "readOnly": false,
           "type": "tel",
@@ -17119,10 +17093,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                     "block": "Field",
                     "element": "field",
                     "mixed": Array [],
-                    "modifier": Object {
-                      "focus": false,
-                      "modified": false,
-                    },
+                    "modifier": Object {},
                     "s": "Formol_Field__field",
                     "settings": Object {
                       "elementDelimiter": "__",
@@ -17194,6 +17165,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "select",
           "readOnly": false,
           "type": "select",
@@ -17237,10 +17210,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -17320,6 +17290,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "checkbox",
           "readOnly": false,
           "type": "checkbox",
@@ -17364,10 +17336,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -17432,6 +17401,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "radio",
           "readOnly": false,
           "type": "radio",
@@ -17476,10 +17447,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -17544,6 +17512,8 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "simple-checkbox",
           "readOnly": false,
           "type": "checkbox",
@@ -17588,10 +17558,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -17701,7 +17668,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
 </form>
 `;
 
-exports[`Storyshots Validators Cross field validation 1`] = `
+exports[`Storyshots Validators Cross field validation 1 1`] = `
 <form
   className={
     Block {
@@ -17735,6 +17702,1323 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-0",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-0",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-0"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        0
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-1",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-1",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-1"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        1
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-2",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-2",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-2"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        2
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-3",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-3",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-3"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        3
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-4",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-4",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-4"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        4
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-5",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-5",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-5"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        5
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-6",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-6",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-6"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        6
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-7",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-7",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-7"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        7
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-8",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-8",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-8"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        8
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "number-9",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-number-9",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="number-9"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        required={true}
+        type="number"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Number 
+        9
+      </span>
+    </label>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    kind="important"
+    onClick={[Function]}
+    type="button"
+  >
+    Envoyer
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    kind="mute"
+    onClick={[Function]}
+    type="button"
+  >
+    Annuler
+  </button>
+</form>
+`;
+
+exports[`Storyshots Validators Cross field validation 2 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "add": undefined,
+        "errors": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    Cross field validation
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
           "name": "text1",
           "readOnly": false,
           "type": undefined,
@@ -17778,10 +19062,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
@@ -17842,6 +19123,8 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         "mixed": Array [],
         "modifier": Object {
           "error": false,
+          "focus": false,
+          "modified": false,
           "name": "text2",
           "readOnly": false,
           "type": undefined,
@@ -17885,10 +19168,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
                 "block": "Field",
                 "element": "field",
                 "mixed": Array [],
-                "modifier": Object {
-                  "focus": false,
-                  "modified": false,
-                },
+                "modifier": Object {},
                 "s": "Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
