@@ -12,7 +12,6 @@ export default class BooleanField extends React.Component {
       className,
       elementRef,
       onChange,
-      extraLabel,
       ...props
     } = this.props
     if (readOnly) {
@@ -27,7 +26,6 @@ export default class BooleanField extends React.Component {
           onChange={e => onChange(e.target.checked)}
           {...props}
         />
-        {extraLabel}
       </Fragment>
     )
   }

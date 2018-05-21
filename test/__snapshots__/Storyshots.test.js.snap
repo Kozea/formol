@@ -458,7 +458,6 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
         required={false}
         type="checkbox"
       />
-      Label
       <span
         className={
           Block {
@@ -3898,7 +3897,6 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
         required={false}
         type="radio"
       />
-      Label
       <span
         className={
           Block {
@@ -7473,7 +7471,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
         required={false}
         type="checkbox"
       />
-      Label
       <span
         className={
           Block {
@@ -10913,7 +10910,6 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
         required={false}
         type="radio"
       />
-      Label
       <span
         className={
           Block {
@@ -14470,9 +14466,9 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "modified": false,
           "name": "sex",
           "readOnly": false,
-          "type": "radio",
+          "type": "radio-set",
         },
-        "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-sex",
+        "s": "Formol_Field Formol_Field--type-radio-set Formol_Field--name-sex",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -14483,7 +14479,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -14501,19 +14497,33 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         }
       }
     >
-      <input
-        checked=""
+      <fieldset
         className={
           Block {
-            "block": "BooleanField",
+            "block": "FieldSet",
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
-                "element": "field",
-                "mixed": Array [],
+                "block": "RadioSetField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__field",
+                "s": "Formol_RadioSetField Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -14524,7 +14534,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__field",
+            "s": "Formol_FieldSet Formol_RadioSetField Formol_Field__field",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -14534,20 +14544,209 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
-        name="sex"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        required={true}
-        type="radio"
-        values={
-          Object {
-            "Man or other": false,
-            "Woman": true,
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
           }
-        }
-      />
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="sex"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            required={true}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Woman
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="sex"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            required={true}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Man
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="sex"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            required={true}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Other
+          </span>
+        </label>
+      </fieldset>
       <span
         className={
           Block {
@@ -14568,7 +14767,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       >
         Gender
       </span>
-    </label>
+    </div>
   </div>
   <div
     className={
@@ -15756,9 +15955,9 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "modified": false,
           "name": "sex",
           "readOnly": false,
-          "type": "radio",
+          "type": "radio-set",
         },
-        "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-sex",
+        "s": "Formol_Field Formol_Field--type-radio-set Formol_Field--name-sex",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -15769,7 +15968,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -15787,19 +15986,33 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         }
       }
     >
-      <input
-        checked={true}
+      <fieldset
         className={
           Block {
-            "block": "BooleanField",
+            "block": "FieldSet",
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
-                "element": "field",
-                "mixed": Array [],
+                "block": "RadioSetField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__field",
+                "s": "Formol_RadioSetField Formol_Field__field",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -15810,7 +16023,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__field",
+            "s": "Formol_FieldSet Formol_RadioSetField Formol_Field__field",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -15820,20 +16033,209 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
-        name="sex"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        required={true}
-        type="radio"
-        values={
-          Object {
-            "Man or other": false,
-            "Woman": true,
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
           }
-        }
-      />
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="sex"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            required={true}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Woman
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="sex"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            required={true}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Man
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="sex"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            required={true}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Other
+          </span>
+        </label>
+      </fieldset>
       <span
         className={
           Block {
@@ -15854,7 +16256,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       >
         Gender
       </span>
-    </label>
+    </div>
   </div>
   <div
     className={

@@ -25,16 +25,17 @@ export const PersonForm = props => (
     </Field>
     <Field
       required
-      type="radio"
+      type="radio-set"
       name="sex"
-      values={{
-        Woman: true,
-        'Man or other': false,
+      choices={{
+        Woman: 'woman',
+        Man: 'man',
+        Other: 'other',
       }}
     >
       Gender
     </Field>
-    <Conditional show={item => item && item.sex}>
+    <Conditional show={item => item.sex && item.sex !== 'man'}>
       <Field name="pregnant" type="switch">
         Pregnant
       </Field>

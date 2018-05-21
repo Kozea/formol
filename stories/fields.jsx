@@ -30,8 +30,6 @@ const makeField = (name, extraProps) => props => (
 )
 
 const extrasProps = {
-  checkbox: { extraLabel: 'Label' },
-  radio: { extraLabel: 'Label' },
   'checkbox-set': { choices },
   'radio-set': { choices },
   select: { choices },
