@@ -41,8 +41,11 @@
   img
     max-width: 100%
 
-  &:not(.Formol_Field__field--focus)
-    overflow: hidden
+
+.Formol_Field--type-html
+  &:not(.Formol_Field--focus)
+    .Formol_HTMLField
+      overflow: hidden
 
     .rdw-editor-toolbar
       opacity: 0
