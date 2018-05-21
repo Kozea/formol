@@ -1,66 +1,78 @@
 @import variables
 
 
-form
+// form
+.Formol_Formol
   color: $color
   font-size: $font-size
 
 
+// field group
 .Formol_Field
   color: rgba($color, .65)
   margin: 1em 0
 
-  &:hover, &:focus
+
+// field label
+.Formol_Field__label-text
+  font-size: $font-size * .85
+  order: -1
+  transition: color .2s
+
+
+// field
+.Formol_Field__label
+  align-items: flex-start
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+
+  .Formol_Field__field
+    box-shadow: none
+    color: inherit
+    font: inherit
+    margin: .5em 0
+    outline: none
+
+  input, textarea
+    border: solid 1px
+    border-radius: .15em
+    box-sizing: border-box
+    max-width: 100%
+    padding: .75em
+    transition: border-color .2s
+
+  textarea
+    width: 100%
+
+
+// field's states
+.Formol_Field
+  &:hover, &--focus
     color: $color
 
 .Formol_Field--modified
   color: $color
 
-.Formol_Field--invalid
+.Formol_Field--error
   color: $error
   box-shadow: none
 
-
-.Formol_Field__label-text
+.Formol_Field__error
   font-size: $font-size * .85
-  order: -1
+  font-style: italic
+
+  &::before
+    background-color: currentColor
+    content: ''
+    display: inline-block
+    height: 1px
+    margin-right: .5em
+    vertical-align: middle
+    width: 1em
 
 
-// RadioSet and CheckboxSet
-.Formol_FieldSet
-  align-items: flex-start
-  border: 0
-  display: flex
-  flex-wrap: wrap
-  margin: .5em 0
-  padding: 0
-  width: 100%
-
-  > label
-    align-items: center
-    border: solid 1px
-    border-radius: .15em
-    box-sizing: border-box
-    flex-direction: row
-    margin: .25em
-    padding: .5em
-
-    &:not(.Formol_FieldSet__label--on)
-      color: rgba($color, .65)
-
-    &:hover
-      color: $color
-
-
-// Color picker
-.Formol_Field__field.Formol_ColorField
-  box-sizing: content-box
-  height: 1.5em
-  padding: .25em
-  width: 1.5em
-
-
-// Form submit and cancel buttons
+// form submit and cancel buttons
 .Formol_Formol__submit, .Formol_Formol__cancel
   cursor: pointer
   font: inherit

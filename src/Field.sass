@@ -1,125 +1,50 @@
 @import variables
 
-.Formol_Field
-  .Formol_Field__field
-    box-shadow: none
-    border: none
-  &--focus
-    .Formol_Field__field
-      outline: 1px solid cyan
-  &--modified
-    .Formol_Field__field
-      box-shadow: 0 0 1.5px 1px green
-      outline-color: green
-  &--error
-    .Formol_Field__field
-      box-shadow: 0 0 1.5px 1px red
-      outline-color: red
 
-label, .Formol_Field__label
-  align-items: flex-start
-  display: flex
-  flex-direction: column
-  justify-content: flex-start
+// radio ans checkbox
+.Formol_Field--type-checkbox, .Formol_Field--type-radio, .Formol_FieldSet
+  margin: 2em 0
 
-  input, textarea, select
-    color: inherit
-    font: inherit
-    margin: .5em 0
-
-  input, textarea
+  .Formol_Field__label, .Formol_FieldSet__label
+    align-items: center
     border: solid 1px
-    border-radius: .15em
     box-sizing: border-box
-    max-width: 100%
-    padding: .75em
-
-  textarea
-    width: 100%
-
-  input[type=checkbox], input[type=radio]
-    margin: .25em
-
-
-// .Formol_Field
-  border: 0
-  margin: 2rem 0
-  min-width: 0
-  padding: 0
-
-  &__label
     cursor: pointer
+    flex-direction: row
+    max-width: 100%
+    padding: .85em
+    width: max-content
+    width: -moz-max-content
+    width: -webkit-max-content
 
     &-text
-      color: lighten($text, 25)
-      font-size: $s
-      margin-bottom: .5rem
+      font-size: $font-size * .85
+      margin-left: .5em
+      order: initial
 
-      box-shadow: 0 0 0 $light
-  &__field
-    color: $text
-    cursor: pointer
-    font: $m $font-family
-    // outline: none
-    padding: 1em .5em
+  .Formol_Field__field
+    margin: 0
 
-    &:focus, &--focus
-      box-shadow: 0 0 0 $light
-      cursor: text
-      // outline: none
+// radio-set and checkbox-set
+.Formol_FieldSet
+  border: 0
+  padding: 0
+  width: 100%
 
-    &:required + .Field__label-text
-      &::after
-        content: '*'
-        font-size: .8em
-        margin-left: .5em
-        vertical-align: top
+  .Formol_FieldSet__label
+    display: inline-flex
+    margin: 0 .5em .5em 0
 
+    &:not(.Formol_FieldSet__label--on)
+      color: rgba($color, .65)
 
-    &--type-area
-      height: 100%
-      margin: 0
-      min-height: 6em
+    &:hover
+      color: $color
 
 
-  &--name-password
-    position: relative
-
-    button
-      bottom: 0
-      color: $text
-      padding: 0 .5em
-      position: absolute
-      right: .25em
-      top: 0
-
-
-  &--type-checkbox
-    > label
-      align-items: flex-start
-
-  &--group
-    &.Field--type-checkbox, &.Field--type-radio
-      > label
-        pointer-events: none
-
-        label
-          display: inline-block
-          margin: .5em 1em .5em 0
-          padding: 1em
-          pointer-events: auto
-
-          input
-            margin: 0 .5em 0 0
-
-  &__error
-    color: $error
-    font-size: $s
-    margin: .5em 0
-
-  &--readOnly
-    pointer-events: none
-
-  &--readOnly &
-    &__field
-      background-color: transparent
+// Color picker
+.Formol_Field__field.Formol_ColorField
+  box-sizing: content-box
+  height: 1.5em
+  padding: .25em
+  width: 1.5em
