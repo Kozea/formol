@@ -173,7 +173,7 @@ export default class Formol extends React.Component {
           }
           if (report.metadata.code === 202) {
             this.setContextState({
-              re: report.metadata.errors[0].fields,
+              errors: report.metadata.errors[0].fields,
             })
             throw new Error('Validation error')
           }
