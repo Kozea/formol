@@ -18,6 +18,7 @@ export default class SelectMenuField extends React.Component {
     const { elementRef } = this.props
     elementRef.current = null
   }
+
   handleChange(newValue) {
     const { multiple, nonStringValue, onChange } = this.props
     const maybeParse = v => (nonStringValue ? JSON.parse(v) : v)
