@@ -10,8 +10,9 @@ import { get } from './utils/object'
 @block
 class Field extends React.Component {
   static defaultProps = {
-    formatter: v => v,
-    valueFormatter: v => v,
+    formatter: v => (v && v.trim ? v.trim() : v),
+    normalizer: v => v,
+    unformatter: v => v,
   }
 
   constructor(props) {
@@ -47,45 +48,37 @@ class Field extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    // This is mandatory for removing values when using Conditional
-    const {
-      name,
-      context: { handleChange },
-    } = this.props
-    handleChange(name, void 0)
-  }
-
   handleChange(value) {
     const {
       name,
-      valueFormatter,
-      context: { handleChange: superHandleChange },
+      unformatter,
+      context: { handleChange },
     } = this.props
-    superHandleChange(name, valueFormatter(value))
+    handleChange(name, unformatter(value))
   }
 
   handleFocus() {
-    const {
-      name,
-      context: { handleFocus: superHandleFocus },
-    } = this.props
     this.setState({
       focus: true,
     })
-    superHandleFocus(name)
   }
 
   handleBlur() {
     const {
       name,
-      context: { handleBlur: superHandleBlur },
+      normalizer,
+      context: { transientItem, handleChange },
     } = this.props
+    // Normalize data
+    const value = get(transientItem, name)
+    const normalized = normalizer(value)
+    if (normalized !== value) {
+      handleChange(name, normalized)
+    }
     this.setState({
       focus: false,
       alreadyFocused: true,
     })
-    superHandleBlur(name)
   }
 
   render(b) {
@@ -96,7 +89,8 @@ class Field extends React.Component {
       validator, // eslint-disable-line no-unused-vars
       extras,
       formatter,
-      valueFormatter, // eslint-disable-line no-unused-vars
+      normalizer, // eslint-disable-line no-unused-vars
+      unformatter, // eslint-disable-line no-unused-vars
       children,
       context,
       ...props
@@ -124,6 +118,7 @@ class Field extends React.Component {
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error = alreadyFocused || errors[name] ? errors[name] : null
+
     return (
       <div
         className={b.mix(className).m({

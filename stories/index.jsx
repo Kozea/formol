@@ -3,7 +3,7 @@ import { boolean, selectV2, withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Formol, { Field } from '../src'
+import Formol, { Conditional, Field } from '../src'
 import { PersonForm, personExemple } from './exemples'
 import { knobs, testFieldValue, typeFields } from './fields'
 
@@ -137,6 +137,77 @@ storiesOf('Native and Contrib fields', module)
     ))
   )
 
+storiesOf('Conditionals', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Simple Conditional',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Complex field validation</h1>
+        <Field name="areyouok" type="switch">
+          Are you ok?
+        </Field>
+        <Conditional show={({ areyouok }) => areyouok}>
+          <Field name="why">Why?</Field>
+        </Conditional>
+        <Conditional show={({ areyouok }) => !areyouok}>
+          <Field name="whynot">Why not?</Field>
+        </Conditional>
+      </Formol>
+    ))
+  )
+  .add(
+    'Simple Conditional on props',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Complex field validation</h1>
+        <Field name="areyouok" type="switch">
+          Are you ok?
+        </Field>
+        <Conditional disabled={({ areyouok }) => areyouok}>
+          <Field name="why">Why?</Field>
+        </Conditional>
+        <Conditional disabled={({ areyouok }) => !areyouok}>
+          <Field name="whynot">Why not?</Field>
+        </Conditional>
+      </Formol>
+    ))
+  )
+  .add(
+    'Grouped conditionals',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Complex field validation</h1>
+        <Field name="areyouok" type="switch">
+          Are you ok?
+        </Field>
+        <Conditional show={({ areyouok }) => areyouok}>
+          <Field name="why">Why?</Field>
+          <Field name="tellmemore">Tell me more</Field>
+        </Conditional>
+        <Conditional show={({ areyouok }) => !areyouok}>
+          <Field name="whynot">Why not?</Field>
+          <Field name="iwilltryagain" type="checkbox">
+            I will try again
+          </Field>
+        </Conditional>
+      </Formol>
+    ))
+  )
+  .add(
+    'Original conditionals',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Even name can be used on conditional</h1>
+        <small>Even though it might not be a good idea</small>
+        <Field name="name">What’s your name?</Field>
+        <Conditional name={({ name }) => name || 'none'}>
+          <Field name="none">Say something</Field>
+        </Conditional>{' '}
+      </Formol>
+    ))
+  )
+
 storiesOf('Field Test', module)
 
 const fieldStory = storiesOf('Field Test/Fields', module).addDecorator(
@@ -173,10 +244,32 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
   )
 })
 
+const isPrime = n =>
+  ![...Array(n).keys()]
+    .slice(2)
+    .map(i => !(n % i))
+    .includes(true) && ![0, 1].includes(n)
+
 storiesOf('Validators', module)
   .addDecorator(withKnobs)
   .add(
-    'Cross field validation 1',
+    'Complex field validation',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Complex field validation</h1>
+        <Field
+          name="prime"
+          type="number"
+          required
+          validator={v => !isPrime(v) && `${v} is not a prime number`}
+        >
+          Prime
+        </Field>
+      </Formol>
+    ))
+  )
+  .add(
+    'Cross field validation',
     withStateForm(props => (
       <Formol
         {...props}
@@ -208,7 +301,6 @@ storiesOf('Validators', module)
             name={`number-${i}`}
             type="number"
             required
-            validator={v => (v <= 1000 ? '' : 'Number can’t exceed 1000')}
           >
             Number {i}
           </Field>
@@ -217,20 +309,22 @@ storiesOf('Validators', module)
     ))
   )
   .add(
-    'Cross field validation 2',
+    'Cross field and self validation',
     withStateForm(props => (
       <Formol
         {...props}
         validator={({ text1, text2 }) => ({
-          text1: text2 === text1 ? 'Text1 must be different from text2' : null,
-          text2: text2 === text1 ? 'Text2 must be different from text1' : null,
+          text1: text2 === text1 && 'Text1 must be different from text2',
+          text2: text2 === text1 && 'Text2 must be different from text1',
         })}
       >
-        <h1>Cross field validation</h1>
+        <h1>Cross field and self validation</h1>
         <Field
           name="text1"
           validator={v =>
-            v && v.length > 2 ? '' : 'Text1 must be more than 2 character long'
+            v && v.length > 2
+              ? null
+              : 'Text1 must be more than 2 character long'
           }
         >
           Text 1
@@ -245,4 +339,81 @@ storiesOf('Validators', module)
         </Field>
       </Formol>
     ))
+  )
+
+storiesOf('Formatters', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Item to field formatter',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Item to field formatter</h1>
+          <Field
+            name="bignumber"
+            formatter={v =>
+              v
+                ? v
+                    .replace(/ /g, '')
+                    .split('')
+                    .reverse()
+                    .map((digit, i) => (i % 3 ? digit : `${digit} `))
+                    .reverse()
+                    .join('')
+                    .trim()
+                : ''
+            }
+          >
+            Big number (actually a formatted string)
+          </Field>
+        </Formol>
+      ),
+      { bignumber: '0123456789' }
+    )
+  )
+  .add(
+    'Field to item formatter',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Field to item formatter</h1>
+          <Field name="strnumber" unformatter={v => +v.replace(/\D/g, '')}>
+            String cleaned and parsed as a number
+          </Field>
+        </Formol>
+      ),
+      { strnumber: 1337 }
+    )
+  )
+  .add(
+    'Field normalizer',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Field normalizer</h1>
+          <Field name="strnumber" normalizer={v => +v.replace(/\D/g, '')}>
+            String cleaned and parsed as a number on blur
+          </Field>
+        </Formol>
+      ),
+      { strnumber: 1337 }
+    )
+  )
+  .add(
+    'Bidirectional formatters',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Bidirectional formatters</h1>
+          <Field
+            name="money"
+            formatter={v => (v ? `${v} $` : '')}
+            unformatter={v => +v.replace(/\D/g, '') || ''}
+          >
+            Money
+          </Field>
+        </Formol>
+      ),
+      { money: 42 }
+    )
   )

@@ -124,8 +124,6 @@ export default class Formol extends React.Component {
         errors: {},
         readOnly,
         handleKeyDown: this.handleKeyDown.bind(this),
-        handleFocus: this.handleFocus.bind(this),
-        handleBlur: this.handleBlur.bind(this),
         handleChange: this.handleChange.bind(this),
         handleChanged: this.handleChanged.bind(this),
       },
@@ -245,26 +243,16 @@ export default class Formol extends React.Component {
     this.setStateContext({ errors })
   }
 
-  validateState() {
-    const transientItem = Object.entries(
-      this.state.context.transientItem
-    ).reduce((rv, [key, value]) => {
-      if (value && value.trim) {
-        value = value.trim()
-      }
-      rv[key] = value
-      return rv
-    }, {})
-    this.setStateNewItem(transientItem)
-  }
-
   validateForm(newTransientItem) {
     const { validator } = this.props
     const { transientItem, elements, validators } = this.state.context
     const item = newTransientItem || transientItem
+    const normalize = v => (typeof v === 'string' && v ? v : '')
+
     return Object.entries(elements).reduce((validity, [name, { current }]) => {
       if (validators[name]) {
-        validity[name] = validators[name](item[name]) || validity[name]
+        validity[name] =
+          normalize(validators[name](item[name])) || normalize(validity[name])
       }
       validity[name] = validity[name] || ''
 
@@ -355,19 +343,6 @@ export default class Formol extends React.Component {
     // We reset form from state since it must be synced with the server
     this.setStateNewItem(Formol.fromItem(item))
     noNotifications || noValidNotification || onValid(validNotificationText)
-  }
-
-  // eslint-disable-next-line no-unused-vars
-  handleFocus(name) {
-    // name is focused
-  }
-
-  handleBlur() {
-    const { readOnly } = this.props
-    if (readOnly) {
-      return
-    }
-    this.validateState()
   }
 
   isModified() {
