@@ -203,7 +203,7 @@ storiesOf('Conditionals', module)
         <Field name="name">What’s your name?</Field>
         <Conditional name={({ name }) => name || 'none'}>
           <Field name="none">Say something</Field>
-        </Conditional>{' '}
+        </Conditional>
       </Formol>
     ))
   )
