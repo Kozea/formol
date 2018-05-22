@@ -25,40 +25,36 @@ const stateFromValue = value => {
 export const stateToValue = editorState =>
   draftToHtml(convertToRaw(editorState.getCurrentContent()))
 
+const normalize = value =>
+  value === '<p></p>\n' ? '' : value ? value.trim() : ''
+
 @block
 export default class HTMLField extends React.Component {
+  static getDerivedStateFromProps(
+    {
+      elementRef: { current },
+      value,
+    },
+    { value: oldValue }
+  ) {
+    if (value !== oldValue) {
+      value = normalize(value)
+      current && (current.value = value)
+      return {
+        editorState: stateFromValue(value),
+        value,
+      }
+    }
+    return null
+  }
+
   constructor(props) {
     super(props)
     this.state = {
       editorState: null,
+      value: null,
     }
     this.onChange = this.onChange.bind(this)
-  }
-
-  componentDidMount() {
-    const { value } = this.props
-    this.newState(value || '')
-  }
-
-  componentWillReceiveProps({ elementRef: { current }, value }) {
-    if (value !== current.value) {
-      this.newState(value)
-    }
-  }
-
-  prepareValue(value) {
-    return value === '<p></p>\n' ? '' : value ? value.trim() : ''
-  }
-
-  newState(value) {
-    const {
-      elementRef: { current },
-    } = this.props
-    const newValue = this.prepareValue(value)
-    current.value = newValue
-    this.setState({
-      editorState: stateFromValue(newValue),
-    })
   }
 
   onChange(editorState) {
@@ -66,10 +62,10 @@ export default class HTMLField extends React.Component {
       elementRef: { current },
       onChange,
     } = this.props
-    const value = this.prepareValue(stateToValue(editorState))
+    const value = normalize(stateToValue(editorState))
     // Synchronise value with input for html5 form validation
     current.value = value
-    this.setState({ editorState })
+    this.setState({ editorState, value })
     onChange(value)
   }
 
@@ -85,6 +81,7 @@ export default class HTMLField extends React.Component {
       onKeyDown,
       toolbar,
       placeholder,
+      type, // eslint-disable-line no-unused-vars
       ...props
     } = this.props
     const { editorState } = this.state

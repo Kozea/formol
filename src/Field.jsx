@@ -27,8 +27,24 @@ class Field extends React.Component {
       focus: false,
       alreadyFocused: false,
     }
+    // Antipattern ahead, setting field info to form context
+    props.context.elements[props.name] = this.element
+    props.context.validators[props.name] = props.validator
+
+    this.handleChange = this.handleChange.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
     this.handleBlur = this.handleBlur.bind(this)
+  }
+
+  componentDidUpdate({ context: { transientItem: oldTransientItem } }) {
+    const {
+      name,
+      context: { transientItem, handleChanged },
+    } = this.props
+
+    if (get(transientItem, name) !== get(oldTransientItem, name)) {
+      handleChanged(name)
+    }
   }
 
   componentWillUnmount() {
@@ -39,7 +55,16 @@ class Field extends React.Component {
     } = this.props
     handleChange(name, void 0)
   }
-  // eslint-disable-next-line no-unused-vars
+
+  handleChange(value) {
+    const {
+      name,
+      valueFormatter,
+      context: { handleChange: superHandleChange },
+    } = this.props
+    superHandleChange(name, valueFormatter(value))
+  }
+
   handleFocus() {
     const {
       name,
@@ -68,10 +93,10 @@ class Field extends React.Component {
       name,
       type,
       className,
-      validator,
+      validator, // eslint-disable-line no-unused-vars
       extras,
       formatter,
-      valueFormatter,
+      valueFormatter, // eslint-disable-line no-unused-vars
       children,
       context,
       ...props
@@ -81,15 +106,11 @@ class Field extends React.Component {
       item,
       transientItem,
       fields,
-      elements,
-      validators,
       i18n,
       errors,
       readOnly,
       handleKeyDown,
-      handleChange,
     } = context
-
     const { focus, alreadyFocused } = this.state
 
     if (!transientItem) {
@@ -99,22 +120,10 @@ class Field extends React.Component {
     const transientValue = get(transientItem, name)
     const modified = itemValue !== transientValue
     const value = formatter(transientValue)
-    const serverError = errors[name]
-    let error = serverError
-    if (this.element.current && this.element.current.validationMessage) {
-      error = this.element.current.validationMessage
-    }
 
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
-    const virgin = !alreadyFocused
-    if (virgin && !errors[name]) {
-      error = null
-    }
-    // Antipattern ahead, setting field info to form context
-    elements[name] = this.element
-    validators[name] = validator
-
+    const error = alreadyFocused || errors[name] ? errors[name] : null
     return (
       <div
         className={b.mix(className).m({
@@ -137,7 +146,7 @@ class Field extends React.Component {
             className={b.e('field')}
             onFocus={this.handleFocus}
             onBlur={this.handleBlur}
-            onChange={v => handleChange(name, valueFormatter(v))}
+            onChange={this.handleChange}
             onKeyDown={handleKeyDown}
             {...props}
           />
