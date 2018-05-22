@@ -50,6 +50,11 @@ module.exports = (baseConfig, env) => {
           },
         },
       ],
+    },
+    {
+      test: /\.stories\.jsx?$/,
+      loaders: [require.resolve('@storybook/addon-storysource/loader')],
+      enforce: 'pre',
     }
   )
 
