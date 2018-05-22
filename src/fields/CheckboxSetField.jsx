@@ -9,7 +9,6 @@ export default class CheckboxSetField extends React.Component {
   static formolFieldLabelElement = 'div'
 
   render(b) {
-    // eslint-disable-next-line no-unused-vars
     const { i18n, type, className, onChange, readOnly, ...props } = this.props
     if (readOnly) {
       props.disabled = true

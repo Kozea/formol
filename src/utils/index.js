@@ -49,5 +49,4 @@ export const normalizeMultipleProps = ({ value, multiple, ...props }) => {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
 export const cleanProps = ({ choices, asyncChoices, ...props }) => props

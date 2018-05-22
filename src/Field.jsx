@@ -2,14 +2,18 @@ import './Field.sass'
 
 import React from 'react'
 
+import ConditionalContextWrapper from './ConditionalContext'
 import InputField from './fields/InputField'
 import FormolContextWrapper from './FormolContext'
 import { block } from './utils'
 import { get } from './utils/object'
 
+let COUNT = 0
+
 @block
 class Field extends React.Component {
   static defaultProps = {
+    name: `field-${++COUNT}`,
     formatter: v => (v && v.trim ? v.trim() : v),
     normalizer: v => v,
     unformatter: v => v,
@@ -23,6 +27,7 @@ class Field extends React.Component {
         Set a value for this field in the form item attribute.`
       )
     }
+    props = { ...props, ...props.conditionalContext.propsOverride }
     this.element = React.createRef()
     this.state = {
       focus: false,
@@ -31,6 +36,9 @@ class Field extends React.Component {
     // Antipattern ahead, setting field info to form context
     props.context.elements[props.name] = this.element
     props.context.validators[props.name] = props.validator
+    if (props.conditionalContext.names) {
+      props.conditionalContext.names[props.name] = props.name
+    }
 
     this.handleChange = this.handleChange.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
@@ -41,7 +49,7 @@ class Field extends React.Component {
     const {
       name,
       context: { transientItem, handleChanged },
-    } = this.props
+    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
 
     if (get(transientItem, name) !== get(oldTransientItem, name)) {
       handleChanged(name)
@@ -53,7 +61,7 @@ class Field extends React.Component {
       name,
       unformatter,
       context: { handleChange },
-    } = this.props
+    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
     handleChange(name, unformatter(value))
   }
 
@@ -68,7 +76,7 @@ class Field extends React.Component {
       name,
       normalizer,
       context: { transientItem, handleChange },
-    } = this.props
+    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
     // Normalize data
     const value = get(transientItem, name)
     const normalized = normalizer(value)
@@ -86,15 +94,16 @@ class Field extends React.Component {
       name,
       type,
       className,
-      validator, // eslint-disable-line no-unused-vars
+      validator,
       extras,
       formatter,
-      normalizer, // eslint-disable-line no-unused-vars
-      unformatter, // eslint-disable-line no-unused-vars
+      normalizer,
+      unformatter,
       children,
       context,
+      conditionalContext,
       ...props
-    } = this.props
+    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
 
     const {
       item,
@@ -105,6 +114,7 @@ class Field extends React.Component {
       readOnly,
       handleKeyDown,
     } = context
+
     const { focus, alreadyFocused } = this.state
 
     if (!transientItem) {
@@ -118,7 +128,6 @@ class Field extends React.Component {
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error = alreadyFocused || errors[name] ? errors[name] : null
-
     return (
       <div
         className={b.mix(className).m({
@@ -154,4 +163,4 @@ class Field extends React.Component {
   }
 }
 
-export default FormolContextWrapper(Field)
+export default ConditionalContextWrapper(FormolContextWrapper(Field))

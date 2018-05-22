@@ -7,7 +7,7 @@ export default class BooleanField extends React.Component {
   render(b) {
     const {
       value,
-      i18n, // eslint-disable-line no-unused-vars
+      i18n,
       readOnly,
       className,
       elementRef,

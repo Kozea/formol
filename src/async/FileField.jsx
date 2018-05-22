@@ -202,7 +202,7 @@ export default class FileField extends React.Component {
       multiple,
       readOnly,
       disabled,
-      elementRef, // eslint-disable-line no-unused-vars
+      elementRef,
       ...inputProps
     } = normalizeMultipleProps(this.props)
     delete inputProps.fKey

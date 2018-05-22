@@ -47,8 +47,8 @@ export default class CalendarField extends React.Component {
       value,
       readOnly,
       disabled,
-      type, // eslint-disable-line no-unused-vars
-      onChange, // eslint-disable-line no-unused-vars
+      type,
+      onChange,
       ...inputProps
     } = this.props
     const locale = i18n.calendar.locale === 'fr' ? localeFr : void 0

@@ -7,7 +7,6 @@ export default class InputField extends React.Component {
   static defaultProps = { type: 'text' }
 
   render(b) {
-    // eslint-disable-next-line no-unused-vars
     const { i18n, className, elementRef, onChange, ...props } = this.props
     return (
       <input

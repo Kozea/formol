@@ -32,7 +32,7 @@ export default class SelectMenuField extends React.Component {
 
   render(b) {
     const {
-      i18n, // eslint-disable-line no-unused-vars
+      i18n,
       className,
       multiple,
       readOnly,

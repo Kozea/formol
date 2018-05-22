@@ -24,7 +24,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    Complex field validation
+    Grouped conditionals
   </h1>
   <div
     className={
@@ -779,7 +779,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    Complex field validation
+    Simple Conditional
   </h1>
   <div
     className={
@@ -1129,7 +1129,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    Complex field validation
+    Simple Conditional on props
   </h1>
   <div
     className={
@@ -1504,6 +1504,467 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
       </span>
     </label>
   </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    kind="important"
+    onClick={[Function]}
+    type="button"
+  >
+    Envoyer
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    kind="mute"
+    onClick={[Function]}
+    type="button"
+  >
+    Annuler
+  </button>
+</form>
+`;
+
+exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "add": undefined,
+        "errors": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    Undirect children Conditional
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "areyouok",
+          "readOnly": false,
+          "type": "switch",
+        },
+        "s": "Formol_Field Formol_Field--type-switch Formol_Field--name-areyouok",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <div
+        className={
+          Block {
+            "block": "SwitchButton",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "SwitchField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {
+                      "mode": "switch",
+                    },
+                    "s": "Formol_Field__field Formol_Field__field--mode-switch",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {
+                  "mode": "switch",
+                },
+                "s": "Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {
+              "mode": "switch",
+            },
+            "s": "Formol_SwitchButton Formol_SwitchButton--mode-switch Formol_SwitchField Formol_SwitchField--mode-switch Formol_Field__field Formol_Field__field--mode-switch",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <label
+          htmlFor="areyouok"
+        >
+          No
+        </label>
+        <input
+          checked=""
+          className={
+            Block {
+              "block": "BooleanField",
+              "element": null,
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_BooleanField",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          id="areyouok"
+          name="areyouok"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="checkbox"
+        />
+        <label
+          htmlFor="areyouok"
+        />
+        <label
+          htmlFor="areyouok"
+        >
+          Yes
+        </label>
+      </div>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Are you ok?
+      </span>
+    </label>
+  </div>
+  <ul>
+    <li>
+      <div
+        className={
+          Block {
+            "block": "Field",
+            "element": null,
+            "mixed": Array [],
+            "modifier": Object {
+              "error": false,
+              "focus": false,
+              "modified": false,
+              "name": "whynot",
+              "readOnly": false,
+              "type": undefined,
+            },
+            "s": "Formol_Field Formol_Field--name-whynot",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <label
+          className={
+            Block {
+              "block": "Field",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_Field__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            className={
+              Block {
+                "block": "InputField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_InputField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="whynot"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            readOnly={false}
+            type="text"
+            value=""
+          />
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Why not?
+          </span>
+        </label>
+      </div>
+    </li>
+    <li>
+      <div
+        className={
+          Block {
+            "block": "Field",
+            "element": null,
+            "mixed": Array [],
+            "modifier": Object {
+              "error": false,
+              "focus": false,
+              "modified": false,
+              "name": "iwilltryagain",
+              "readOnly": false,
+              "type": "checkbox",
+            },
+            "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-iwilltryagain",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <label
+          className={
+            Block {
+              "block": "Field",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_Field__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked=""
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="iwilltryagain"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "Field",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            I will try again
+          </span>
+        </label>
+      </div>
+    </li>
+  </ul>
   <input
     style={
       Object {

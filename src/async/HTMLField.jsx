@@ -81,7 +81,7 @@ export default class HTMLField extends React.Component {
       onKeyDown,
       toolbar,
       placeholder,
-      type, // eslint-disable-line no-unused-vars
+      type,
       ...props
     } = this.props
     const { editorState } = this.state

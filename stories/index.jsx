@@ -143,7 +143,7 @@ storiesOf('Conditionals', module)
     'Simple Conditional',
     withStateForm(props => (
       <Formol {...props}>
-        <h1>Complex field validation</h1>
+        <h1>Simple Conditional</h1>
         <Field name="areyouok" type="switch">
           Are you ok?
         </Field>
@@ -160,7 +160,7 @@ storiesOf('Conditionals', module)
     'Simple Conditional on props',
     withStateForm(props => (
       <Formol {...props}>
-        <h1>Complex field validation</h1>
+        <h1>Simple Conditional on props</h1>
         <Field name="areyouok" type="switch">
           Are you ok?
         </Field>
@@ -177,7 +177,7 @@ storiesOf('Conditionals', module)
     'Grouped conditionals',
     withStateForm(props => (
       <Formol {...props}>
-        <h1>Complex field validation</h1>
+        <h1>Grouped conditionals</h1>
         <Field name="areyouok" type="switch">
           Are you ok?
         </Field>
@@ -190,6 +190,37 @@ storiesOf('Conditionals', module)
           <Field name="iwilltryagain" type="checkbox">
             I will try again
           </Field>
+        </Conditional>
+      </Formol>
+    ))
+  )
+  .add(
+    'Undirect children Conditional',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Undirect children Conditional</h1>
+        <Field name="areyouok" type="switch">
+          Are you ok?
+        </Field>
+        <Conditional show={({ areyouok }) => areyouok}>
+          <div>
+            <Field name="why">Why?</Field>
+          </div>
+          <div>
+            <Field name="tellmemore">Tell me more</Field>
+          </div>
+        </Conditional>
+        <Conditional show={({ areyouok }) => !areyouok}>
+          <ul>
+            <li>
+              <Field name="whynot">Why not?</Field>
+            </li>
+            <li>
+              <Field name="iwilltryagain" type="checkbox">
+                I will try again
+              </Field>
+            </li>
+          </ul>
         </Conditional>
       </Formol>
     ))

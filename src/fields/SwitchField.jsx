@@ -8,7 +8,7 @@ import SwitchButton from '../utils/SwitchButton'
 export default class SwitchField extends React.Component {
   render(b) {
     const {
-      type, // eslint-disable-line no-unused-vars
+      type,
       i18n,
       leftLabel,
       rightLabel,

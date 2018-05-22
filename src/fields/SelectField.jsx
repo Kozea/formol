@@ -27,11 +27,11 @@ export default class SelectField extends React.Component {
   render(b) {
     const choices = normalizeChoices(this.props)
     const {
-      i18n, // eslint-disable-line no-unused-vars
+      i18n,
       readOnly,
       className,
       elementRef,
-      onChange, // eslint-disable-line no-unused-vars
+      onChange,
       ...props
     } = this.props
     if (readOnly) {

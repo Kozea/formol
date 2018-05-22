@@ -29,7 +29,6 @@ export default class PasswordStrengthField extends React.Component {
   }
 
   render(b) {
-    // eslint-disable-next-line no-unused-vars
     const { className, name, value, i18n, elementRef, ...props } = this.props
     return (
       <ReactPasswordStrength

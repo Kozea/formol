@@ -14,7 +14,7 @@ export default class SwitchButton extends React.Component {
   }
   render(b) {
     const {
-      type, // eslint-disable-line no-unused-vars
+      type,
       name,
       label,
       labelRight,

@@ -1,44 +1,88 @@
+import deepEqual from 'deep-equal'
 import React from 'react'
 
+import { ConditionalContext } from './ConditionalContext'
 import FormolContextWrapper from './FormolContext'
 import { get } from './utils/object'
 
 class Conditional extends React.Component {
+  static contextFromProps(
+    {
+      children,
+      show,
+      context: { transientItem },
+      ...callableProps
+    },
+    names = {}
+  ) {
+    return {
+      show: !show || show(transientItem),
+      conditionalContext: {
+        propsOverride: Object.entries(callableProps).reduce(
+          (calledProps, [key, prop]) => {
+            calledProps[key] = prop(transientItem)
+            return calledProps
+          },
+          {}
+        ),
+        names,
+      },
+      currentProps: { show, ...callableProps },
+    }
+  }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const { children, context, ...nextCallableProps } = nextProps
+    if (
+      !deepEqual(
+        nextProps.context.transientItem,
+        prevState.conditionalContext.transientItem
+      ) ||
+      !deepEqual(nextCallableProps, prevState.currentProps)
+    ) {
+      return Conditional.contextFromProps(
+        nextProps,
+        prevState.conditionalContext.names
+      )
+    }
+    return null
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = Conditional.contextFromProps(props)
+  }
+
   componentDidUpdate() {
     const {
       show,
-      children,
       context: { handleChange, transientItem },
     } = this.props
+    const {
+      conditionalContext: { names },
+    } = this.state
 
     if (show && !show(transientItem)) {
       // This is mandatory for removing values when using Conditional
-      React.Children.map(children, ({ props: { name } }) => {
+      Object.keys(names).map(name => {
         if (get(transientItem, name)) {
           handleChange(name, void 0)
         }
       })
     }
   }
-  render() {
-    const { children, show, context, ...props } = this.props
-    const { transientItem } = context
 
-    if (show && !show(transientItem)) {
+  render() {
+    const { children } = this.props
+    const { show, conditionalContext } = this.state
+    if (!show) {
       return null
     }
 
-    const newProps = Object.entries(props).reduce(
-      (calledProps, [key, prop]) => {
-        calledProps[key] = prop(transientItem)
-        return calledProps
-      },
-      {}
-    )
-
-    return React.Children.map(
-      children,
-      child => child && React.cloneElement(child, newProps)
+    return (
+      <ConditionalContext.Provider value={conditionalContext}>
+        {children}
+      </ConditionalContext.Provider>
     )
   }
 }
