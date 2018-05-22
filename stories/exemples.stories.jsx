@@ -1,8 +1,11 @@
+import { withKnobs } from '@storybook/addon-knobs/react'
+import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Conditional, Field } from '../src'
+import { withStateForm } from './utils'
 
-export const PersonForm = props => (
+const PersonForm = props => (
   <Formol {...props}>
     <h1>Create your profile</h1>
     <Field autoFocus required name="firstname">
@@ -55,7 +58,7 @@ export const PersonForm = props => (
   </Formol>
 )
 
-export const personExemple = {
+const personExemple = {
   name: 'Houston',
   firstname: 'Liza',
   email: 'houston.liza@exemple.com',
@@ -78,3 +81,11 @@ export const personExemple = {
     },
   ],
 }
+
+storiesOf('Formol exemples', module)
+  .addDecorator(withKnobs)
+  .add('Adding a person', withStateForm(props => <PersonForm {...props} />))
+  .add(
+    'Editing a person',
+    withStateForm(props => <PersonForm {...props} />, personExemple)
+  )

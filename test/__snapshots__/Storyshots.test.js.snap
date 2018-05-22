@@ -21974,6 +21974,8 @@ exports[`Storyshots Validators Complex field validation 1`] = `
             "subs": Array [],
           }
         }
+        max={10000}
+        min={0}
         name="prime"
         onBlur={[Function]}
         onChange={[Function]}
