@@ -48,15 +48,6 @@ class Field extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    // This is mandatory for removing values when using Conditional
-    const {
-      name,
-      context: { handleChange },
-    } = this.props
-    handleChange(name, void 0)
-  }
-
   handleChange(value) {
     const {
       name,
@@ -80,9 +71,9 @@ class Field extends React.Component {
     } = this.props
     // Normalize data
     const value = get(transientItem, name)
-    const unformattedValue = normalizer(value)
-    if (unformattedValue !== value) {
-      handleChange(name, unformattedValue)
+    const normalized = normalizer(value)
+    if (normalized !== value) {
+      handleChange(name, normalized)
     }
     this.setState({
       focus: false,
@@ -127,6 +118,7 @@ class Field extends React.Component {
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error = alreadyFocused || errors[name] ? errors[name] : null
+
     return (
       <div
         className={b.mix(className).m({

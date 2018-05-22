@@ -3,7 +3,7 @@ import { boolean, selectV2, withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Formol, { Field } from '../src'
+import Formol, { Conditional, Field } from '../src'
 import { PersonForm, personExemple } from './exemples'
 import { knobs, testFieldValue, typeFields } from './fields'
 
@@ -133,6 +133,26 @@ storiesOf('Native and Contrib fields', module)
         <Field type="password-strength" name="password-strength">
           Password strength
         </Field>
+      </Formol>
+    ))
+  )
+
+storiesOf('Conditionals', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Simple Conditional',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Complex field validation</h1>
+        <Field name="areyouok" type="switch">
+          Are you ok?
+        </Field>
+        <Conditional show={({ areyouok }) => areyouok}>
+          <Field name="why">Why?</Field>
+        </Conditional>
+        <Conditional show={({ areyouok }) => !areyouok}>
+          <Field name="whynot">Why not?</Field>
+        </Conditional>
       </Formol>
     ))
   )
