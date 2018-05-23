@@ -75,6 +75,7 @@ export default class HTMLField extends React.Component {
       elementRef,
       i18n,
       readOnly,
+      value,
       disabled,
       onFocus,
       onBlur,
@@ -82,6 +83,7 @@ export default class HTMLField extends React.Component {
       toolbar,
       placeholder,
       type,
+      onChange,
       ...props
     } = this.props
     const { editorState } = this.state
@@ -114,7 +116,13 @@ export default class HTMLField extends React.Component {
           toolbarClassName={b.e('toolbar')}
           wrapperClassName={b.e('wrapper')}
         />
-        <input className={b.e('hidden-input')} ref={elementRef} {...props} />
+        <input
+          className={b.e('hidden-input')}
+          ref={elementRef}
+          {...props}
+          defaultValue={value}
+          type="text"
+        />
       </div>
     )
   }

@@ -33,40 +33,59 @@ const nonExistingFileName = ([name, ext], value) => {
 
 @block
 export default class FileField extends React.Component {
+  static valueToField(value, multiple) {
+    if (!value) {
+      return ''
+    }
+    if (multiple) {
+      return value.map(key).join(',')
+    }
+    return key(value)
+  }
+
+  static getDerivedStateFromProps(newProps, { value: oldValue }) {
+    const {
+      multiple,
+      elementRef: { current },
+      value,
+    } = normalizeMultipleProps(newProps)
+    if (value !== oldValue) {
+      current && (current.value = FileField.valueToField(value, multiple))
+      return {
+        value,
+        error: null,
+      }
+    }
+    return null
+  }
   constructor(props) {
     super(props)
     this.state = {
+      value: null,
       error: null,
     }
     this.handleDrop = this.handleDrop.bind(this)
     this.handleRemove = this.handleRemove.bind(this)
   }
 
-  componentDidMount() {
-    const { elementRef } = this.props
-    elementRef.current = this.dropzone.fileInputEl
-  }
-
-  componentWillUnmount() {
-    const { elementRef } = this.props
-    elementRef.current = null
-  }
-
   async fileToObject(file) {
+    const [name, ext] = nameExt(file.name)
     return {
-      name: file.name,
+      name,
+      ext,
       type: file.type,
       size: file.size,
       data: (await readAsBase64(file)).split(',', 2)[1],
     }
   }
 
-  async handleDrop(accepted, rejected, { target }) {
+  async handleDrop(accepted, rejected) {
     const {
       value,
       multiple,
       rejectedMessage,
       i18n,
+      elementRef: { current },
       onChange,
     } = normalizeMultipleProps(this.props)
     let changed = null
@@ -75,33 +94,24 @@ export default class FileField extends React.Component {
 
       // We can't map here because of name checking (prevent collisions)
       const newFiles = []
-      accepted.forEach(({ name: fn, type, size, data }) => {
-        const [newName, ext] = nonExistingFileName(nameExt(fn), [
-          ...value.filter(f => f.data),
-          ...newFiles,
-        ])
-        const fks = {}
-        // TOOD: fix that
-        // if (fKey) {
-        //   const fKeys = typeof fKey === 'string' ? [fKey] : fKey
-        //   fKeys.map(fk => {
-        //     fks[fk] = this.context.edited[fk]
-        //   })
-        // }
+      accepted.forEach(({ name, ext, type, size, data }) => {
+        ;[name, ext] = nonExistingFileName(
+          [name, ext],
+          [...value.filter(f => f.data), ...newFiles]
+        )
         newFiles.push({
-          name: newName,
+          name,
           ext,
           type,
           size,
           data,
-          ...fks,
         })
       })
 
       const erroredFiles = rejected.map(({ name: fn, type, size }) => {
-        const [newName, ext] = nameExt(fn)
+        const [name, ext] = nameExt(fn)
         return {
-          name: newName,
+          name,
           ext,
           type,
           size,
@@ -123,20 +133,27 @@ export default class FileField extends React.Component {
         rejectedMessage ||
         (multiple ? i18n.file.rejectedMultiple : i18n.file.rejected)
     }
+    current.value = FileField.valueToField(changed, multiple)
 
     if (err) {
       this.setState({ error: err })
-      target.setCustomValidity(err)
-      target.reportValidity && target.reportValidity()
+      current.setCustomValidity(err)
+      current.reportValidity && current.reportValidity()
     } else {
       this.setState({ error: null })
-      target.setCustomValidity('')
+      current.setCustomValidity('')
     }
+    this.setState({ value: current.value })
     onChange(changed)
   }
 
   handleRemove(e, file) {
-    const { value, multiple, onChange } = normalizeMultipleProps(this.props)
+    const {
+      value,
+      multiple,
+      elementRef: { current },
+      onChange,
+    } = normalizeMultipleProps(this.props)
     let changed = null
     if (multiple) {
       if (file) {
@@ -145,18 +162,14 @@ export default class FileField extends React.Component {
         changed = []
       }
     }
+    this.setState({ value: current.value })
     onChange(changed)
-    if (!changed || (multiple && !changed.length)) {
-      // This ensure required is checked
-      this.dropzone.fileInputEl.value = null
-    }
-    // TODO: This is wrong:
-    this.setState({ error: null })
-    e && e.stopPropagation()
+    e.stopPropagation()
   }
 
   renderPreview(b, file) {
-    const { error, readOnly, disabled } = this.state
+    const { disabled, readOnly } = this.props
+    const { error } = this.state
     return (
       <figure
         className={b.e('preview', { error })}
@@ -173,6 +186,7 @@ export default class FileField extends React.Component {
             <button
               className={b.e('close')}
               onClick={e => this.handleRemove(e, file)}
+              type="button"
             >
               <FaTrash /> Enlever
             </button>
@@ -203,10 +217,11 @@ export default class FileField extends React.Component {
       readOnly,
       disabled,
       elementRef,
+      rejectedMessage,
+      onChange,
+      onKeyDown,
       ...inputProps
     } = normalizeMultipleProps(this.props)
-    delete inputProps.fKey
-    delete inputProps.rejectedMessage
 
     const { error } = this.state
     let preview = null
@@ -233,10 +248,7 @@ export default class FileField extends React.Component {
           acceptClassName={b.e('dropzone').m({ accept: true }).s}
           rejectClassName={b.e('dropzone').m({ reject: true }).s}
           disabledClassName={b.e('dropzone').m({ disabled: true }).s}
-          // Since value of input is nulled we have to remove the files
-          onFileDialogCancel={this.handleRemove}
           name={name}
-          ref={ref => (this.dropzone = ref)}
           multiple={multiple}
           onDrop={this.handleDrop}
           inputProps={inputProps}
@@ -253,6 +265,14 @@ export default class FileField extends React.Component {
           </div>
         </Dropzone>
         {multiple && preview ? preview : null}
+        <input
+          className={b.e('hidden-input')}
+          ref={elementRef}
+          {...inputProps}
+          defaultValue={FileField.valueToField(value, multiple)}
+          type="text" // We need a text input instead of the file one
+          // because file inputs are read-only
+        />
       </div>
     )
   }
