@@ -111,7 +111,7 @@ export default class Formol extends React.Component {
     this.form = React.createRef()
     this.submit = React.createRef()
     this.state = {
-      disablePrompt: false,
+      loading: false,
       context: {
         item,
         transientItem: Formol.fromItem(item),
@@ -152,9 +152,11 @@ export default class Formol extends React.Component {
     const { current: form } = this.form
     this.validateForm()
     if (form.checkValidity()) {
-      this.setState({ disablePrompt: true })
+      console.log('Setting loading')
+      this.setState({ loading: true })
       const errors = (await onSubmit(transientItem, item)) || {}
-      this.setState({ disablePrompt: false })
+      console.log('UnSetting loading')
+      this.setState({ loading: false })
       this.setStateContext({ errors })
     } else if (form.reportValidity) {
       form.reportValidity()
@@ -194,8 +196,8 @@ export default class Formol extends React.Component {
     const item = newTransientItem || transientItem
     const normalize = v => (typeof v === 'string' && v ? v : '')
     // Resetting all custom validity before validation
-    Object.keys(elements).forEach(
-      (name, { current }) =>
+    Object.entries(elements).forEach(
+      ([name, { current }]) =>
         current && !this.errorsFromFields[name] && current.setCustomValidity('')
     )
     return Object.entries(elements).reduce((validity, [name, { current }]) => {
@@ -268,34 +270,30 @@ export default class Formol extends React.Component {
 
   render(b) {
     const {
-      add,
       children,
       className,
       readOnly,
       submitText,
       submitKind,
       noCancel,
-      forceAlwaysSubmit,
-      forceDisablePrompt,
       Prompt,
       Button,
     } = this.props
-    const { disablePrompt, context } = this.state
+    const { loading, context } = this.state
     const modified = this.isModified()
-    const submitDisabled = !forceAlwaysSubmit && !modified
     const Btn = Button || 'button'
     return (
       <form
         className={b.mix(className).m({
-          add,
-          errors: !!Object.keys(context.errors).length,
+          loading,
+          errors: !!Object.values(context.errors).some(e => e),
         })}
         onSubmit={e => e.preventDefault()}
         ref={this.form}
       >
         {Prompt && (
           <Prompt
-            when={!forceDisablePrompt && !disablePrompt && modified}
+            when={!loading && modified}
             message={
               'Vous avez des modifications en cours. ' +
               'Voulez-vous vraiment changer de page ?'
@@ -316,7 +314,7 @@ export default class Formol extends React.Component {
             <Btn
               onClick={this.handleSubmit}
               className={b.e('submit')}
-              disabled={submitDisabled}
+              disabled={!modified}
               type="button"
               kind={submitKind || 'important'}
             >
@@ -326,7 +324,7 @@ export default class Formol extends React.Component {
               <Btn
                 onClick={this.handleCancel}
                 className={b.e('cancel')}
-                disabled={submitDisabled}
+                disabled={!modified}
                 type="button"
                 kind="mute"
               >

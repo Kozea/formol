@@ -247,7 +247,6 @@ export default class FileField extends React.Component {
           ref={this.dropzone}
           multiple={multiple}
           onDrop={this.handleDrop}
-          inputProps={inputProps}
         >
           <div className={b.e('placeholder')}>
             {!multiple && preview ? (
