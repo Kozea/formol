@@ -130,9 +130,6 @@ export default class FileField extends React.Component {
     }
     if (!multiple) {
       rejected = rejected.filter(rej => rej !== key(value))
-      {
-        rejected
-      }
     }
     const newFiles = multiple ? rename([...files, ...value]) : files[0]
     const newValue = FileField.valueToField(newFiles, multiple)
