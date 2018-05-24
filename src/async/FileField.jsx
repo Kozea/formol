@@ -18,19 +18,28 @@ import Preview from '../utils/Preview'
 
 const key = file => [file.name, file.ext].join('.')
 
-const nonExistingFileName = ([name, ext], value) => {
-  let i = 0
-  let fn = name
-  const nameFinder = n => f => key(f) === key({ name: n, ext })
-  while (i < 100 && value.find(nameFinder(fn))) {
-    i++
-    fn = `${fn}_${i}`
-  }
-  if (i === 100) {
-    throw new Error('Sorry we don’t support 100+ files with the same name')
-  }
-  return [fn, ext]
-}
+const rename = files =>
+  files.reduce(
+    ({ renamed, counter }, file) => {
+      const name = file.name.replace(/--\d+$/, '')
+      const k = key({ ...file, name })
+      const newCounter = {
+        ...counter,
+        [k]: k in counter ? counter[k] + 1 : 0,
+      }
+      return {
+        counter: newCounter,
+        renamed: [
+          ...renamed,
+          {
+            ...file,
+            name: newCounter[k] ? `${name}--${newCounter[k]}` : name,
+          },
+        ],
+      }
+    },
+    { renamed: [], counter: {} }
+  ).renamed
 
 @block
 export default class FileField extends React.Component {
@@ -112,60 +121,6 @@ export default class FileField extends React.Component {
       onBlur,
     } = normalizeMultipleProps(this.props)
     onFocus()
-    // if (multiple) {
-    //   accepted = await Promise.all(accepted.map(this.fileToObject))
-    //
-    //   // We can't map here because of name checking (prevent collisions)
-    //   const newFiles = []
-    //   accepted.forEach(({ name, ext, type, size, data }) => {
-    //     ;[name, ext] = nonExistingFileName(
-    //       [name, ext],
-    //       [...value.filter(f => f.data), ...newFiles]
-    //     )
-    //     newFiles.push({
-    //       name,
-    //       ext,
-    //       type,
-    //       size,
-    //       data,
-    //     })
-    //   })
-    //
-    //   const erroredFiles = rejected.map(({ name: fn, type, size }) => {
-    //     const [name, ext] = nameExt(fn)
-    //     return {
-    //       name,
-    //       ext,
-    //       type,
-    //       size,
-    //     }
-    //   })
-    //
-    //   // Removing error files and adding new files and new errors
-    //   changed = [...value.filter(f => f.data), ...newFiles, ...erroredFiles]
-    // } else {
-    //   if (!accepted.length && !rejected.length) {
-    //     console.warn('Nothing sent on onDrop')
-    //     return
-    //   }
-    //   changed = await this.fileToObject(accepted[0] || rejected[0])
-    // }
-    // let err = null
-    // if (rejected.length) {
-    //   err =
-    //     rejectedMessage ||
-    //     (multiple ? i18n.file.rejectedMultiple : i18n.file.rejected)
-    // }
-    // current.value = FileField.valueToField(changed, multiple)
-    //
-    // if (err) {
-    //   this.setState({ error: err })
-    //   current.setCustomValidity(err)
-    //   current.reportValidity && current.reportValidity()
-    // } else {
-    //   this.setState({ error: null })
-    //   current.setCustomValidity('')
-    // }
     let { rejected } = this.state
     const files = await Promise.all(
       acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
@@ -176,7 +131,7 @@ export default class FileField extends React.Component {
     if (!multiple) {
       rejected = rejected.filter(rej => rej !== key(value))
     }
-    const newFiles = multiple ? [...files, ...value] : files[0]
+    const newFiles = multiple ? rename([...files, ...value]) : files[0]
     const newValue = FileField.valueToField(newFiles, multiple)
     current.value = newValue
     this.setState({ value: newValue, rejected })
@@ -303,7 +258,7 @@ export default class FileField extends React.Component {
             )}
           </div>
         </Dropzone>
-        {multiple && preview ? preview : null}
+        {multiple && <div className={b.e('previews')}>{preview}</div>}
         <input
           className={b.e('hidden-input')}
           ref={elementRef}
