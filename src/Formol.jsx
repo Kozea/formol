@@ -226,10 +226,17 @@ export default class Formol extends React.Component {
     }
   }
 
-  handleChange(name, value) {
+  handleChange(name, value, error) {
     const {
-      context: { transientItem },
+      context: { transientItem, elements },
     } = this.state
+    if (error !== void 0) {
+      // FIXME This is a horrible HACK
+      error = error === '' ? error : ` ${error}`
+      if (error !== elements[name].current.validationMessage) {
+        elements[name].current.setCustomValidity(error)
+      }
+    }
     if (get(transientItem, name) !== value) {
       const newtransientItem = clone(transientItem)
       set(newtransientItem, name, value)
@@ -248,32 +255,25 @@ export default class Formol extends React.Component {
     const { transientItem, elements, validators } = this.state.context
     const item = newTransientItem || transientItem
     const normalize = v => (typeof v === 'string' && v ? v : '')
-
+    // Resetting all custom validity before validation
+    Object.values(elements).forEach(
+      ({ current }) =>
+        current &&
+        !current.validationMessage.startsWith(' ') &&
+        current.setCustomValidity('')
+    )
     return Object.entries(elements).reduce((validity, [name, { current }]) => {
       if (validators[name]) {
         validity[name] =
           normalize(validators[name](item[name])) || normalize(validity[name])
       }
       validity[name] = validity[name] || ''
-
       if (current) {
-        // If there's already a DOM validation error
-        if (
-          current.validity &&
-          // Can't use Object.values here...
-          [
-            'patternMismatch',
-            'rangeOverflow',
-            'rangeUnderflow',
-            'stepMismatch',
-            'tooLong',
-            'typeMismatch',
-            'valueMissing',
-          ].some(key => current.validity[key])
-        ) {
-          validity[name] = current.validationMessage
-        } else {
+        if (current.checkValidity()) {
           current.setCustomValidity(validity[name])
+        } else {
+          // If there's already a DOM validation error
+          validity[name] = current.validationMessage
         }
       }
       return validity

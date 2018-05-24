@@ -1,5 +1,6 @@
 import './FileField.sass'
 
+import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'
 import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
@@ -47,25 +48,36 @@ export default class FileField extends React.Component {
     const {
       multiple,
       elementRef: { current },
-      value,
+      value: rawValue,
     } = normalizeMultipleProps(newProps)
+    const value = FileField.valueToField(rawValue, multiple)
     if (value !== oldValue) {
-      current && (current.value = FileField.valueToField(value, multiple))
+      current && (current.value = value)
       return {
         value,
-        error: null,
+        rejected: [],
       }
     }
     return null
   }
+
   constructor(props) {
     super(props)
     this.state = {
       value: null,
-      error: null,
+      rejected: [],
     }
+    this.dropzone = React.createRef()
     this.handleDrop = this.handleDrop.bind(this)
     this.handleRemove = this.handleRemove.bind(this)
+  }
+
+  componentDidUpdate({ value: oldValue }, { rejected: oldRejected }) {
+    const { value } = this.props
+    const { rejected } = this.state
+    if (rejected !== oldRejected && !deepEqual(value, oldValue)) {
+      this.handleChange(value, rejected)
+    }
   }
 
   async fileToObject(file) {
@@ -79,72 +91,97 @@ export default class FileField extends React.Component {
     }
   }
 
-  async handleDrop(accepted, rejected) {
+  handleChange(value, rejected) {
+    const { i18n, multiple, onChange } = this.props
+    onChange(
+      value,
+      rejected.length
+        ? multiple
+          ? `${i18n.file.rejectedMultiple} (${rejected.join(', ')})`
+          : i18n.file.rejected
+        : ''
+    )
+  }
+
+  async handleDrop(acceptedFiles, rejectedFiles) {
     const {
       value,
       multiple,
-      rejectedMessage,
-      i18n,
       elementRef: { current },
-      onChange,
+      onFocus,
+      onBlur,
     } = normalizeMultipleProps(this.props)
-    let changed = null
-    if (multiple) {
-      accepted = await Promise.all(accepted.map(this.fileToObject))
-
-      // We can't map here because of name checking (prevent collisions)
-      const newFiles = []
-      accepted.forEach(({ name, ext, type, size, data }) => {
-        ;[name, ext] = nonExistingFileName(
-          [name, ext],
-          [...value.filter(f => f.data), ...newFiles]
-        )
-        newFiles.push({
-          name,
-          ext,
-          type,
-          size,
-          data,
-        })
-      })
-
-      const erroredFiles = rejected.map(({ name: fn, type, size }) => {
-        const [name, ext] = nameExt(fn)
-        return {
-          name,
-          ext,
-          type,
-          size,
-        }
-      })
-
-      // Removing error files and adding new files and new errors
-      changed = [...value.filter(f => f.data), ...newFiles, ...erroredFiles]
-    } else {
-      if (!accepted.length && !rejected.length) {
-        console.warn('Nothing sent on onDrop')
-        return
-      }
-      changed = await this.fileToObject(accepted[0] || rejected[0])
+    onFocus()
+    // if (multiple) {
+    //   accepted = await Promise.all(accepted.map(this.fileToObject))
+    //
+    //   // We can't map here because of name checking (prevent collisions)
+    //   const newFiles = []
+    //   accepted.forEach(({ name, ext, type, size, data }) => {
+    //     ;[name, ext] = nonExistingFileName(
+    //       [name, ext],
+    //       [...value.filter(f => f.data), ...newFiles]
+    //     )
+    //     newFiles.push({
+    //       name,
+    //       ext,
+    //       type,
+    //       size,
+    //       data,
+    //     })
+    //   })
+    //
+    //   const erroredFiles = rejected.map(({ name: fn, type, size }) => {
+    //     const [name, ext] = nameExt(fn)
+    //     return {
+    //       name,
+    //       ext,
+    //       type,
+    //       size,
+    //     }
+    //   })
+    //
+    //   // Removing error files and adding new files and new errors
+    //   changed = [...value.filter(f => f.data), ...newFiles, ...erroredFiles]
+    // } else {
+    //   if (!accepted.length && !rejected.length) {
+    //     console.warn('Nothing sent on onDrop')
+    //     return
+    //   }
+    //   changed = await this.fileToObject(accepted[0] || rejected[0])
+    // }
+    // let err = null
+    // if (rejected.length) {
+    //   err =
+    //     rejectedMessage ||
+    //     (multiple ? i18n.file.rejectedMultiple : i18n.file.rejected)
+    // }
+    // current.value = FileField.valueToField(changed, multiple)
+    //
+    // if (err) {
+    //   this.setState({ error: err })
+    //   current.setCustomValidity(err)
+    //   current.reportValidity && current.reportValidity()
+    // } else {
+    //   this.setState({ error: null })
+    //   current.setCustomValidity('')
+    // }
+    let { rejected } = this.state
+    const files = await Promise.all(
+      acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
+    )
+    if (rejectedFiles.length) {
+      rejected = [...rejected, ...files.slice(-rejectedFiles.length).map(key)]
     }
-    let err = null
-    if (rejected.length) {
-      err =
-        rejectedMessage ||
-        (multiple ? i18n.file.rejectedMultiple : i18n.file.rejected)
+    if (!multiple) {
+      rejected = rejected.filter(rej => rej !== key(value))
     }
-    current.value = FileField.valueToField(changed, multiple)
-
-    if (err) {
-      this.setState({ error: err })
-      current.setCustomValidity(err)
-      current.reportValidity && current.reportValidity()
-    } else {
-      this.setState({ error: null })
-      current.setCustomValidity('')
-    }
-    this.setState({ value: current.value })
-    onChange(changed)
+    const newFiles = multiple ? [...files, ...value] : files[0]
+    const newValue = FileField.valueToField(newFiles, multiple)
+    current.value = newValue
+    this.setState({ value: newValue, rejected })
+    this.handleChange(newFiles, rejected)
+    onBlur()
   }
 
   handleRemove(e, file) {
@@ -152,28 +189,28 @@ export default class FileField extends React.Component {
       value,
       multiple,
       elementRef: { current },
-      onChange,
     } = normalizeMultipleProps(this.props)
-    let changed = null
-    if (multiple) {
-      if (file) {
-        changed = value.filter(f => key(f) !== key(file))
-      } else {
-        changed = []
-      }
-    }
-    this.setState({ value: current.value })
-    onChange(changed)
+    const changed = multiple ? value.filter(f => key(f) !== key(file)) : null
+    const rejected = this.state.rejected.filter(rej => rej !== key(file))
+
+    const newValue = FileField.valueToField(changed, multiple)
+    current.value = newValue
+    this.setState({
+      value: newValue,
+      rejected,
+    })
+    this.handleChange(changed, rejected)
     e.stopPropagation()
   }
 
   renderPreview(b, file) {
     const { disabled, readOnly } = this.props
-    const { error } = this.state
+    const { rejected } = this.state
+    const fileKey = key(file)
     return (
       <figure
-        className={b.e('preview', { error })}
-        key={`${file.name}.${file.ext}`}
+        className={b.e('preview').m({ error: rejected.includes(fileKey) })}
+        key={fileKey}
       >
         <div className={b.e('image-delete')}>
           <Preview
@@ -193,7 +230,7 @@ export default class FileField extends React.Component {
           ) : null}
         </div>
         <figcaption className={b.e('preview-caption')}>
-          <span className={b.e('preview-name')}>{key(file)} </span>
+          <span className={b.e('preview-name')}>{fileKey} </span>
           {file.size && (
             <span className={b.e('preview-size')}>{fileSize(file.size)} </span>
           )}
@@ -223,7 +260,7 @@ export default class FileField extends React.Component {
       ...inputProps
     } = normalizeMultipleProps(this.props)
 
-    const { error } = this.state
+    const { rejected } = this.state
     let preview = null
     if (multiple) {
       preview = (
@@ -240,7 +277,8 @@ export default class FileField extends React.Component {
     }
 
     return (
-      <div className={b.mix(className).m({ invalid: !!error })}>
+      <div className={b.mix(className).m({ invalid: !!rejected.length })}>
+        {rejected}
         <Dropzone
           accept={accept || 'image/*'}
           className={b.e('dropzone').s}
@@ -249,6 +287,7 @@ export default class FileField extends React.Component {
           rejectClassName={b.e('dropzone').m({ reject: true }).s}
           disabledClassName={b.e('dropzone').m({ disabled: true }).s}
           name={name}
+          ref={this.dropzone}
           multiple={multiple}
           onDrop={this.handleDrop}
           inputProps={inputProps}

@@ -50,19 +50,18 @@ class Field extends React.Component {
       name,
       context: { transientItem, handleChanged },
     } = { ...this.props, ...this.props.conditionalContext.propsOverride }
-
     if (get(transientItem, name) !== get(oldTransientItem, name)) {
       handleChanged(name)
     }
   }
 
-  handleChange(value) {
+  handleChange(value, error) {
     const {
       name,
       unformatter,
       context: { handleChange },
     } = { ...this.props, ...this.props.conditionalContext.propsOverride }
-    handleChange(name, unformatter(value))
+    handleChange(name, unformatter(value), error)
   }
 
   handleFocus() {
@@ -77,8 +76,8 @@ class Field extends React.Component {
       normalizer,
       context: { transientItem, handleChange },
     } = { ...this.props, ...this.props.conditionalContext.propsOverride }
-    // Normalize data
     const value = get(transientItem, name)
+    // Normalize data
     const normalized = normalizer(value)
     if (normalized !== value) {
       handleChange(name, normalized)
@@ -127,7 +126,7 @@ class Field extends React.Component {
 
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
-    const error = alreadyFocused || errors[name] ? errors[name] : null
+    const error = alreadyFocused && errors[name] ? errors[name] : null
     return (
       <div
         className={b.mix(className).m({
