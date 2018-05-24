@@ -6,6 +6,7 @@
   border: solid 1px
   border-radius: .15em
   margin: .5em 0
+  overflow: hidden
   position: relative
 
   &__hidden-input
@@ -15,13 +16,13 @@
     border-bottom-color: $color
     margin-bottom: 0
     opacity: 1
-    transition: padding $time, opacity $time
-    transition-delay: $time / 2, $time
+    transition: padding .5s, opacity .5s
+    transition-delay: .5s / 2, .5s
 
     & > *
       margin-top: 0
-      transition: margin $time
-      transition-delay: $time / 2
+      transition: margin .5s
+      transition-delay: .5s / 2
 
 
   .rdw-editor-main
@@ -44,9 +45,6 @@
 
 .Formol_Field--type-html
   &:not(.Formol_Field--focus)
-    .Formol_HTMLField
-      overflow: hidden
-
     .rdw-editor-toolbar
       opacity: 0
       padding: 0
