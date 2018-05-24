@@ -78,8 +78,6 @@ export default class Formol extends React.Component {
     fields: {},
     i18n: 'en',
     focusNextOnEnter: false,
-    getPk: item => item,
-    onError: console.error.bind(console),
   }
 
   static fromItem(item) {
@@ -149,79 +147,19 @@ export default class Formol extends React.Component {
   }
 
   async handleSubmit() {
-    const {
-      add,
-      getPk,
-      item,
-      noRecursiveKeys,
-      forceAlwaysSubmit,
-      onCreate,
-      onPatch,
-      onSubmit,
-    } = this.props
+    const { item, onSubmit } = this.props
     const { transientItem } = this.state.context
+    const { current: form } = this.form
     this.validateForm()
-    if (this.form.current.checkValidity()) {
-      if (onSubmit) {
-        try {
-          const report = await onSubmit(transientItem)
-          if (report === false) {
-            // We manually force return at some point
-            return
-          }
-          if (report.metadata.code === 202) {
-            this.setStateContext({
-              errors: report.metadata.errors[0].fields,
-            })
-            throw new Error('Validation error')
-          }
-          this.handleNoError()
-        } catch (err) {
-          this.handleError(err)
-        }
-      } else if (add) {
-        this.setState({ disablePrompt: true })
-        try {
-          const report = await onCreate(transientItem)
-          if (report === false) {
-            // We manually force return at some point
-            return
-          }
-          if (report.metadata.code === 202) {
-            this.setStateContext({
-              errors: report.metadata.errors[0].fields,
-            })
-            throw new Error('Validation error')
-          }
-          this.handleNoError()
-        } catch (err) {
-          this.handleError(err)
-        }
-        this.setState({ disablePrompt: false })
-      } else if (forceAlwaysSubmit || !deepEqual(item, transientItem)) {
-        const pk = getPk(item)
-        const diff = diffObject(transientItem, item, noRecursiveKeys)
-        try {
-          const report = await onPatch(pk, diff)
-          if (report === false) {
-            // We manually force return at some point
-            return
-          }
-          if (report.metadata.code === 202) {
-            this.setStateContext({
-              errors: report.metadata.errors[0].fields,
-            })
-            throw new Error('Validation error')
-          }
-          this.handleNoError()
-        } catch (err) {
-          this.handleError(err)
-        }
-      }
-    } else if (this.form.current.reportValidity) {
-      this.form.current.reportValidity()
+    if (form.checkValidity()) {
+      this.setState({ disablePrompt: true })
+      const errors = (await onSubmit(transientItem, item)) || {}
+      this.setState({ disablePrompt: false })
+      this.setStateContext({ errors })
+    } else if (form.reportValidity) {
+      form.reportValidity()
     } else {
-      // Would be better to always use this.form.current.reportValidity
+      // Would be better to always use form.reportValidity
       // but browser support is not as good
       this.submit.current && this.submit.current.click()
     }
@@ -317,30 +255,6 @@ export default class Formol extends React.Component {
       e.preventDefault()
       return false
     }
-  }
-
-  handleError(err) {
-    const {
-      noNotifications,
-      noErrorNotification,
-      errorNotificationText,
-      onError,
-    } = this.props
-    console.error(err)
-    noNotifications || noErrorNotification || onError(errorNotificationText)
-  }
-
-  handleNoError() {
-    const {
-      item,
-      noNotifications,
-      noValidNotification,
-      validNotificationText,
-      onValid,
-    } = this.props
-    // We reset form from state since it must be synced with the server
-    this.setStateNewItem(Formol.fromItem(item))
-    noNotifications || noValidNotification || onValid(validNotificationText)
   }
 
   isModified() {
