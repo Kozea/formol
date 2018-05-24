@@ -116,23 +116,23 @@ export default class FileField extends React.Component {
     const {
       value,
       multiple,
-      elementRef: { current },
       onFocus,
       onBlur,
+      elementRef: { current },
     } = normalizeMultipleProps(this.props)
     onFocus()
     let { rejected } = this.state
     const files = await Promise.all(
       acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
     )
-    if (multiple && rejectedFiles.length) {
+    if (rejectedFiles.length) {
       rejected = [...rejected, ...files.slice(-rejectedFiles.length).map(key)]
-    }
-    if (!multiple) {
-      rejected = rejected.filter(rej => rej !== key(value))
     }
     const newFiles = multiple ? rename([...files, ...value]) : files[0]
     const newValue = FileField.valueToField(newFiles, multiple)
+    if (!multiple) {
+      rejected = rejected.includes(newValue) ? [newValue] : []
+    }
     current.value = newValue
     this.setState({ value: newValue, rejected })
     this.handleChange(newFiles, rejected)
@@ -144,7 +144,10 @@ export default class FileField extends React.Component {
       value,
       multiple,
       elementRef: { current },
+      onFocus,
+      onBlur,
     } = normalizeMultipleProps(this.props)
+    onFocus()
     const changed = multiple ? value.filter(f => key(f) !== key(file)) : null
     const rejected = this.state.rejected.filter(rej => rej !== key(file))
 
@@ -156,6 +159,7 @@ export default class FileField extends React.Component {
     })
     this.handleChange(changed, rejected)
     e.stopPropagation()
+    onBlur()
   }
 
   renderPreview(b, file) {
@@ -214,7 +218,6 @@ export default class FileField extends React.Component {
       onKeyDown,
       ...inputProps
     } = normalizeMultipleProps(this.props)
-
     const { rejected } = this.state
     let preview = null
     if (multiple) {
