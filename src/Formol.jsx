@@ -128,6 +128,7 @@ export default class Formol extends React.Component {
         handleChanged: this.handleChanged.bind(this),
       },
     }
+    this.errorsFromFields = {}
     this.handleCancel = this.handleCancel.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
@@ -231,9 +232,7 @@ export default class Formol extends React.Component {
       context: { transientItem, elements },
     } = this.state
     if (error !== void 0) {
-      // FIXME This is a horrible HACK
-      // (we add a space to differentiate with validator custom validities)
-      error = error === '' ? error : ` ${error}`
+      this.errorsFromFields[name] = error
       if (error !== elements[name].current.validationMessage) {
         elements[name].current.setCustomValidity(error)
       }
@@ -257,11 +256,9 @@ export default class Formol extends React.Component {
     const item = newTransientItem || transientItem
     const normalize = v => (typeof v === 'string' && v ? v : '')
     // Resetting all custom validity before validation
-    Object.values(elements).forEach(
-      ({ current }) =>
-        current &&
-        !current.validationMessage.startsWith(' ') &&
-        current.setCustomValidity('')
+    Object.keys(elements).forEach(
+      (name, { current }) =>
+        current && !this.errorsFromFields[name] && current.setCustomValidity('')
     )
     return Object.entries(elements).reduce((validity, [name, { current }]) => {
       if (validators[name]) {
