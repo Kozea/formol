@@ -125,11 +125,14 @@ export default class FileField extends React.Component {
     const files = await Promise.all(
       acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
     )
-    if (rejectedFiles.length) {
+    if (multiple && rejectedFiles.length) {
       rejected = [...rejected, ...files.slice(-rejectedFiles.length).map(key)]
     }
     if (!multiple) {
       rejected = rejected.filter(rej => rej !== key(value))
+      {
+        rejected
+      }
     }
     const newFiles = multiple ? rename([...files, ...value]) : files[0]
     const newValue = FileField.valueToField(newFiles, multiple)
@@ -233,7 +236,6 @@ export default class FileField extends React.Component {
 
     return (
       <div className={b.mix(className).m({ invalid: !!rejected.length })}>
-        {rejected}
         <Dropzone
           accept={accept || 'image/*'}
           className={b.e('dropzone').s}
