@@ -159,8 +159,8 @@ export default class Formol extends React.Component {
       onSubmit,
     } = this.props
     const { transientItem } = this.state.context
-    this.validateForm() // TODO: Remove if useless
-    if (this.form.current && this.form.current.checkValidity()) {
+    this.validateForm()
+    if (this.form.current.checkValidity()) {
       if (onSubmit) {
         try {
           const report = await onSubmit(transientItem)
@@ -232,6 +232,7 @@ export default class Formol extends React.Component {
     } = this.state
     if (error !== void 0) {
       // FIXME This is a horrible HACK
+      // (we add a space to differentiate with validator custom validities)
       error = error === '' ? error : ` ${error}`
       if (error !== elements[name].current.validationMessage) {
         elements[name].current.setCustomValidity(error)

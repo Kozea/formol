@@ -18302,6 +18302,648 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
 </form>
 `;
 
+exports[`Storyshots Formol exemples Editing a nested item 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "add": undefined,
+        "errors": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "identifier",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-identifier",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="identifier"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        type="number"
+        value={4}
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Identifier
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "properties.name",
+          "readOnly": false,
+          "type": undefined,
+        },
+        "s": "Formol_Field Formol_Field--name-properties.name",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="properties.name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        type="text"
+        value="paul"
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Properties -&gt; Name
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "properties.root.realm",
+          "readOnly": false,
+          "type": undefined,
+        },
+        "s": "Formol_Field Formol_Field--name-properties.root.realm",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="properties.root.realm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        type="text"
+        value="*"
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Properties -&gt; Root -&gt; Realm
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "properties.extra.0",
+          "readOnly": false,
+          "type": undefined,
+        },
+        "s": "Formol_Field Formol_Field--name-properties.extra.0",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="properties.extra.0"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        type="text"
+        value="extra info"
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Properties -&gt; Extra -&gt; first array item
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "properties.extra.1.more.again.0.hereweare",
+          "readOnly": false,
+          "type": "number",
+        },
+        "s": "Formol_Field Formol_Field--type-number Formol_Field--name-properties.extra.1.more.again.0.hereweare",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="properties.extra.1.more.again.0.hereweare"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        readOnly={false}
+        type="number"
+        value={42}
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Properties -&gt; Extra -&gt; second array item -&gt; more -&gt; again -&gt; first array item -&gt; hereweare
+      </span>
+    </label>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    kind="important"
+    onClick={[Function]}
+    type="button"
+  >
+    Envoyer
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    kind="mute"
+    onClick={[Function]}
+    type="button"
+  >
+    Annuler
+  </button>
+</form>
+`;
+
 exports[`Storyshots Formol exemples Editing a person 1`] = `
 <form
   className={
@@ -18326,7 +18968,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    Create your profile
+    Edit your profile
   </h1>
   <div
     className={

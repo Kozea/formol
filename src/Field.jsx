@@ -8,12 +8,11 @@ import FormolContextWrapper from './FormolContext'
 import { block } from './utils'
 import { get } from './utils/object'
 
-let COUNT = 0
+let UNAMED_COUNT = 0
 
 @block
 class Field extends React.Component {
   static defaultProps = {
-    name: `field-${++COUNT}`,
     formatter: v => (v && v.trim ? v.trim() : v),
     normalizer: v => v,
     unformatter: v => v,
@@ -27,7 +26,17 @@ class Field extends React.Component {
         Set a value for this field in the form item attribute.`
       )
     }
-    props = { ...props, ...props.conditionalContext.propsOverride }
+    if (props.name) {
+      this.name = props.name
+    } else if (typeof props.children === 'string') {
+      this.name = props.children
+        .toLowerCase()
+        .replace(/\W+(.)/g, (match, chr) => chr.toUpperCase())
+    } else {
+      this.name = `field-${++UNAMED_COUNT}`
+    }
+
+    props = this.getProps(props)
     this.element = React.createRef()
     this.state = {
       focus: false,
@@ -49,9 +58,17 @@ class Field extends React.Component {
     const {
       name,
       context: { transientItem, handleChanged },
-    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
+    } = this.getProps(this.props)
     if (get(transientItem, name) !== get(oldTransientItem, name)) {
       handleChanged(name)
+    }
+  }
+
+  getProps(props) {
+    return {
+      ...props,
+      name: this.name,
+      ...props.conditionalContext.propsOverride,
     }
   }
 
@@ -60,7 +77,7 @@ class Field extends React.Component {
       name,
       unformatter,
       context: { handleChange },
-    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
+    } = this.getProps(this.props)
     handleChange(name, unformatter(value), error)
   }
 
@@ -75,7 +92,7 @@ class Field extends React.Component {
       name,
       normalizer,
       context: { transientItem, handleChange },
-    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
+    } = this.getProps(this.props)
     const value = get(transientItem, name)
     // Normalize data
     const normalized = normalizer(value)
@@ -102,7 +119,7 @@ class Field extends React.Component {
       context,
       conditionalContext,
       ...props
-    } = { ...this.props, ...this.props.conditionalContext.propsOverride }
+    } = this.getProps(this.props)
 
     const {
       item,
