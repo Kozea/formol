@@ -1,5 +1,5 @@
 import { withState } from '@dump247/storybook-state'
-import { boolean, number, selectV2 } from '@storybook/addon-knobs/react'
+import { boolean, number, select } from '@storybook/addon-knobs'
 
 import Formol from '../src'
 
@@ -15,6 +15,6 @@ export const withStateForm = (form, initial) =>
       item: store.state.item,
       readOnly: boolean('Form read only', false, 'form'),
       focusNextOnEnter: boolean('Focus next field with [Enter]', false, 'form'),
-      i18n: selectV2('I18n', Object.keys(Formol.i18n), 'en', 'form'),
+      i18n: select('I18n', Object.keys(Formol.i18n), 'en', 'form'),
     })
   })

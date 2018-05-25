@@ -1,3 +1,4 @@
+import fs from 'fs'
 import path from 'path'
 
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
@@ -7,11 +8,19 @@ import config from './package.json'
 
 export default {
   mode: 'production',
-  entry: ['regenerator-runtime/runtime.js', './src/index'],
+  entry: {
+    formol: ['regenerator-runtime/runtime.js', './src'],
+    ...fs
+      .readdirSync(path.join(__dirname, 'src', 'sass'))
+      .reduce((themes, theme) => {
+        themes[theme] = path.join(__dirname, 'src', 'sass', theme, 'base.sass')
+        return themes
+      }, {}),
+  },
   output: {
     path: path.join(__dirname, 'lib'),
     publicPath: 'assets/formol/',
-    filename: 'formol.js',
+    filename: '[name].js',
     library: 'formol',
     libraryTarget: 'umd',
     umdNamedDefine: true,
@@ -19,7 +28,7 @@ export default {
   },
   externals: Object.keys(config.peerDependencies),
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'formol.css' }),
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,

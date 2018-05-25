@@ -1,10 +1,24 @@
+const fs = require('fs')
 const path = require('path')
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const rootDir = path.join(__dirname, '..')
 const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
 
 module.exports = (baseConfig, env) => {
   baseConfig.entry.preview.unshift('regenerator-runtime/runtime.js')
+  fs
+    .readdirSync(path.join(rootDir, 'src', 'sass'))
+    .map(
+      theme =>
+        (baseConfig.entry[theme] = path.join(
+          rootDir,
+          'src',
+          'sass',
+          theme,
+          'base.sass'
+        ))
+    )
   baseConfig.module.rules[0] = {
     test: /\.jsx?$/,
     include: dir(),
@@ -41,7 +55,7 @@ module.exports = (baseConfig, env) => {
     {
       test: /\.sass$/,
       loader: [
-        'style-loader',
+        MiniCssExtractPlugin.loader,
         'css-loader',
         {
           loader: 'sass-loader',
@@ -57,6 +71,8 @@ module.exports = (baseConfig, env) => {
       enforce: 'pre',
     }
   )
+
+  baseConfig.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }))
 
   return baseConfig
 }

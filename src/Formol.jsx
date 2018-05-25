@@ -1,5 +1,3 @@
-import './sass/default/base.sass'
-
 import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'
 
@@ -33,7 +31,6 @@ import { block } from './utils'
 import {
   alignKeysRec,
   clone,
-  diffObject,
   get,
   nullVoidValuesRec,
   set,
