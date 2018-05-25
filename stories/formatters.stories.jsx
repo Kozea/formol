@@ -30,6 +30,22 @@ storiesOf('Formatters', module)
           >
             Big number (actually a formatted string)
           </Field>
+          <Field
+            name="creditcard"
+            pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+            formatter={v =>
+              v
+                ? v
+                    .replace(/\D/g, '')
+                    .split('')
+                    .map((digit, i) => ((i + 1) % 4 ? digit : `${digit}-`))
+                    .join('')
+                    .replace(/-$/, '')
+                : ''
+            }
+          >
+            Credit Card
+          </Field>
         </Formol>
       ),
       { bignumber: '0123456789' }
@@ -55,7 +71,7 @@ storiesOf('Formatters', module)
       props => (
         <Formol {...props}>
           <h1>Field normalizer</h1>
-          <Field name="strnumber" normalizer={v => +v.replace(/\D/g, '')}>
+          <Field name="strnumber" normalizer={v => v && +v.replace(/\D/g, '')}>
             String cleaned and parsed as a number on blur
           </Field>
         </Formol>
