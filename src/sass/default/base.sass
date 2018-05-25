@@ -17,12 +17,13 @@
 
 // form
 .Formol_Formol
+  box-sizing: border-box
   color: $color
   font-size: $font-size
+  padding: 0 1em
 
   &--errors
-    background-color: rgba($error, 0.05)
-    box-shadow: 0 0 1px rgba($error, 0.5)
+    box-shadow: -1px 0 0 $error
 
   &--loading
     opacity: .5
