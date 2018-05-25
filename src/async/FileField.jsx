@@ -1,5 +1,5 @@
 import deepEqual from 'deep-equal'
-import React, { Fragment } from 'react'
+import React from 'react'
 import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
 import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
@@ -219,9 +219,7 @@ export default class FileField extends React.Component {
     const { rejected } = this.state
     let preview = null
     if (multiple) {
-      preview = (
-        <Fragment>{value.map(file => this.renderPreview(b, file))}</Fragment>
-      )
+      preview = <>{value.map(file => this.renderPreview(b, file))}</>
     } else if (value) {
       preview = this.renderPreview(b, value)
     }
@@ -250,10 +248,10 @@ export default class FileField extends React.Component {
             {!multiple && preview ? (
               preview
             ) : (
-              <Fragment>
+              <>
                 <MdCloudUpload />
                 <span>{placeholder}</span>
-              </Fragment>
+              </>
             )}
           </div>
         </Dropzone>

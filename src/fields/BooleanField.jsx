@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { block } from '../utils'
 
@@ -18,15 +18,13 @@ export default class BooleanField extends React.Component {
       props.disabled = true
     }
     return (
-      <Fragment>
-        <input
-          ref={elementRef}
-          className={b.mix(className)}
-          checked={value}
-          onChange={e => onChange(e.target.checked)}
-          {...props}
-        />
-      </Fragment>
+      <input
+        ref={elementRef}
+        className={b.mix(className)}
+        checked={value}
+        onChange={e => onChange(e.target.checked)}
+        {...props}
+      />
     )
   }
 }

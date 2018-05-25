@@ -1,5 +1,5 @@
 import deepEqual from 'deep-equal'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
@@ -300,7 +300,7 @@ export default class Formol extends React.Component {
         </FormolContext.Provider>
         {/* This input is required to validate the form */}
         {!readOnly && (
-          <Fragment>
+          <>
             <input
               type="submit"
               ref={ref => (this.submit = ref)}
@@ -326,7 +326,7 @@ export default class Formol extends React.Component {
                 Annuler
               </Btn>
             )}
-          </Fragment>
+          </>
         )}
       </form>
     )
