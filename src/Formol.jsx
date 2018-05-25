@@ -149,10 +149,8 @@ export default class Formol extends React.Component {
     const { current: form } = this.form
     this.validateForm()
     if (form.checkValidity()) {
-      console.log('Setting loading')
       this.setState({ loading: true })
       const errors = (await onSubmit(transientItem, item)) || {}
-      console.log('UnSetting loading')
       this.setState({ loading: false })
       this.setStateContext({ errors })
     } else if (form.reportValidity) {

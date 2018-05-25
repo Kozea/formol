@@ -41,7 +41,6 @@ class Themes extends React.Component {
         `${location.origin}${location.pathname}`,
         ''
       )
-      console.log(name)
       themesLink[name] = link
       return themesLink
     }, {})
