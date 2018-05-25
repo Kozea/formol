@@ -1,4 +1,4 @@
-import './Formol.sass'
+import './sass/default/base.sass'
 
 import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'

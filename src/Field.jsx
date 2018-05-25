@@ -1,5 +1,3 @@
-import './Field.sass'
-
 import React from 'react'
 
 import ConditionalContextWrapper from './ConditionalContext'

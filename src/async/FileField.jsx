@@ -1,5 +1,3 @@
-import './FileField.sass'
-
 import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'
 import Dropzone from 'react-dropzone'

@@ -1,5 +1,3 @@
-import './Preview.sass'
-
 import React from 'react'
 
 import { block } from './'

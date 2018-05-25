@@ -1,7 +1,5 @@
 import 'react-select/dist/react-select.css'
 
-import './SelectMenuField.sass'
-
 import React from 'react'
 import Select from 'react-select'
 

@@ -1,7 +1,5 @@
 import 'react-day-picker/lib/style.css'
 
-import './CalendarField.sass'
-
 import { format, parse } from 'date-fns'
 import React from 'react'
 import DayPickerInput from 'react-day-picker/DayPickerInput'

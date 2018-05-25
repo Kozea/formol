@@ -1,5 +1,3 @@
-import './SwitchButton.sass'
-
 import React from 'react'
 
 import BooleanField from '../fields/BooleanField'

@@ -1,8 +1,6 @@
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import 'draft-js/dist/Draft.css'
 
-import './HTMLField.sass'
-
 import { ContentState, EditorState, convertToRaw } from 'draft-js'
 import draftToHtml from 'draftjs-to-html'
 import htmlToDraft from 'html-to-draftjs'

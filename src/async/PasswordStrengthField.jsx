@@ -1,5 +1,3 @@
-import './PasswordStrengthField.sass'
-
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react'
 import ReactPasswordStrength from 'react-password-strength'
