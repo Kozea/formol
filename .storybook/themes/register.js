@@ -10,24 +10,28 @@ class Themes extends React.Component {
       devMode: false,
     }
     this.handleThemeChange = this.handleThemeChange.bind(this)
-    this.handleStory = this.handleStory.bind(this)
+    this.initializeIframe = this.initializeIframe.bind(this)
   }
 
   componentDidMount() {
     const { api } = this.props
-    // this.stopListeningOnStory = api.onStory(this.handleStory)
     this.iframe = document.getElementById('storybook-preview-iframe')
-    this.iframe.addEventListener('load', this.handleStory)
+    this.iframe.contentWindow.addEventListener(
+      'DOMContentLoaded',
+      this.initializeIframe
+    )
   }
 
   componentWillUnmount() {
-    // this.stopListeningOnStory && this.stopListeningOnStory()
     this.iframe = null
     this.link = null
   }
 
-  handleStory() {
-    this.iframe.removeEventListener('load', this.handleStory)
+  initializeIframe() {
+    this.iframe.contentWindow.removeEventListener(
+      'DOMContentLoaded',
+      this.initializeIframe
+    )
     const { currentTheme } = this.state
     const links = [
       ...this.iframe.contentDocument.querySelectorAll('head > link'),
