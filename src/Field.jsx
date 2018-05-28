@@ -109,6 +109,7 @@ class Field extends React.Component {
       type,
       className,
       validator,
+      unit,
       extras,
       formatter,
       normalizer,
@@ -168,6 +169,7 @@ class Field extends React.Component {
             onKeyDown={handleKeyDown}
             {...props}
           />
+          {unit && <div className={b.e('unit')}>{unit}</div>}
           {children && <span className={b.e('label-text')}>{children}</span>}
           {extras}
         </Label>

@@ -1,6 +1,7 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react'
 import ReactPasswordStrength from 'react-password-strength'
+import FaEye from 'react-icons/lib/fa/eye'
+import FaEyeSlash from 'react-icons/lib/fa/eye-slash'
 
 import { block } from '../utils'
 
@@ -8,7 +9,11 @@ import { block } from '../utils'
 export default class PasswordStrengthField extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      type: 'password',
+    }
     this.handleChange = this.handleChange.bind(this)
+    this.handleVisibilityChange = this.handleVisibilityChange.bind(this)
   }
 
   componentDidMount() {
@@ -26,25 +31,37 @@ export default class PasswordStrengthField extends React.Component {
     onChange(isValid ? password : void 0)
   }
 
+  handleVisibilityChange() {
+    const { type } = this.state
+    this.setState({ type: type === 'password' ? 'text' : 'password' })
+  }
+
   render(b) {
     const { className, name, value, i18n, elementRef, ...props } = this.props
+    const { type } = this.state
+
     return (
-      <ReactPasswordStrength
-        className={b.mix(className).s}
-        /* eslint-disable-next-line react/jsx-handler-names */
-        changeCallback={this.handleChange}
-        defaultValue={value}
-        ref={ref => (this.passwordInput = ref)}
-        inputProps={{ name, ...props, type: 'password' }}
-        scoreWords={[
-          i18n.passwordStrength.weak,
-          i18n.passwordStrength.okay,
-          i18n.passwordStrength.good,
-          i18n.passwordStrength.strong,
-          i18n.passwordStrength.stronger,
-        ]}
-        tooShortWord={i18n.passwordStrength.tooshort}
-      />
+      <>
+        <ReactPasswordStrength
+          className={b.mix(className).s}
+          /* eslint-disable-next-line react/jsx-handler-names */
+          changeCallback={this.handleChange}
+          defaultValue={value}
+          ref={ref => (this.passwordInput = ref)}
+          inputProps={{ name, ...props, type }}
+          scoreWords={[
+            i18n.passwordStrength.weak,
+            i18n.passwordStrength.okay,
+            i18n.passwordStrength.good,
+            i18n.passwordStrength.strong,
+            i18n.passwordStrength.stronger,
+          ]}
+          tooShortWord={i18n.passwordStrength.tooshort}
+        />
+        <button className={b.e('eye')} onClick={this.handleVisibilityChange}>
+          {type === 'text' ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </>
     )
   }
 }

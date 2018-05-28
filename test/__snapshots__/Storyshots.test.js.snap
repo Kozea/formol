@@ -2137,6 +2137,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
         required={false}
         value=""
       />
+      
       <span
         className={
           Block {
@@ -2288,6 +2289,7 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -2482,6 +2484,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
         required={false}
         type="checkbox"
       />
+      
       <span
         className={
           Block {
@@ -3801,6 +3804,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           </span>
         </label>
       </fieldset>
+      
       <span
         className={
           Block {
@@ -4011,6 +4015,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
         type="color"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -4221,6 +4226,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
         type="date"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -4431,6 +4437,7 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
         type="datetimelocal"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -4641,6 +4648,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
         type="email"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -4792,6 +4800,7 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -4943,6 +4952,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -5153,6 +5163,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
         type="month"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -5366,6 +5377,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
         type="number"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -5576,6 +5588,46 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
         type="password"
         value=""
       />
+      <button
+        className={
+          Block {
+            "block": "PasswordField",
+            "element": "eye",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_PasswordField__eye",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.1 21.4q-3.3-5.2-8.5-7.8 1.4 2.3 1.4 5 0 4.1-2.9 7t-7.1 3-7.1-3-2.9-7q0-2.7 1.4-5.1-5.1 2.7-8.5 7.9 2.9 4.6 7.4 7.3t9.7 2.7 9.7-2.7 7.4-7.3z m-16-8.5q0-0.5-0.3-0.8t-0.8-0.3q-2.8 0-4.8 2t-2 4.8q0 0.4 0.3 0.7t0.8 0.3 0.7-0.3 0.4-0.7q0-2 1.3-3.3t3.3-1.4q0.4 0 0.8-0.3t0.3-0.7z m18.9 8.5q0 0.8-0.4 1.6-3.2 5.1-8.4 8.2t-11.2 3.1-11.2-3.1-8.4-8.2q-0.4-0.8-0.4-1.6t0.4-1.5q3.2-5.1 8.4-8.2t11.2-3.1 11.1 3.1 8.5 8.2q0.4 0.8 0.4 1.5z"
+            />
+          </g>
+        </svg>
+      </button>
+      
       <span
         className={
           Block {
@@ -5727,6 +5779,7 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -5921,6 +5974,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
         required={false}
         type="radio"
       />
+      
       <span
         className={
           Block {
@@ -7240,6 +7294,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           </span>
         </label>
       </fieldset>
+      
       <span
         className={
           Block {
@@ -7452,6 +7507,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
         step={5}
         type="range"
       />
+      
       <span
         className={
           Block {
@@ -7731,6 +7787,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           Purple
         </option>
       </select>
+      
       <span
         className={
           Block {
@@ -7882,6 +7939,7 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -8130,6 +8188,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           Yes
         </label>
       </div>
+      
       <span
         className={
           Block {
@@ -8340,6 +8399,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
         type="tel"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -8535,6 +8595,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
         type="text"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -8745,6 +8806,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
         type="time"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -8955,6 +9017,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
         type="week"
         value=""
       />
+      
       <span
         className={
           Block {
@@ -9150,6 +9213,7 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
         value="Text
 Area"
       />
+      
       <span
         className={
           Block {
@@ -9301,6 +9365,7 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -9495,6 +9560,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
         required={false}
         type="checkbox"
       />
+      
       <span
         className={
           Block {
@@ -10814,6 +10880,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           </span>
         </label>
       </fieldset>
+      
       <span
         className={
           Block {
@@ -11024,6 +11091,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
         type="color"
         value="#123456"
       />
+      
       <span
         className={
           Block {
@@ -11234,6 +11302,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
         type="date"
         value="2018-08-01"
       />
+      
       <span
         className={
           Block {
@@ -11444,6 +11513,7 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
         type="datetimelocal"
         value="2018-08-01T17:14"
       />
+      
       <span
         className={
           Block {
@@ -11654,6 +11724,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
         type="email"
         value="email@exemple.com"
       />
+      
       <span
         className={
           Block {
@@ -11805,6 +11876,7 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -11956,6 +12028,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -12166,6 +12239,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
         type="month"
         value="2018-08"
       />
+      
       <span
         className={
           Block {
@@ -12379,6 +12453,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
         type="number"
         value={12}
       />
+      
       <span
         className={
           Block {
@@ -12589,6 +12664,46 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
         type="password"
         value="password"
       />
+      <button
+        className={
+          Block {
+            "block": "PasswordField",
+            "element": "eye",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_PasswordField__eye",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.1 21.4q-3.3-5.2-8.5-7.8 1.4 2.3 1.4 5 0 4.1-2.9 7t-7.1 3-7.1-3-2.9-7q0-2.7 1.4-5.1-5.1 2.7-8.5 7.9 2.9 4.6 7.4 7.3t9.7 2.7 9.7-2.7 7.4-7.3z m-16-8.5q0-0.5-0.3-0.8t-0.8-0.3q-2.8 0-4.8 2t-2 4.8q0 0.4 0.3 0.7t0.8 0.3 0.7-0.3 0.4-0.7q0-2 1.3-3.3t3.3-1.4q0.4 0 0.8-0.3t0.3-0.7z m18.9 8.5q0 0.8-0.4 1.6-3.2 5.1-8.4 8.2t-11.2 3.1-11.2-3.1-8.4-8.2q-0.4-0.8-0.4-1.6t0.4-1.5q3.2-5.1 8.4-8.2t11.2-3.1 11.1 3.1 8.5 8.2q0.4 0.8 0.4 1.5z"
+            />
+          </g>
+        </svg>
+      </button>
+      
       <span
         className={
           Block {
@@ -12740,6 +12855,7 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -12934,6 +13050,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
         required={false}
         type="radio"
       />
+      
       <span
         className={
           Block {
@@ -14253,6 +14370,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           </span>
         </label>
       </fieldset>
+      
       <span
         className={
           Block {
@@ -14465,6 +14583,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
         step={5}
         type="range"
       />
+      
       <span
         className={
           Block {
@@ -14744,6 +14863,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           Purple
         </option>
       </select>
+      
       <span
         className={
           Block {
@@ -14895,6 +15015,7 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
       }
     >
       Loading
+      
       <span
         className={
           Block {
@@ -15143,6 +15264,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           Yes
         </label>
       </div>
+      
       <span
         className={
           Block {
@@ -15353,6 +15475,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
         type="tel"
         value="1-541-754-3010"
       />
+      
       <span
         className={
           Block {
@@ -15548,6 +15671,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
         type="text"
         value="text"
       />
+      
       <span
         className={
           Block {
@@ -15758,6 +15882,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
         type="time"
         value="17:14"
       />
+      
       <span
         className={
           Block {
@@ -15968,6 +16093,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
         type="week"
         value="2018-W12"
       />
+      
       <span
         className={
           Block {
@@ -16751,6 +16877,113 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
         }
       >
         Big number (actually a formatted string)
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "creditcard",
+          "readOnly": false,
+          "type": undefined,
+        },
+        "s": "Formol_Field Formol_Field--name-creditcard",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="creditcard"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        pattern="\\\\d{4}-\\\\d{4}-\\\\d{4}-\\\\d{4}"
+        readOnly={false}
+        type="text"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Credit Card
       </span>
     </label>
   </div>
@@ -21846,6 +22079,45 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         type="password"
         value=""
       />
+      <button
+        className={
+          Block {
+            "block": "PasswordField",
+            "element": "eye",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_PasswordField__eye",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m37.1 21.4q-3.3-5.2-8.5-7.8 1.4 2.3 1.4 5 0 4.1-2.9 7t-7.1 3-7.1-3-2.9-7q0-2.7 1.4-5.1-5.1 2.7-8.5 7.9 2.9 4.6 7.4 7.3t9.7 2.7 9.7-2.7 7.4-7.3z m-16-8.5q0-0.5-0.3-0.8t-0.8-0.3q-2.8 0-4.8 2t-2 4.8q0 0.4 0.3 0.7t0.8 0.3 0.7-0.3 0.4-0.7q0-2 1.3-3.3t3.3-1.4q0.4 0 0.8-0.3t0.3-0.7z m18.9 8.5q0 0.8-0.4 1.6-3.2 5.1-8.4 8.2t-11.2 3.1-11.2-3.1-8.4-8.2q-0.4-0.8-0.4-1.6t0.4-1.5q3.2-5.1 8.4-8.2t11.2-3.1 11.1 3.1 8.5 8.2q0.4 0.8 0.4 1.5z"
+            />
+          </g>
+        </svg>
+      </button>
       <span
         className={
           Block {

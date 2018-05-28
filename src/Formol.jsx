@@ -1,7 +1,5 @@
-import './sass/1/base.sass'
-
 import deepEqual from 'deep-equal'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
@@ -33,7 +31,6 @@ import { block } from './utils'
 import {
   alignKeysRec,
   clone,
-  diffObject,
   get,
   nullVoidValuesRec,
   set,
@@ -152,10 +149,8 @@ export default class Formol extends React.Component {
     const { current: form } = this.form
     this.validateForm()
     if (form.checkValidity()) {
-      console.log('Setting loading')
       this.setState({ loading: true })
       const errors = (await onSubmit(transientItem, item)) || {}
-      console.log('UnSetting loading')
       this.setState({ loading: false })
       this.setStateContext({ errors })
     } else if (form.reportValidity) {
@@ -305,7 +300,7 @@ export default class Formol extends React.Component {
         </FormolContext.Provider>
         {/* This input is required to validate the form */}
         {!readOnly && (
-          <Fragment>
+          <>
             <input
               type="submit"
               ref={ref => (this.submit = ref)}
@@ -331,7 +326,7 @@ export default class Formol extends React.Component {
                 Annuler
               </Btn>
             )}
-          </Fragment>
+          </>
         )}
       </form>
     )

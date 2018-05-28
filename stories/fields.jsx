@@ -1,4 +1,4 @@
-import { boolean, number, text } from '@storybook/addon-knobs/react'
+import { boolean, number, text } from '@storybook/addon-knobs'
 import React from 'react'
 
 import Formol, { Field } from '../src'
@@ -84,6 +84,7 @@ export const knobs = name => {
     disabled: boolean('Disabled', false, name),
     autoFocus: boolean('AutoFocus', false, name),
     placeholder: text('PlaceHolder', name, name),
+    unit: text('Unit', '', name),
   }
   if (name === 'file') {
     knob.accept = text('Accept', 'image/*', name)
