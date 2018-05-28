@@ -6,7 +6,8 @@ export default (getPk, onCreate, onPatch, onValid, onError) => async (
 ) => {
   let onSend, args
   const pk = getPk(item)
-  if (pk === void 0) {
+  const mode = pk === void 0 ? 'create' : 'patch'
+  if (mode === 'create') {
     onSend = onCreate
     args = [item]
   } else {
@@ -17,10 +18,10 @@ export default (getPk, onCreate, onPatch, onValid, onError) => async (
   const report = await onSend(...args)
 
   if (report.metadata.code === 200) {
-    onValid && onValid(report)
+    onValid && onValid(report, mode)
   } else if (report.metadata.code === 202) {
     return report.metadata.errors[0].fields
   } else {
-    onError && onError(report)
+    onError && onError(report, mode)
   }
 }
