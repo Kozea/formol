@@ -9,9 +9,12 @@ import { Editor } from 'react-draft-wysiwyg'
 
 import { block, readAsBase64 } from '../utils'
 
-const stateFromValue = value => {
+const stateFromValue = (value, fast) => {
   if (!value) {
     return EditorState.createEmpty()
+  }
+  if (fast) {
+    return EditorState.createWithContent(value)
   }
   const contentBlock = htmlToDraft(value)
   const editorContent = EditorState.createWithContent(
@@ -20,24 +23,33 @@ const stateFromValue = value => {
   return editorContent
 }
 
-export const stateToValue = editorState =>
-  draftToHtml(convertToRaw(editorState.getCurrentContent()))
+const isEmpty = v =>
+  !v || !v.blockMap.size || (v.blockMap.size === 1 && !v.blockMap.first().text)
 
-const normalize = value =>
-  value === '<p></p>\n' ? '' : value ? value.trim() : ''
+export const stateToValue = (editorState, fast) => {
+  const content = editorState.getCurrentContent()
+  if (fast) {
+    return content
+  }
+  return draftToHtml(convertToRaw(content))
+}
+
+const normalize = (value, fast) =>
+  fast ? value : value === '<p></p>\n' ? '' : value ? value.trim() : ''
 
 @block
 export default class HTMLField extends React.Component {
   static getDerivedStateFromProps(
     {
       elementRef: { current },
+      fast,
       value,
     },
     { value: oldValue }
   ) {
     if (value !== oldValue) {
-      value = normalize(value)
-      current && (current.value = value)
+      value = normalize(value, fast)
+      current && (current.value = fast ? (isEmpty(value) ? '' : '_') : value)
       return {
         editorState: stateFromValue(value),
         value,
@@ -60,11 +72,12 @@ export default class HTMLField extends React.Component {
   handleChange(editorState) {
     const {
       elementRef: { current },
+      fast,
       onChange,
     } = this.props
-    const value = normalize(stateToValue(editorState))
+    const value = normalize(stateToValue(editorState, fast), fast)
     // Synchronise value with input for html5 form validation
-    current.value = value
+    current.value = fast ? (isEmpty(value) ? '' : '_') : value
     this.setState({ editorState, value })
     onChange(value)
   }
@@ -91,6 +104,7 @@ export default class HTMLField extends React.Component {
       onBlur,
       onKeyDown,
       toolbar,
+      fast, // Fast allow putting directly content state in transientItem
       placeholder,
       type,
       onChange,
