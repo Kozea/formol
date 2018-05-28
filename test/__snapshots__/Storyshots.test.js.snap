@@ -5605,6 +5605,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           }
         }
         onClick={[Function]}
+        type="button"
       >
         <svg
           fill="currentColor"
@@ -12681,6 +12682,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           }
         }
         onClick={[Function]}
+        type="button"
       >
         <svg
           fill="currentColor"
@@ -22096,6 +22098,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           }
         }
         onClick={[Function]}
+        type="button"
       >
         <svg
           fill="currentColor"

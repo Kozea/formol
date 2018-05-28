@@ -26,7 +26,11 @@ export default class PasswordField extends React.Component {
     return (
       <>
         <InputField className={b.mix(className)} {...props} type={type} />
-        <button className={b.e('eye')} onClick={this.handleVisibilityChange}>
+        <button
+          type="button"
+          className={b.e('eye')}
+          onClick={this.handleVisibilityChange}
+        >
           {type === 'text' ? <FaEyeSlash /> : <FaEye />}
         </button>
       </>

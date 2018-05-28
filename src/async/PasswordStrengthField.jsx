@@ -58,7 +58,11 @@ export default class PasswordStrengthField extends React.Component {
           ]}
           tooShortWord={i18n.passwordStrength.tooshort}
         />
-        <button className={b.e('eye')} onClick={this.handleVisibilityChange}>
+        <button
+          type="button"
+          className={b.e('eye')}
+          onClick={this.handleVisibilityChange}
+        >
           {type === 'text' ? <FaEyeSlash /> : <FaEye />}
         </button>
       </>
