@@ -1,4 +1,7 @@
 import { blockMaker } from 'bemboo'
+import deepEqual from 'deep-equal'
+
+import { alignKeysRec, nullVoidValuesRec } from './object'
 
 export const readAsBase64 = file =>
   new Promise((resolve, reject) => {
@@ -50,3 +53,6 @@ export const normalizeMultipleProps = ({ value, multiple, ...props }) => {
 }
 
 export const cleanProps = ({ choices, asyncChoices, ...props }) => props
+
+export const isModified = (transient, item) =>
+  !deepEqual(alignKeysRec(nullVoidValuesRec(item), transient), transient)

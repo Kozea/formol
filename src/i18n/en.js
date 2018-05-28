@@ -2,6 +2,8 @@ export default {
   // General
   yes: 'Yes',
   no: 'No',
+  submit: 'Submit',
+  cancel: 'Cancel',
   required: 'Please fill out this field',
   // CalendarField
   calendar: {

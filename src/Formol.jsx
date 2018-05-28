@@ -1,6 +1,9 @@
-import deepEqual from 'deep-equal'
 import React from 'react'
+import deepEqual from 'deep-equal'
 
+import { FormolContext } from './FormolContext'
+import { block, isModified } from './utils'
+import { clone, get, nullVoidValuesRec, set } from './utils/object'
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
 import CheckboxSetField from './fields/CheckboxSetField'
@@ -24,17 +27,8 @@ import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
 import TimeField from './fields/TimeField'
 import WeekField from './fields/WeekField'
-import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
-import { block } from './utils'
-import {
-  alignKeysRec,
-  clone,
-  get,
-  nullVoidValuesRec,
-  set,
-} from './utils/object'
 
 @block
 export default class Formol extends React.Component {
@@ -83,9 +77,11 @@ export default class Formol extends React.Component {
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const context = {}
+    let { modified } = prevState
     if (!deepEqual(nextProps.item, prevState.context.item)) {
       context.item = nextProps.item
       context.transientItem = Formol.fromItem(nextProps.item)
+      modified = false
     }
     if (nextProps.readOnly !== prevState.context.readOnly) {
       context.readOnly = nextProps.readOnly
@@ -97,7 +93,7 @@ export default class Formol extends React.Component {
       context.i18n = Formol.i18n[nextProps.i18n]
     }
     if (Object.keys(context).length) {
-      return { context: { ...prevState.context, ...context } }
+      return { context: { ...prevState.context, ...context }, modified }
     }
     return null
   }
@@ -122,6 +118,7 @@ export default class Formol extends React.Component {
         handleChange: this.handleChange.bind(this),
         handleChanged: this.handleChanged.bind(this),
       },
+      modified: false,
     }
     this.errorsFromFields = {}
     this.handleCancel = this.handleCancel.bind(this)
@@ -129,13 +126,14 @@ export default class Formol extends React.Component {
   }
 
   setStateNewItem(transientItem) {
-    const { onChange } = this.props
-    this.setStateContext({ transientItem })
+    const { item, onChange } = this.props
+    const modified = isModified(transientItem, item)
+    this.setStateContext({ transientItem }, { modified })
     onChange && onChange(transientItem)
   }
 
-  setStateContext(context) {
-    this.setState({ context: { ...this.state.context, ...context } })
+  setStateContext(context, extra = {}) {
+    this.setState({ context: { ...this.state.context, ...context }, ...extra })
   }
 
   handleCancel() {
@@ -254,29 +252,16 @@ export default class Formol extends React.Component {
     }
   }
 
-  isModified() {
-    const { item } = this.props
-    const { transientItem } = this.state.context
-    return !deepEqual(
-      alignKeysRec(nullVoidValuesRec(item), transientItem),
-      transientItem
-    )
-  }
-
   render(b) {
     const {
       children,
       className,
       readOnly,
       submitText,
-      submitKind,
+      cancelText,
       noCancel,
-      Prompt,
-      Button,
     } = this.props
-    const { loading, context } = this.state
-    const modified = this.isModified()
-    const Btn = Button || 'button'
+    const { loading, context, modified } = this.state
     return (
       <form
         className={b.mix(className).m({
@@ -286,45 +271,35 @@ export default class Formol extends React.Component {
         onSubmit={e => e.preventDefault()}
         ref={this.form}
       >
-        {Prompt && (
-          <Prompt
-            when={!loading && modified}
-            message={
-              'Vous avez des modifications en cours. ' +
-              'Voulez-vous vraiment changer de page ?'
-            }
-          />
-        )}
         <FormolContext.Provider value={context}>
           {children}
         </FormolContext.Provider>
-        {/* This input is required to validate the form */}
         {!readOnly && (
           <>
+            {/* This input is required to validate the form
+              if reportValidity isn't available */}
             <input
               type="submit"
-              ref={ref => (this.submit = ref)}
+              ref={this.submit}
               style={{ display: 'none' }}
             />
-            <Btn
+            <button
               onClick={this.handleSubmit}
               className={b.e('submit')}
               disabled={!modified}
               type="button"
-              kind={submitKind || 'important'}
             >
-              {submitText || 'Envoyer'}
-            </Btn>
+              {submitText || context.i18n.submit}
+            </button>
             {!noCancel && (
-              <Btn
+              <button
                 onClick={this.handleCancel}
                 className={b.e('cancel')}
                 disabled={!modified}
                 type="button"
-                kind="mute"
               >
-                Annuler
-              </Btn>
+                {cancelText || context.i18n.cancel}
+              </button>
             )}
           </>
         )}
