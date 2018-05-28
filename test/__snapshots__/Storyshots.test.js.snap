@@ -4644,6 +4644,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
         placeholder="email"
         readOnly={false}
         required={false}
+        size={0}
         type="email"
         value=""
       />
@@ -5584,6 +5585,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
         placeholder="password"
         readOnly={false}
         required={false}
+        size={0}
         type="password"
         value=""
       />
@@ -8396,6 +8398,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
         placeholder="tel"
         readOnly={false}
         required={false}
+        size={0}
         type="tel"
         value=""
       />
@@ -8592,6 +8595,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
         placeholder="text"
         readOnly={false}
         required={false}
+        size={0}
         type="text"
         value=""
       />
@@ -11721,6 +11725,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
         placeholder="email"
         readOnly={false}
         required={false}
+        size={0}
         type="email"
         value="email@exemple.com"
       />
@@ -12661,6 +12666,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
         placeholder="password"
         readOnly={false}
         required={false}
+        size={0}
         type="password"
         value="password"
       />
@@ -15473,6 +15479,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
         placeholder="tel"
         readOnly={false}
         required={false}
+        size={0}
         type="tel"
         value="1-541-754-3010"
       />
@@ -15669,6 +15676,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
         placeholder="text"
         readOnly={false}
         required={false}
+        size={0}
         type="text"
         value="text"
       />

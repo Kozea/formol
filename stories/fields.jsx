@@ -97,5 +97,8 @@ export const knobs = name => {
     knob.max = number('Max', 100, name)
     knob.step = number('Step', 5, name)
   }
+  if (['text', 'search', 'tel', 'url', 'email', 'password'].includes(name)) {
+    knob.size = number('Size', 0, name)
+  }
   return knob
 }
