@@ -52,10 +52,12 @@ export default class HTMLField extends React.Component {
       editorState: null,
       value: null,
     }
-    this.onChange = this.onChange.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
   }
 
-  onChange(editorState) {
+  handleChange(editorState) {
     const {
       elementRef: { current },
       onChange,
@@ -65,6 +67,16 @@ export default class HTMLField extends React.Component {
     current.value = value
     this.setState({ editorState, value })
     onChange(value)
+  }
+
+  handleFocus(e) {
+    const { onFocus } = this.props
+    onFocus(e)
+  }
+
+  handleBlur(e) {
+    const { onBlur } = this.props
+    onBlur(e)
   }
 
   render(b) {
@@ -102,11 +114,9 @@ export default class HTMLField extends React.Component {
           localization={{
             locale: 'fr',
           }}
-          onBlur={onBlur}
-          ref={ref => (this.drafteditor = ref)}
-          /* eslint-disable-next-line react/jsx-handler-names */
-          onEditorStateChange={this.onChange}
-          onFocus={onFocus}
+          onFocus={this.handleFocus}
+          onBlur={this.handleBlur}
+          onEditorStateChange={this.handleChange}
           handleReturn={onKeyDown}
           placeholder={placeholder || i18n.html.placeholder}
           readOnly={readOnly || disabled}

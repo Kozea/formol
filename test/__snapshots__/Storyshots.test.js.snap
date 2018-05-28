@@ -4932,7 +4932,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -4972,7 +4972,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       >
         html
       </span>
-    </label>
+    </div>
   </div>
   <input
     style={
@@ -12009,7 +12009,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -12049,7 +12049,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       >
         html
       </span>
-    </label>
+    </div>
   </div>
   <input
     style={
@@ -21231,7 +21231,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -21270,7 +21270,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
       >
         HTML
       </span>
-    </label>
+    </div>
   </div>
   <div
     className={
