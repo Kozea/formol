@@ -1,4 +1,4 @@
-import './sass/default/base.sass'
+import './sass/1/base.sass'
 
 import deepEqual from 'deep-equal'
 import React, { Fragment } from 'react'

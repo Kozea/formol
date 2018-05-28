@@ -1,0 +1,17 @@
+@import variables
+
+
+// radio and checkbox
+.Formol_Field--type-checkbox, .Formol_Field--type-radio, .Formol_FieldSet
+  .Formol_Field__label, .Formol_FieldSet__label
+    border: transparent
+    border-bottom: solid 2px rgba($color, .15)
+    border-radius: 0
+    padding: .75em 0
+    transition: border-bottom-color .2s
+
+    &:hover
+      border-bottom-color: $color
+
+    &--on
+      border-bottom-color: $color-action

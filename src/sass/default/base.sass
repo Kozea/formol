@@ -1,5 +1,5 @@
-@import variables
 @import mixins
+@import variables
 
 
 // @import specific fields
@@ -69,14 +69,14 @@
 
 
 // field's states
-.Formol_Field--modified
+.Formol_Field--modified, .Formol_Field:hover
   color: $color
 
 .Formol_Field--error
   color: $error
   box-shadow: none
 
-.Formol_Field:hover, .Formol_Field--focus
+.Formol_Field--focus
   color: $color
 
 .Formol_Field__error
