@@ -1,5 +1,3 @@
-import '@storybook/addon-console'
-
 import { setOptions } from '@storybook/addon-options'
 import { configure } from '@storybook/react'
 

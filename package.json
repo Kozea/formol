@@ -14,18 +14,27 @@
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook-debug":
-      "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
+    "storybook-debug": "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
     "storybook-deploy": "storybook-to-ghpages"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx", "json"],
-    "modulePaths": ["<rootDir>/src"],
-    "moduleDirectories": ["node_modules"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "modulePaths": [
+      "<rootDir>/src"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
     "moduleNameMapper": {
       "\\.(css|sass)$": "<rootDir>/test/styleMock.js"
     },
-    "setupFiles": ["<rootDir>/test/setup.js"]
+    "setupFiles": [
+      "<rootDir>/test/setup.js"
+    ]
   },
   "pre-commit": "lint,test",
   "devDependencies": {
@@ -41,7 +50,6 @@
     "@babel/register": "^7.0.0-beta.48",
     "@dump247/storybook-state": "^1.5.0",
     "@storybook/addon-actions": "^4.0.0-alpha.7",
-    "@storybook/addon-console": "^1.0.0",
     "@storybook/addon-knobs": "^4.0.0-alpha.7",
     "@storybook/addon-options": "^4.0.0-alpha.7",
     "@storybook/addon-storyshots": "^4.0.0-alpha.7",
@@ -84,7 +92,9 @@
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^2.1.4"
   },
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "importSort": {
     ".js, .jsx": {
       "parser": "babylon",
