@@ -1365,6 +1365,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
             "subs": Array [],
           }
         }
+        disabled={undefined}
         name="why"
         onBlur={[Function]}
         onChange={[Function]}
@@ -22338,6 +22339,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "subs": Array [],
           }
         }
+        multiple={undefined}
         name="select"
         onBlur={[Function]}
         onChange={[Function]}
