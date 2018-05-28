@@ -143,9 +143,6 @@ class Field extends React.Component {
     const TypeField = fields[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error = alreadyFocused && errors[name] ? errors[name] : null
-    if (unit) {
-      props['data-unit'] = unit
-    }
     return (
       <div
         className={b.mix(className).m({
@@ -172,6 +169,7 @@ class Field extends React.Component {
             onKeyDown={handleKeyDown}
             {...props}
           />
+          {unit && <div className={b.e('unit')}>{unit}</div>}
           {children && <span className={b.e('label-text')}>{children}</span>}
           {extras}
         </Label>
