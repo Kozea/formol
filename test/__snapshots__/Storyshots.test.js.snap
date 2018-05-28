@@ -2136,7 +2136,6 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
         required={false}
         value=""
       />
-      
       <span
         className={
           Block {
@@ -2288,7 +2287,6 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -2483,7 +2481,6 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
         required={false}
         type="checkbox"
       />
-      
       <span
         className={
           Block {
@@ -3803,7 +3800,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -4014,7 +4010,6 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
         type="color"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4225,7 +4220,6 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
         type="date"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4436,7 +4430,6 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
         type="datetimelocal"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4648,7 +4641,6 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
         type="email"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4800,7 +4792,6 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -4952,7 +4943,6 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -5163,7 +5153,6 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
         type="month"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -5377,7 +5366,6 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
         type="number"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -5629,7 +5617,6 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           </g>
         </svg>
       </button>
-      
       <span
         className={
           Block {
@@ -5781,7 +5768,6 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -5976,7 +5962,6 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
         required={false}
         type="radio"
       />
-      
       <span
         className={
           Block {
@@ -7296,7 +7281,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -7509,7 +7493,6 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
         step={5}
         type="range"
       />
-      
       <span
         className={
           Block {
@@ -7789,7 +7772,6 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           Purple
         </option>
       </select>
-      
       <span
         className={
           Block {
@@ -7941,7 +7923,6 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -8190,7 +8171,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           Yes
         </label>
       </div>
-      
       <span
         className={
           Block {
@@ -8402,7 +8382,6 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
         type="tel"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -8599,7 +8578,6 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
         type="text"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -8810,7 +8788,6 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
         type="time"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -9021,7 +8998,6 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
         type="week"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -9217,7 +9193,6 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
         value="Text
 Area"
       />
-      
       <span
         className={
           Block {
@@ -9369,7 +9344,6 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -9564,7 +9538,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
         required={false}
         type="checkbox"
       />
-      
       <span
         className={
           Block {
@@ -10884,7 +10857,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -11095,7 +11067,6 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
         type="color"
         value="#123456"
       />
-      
       <span
         className={
           Block {
@@ -11306,7 +11277,6 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
         type="date"
         value="2018-08-01"
       />
-      
       <span
         className={
           Block {
@@ -11517,7 +11487,6 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
         type="datetimelocal"
         value="2018-08-01T17:14"
       />
-      
       <span
         className={
           Block {
@@ -11729,7 +11698,6 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
         type="email"
         value="email@exemple.com"
       />
-      
       <span
         className={
           Block {
@@ -11881,7 +11849,6 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -12033,7 +12000,6 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -12244,7 +12210,6 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
         type="month"
         value="2018-08"
       />
-      
       <span
         className={
           Block {
@@ -12458,7 +12423,6 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
         type="number"
         value={12}
       />
-      
       <span
         className={
           Block {
@@ -12710,7 +12674,6 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           </g>
         </svg>
       </button>
-      
       <span
         className={
           Block {
@@ -12862,7 +12825,6 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -13057,7 +13019,6 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
         required={false}
         type="radio"
       />
-      
       <span
         className={
           Block {
@@ -14377,7 +14338,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -14590,7 +14550,6 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
         step={5}
         type="range"
       />
-      
       <span
         className={
           Block {
@@ -14870,7 +14829,6 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           Purple
         </option>
       </select>
-      
       <span
         className={
           Block {
@@ -15022,7 +14980,6 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -15271,7 +15228,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           Yes
         </label>
       </div>
-      
       <span
         className={
           Block {
@@ -15483,7 +15439,6 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
         type="tel"
         value="1-541-754-3010"
       />
-      
       <span
         className={
           Block {
@@ -15680,7 +15635,6 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
         type="text"
         value="text"
       />
-      
       <span
         className={
           Block {
@@ -15891,7 +15845,6 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
         type="time"
         value="17:14"
       />
-      
       <span
         className={
           Block {
@@ -16102,7 +16055,6 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
         type="week"
         value="2018-W12"
       />
-      
       <span
         className={
           Block {
