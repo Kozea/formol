@@ -6,7 +6,6 @@
   border: solid 1px
   border-radius: .15em
   margin: .5em 0
-  overflow: hidden
   position: relative
 
   &__hidden-input
@@ -16,23 +15,29 @@
     border-bottom-color: $color
     margin-bottom: 0
     opacity: 1
-    transition: padding .5s, opacity .5s
-    transition-delay: .5s / 2, .5s
+    transition: padding .35s, opacity .35s
+    transition-delay: .65s
 
     & > *
       border-color: inherit
       margin-top: 0
       transition: margin .5s
-      transition-delay: .5s / 2
+      transition-delay: .25s
 
 
   .rdw-editor-main
-    .public-DraftStyleDefault-ltr, .public-DraftEditorPlaceholder-root
+    .DraftEditor-root
       margin: 0
       max-height: 50vh
       min-height: 8em
       overflow: auto
-      padding: .75em
+      padding: 0 .75em
+
+      .public-DraftEditorPlaceholder-root
+        margin: 1em 0
+
+      .public-DraftEditorPlaceholder-root, .DraftEditor-editorContainer
+        z-index: 0
 
 
   .rdw-option-wrapper:hover
@@ -40,7 +45,6 @@
 
   .rdw-option-active
     border-color: inherit
-
 
   img
     max-width: 100%
@@ -51,6 +55,7 @@
     .rdw-editor-toolbar
       opacity: 0
       padding: 0
+      transition-delay: .65s
 
       & > *
         margin-top: -5em
