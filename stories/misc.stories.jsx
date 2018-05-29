@@ -4,21 +4,21 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
-import { fromHTML, toHTML } from '../src/utils/html'
+import { HTMLToEditor, editorToHTML } from '../src/utils/html'
 import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      item: { bightml: fromHTML(props.html) },
+      item: { bightml: HTMLToEditor(props.html) },
     }
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleSubmit(item) {
     const { store } = this.props
-    store.set({ submittedHTML: toHTML(item.bightml) })
+    store.set({ submittedHTML: editorToHTML(item.bightml) })
     this.setState({ item })
   }
 

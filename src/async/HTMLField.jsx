@@ -6,25 +6,26 @@ import React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
 
 import { block, readAsBase64 } from '../utils'
-import { fromHTML, toHTML } from '../utils/html'
+import { HTMLToEditor, editorToHTML } from '../utils/html'
 
 const stateFromValue = (value, fast) => {
   if (!value) {
     return EditorState.createEmpty()
   }
-  return EditorState.createWithContent(fast ? value : fromHTML(value))
+  return fast ? value : HTMLToEditor(value)
 }
 
-export const stateToValue = (editorState, fast) => {
-  const content = editorState.getCurrentContent()
-  return fast ? content : toHTML(content)
-}
+export const stateToValue = (editorState, fast) =>
+  fast ? editorState : editorToHTML(editorState)
 
 const inputValue = (v, fast) =>
   fast
     ? !v ||
-      !v.blockMap.size ||
-      (v.blockMap.size === 1 && !v.blockMap.first().text)
+      !v
+        .getCurrentContent()
+        .getBlockMap()
+        .first()
+        .getText()
       ? ''
       : '_'
     : v
