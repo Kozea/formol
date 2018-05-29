@@ -1,5 +1,4 @@
 import React from 'react'
-import deepEqual from 'deep-equal'
 
 import { FormolContext } from './FormolContext'
 import { block } from './utils'
@@ -74,7 +73,7 @@ export default class Formol extends React.Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     const context = {}
     let { modified } = prevState
-    if (!deepEqual(nextProps.item, prevState.context.item)) {
+    if (nextProps.item !== prevState.context.item) {
       context.item = nextProps.item
       context.transientItem = { ...nextProps.item }
       modified = false

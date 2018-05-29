@@ -1,27 +1,29 @@
+import { withState } from '@dump247/storybook-state'
 import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
+import { fromHTML, toHTML } from '../src/utils/html'
 import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      item: {},
+      item: { bightml: fromHTML(props.html) },
     }
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleSubmit(item) {
-    console.log('New', item)
+    const { store } = this.props
+    store.set({ submittedHTML: toHTML(item.bightml) })
     this.setState({ item })
   }
 
   render() {
     const { item } = this.state
-    console.log('Render', item)
     return (
       <Formol item={item} onSubmit={this.handleSubmit}>
         <h1>Showcase of the fast HTMLField attribute</h1>
@@ -35,7 +37,20 @@ class FastHTMLFieldFormol extends React.Component {
 
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
-  .add('Fast HTML Field', () => <FastHTMLFieldFormol />)
+  .add(
+    'Fast HTML Field',
+    withState({})(({ store }) => (
+      <FastHTMLFieldFormol
+        store={store}
+        html={`
+      <p>
+        <span style="font-size: 96px;">BIG</span>
+        <span style="font-size: 48px;">html</span>
+      </p>
+      `}
+      />
+    ))
+  )
   .add(
     'Adding a nested item',
     withStateForm(props => (

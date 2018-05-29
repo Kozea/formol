@@ -1,38 +1,33 @@
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import 'draft-js/dist/Draft.css'
 
-import { ContentState, EditorState, convertToRaw } from 'draft-js'
-import draftToHtml from 'draftjs-to-html'
-import htmlToDraft from 'html-to-draftjs'
+import { EditorState } from 'draft-js'
 import React from 'react'
 import { Editor } from 'react-draft-wysiwyg'
 
 import { block, readAsBase64 } from '../utils'
+import { fromHTML, toHTML } from '../utils/html'
 
 const stateFromValue = (value, fast) => {
   if (!value) {
     return EditorState.createEmpty()
   }
-  if (fast) {
-    return EditorState.createWithContent(value)
-  }
-  const contentBlock = htmlToDraft(value)
-  const editorContent = EditorState.createWithContent(
-    ContentState.createFromBlockArray(contentBlock.contentBlocks)
-  )
-  return editorContent
+  return EditorState.createWithContent(fast ? value : fromHTML(value))
 }
-
-const isEmpty = v =>
-  !v || !v.blockMap.size || (v.blockMap.size === 1 && !v.blockMap.first().text)
 
 export const stateToValue = (editorState, fast) => {
   const content = editorState.getCurrentContent()
-  if (fast) {
-    return content
-  }
-  return draftToHtml(convertToRaw(content))
+  return fast ? content : toHTML(content)
 }
+
+const inputValue = (v, fast) =>
+  fast
+    ? !v ||
+      !v.blockMap.size ||
+      (v.blockMap.size === 1 && !v.blockMap.first().text)
+      ? ''
+      : '_'
+    : v
 
 const normalize = (value, fast) =>
   fast ? value : value === '<p></p>\n' ? '' : value ? value.trim() : ''
@@ -49,9 +44,9 @@ export default class HTMLField extends React.Component {
   ) {
     if (value !== oldValue) {
       value = normalize(value, fast)
-      current && (current.value = fast ? (isEmpty(value) ? '' : '_') : value)
+      current && (current.value = inputValue(value, fast))
       return {
-        editorState: stateFromValue(value),
+        editorState: stateFromValue(value, fast),
         value,
       }
     }
@@ -77,7 +72,7 @@ export default class HTMLField extends React.Component {
     } = this.props
     const value = normalize(stateToValue(editorState, fast), fast)
     // Synchronise value with input for html5 form validation
-    current.value = fast ? (isEmpty(value) ? '' : '_') : value
+    current.value = inputValue(value, fast)
     this.setState({ editorState, value })
     onChange(value)
   }
