@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
+import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
   constructor(props) {
@@ -32,6 +33,67 @@ class FastHTMLFieldFormol extends React.Component {
   }
 }
 
-storiesOf('Miscellaneous', module).add('Fast HTML Field', () => (
-  <FastHTMLFieldFormol />
-))
+storiesOf('Miscellaneous', module)
+  .addDecorator(withKnobs)
+  .add('Fast HTML Field', () => <FastHTMLFieldFormol />)
+  .add(
+    'Adding a nested item',
+    withStateForm(props => (
+      <Formol {...props}>
+        <Field type="number">Identifier</Field>
+        <Field name="properties.name">Properties -&gt; Name</Field>
+        <Field name="properties.root.realm">
+          Properties -&gt; Root -&gt; Realm
+        </Field>
+        <Field name="properties.extra.0">
+          Properties -&gt; Extra -&gt; first array item
+        </Field>
+        <Field name="properties.extra.1.more.again.0.hereweare" type="number">
+          Properties -&gt; Extra -&gt; second array item -&gt; more -&gt; again
+          -&gt; first array item -&gt; hereweare
+        </Field>
+      </Formol>
+    ))
+  )
+  .add(
+    'Editing a nested item',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <Field type="number">Identifier</Field>
+          <Field name="properties.name">Properties -&gt; Name</Field>
+          <Field name="properties.root.realm">
+            Properties -&gt; Root -&gt; Realm
+          </Field>
+          <Field name="properties.extra.0">
+            Properties -&gt; Extra -&gt; first array item
+          </Field>
+          <Field name="properties.extra.1.more.again.0.hereweare" type="number">
+            Properties -&gt; Extra -&gt; second array item -&gt; more -&gt;
+            again -&gt; first array item -&gt; hereweare
+          </Field>
+        </Formol>
+      ),
+      {
+        identifier: 4,
+        properties: {
+          name: 'paul',
+          root: {
+            realm: '*',
+          },
+          extra: [
+            'extra info',
+            {
+              more: {
+                again: [
+                  {
+                    hereweare: 42,
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      }
+    )
+  )

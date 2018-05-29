@@ -1,11 +1,6 @@
 import React from 'react'
 
-import {
-  block,
-  cleanProps,
-  normalizeChoices,
-  normalizeMultipleProps,
-} from '../utils'
+import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
 
 @block
 export default class SelectField extends React.Component {
@@ -25,12 +20,15 @@ export default class SelectField extends React.Component {
   }
 
   render(b) {
-    const choices = normalizeChoices(this.props)
+    const normalizedChoices = normalizeChoices(this.props)
     const {
       i18n,
       readOnly,
       className,
       elementRef,
+      choices,
+      asyncChoices,
+      choiceGetter,
       onChange,
       ...props
     } = this.props
@@ -43,10 +41,10 @@ export default class SelectField extends React.Component {
         ref={elementRef}
         className={b.mix(className)}
         onChange={this.handleChange}
-        {...cleanProps(normalizeMultipleProps(props))}
+        {...normalizeMultipleProps(props)}
       >
-        {choices.every(([k]) => k) && <option value="" />}
-        {choices.map(([label, key]) => (
+        {normalizedChoices.every(([k]) => k) && <option value="" />}
+        {normalizedChoices.map(([label, key]) => (
           <option key={key} value={key}>
             {label}
           </option>

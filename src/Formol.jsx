@@ -2,8 +2,8 @@ import React from 'react'
 import deepEqual from 'deep-equal'
 
 import { FormolContext } from './FormolContext'
-import { block, isModified } from './utils'
-import { clone, get, nullVoidValuesRec, set } from './utils/object'
+import { block } from './utils'
+import { get, insert, isModified } from './utils/object'
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
 import CheckboxSetField from './fields/CheckboxSetField'
@@ -71,16 +71,12 @@ export default class Formol extends React.Component {
     focusNextOnEnter: false,
   }
 
-  static fromItem(item) {
-    return nullVoidValuesRec(clone(item))
-  }
-
   static getDerivedStateFromProps(nextProps, prevState) {
     const context = {}
     let { modified } = prevState
     if (!deepEqual(nextProps.item, prevState.context.item)) {
       context.item = nextProps.item
-      context.transientItem = Formol.fromItem(nextProps.item)
+      context.transientItem = { ...nextProps.item }
       modified = false
     }
     if (nextProps.readOnly !== prevState.context.readOnly) {
@@ -107,7 +103,7 @@ export default class Formol extends React.Component {
       loading: false,
       context: {
         item,
-        transientItem: Formol.fromItem(item),
+        transientItem: { ...item },
         fields: { ...Formol.defaultFields, ...fields },
         elements: {},
         validators: {},
@@ -126,8 +122,11 @@ export default class Formol extends React.Component {
   }
 
   setStateNewItem(transientItem) {
+    const {
+      context: { elements },
+    } = this.state
     const { item, onChange } = this.props
-    const modified = isModified(transientItem, item)
+    const modified = isModified(transientItem, item, elements)
     this.setStateContext({ transientItem }, { modified })
     onChange && onChange(transientItem)
   }
@@ -138,7 +137,7 @@ export default class Formol extends React.Component {
 
   handleCancel() {
     const { item } = this.props
-    this.setStateNewItem(Formol.fromItem(item))
+    this.setStateNewItem({ ...item })
   }
 
   async handleSubmit() {
@@ -171,9 +170,8 @@ export default class Formol extends React.Component {
       }
     }
     if (get(transientItem, name) !== value) {
-      const newtransientItem = clone(transientItem)
-      set(newtransientItem, name, value)
-      this.setStateNewItem(newtransientItem)
+      const newTransientItem = insert(transientItem, name, value, elements)
+      this.setStateNewItem(newTransientItem)
     }
   }
 

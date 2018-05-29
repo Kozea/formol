@@ -1,7 +1,7 @@
 import React from 'react'
 
 import BooleanField from '../fields/BooleanField'
-import { block, cleanProps, normalizeChoices } from '../utils'
+import { block, normalizeChoices } from '../utils'
 
 @block
 export default class FieldSet extends React.Component {
@@ -10,6 +10,9 @@ export default class FieldSet extends React.Component {
       type,
       isChecked,
       value,
+      choices,
+      asyncChoices,
+      choiceGetter,
       className,
       elementRef,
       onChange,
@@ -23,7 +26,7 @@ export default class FieldSet extends React.Component {
             className={b.e('label').m({ on: isChecked(choice, value) })}
           >
             <BooleanField
-              {...cleanProps(props)}
+              {...props}
               type={type}
               checked={isChecked(choice, value)}
               onChange={checked => onChange(choice, value, checked)}

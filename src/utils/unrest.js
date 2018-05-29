@@ -1,4 +1,4 @@
-import { diffObject } from './object'
+import { diff } from './object'
 
 export default (getPk, onCreate, onPatch, onValid, onError) => async (
   transientItem,
@@ -12,7 +12,7 @@ export default (getPk, onCreate, onPatch, onValid, onError) => async (
     args = [item]
   } else {
     onSend = onPatch
-    args = [pk, diffObject(transientItem, item)]
+    args = [pk, diff(transientItem, item)]
   }
 
   const report = await onSend(...args)
