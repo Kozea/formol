@@ -1,0 +1,17 @@
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  window.themes = Array.prototype.slice
+    .call(document.querySelectorAll('head > link'))
+    .reduce(function(themes, link) {
+      const name = link.href.replace(location.origin + '/', '')
+      themes.push(name)
+      if (name !== 'default.css') {
+        link.parentNode.removeChild(link)
+      } else {
+        link.setAttribute('id', 'current-theme')
+      }
+      return themes
+    }, [])
+})
+</script>

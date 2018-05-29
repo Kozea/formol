@@ -16,10 +16,7 @@ class Themes extends React.Component {
   componentDidMount() {
     const { api } = this.props
     this.iframe = document.getElementById('storybook-preview-iframe')
-    this.iframe.contentWindow.addEventListener(
-      'DOMContentLoaded',
-      this.initializeIframe
-    )
+    this.iframe.contentWindow.addEventListener('load', this.initializeIframe)
   }
 
   componentWillUnmount() {
@@ -28,35 +25,9 @@ class Themes extends React.Component {
   }
 
   initializeIframe() {
-    this.iframe.contentWindow.removeEventListener(
-      'DOMContentLoaded',
-      this.initializeIframe
-    )
-    const { currentTheme } = this.state
-    const links = [
-      ...this.iframe.contentDocument.querySelectorAll('head > link'),
-    ]
-    if (!links.length) {
-      this.setState({ devMode: true })
-      return
-    }
-    const themesLinks = links.reduce((themesLink, link) => {
-      const name = link.href.replace(
-        `${location.origin}${location.pathname}`,
-        ''
-      )
-      themesLink[name] = link
-      return themesLink
-    }, {})
-    if (!Object.keys(themesLinks).includes(currentTheme)) {
-      throw new Error(`Unknown theme ${currentTheme}`)
-    }
-    this.link = themesLinks[currentTheme]
-    Object.values(themesLinks)
-      .filter(l => l !== this.link)
-      .forEach(link => link.parentNode.removeChild(link))
-    const themes = Object.keys(themesLinks)
-    this.setState({ themes })
+    this.iframe.contentWindow.removeEventListener('load', this.initializeIframe)
+    this.link = this.iframe.contentDocument.getElementById('current-theme')
+    this.setState({ themes: this.iframe.contentWindow.themes })
   }
 
   handleThemeChange({ target: { value } }) {
@@ -70,10 +41,29 @@ class Themes extends React.Component {
       return 'Currently running in dev mode, no themes available.'
     }
     return (
-      <div>
-        <label>
+      <div style={{ display: 'flex', flex: 1 }}>
+        <label
+          style={{
+            padding: '15px',
+            fontSize: '12px',
+            color: 'rgb(68, 68, 68)',
+            fontWeight: 600,
+          }}
+        >
           Choose your theme
-          <select value={currentTheme} onChange={this.handleThemeChange}>
+          <select
+            value={currentTheme}
+            onChange={this.handleThemeChange}
+            style={{
+              outline: 'none',
+              border: '1px solid #f7f4f4',
+              borderRadius: '2px',
+              fontSize: '11px',
+              margin: '5px',
+              padding: '5px',
+              color: '#555',
+            }}
+          >
             {themes.map(t => (
               <option key={t} value={t}>
                 {t}
