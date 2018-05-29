@@ -123,7 +123,7 @@ class Field extends React.Component {
     const {
       item,
       transientItem,
-      fields,
+      types,
       i18n,
       errors,
       readOnly,
@@ -140,7 +140,7 @@ class Field extends React.Component {
     const modified = itemValue !== transientValue
     const value = formatter(transientValue)
 
-    const TypeField = fields[type] || InputField
+    const TypeField = types[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error = alreadyFocused && errors[name] ? errors[name] : null
     return (

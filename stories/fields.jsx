@@ -37,7 +37,7 @@ const extrasProps = {
   'select-menu': { choices },
 }
 
-export const typeFields = Object.keys(Formol.defaultFields).reduce(
+export const typeFields = Object.keys(Formol.defaultTypes).reduce(
   (fields, name) => {
     fields[name] = makeField(name, extrasProps[name])
     return fields

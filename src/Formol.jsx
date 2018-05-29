@@ -31,7 +31,7 @@ import fr from './i18n/fr'
 
 @block
 export default class Formol extends React.Component {
-  static defaultFields = {
+  static defaultTypes = {
     text: InputField,
     area: TextareaField,
     email: EmailField,
@@ -65,7 +65,7 @@ export default class Formol extends React.Component {
 
   static defaultProps = {
     item: {},
-    fields: {},
+    types: {},
     i18n: 'en',
     focusNextOnEnter: false,
   }
@@ -81,8 +81,8 @@ export default class Formol extends React.Component {
     if (nextProps.readOnly !== prevState.context.readOnly) {
       context.readOnly = nextProps.readOnly
     }
-    if (nextProps.fields !== prevState.context.fields) {
-      context.fields = { ...Formol.defaultFields, ...nextProps.fields }
+    if (nextProps.types !== prevState.context.types) {
+      context.types = { ...Formol.defaultTypes, ...nextProps.types }
     }
     if (nextProps.i18n !== prevState.context.i18n) {
       context.i18n = Formol.i18n[nextProps.i18n]
@@ -95,17 +95,23 @@ export default class Formol extends React.Component {
 
   constructor(props) {
     super(props)
-    const { item, fields, i18n, readOnly } = props
+    const { item, types, i18n, readOnly } = props
     this.form = React.createRef()
     this.submit = React.createRef()
+
+    this.fields = {
+      names: [],
+      elements: {},
+      validators: {},
+    }
     this.state = {
       loading: false,
       context: {
         item,
         transientItem: { ...item },
-        fields: { ...Formol.defaultFields, ...fields },
         elements: {},
         validators: {},
+        types: { ...Formol.defaultTypes, ...types },
         i18n: Formol.i18n[i18n],
         errors: {},
         readOnly,
