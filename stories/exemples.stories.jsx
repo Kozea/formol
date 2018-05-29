@@ -7,17 +7,9 @@ import molecule from './molecule.svg.base64'
 import { withStateForm } from './utils'
 
 const personExemple = {
-  name: 'Houston',
   firstname: 'Liza',
+  name: 'Houston',
   email: 'houston.liza@exemple.com',
-  height: 1.78,
-  phone: '1-541-754-3010',
-  sex: true,
-  pregnant: true,
-  weight: 64,
-  address: '12 Norfolk St',
-  city: 'Haigler',
-  zip: '69030',
   avatar: [
     {
       data: molecule,
@@ -27,6 +19,14 @@ const personExemple = {
       type: 'image/svg+xml',
     },
   ],
+  sex: true,
+  pregnant: true,
+  weight: 64,
+  height: 1.78,
+  phone: '1-541-754-3010',
+  address: '12 Norfolk St',
+  zip: '69030',
+  city: 'Haigler',
 }
 
 storiesOf('Formol exemples', module)

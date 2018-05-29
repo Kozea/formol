@@ -40,12 +40,9 @@ class Field extends React.Component {
       focus: false,
       alreadyFocused: false,
     }
-    // Antipattern ahead, setting field info to form context
-    props.context.elements[props.name] = this.element
-    props.context.validators[props.name] = props.validator
-    if (props.conditionalContext.names) {
-      props.conditionalContext.names[props.name] = props.name
-    }
+    props.context.register(props.name, this.element, props.validator)
+    props.conditionalContext.register &&
+      props.conditionalContext.register(props.name)
 
     this.handleChange = this.handleChange.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
@@ -123,7 +120,7 @@ class Field extends React.Component {
     const {
       item,
       transientItem,
-      fields,
+      types,
       i18n,
       errors,
       readOnly,
@@ -140,7 +137,7 @@ class Field extends React.Component {
     const modified = itemValue !== transientValue
     const value = formatter(transientValue)
 
-    const TypeField = fields[type] || InputField
+    const TypeField = types[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error = alreadyFocused && errors[name] ? errors[name] : null
     return (

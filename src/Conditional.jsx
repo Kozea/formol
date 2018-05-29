@@ -13,11 +13,12 @@ class Conditional extends React.Component {
       context: { transientItem },
       ...callableProps
     },
-    names = {}
+    { conditionalContext }
   ) {
     return {
       show: !show || show(transientItem),
       conditionalContext: {
+        ...conditionalContext,
         propsOverride: Object.entries(callableProps).reduce(
           (calledProps, [key, prop]) => {
             calledProps[key] = prop(transientItem)
@@ -25,7 +26,6 @@ class Conditional extends React.Component {
           },
           {}
         ),
-        names,
       },
       currentProps: { show, ...callableProps },
     }
@@ -40,35 +40,47 @@ class Conditional extends React.Component {
       ) ||
       !deepEqual(nextCallableProps, prevState.currentProps)
     ) {
-      return Conditional.contextFromProps(
-        nextProps,
-        prevState.conditionalContext.names
-      )
+      return Conditional.contextFromProps(nextProps, prevState)
     }
     return null
   }
 
   constructor(props) {
     super(props)
-    this.state = Conditional.contextFromProps(props)
+    this.names = []
+    this.state = Conditional.contextFromProps(props, {
+      conditionalContext: {
+        register: this.register.bind(this),
+      },
+    })
   }
 
   componentDidUpdate() {
     const {
       show,
-      context: { handleChange, transientItem },
+      context: { handleChange, transientItem, unregister },
     } = this.props
-    const {
-      conditionalContext: { names },
-    } = this.state
 
     if (show && !show(transientItem)) {
       // This is mandatory for removing values when using Conditional
-      Object.keys(names).map(name => {
+      this.names.map(unregister)
+      this.names.map(name => {
         if (get(transientItem, name)) {
           handleChange(name, void 0)
         }
       })
+    }
+  }
+
+  register(name) {
+    if (!this.names.includes(name)) {
+      this.names.push(name)
+    }
+  }
+
+  unregister(name) {
+    if (this.names.includes(name)) {
+      this.names.splice(this.names.indexOf(name), 1)
     }
   }
 

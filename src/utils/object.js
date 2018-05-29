@@ -21,25 +21,25 @@ export const set = (data, key, value) =>
       data
     )[key.split('.').slice(-1)[0]] = emptyStringToNull(value))
 
-export const copy = (o, elements) =>
-  Object.keys(elements).reduce((copied, key) => {
+export const copy = (o, names) =>
+  names.reduce((copied, key) => {
     set(copied, key, get(o, key))
     return copied
   }, {})
 
-export const insert = (transientItem, name, value, elements) => {
-  const o = copy(transientItem, elements)
+export const insert = (transientItem, name, value, names) => {
+  const o = copy(transientItem, names)
   set(o, name, value)
   return o
 }
 
-export const diff = (newItem, oldItem, elements) =>
-  Object.keys(elements).reduce((o, key) => {
+export const diff = (newItem, oldItem, names) =>
+  names.reduce((o, key) => {
     if (get(newItem, key) !== get(oldItem, key)) {
       set(o, key, get(newItem, key))
     }
     return o
   }, {})
 
-export const isModified = (newItem, oldItem, elements) =>
-  !!Object.keys(diff(newItem, oldItem, elements)).length
+export const isModified = (newItem, oldItem, names) =>
+  !!Object.keys(diff(newItem, oldItem, names)).length

@@ -1,3 +1,5 @@
+import deepEqual from 'deep-equal'
+
 import React from 'react'
 
 import { FormolContext } from './FormolContext'
@@ -31,7 +33,7 @@ import fr from './i18n/fr'
 
 @block
 export default class Formol extends React.Component {
-  static defaultFields = {
+  static defaultTypes = {
     text: InputField,
     area: TextareaField,
     email: EmailField,
@@ -65,7 +67,7 @@ export default class Formol extends React.Component {
 
   static defaultProps = {
     item: {},
-    fields: {},
+    types: {},
     i18n: 'en',
     focusNextOnEnter: false,
   }
@@ -73,7 +75,7 @@ export default class Formol extends React.Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     const context = {}
     let { modified } = prevState
-    if (nextProps.item !== prevState.context.item) {
+    if (!deepEqual(nextProps.item, prevState.context.item)) {
       context.item = nextProps.item
       context.transientItem = { ...nextProps.item }
       modified = false
@@ -81,8 +83,8 @@ export default class Formol extends React.Component {
     if (nextProps.readOnly !== prevState.context.readOnly) {
       context.readOnly = nextProps.readOnly
     }
-    if (nextProps.fields !== prevState.context.fields) {
-      context.fields = { ...Formol.defaultFields, ...nextProps.fields }
+    if (nextProps.types !== prevState.context.types) {
+      context.types = { ...Formol.defaultTypes, ...nextProps.types }
     }
     if (nextProps.i18n !== prevState.context.i18n) {
       context.i18n = Formol.i18n[nextProps.i18n]
@@ -95,20 +97,27 @@ export default class Formol extends React.Component {
 
   constructor(props) {
     super(props)
-    const { item, fields, i18n, readOnly } = props
+    const { item, types, i18n, readOnly } = props
     this.form = React.createRef()
     this.submit = React.createRef()
+
+    this.fields = {
+      names: [],
+      elements: {},
+      validators: {},
+    }
+
     this.state = {
       loading: false,
       context: {
         item,
         transientItem: { ...item },
-        fields: { ...Formol.defaultFields, ...fields },
-        elements: {},
-        validators: {},
+        types: { ...Formol.defaultTypes, ...types },
         i18n: Formol.i18n[i18n],
         errors: {},
         readOnly,
+        register: this.register.bind(this),
+        unregister: this.unregister.bind(this),
         handleKeyDown: this.handleKeyDown.bind(this),
         handleChange: this.handleChange.bind(this),
         handleChanged: this.handleChanged.bind(this),
@@ -120,12 +129,23 @@ export default class Formol extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  register(name, element, validator) {
+    this.fields.names.push(name)
+    this.fields.elements[name] = element
+    this.fields.validators[name] = validator
+  }
+
+  unregister(name) {
+    if (this.fields.names.includes(name)) {
+      this.fields.names.splice(this.fields.names.indexOf(name), 1)
+    }
+    delete this.fields.elements[name]
+    delete this.fields.validators[name]
+  }
+
   setStateNewItem(transientItem) {
-    const {
-      context: { elements },
-    } = this.state
     const { item, onChange } = this.props
-    const modified = isModified(transientItem, item, elements)
+    const modified = isModified(transientItem, item, this.fields.names)
     this.setStateContext({ transientItem }, { modified })
     onChange && onChange(transientItem)
   }
@@ -146,7 +166,8 @@ export default class Formol extends React.Component {
     this.validateForm()
     if (form.checkValidity()) {
       this.setState({ loading: true })
-      const errors = (await onSubmit(transientItem, item)) || {}
+      const errors =
+        (await onSubmit(transientItem, item, this.fields.names)) || {}
       this.setState({ loading: false })
       this.setStateContext({ errors })
     } else if (form.reportValidity) {
@@ -160,8 +181,9 @@ export default class Formol extends React.Component {
 
   handleChange(name, value, error) {
     const {
-      context: { transientItem, elements },
+      context: { transientItem },
     } = this.state
+    const { names, elements } = this.fields
     if (error !== void 0) {
       this.errorsFromFields[name] = error
       if (error !== elements[name].current.validationMessage) {
@@ -169,7 +191,7 @@ export default class Formol extends React.Component {
       }
     }
     if (get(transientItem, name) !== value) {
-      const newTransientItem = insert(transientItem, name, value, elements)
+      const newTransientItem = insert(transientItem, name, value, names)
       this.setStateNewItem(newTransientItem)
     }
   }
@@ -182,7 +204,8 @@ export default class Formol extends React.Component {
 
   validateForm(newTransientItem) {
     const { validator } = this.props
-    const { transientItem, elements, validators } = this.state.context
+    const { transientItem } = this.state.context
+    const { elements, validators } = this.fields
     const item = newTransientItem || transientItem
     const normalize = v => (typeof v === 'string' && v ? v : '')
     // Resetting all custom validity before validation
