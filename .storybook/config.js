@@ -14,6 +14,7 @@ function loadStories() {
   require('../stories/conditionals.stories.jsx')
   require('../stories/formatters.stories.jsx')
   require('../stories/validators.stories.jsx')
+  require('../stories/misc.stories.jsx')
 }
 
 configure(loadStories, module)

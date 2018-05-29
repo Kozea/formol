@@ -20714,6 +20714,155 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
 </form>
 `;
 
+exports[`Storyshots Miscellaneous Fast HTML Field 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    Showcase of the fast HTMLField attribute
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "bightml",
+          "readOnly": undefined,
+          "type": "html",
+        },
+        "s": "Formol_Field Formol_Field--type-html Formol_Field--name-bightml",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <div
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      Loading
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Big HTML Field
+      </span>
+    </div>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
 exports[`Storyshots Native and Contrib fields From libraries 1`] = `
 <form
   className={
