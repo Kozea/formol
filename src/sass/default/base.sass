@@ -41,13 +41,14 @@
   font-size: $font-size * .85
   order: -1
   transition: color .2s
+  width: 100%
 
 
 // field
 .Formol_Field__label
   align-items: flex-start
   display: flex
-  flex-direction: column
+  flex-wrap: wrap
   justify-content: flex-start
 
   .Formol_Field__field
@@ -92,6 +93,13 @@
     margin-right: .5em
     vertical-align: middle
     width: 1em
+
+
+// form units
+.Formol_Field__unit
+  align-self: center
+  margin-left: .5em
+
 
 
 // form submit and cancel buttons
