@@ -6,6 +6,7 @@ import { block, normalizeChoices } from '../utils'
 @block
 export default class FieldSet extends React.Component {
   render(b) {
+    const normalizedChoices = normalizeChoices(this.props)
     const {
       type,
       isChecked,
@@ -20,7 +21,7 @@ export default class FieldSet extends React.Component {
     } = this.props
     return (
       <fieldset className={b.mix(className)} ref={elementRef}>
-        {normalizeChoices(props).map(([choiceLabel, choice]) => (
+        {normalizedChoices.map(([choiceLabel, choice]) => (
           <label
             key={choice}
             className={b.e('label').m({ on: isChecked(choice, value) })}
