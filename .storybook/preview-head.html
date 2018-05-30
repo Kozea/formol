@@ -1,10 +1,11 @@
 
 <script>
 window.addEventListener('DOMContentLoaded', function() {
+  var baseUrl = location.href.split('iframe.html')[0]
   window.themes = Array.prototype.slice
     .call(document.querySelectorAll('head > link'))
     .reduce(function(themes, link) {
-      const name = link.href.replace(location.origin + '/', '')
+      var name = link.href.replace(baseUrl, '')
       themes.push(name)
       if (name !== 'default.css') {
         link.parentNode.removeChild(link)
