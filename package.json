@@ -1,6 +1,6 @@
 {
   "name": "formol",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An opiniated react form framework.",
   "main": "lib/formol.js",
   "repository": "https://github.com/Kozea/formol",
@@ -62,6 +62,7 @@
     "babel-loader": "^7.1.4",
     "babel-plugin-add-react-static-displayname": "^0.0.2",
     "babel-plugin-dynamic-import-node": "^1.2.0",
+    "copy-webpack-plugin": "^4.5.1",
     "coveralls": "^3.0.0",
     "css-loader": "^0.28.11",
     "date-fns": "^1.29.0",
