@@ -67,6 +67,13 @@ storiesOf('Miscellaneous', module)
           Properties -&gt; Extra -&gt; second array item -&gt; more -&gt; again
           -&gt; first array item -&gt; hereweare
         </Field>
+        <Field
+          name="properties.extra.2"
+          type="checkbox-set"
+          choices={['red', 'blue', 'green', 'cyan', 'magenta', 'yellow']}
+        >
+          Properties -&gt; Extra -&gt; third array array
+        </Field>
       </Formol>
     ))
   )
@@ -86,6 +93,13 @@ storiesOf('Miscellaneous', module)
           <Field name="properties.extra.1.more.again.0.hereweare" type="number">
             Properties -&gt; Extra -&gt; second array item -&gt; more -&gt;
             again -&gt; first array item -&gt; hereweare
+          </Field>
+          <Field
+            name="properties.extra.2"
+            type="checkbox-set"
+            choices={['red', 'blue', 'green', 'cyan', 'magenta', 'yellow']}
+          >
+            Properties -&gt; Extra -&gt; third array array
           </Field>
         </Formol>
       ),
@@ -107,6 +121,7 @@ storiesOf('Miscellaneous', module)
                 ],
               },
             },
+            ['blue', 'yellow'],
           ],
         },
       }

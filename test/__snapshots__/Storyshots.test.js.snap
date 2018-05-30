@@ -20657,6 +20657,516 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
       </span>
     </label>
   </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "properties.extra.2",
+          "readOnly": false,
+          "type": "checkbox-set",
+        },
+        "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-properties.extra.2",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <div
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <fieldset
+        className={
+          Block {
+            "block": "FieldSet",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "CheckboxSetField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_CheckboxSetField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_FieldSet Formol_CheckboxSetField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            red
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            blue
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            green
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            cyan
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            magenta
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            yellow
+          </span>
+        </label>
+      </fieldset>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Properties -&gt; Extra -&gt; third array array
+      </span>
+    </div>
+  </div>
   <input
     style={
       Object {
@@ -21296,6 +21806,516 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         Properties -&gt; Extra -&gt; second array item -&gt; more -&gt; again -&gt; first array item -&gt; hereweare
       </span>
     </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "properties.extra.2",
+          "readOnly": false,
+          "type": "checkbox-set",
+        },
+        "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-properties.extra.2",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <div
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <fieldset
+        className={
+          Block {
+            "block": "FieldSet",
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "CheckboxSetField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_CheckboxSetField Formol_Field__field",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_FieldSet Formol_CheckboxSetField Formol_Field__field",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            red
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": true,
+              },
+              "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={true}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            blue
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            green
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            cyan
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            magenta
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": true,
+              },
+              "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={true}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="properties.extra.2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            yellow
+          </span>
+        </label>
+      </fieldset>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Properties -&gt; Extra -&gt; third array array
+      </span>
+    </div>
   </div>
   <input
     style={
