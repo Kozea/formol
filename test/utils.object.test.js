@@ -19,6 +19,7 @@ it('Gets it', () => {
   expect(get(o, 'c.g.0.h')).toEqual(5)
   expect(get(o, 'c.g.1.i.j')).toEqual(6)
   expect(get(o, 'c.g.2')).toEqual(8)
+  expect(get(o, 'a.b.c.d.e.f')).toEqual('')
 })
 
 it('Sets it when existing', () => {
@@ -155,6 +156,13 @@ it('Sets it when absent', () => {
   expect(o).toEqual({
     c: {
       g: [void 0, void 0, 88],
+    },
+  })
+  o = getO()
+  set(o, 'c.g.2', 88, true)
+  expect(o).toEqual({
+    c: {
+      g: { 2: 88 },
     },
   })
 })

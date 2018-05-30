@@ -9,14 +9,18 @@ export const get = (data, key) =>
   )
 
 // Set a sub object value (ie. obj['a.b.0.key'] = val)
-export const set = (data, key, value) =>
+export const set = (data, key, value, noArray = false) =>
   (key
     .split('.')
     .slice(0, -1)
     .reduce(
       (pointer, part, i) =>
         pointer[part] === void 0
-          ? (pointer[part] = isNaN(key.split('.')[i + 1]) ? {} : [])
+          ? (pointer[part] = noArray
+              ? {}
+              : isNaN(key.split('.')[i + 1])
+                ? {}
+                : [])
           : pointer[part],
       data
     )[key.split('.').slice(-1)[0]] = emptyStringToNull(value))
@@ -36,7 +40,7 @@ export const insert = (transientItem, name, value, names) => {
 export const diff = (newItem, oldItem, names) =>
   names.reduce((o, key) => {
     if (get(newItem, key) !== get(oldItem, key)) {
-      set(o, key, get(newItem, key))
+      set(o, key, get(newItem, key), true)
     }
     return o
   }, {})
