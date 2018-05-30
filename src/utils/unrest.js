@@ -1,19 +1,19 @@
 import { diff } from './object'
 
-export default (getPk, onCreate, onPatch, onValid, onError) => async (
+export default ({ pk, onCreate, onPatch, onValid, onError }) => async (
   transientItem,
   item,
   names
 ) => {
   let onSend, args
-  const pk = getPk(item)
-  const mode = pk === void 0 ? 'create' : 'patch'
+  const pkey = pk(item)
+  const mode = pkey === void 0 ? 'create' : 'patch'
   if (mode === 'create') {
     onSend = onCreate
     args = [item]
   } else {
     onSend = onPatch
-    args = [pk, diff(transientItem, item, names)]
+    args = [pkey, diff(transientItem, item, names)]
   }
 
   const report = await onSend(...args)
