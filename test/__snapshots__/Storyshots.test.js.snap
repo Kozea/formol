@@ -24127,6 +24127,12 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
     >
       <input
         checked=""
+        choices={
+          Object {
+            "Choice 1": "c1",
+            "Choice 2": "c2",
+          }
+        }
         className={
           Block {
             "block": "BooleanField",
@@ -24164,12 +24170,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         type="checkbox"
-        values={
-          Object {
-            "Choice 1": "c1",
-            "Choice 2": "c2",
-          }
-        }
       />
       <span
         className={
@@ -24238,6 +24238,12 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
     >
       <input
         checked=""
+        choices={
+          Object {
+            "Choice 1": "c1",
+            "Choice 2": "c2",
+          }
+        }
         className={
           Block {
             "block": "BooleanField",
@@ -24275,12 +24281,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         type="radio"
-        values={
-          Object {
-            "Choice 1": "c1",
-            "Choice 2": "c2",
-          }
-        }
       />
       <span
         className={

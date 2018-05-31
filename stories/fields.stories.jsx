@@ -41,7 +41,7 @@ storiesOf('Native and Contrib fields', module)
         <Field
           type="checkbox"
           name="checkbox"
-          values={{
+          choices={{
             'Choice 1': 'c1',
             'Choice 2': 'c2',
           }}
@@ -51,7 +51,7 @@ storiesOf('Native and Contrib fields', module)
         <Field
           type="radio"
           name="radio"
-          values={{
+          choices={{
             'Choice 1': 'c1',
             'Choice 2': 'c2',
           }}
