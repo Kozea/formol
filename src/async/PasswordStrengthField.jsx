@@ -1,7 +1,7 @@
 import React from 'react'
-import ReactPasswordStrength from 'react-password-strength'
 import FaEye from 'react-icons/lib/fa/eye'
 import FaEyeSlash from 'react-icons/lib/fa/eye-slash'
+import ReactPasswordStrength from 'react-password-strength'
 
 import { block } from '../utils'
 
@@ -41,7 +41,7 @@ export default class PasswordStrengthField extends React.Component {
     const { type } = this.state
 
     return (
-      <>
+      <div className={b.e('wrapper')}>
         <ReactPasswordStrength
           className={b.mix(className).s}
           /* eslint-disable-next-line react/jsx-handler-names */
@@ -65,7 +65,7 @@ export default class PasswordStrengthField extends React.Component {
         >
           {type === 'text' ? <FaEyeSlash /> : <FaEye />}
         </button>
-      </>
+      </div>
     )
   }
 }
