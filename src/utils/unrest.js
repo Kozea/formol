@@ -6,14 +6,18 @@ export default ({ pk, onCreate, onPatch, onValid, onError }) => async (
   names
 ) => {
   let onSend, args
-  const pkey = pk(item)
-  const mode = pkey === void 0 ? 'create' : 'patch'
+  const pks = pk(item)
+  // If some pk values are undefined, consider that it's a create
+  const mode =
+    !Object.keys(pks).length || Object.values(pks).some(v => v === void 0)
+      ? 'create'
+      : 'patch'
   if (mode === 'create') {
     onSend = onCreate
     args = [item]
   } else {
     onSend = onPatch
-    args = [pkey, diff(transientItem, item, names)]
+    args = [pks, diff(transientItem, item, names)]
   }
 
   const report = await onSend(...args)
