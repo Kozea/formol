@@ -14,8 +14,7 @@ export default class SelectField extends React.Component {
     return onChange(
       multiple
         ? [...e.target.options].filter(o => o.selected).map(o => o.value)
-        : e.target.value,
-      e.target
+        : e.target.value
     )
   }
 
