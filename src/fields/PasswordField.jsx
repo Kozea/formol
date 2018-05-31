@@ -24,7 +24,7 @@ export default class PasswordField extends React.Component {
     const { className, ...props } = this.props
     const { type } = this.state
     return (
-      <>
+      <div className={b.e('wrapper')}>
         <InputField className={b.mix(className)} {...props} type={type} />
         <button
           type="button"
@@ -33,7 +33,7 @@ export default class PasswordField extends React.Component {
         >
           {type === 'text' ? <FaEyeSlash /> : <FaEye />}
         </button>
-      </>
+      </div>
     )
   }
 }
