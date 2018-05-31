@@ -12,6 +12,7 @@ export default class PasswordField extends React.Component {
     this.state = {
       type: 'password',
     }
+    this.handleBlur = this.handleBlur.bind(this)
     this.handleVisibilityChange = this.handleVisibilityChange.bind(this)
   }
 
@@ -20,12 +21,23 @@ export default class PasswordField extends React.Component {
     this.setState({ type: type === 'password' ? 'text' : 'password' })
   }
 
+  handleBlur(e) {
+    const { onBlur } = this.props
+    this.setState({ type: 'password' })
+    return onBlur(e)
+  }
+
   render(b) {
-    const { className, ...props } = this.props
+    const { className, onBlur, ...props } = this.props
     const { type } = this.state
     return (
       <div className={b.e('wrapper')}>
-        <InputField className={b.mix(className)} {...props} type={type} />
+        <InputField
+          className={b.mix(className)}
+          onBlur={this.handleBlur}
+          {...props}
+          type={type}
+        />
         <button
           type="button"
           className={b.e('eye')}

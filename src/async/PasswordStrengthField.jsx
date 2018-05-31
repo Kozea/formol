@@ -13,6 +13,7 @@ export default class PasswordStrengthField extends React.Component {
       type: 'password',
     }
     this.handleChange = this.handleChange.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
     this.handleVisibilityChange = this.handleVisibilityChange.bind(this)
   }
 
@@ -31,13 +32,27 @@ export default class PasswordStrengthField extends React.Component {
     onChange(isValid ? password : void 0)
   }
 
+  handleBlur(e) {
+    const { onBlur } = this.props
+    this.setState({ type: 'password' })
+    return onBlur(e)
+  }
+
   handleVisibilityChange() {
     const { type } = this.state
     this.setState({ type: type === 'password' ? 'text' : 'password' })
   }
 
   render(b) {
-    const { className, name, value, i18n, elementRef, ...props } = this.props
+    const {
+      className,
+      name,
+      value,
+      i18n,
+      elementRef,
+      onBlur,
+      ...props
+    } = this.props
     const { type } = this.state
 
     return (
@@ -48,7 +63,12 @@ export default class PasswordStrengthField extends React.Component {
           changeCallback={this.handleChange}
           defaultValue={value}
           ref={ref => (this.passwordInput = ref)}
-          inputProps={{ name, ...props, type }}
+          inputProps={{
+            name,
+            onBlur: this.handleBlur,
+            ...props,
+            type,
+          }}
           scoreWords={[
             i18n.passwordStrength.weak,
             i18n.passwordStrength.okay,
