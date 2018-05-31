@@ -280,6 +280,7 @@ export default class Formol extends React.Component {
       submitText,
       cancelText,
       noCancel,
+      extra,
     } = this.props
     const { loading, context, modified } = this.state
     return (
@@ -323,6 +324,7 @@ export default class Formol extends React.Component {
             )}
           </>
         )}
+        {extra && extra(this.state)}
       </form>
     )
   }
