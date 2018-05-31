@@ -3,7 +3,6 @@ import React from 'react'
 import BooleanField from '../fields/BooleanField'
 import { block } from '../utils'
 
-// eslint-disable-next-line react/prefer-stateless-function
 @block
 export default class SwitchButton extends React.Component {
   static defaultProps = {
