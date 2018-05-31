@@ -1,3 +1,8 @@
+# [1.0.2](https://github.com/Kozea/formol/compare/v1.0.1...v1.0.2)
+
+* Add an extra parameter for form that will be called with the state (can be useful for prompting with react-router for example).
+* Fix creation pk test in unrest wrapper. 
+
 # [1.0.1](https://github.com/Kozea/formol/compare/v1.0.0...v1.0.1)
 
 * Use a mapping as argument for unrest and export it publicly
