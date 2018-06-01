@@ -5,51 +5,40 @@ import React from 'react'
 import Formol, { Field } from '../src'
 import { withStateForm } from './utils'
 
+const creditCard = v =>
+  v
+    ? v
+        .replace(/\D/g, '')
+        .split('')
+        .map((digit, i) => ((i + 1) % 4 ? digit : `${digit}-`))
+        .join('')
+        .replace(/-$/, '')
+    : ''
+
+const numberWithSpace = v =>
+  v
+    ? v
+        .replace(/ /g, '')
+        .split('')
+        .reverse()
+        .map((digit, i) => (i % 3 ? digit : `${digit} `))
+        .reverse()
+        .join('')
+        .trim()
+    : ''
+
 storiesOf('Formatters', module)
   .addDecorator(withKnobs)
   .add(
     'Item to field formatter',
-    withStateForm(
-      props => (
-        <Formol {...props}>
-          <h1>Item to field formatter</h1>
-          <Field
-            name="bignumber"
-            formatter={v =>
-              v
-                ? v
-                    .replace(/ /g, '')
-                    .split('')
-                    .reverse()
-                    .map((digit, i) => (i % 3 ? digit : `${digit} `))
-                    .reverse()
-                    .join('')
-                    .trim()
-                : ''
-            }
-          >
-            Big number (actually a formatted string)
-          </Field>
-          <Field
-            name="creditcard"
-            pattern="\d{4}-\d{4}-\d{4}-\d{4}"
-            formatter={v =>
-              v
-                ? v
-                    .replace(/\D/g, '')
-                    .split('')
-                    .map((digit, i) => ((i + 1) % 4 ? digit : `${digit}-`))
-                    .join('')
-                    .replace(/-$/, '')
-                : ''
-            }
-          >
-            Credit Card
-          </Field>
-        </Formol>
-      ),
-      { bignumber: '0123456789' }
-    )
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Item to field formatter</h1>
+        <Field name="text" formatter={v => v || 'Non empty'}>
+          Default value
+        </Field>
+      </Formol>
+    ))
   )
   .add(
     'Field to item formatter',
@@ -92,8 +81,23 @@ storiesOf('Formatters', module)
           >
             Money
           </Field>
+          <Field
+            name="bignumber"
+            formatter={numberWithSpace}
+            unformatter={numberWithSpace}
+          >
+            Big number (actually a formatted string)
+          </Field>
+          <Field
+            name="creditcard"
+            pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+            formatter={creditCard}
+            unformatter={creditCard}
+          >
+            Credit Card
+          </Field>
         </Formol>
       ),
-      { money: 42 }
+      { money: 42, bignumber: '0123456789' }
     )
   )
