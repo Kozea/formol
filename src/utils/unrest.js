@@ -14,7 +14,7 @@ export default ({ pk, onCreate, onPatch, onValid, onError }) => async (
       : 'patch'
   if (mode === 'create') {
     onSend = onCreate
-    args = [item]
+    args = [transientItem]
   } else {
     onSend = onPatch
     args = [pks, diff(transientItem, item, names)]
