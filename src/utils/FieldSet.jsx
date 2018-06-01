@@ -12,8 +12,6 @@ export default class FieldSet extends React.Component {
       isChecked,
       value,
       choices,
-      asyncChoices,
-      choiceGetter,
       className,
       elementRef,
       onChange,

@@ -26,8 +26,6 @@ export default class SelectField extends React.Component {
       className,
       elementRef,
       choices,
-      asyncChoices,
-      choiceGetter,
       onChange,
       ...props
     } = this.props

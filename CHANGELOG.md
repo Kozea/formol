@@ -1,3 +1,8 @@
+# [1.0.6](https://github.com/Kozea/formol/compare/v1.0.5...v1.0.6)
+
+* Remove choiceGetter (get your choice in your form instead)
+* 
+
 # [1.0.5](https://github.com/Kozea/formol/compare/v1.0.4...v1.0.5)
 
 * Improve unrest error handling

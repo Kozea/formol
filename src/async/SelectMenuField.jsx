@@ -3,10 +3,14 @@ import 'react-select/dist/react-select.css'
 import React from 'react'
 import Select from 'react-select'
 
-import { block, normalizeMultipleProps } from '../utils'
+import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
 
 @block
 export default class SelectMenuField extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+  }
   componentDidMount() {
     const { elementRef } = this.props
     elementRef.current = this.select.input.input
@@ -29,6 +33,7 @@ export default class SelectMenuField extends React.Component {
   }
 
   render(b) {
+    const normalizedChoices = normalizeChoices(this.props)
     const {
       i18n,
       className,
@@ -36,16 +41,13 @@ export default class SelectMenuField extends React.Component {
       readOnly,
       value,
       nonStringValue,
-      choiceGetter,
       ...inputProps
     } = normalizeMultipleProps(this.props)
     delete inputProps.onChange
-    const maybeStringify = v =>
-      nonStringValue ? JSON.stringify(choiceGetter(v)[0]) : v
-    const { choices } = this.props
-    const options = Object.entries(choices).map(([choiceLabel, choice]) => ({
+    const maybeStringify = v => (nonStringValue ? JSON.stringify(v) : v)
+    const options = normalizedChoices.map(([label, choice]) => ({
       value: maybeStringify(choice),
-      label: choiceLabel,
+      label,
     }))
     const strValue = multiple
       ? value.map(maybeStringify)
@@ -58,7 +60,7 @@ export default class SelectMenuField extends React.Component {
         options={options}
         multi={multiple}
         value={strValue}
-        onChange={o => this.handleChange(o)}
+        onChange={this.handleChange}
         {...inputProps}
       />
     )
