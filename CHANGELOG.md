@@ -1,3 +1,10 @@
+# [1.0.4](https://github.com/Kozea/formol/compare/v1.0.3...v1.0.4)
+
+* Wrap the eye toggler for password strength field
+* Fix Password field style related to #18
+* Remove password (and strength) type text at blur
+* Send the right item on create 
+
 # [1.0.3](https://github.com/Kozea/formol/compare/v1.0.2...v1.0.3)
 
 * Fix SelectField onChange bad signature
