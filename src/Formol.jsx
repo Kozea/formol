@@ -169,7 +169,9 @@ export default class Formol extends React.Component {
       const errors =
         (await onSubmit(transientItem, item, this.fields.names)) || {}
       this.setState({ loading: false })
-      this.setStateContext({ errors })
+      if (errors) {
+        this.setStateContext({ errors })
+      }
     } else if (form.reportValidity) {
       form.reportValidity()
     } else {

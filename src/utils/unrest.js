@@ -1,6 +1,6 @@
 import { diff } from './object'
 
-export default ({ pk, onCreate, onPatch, onValid, onError }) => async (
+export default ({ pk, onCreate, onPatch, onValid, onError, onFail }) => async (
   transientItem,
   item,
   names
@@ -20,13 +20,22 @@ export default ({ pk, onCreate, onPatch, onValid, onError }) => async (
     args = [pks, diff(transientItem, item, names)]
   }
 
-  const report = await onSend(...args)
+  let report
+  try {
+    report = await onSend(...args)
+  } catch (err) {
+    onFail && onFail(err, mode)
+    return
+  }
 
+  if (report.metadata.code === 202) {
+    // If it's invalid, errors should be reported
+    return report.metadata.errors[0].fields
+  }
   if (report.metadata.code === 200) {
     onValid && onValid(report, mode)
-  } else if (report.metadata.code === 202) {
-    return report.metadata.errors[0].fields
-  } else {
-    onError && onError(report, mode)
+    // If it's valid, errors should be removed
+    return {}
   }
+  onError && onError(report, mode)
 }
