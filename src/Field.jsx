@@ -106,6 +106,7 @@ class Field extends React.Component {
       type,
       className,
       validator,
+      readOnly: fieldReadOnly,
       unit,
       extras,
       formatter,
@@ -123,10 +124,11 @@ class Field extends React.Component {
       types,
       i18n,
       errors,
-      readOnly,
+      readOnly: formReadOnly,
       handleKeyDown,
     } = context
 
+    const readOnly = formReadOnly || fieldReadOnly
     const { focus, alreadyFocused } = this.state
 
     if (!transientItem) {

@@ -37,7 +37,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "focus": false,
           "modified": false,
           "name": "areyouok",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -197,7 +197,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "focus": false,
           "modified": false,
           "name": "whynot",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -267,7 +267,6 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -304,7 +303,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "focus": false,
           "modified": false,
           "name": "iwilltryagain",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox",
         },
@@ -496,7 +495,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
           "focus": false,
           "modified": false,
           "name": "name",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -566,7 +565,6 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -603,7 +601,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
           "focus": false,
           "modified": false,
           "name": "none",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -673,7 +671,6 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -793,7 +790,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           "focus": false,
           "modified": false,
           "name": "areyouok",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -953,7 +950,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           "focus": false,
           "modified": false,
           "name": "whynot",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -1023,7 +1020,6 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -1143,7 +1139,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "focus": false,
           "modified": false,
           "name": "areyouok",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -1303,7 +1299,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "focus": false,
           "modified": false,
           "name": "why",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -1373,7 +1369,6 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -1410,7 +1405,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "focus": false,
           "modified": false,
           "name": "whynot",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -1481,7 +1476,6 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -1601,7 +1595,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
           "focus": false,
           "modified": false,
           "name": "areyouok",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -1763,7 +1757,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               "focus": false,
               "modified": false,
               "name": "whynot",
-              "readOnly": false,
+              "readOnly": undefined,
               "required": false,
               "type": undefined,
             },
@@ -1833,7 +1827,6 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
-            readOnly={false}
             type="text"
             value=""
           />
@@ -1872,7 +1865,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               "focus": false,
               "modified": false,
               "name": "iwilltryagain",
-              "readOnly": false,
+              "readOnly": undefined,
               "required": false,
               "type": "checkbox",
             },
@@ -16214,7 +16207,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "focus": false,
           "modified": false,
           "name": "money",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -16284,7 +16277,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="42 $"
       />
@@ -16321,7 +16313,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "focus": false,
           "modified": false,
           "name": "bignumber",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -16391,7 +16383,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="0 123 456 789"
       />
@@ -16428,7 +16419,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "focus": false,
           "modified": false,
           "name": "creditcard",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -16499,7 +16490,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         pattern="\\\\d{4}-\\\\d{4}-\\\\d{4}-\\\\d{4}"
-        readOnly={false}
         type="text"
         value=""
       />
@@ -16619,7 +16609,7 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
           "focus": false,
           "modified": false,
           "name": "strnumber",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -16689,7 +16679,6 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value={1337}
       />
@@ -16809,7 +16798,7 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
           "focus": false,
           "modified": false,
           "name": "strnumber",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -16879,7 +16868,6 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value={1337}
       />
@@ -16999,7 +16987,7 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
           "focus": false,
           "modified": false,
           "name": "text",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -17069,7 +17057,6 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="Non empty"
       />
@@ -17189,7 +17176,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "firstname",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": undefined,
         },
@@ -17260,7 +17247,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="text"
         value=""
@@ -17298,7 +17284,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "name",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": undefined,
         },
@@ -17368,7 +17354,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="text"
         value=""
@@ -17406,7 +17391,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "email",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "email",
         },
@@ -17491,7 +17476,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="email"
         value=""
@@ -17529,7 +17513,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "avatar",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "file",
         },
@@ -17596,7 +17580,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "sex",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "radio-set",
         },
@@ -17912,7 +17896,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "weight",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -17998,7 +17982,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         step="1"
         type="number"
         value=""
@@ -18036,7 +18019,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "height",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -18123,7 +18106,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         step="0.01"
         type="number"
         value=""
@@ -18161,7 +18143,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "phone",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "tel",
         },
@@ -18246,7 +18228,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -18283,7 +18264,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "address",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -18353,7 +18334,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -18390,7 +18370,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "zip",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -18460,7 +18440,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -18497,7 +18476,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "city",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -18567,7 +18546,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -18687,7 +18665,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "firstname",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": undefined,
         },
@@ -18758,7 +18736,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="text"
         value="Liza"
@@ -18796,7 +18773,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "name",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": undefined,
         },
@@ -18866,7 +18843,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="text"
         value="Houston"
@@ -18904,7 +18880,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "email",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "email",
         },
@@ -18989,7 +18965,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="email"
         value="houston.liza@exemple.com"
@@ -19027,7 +19002,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "avatar",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "file",
         },
@@ -19094,7 +19069,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "sex",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "radio-set",
         },
@@ -19410,7 +19385,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "pregnant",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -19570,7 +19545,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "weight",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -19656,7 +19631,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         step="1"
         type="number"
         value={64}
@@ -19694,7 +19668,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "height",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -19781,7 +19755,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         step="0.01"
         type="number"
         value={1.78}
@@ -19819,7 +19792,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "phone",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "tel",
         },
@@ -19904,7 +19877,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="tel"
         value="1-541-754-3010"
       />
@@ -19941,7 +19913,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "address",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -20011,7 +19983,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="12 Norfolk St"
       />
@@ -20048,7 +20019,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "zip",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -20118,7 +20089,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="69030"
       />
@@ -20155,7 +20125,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "focus": false,
           "modified": false,
           "name": "city",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -20225,7 +20195,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="Haigler"
       />
@@ -20342,7 +20311,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "identifier",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -20427,7 +20396,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="number"
         value=""
       />
@@ -20464,7 +20432,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.name",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -20534,7 +20502,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -20571,7 +20538,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.root.realm",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -20641,7 +20608,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -20678,7 +20644,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.extra.0",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -20748,7 +20714,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -20785,7 +20750,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.extra.1.more.again.0.hereweare",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -20870,7 +20835,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="number"
         value=""
       />
@@ -20907,7 +20871,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.extra.2",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox-set",
         },
@@ -21498,7 +21462,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "identifier",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -21583,7 +21547,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="number"
         value={4}
       />
@@ -21620,7 +21583,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.name",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -21690,7 +21653,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="paul"
       />
@@ -21727,7 +21689,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.root.realm",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -21797,7 +21759,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="*"
       />
@@ -21834,7 +21795,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.extra.0",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -21904,7 +21865,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value="extra info"
       />
@@ -21941,7 +21901,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.extra.1.more.again.0.hereweare",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -22026,7 +21986,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="number"
         value={42}
       />
@@ -22063,7 +22022,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "focus": false,
           "modified": false,
           "name": "properties.extra.2",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox-set",
         },
@@ -22804,7 +22763,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "switch",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -22964,7 +22923,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "select-menu",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select-menu",
         },
@@ -23031,7 +22990,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "select-menu-multiple",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select-menu",
         },
@@ -23098,7 +23057,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "calendar",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "calendar",
         },
@@ -23165,7 +23124,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "html",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "html",
         },
@@ -23232,7 +23191,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "filedrop",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "filedrop",
         },
@@ -23304,7 +23263,6 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="Drop an image"
-        readOnly={false}
         type="filedrop"
         value=""
       />
@@ -23341,7 +23299,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "focus": false,
           "modified": false,
           "name": "password-strength",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "password-strength",
         },
@@ -23488,7 +23446,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "text",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -23558,7 +23516,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -23595,7 +23552,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "area",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "area",
         },
@@ -23665,7 +23622,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         value=""
       />
       <span
@@ -23701,7 +23657,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "email",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "email",
         },
@@ -23786,7 +23742,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="email"
         value=""
       />
@@ -23823,7 +23778,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "number",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -23908,7 +23863,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="number"
         value=""
       />
@@ -23945,7 +23899,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "password",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "password",
         },
@@ -24048,7 +24002,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           onChange={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          readOnly={false}
           type="password"
           value=""
         />
@@ -24126,7 +24079,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "tel",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "tel",
         },
@@ -24211,7 +24164,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="tel"
         value=""
       />
@@ -24248,7 +24200,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "select",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select",
         },
@@ -24373,7 +24325,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "checkbox",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox",
         },
@@ -24485,7 +24437,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "radio",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "radio",
         },
@@ -24597,7 +24549,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "focus": false,
           "modified": false,
           "name": "simple-checkbox",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox",
         },
@@ -24786,7 +24738,7 @@ exports[`Storyshots Validators Complex field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "prime",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -24873,7 +24825,6 @@ exports[`Storyshots Validators Complex field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -24994,7 +24945,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "text1",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -25064,7 +25015,6 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -25101,7 +25051,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "text2",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": undefined,
         },
@@ -25171,7 +25121,6 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         type="text"
         value=""
       />
@@ -25291,7 +25240,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-0",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -25376,7 +25325,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -25415,7 +25363,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-1",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -25500,7 +25448,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -25539,7 +25486,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-2",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -25624,7 +25571,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -25663,7 +25609,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-3",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -25748,7 +25694,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -25787,7 +25732,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-4",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -25872,7 +25817,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -25911,7 +25855,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-5",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -25996,7 +25940,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -26035,7 +25978,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-6",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -26120,7 +26063,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -26159,7 +26101,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-7",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -26244,7 +26186,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -26283,7 +26224,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-8",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -26368,7 +26309,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
@@ -26407,7 +26347,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "focus": false,
           "modified": false,
           "name": "number-9",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": true,
           "type": "number",
         },
@@ -26492,7 +26432,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        readOnly={false}
         required={true}
         type="number"
         value=""
