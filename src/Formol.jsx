@@ -83,8 +83,13 @@ export default class Formol extends React.Component {
     if (nextProps.readOnly !== prevState.context.readOnly) {
       context.readOnly = nextProps.readOnly
     }
-    if (nextProps.types !== prevState.context.types) {
-      context.types = { ...Formol.defaultTypes, ...nextProps.types }
+    const nextTypes = { ...Formol.defaultTypes, ...nextProps.types }
+    if (
+      Object.entries(nextTypes).some(
+        ([k, v]) => v !== prevState.context.types[k]
+      )
+    ) {
+      context.types = nextTypes
     }
     if (nextProps.i18n !== prevState.context.i18n) {
       context.i18n = Formol.i18n[nextProps.i18n]
