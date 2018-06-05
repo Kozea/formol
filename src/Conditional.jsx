@@ -31,6 +31,16 @@ class Conditional extends React.Component {
     }
   }
 
+  constructor(props) {
+    super(props)
+    this.names = []
+    this.state = Conditional.contextFromProps(props, {
+      conditionalContext: {
+        register: this.register.bind(this),
+      },
+    })
+  }
+
   static getDerivedStateFromProps(nextProps, prevState) {
     const { children, context, ...nextCallableProps } = nextProps
     if (
@@ -43,16 +53,6 @@ class Conditional extends React.Component {
       return Conditional.contextFromProps(nextProps, prevState)
     }
     return null
-  }
-
-  constructor(props) {
-    super(props)
-    this.names = []
-    this.state = Conditional.contextFromProps(props, {
-      conditionalContext: {
-        register: this.register.bind(this),
-      },
-    })
   }
 
   componentDidUpdate() {

@@ -72,34 +72,6 @@ export default class Formol extends React.Component {
     focusNextOnEnter: false,
   }
 
-  static getDerivedStateFromProps(nextProps, prevState) {
-    const context = {}
-    let { modified } = prevState
-    if (!deepEqual(nextProps.item, prevState.context.item)) {
-      context.item = nextProps.item
-      context.transientItem = { ...nextProps.item }
-      modified = false
-    }
-    if (nextProps.readOnly !== prevState.context.readOnly) {
-      context.readOnly = nextProps.readOnly
-    }
-    const nextTypes = { ...Formol.defaultTypes, ...nextProps.types }
-    if (
-      Object.entries(nextTypes).some(
-        ([k, v]) => v !== prevState.context.types[k]
-      )
-    ) {
-      context.types = nextTypes
-    }
-    if (nextProps.i18n !== prevState.context.i18n) {
-      context.i18n = Formol.i18n[nextProps.i18n]
-    }
-    if (Object.keys(context).length) {
-      return { context: { ...prevState.context, ...context }, modified }
-    }
-    return null
-  }
-
   constructor(props) {
     super(props)
     const { item, types, i18n, readOnly } = props
@@ -132,6 +104,34 @@ export default class Formol extends React.Component {
     this.errorsFromFields = {}
     this.handleCancel = this.handleCancel.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const context = {}
+    let { modified } = prevState
+    if (!deepEqual(nextProps.item, prevState.context.item)) {
+      context.item = nextProps.item
+      context.transientItem = { ...nextProps.item }
+      modified = false
+    }
+    if (nextProps.readOnly !== prevState.context.readOnly) {
+      context.readOnly = nextProps.readOnly
+    }
+    const nextTypes = { ...Formol.defaultTypes, ...nextProps.types }
+    if (
+      Object.entries(nextTypes).some(
+        ([k, v]) => v !== prevState.context.types[k]
+      )
+    ) {
+      context.types = nextTypes
+    }
+    if (nextProps.i18n !== prevState.context.i18n) {
+      context.i18n = Formol.i18n[nextProps.i18n]
+    }
+    if (Object.keys(context).length) {
+      return { context: { ...prevState.context, ...context }, modified }
+    }
+    return null
   }
 
   register(name, element, validator) {

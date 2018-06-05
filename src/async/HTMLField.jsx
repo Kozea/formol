@@ -35,6 +35,17 @@ const normalize = (value, fast) =>
 
 @block
 export default class HTMLField extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      editorState: null,
+      value: null,
+    }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleFocus = this.handleFocus.bind(this)
+    this.handleBlur = this.handleBlur.bind(this)
+  }
+
   static getDerivedStateFromProps(
     {
       elementRef: { current },
@@ -52,17 +63,6 @@ export default class HTMLField extends React.Component {
       }
     }
     return null
-  }
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      editorState: null,
-      value: null,
-    }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleFocus = this.handleFocus.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
   }
 
   handleChange(editorState) {

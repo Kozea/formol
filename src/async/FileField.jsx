@@ -51,6 +51,17 @@ export default class FileField extends React.Component {
     return key(value)
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      value: null,
+      rejected: [],
+    }
+    this.dropzone = React.createRef()
+    this.handleDrop = this.handleDrop.bind(this)
+    this.handleRemove = this.handleRemove.bind(this)
+  }
+
   static getDerivedStateFromProps(newProps, { value: oldValue }) {
     const {
       multiple,
@@ -67,18 +78,6 @@ export default class FileField extends React.Component {
     }
     return null
   }
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      value: null,
-      rejected: [],
-    }
-    this.dropzone = React.createRef()
-    this.handleDrop = this.handleDrop.bind(this)
-    this.handleRemove = this.handleRemove.bind(this)
-  }
-
   componentDidUpdate({ value: oldValue }, { rejected: oldRejected }) {
     const { value } = this.props
     const { rejected } = this.state
