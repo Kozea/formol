@@ -132,8 +132,8 @@ export default class FileField extends React.Component {
       rejected = rejected.includes(newValue) ? [newValue] : []
     }
     current.value = newValue
-    this.setState({ value: newValue, rejected })
     this.handleChange(newFiles, rejected)
+    this.setState({ value: newValue, rejected })
     onBlur()
   }
 
