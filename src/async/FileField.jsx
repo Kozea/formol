@@ -82,7 +82,7 @@ export default class FileField extends React.Component {
   componentDidUpdate({ value: oldValue }, { rejected: oldRejected }) {
     const { value } = this.props
     const { rejected } = this.state
-    if (rejected !== oldRejected && !deepEqual(value, oldValue)) {
+    if (rejected !== oldRejected || !deepEqual(value, oldValue)) {
       this.handleChange(value, rejected)
     }
   }
@@ -100,14 +100,12 @@ export default class FileField extends React.Component {
 
   handleChange(value, rejected) {
     const { i18n, multiple, onChange } = this.props
-    onChange(
-      value,
-      rejected.length
-        ? multiple
-          ? `${i18n.file.rejectedMultiple} (${rejected.join(', ')})`
-          : i18n.file.rejected
-        : ''
-    )
+    const error = rejected.length
+      ? multiple
+        ? `${i18n.file.rejectedMultiple} (${rejected.join(', ')})`
+        : i18n.file.rejected
+      : ''
+    onChange(value, error)
   }
 
   async handleDrop(acceptedFiles, rejectedFiles) {
