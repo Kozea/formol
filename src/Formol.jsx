@@ -170,7 +170,18 @@ export default class Formol extends React.Component {
         (await onSubmit(transientItem, item, this.fields.names)) || {}
       this.setState({ loading: false })
       if (errors) {
-        this.setStateContext({ errors })
+        if (
+          errors.contructor !== Object ||
+          Object.values(errors).some(v => v && typeof v !== 'string')
+        ) {
+          console.error(
+            `onSubmit return value must be a mapping of server errors
+            (ie: { fieldName: 'error' }) got:`,
+            errors
+          )
+        } else {
+          this.setStateContext({ errors })
+        }
       }
     } else if (form.reportValidity) {
       form.reportValidity()
