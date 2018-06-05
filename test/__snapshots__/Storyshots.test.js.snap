@@ -19157,9 +19157,9 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
-                "on": false,
+                "on": true,
               },
-              "s": "Formol_FieldSet__label",
+              "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -19171,7 +19171,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           }
         >
           <input
-            checked={false}
+            checked={true}
             className={
               Block {
                 "block": "BooleanField",

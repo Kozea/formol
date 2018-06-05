@@ -19,7 +19,7 @@ const personExemple = {
       type: 'image/svg+xml',
     },
   ],
-  sex: true,
+  sex: 'woman',
   pregnant: true,
   weight: 64,
   height: 1.78,
