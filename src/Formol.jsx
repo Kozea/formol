@@ -176,7 +176,7 @@ export default class Formol extends React.Component {
       this.setState({ loading: false })
       if (errors) {
         if (
-          errors.contructor !== Object ||
+          errors.constructor !== Object ||
           Object.values(errors).some(v => v && typeof v !== 'string')
         ) {
           console.error(
