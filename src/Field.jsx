@@ -147,6 +147,7 @@ class Field extends React.Component {
           name,
           error: !!error,
           readOnly,
+          required: !!props.required,
           modified,
           focus,
         })}
