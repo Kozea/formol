@@ -8,6 +8,7 @@ export default {
   // CalendarField
   calendar: {
     dateFormat: 'DD/MM/YYYY',
+    datePattern: /^([0-2][0-9]|30|31)\/(0[0-9]|10|11|12)\/[0-9]{4}$/,
     dateError: 'La date doit être au format jj/mm/aaaa',
     locale: 'fr',
   },

@@ -8,11 +8,15 @@ import { block } from '../utils'
 import { CalendarFr, localeFr } from './CalendarFieldLocale'
 
 const isDate = d => d instanceof Date && !isNaN(d.valueOf())
-const datePattern = /^([0-2][0-9]|30|31)\/(0[0-9]|10|11|12)\/[0-9]{4}$/
 const voidIfNaN = d => (isNaN(d.valueOf()) ? void 0 : d)
 
 @block
 export default class CalendarField extends React.PureComponent {
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+  }
+
   componentDidMount() {
     const { readOnly, disabled, elementRef } = this.props
     if (!(readOnly || disabled)) {
@@ -42,6 +46,7 @@ export default class CalendarField extends React.PureComponent {
       i18n,
       placeholder,
       format: userFormat,
+      pattern,
       value,
       readOnly,
       disabled,
@@ -51,12 +56,12 @@ export default class CalendarField extends React.PureComponent {
     } = this.props
     const locale = i18n.calendar.locale === 'fr' ? localeFr : void 0
     const dateFormat = userFormat || i18n.calendar.dateFormat
+    const datePattern = pattern || i18n.calendar.datePattern
     const maybeDate = parse(value, 'YYYY-MM-DD', new Date(), { locale })
     const date = isDate(maybeDate) ? maybeDate : value
     if (readOnly || disabled) {
       return (
         <input
-          ref={elementRef}
           type="text"
           className={b.mix(className)}
           readOnly={readOnly}
@@ -90,7 +95,7 @@ export default class CalendarField extends React.PureComponent {
             ? { locale: 'fr', localeUtils: CalendarFr }
             : {}
         }
-        onDayChange={o => this.handleChange(o)}
+        onDayChange={this.handleChange}
         inputProps={{
           ...inputProps,
           pattern: datePattern.source,
