@@ -4,7 +4,7 @@ import { block } from '../utils'
 import InputField from './InputField'
 
 @block
-export default class NumberField extends React.Component {
+export default class NumberField extends React.PureComponent {
   render(b) {
     const { className, onChange, ...props } = this.props
     return (

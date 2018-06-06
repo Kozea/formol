@@ -4,7 +4,7 @@ import { block } from '../utils'
 import SwitchButton from '../utils/SwitchButton'
 
 @block
-export default class SwitchField extends React.Component {
+export default class SwitchField extends React.PureComponent {
   render(b) {
     const {
       type,

@@ -4,7 +4,7 @@ import { block } from '../utils'
 import FieldSet from '../utils/FieldSet'
 
 @block
-export default class CheckboxSetField extends React.Component {
+export default class CheckboxSetField extends React.PureComponent {
   static defaultProps = { value: [] }
   static formolFieldLabelElement = 'div'
 

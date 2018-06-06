@@ -32,7 +32,7 @@ import en from './i18n/en'
 import fr from './i18n/fr'
 
 @block
-export default class Formol extends React.Component {
+export default class Formol extends React.PureComponent {
   static defaultTypes = {
     text: InputField,
     area: TextareaField,

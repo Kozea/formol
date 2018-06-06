@@ -34,7 +34,7 @@ const normalize = (value, fast) =>
   fast ? value : value === '<p></p>\n' ? '' : value ? value.trim() : ''
 
 @block
-export default class HTMLField extends React.Component {
+export default class HTMLField extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {

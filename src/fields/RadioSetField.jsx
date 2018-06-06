@@ -4,7 +4,7 @@ import { block } from '../utils'
 import FieldSet from '../utils/FieldSet'
 
 @block
-export default class RadioSetField extends React.Component {
+export default class RadioSetField extends React.PureComponent {
   static formolFieldLabelElement = 'div'
 
   render(b) {

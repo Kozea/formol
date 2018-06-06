@@ -4,7 +4,7 @@ import BooleanField from '../fields/BooleanField'
 import { block, normalizeChoices } from '../utils'
 
 @block
-export default class FieldSet extends React.Component {
+export default class FieldSet extends React.PureComponent {
   render(b) {
     const normalizedChoices = normalizeChoices(this.props)
     const {

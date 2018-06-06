@@ -3,7 +3,7 @@ import React from 'react'
 export default (resolve, options) => {
   const { path, Loading, Error } = options || {}
 
-  return class AsyncWrapper extends React.Component {
+  return class AsyncWrapper extends React.PureComponent {
     constructor(props) {
       super(props)
       this.state = {

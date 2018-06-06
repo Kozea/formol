@@ -9,7 +9,7 @@ import { get } from './utils/object'
 let UNAMED_COUNT = 0
 
 @block
-class Field extends React.Component {
+class Field extends React.PureComponent {
   static defaultProps = {
     formatter: v => (v && v.trim ? v.trim() : v),
     normalizer: v => v,

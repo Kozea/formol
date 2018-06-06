@@ -3,7 +3,7 @@ import React from 'react'
 import { block } from '../utils'
 
 @block
-export default class BooleanField extends React.Component {
+export default class BooleanField extends React.PureComponent {
   render(b) {
     const {
       value,

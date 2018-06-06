@@ -6,7 +6,7 @@ import Select from 'react-select'
 import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
 
 @block
-export default class SelectMenuField extends React.Component {
+export default class SelectMenuField extends React.PureComponent {
   constructor(props) {
     super(props)
     this.handleChange = this.handleChange.bind(this)

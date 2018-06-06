@@ -4,7 +4,7 @@ import BooleanField from '../fields/BooleanField'
 import { block } from '../utils'
 
 @block
-export default class SwitchButton extends React.Component {
+export default class SwitchButton extends React.PureComponent {
   static defaultProps = {
     mode: 'switch',
     name: Math.random(),

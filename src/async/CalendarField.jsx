@@ -12,7 +12,7 @@ const datePattern = /^([0-2][0-9]|30|31)\/(0[0-9]|10|11|12)\/[0-9]{4}$/
 const voidIfNaN = d => (isNaN(d.valueOf()) ? void 0 : d)
 
 @block
-export default class CalendarField extends React.Component {
+export default class CalendarField extends React.PureComponent {
   componentDidMount() {
     const { readOnly, disabled, elementRef } = this.props
     if (!(readOnly || disabled)) {

@@ -6,7 +6,7 @@ import ReactPasswordStrength from 'react-password-strength'
 import { block } from '../utils'
 
 @block
-export default class PasswordStrengthField extends React.Component {
+export default class PasswordStrengthField extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {

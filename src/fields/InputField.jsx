@@ -3,7 +3,7 @@ import React from 'react'
 import { block } from '../utils'
 
 @block
-export default class InputField extends React.Component {
+export default class InputField extends React.PureComponent {
   static defaultProps = { type: 'text' }
 
   render(b) {

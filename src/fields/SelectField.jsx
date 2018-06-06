@@ -3,7 +3,7 @@ import React from 'react'
 import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
 
 @block
-export default class SelectField extends React.Component {
+export default class SelectField extends React.PureComponent {
   constructor(props) {
     super(props)
     this.handleChange = this.handleChange.bind(this)

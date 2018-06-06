@@ -6,7 +6,7 @@ import { block } from '../utils'
 import InputField from './InputField'
 
 @block
-export default class PasswordField extends React.Component {
+export default class PasswordField extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {

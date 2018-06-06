@@ -5,7 +5,7 @@ import { ConditionalContext } from './ConditionalContext'
 import FormolContextWrapper from './FormolContext'
 import { get } from './utils/object'
 
-class Conditional extends React.Component {
+class Conditional extends React.PureComponent {
   static contextFromProps(
     {
       children,

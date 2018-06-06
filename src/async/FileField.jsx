@@ -40,7 +40,7 @@ const rename = files =>
   ).renamed
 
 @block
-export default class FileField extends React.Component {
+export default class FileField extends React.PureComponent {
   static valueToField(value, multiple) {
     if (!value) {
       return ''
