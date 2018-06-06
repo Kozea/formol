@@ -1,3 +1,7 @@
+### [1.1.2](https://github.com/Kozea/formol/compare/v1.1.1...v1.1.2)
+
+* Trigger a form validation after first render and following item props change.
+
 ### [1.1.1](https://github.com/Kozea/formol/compare/v1.1.0...v1.1.1)
 
 * Fix range field
