@@ -1,6 +1,5 @@
-import deepEqual from 'deep-equal'
-
 import React from 'react'
+import deepEqual from 'deep-equal'
 
 import { FormolContext } from './FormolContext'
 import { block } from './utils'
@@ -30,6 +29,9 @@ import TimeField from './fields/TimeField'
 import WeekField from './fields/WeekField'
 import en from './i18n/en'
 import fr from './i18n/fr'
+
+// This is a tracer to validate form post first time render.
+const errorsUnknown = {}
 
 @block
 export default class Formol extends React.PureComponent {
@@ -91,7 +93,7 @@ export default class Formol extends React.PureComponent {
         transientItem: { ...item },
         types: { ...Formol.defaultTypes, ...types },
         i18n: Formol.i18n[i18n],
-        errors: {},
+        errors: errorsUnknown,
         readOnly,
         register: this.register.bind(this),
         unregister: this.unregister.bind(this),
@@ -112,6 +114,7 @@ export default class Formol extends React.PureComponent {
     if (!deepEqual(nextProps.item, prevState.context.item)) {
       context.item = nextProps.item
       context.transientItem = { ...nextProps.item }
+      context.errors = errorsUnknown
       modified = false
     }
     if (nextProps.readOnly !== prevState.context.readOnly) {
@@ -132,6 +135,13 @@ export default class Formol extends React.PureComponent {
       return { context: { ...prevState.context, ...context }, modified }
     }
     return null
+  }
+
+  componentDidUpdate() {
+    const { errors } = this.state.context
+    if (errors === errorsUnknown) {
+      this.handleChanged()
+    }
   }
 
   register(name, element, validator) {
