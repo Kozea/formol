@@ -1,8 +1,15 @@
+### [1.1.1](https://github.com/Kozea/formol/compare/v1.1.0...v1.1.1)
+
+* Fix range field
+* Update bemboo to avoid unecessary re-render
+* Make Fields PureComponents
+* Localize datePatern and fix CalendarField
+
 ## [1.1.0](https://github.com/Kozea/formol/compare/v1.0.6...v1.1.0)
 
 * Log error on bad return value from onSubmit
 * Add required class on fields
-* Fix useless rerendering with a better types comparison
+* Fix useless re-rendering with a better types comparison
 * Fix errors being ignored in FileField
 
 ### [1.0.6](https://github.com/Kozea/formol/compare/v1.0.5...v1.0.6)
