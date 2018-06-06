@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { block } from '../utils'
-import NumberField from './BooleanField'
+import NumberField from './NumberField'
 
 @block
 export default class RangeField extends React.Component {

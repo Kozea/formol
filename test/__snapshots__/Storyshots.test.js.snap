@@ -8085,25 +8085,41 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
     >
       <input
         autoFocus={false}
-        checked=""
         className={
           Block {
-            "block": "BooleanField",
+            "block": "InputField",
             "cache": Array [],
             "element": null,
             "mixed": Array [
               Block {
-                "block": "RangeField",
+                "block": "NumberField",
                 "cache": Array [],
                 "element": null,
                 "mixed": Array [
                   Block {
-                    "block": "Field",
+                    "block": "RangeField",
                     "cache": Array [],
-                    "element": "field",
-                    "mixed": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "cache": Array [],
+                        "element": "field",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__field",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
                     "modifier": Object {},
-                    "s": "Formol_Field__field",
+                    "s": "Formol_RangeField Formol_Field__field",
                     "settings": Object {
                       "cache": false,
                       "elementDelimiter": "__",
@@ -8115,7 +8131,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_RangeField Formol_Field__field",
+                "s": "Formol_NumberField Formol_RangeField Formol_Field__field",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -8127,7 +8143,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_RangeField Formol_Field__field",
+            "s": "Formol_InputField Formol_NumberField Formol_RangeField Formol_Field__field",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -8147,9 +8163,11 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="range"
+        readOnly={false}
         required={false}
         step={5}
         type="range"
+        value=""
       />
       
       <span
@@ -15751,25 +15769,41 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
     >
       <input
         autoFocus={false}
-        checked="range"
         className={
           Block {
-            "block": "BooleanField",
+            "block": "InputField",
             "cache": Array [],
             "element": null,
             "mixed": Array [
               Block {
-                "block": "RangeField",
+                "block": "NumberField",
                 "cache": Array [],
                 "element": null,
                 "mixed": Array [
                   Block {
-                    "block": "Field",
+                    "block": "RangeField",
                     "cache": Array [],
-                    "element": "field",
-                    "mixed": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "cache": Array [],
+                        "element": "field",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__field",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
                     "modifier": Object {},
-                    "s": "Formol_Field__field",
+                    "s": "Formol_RangeField Formol_Field__field",
                     "settings": Object {
                       "cache": false,
                       "elementDelimiter": "__",
@@ -15781,7 +15815,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_RangeField Formol_Field__field",
+                "s": "Formol_NumberField Formol_RangeField Formol_Field__field",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -15793,7 +15827,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_RangeField Formol_Field__field",
+            "s": "Formol_InputField Formol_NumberField Formol_RangeField Formol_Field__field",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -15813,9 +15847,11 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="range"
+        readOnly={false}
         required={false}
         step={5}
         type="range"
+        value="range"
       />
       
       <span
