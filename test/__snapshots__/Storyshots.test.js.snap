@@ -22047,6 +22047,404 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
 </form>
 `;
 
+exports[`Storyshots Formol exemples Login form 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "cache": Array [],
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "cache": false,
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "login",
+          "readOnly": undefined,
+          "required": false,
+          "type": undefined,
+        },
+        "s": "Formol_Field Formol_Field--name-login",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="login"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        type="text"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Login
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "password",
+          "readOnly": undefined,
+          "required": false,
+          "type": "password",
+        },
+        "s": "Formol_Field Formol_Field--type-password Formol_Field--name-password",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <div
+        className={
+          Block {
+            "block": "PasswordField",
+            "cache": Array [],
+            "element": "wrapper",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_PasswordField__wrapper",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <input
+          className={
+            Block {
+              "block": "InputField",
+              "cache": Array [],
+              "element": null,
+              "mixed": Array [
+                Block {
+                  "block": "PasswordField",
+                  "cache": Array [],
+                  "element": null,
+                  "mixed": Array [
+                    Block {
+                      "block": "Field",
+                      "cache": Array [],
+                      "element": "field",
+                      "mixed": Array [],
+                      "modifier": Object {},
+                      "s": "Formol_Field__field",
+                      "settings": Object {
+                        "cache": false,
+                        "elementDelimiter": "__",
+                        "modifierDelimiter": "--",
+                        "modifierValueDelimiter": "-",
+                        "namespace": "Formol_",
+                      },
+                      "subs": Array [],
+                    },
+                  ],
+                  "modifier": Object {},
+                  "s": "Formol_PasswordField Formol_Field__field",
+                  "settings": Object {
+                    "cache": false,
+                    "elementDelimiter": "__",
+                    "modifierDelimiter": "--",
+                    "modifierValueDelimiter": "-",
+                    "namespace": "Formol_",
+                  },
+                  "subs": Array [],
+                },
+              ],
+              "modifier": Object {},
+              "s": "Formol_InputField Formol_PasswordField Formol_Field__field",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="password"
+          value=""
+        />
+        <button
+          className={
+            Block {
+              "block": "PasswordField",
+              "cache": Array [],
+              "element": "eye",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_PasswordField__eye",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m37.1 21.4q-3.3-5.2-8.5-7.8 1.4 2.3 1.4 5 0 4.1-2.9 7t-7.1 3-7.1-3-2.9-7q0-2.7 1.4-5.1-5.1 2.7-8.5 7.9 2.9 4.6 7.4 7.3t9.7 2.7 9.7-2.7 7.4-7.3z m-16-8.5q0-0.5-0.3-0.8t-0.8-0.3q-2.8 0-4.8 2t-2 4.8q0 0.4 0.3 0.7t0.8 0.3 0.7-0.3 0.4-0.7q0-2 1.3-3.3t3.3-1.4q0.4 0 0.8-0.3t0.3-0.7z m18.9 8.5q0 0.8-0.4 1.6-3.2 5.1-8.4 8.2t-11.2 3.1-11.2-3.1-8.4-8.2q-0.4-0.8-0.4-1.6t0.4-1.5q3.2-5.1 8.4-8.2t11.2-3.1 11.1 3.1 8.5 8.2q0.4 0.8 0.4 1.5z"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Password
+      </span>
+    </label>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
 exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
 <form
   className={

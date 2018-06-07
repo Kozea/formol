@@ -142,3 +142,12 @@ storiesOf('Formol exemples', module)
       personExemple
     )
   )
+  .add(
+    'Login form',
+    withStateForm(({ item, ...props }) => (
+      <Formol {...props}>
+        <Field>Login</Field>
+        <Field type="password">Password</Field>
+      </Formol>
+    ))
+  )
