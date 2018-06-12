@@ -308,6 +308,7 @@ export default class Formol extends React.PureComponent {
       submitText,
       cancelText,
       noCancel,
+      allowUnmodifiedSubmit,
       extra,
     } = this.props
     const { loading, context, modified } = this.state
@@ -335,7 +336,7 @@ export default class Formol extends React.PureComponent {
             <button
               onClick={this.handleSubmit}
               className={b.e('submit')}
-              disabled={!modified}
+              disabled={!modified || allowUnmodifiedSubmit}
               type="button"
             >
               {submitText || context.i18n.submit}
