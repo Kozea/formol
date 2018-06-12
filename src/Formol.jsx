@@ -336,7 +336,7 @@ export default class Formol extends React.PureComponent {
             <button
               onClick={this.handleSubmit}
               className={b.e('submit')}
-              disabled={!modified || allowUnmodifiedSubmit}
+              disabled={!modified && !allowUnmodifiedSubmit}
               type="button"
             >
               {submitText || context.i18n.submit}
