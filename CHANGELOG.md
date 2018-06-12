@@ -1,3 +1,7 @@
+### [1.1.3](https://github.com/Kozea/formol/compare/v1.1.2...v1.1.3)
+
+* Add `allowUnmodifiedSubmit` to allow submit even if the form has no modification.
+
 ### [1.1.2](https://github.com/Kozea/formol/compare/v1.1.1...v1.1.2)
 
 * Trigger a form validation after first render and following item props change.
