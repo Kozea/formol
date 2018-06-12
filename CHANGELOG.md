@@ -1,3 +1,7 @@
+### [1.1.4](https://github.com/Kozea/formol/compare/v1.1.3...v1.1.4)
+
+* Fix `allowUnmodifiedSubmit`
+
 ### [1.1.3](https://github.com/Kozea/formol/compare/v1.1.2...v1.1.3)
 
 * Add `allowUnmodifiedSubmit` to allow submit even if the form has no modification.
