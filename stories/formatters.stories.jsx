@@ -27,6 +27,39 @@ const numberWithSpace = v =>
         .trim()
     : ''
 
+const persons = [
+  {
+    id: 'mscott',
+    name: 'Scott',
+    firstname: 'Michael',
+    gender: 'man',
+  },
+  {
+    id: 'dkschrute',
+    name: 'K. Schrute',
+    firstname: 'Dwight',
+    gender: 'man',
+  },
+  {
+    id: 'jhalpert',
+    name: 'Halpert',
+    firstname: 'Jim',
+    gender: 'man',
+  },
+  {
+    id: 'pbeesly',
+    name: 'Beesly',
+    firstname: 'Pam',
+    gender: 'woman',
+  },
+  {
+    id: 'rhoward',
+    name: 'Howard',
+    firstname: 'Ryan',
+    gender: 'man',
+  },
+]
+
 storiesOf('Formatters', module)
   .addDecorator(withKnobs)
   .add(
@@ -96,8 +129,45 @@ storiesOf('Formatters', module)
           >
             Credit Card
           </Field>
+          <Field
+            name="persons"
+            type="select-menu"
+            multiple
+            choices={persons.reduce(
+              (choices, { id, name, firstname }) =>
+                (choices[`${name} ${firstname}`] = id) && choices,
+              {}
+            )}
+            formatter={currentPersons => currentPersons.map(({ id }) => id)}
+            unformatter={ids => persons.filter(({ id }) => ids.includes(id))}
+          >
+            Persons
+          </Field>
         </Formol>
       ),
-      { money: 42, bignumber: '0123456789' }
+      {
+        money: 42,
+        bignumber: '0123456789',
+        persons: [
+          {
+            id: 'mscott',
+            name: 'Scott',
+            firstname: 'Michael',
+            gender: 'man',
+          },
+          {
+            id: 'dkschrute',
+            name: 'K. Schrute',
+            firstname: 'Dwight',
+            gender: 'man',
+          },
+          {
+            id: 'pbeesly',
+            name: 'Beesly',
+            firstname: 'Pam',
+            gender: 'woman',
+          },
+        ],
+      }
     )
   )
