@@ -1,4 +1,5 @@
 import React from 'react'
+import shallowEqual from 'shallowequal'
 
 import ConditionalContextWrapper from './ConditionalContext'
 import InputField from './fields/InputField'
@@ -49,12 +50,19 @@ class Field extends React.PureComponent {
     this.handleBlur = this.handleBlur.bind(this)
   }
 
-  componentDidUpdate({ context: { transientItem: oldTransientItem } }) {
+  componentDidUpdate({
+    context: { transientItem: oldTransientItem },
+    ...oldProps
+  }) {
     const {
       name,
       context: { transientItem, handleChanged },
     } = this.getProps(this.props)
-    if (get(transientItem, name) !== get(oldTransientItem, name)) {
+    const { context, ...newProps } = this.props
+    if (
+      get(transientItem, name) !== get(oldTransientItem, name) ||
+      !shallowEqual(oldProps, newProps)
+    ) {
       handleChanged(name)
     }
   }
