@@ -1,3 +1,8 @@
+### [1.1.5](https://github.com/Kozea/formol/compare/v1.1.4...v1.1.5)
+
+* Protect from unmounting in onSubmit
+* Trigger a form validation on field prop change (makes async choices works better for instance, and knobs too)
+
 ### [1.1.4](https://github.com/Kozea/formol/compare/v1.1.3...v1.1.4)
 
 * Fix `allowUnmodifiedSubmit`
