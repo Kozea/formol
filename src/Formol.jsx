@@ -79,6 +79,7 @@ export default class Formol extends React.PureComponent {
     const { item, types, i18n, readOnly } = props
     this.form = React.createRef()
     this.submit = React.createRef()
+    this.mounted = false
 
     this.fields = {
       names: [],
@@ -137,11 +138,19 @@ export default class Formol extends React.PureComponent {
     return null
   }
 
+  componentDidMount() {
+    this.mounted = true
+  }
+
   componentDidUpdate() {
     const { errors } = this.state.context
     if (errors === errorsUnknown) {
       this.handleChanged()
     }
+  }
+
+  componentWillUnmount() {
+    this.mounted = false
   }
 
   register(name, element, validator) {
@@ -183,6 +192,10 @@ export default class Formol extends React.PureComponent {
       this.setState({ loading: true })
       const errors =
         (await onSubmit(transientItem, item, this.fields.names)) || {}
+      if (!this.mounted) {
+        // Protect from unmounting in onSubmit
+        return
+      }
       this.setState({ loading: false })
       if (errors) {
         if (
