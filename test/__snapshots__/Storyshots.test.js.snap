@@ -18962,6 +18962,267 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "error": false,
           "focus": false,
           "modified": false,
+          "name": "country",
+          "readOnly": undefined,
+          "required": true,
+          "type": "select",
+        },
+        "s": "Formol_Field Formol_Field--type-select Formol_Field--name-country Formol_Field--required",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <select
+        className={
+          Block {
+            "block": "SelectField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_SelectField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="country"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        required={true}
+        type="select"
+        value=""
+      >
+        <option
+          value=""
+        />
+        <option
+          value="Austria"
+        >
+          Austria
+        </option>
+        <option
+          value="Belgium"
+        >
+          Belgium
+        </option>
+        <option
+          value="Bulgaria"
+        >
+          Bulgaria
+        </option>
+        <option
+          value="Croatia"
+        >
+          Croatia
+        </option>
+        <option
+          value="Cyprus"
+        >
+          Cyprus
+        </option>
+        <option
+          value="Czech Republic"
+        >
+          Czech Republic
+        </option>
+        <option
+          value="Denmark"
+        >
+          Denmark
+        </option>
+        <option
+          value="Estonia"
+        >
+          Estonia
+        </option>
+        <option
+          value="Finland"
+        >
+          Finland
+        </option>
+        <option
+          value="France"
+        >
+          France
+        </option>
+        <option
+          value="Germany"
+        >
+          Germany
+        </option>
+        <option
+          value="Greece"
+        >
+          Greece
+        </option>
+        <option
+          value="Hungary"
+        >
+          Hungary
+        </option>
+        <option
+          value="Ireland"
+        >
+          Ireland
+        </option>
+        <option
+          value="Italy"
+        >
+          Italy
+        </option>
+        <option
+          value="Latvia"
+        >
+          Latvia
+        </option>
+        <option
+          value="Lithuania"
+        >
+          Lithuania
+        </option>
+        <option
+          value="Luxembourg"
+        >
+          Luxembourg
+        </option>
+        <option
+          value="Malta"
+        >
+          Malta
+        </option>
+        <option
+          value="Netherlands"
+        >
+          Netherlands
+        </option>
+        <option
+          value="Poland"
+        >
+          Poland
+        </option>
+        <option
+          value="Portugal"
+        >
+          Portugal
+        </option>
+        <option
+          value="Romania"
+        >
+          Romania
+        </option>
+        <option
+          value="Slovakia"
+        >
+          Slovakia
+        </option>
+        <option
+          value="Slovenia"
+        >
+          Slovenia
+        </option>
+        <option
+          value="Spain"
+        >
+          Spain
+        </option>
+        <option
+          value="Sweden"
+        >
+          Sweden
+        </option>
+        <option
+          value="United Kingdom"
+        >
+          United Kingdom
+        </option>
+      </select>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Country
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
           "name": "email",
           "readOnly": undefined,
           "required": true,
@@ -20577,6 +20838,267 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         }
       >
         Name
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "country",
+          "readOnly": undefined,
+          "required": true,
+          "type": "select",
+        },
+        "s": "Formol_Field Formol_Field--type-select Formol_Field--name-country Formol_Field--required",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <select
+        className={
+          Block {
+            "block": "SelectField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_SelectField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="country"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        required={true}
+        type="select"
+        value="Germany"
+      >
+        <option
+          value=""
+        />
+        <option
+          value="Austria"
+        >
+          Austria
+        </option>
+        <option
+          value="Belgium"
+        >
+          Belgium
+        </option>
+        <option
+          value="Bulgaria"
+        >
+          Bulgaria
+        </option>
+        <option
+          value="Croatia"
+        >
+          Croatia
+        </option>
+        <option
+          value="Cyprus"
+        >
+          Cyprus
+        </option>
+        <option
+          value="Czech Republic"
+        >
+          Czech Republic
+        </option>
+        <option
+          value="Denmark"
+        >
+          Denmark
+        </option>
+        <option
+          value="Estonia"
+        >
+          Estonia
+        </option>
+        <option
+          value="Finland"
+        >
+          Finland
+        </option>
+        <option
+          value="France"
+        >
+          France
+        </option>
+        <option
+          value="Germany"
+        >
+          Germany
+        </option>
+        <option
+          value="Greece"
+        >
+          Greece
+        </option>
+        <option
+          value="Hungary"
+        >
+          Hungary
+        </option>
+        <option
+          value="Ireland"
+        >
+          Ireland
+        </option>
+        <option
+          value="Italy"
+        >
+          Italy
+        </option>
+        <option
+          value="Latvia"
+        >
+          Latvia
+        </option>
+        <option
+          value="Lithuania"
+        >
+          Lithuania
+        </option>
+        <option
+          value="Luxembourg"
+        >
+          Luxembourg
+        </option>
+        <option
+          value="Malta"
+        >
+          Malta
+        </option>
+        <option
+          value="Netherlands"
+        >
+          Netherlands
+        </option>
+        <option
+          value="Poland"
+        >
+          Poland
+        </option>
+        <option
+          value="Portugal"
+        >
+          Portugal
+        </option>
+        <option
+          value="Romania"
+        >
+          Romania
+        </option>
+        <option
+          value="Slovakia"
+        >
+          Slovakia
+        </option>
+        <option
+          value="Slovenia"
+        >
+          Slovenia
+        </option>
+        <option
+          value="Spain"
+        >
+          Spain
+        </option>
+        <option
+          value="Sweden"
+        >
+          Sweden
+        </option>
+        <option
+          value="United Kingdom"
+        >
+          United Kingdom
+        </option>
+      </select>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Country
       </span>
     </label>
   </div>
@@ -23715,6 +24237,332 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         Properties -&gt; Extra -&gt; third array array
       </span>
     </div>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
+exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "cache": Array [],
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "cache": false,
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "text",
+          "readOnly": undefined,
+          "required": false,
+          "type": undefined,
+        },
+        "s": "Formol_Field Formol_Field--name-text",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="text"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        type="text"
+        value=""
+      />
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Text
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "country",
+          "readOnly": undefined,
+          "required": true,
+          "type": "select",
+        },
+        "s": "Formol_Field Formol_Field--type-select Formol_Field--name-country Formol_Field--required",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <select
+        className={
+          Block {
+            "block": "SelectField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_SelectField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="country"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        required={true}
+        type="select"
+        value="France"
+      >
+        <option
+          value=""
+        />
+      </select>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Country 
+        <small>
+          (Loading)
+        </small>
+      </span>
+    </label>
   </div>
   <input
     style={

@@ -23,6 +23,37 @@ const choices = {
   Purple: '#800080',
 }
 
+export const countries = [
+  'Austria',
+  'Belgium',
+  'Bulgaria',
+  'Croatia',
+  'Cyprus',
+  'Czech Republic',
+  'Denmark',
+  'Estonia',
+  'Finland',
+  'France',
+  'Germany',
+  'Greece',
+  'Hungary',
+  'Ireland',
+  'Italy',
+  'Latvia',
+  'Lithuania',
+  'Luxembourg',
+  'Malta',
+  'Netherlands',
+  'Poland',
+  'Portugal',
+  'Romania',
+  'Slovakia',
+  'Slovenia',
+  'Spain',
+  'Sweden',
+  'United Kingdom',
+]
+
 // eslint-disable-next-line react/display-name
 const makeField = (name, extraProps) => props => (
   <Field type={name} name={name} {...extraProps} {...props}>

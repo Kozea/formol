@@ -1,3 +1,5 @@
+/* eslint-disable react/no-multi-comp */
+
 import { withState } from '@dump247/storybook-state'
 import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
@@ -5,6 +7,7 @@ import React from 'react'
 
 import Formol, { Field } from '../src'
 import { HTMLToEditor, editorToHTML } from '../src/utils/html'
+import { countries } from './fields'
 import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
@@ -29,6 +32,28 @@ class FastHTMLFieldFormol extends React.Component {
         <h1>Showcase of the fast HTMLField attribute</h1>
         <Field name="bightml" type="html" fast>
           Big HTML Field
+        </Field>
+      </Formol>
+    )
+  }
+}
+
+class AsyncChoicesForm extends React.Component {
+  state = {
+    choices: [],
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ choices: countries }), 1000)
+  }
+
+  render() {
+    const { choices } = this.state
+    return (
+      <Formol {...this.props}>
+        <Field>Text</Field>
+        <Field name="country" type="select" choices={choices} required>
+          Country {choices.length ? null : <small>(Loading)</small>}
         </Field>
       </Formol>
     )
@@ -126,4 +151,10 @@ storiesOf('Miscellaneous', module)
         },
       }
     )
+  )
+  .add(
+    'Asynchronous choices',
+    withStateForm(props => <AsyncChoicesForm {...props} />, {
+      country: 'France',
+    })
   )
