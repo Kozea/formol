@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Conditional, Field } from '../src'
+import { countries } from './fields'
 import molecule from './molecule.svg.base64'
 import { withStateForm } from './utils'
 
@@ -20,6 +21,7 @@ const personExemple = {
     },
   ],
   sex: 'woman',
+  country: 'Germany',
   pregnant: true,
   weight: 64,
   height: 1.78,
@@ -41,6 +43,9 @@ storiesOf('Formol exemples', module)
         </Field>
         <Field required name="name">
           Name
+        </Field>
+        <Field required name="country" choices={countries} type="select">
+          Country
         </Field>
         <Field required type="email" name="email">
           E-mail
@@ -96,6 +101,9 @@ storiesOf('Formol exemples', module)
             First name
           </Field>
           <Field required>Name</Field>
+          <Field required name="country" choices={countries} type="select">
+            Country
+          </Field>
           <Field required type="email" name="email">
             E-mail
           </Field>
