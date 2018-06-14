@@ -1,3 +1,7 @@
+### [1.1.7](https://github.com/Kozea/formol/compare/v1.1.6...v1.1.7)
+
+* Add stars on required fields. Fix #19
+
 ### [1.1.6](https://github.com/Kozea/formol/compare/v1.1.5...v1.1.6)
 
 * Prevent stack overflow when comparing field props in componentDidUpdate.
