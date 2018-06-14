@@ -1,3 +1,7 @@
+### [1.1.6](https://github.com/Kozea/formol/compare/v1.1.5...v1.1.6)
+
+* Prevent stack overflow when comparing field props in componentDidUpdate.
+
 ### [1.1.5](https://github.com/Kozea/formol/compare/v1.1.4...v1.1.5)
 
 * Protect from unmounting in onSubmit
