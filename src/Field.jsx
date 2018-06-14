@@ -1,11 +1,10 @@
 import React from 'react'
-import shallowEqual from 'shallowequal'
 
 import ConditionalContextWrapper from './ConditionalContext'
 import InputField from './fields/InputField'
 import FormolContextWrapper from './FormolContext'
 import { block } from './utils'
-import { get } from './utils/object'
+import { diff, get } from './utils/object'
 
 let UNAMED_COUNT = 0
 
@@ -50,18 +49,21 @@ class Field extends React.PureComponent {
     this.handleBlur = this.handleBlur.bind(this)
   }
 
-  componentDidUpdate({
-    context: { transientItem: oldTransientItem },
-    ...oldProps
-  }) {
+  componentDidUpdate(oldProps) {
+    const {
+      context: { transientItem: oldTransientItem },
+    } = oldProps
     const {
       name,
       context: { transientItem, handleChanged },
     } = this.getProps(this.props)
-    const { context, ...newProps } = this.props
+    const propsDiff = diff(this.props, oldProps, Object.keys(this.props))
     if (
       get(transientItem, name) !== get(oldTransientItem, name) ||
-      !shallowEqual(oldProps, newProps)
+      (Object.keys(propsDiff).length &&
+        Object.keys(propsDiff).every(
+          prop => !['context', 'conditionalContext'].includes(prop)
+        ))
     ) {
       handleChanged(name)
     }
