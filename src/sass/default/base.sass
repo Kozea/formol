@@ -95,11 +95,17 @@
     width: 1em
 
 
+// form required
+.Formol_Field--required
+  .Formol_Field__label-text
+    &::before
+      content: '* '
+
+
 // form units
 .Formol_Field__unit
   align-self: center
   margin-left: .5em
-
 
 
 // form submit and cancel buttons
