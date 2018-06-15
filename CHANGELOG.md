@@ -1,3 +1,7 @@
+### [1.1.8](https://github.com/Kozea/formol/compare/v1.1.7...v1.1.8)
+
+* Use decorators for context and export contexts
+
 ### [1.1.7](https://github.com/Kozea/formol/compare/v1.1.6...v1.1.7)
 
 * Add stars on required fields. Fix #19
