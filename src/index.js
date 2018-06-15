@@ -2,6 +2,10 @@
 export default from './Formol'
 export Field from './Field'
 export Conditional from './Conditional'
+export FormolContextWrapper, { FormolContext } from './FormolContext'
+export ConditionalContextWrapper, {
+  ConditionalContext,
+} from './ConditionalContext'
 
 export SwitchButton from './utils/SwitchButton'
 export unrest from './utils/unrest'

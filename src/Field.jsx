@@ -8,8 +8,10 @@ import { diff, get } from './utils/object'
 
 let UNAMED_COUNT = 0
 
+@ConditionalContextWrapper
+@FormolContextWrapper
 @block
-class Field extends React.PureComponent {
+export default class Field extends React.PureComponent {
   static defaultProps = {
     formatter: v => (v && v.trim ? v.trim() : v),
     normalizer: v => v,
@@ -188,5 +190,3 @@ class Field extends React.PureComponent {
     )
   }
 }
-
-export default ConditionalContextWrapper(FormolContextWrapper(Field))
