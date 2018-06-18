@@ -72,9 +72,21 @@ export default class Field extends React.PureComponent {
   }
 
   getProps(props) {
+    const TypeField = props.context.types[props.type] || InputField
+    const propsOverrideFromField = TypeField.defaultFieldProps
+      ? Object.entries(TypeField.defaultFieldProps).reduce(
+          (newProps, [name, getter]) => {
+            newProps[name] = getter(props)
+            return newProps
+          },
+          {}
+        )
+      : {}
+
     return {
       ...props,
       name: this.name,
+      ...propsOverrideFromField,
       ...props.conditionalContext.propsOverride,
     }
   }
