@@ -5,8 +5,8 @@ import FieldSet from '../utils/FieldSet'
 
 @block
 export default class CheckboxSetField extends React.PureComponent {
-  static defaultProps = { value: [] }
   static formolFieldLabelElement = 'div'
+  static defaultProps = { value: [] }
 
   render(b) {
     const { i18n, type, className, onChange, readOnly, ...props } = this.props
