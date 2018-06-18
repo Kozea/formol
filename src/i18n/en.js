@@ -28,4 +28,8 @@ export default {
     stronger: 'stronger',
     tooshort: 'too short',
   },
+  money: {
+    unit: '$',
+    precision: 2,
+  },
 }

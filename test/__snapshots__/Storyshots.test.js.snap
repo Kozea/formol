@@ -5450,6 +5450,275 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
 </form>
 `;
 
+exports[`Storyshots Field Test/Fields money field 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "cache": Array [],
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "cache": false,
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    money
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "money",
+          "readOnly": false,
+          "required": false,
+          "type": "money",
+        },
+        "s": "Formol_Field Formol_Field--type-money Formol_Field--name-money",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        autoFocus={false}
+        className={
+          Block {
+            "block": "InputField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "MoneyField",
+                    "cache": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "cache": Array [],
+                        "element": "field",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__field",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_MoneyField Formol_Field__field",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_MoneyField Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_MoneyField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        disabled={false}
+        max={9007199254740.99}
+        min={0}
+        name="money"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="money"
+        readOnly={false}
+        required={false}
+        step={0.01}
+        type="number"
+        value=""
+      />
+      <div
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "unit",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__unit",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        $
+      </div>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        money
+      </span>
+    </label>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
 exports[`Storyshots Field Test/Fields month field 1`] = `
 <form
   className={
@@ -13072,6 +13341,275 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
         html
       </span>
     </div>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
+exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "cache": Array [],
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "cache": false,
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    money
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "money",
+          "readOnly": false,
+          "required": false,
+          "type": "money",
+        },
+        "s": "Formol_Field Formol_Field--type-money Formol_Field--name-money",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <input
+        autoFocus={false}
+        className={
+          Block {
+            "block": "InputField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "NumberField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "MoneyField",
+                    "cache": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "cache": Array [],
+                        "element": "field",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__field",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_MoneyField Formol_Field__field",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_NumberField Formol_MoneyField Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_NumberField Formol_MoneyField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        disabled={false}
+        max={9007199254740.99}
+        min={0}
+        name="money"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="money"
+        readOnly={false}
+        required={false}
+        step={0.01}
+        type="number"
+        value={12.5}
+      />
+      <div
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "unit",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__unit",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        $
+      </div>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        money
+      </span>
+    </label>
   </div>
   <input
     style={

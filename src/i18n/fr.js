@@ -28,4 +28,8 @@ export default {
     stronger: 'très sécurisé',
     tooshort: 'trop court',
   },
+  money: {
+    unit: '€',
+    precision: 2,
+  },
 }

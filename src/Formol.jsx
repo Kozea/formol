@@ -1,9 +1,6 @@
-import React from 'react'
 import deepEqual from 'deep-equal'
+import React from 'react'
 
-import { FormolContext } from './FormolContext'
-import { block } from './utils'
-import { get, insert, isModified } from './utils/object'
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
 import CheckboxSetField from './fields/CheckboxSetField'
@@ -14,6 +11,7 @@ import EmailField from './fields/EmailField'
 import FileField from './fields/FileField'
 import HTMLField from './fields/HTMLField'
 import InputField from './fields/InputField'
+import MoneyField from './fields/MoneyField'
 import MonthField from './fields/MonthField'
 import NumberField from './fields/NumberField'
 import PasswordField from './fields/PasswordField'
@@ -27,8 +25,11 @@ import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
 import TimeField from './fields/TimeField'
 import WeekField from './fields/WeekField'
+import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
+import { block } from './utils'
+import { get, insert, isModified } from './utils/object'
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
@@ -50,6 +51,7 @@ export default class Formol extends React.PureComponent {
     month: MonthField,
     week: WeekField,
     range: RangeField,
+    money: MoneyField,
     calendar: CalendarField,
     switch: SwitchField,
     html: HTMLField,
