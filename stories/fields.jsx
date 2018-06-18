@@ -90,7 +90,7 @@ export const testFieldValue = name =>
     'select-menu': '#800000',
     'select-menu-multiple': ['#800000', '#ffff00'],
     color: '#123456',
-    money: 1250,
+    money: '12.50',
     html:
       '<p><span style="color: rgb(251,160,38);">H</span><strong>T</strong><del>M</del><em>L</em></p>', // eslint-disable-line max-len
     calendar: '2018-08-01',

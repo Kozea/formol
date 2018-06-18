@@ -5535,34 +5535,17 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "NumberField",
+                "block": "MoneyField",
                 "cache": Array [],
                 "element": null,
                 "mixed": Array [
                   Block {
-                    "block": "MoneyField",
+                    "block": "Field",
                     "cache": Array [],
-                    "element": null,
-                    "mixed": Array [
-                      Block {
-                        "block": "Field",
-                        "cache": Array [],
-                        "element": "field",
-                        "mixed": Array [],
-                        "modifier": Object {},
-                        "s": "Formol_Field__field",
-                        "settings": Object {
-                          "cache": false,
-                          "elementDelimiter": "__",
-                          "modifierDelimiter": "--",
-                          "modifierValueDelimiter": "-",
-                          "namespace": "Formol_",
-                        },
-                        "subs": Array [],
-                      },
-                    ],
+                    "element": "field",
+                    "mixed": Array [],
                     "modifier": Object {},
-                    "s": "Formol_MoneyField Formol_Field__field",
+                    "s": "Formol_Field__field",
                     "settings": Object {
                       "cache": false,
                       "elementDelimiter": "__",
@@ -5574,7 +5557,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_NumberField Formol_MoneyField Formol_Field__field",
+                "s": "Formol_MoneyField Formol_Field__field",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -5586,7 +5569,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_InputField Formol_NumberField Formol_MoneyField Formol_Field__field",
+            "s": "Formol_InputField Formol_MoneyField Formol_Field__field",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -5598,7 +5581,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
           }
         }
         disabled={false}
-        max={9007199254740.99}
+        max={9007199254740991}
         min={0}
         name="money"
         onBlur={[Function]}
@@ -13488,34 +13471,17 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "NumberField",
+                "block": "MoneyField",
                 "cache": Array [],
                 "element": null,
                 "mixed": Array [
                   Block {
-                    "block": "MoneyField",
+                    "block": "Field",
                     "cache": Array [],
-                    "element": null,
-                    "mixed": Array [
-                      Block {
-                        "block": "Field",
-                        "cache": Array [],
-                        "element": "field",
-                        "mixed": Array [],
-                        "modifier": Object {},
-                        "s": "Formol_Field__field",
-                        "settings": Object {
-                          "cache": false,
-                          "elementDelimiter": "__",
-                          "modifierDelimiter": "--",
-                          "modifierValueDelimiter": "-",
-                          "namespace": "Formol_",
-                        },
-                        "subs": Array [],
-                      },
-                    ],
+                    "element": "field",
+                    "mixed": Array [],
                     "modifier": Object {},
-                    "s": "Formol_MoneyField Formol_Field__field",
+                    "s": "Formol_Field__field",
                     "settings": Object {
                       "cache": false,
                       "elementDelimiter": "__",
@@ -13527,7 +13493,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_NumberField Formol_MoneyField Formol_Field__field",
+                "s": "Formol_MoneyField Formol_Field__field",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -13539,7 +13505,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_InputField Formol_NumberField Formol_MoneyField Formol_Field__field",
+            "s": "Formol_InputField Formol_MoneyField Formol_Field__field",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -13551,7 +13517,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
           }
         }
         disabled={false}
-        max={9007199254740.99}
+        max={9007199254740991}
         min={0}
         name="money"
         onBlur={[Function]}
@@ -13563,7 +13529,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
         required={false}
         step={0.01}
         type="number"
-        value={12.5}
+        value="12.50"
       />
       <div
         className={
