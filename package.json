@@ -14,21 +14,31 @@
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook-debug":
-      "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
+    "storybook-debug": "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
     "storybook-deploy": "storybook-to-ghpages"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx", "json"],
-    "modulePaths": ["<rootDir>/src"],
-    "moduleDirectories": ["node_modules"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "modulePaths": [
+      "<rootDir>/src"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
     "moduleNameMapper": {
       "\\.(css|sass)$": "<rootDir>/test/styleMock.js"
     },
-    "setupFiles": ["<rootDir>/test/setup.js"]
+    "setupFiles": [
+      "<rootDir>/test/setup.js"
+    ]
   },
   "pre-commit": "lint,test",
   "devDependencies": {
+    "@angular-devkit/core": "^0.6.8",
     "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
@@ -82,10 +92,11 @@
     "sass-loader": "^7.0.3",
     "webpack": "^4.12.0",
     "webpack-bundle-analyzer": "^2.13.1",
-    "@angular-devkit/core": "^0.6.8",
     "webpack-cli": "^3.0.8"
   },
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "importSort": {
     ".js, .jsx": {
       "parser": "babylon",
@@ -97,7 +108,6 @@
     "deep-equal": "^1.0.1",
     "draftjs-to-html": "^0.8.4",
     "html-to-draftjs": "^1.4.0",
-    "prop-types": "^15.6.1",
     "react-day-picker": "^7.1.9",
     "react-draft-wysiwyg": "^1.12.13",
     "regenerator-runtime": "^0.11.1"
