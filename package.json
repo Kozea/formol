@@ -14,27 +14,18 @@
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook-debug": "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
+    "storybook-debug":
+      "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
     "storybook-deploy": "storybook-to-ghpages"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json"
-    ],
-    "modulePaths": [
-      "<rootDir>/src"
-    ],
-    "moduleDirectories": [
-      "node_modules"
-    ],
+    "moduleFileExtensions": ["js", "jsx", "json"],
+    "modulePaths": ["<rootDir>/src"],
+    "moduleDirectories": ["node_modules"],
     "moduleNameMapper": {
       "\\.(css|sass)$": "<rootDir>/test/styleMock.js"
     },
-    "setupFiles": [
-      "<rootDir>/test/setup.js"
-    ]
+    "setupFiles": ["<rootDir>/test/setup.js"]
   },
   "pre-commit": "lint,test",
   "devDependencies": {
@@ -54,6 +45,7 @@
     "@storybook/addon-storyshots": "^4.0.0-alpha.9",
     "@storybook/addon-storysource": "^4.0.0-alpha.9",
     "@storybook/addons": "^4.0.0-alpha.9",
+    "@storybook/angular": "^4.0.0-alpha.9",
     "@storybook/react": "^4.0.0-alpha.9",
     "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^7.0.0-bridge.0",
@@ -90,11 +82,10 @@
     "sass-loader": "^7.0.3",
     "webpack": "^4.12.0",
     "webpack-bundle-analyzer": "^2.13.1",
+    "@angular-devkit/core": "^0.6.8",
     "webpack-cli": "^3.0.8"
   },
-  "files": [
-    "lib/"
-  ],
+  "files": ["lib/"],
   "importSort": {
     ".js, .jsx": {
       "parser": "babylon",
