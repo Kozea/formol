@@ -56,7 +56,9 @@ export default {
             [
               '@babel/preset-env',
               {
-                targets: ['> 3% in FR', 'last 2 versions', 'not ie <= 10'],
+                targets: {
+                  browsers: ['> 3%', 'last 2 versions', 'not ie <= 10'],
+                },
                 modules: false,
               },
             ],

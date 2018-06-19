@@ -1,3 +1,7 @@
+### [1.1.9](https://github.com/Kozea/formol/compare/v1.1.8...v1.1.9)
+
+* Add a money type.
+
 ### [1.1.8](https://github.com/Kozea/formol/compare/v1.1.7...v1.1.8)
 
 * Use decorators for context and export contexts

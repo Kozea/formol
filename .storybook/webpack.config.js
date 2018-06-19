@@ -32,7 +32,7 @@ module.exports = (baseConfig, env) => {
         [
           '@babel/preset-env',
           {
-            targets: ['> 3% in FR', 'last 2 versions', 'not ie <= 10'],
+            targets: { browsers: ['> 3%', 'last 2 versions', 'not ie <= 10'] },
             modules: false,
           },
         ],
@@ -73,6 +73,6 @@ module.exports = (baseConfig, env) => {
   )
 
   baseConfig.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }))
-
+  baseConfig.resolve.extensions = ['.js', '.jsx', '.json']
   return baseConfig
 }
