@@ -129,6 +129,9 @@ export const knobs = name => {
     knob.max = number('Max', null, {}, name)
     knob.step = number('Step', null, {}, name)
   }
+  if (name === 'range') {
+    knob.noLabels = boolean('No Labels', false, name)
+  }
   if (['text', 'search', 'tel', 'url', 'email', 'password'].includes(name)) {
     knob.size = number('Size', null, {}, name)
   }
