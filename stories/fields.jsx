@@ -125,7 +125,7 @@ export const knobs = name => {
     knob.multiple = boolean('Multiple', false, name)
   }
   if (['number', 'range', 'money'].includes(name)) {
-    knob.min = number('Min', null, { range: true }, name)
+    knob.min = number('Min', null, name)
     knob.max = number('Max', null, {}, name)
     knob.step = number('Step', null, {}, name)
   }
