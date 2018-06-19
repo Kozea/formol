@@ -6,7 +6,7 @@ import { diff } from '../src/utils/object'
 
 export const withStateForm = (form, initial) =>
   withState({ transient: initial, item: initial })(({ store }) => {
-    const delay = number('Fake delay (ms)', '', 'form')
+    const delay = number('Fake delay (ms)', null, {}, 'form')
     return form({
       onSubmit: async (item, transient, names) => {
         await new Promise(resolve => setTimeout(resolve, delay))

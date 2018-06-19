@@ -6,6 +6,14 @@ import Formol from '../src'
 import { knobs, testFieldValue, typeFields } from './fields'
 import { withStateForm } from './utils'
 
+const filterDefined = o =>
+  Object.entries(o).reduce((filtered, [k, v]) => {
+    if (v || v === 0) {
+      filtered[k] = v
+    }
+    return filtered
+  }, {})
+
 storiesOf('Field Test', module)
 
 const fieldStory = storiesOf('Field Test/Fields', module).addDecorator(
@@ -17,7 +25,7 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
     withStateForm(props => (
       <Formol {...props}>
         <h1>{name}</h1>
-        <TypeField {...knobs(name)} />
+        <TypeField {...filterDefined(knobs(name))} />
       </Formol>
     ))
   )
@@ -34,7 +42,7 @@ Object.entries(typeFields).forEach(([name, TypeField]) => {
       props => (
         <Formol {...props}>
           <h1>{name}</h1>
-          <TypeField {...knobs(name)} />
+          <TypeField {...filterDefined(knobs(name))} />
         </Formol>
       ),
       { [name]: testFieldValue(name) }

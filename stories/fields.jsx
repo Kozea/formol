@@ -124,16 +124,16 @@ export const knobs = name => {
   if (['file', 'select', 'select-menu'].includes(name)) {
     knob.multiple = boolean('Multiple', false, name)
   }
-  if (['number', 'range'].includes(name)) {
-    knob.min = number('Min', '', name)
-    knob.max = number('Max', '', name)
-    knob.step = number('Step', '', name)
+  if (['number', 'range', 'money'].includes(name)) {
+    knob.min = number('Min', null, { range: true }, name)
+    knob.max = number('Max', null, {}, name)
+    knob.step = number('Step', null, {}, name)
   }
   if (['text', 'search', 'tel', 'url', 'email', 'password'].includes(name)) {
-    knob.size = number('Size', '', name)
+    knob.size = number('Size', null, {}, name)
   }
   if (name === 'money') {
-    knob.precision = number('Precision', '', name)
+    knob.precision = number('Precision', null, {}, name)
   }
   return knob
 }

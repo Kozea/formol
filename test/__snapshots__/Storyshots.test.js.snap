@@ -2235,7 +2235,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
           "focus": false,
           "modified": false,
           "name": "area",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "area",
         },
@@ -2272,7 +2272,6 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
       }
     >
       <textarea
-        autoFocus={false}
         className={
           Block {
             "block": "TextAreaField",
@@ -2308,18 +2307,14 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="area"
-        readOnly={false}
-        required={false}
         value=""
       />
-      
       <span
         className={
           Block {
@@ -2445,7 +2440,7 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
           "focus": false,
           "modified": false,
           "name": "calendar",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "calendar",
         },
@@ -2482,7 +2477,6 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -2608,7 +2602,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
           "focus": false,
           "modified": false,
           "name": "checkbox",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox",
         },
@@ -2645,7 +2639,6 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         checked=""
         className={
           Block {
@@ -2682,17 +2675,14 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="checkbox"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="checkbox"
-        required={false}
         type="checkbox"
       />
-      
       <span
         className={
           Block {
@@ -2818,7 +2808,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           "focus": false,
           "modified": false,
           "name": "checkbox-set",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox-set",
         },
@@ -2931,7 +2921,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -2951,14 +2940,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3007,7 +2994,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3027,14 +3013,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3083,7 +3067,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3103,14 +3086,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3159,7 +3140,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3179,14 +3159,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3235,7 +3213,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3255,14 +3232,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3311,7 +3286,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3331,14 +3305,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3387,7 +3359,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3407,14 +3378,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3463,7 +3432,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3483,14 +3451,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3539,7 +3505,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3559,14 +3524,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3615,7 +3578,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3635,14 +3597,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3691,7 +3651,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3711,14 +3670,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3767,7 +3724,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3787,14 +3743,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3843,7 +3797,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3863,14 +3816,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3919,7 +3870,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -3939,14 +3889,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -3995,7 +3943,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -4015,14 +3962,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -4071,7 +4016,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -4091,14 +4035,12 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -4125,7 +4067,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -4251,7 +4192,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
           "focus": false,
           "modified": false,
           "name": "color",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "color",
         },
@@ -4288,7 +4229,6 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -4341,19 +4281,15 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="color"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="color"
-        readOnly={false}
-        required={false}
         type="color"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4479,7 +4415,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
           "focus": false,
           "modified": false,
           "name": "date",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "date",
         },
@@ -4516,7 +4452,6 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -4569,19 +4504,15 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="date"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="date"
-        readOnly={false}
-        required={false}
         type="date"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4707,7 +4638,7 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
           "focus": false,
           "modified": false,
           "name": "datetimelocal",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "datetimelocal",
         },
@@ -4744,7 +4675,6 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -4797,19 +4727,15 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="datetimelocal"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="datetimelocal"
-        readOnly={false}
-        required={false}
         type="datetimelocal"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -4935,7 +4861,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
           "focus": false,
           "modified": false,
           "name": "email",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "email",
         },
@@ -4972,7 +4898,6 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -5025,20 +4950,15 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="email"
-        readOnly={false}
-        required={false}
-        size=""
         type="email"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -5164,7 +5084,7 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
           "focus": false,
           "modified": false,
           "name": "file",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "file",
         },
@@ -5201,7 +5121,6 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -5327,7 +5246,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
           "focus": false,
           "modified": false,
           "name": "html",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "html",
         },
@@ -5364,7 +5283,6 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -5490,7 +5408,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
           "focus": false,
           "modified": false,
           "name": "money",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "money",
         },
@@ -5527,7 +5445,6 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -5580,7 +5497,6 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         min={0}
         name="money"
         onBlur={[Function]}
@@ -5588,8 +5504,6 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="money"
-        readOnly={false}
-        required={false}
         step="0.01"
         type="number"
         value=""
@@ -5741,7 +5655,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
           "focus": false,
           "modified": false,
           "name": "month",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "month",
         },
@@ -5778,7 +5692,6 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -5831,19 +5744,15 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="month"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="month"
-        readOnly={false}
-        required={false}
         type="month"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -5969,7 +5878,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
           "focus": false,
           "modified": false,
           "name": "number",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -6006,7 +5915,6 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -6059,22 +5967,15 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
-        max=""
-        min=""
         name="number"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="number"
-        readOnly={false}
-        required={false}
-        step=""
         type="number"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -6200,7 +6101,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           "focus": false,
           "modified": false,
           "name": "password",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "password",
         },
@@ -6257,7 +6158,6 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
         }
       >
         <input
-          autoFocus={false}
           className={
             Block {
               "block": "InputField",
@@ -6310,16 +6210,12 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
               "subs": Array [],
             }
           }
-          disabled={false}
           name="password"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="password"
-          readOnly={false}
-          required={false}
-          size=""
           type="password"
           value=""
         />
@@ -6366,7 +6262,6 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           </svg>
         </button>
       </div>
-      
       <span
         className={
           Block {
@@ -6492,7 +6387,7 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
           "focus": false,
           "modified": false,
           "name": "password-strength",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "password-strength",
         },
@@ -6529,7 +6424,6 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -6655,7 +6549,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
           "focus": false,
           "modified": false,
           "name": "radio",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "radio",
         },
@@ -6692,7 +6586,6 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         checked=""
         className={
           Block {
@@ -6729,17 +6622,14 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="radio"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="radio"
-        required={false}
         type="radio"
       />
-      
       <span
         className={
           Block {
@@ -6865,7 +6755,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           "focus": false,
           "modified": false,
           "name": "radio-set",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "radio-set",
         },
@@ -6978,7 +6868,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -6998,14 +6887,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7054,7 +6941,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7074,14 +6960,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7130,7 +7014,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7150,14 +7033,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7206,7 +7087,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7226,14 +7106,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7282,7 +7160,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7302,14 +7179,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7358,7 +7233,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7378,14 +7252,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7434,7 +7306,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7454,14 +7325,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7510,7 +7379,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7530,14 +7398,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7586,7 +7452,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7606,14 +7471,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7662,7 +7525,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7682,14 +7544,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7738,7 +7598,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7758,14 +7617,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7814,7 +7671,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7834,14 +7690,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7890,7 +7744,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7910,14 +7763,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -7966,7 +7817,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -7986,14 +7836,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -8042,7 +7890,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -8062,14 +7909,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -8118,7 +7963,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -8138,14 +7982,12 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -8172,7 +8014,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -8298,7 +8139,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           "focus": false,
           "modified": false,
           "name": "range",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "range",
         },
@@ -8335,7 +8176,6 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -8405,22 +8245,15 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
-        max=""
-        min=""
         name="range"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="range"
-        readOnly={false}
-        required={false}
-        step=""
         type="range"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -8546,7 +8379,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           "focus": false,
           "modified": false,
           "name": "select",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select",
         },
@@ -8583,7 +8416,6 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
       }
     >
       <select
-        autoFocus={false}
         className={
           Block {
             "block": "SelectField",
@@ -8619,15 +8451,12 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
-        multiple={false}
         name="select"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="select"
-        required={false}
         type="select"
         value=""
       >
@@ -8715,7 +8544,6 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           Purple
         </option>
       </select>
-      
       <span
         className={
           Block {
@@ -8841,7 +8669,7 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
           "focus": false,
           "modified": false,
           "name": "select-menu",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select-menu",
         },
@@ -8878,7 +8706,6 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -9004,7 +8831,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           "focus": false,
           "modified": false,
           "name": "switch",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -9106,7 +8933,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           No
         </label>
         <input
-          autoFocus={false}
           checked=""
           className={
             Block {
@@ -9126,7 +8952,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
               "subs": Array [],
             }
           }
-          disabled={false}
           id="switch"
           name="switch"
           onBlur={[Function]}
@@ -9134,7 +8959,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="switch"
-          required={false}
           type="checkbox"
         />
         <label
@@ -9146,7 +8970,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           Yes
         </label>
       </div>
-      
       <span
         className={
           Block {
@@ -9272,7 +9095,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
           "focus": false,
           "modified": false,
           "name": "tel",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "tel",
         },
@@ -9309,7 +9132,6 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -9362,20 +9184,15 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="tel"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="tel"
-        readOnly={false}
-        required={false}
-        size=""
         type="tel"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -9501,7 +9318,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
           "focus": false,
           "modified": false,
           "name": "text",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "text",
         },
@@ -9538,7 +9355,6 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -9574,20 +9390,15 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="text"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="text"
-        readOnly={false}
-        required={false}
-        size=""
         type="text"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -9713,7 +9524,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
           "focus": false,
           "modified": false,
           "name": "time",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "time",
         },
@@ -9750,7 +9561,6 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -9803,19 +9613,15 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="time"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="time"
-        readOnly={false}
-        required={false}
         type="time"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -9941,7 +9747,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
           "focus": false,
           "modified": false,
           "name": "week",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "week",
         },
@@ -9978,7 +9784,6 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -10031,19 +9836,15 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="week"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="week"
-        readOnly={false}
-        required={false}
         type="week"
         value=""
       />
-      
       <span
         className={
           Block {
@@ -10169,7 +9970,7 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
           "focus": false,
           "modified": false,
           "name": "area",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "area",
         },
@@ -10206,7 +10007,6 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
       }
     >
       <textarea
-        autoFocus={false}
         className={
           Block {
             "block": "TextAreaField",
@@ -10242,19 +10042,15 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="area"
-        readOnly={false}
-        required={false}
         value="Text
 Area"
       />
-      
       <span
         className={
           Block {
@@ -10380,7 +10176,7 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
           "focus": false,
           "modified": false,
           "name": "calendar",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "calendar",
         },
@@ -10417,7 +10213,6 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -10543,7 +10338,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
           "focus": false,
           "modified": false,
           "name": "checkbox",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox",
         },
@@ -10580,7 +10375,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         checked={true}
         className={
           Block {
@@ -10617,17 +10411,14 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="checkbox"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="checkbox"
-        required={false}
         type="checkbox"
       />
-      
       <span
         className={
           Block {
@@ -10753,7 +10544,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           "focus": false,
           "modified": false,
           "name": "checkbox-set",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "checkbox-set",
         },
@@ -10866,7 +10657,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -10886,14 +10676,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -10942,7 +10730,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -10962,14 +10749,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11018,7 +10803,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11038,14 +10822,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11094,7 +10876,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11114,14 +10895,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11170,7 +10949,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11190,14 +10968,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11246,7 +11022,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={true}
             className={
               Block {
@@ -11266,14 +11041,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11322,7 +11095,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={true}
             className={
               Block {
@@ -11342,14 +11114,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11398,7 +11168,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11418,14 +11187,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11474,7 +11241,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11494,14 +11260,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11550,7 +11314,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11570,14 +11333,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11626,7 +11387,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11646,14 +11406,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11702,7 +11460,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11722,14 +11479,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11778,7 +11533,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11798,14 +11552,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11854,7 +11606,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11874,14 +11625,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -11930,7 +11679,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -11950,14 +11698,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -12006,7 +11752,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -12026,14 +11771,12 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="checkbox-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="checkbox-set"
-            required={false}
             type="checkbox"
           />
           <span
@@ -12060,7 +11803,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -12186,7 +11928,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
           "focus": false,
           "modified": false,
           "name": "color",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "color",
         },
@@ -12223,7 +11965,6 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -12276,19 +12017,15 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="color"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="color"
-        readOnly={false}
-        required={false}
         type="color"
         value="#123456"
       />
-      
       <span
         className={
           Block {
@@ -12414,7 +12151,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           "focus": false,
           "modified": false,
           "name": "date",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "date",
         },
@@ -12451,7 +12188,6 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -12504,19 +12240,15 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="date"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="date"
-        readOnly={false}
-        required={false}
         type="date"
         value="2018-08-01"
       />
-      
       <span
         className={
           Block {
@@ -12642,7 +12374,7 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
           "focus": false,
           "modified": false,
           "name": "datetimelocal",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "datetimelocal",
         },
@@ -12679,7 +12411,6 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -12732,19 +12463,15 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
             "subs": Array [],
           }
         }
-        disabled={false}
         name="datetimelocal"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="datetimelocal"
-        readOnly={false}
-        required={false}
         type="datetimelocal"
         value="2018-08-01T17:14"
       />
-      
       <span
         className={
           Block {
@@ -12870,7 +12597,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
           "focus": false,
           "modified": false,
           "name": "email",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "email",
         },
@@ -12907,7 +12634,6 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -12960,20 +12686,15 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="email"
-        readOnly={false}
-        required={false}
-        size=""
         type="email"
         value="email@exemple.com"
       />
-      
       <span
         className={
           Block {
@@ -13099,7 +12820,7 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
           "focus": false,
           "modified": false,
           "name": "file",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "file",
         },
@@ -13136,7 +12857,6 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -13262,7 +12982,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
           "focus": false,
           "modified": false,
           "name": "html",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "html",
         },
@@ -13299,7 +13019,6 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -13425,7 +13144,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
           "focus": false,
           "modified": false,
           "name": "money",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "money",
         },
@@ -13462,7 +13181,6 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -13515,7 +13233,6 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         min={0}
         name="money"
         onBlur={[Function]}
@@ -13523,8 +13240,6 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="money"
-        readOnly={false}
-        required={false}
         step="0.01"
         type="number"
         value="12.50"
@@ -13676,7 +13391,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
           "focus": false,
           "modified": false,
           "name": "month",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "month",
         },
@@ -13713,7 +13428,6 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -13766,19 +13480,15 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="month"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="month"
-        readOnly={false}
-        required={false}
         type="month"
         value="2018-08"
       />
-      
       <span
         className={
           Block {
@@ -13904,7 +13614,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
           "focus": false,
           "modified": false,
           "name": "number",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "number",
         },
@@ -13941,7 +13651,6 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -13994,22 +13703,15 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
-        max=""
-        min=""
         name="number"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="number"
-        readOnly={false}
-        required={false}
-        step=""
         type="number"
         value={12}
       />
-      
       <span
         className={
           Block {
@@ -14135,7 +13837,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           "focus": false,
           "modified": false,
           "name": "password",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "password",
         },
@@ -14192,7 +13894,6 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
         }
       >
         <input
-          autoFocus={false}
           className={
             Block {
               "block": "InputField",
@@ -14245,16 +13946,12 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
               "subs": Array [],
             }
           }
-          disabled={false}
           name="password"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="password"
-          readOnly={false}
-          required={false}
-          size=""
           type="password"
           value="password"
         />
@@ -14301,7 +13998,6 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           </svg>
         </button>
       </div>
-      
       <span
         className={
           Block {
@@ -14427,7 +14123,7 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
           "focus": false,
           "modified": false,
           "name": "password-strength",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "password-strength",
         },
@@ -14464,7 +14160,6 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -14590,7 +14285,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
           "focus": false,
           "modified": false,
           "name": "radio",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "radio",
         },
@@ -14627,7 +14322,6 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         checked={true}
         className={
           Block {
@@ -14664,17 +14358,14 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="radio"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="radio"
-        required={false}
         type="radio"
       />
-      
       <span
         className={
           Block {
@@ -14800,7 +14491,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           "focus": false,
           "modified": false,
           "name": "radio-set",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "radio-set",
         },
@@ -14913,7 +14604,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -14933,14 +14623,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -14989,7 +14677,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15009,14 +14696,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15065,7 +14750,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15085,14 +14769,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15141,7 +14823,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15161,14 +14842,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15217,7 +14896,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15237,14 +14915,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15293,7 +14969,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15313,14 +14988,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15369,7 +15042,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={true}
             className={
               Block {
@@ -15389,14 +15061,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15445,7 +15115,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15465,14 +15134,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15521,7 +15188,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15541,14 +15207,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15597,7 +15261,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15617,14 +15280,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15673,7 +15334,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15693,14 +15353,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15749,7 +15407,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15769,14 +15426,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15825,7 +15480,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15845,14 +15499,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15901,7 +15553,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15921,14 +15572,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -15977,7 +15626,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -15997,14 +15645,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -16053,7 +15699,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           }
         >
           <input
-            autoFocus={false}
             checked={false}
             className={
               Block {
@@ -16073,14 +15718,12 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
                 "subs": Array [],
               }
             }
-            disabled={false}
             name="radio-set"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             placeholder="radio-set"
-            required={false}
             type="radio"
           />
           <span
@@ -16107,7 +15750,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           </span>
         </label>
       </fieldset>
-      
       <span
         className={
           Block {
@@ -16233,7 +15875,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           "focus": false,
           "modified": false,
           "name": "range",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "range",
         },
@@ -16270,7 +15912,6 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -16340,22 +15981,15 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
-        max=""
-        min=""
         name="range"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="range"
-        readOnly={false}
-        required={false}
-        step=""
         type="range"
         value="range"
       />
-      
       <span
         className={
           Block {
@@ -16481,7 +16115,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           "focus": false,
           "modified": false,
           "name": "select",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select",
         },
@@ -16518,7 +16152,6 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
       }
     >
       <select
-        autoFocus={false}
         className={
           Block {
             "block": "SelectField",
@@ -16554,15 +16187,12 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
-        multiple={false}
         name="select"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="select"
-        required={false}
         type="select"
         value="#800000"
       >
@@ -16650,7 +16280,6 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           Purple
         </option>
       </select>
-      
       <span
         className={
           Block {
@@ -16776,7 +16405,7 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
           "focus": false,
           "modified": false,
           "name": "select-menu",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "select-menu",
         },
@@ -16813,7 +16442,6 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
       }
     >
       Loading
-      
       <span
         className={
           Block {
@@ -16939,7 +16567,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           "focus": false,
           "modified": false,
           "name": "switch",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "switch",
         },
@@ -17041,7 +16669,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           No
         </label>
         <input
-          autoFocus={false}
           checked={true}
           className={
             Block {
@@ -17061,7 +16688,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
               "subs": Array [],
             }
           }
-          disabled={false}
           id="switch"
           name="switch"
           onBlur={[Function]}
@@ -17069,7 +16695,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           placeholder="switch"
-          required={false}
           type="checkbox"
         />
         <label
@@ -17081,7 +16706,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           Yes
         </label>
       </div>
-      
       <span
         className={
           Block {
@@ -17207,7 +16831,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
           "focus": false,
           "modified": false,
           "name": "tel",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "tel",
         },
@@ -17244,7 +16868,6 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -17297,20 +16920,15 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="tel"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="tel"
-        readOnly={false}
-        required={false}
-        size=""
         type="tel"
         value="1-541-754-3010"
       />
-      
       <span
         className={
           Block {
@@ -17436,7 +17054,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
           "focus": false,
           "modified": false,
           "name": "text",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "text",
         },
@@ -17473,7 +17091,6 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -17509,20 +17126,15 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="text"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="text"
-        readOnly={false}
-        required={false}
-        size=""
         type="text"
         value="text"
       />
-      
       <span
         className={
           Block {
@@ -17648,7 +17260,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
           "focus": false,
           "modified": false,
           "name": "time",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "time",
         },
@@ -17685,7 +17297,6 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -17738,19 +17349,15 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="time"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="time"
-        readOnly={false}
-        required={false}
         type="time"
         value="17:14"
       />
-      
       <span
         className={
           Block {
@@ -17876,7 +17483,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
           "focus": false,
           "modified": false,
           "name": "week",
-          "readOnly": false,
+          "readOnly": undefined,
           "required": false,
           "type": "week",
         },
@@ -17913,7 +17520,6 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
       }
     >
       <input
-        autoFocus={false}
         className={
           Block {
             "block": "InputField",
@@ -17966,19 +17572,15 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
             "subs": Array [],
           }
         }
-        disabled={false}
         name="week"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
         placeholder="week"
-        readOnly={false}
-        required={false}
         type="week"
         value="2018-W12"
       />
-      
       <span
         className={
           Block {
