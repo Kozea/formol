@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import { withState } from '@dump247/storybook-state'
-import { withKnobs } from '@storybook/addon-knobs'
+import { withKnobs } from 'addon-knobs-null-number-fix'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 

@@ -1,4 +1,4 @@
-import addons from '@storybook/addons'
+import addons from ''
 import React from 'react'
 
 export class WithNotes extends React.Component {
