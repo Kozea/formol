@@ -125,12 +125,15 @@ export const knobs = name => {
     knob.multiple = boolean('Multiple', false, name)
   }
   if (['number', 'range'].includes(name)) {
-    knob.min = number('Min', 0, name)
-    knob.max = number('Max', 100, name)
-    knob.step = number('Step', 5, name)
+    knob.min = number('Min', '', name)
+    knob.max = number('Max', '', name)
+    knob.step = number('Step', '', name)
   }
   if (['text', 'search', 'tel', 'url', 'email', 'password'].includes(name)) {
-    knob.size = number('Size', 0, name)
+    knob.size = number('Size', '', name)
+  }
+  if (name === 'money') {
+    knob.precision = number('Precision', '', name)
   }
   return knob
 }

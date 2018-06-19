@@ -3,18 +3,17 @@ import React from 'react'
 import { block } from '../utils'
 import InputField from './InputField'
 
-const MAX_SAFE_INTEGER = 9007199254740991 // Number.MAX_SAFE_INTEGER
-
 @block
 export default class MoneyField extends React.PureComponent {
   static defaultFieldProps = {
     unit: ({ unit, context: { i18n } }) => (unit ? unit : i18n.money.unit),
     normalizer: ({ precision, context: { i18n } }) => value => {
-      precision = precision === void 0 ? i18n.money.precision : precision
+      precision =
+        !precision && precision !== 0 ? i18n.money.precision : precision
       if (!value) {
         return
       }
-      if (value.includes('.')) {
+      if (value.includes('.') && ![...value].every(c => '0.'.includes(c))) {
         const decimalLength = value.split('.')[1].length
         if (decimalLength > precision) {
           value = value.slice(0, precision - decimalLength)
@@ -27,19 +26,25 @@ export default class MoneyField extends React.PureComponent {
   }
 
   render(b) {
-    const { className, precision, ...props } = this.props
-    const order = precision === void 0 ? props.i18n.money.precision : precision
-    if (props.min === void 0) {
+    const { className, precision, onChange, ...props } = this.props
+    const order =
+      !precision && precision !== 0 ? props.i18n.money.precision : precision
+    if (!props.min) {
       props.min = 0
-    }
-    if (props.max === void 0 || props.max > MAX_SAFE_INTEGER) {
-      props.max = MAX_SAFE_INTEGER
     }
     props.type = 'number'
     return (
       <InputField
         className={b.mix(className)}
-        step={Math.pow(10, -order)}
+        onChange={value =>
+          // Convert back exponential notation to classic number
+          onChange(
+            value && value.includes('e')
+              ? parseFloat(value).toFixed(precision)
+              : value
+          )
+        }
+        step={order === 0 ? 1 : `0.${'0'.repeat(order - 1)}1`}
         {...props}
       />
     )

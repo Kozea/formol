@@ -5034,7 +5034,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
         placeholder="email"
         readOnly={false}
         required={false}
-        size={0}
+        size=""
         type="email"
         value=""
       />
@@ -5581,7 +5581,6 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
           }
         }
         disabled={false}
-        max={9007199254740991}
         min={0}
         name="money"
         onBlur={[Function]}
@@ -5591,7 +5590,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
         placeholder="money"
         readOnly={false}
         required={false}
-        step={0.01}
+        step="0.01"
         type="number"
         value=""
       />
@@ -6061,8 +6060,8 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
           }
         }
         disabled={false}
-        max={100}
-        min={0}
+        max=""
+        min=""
         name="number"
         onBlur={[Function]}
         onChange={[Function]}
@@ -6071,7 +6070,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
         placeholder="number"
         readOnly={false}
         required={false}
-        step={5}
+        step=""
         type="number"
         value=""
       />
@@ -6320,7 +6319,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           placeholder="password"
           readOnly={false}
           required={false}
-          size={0}
+          size=""
           type="password"
           value=""
         />
@@ -8407,8 +8406,8 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           }
         }
         disabled={false}
-        max={100}
-        min={0}
+        max=""
+        min=""
         name="range"
         onBlur={[Function]}
         onChange={[Function]}
@@ -8417,7 +8416,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
         placeholder="range"
         readOnly={false}
         required={false}
-        step={5}
+        step=""
         type="range"
         value=""
       />
@@ -9372,7 +9371,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
         placeholder="tel"
         readOnly={false}
         required={false}
-        size={0}
+        size=""
         type="tel"
         value=""
       />
@@ -9584,7 +9583,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
         placeholder="text"
         readOnly={false}
         required={false}
-        size={0}
+        size=""
         type="text"
         value=""
       />
@@ -12970,7 +12969,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
         placeholder="email"
         readOnly={false}
         required={false}
-        size={0}
+        size=""
         type="email"
         value="email@exemple.com"
       />
@@ -13517,7 +13516,6 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
           }
         }
         disabled={false}
-        max={9007199254740991}
         min={0}
         name="money"
         onBlur={[Function]}
@@ -13527,7 +13525,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
         placeholder="money"
         readOnly={false}
         required={false}
-        step={0.01}
+        step="0.01"
         type="number"
         value="12.50"
       />
@@ -13997,8 +13995,8 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
           }
         }
         disabled={false}
-        max={100}
-        min={0}
+        max=""
+        min=""
         name="number"
         onBlur={[Function]}
         onChange={[Function]}
@@ -14007,7 +14005,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
         placeholder="number"
         readOnly={false}
         required={false}
-        step={5}
+        step=""
         type="number"
         value={12}
       />
@@ -14256,7 +14254,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           placeholder="password"
           readOnly={false}
           required={false}
-          size={0}
+          size=""
           type="password"
           value="password"
         />
@@ -16343,8 +16341,8 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           }
         }
         disabled={false}
-        max={100}
-        min={0}
+        max=""
+        min=""
         name="range"
         onBlur={[Function]}
         onChange={[Function]}
@@ -16353,7 +16351,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
         placeholder="range"
         readOnly={false}
         required={false}
-        step={5}
+        step=""
         type="range"
         value="range"
       />
@@ -17308,7 +17306,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
         placeholder="tel"
         readOnly={false}
         required={false}
-        size={0}
+        size=""
         type="tel"
         value="1-541-754-3010"
       />
@@ -17520,7 +17518,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
         placeholder="text"
         readOnly={false}
         required={false}
-        size={0}
+        size=""
         type="text"
         value="text"
       />
