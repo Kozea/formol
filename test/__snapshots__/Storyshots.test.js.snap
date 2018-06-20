@@ -20568,20 +20568,12 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
   <div
     className={
       Block {
-        "block": "Field",
+        "block": "Inliner",
         "cache": Array [],
         "element": null,
         "mixed": Array [],
-        "modifier": Object {
-          "error": false,
-          "focus": false,
-          "modified": false,
-          "name": "zip",
-          "readOnly": undefined,
-          "required": false,
-          "type": undefined,
-        },
-        "s": "Formol_Field Formol_Field--name-zip",
+        "modifier": Object {},
+        "s": "Formol_Inliner",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -20593,15 +20585,23 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
           "cache": Array [],
-          "element": "label",
+          "element": null,
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "error": false,
+            "focus": false,
+            "modified": false,
+            "name": "zip",
+            "readOnly": undefined,
+            "required": false,
+            "type": undefined,
+          },
+          "s": "Formol_Field Formol_Field--name-zip",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -20613,59 +20613,15 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         }
       }
     >
-      <input
-        className={
-          Block {
-            "block": "InputField",
-            "cache": Array [],
-            "element": null,
-            "mixed": Array [
-              Block {
-                "block": "Field",
-                "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
-                "modifier": Object {},
-                "s": "Formol_Field__field",
-                "settings": Object {
-                  "cache": false,
-                  "elementDelimiter": "__",
-                  "modifierDelimiter": "--",
-                  "modifierValueDelimiter": "-",
-                  "namespace": "Formol_",
-                },
-                "subs": Array [],
-              },
-            ],
-            "modifier": Object {},
-            "s": "Formol_InputField Formol_Field__field",
-            "settings": Object {
-              "cache": false,
-              "elementDelimiter": "__",
-              "modifierDelimiter": "--",
-              "modifierValueDelimiter": "-",
-              "namespace": "Formol_",
-            },
-            "subs": Array [],
-          }
-        }
-        name="zip"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        type="text"
-        value=""
-      />
-      <span
+      <label
         className={
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "label",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__label",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20677,47 +20633,92 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           }
         }
       >
-        Zip code
-      </span>
-    </label>
-  </div>
-  <div
-    className={
-      Block {
-        "block": "Field",
-        "cache": Array [],
-        "element": null,
-        "mixed": Array [],
-        "modifier": Object {
-          "error": false,
-          "focus": false,
-          "modified": false,
-          "name": "city",
-          "readOnly": undefined,
-          "required": false,
-          "type": undefined,
-        },
-        "s": "Formol_Field Formol_Field--name-city",
-        "settings": Object {
-          "cache": false,
-          "elementDelimiter": "__",
-          "modifierDelimiter": "--",
-          "modifierValueDelimiter": "-",
-          "namespace": "Formol_",
-        },
-        "subs": Array [],
-      }
-    }
-  >
-    <label
+        <input
+          className={
+            Block {
+              "block": "InputField",
+              "cache": Array [],
+              "element": null,
+              "mixed": Array [
+                Block {
+                  "block": "Field",
+                  "cache": Array [],
+                  "element": "field",
+                  "mixed": Array [],
+                  "modifier": Object {},
+                  "s": "Formol_Field__field",
+                  "settings": Object {
+                    "cache": false,
+                    "elementDelimiter": "__",
+                    "modifierDelimiter": "--",
+                    "modifierValueDelimiter": "-",
+                    "namespace": "Formol_",
+                  },
+                  "subs": Array [],
+                },
+              ],
+              "modifier": Object {},
+              "s": "Formol_InputField Formol_Field__field",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          name="zip"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          size={5}
+          type="text"
+          value=""
+        />
+        <span
+          className={
+            Block {
+              "block": "Field",
+              "cache": Array [],
+              "element": "label-text",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_Field__label-text",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          Zip code
+        </span>
+      </label>
+    </div>
+    <div
       className={
         Block {
           "block": "Field",
           "cache": Array [],
-          "element": "label",
+          "element": null,
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "error": false,
+            "focus": false,
+            "modified": false,
+            "name": "city",
+            "readOnly": undefined,
+            "required": false,
+            "type": undefined,
+          },
+          "s": "Formol_Field Formol_Field--name-city",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -20729,59 +20730,15 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         }
       }
     >
-      <input
-        className={
-          Block {
-            "block": "InputField",
-            "cache": Array [],
-            "element": null,
-            "mixed": Array [
-              Block {
-                "block": "Field",
-                "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
-                "modifier": Object {},
-                "s": "Formol_Field__field",
-                "settings": Object {
-                  "cache": false,
-                  "elementDelimiter": "__",
-                  "modifierDelimiter": "--",
-                  "modifierValueDelimiter": "-",
-                  "namespace": "Formol_",
-                },
-                "subs": Array [],
-              },
-            ],
-            "modifier": Object {},
-            "s": "Formol_InputField Formol_Field__field",
-            "settings": Object {
-              "cache": false,
-              "elementDelimiter": "__",
-              "modifierDelimiter": "--",
-              "modifierValueDelimiter": "-",
-              "namespace": "Formol_",
-            },
-            "subs": Array [],
-          }
-        }
-        name="city"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        type="text"
-        value=""
-      />
-      <span
+      <label
         className={
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "label",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__label",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20793,9 +20750,74 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           }
         }
       >
-        City
-      </span>
-    </label>
+        <input
+          className={
+            Block {
+              "block": "InputField",
+              "cache": Array [],
+              "element": null,
+              "mixed": Array [
+                Block {
+                  "block": "Field",
+                  "cache": Array [],
+                  "element": "field",
+                  "mixed": Array [],
+                  "modifier": Object {},
+                  "s": "Formol_Field__field",
+                  "settings": Object {
+                    "cache": false,
+                    "elementDelimiter": "__",
+                    "modifierDelimiter": "--",
+                    "modifierValueDelimiter": "-",
+                    "namespace": "Formol_",
+                  },
+                  "subs": Array [],
+                },
+              ],
+              "modifier": Object {},
+              "s": "Formol_InputField Formol_Field__field",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          name="city"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+        <span
+          className={
+            Block {
+              "block": "Field",
+              "cache": Array [],
+              "element": "label-text",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_Field__label-text",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          City
+        </span>
+      </label>
+    </div>
   </div>
   <input
     style={
@@ -22632,20 +22654,12 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
   <div
     className={
       Block {
-        "block": "Field",
+        "block": "Inliner",
         "cache": Array [],
         "element": null,
         "mixed": Array [],
-        "modifier": Object {
-          "error": false,
-          "focus": false,
-          "modified": false,
-          "name": "zip",
-          "readOnly": undefined,
-          "required": false,
-          "type": undefined,
-        },
-        "s": "Formol_Field Formol_Field--name-zip",
+        "modifier": Object {},
+        "s": "Formol_Inliner",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -22657,15 +22671,23 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
           "cache": Array [],
-          "element": "label",
+          "element": null,
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "error": false,
+            "focus": false,
+            "modified": false,
+            "name": "zip",
+            "readOnly": undefined,
+            "required": false,
+            "type": undefined,
+          },
+          "s": "Formol_Field Formol_Field--name-zip",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -22677,59 +22699,15 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         }
       }
     >
-      <input
-        className={
-          Block {
-            "block": "InputField",
-            "cache": Array [],
-            "element": null,
-            "mixed": Array [
-              Block {
-                "block": "Field",
-                "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
-                "modifier": Object {},
-                "s": "Formol_Field__field",
-                "settings": Object {
-                  "cache": false,
-                  "elementDelimiter": "__",
-                  "modifierDelimiter": "--",
-                  "modifierValueDelimiter": "-",
-                  "namespace": "Formol_",
-                },
-                "subs": Array [],
-              },
-            ],
-            "modifier": Object {},
-            "s": "Formol_InputField Formol_Field__field",
-            "settings": Object {
-              "cache": false,
-              "elementDelimiter": "__",
-              "modifierDelimiter": "--",
-              "modifierValueDelimiter": "-",
-              "namespace": "Formol_",
-            },
-            "subs": Array [],
-          }
-        }
-        name="zip"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        type="text"
-        value="69030"
-      />
-      <span
+      <label
         className={
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "label",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__label",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -22741,47 +22719,92 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           }
         }
       >
-        Zip code
-      </span>
-    </label>
-  </div>
-  <div
-    className={
-      Block {
-        "block": "Field",
-        "cache": Array [],
-        "element": null,
-        "mixed": Array [],
-        "modifier": Object {
-          "error": false,
-          "focus": false,
-          "modified": false,
-          "name": "city",
-          "readOnly": undefined,
-          "required": false,
-          "type": undefined,
-        },
-        "s": "Formol_Field Formol_Field--name-city",
-        "settings": Object {
-          "cache": false,
-          "elementDelimiter": "__",
-          "modifierDelimiter": "--",
-          "modifierValueDelimiter": "-",
-          "namespace": "Formol_",
-        },
-        "subs": Array [],
-      }
-    }
-  >
-    <label
+        <input
+          className={
+            Block {
+              "block": "InputField",
+              "cache": Array [],
+              "element": null,
+              "mixed": Array [
+                Block {
+                  "block": "Field",
+                  "cache": Array [],
+                  "element": "field",
+                  "mixed": Array [],
+                  "modifier": Object {},
+                  "s": "Formol_Field__field",
+                  "settings": Object {
+                    "cache": false,
+                    "elementDelimiter": "__",
+                    "modifierDelimiter": "--",
+                    "modifierValueDelimiter": "-",
+                    "namespace": "Formol_",
+                  },
+                  "subs": Array [],
+                },
+              ],
+              "modifier": Object {},
+              "s": "Formol_InputField Formol_Field__field",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          name="zip"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          size={5}
+          type="text"
+          value="69030"
+        />
+        <span
+          className={
+            Block {
+              "block": "Field",
+              "cache": Array [],
+              "element": "label-text",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_Field__label-text",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          Zip code
+        </span>
+      </label>
+    </div>
+    <div
       className={
         Block {
           "block": "Field",
           "cache": Array [],
-          "element": "label",
+          "element": null,
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "error": false,
+            "focus": false,
+            "modified": false,
+            "name": "city",
+            "readOnly": undefined,
+            "required": false,
+            "type": undefined,
+          },
+          "s": "Formol_Field Formol_Field--name-city",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -22793,59 +22816,15 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         }
       }
     >
-      <input
-        className={
-          Block {
-            "block": "InputField",
-            "cache": Array [],
-            "element": null,
-            "mixed": Array [
-              Block {
-                "block": "Field",
-                "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
-                "modifier": Object {},
-                "s": "Formol_Field__field",
-                "settings": Object {
-                  "cache": false,
-                  "elementDelimiter": "__",
-                  "modifierDelimiter": "--",
-                  "modifierValueDelimiter": "-",
-                  "namespace": "Formol_",
-                },
-                "subs": Array [],
-              },
-            ],
-            "modifier": Object {},
-            "s": "Formol_InputField Formol_Field__field",
-            "settings": Object {
-              "cache": false,
-              "elementDelimiter": "__",
-              "modifierDelimiter": "--",
-              "modifierValueDelimiter": "-",
-              "namespace": "Formol_",
-            },
-            "subs": Array [],
-          }
-        }
-        name="city"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        type="text"
-        value="Haigler"
-      />
-      <span
+      <label
         className={
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "label",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__label",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -22857,9 +22836,74 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           }
         }
       >
-        City
-      </span>
-    </label>
+        <input
+          className={
+            Block {
+              "block": "InputField",
+              "cache": Array [],
+              "element": null,
+              "mixed": Array [
+                Block {
+                  "block": "Field",
+                  "cache": Array [],
+                  "element": "field",
+                  "mixed": Array [],
+                  "modifier": Object {},
+                  "s": "Formol_Field__field",
+                  "settings": Object {
+                    "cache": false,
+                    "elementDelimiter": "__",
+                    "modifierDelimiter": "--",
+                    "modifierValueDelimiter": "-",
+                    "namespace": "Formol_",
+                  },
+                  "subs": Array [],
+                },
+              ],
+              "modifier": Object {},
+              "s": "Formol_InputField Formol_Field__field",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+          name="city"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value="Haigler"
+        />
+        <span
+          className={
+            Block {
+              "block": "Field",
+              "cache": Array [],
+              "element": "label-text",
+              "mixed": Array [],
+              "modifier": Object {},
+              "s": "Formol_Field__label-text",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          City
+        </span>
+      </label>
+    </div>
   </div>
   <input
     style={

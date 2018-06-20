@@ -1,6 +1,7 @@
 // This is not optimal, we might need to find a better solution
 export default from './Formol'
 export Field from './Field'
+export Inliner from './Inliner'
 export Conditional from './Conditional'
 export FormolContextWrapper, { FormolContext } from './FormolContext'
 export ConditionalContextWrapper, {

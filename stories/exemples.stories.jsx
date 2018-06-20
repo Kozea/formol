@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import { withKnobs } from 'addon-knobs-null-number-fix'
 import React from 'react'
 
-import Formol, { Conditional, Field } from '../src'
+import Formol, { Conditional, Field, Inliner } from '../src'
 import { countries } from './fields'
 import molecule from './molecule.svg.base64'
 import { withStateForm } from './utils'
@@ -85,8 +85,12 @@ storiesOf('Formol exemples', module)
           Phone Number
         </Field>
         <Field name="address">Adress</Field>
-        <Field name="zip">Zip code</Field>
-        <Field name="city">City</Field>
+        <Inliner>
+          <Field name="zip" size={5}>
+            Zip code
+          </Field>
+          <Field name="city">City</Field>
+        </Inliner>
       </Formol>
     ))
   )
@@ -141,8 +145,12 @@ storiesOf('Formol exemples', module)
             Phone Number
           </Field>
           <Field name="address">Adress</Field>
-          <Field name="zip">Zip code</Field>
-          <Field name="city">City</Field>
+          <Inliner>
+            <Field name="zip" size={5}>
+              Zip code
+            </Field>
+            <Field name="city">City</Field>
+          </Inliner>
         </Formol>
       ),
       personExemple
