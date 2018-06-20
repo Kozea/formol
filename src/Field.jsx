@@ -63,8 +63,8 @@ export default class Field extends React.PureComponent {
     if (
       get(transientItem, name) !== get(oldTransientItem, name) ||
       (Object.keys(propsDiff).length &&
-        Object.keys(propsDiff).every(
-          prop => !['context', 'conditionalContext'].includes(prop)
+        !Object.keys(propsDiff).every(prop =>
+          ['context', 'conditionalContext'].includes(prop)
         ))
     ) {
       handleChanged(name)
