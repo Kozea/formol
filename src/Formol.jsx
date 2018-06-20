@@ -99,9 +99,11 @@ export default class Formol extends React.PureComponent {
         i18n: Formol.i18n[i18n],
         errors: errorsUnknown,
         readOnly,
+        enteredFields: [],
         register: this.register.bind(this),
         unregister: this.unregister.bind(this),
         handleKeyDown: this.handleKeyDown.bind(this),
+        handleEntered: this.handleEntered.bind(this),
         handleChange: this.handleChange.bind(this),
         handleChanged: this.handleChanged.bind(this),
       },
@@ -170,10 +172,10 @@ export default class Formol extends React.PureComponent {
     delete this.fields.validators[name]
   }
 
-  setStateNewItem(transientItem) {
+  setStateNewItem(transientItem, extra = {}) {
     const { item, onChange } = this.props
     const modified = isModified(transientItem, item, this.fields.names)
-    this.setStateContext({ transientItem }, { modified })
+    this.setStateContext({ transientItem, ...extra }, { modified })
     onChange && onChange(transientItem)
   }
 
@@ -183,7 +185,14 @@ export default class Formol extends React.PureComponent {
 
   handleCancel() {
     const { item } = this.props
-    this.setStateNewItem({ ...item })
+    this.setStateNewItem({ ...item }, { enteredFields: [] })
+  }
+
+  handleEntered(name) {
+    const { enteredFields } = this.state.context
+    this.setStateContext({
+      enteredFields: [...enteredFields.filter(field => field !== name), name],
+    })
   }
 
   async handleSubmit() {
@@ -219,7 +228,7 @@ export default class Formol extends React.PureComponent {
         // No errors on submit
         if (item === emptyItem) {
           // Resetting form if no item was given
-          this.setStateNewItem({ ...item })
+          this.handleCancel()
         }
       }
     } else if (form.reportValidity) {
