@@ -4598,7 +4598,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
 </form>
 `;
 
-exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
+exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
 <form
   className={
     Block {
@@ -4624,7 +4624,7 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    datetimelocal
+    datetime-local
   </h1>
   <div
     className={
@@ -4637,12 +4637,12 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
           "error": false,
           "focus": false,
           "modified": false,
-          "name": "datetimelocal",
+          "name": "datetime-local",
           "readOnly": undefined,
           "required": false,
-          "type": "datetimelocal",
+          "type": "datetime-local",
         },
-        "s": "Formol_Field Formol_Field--type-datetimelocal Formol_Field--name-datetimelocal",
+        "s": "Formol_Field Formol_Field--type-datetime-local Formol_Field--name-datetime-local",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -4727,13 +4727,13 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
             "subs": Array [],
           }
         }
-        name="datetimelocal"
+        name="datetime-local"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        placeholder="datetimelocal"
-        type="datetimelocal"
+        placeholder="datetime-local"
+        type="datetime-local"
         value=""
       />
       <span
@@ -4756,7 +4756,7 @@ exports[`Storyshots Field Test/Fields datetimelocal field 1`] = `
           }
         }
       >
-        datetimelocal
+        datetime-local
       </span>
     </label>
   </div>
@@ -12422,7 +12422,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
 </form>
 `;
 
-exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`] = `
+exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`] = `
 <form
   className={
     Block {
@@ -12448,7 +12448,7 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
   onSubmit={[Function]}
 >
   <h1>
-    datetimelocal
+    datetime-local
   </h1>
   <div
     className={
@@ -12461,12 +12461,12 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
           "error": false,
           "focus": false,
           "modified": false,
-          "name": "datetimelocal",
+          "name": "datetime-local",
           "readOnly": undefined,
           "required": false,
-          "type": "datetimelocal",
+          "type": "datetime-local",
         },
-        "s": "Formol_Field Formol_Field--type-datetimelocal Formol_Field--name-datetimelocal",
+        "s": "Formol_Field Formol_Field--type-datetime-local Formol_Field--name-datetime-local",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -12551,14 +12551,14 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
             "subs": Array [],
           }
         }
-        name="datetimelocal"
+        name="datetime-local"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
-        placeholder="datetimelocal"
-        type="datetimelocal"
-        value="2018-08-01T17:14"
+        placeholder="datetime-local"
+        type="datetime-local"
+        value="datetime-local"
       />
       <span
         className={
@@ -12580,7 +12580,7 @@ exports[`Storyshots Field Test/Fields with initial value datetimelocal field 1`]
           }
         }
       >
-        datetimelocal
+        datetime-local
       </span>
     </label>
   </div>

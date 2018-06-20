@@ -47,7 +47,7 @@ export default class Formol extends React.PureComponent {
     color: ColorField,
     date: DateField,
     time: TimeField,
-    datetimelocal: DatetimeLocalField,
+    'datetime-local': DatetimeLocalField,
     month: MonthField,
     week: WeekField,
     range: RangeField,
