@@ -33,6 +33,7 @@ import { get, insert, isModified } from './utils/object'
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
+const emptyItem = {}
 
 @block
 export default class Formol extends React.PureComponent {
@@ -70,7 +71,7 @@ export default class Formol extends React.PureComponent {
   }
 
   static defaultProps = {
-    item: {},
+    item: emptyItem,
     types: {},
     i18n: 'en',
     focusNextOnEnter: false,
@@ -199,18 +200,26 @@ export default class Formol extends React.PureComponent {
         return
       }
       this.setState({ loading: false })
-      if (errors) {
-        if (
-          errors.constructor !== Object ||
-          Object.values(errors).some(v => v && typeof v !== 'string')
-        ) {
-          console.error(
-            `onSubmit return value must be a mapping of server errors
+      if (
+        (errors && errors.constructor !== Object) ||
+        Object.values(errors).some(v => v && typeof v !== 'string')
+      ) {
+        console.error(
+          `onSubmit return value must be a mapping of server errors
             (ie: { fieldName: 'error' }) got:`,
-            errors
-          )
-        } else {
-          this.setStateContext({ errors })
+          errors
+        )
+      }
+      if (errors) {
+        // There are some errors, setting them
+        this.setStateContext({ errors })
+      }
+
+      if (!errors || !Object.keys(errors).length) {
+        // No errors on submit
+        if (item === emptyItem) {
+          // Resetting form if no item was given
+          this.setStateNewItem({ ...item })
         }
       }
     } else if (form.reportValidity) {
