@@ -208,7 +208,6 @@ export default class FileField extends React.PureComponent {
       readOnly,
       disabled,
       elementRef,
-      rejectedMessage,
       onChange,
       onKeyDown,
       ...inputProps

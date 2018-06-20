@@ -1,5 +1,5 @@
-import { withKnobs } from 'addon-knobs-null-number-fix'
 import { storiesOf } from '@storybook/react'
+import { withKnobs } from 'addon-knobs-null-number-fix'
 import React from 'react'
 
 import Formol, { Conditional, Field } from '../src'
@@ -55,7 +55,6 @@ storiesOf('Formol exemples', module)
           name="avatar"
           accept="image/*"
           placeholder="Drop your avatar here"
-          rejectedMessage="Your avatar is invalid"
         >
           Avatar
         </Field>
@@ -112,7 +111,6 @@ storiesOf('Formol exemples', module)
             name="avatar"
             accept="image/*"
             placeholder="Drop your avatar here"
-            rejectedMessage="Your avatar is invalid"
           >
             Avatar
           </Field>
