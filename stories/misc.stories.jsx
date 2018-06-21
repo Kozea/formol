@@ -179,6 +179,17 @@ storiesOf('Miscellaneous', module)
           <Field multiple name="multiple" type="select" choices={objectChoices}>
             Object select multiple
           </Field>
+          <Field name="simple-menu" type="select-menu" choices={objectChoices}>
+            Object select menu
+          </Field>
+          <Field
+            multiple
+            name="multiple-menu"
+            type="select-menu"
+            choices={objectChoices}
+          >
+            Object select multiple menu
+          </Field>
         </Formol>
       ),
       {
@@ -189,6 +200,26 @@ storiesOf('Miscellaneous', module)
           gender: 'man',
         },
         multiple: [
+          {
+            id: 'pbeesly',
+            name: 'Beesly',
+            firstname: 'Pam',
+            gender: 'woman',
+          },
+          {
+            id: 'dkschrute',
+            name: 'K. Schrute',
+            firstname: 'Dwight',
+            gender: 'man',
+          },
+        ],
+        'simple-menu': {
+          id: 'dkschrute',
+          name: 'K. Schrute',
+          firstname: 'Dwight',
+          gender: 'man',
+        },
+        'multiple-menu': [
           {
             id: 'pbeesly',
             name: 'Beesly',

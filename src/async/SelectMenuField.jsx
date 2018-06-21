@@ -4,7 +4,9 @@ import React from 'react'
 import Select from 'react-select'
 
 import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
+import memoizedChoices from '../utils/memoizedChoices'
 
+@memoizedChoices
 @block
 export default class SelectMenuField extends React.PureComponent {
   constructor(props) {
@@ -22,36 +24,29 @@ export default class SelectMenuField extends React.PureComponent {
   }
 
   handleChange(newValue) {
-    const { multiple, nonStringValue, onChange } = this.props
-    const maybeParse = v => (nonStringValue ? JSON.parse(v) : v)
+    const { multiple, onChange } = this.props
     return onChange(
       newValue &&
-        (multiple
-          ? newValue.map(({ value }) => maybeParse(value))
-          : maybeParse(newValue.value))
+        (multiple ? newValue.map(({ value }) => value) : newValue.value)
     )
   }
 
   render(b) {
-    const normalizedChoices = normalizeChoices(this.props)
     const {
       i18n,
       className,
       multiple,
       readOnly,
       value,
-      nonStringValue,
+      choices,
       ...inputProps
-    } = normalizeMultipleProps(this.props)
+    } = this.props
     delete inputProps.onChange
-    const maybeStringify = v => (nonStringValue ? JSON.stringify(v) : v)
-    const options = normalizedChoices.map(([label, choice]) => ({
-      value: maybeStringify(choice),
+    const options = choices.map(([label, choice]) => ({
+      value: choice,
       label,
     }))
-    const strValue = multiple
-      ? value.map(maybeStringify)
-      : maybeStringify(value)
+
     return (
       <Select
         className={b.mix(className).s}
@@ -59,7 +54,7 @@ export default class SelectMenuField extends React.PureComponent {
         disabled={readOnly /* There's no readOnly */}
         options={options}
         multi={multiple}
-        value={strValue}
+        value={value}
         onChange={this.handleChange}
         {...inputProps}
       />

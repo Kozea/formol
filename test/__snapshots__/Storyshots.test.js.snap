@@ -8504,26 +8504,6 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
       }
     >
       <select
-        choices={
-          Object {
-            "Aqua": "#00ffff",
-            "Black": 0,
-            "Blue": "#0000ff",
-            "Fuchsia": "#ff00ff",
-            "Gray": "#808080",
-            "Green": "#008000",
-            "Lime": "#00ff00",
-            "Maroon": "#800000",
-            "Navy": "#000080",
-            "Olive": "#808000",
-            "Purple": "#800080",
-            "Red": "#ff0000",
-            "Silver": "#c0c0c0",
-            "Teal": "#008080",
-            "White": "#ffffff",
-            "Yellow": "#ffff00",
-          }
-        }
         className={
           Block {
             "block": "SelectField",
@@ -16348,26 +16328,6 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
       }
     >
       <select
-        choices={
-          Object {
-            "Aqua": "#00ffff",
-            "Black": 0,
-            "Blue": "#0000ff",
-            "Fuchsia": "#ff00ff",
-            "Gray": "#808080",
-            "Green": "#008000",
-            "Lime": "#00ff00",
-            "Maroon": "#800000",
-            "Navy": "#000080",
-            "Olive": "#808000",
-            "Purple": "#800080",
-            "Red": "#ff0000",
-            "Silver": "#c0c0c0",
-            "Teal": "#008080",
-            "White": "#ffffff",
-            "Yellow": "#ffff00",
-          }
-        }
         className={
           Block {
             "block": "SelectField",
@@ -19320,38 +19280,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       }
     >
       <select
-        choices={
-          Array [
-            "Austria",
-            "Belgium",
-            "Bulgaria",
-            "Croatia",
-            "Cyprus",
-            "Czech Republic",
-            "Denmark",
-            "Estonia",
-            "Finland",
-            "France",
-            "Germany",
-            "Greece",
-            "Hungary",
-            "Ireland",
-            "Italy",
-            "Latvia",
-            "Lithuania",
-            "Luxembourg",
-            "Malta",
-            "Netherlands",
-            "Poland",
-            "Portugal",
-            "Romania",
-            "Slovakia",
-            "Slovenia",
-            "Spain",
-            "Sweden",
-            "United Kingdom",
-          ]
-        }
         className={
           Block {
             "block": "SelectField",
@@ -21264,38 +21192,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       }
     >
       <select
-        choices={
-          Array [
-            "Austria",
-            "Belgium",
-            "Bulgaria",
-            "Croatia",
-            "Cyprus",
-            "Czech Republic",
-            "Denmark",
-            "Estonia",
-            "Finland",
-            "France",
-            "Germany",
-            "Greece",
-            "Hungary",
-            "Ireland",
-            "Italy",
-            "Latvia",
-            "Lithuania",
-            "Luxembourg",
-            "Malta",
-            "Netherlands",
-            "Poland",
-            "Portugal",
-            "Romania",
-            "Slovakia",
-            "Slovenia",
-            "Spain",
-            "Sweden",
-            "United Kingdom",
-          ]
-        }
         className={
           Block {
             "block": "SelectField",
@@ -26143,7 +26039,6 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
       }
     >
       <select
-        choices={Array []}
         className={
           Block {
             "block": "SelectField",
@@ -27775,41 +27670,6 @@ exports[`Storyshots Miscellaneous Non string values 1`] = `
       }
     >
       <select
-        choices={
-          Object {
-            "M. Dwight K. Schrute": Object {
-              "firstname": "Dwight",
-              "gender": "man",
-              "id": "dkschrute",
-              "name": "K. Schrute",
-            },
-            "M. Jim Halpert": Object {
-              "firstname": "Jim",
-              "gender": "man",
-              "id": "jhalpert",
-              "name": "Halpert",
-            },
-            "M. Michael Scott": Object {
-              "firstname": "Michael",
-              "gender": "man",
-              "id": "mscott",
-              "name": "Scott",
-            },
-            "M. No Object": "I am no object",
-            "M. Ryan Howard": Object {
-              "firstname": "Ryan",
-              "gender": "man",
-              "id": "rhoward",
-              "name": "Howard",
-            },
-            "Ms. Pam Beesly": Object {
-              "firstname": "Pam",
-              "gender": "woman",
-              "id": "pbeesly",
-              "name": "Beesly",
-            },
-          }
-        }
         className={
           Block {
             "block": "SelectField",
@@ -27960,41 +27820,6 @@ exports[`Storyshots Miscellaneous Non string values 1`] = `
       }
     >
       <select
-        choices={
-          Object {
-            "M. Dwight K. Schrute": Object {
-              "firstname": "Dwight",
-              "gender": "man",
-              "id": "dkschrute",
-              "name": "K. Schrute",
-            },
-            "M. Jim Halpert": Object {
-              "firstname": "Jim",
-              "gender": "man",
-              "id": "jhalpert",
-              "name": "Halpert",
-            },
-            "M. Michael Scott": Object {
-              "firstname": "Michael",
-              "gender": "man",
-              "id": "mscott",
-              "name": "Scott",
-            },
-            "M. No Object": "I am no object",
-            "M. Ryan Howard": Object {
-              "firstname": "Ryan",
-              "gender": "man",
-              "id": "rhoward",
-              "name": "Howard",
-            },
-            "Ms. Pam Beesly": Object {
-              "firstname": "Pam",
-              "gender": "woman",
-              "id": "pbeesly",
-              "name": "Beesly",
-            },
-          }
-        }
         className={
           Block {
             "block": "SelectField",
@@ -28099,6 +27924,152 @@ exports[`Storyshots Miscellaneous Non string values 1`] = `
         }
       >
         Object select multiple
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "simple-menu",
+          "readOnly": undefined,
+          "required": false,
+          "type": "select-menu",
+        },
+        "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-simple-menu",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      Loading
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Object select menu
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "multiple-menu",
+          "readOnly": undefined,
+          "required": false,
+          "type": "select-menu",
+        },
+        "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-multiple-menu",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      Loading
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Object select multiple menu
       </span>
     </label>
   </div>
@@ -29806,13 +29777,6 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
       }
     >
       <select
-        choices={
-          Object {
-            "Choice 1": "key1",
-            "Choice 2": "key2",
-            "Choice 3": "key3",
-          }
-        }
         className={
           Block {
             "block": "SelectField",
