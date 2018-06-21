@@ -33,17 +33,3 @@ export const normalizeChoices = ({ choices }) =>
   Array.isArray(choices)
     ? choices.map(c => [c, c])
     : Object.entries(choices || {})
-
-export const normalizeMultipleProps = ({ value, multiple, ...props }) => {
-  if (!multiple && Array.isArray(value)) {
-    value = value.length ? value[0] : null
-  }
-  if (multiple && !Array.isArray(value)) {
-    value = value !== null && value !== void 0 && value !== '' ? [value] : []
-  }
-  return {
-    value,
-    multiple,
-    ...props,
-  }
-}

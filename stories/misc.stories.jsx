@@ -169,7 +169,7 @@ storiesOf('Miscellaneous', module)
     })
   )
   .add(
-    'Non string values',
+    'Non string select values',
     withStateForm(
       props => (
         <Formol {...props}>

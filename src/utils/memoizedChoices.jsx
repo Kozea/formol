@@ -1,10 +1,10 @@
 import deepEqual from 'deep-equal'
 import React from 'react'
 
-import { normalizeChoices, normalizeMultipleProps } from './'
+import { normalizeChoices } from './'
 
 export default function memoizedChoices(WrappedComponent) {
-  return class MemoizedChoices extends React.Component {
+  return class MemoizedChoices extends React.PureComponent {
     static memoPrefix = '##formol_memo_'
 
     constructor(props) {
@@ -20,7 +20,7 @@ export default function memoizedChoices(WrappedComponent) {
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-      const { choices, multiple, value } = normalizeMultipleProps(nextProps)
+      const { choices, multiple, value } = nextProps
       let state = null
 
       if (choices !== prevState._rawChoices) {

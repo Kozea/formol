@@ -27596,7 +27596,7 @@ exports[`Storyshots Miscellaneous Fast HTML Field 1`] = `
 </form>
 `;
 
-exports[`Storyshots Miscellaneous Non string values 1`] = `
+exports[`Storyshots Miscellaneous Non string select values 1`] = `
 <form
   className={
     Block {

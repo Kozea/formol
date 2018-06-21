@@ -3,9 +3,11 @@ import 'react-select/dist/react-select.css'
 import React from 'react'
 import Select from 'react-select'
 
-import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
+import { block } from '../utils'
 import memoizedChoices from '../utils/memoizedChoices'
+import multipleAdapter from '../utils/multipleAdapter'
 
+@multipleAdapter
 @memoizedChoices
 @block
 export default class SelectMenuField extends React.PureComponent {

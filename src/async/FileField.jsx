@@ -4,14 +4,8 @@ import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
 import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
 
-import {
-  block,
-  fileSize,
-  nameExt,
-  normalizeMultipleProps,
-  readAsBase64,
-  staticUrl,
-} from '../utils'
+import { block, fileSize, nameExt, readAsBase64, staticUrl } from '../utils'
+import multipleAdapter from '../utils/multipleAdapter'
 import Preview from '../utils/Preview'
 
 const key = file => [file.name, file.ext].join('.')
@@ -39,6 +33,7 @@ const rename = files =>
     { renamed: [], counter: {} }
   ).renamed
 
+@multipleAdapter
 @block
 export default class FileField extends React.PureComponent {
   static valueToField(value, multiple) {
@@ -67,7 +62,7 @@ export default class FileField extends React.PureComponent {
       multiple,
       elementRef: { current },
       value: rawValue,
-    } = normalizeMultipleProps(newProps)
+    } = newProps
     const value = FileField.valueToField(rawValue, multiple)
     if (value !== oldValue) {
       current && (current.value = value)
@@ -114,7 +109,7 @@ export default class FileField extends React.PureComponent {
       onFocus,
       onBlur,
       elementRef: { current },
-    } = normalizeMultipleProps(this.props)
+    } = this.props
     onFocus()
     let { rejected } = this.state
     const files = await Promise.all(
@@ -141,7 +136,7 @@ export default class FileField extends React.PureComponent {
       elementRef: { current },
       onFocus,
       onBlur,
-    } = normalizeMultipleProps(this.props)
+    } = this.props
     onFocus()
     const changed = multiple ? value.filter(f => key(f) !== key(file)) : null
     const rejected = this.state.rejected.filter(rej => rej !== key(file))
@@ -211,11 +206,11 @@ export default class FileField extends React.PureComponent {
       onChange,
       onKeyDown,
       ...inputProps
-    } = normalizeMultipleProps(this.props)
+    } = this.props
     const { rejected } = this.state
     let preview = null
     if (multiple) {
-      preview = <>{value.map(file => this.renderPreview(b, file))}</>
+      preview = value.map(file => this.renderPreview(b, file))
     } else if (value) {
       preview = this.renderPreview(b, value)
     }
