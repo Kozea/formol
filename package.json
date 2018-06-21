@@ -1,6 +1,6 @@
 {
   "name": "formol",
-  "version": "1.1.10",
+  "version": "1.2.0",
   "description": "An opiniated react form framework.",
   "main": "lib/formol.js",
   "repository": "https://github.com/Kozea/formol",
