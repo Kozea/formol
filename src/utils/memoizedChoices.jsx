@@ -1,8 +1,6 @@
 import deepEqual from 'deep-equal'
 import React from 'react'
 
-import { normalizeChoices } from './'
-
 export default function memoizedChoices(WrappedComponent) {
   return class MemoizedChoices extends React.PureComponent {
     static memoPrefix = '##formol_memo_'
@@ -25,16 +23,14 @@ export default function memoizedChoices(WrappedComponent) {
 
       if (choices !== prevState._rawChoices) {
         const newMemo = {}
-        const normalizedChoices = normalizeChoices({ choices }).map(
-          ([key, val], i) => {
-            if (typeof val === 'string') {
-              return [key, val]
-            }
-            const memoKey = `${MemoizedChoices.memoPrefix}${i}`
-            newMemo[memoKey] = val
-            return [key, memoKey]
+        const normalizedChoices = choices.map(([key, val], i) => {
+          if (typeof val === 'string') {
+            return [key, val]
           }
-        )
+          const memoKey = `${MemoizedChoices.memoPrefix}${i}`
+          newMemo[memoKey] = val
+          return [key, memoKey]
+        })
         state = {
           choices: normalizedChoices,
           objectMemo: newMemo,

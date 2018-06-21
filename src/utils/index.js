@@ -28,8 +28,3 @@ export const moneyFormat = price =>
   )
 
 export const block = blockMaker({ namespace: 'Formol_' })
-
-export const normalizeChoices = ({ choices }) =>
-  Array.isArray(choices)
-    ? choices.map(c => [c, c])
-    : Object.entries(choices || {})

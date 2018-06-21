@@ -1,10 +1,12 @@
 import React from 'react'
 
 import { block } from '../utils'
+import choicesAdapter from '../utils/choicesAdapter'
 import memoizedChoices from '../utils/memoizedChoices'
 import multipleAdapter from '../utils/multipleAdapter'
 
 @multipleAdapter
+@choicesAdapter
 @memoizedChoices
 @block
 export default class SelectField extends React.PureComponent {
