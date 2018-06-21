@@ -1,13 +1,13 @@
 /* eslint-disable react/no-multi-comp */
 
 import { withState } from '@dump247/storybook-state'
-import { withKnobs } from 'addon-knobs-null-number-fix'
 import { storiesOf } from '@storybook/react'
+import { withKnobs } from 'addon-knobs-null-number-fix'
 import React from 'react'
 
 import Formol, { Field } from '../src'
 import { HTMLToEditor, editorToHTML } from '../src/utils/html'
-import { countries } from './fields'
+import { countries, persons } from './fields'
 import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
@@ -59,6 +59,16 @@ class AsyncChoicesForm extends React.Component {
     )
   }
 }
+
+const objectChoices = persons.reduce(
+  (choices, person) => ({
+    ...choices,
+    [`${person.gender === 'woman' ? 'Ms.' : 'M.'} ${person.firstname} ${
+      person.name
+    }`]: person,
+  }),
+  { 'M. No Object': 'I am no object' }
+)
 
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
@@ -157,4 +167,41 @@ storiesOf('Miscellaneous', module)
     withStateForm(props => <AsyncChoicesForm {...props} />, {
       country: 'France',
     })
+  )
+  .add(
+    'Non string values',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <Field name="simple" type="select" choices={objectChoices}>
+            Object select
+          </Field>
+          <Field multiple name="multiple" type="select" choices={objectChoices}>
+            Object select multiple
+          </Field>
+        </Formol>
+      ),
+      {
+        simple: {
+          id: 'dkschrute',
+          name: 'K. Schrute',
+          firstname: 'Dwight',
+          gender: 'man',
+        },
+        multiple: [
+          {
+            id: 'pbeesly',
+            name: 'Beesly',
+            firstname: 'Pam',
+            gender: 'woman',
+          },
+          {
+            id: 'dkschrute',
+            name: 'K. Schrute',
+            firstname: 'Dwight',
+            gender: 'man',
+          },
+        ],
+      }
+    )
   )

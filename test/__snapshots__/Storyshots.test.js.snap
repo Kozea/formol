@@ -8504,6 +8504,26 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
       }
     >
       <select
+        choices={
+          Object {
+            "Aqua": "#00ffff",
+            "Black": 0,
+            "Blue": "#0000ff",
+            "Fuchsia": "#ff00ff",
+            "Gray": "#808080",
+            "Green": "#008000",
+            "Lime": "#00ff00",
+            "Maroon": "#800000",
+            "Navy": "#000080",
+            "Olive": "#808000",
+            "Purple": "#800080",
+            "Red": "#ff0000",
+            "Silver": "#c0c0c0",
+            "Teal": "#008080",
+            "White": "#ffffff",
+            "Yellow": "#ffff00",
+          }
+        }
         className={
           Block {
             "block": "SelectField",
@@ -8546,7 +8566,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
         onKeyDown={[Function]}
         placeholder="select"
         type="select"
-        value=""
+        value="##formol_memo_3"
       >
         <option
           value=""
@@ -8567,7 +8587,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           Gray
         </option>
         <option
-          value={0}
+          value="##formol_memo_3"
         >
           Black
         </option>
@@ -16328,6 +16348,26 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
       }
     >
       <select
+        choices={
+          Object {
+            "Aqua": "#00ffff",
+            "Black": 0,
+            "Blue": "#0000ff",
+            "Fuchsia": "#ff00ff",
+            "Gray": "#808080",
+            "Green": "#008000",
+            "Lime": "#00ff00",
+            "Maroon": "#800000",
+            "Navy": "#000080",
+            "Olive": "#808000",
+            "Purple": "#800080",
+            "Red": "#ff0000",
+            "Silver": "#c0c0c0",
+            "Teal": "#008080",
+            "White": "#ffffff",
+            "Yellow": "#ffff00",
+          }
+        }
         className={
           Block {
             "block": "SelectField",
@@ -16391,7 +16431,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           Gray
         </option>
         <option
-          value={0}
+          value="##formol_memo_3"
         >
           Black
         </option>
@@ -19280,6 +19320,38 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       }
     >
       <select
+        choices={
+          Array [
+            "Austria",
+            "Belgium",
+            "Bulgaria",
+            "Croatia",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Estonia",
+            "Finland",
+            "France",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Ireland",
+            "Italy",
+            "Latvia",
+            "Lithuania",
+            "Luxembourg",
+            "Malta",
+            "Netherlands",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Sweden",
+            "United Kingdom",
+          ]
+        }
         className={
           Block {
             "block": "SelectField",
@@ -21192,6 +21264,38 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       }
     >
       <select
+        choices={
+          Array [
+            "Austria",
+            "Belgium",
+            "Bulgaria",
+            "Croatia",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Estonia",
+            "Finland",
+            "France",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Ireland",
+            "Italy",
+            "Latvia",
+            "Lithuania",
+            "Luxembourg",
+            "Malta",
+            "Netherlands",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Sweden",
+            "United Kingdom",
+          ]
+        }
         className={
           Block {
             "block": "SelectField",
@@ -26039,6 +26143,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
       }
     >
       <select
+        choices={Array []}
         className={
           Block {
             "block": "SelectField",
@@ -27534,6 +27639,468 @@ exports[`Storyshots Miscellaneous Fast HTML Field 1`] = `
         Big HTML Field
       </span>
     </div>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "cache": Array [],
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
+exports[`Storyshots Miscellaneous Non string values 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "cache": Array [],
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "cache": false,
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "simple",
+          "readOnly": undefined,
+          "required": false,
+          "type": "select",
+        },
+        "s": "Formol_Field Formol_Field--type-select Formol_Field--name-simple",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <select
+        choices={
+          Object {
+            "M. Dwight K. Schrute": Object {
+              "firstname": "Dwight",
+              "gender": "man",
+              "id": "dkschrute",
+              "name": "K. Schrute",
+            },
+            "M. Jim Halpert": Object {
+              "firstname": "Jim",
+              "gender": "man",
+              "id": "jhalpert",
+              "name": "Halpert",
+            },
+            "M. Michael Scott": Object {
+              "firstname": "Michael",
+              "gender": "man",
+              "id": "mscott",
+              "name": "Scott",
+            },
+            "M. No Object": "I am no object",
+            "M. Ryan Howard": Object {
+              "firstname": "Ryan",
+              "gender": "man",
+              "id": "rhoward",
+              "name": "Howard",
+            },
+            "Ms. Pam Beesly": Object {
+              "firstname": "Pam",
+              "gender": "woman",
+              "id": "pbeesly",
+              "name": "Beesly",
+            },
+          }
+        }
+        className={
+          Block {
+            "block": "SelectField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_SelectField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="simple"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        type="select"
+        value="##formol_memo_2"
+      >
+        <option
+          value=""
+        />
+        <option
+          value="I am no object"
+        >
+          M. No Object
+        </option>
+        <option
+          value="##formol_memo_1"
+        >
+          M. Michael Scott
+        </option>
+        <option
+          value="##formol_memo_2"
+        >
+          M. Dwight K. Schrute
+        </option>
+        <option
+          value="##formol_memo_3"
+        >
+          M. Jim Halpert
+        </option>
+        <option
+          value="##formol_memo_4"
+        >
+          Ms. Pam Beesly
+        </option>
+        <option
+          value="##formol_memo_5"
+        >
+          M. Ryan Howard
+        </option>
+      </select>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Object select
+      </span>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "multiple",
+          "readOnly": undefined,
+          "required": false,
+          "type": "select",
+        },
+        "s": "Formol_Field Formol_Field--type-select Formol_Field--name-multiple",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <select
+        choices={
+          Object {
+            "M. Dwight K. Schrute": Object {
+              "firstname": "Dwight",
+              "gender": "man",
+              "id": "dkschrute",
+              "name": "K. Schrute",
+            },
+            "M. Jim Halpert": Object {
+              "firstname": "Jim",
+              "gender": "man",
+              "id": "jhalpert",
+              "name": "Halpert",
+            },
+            "M. Michael Scott": Object {
+              "firstname": "Michael",
+              "gender": "man",
+              "id": "mscott",
+              "name": "Scott",
+            },
+            "M. No Object": "I am no object",
+            "M. Ryan Howard": Object {
+              "firstname": "Ryan",
+              "gender": "man",
+              "id": "rhoward",
+              "name": "Howard",
+            },
+            "Ms. Pam Beesly": Object {
+              "firstname": "Pam",
+              "gender": "woman",
+              "id": "pbeesly",
+              "name": "Beesly",
+            },
+          }
+        }
+        className={
+          Block {
+            "block": "SelectField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "Field",
+                "cache": Array [],
+                "element": "field",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_Field__field",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_SelectField Formol_Field__field",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        multiple={true}
+        name="multiple"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        type="select"
+        value={
+          Array [
+            "##formol_memo_4",
+            "##formol_memo_2",
+          ]
+        }
+      >
+        <option
+          value=""
+        />
+        <option
+          value="I am no object"
+        >
+          M. No Object
+        </option>
+        <option
+          value="##formol_memo_1"
+        >
+          M. Michael Scott
+        </option>
+        <option
+          value="##formol_memo_2"
+        >
+          M. Dwight K. Schrute
+        </option>
+        <option
+          value="##formol_memo_3"
+        >
+          M. Jim Halpert
+        </option>
+        <option
+          value="##formol_memo_4"
+        >
+          Ms. Pam Beesly
+        </option>
+        <option
+          value="##formol_memo_5"
+        >
+          M. Ryan Howard
+        </option>
+      </select>
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "label-text",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__label-text",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Object select multiple
+      </span>
+    </label>
   </div>
   <input
     style={
@@ -29239,6 +29806,13 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
       }
     >
       <select
+        choices={
+          Object {
+            "Choice 1": "key1",
+            "Choice 2": "key2",
+            "Choice 3": "key3",
+          }
+        }
         className={
           Block {
             "block": "SelectField",

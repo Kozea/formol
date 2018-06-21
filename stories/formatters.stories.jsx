@@ -1,8 +1,9 @@
-import { withKnobs } from 'addon-knobs-null-number-fix'
 import { storiesOf } from '@storybook/react'
+import { withKnobs } from 'addon-knobs-null-number-fix'
 import React from 'react'
 
 import Formol, { Field } from '../src'
+import { persons } from './fields'
 import { withStateForm } from './utils'
 
 const creditCard = v =>
@@ -26,39 +27,6 @@ const numberWithSpace = v =>
         .join('')
         .trim()
     : ''
-
-const persons = [
-  {
-    id: 'mscott',
-    name: 'Scott',
-    firstname: 'Michael',
-    gender: 'man',
-  },
-  {
-    id: 'dkschrute',
-    name: 'K. Schrute',
-    firstname: 'Dwight',
-    gender: 'man',
-  },
-  {
-    id: 'jhalpert',
-    name: 'Halpert',
-    firstname: 'Jim',
-    gender: 'man',
-  },
-  {
-    id: 'pbeesly',
-    name: 'Beesly',
-    firstname: 'Pam',
-    gender: 'woman',
-  },
-  {
-    id: 'rhoward',
-    name: 'Howard',
-    firstname: 'Ryan',
-    gender: 'man',
-  },
-]
 
 storiesOf('Formatters', module)
   .addDecorator(withKnobs)
