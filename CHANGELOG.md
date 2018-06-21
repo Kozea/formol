@@ -1,3 +1,11 @@
+## [1.2.0](https://github.com/Kozea/formol/compare/v1.1.10...v1.2.0)
+
+- Handle non-string values in select field (using an internal memo)
+- Add Inliner component to allow several fields in same line
+- Reset form on submit when no item was given
+- Allow restoring not entered state for fields from Form. Restore this state after a successful submit or a cancel.
+- Align password field (take eye size in account)
+
 ### [1.1.10](https://github.com/Kozea/formol/compare/v1.1.9...v1.1.10)
 
 - Fix typo for datetime-local type.
