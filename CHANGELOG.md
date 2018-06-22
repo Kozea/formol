@@ -1,3 +1,7 @@
+### [1.2.1](https://github.com/Kozea/formol/compare/v1.2.0...v1.2.1)
+
+- Fix null value in Select and bad coercive equality for value.
+
 ## [1.2.0](https://github.com/Kozea/formol/compare/v1.1.10...v1.2.0)
 
 - Handle non-string values in select field (using an internal memo)
