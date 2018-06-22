@@ -1,4 +1,4 @@
-import { boolean, number, text } from 'addon-knobs-null-number-fix'
+import { boolean, number, text } from '@storybook/addon-knobs'
 import React from 'react'
 
 import Formol, { Field } from '../src'

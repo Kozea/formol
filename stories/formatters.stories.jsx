@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import { withKnobs } from 'addon-knobs-null-number-fix'
+import { withKnobs } from '@storybook/addon-knobs'
 import React from 'react'
 
 import Formol, { Field } from '../src'

@@ -1,5 +1,5 @@
 import { withState } from '@dump247/storybook-state'
-import { boolean, number, select } from 'addon-knobs-null-number-fix'
+import { boolean, number, select } from '@storybook/addon-knobs'
 
 import Formol from '../src'
 import { diff } from '../src/utils/object'
