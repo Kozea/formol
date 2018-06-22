@@ -8546,7 +8546,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
         onKeyDown={[Function]}
         placeholder="select"
         type="select"
-        value="##formol_memo_3"
+        value=""
       >
         <option
           value=""

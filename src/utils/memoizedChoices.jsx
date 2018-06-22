@@ -43,7 +43,7 @@ export default function memoizedChoices(WrappedComponent) {
         if (Object.keys(objectMemo).length) {
           const getToMemoMaybe = val => {
             const memo = Object.entries(objectMemo).find(entry =>
-              deepEqual(entry[1], val)
+              deepEqual(entry[1], val, { strict: true })
             )
             return memo ? memo[0] : val
           }
@@ -63,7 +63,7 @@ export default function memoizedChoices(WrappedComponent) {
       const { objectMemo } = this.state
       const { multiple, onChange } = this.props
       const getFromMemoMaybe = v =>
-        v.startsWith(MemoizedChoices.memoPrefix) ? objectMemo[v] : v
+        v && v.startsWith(MemoizedChoices.memoPrefix) ? objectMemo[v] : v
       return onChange(
         multiple ? value.map(getFromMemoMaybe) : getFromMemoMaybe(value)
       )
