@@ -179,6 +179,10 @@ export default class Formol extends React.PureComponent {
     onChange && onChange(transientItem)
   }
 
+  asyncSetState(state) {
+    return new Promise(resolve => this.setState(state, resolve))
+  }
+
   setStateContext(context, extra = {}) {
     this.setState(({ context: prevContext }) => ({
       context: { ...prevContext, ...context },
@@ -204,14 +208,14 @@ export default class Formol extends React.PureComponent {
     const { current: form } = this.form
     this.validateForm()
     if (form.checkValidity()) {
-      this.setState({ loading: true })
+      await this.asyncSetState({ loading: true })
       const errors =
         (await onSubmit(transientItem, item, this.fields.names)) || {}
       if (!this.mounted) {
         // Protect from unmounting in onSubmit
         return
       }
-      this.setState({ loading: false })
+      await this.asyncSetState({ loading: false })
       if (
         (errors && errors.constructor !== Object) ||
         Object.values(errors).some(v => v && typeof v !== 'string')
