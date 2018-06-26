@@ -1,3 +1,7 @@
+### [1.2.2](https://github.com/Kozea/formol/compare/v1.2.1...v1.2.2)
+
+- Use an updater for Formol setState to avoid data loss
+
 ### [1.2.1](https://github.com/Kozea/formol/compare/v1.2.0...v1.2.1)
 
 - Fix null value in Select and bad coercive equality for value.
