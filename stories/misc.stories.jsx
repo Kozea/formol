@@ -1,8 +1,8 @@
 /* eslint-disable react/no-multi-comp */
 
 import { withState } from '@dump247/storybook-state'
-import { storiesOf } from '@storybook/react'
 import { withKnobs } from '@storybook/addon-knobs'
+import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
@@ -69,6 +69,11 @@ const objectChoices = persons.reduce(
   }),
   { 'M. No Object': 'I am no object' }
 )
+
+const stressedChoices = new Array(5000).fill().reduce((choices, _, i) => {
+  choices[`Element #${i}`] = `${i}`
+  return choices
+}, {})
 
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
@@ -233,6 +238,21 @@ storiesOf('Miscellaneous', module)
             gender: 'man',
           },
         ],
+      }
+    )
+  )
+  .add(
+    'Select menu stress test',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <Field name="stressed" type="select-menu" choices={stressedChoices}>
+            Stressed select
+          </Field>
+        </Formol>
+      ),
+      {
+        stressed: '12',
       }
     )
   )
