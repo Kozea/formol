@@ -55,6 +55,9 @@ class AsyncChoicesForm extends React.Component {
         <Field name="country" type="select" choices={choices} required>
           Country {choices.length ? null : <small>(Loading)</small>}
         </Field>
+        <Field name="country" type="select-menu" choices={choices} required>
+          Country {choices.length ? null : <small>(Loading)</small>}
+        </Field>
       </Formol>
     )
   }
