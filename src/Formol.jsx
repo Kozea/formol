@@ -180,7 +180,10 @@ export default class Formol extends React.PureComponent {
   }
 
   setStateContext(context, extra = {}) {
-    this.setState({ context: { ...this.state.context, ...context }, ...extra })
+    this.setState(({ context: prevContext }) => ({
+      context: { ...prevContext, ...context },
+      ...extra,
+    }))
   }
 
   handleCancel() {
