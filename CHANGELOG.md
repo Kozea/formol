@@ -1,3 +1,8 @@
+### [1.2.4](https://github.com/Kozea/formol/compare/v1.2.3...v1.2.4)
+
+- Avoid crash on non-file files in FileField
+- Fix default formatter/normalizer
+
 ### [1.2.3](https://github.com/Kozea/formol/compare/v1.2.2...v1.2.3)
 
 - Make SelectField super fast (even with a lot of choices).
