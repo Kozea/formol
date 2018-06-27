@@ -13,8 +13,8 @@ let UNAMED_COUNT = 0
 @block
 export default class Field extends React.PureComponent {
   static defaultProps = {
-    formatter: v => (v && v.trim ? v.trim() : v),
-    normalizer: v => v,
+    formatter: v => v,
+    normalizer: v => (v && v.trim ? v.trim() : v),
     unformatter: v => v,
   }
 
