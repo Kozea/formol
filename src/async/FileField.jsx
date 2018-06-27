@@ -112,6 +112,7 @@ export default class FileField extends React.PureComponent {
     } = this.props
     onFocus()
     let { rejected } = this.state
+    rejectedFiles = rejectedFiles.filter(maybeFile => maybeFile.name)
     const files = await Promise.all(
       acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
     )
