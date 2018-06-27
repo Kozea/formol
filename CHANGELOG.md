@@ -1,3 +1,9 @@
+### [1.2.3](https://github.com/Kozea/formol/compare/v1.2.2...v1.2.3)
+
+- Make SelectField super fast (even with a lot of choices).
+  Thanks to [react-virtualized-select](https://github.com/bvaughn/react-virtualized-select) and
+  [react-select-fast-filter-options](https://github.com/bvaughn/react-select-fast-filter-options)
+
 ### [1.2.2](https://github.com/Kozea/formol/compare/v1.2.1...v1.2.2)
 
 - Use an updater for Formol setState to avoid data loss
