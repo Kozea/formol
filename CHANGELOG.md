@@ -1,3 +1,7 @@
+### [1.2.5](https://github.com/Kozea/formol/compare/v1.2.4...v1.2.5)
+
+- Sass files organization
+
 ### [1.2.4](https://github.com/Kozea/formol/compare/v1.2.3...v1.2.4)
 
 - Avoid crash on non-file files in FileField
