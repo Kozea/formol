@@ -33,6 +33,7 @@ import { get, insert, isModified } from './utils/object'
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
+const emptyItem = {}
 
 @block
 export default class Formol extends React.PureComponent {
@@ -70,7 +71,7 @@ export default class Formol extends React.PureComponent {
   }
 
   static defaultProps = {
-    item: {},
+    item: emptyItem,
     types: {},
     i18n: 'en',
     focusNextOnEnter: false,
@@ -98,9 +99,11 @@ export default class Formol extends React.PureComponent {
         i18n: Formol.i18n[i18n],
         errors: errorsUnknown,
         readOnly,
+        enteredFields: [],
         register: this.register.bind(this),
         unregister: this.unregister.bind(this),
         handleKeyDown: this.handleKeyDown.bind(this),
+        handleEntered: this.handleEntered.bind(this),
         handleChange: this.handleChange.bind(this),
         handleChanged: this.handleChanged.bind(this),
       },
@@ -169,20 +172,34 @@ export default class Formol extends React.PureComponent {
     delete this.fields.validators[name]
   }
 
-  setStateNewItem(transientItem) {
+  setStateNewItem(transientItem, extra = {}) {
     const { item, onChange } = this.props
     const modified = isModified(transientItem, item, this.fields.names)
-    this.setStateContext({ transientItem }, { modified })
+    this.setStateContext({ transientItem, ...extra }, { modified })
     onChange && onChange(transientItem)
   }
 
+  asyncSetState(state) {
+    return new Promise(resolve => this.setState(state, resolve))
+  }
+
   setStateContext(context, extra = {}) {
-    this.setState({ context: { ...this.state.context, ...context }, ...extra })
+    this.setState(({ context: prevContext }) => ({
+      context: { ...prevContext, ...context },
+      ...extra,
+    }))
   }
 
   handleCancel() {
     const { item } = this.props
-    this.setStateNewItem({ ...item })
+    this.setStateNewItem({ ...item }, { enteredFields: [] })
+  }
+
+  handleEntered(name) {
+    const { enteredFields } = this.state.context
+    this.setStateContext({
+      enteredFields: [...enteredFields.filter(field => field !== name), name],
+    })
   }
 
   async handleSubmit() {
@@ -191,26 +208,34 @@ export default class Formol extends React.PureComponent {
     const { current: form } = this.form
     this.validateForm()
     if (form.checkValidity()) {
-      this.setState({ loading: true })
+      await this.asyncSetState({ loading: true })
       const errors =
         (await onSubmit(transientItem, item, this.fields.names)) || {}
       if (!this.mounted) {
         // Protect from unmounting in onSubmit
         return
       }
-      this.setState({ loading: false })
-      if (errors) {
-        if (
-          errors.constructor !== Object ||
-          Object.values(errors).some(v => v && typeof v !== 'string')
-        ) {
-          console.error(
-            `onSubmit return value must be a mapping of server errors
+      await this.asyncSetState({ loading: false })
+      if (
+        (errors && errors.constructor !== Object) ||
+        Object.values(errors).some(v => v && typeof v !== 'string')
+      ) {
+        console.error(
+          `onSubmit return value must be a mapping of server errors
             (ie: { fieldName: 'error' }) got:`,
-            errors
-          )
-        } else {
-          this.setStateContext({ errors })
+          errors
+        )
+      }
+      if (errors) {
+        // There are some errors, setting them
+        this.setStateContext({ errors })
+      }
+
+      if (!errors || !Object.keys(errors).length) {
+        // No errors on submit
+        if (item === emptyItem) {
+          // Resetting form if no item was given
+          this.handleCancel()
         }
       }
     } else if (form.reportValidity) {

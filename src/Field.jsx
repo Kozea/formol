@@ -13,8 +13,8 @@ let UNAMED_COUNT = 0
 @block
 export default class Field extends React.PureComponent {
   static defaultProps = {
-    formatter: v => (v && v.trim ? v.trim() : v),
-    normalizer: v => v,
+    formatter: v => v,
+    normalizer: v => (v && v.trim ? v.trim() : v),
     unformatter: v => v,
   }
 
@@ -40,7 +40,6 @@ export default class Field extends React.PureComponent {
     this.element = React.createRef()
     this.state = {
       focus: false,
-      alreadyFocused: false,
     }
     props.context.register(props.name, this.element, props.validator)
     props.conditionalContext.register &&
@@ -110,7 +109,7 @@ export default class Field extends React.PureComponent {
     const {
       name,
       normalizer,
-      context: { transientItem, handleChange },
+      context: { transientItem, handleChange, handleEntered },
     } = this.getProps(this.props)
     const value = get(transientItem, name)
     // Normalize data
@@ -120,8 +119,8 @@ export default class Field extends React.PureComponent {
     }
     this.setState({
       focus: false,
-      alreadyFocused: true,
     })
+    handleEntered(name)
   }
 
   render(b) {
@@ -149,11 +148,12 @@ export default class Field extends React.PureComponent {
       i18n,
       errors,
       readOnly: formReadOnly,
+      enteredFields,
       handleKeyDown,
     } = context
 
     const readOnly = formReadOnly || fieldReadOnly
-    const { focus, alreadyFocused } = this.state
+    const { focus } = this.state
 
     if (!transientItem) {
       throw new Error('Field must be used inside Form')
@@ -165,7 +165,8 @@ export default class Field extends React.PureComponent {
 
     const TypeField = types[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
-    const error = alreadyFocused && errors[name] ? errors[name] : null
+    const error =
+      enteredFields.includes(name) && errors[name] ? errors[name] : null
     return (
       <div
         className={b.mix(className).m({

@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import { withKnobs } from 'addon-knobs-null-number-fix'
+import { withKnobs } from '@storybook/addon-knobs'
 import React from 'react'
 
 import Formol, { Conditional, Field, Inliner } from '../src'
@@ -158,10 +158,60 @@ storiesOf('Formol exemples', module)
   )
   .add(
     'Login form',
-    withStateForm(({ item, ...props }) => (
-      <Formol {...props}>
-        <Field>Login</Field>
-        <Field type="password">Password</Field>
-      </Formol>
+    withStateForm(({ item, transient, ...props }) => (
+      <>
+        <h1>Item and state handling</h1>
+        <h2> Without item property</h2>
+        <p>Form is self reset after a successful submit</p>
+        <Formol {...props}>
+          <Field pattern={/\w+\d{2}/.source} required>
+            Login
+          </Field>
+          <Field type="password" required>
+            Password
+          </Field>
+        </Formol>
+        <h2> With an empty item</h2>
+        <p>
+          Form has no reset after submit and the item stay an empty one,
+          therefore cancel is still available and reset back to the default item
+          which is empty
+        </p>
+        <Formol item={{}} {...props}>
+          <Field pattern={/\w+\d{2}/.source} required>
+            Login
+          </Field>
+          <Field type="password" required>
+            Password
+          </Field>
+        </Formol>
+        <h2> With a controlled item</h2>
+        <p>
+          Item is updated with the submitted one, hence it becomes the new
+          default state
+        </p>
+        <Formol item={item} {...props}>
+          <Field pattern={/\w+\d{2}/.source} required>
+            Login
+          </Field>
+          <Field type="password" required>
+            Password
+          </Field>
+        </Formol>
+        <h2> With a controlled item synchronized with onChange</h2>
+        <p>
+          The item here is continually updated from the transient state, cancel
+          is never available (nor submit without the allowUnmodifiedSubmit
+          property)
+        </p>
+        <Formol item={transient} {...props} allowUnmodifiedSubmit>
+          <Field pattern={/\w+\d{2}/.source} required>
+            Login
+          </Field>
+          <Field type="password" required>
+            Password
+          </Field>
+        </Formol>
+      </>
     ))
   )

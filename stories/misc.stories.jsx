@@ -1,13 +1,13 @@
 /* eslint-disable react/no-multi-comp */
 
 import { withState } from '@dump247/storybook-state'
-import { withKnobs } from 'addon-knobs-null-number-fix'
+import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
 import { HTMLToEditor, editorToHTML } from '../src/utils/html'
-import { countries } from './fields'
+import { countries, persons } from './fields'
 import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
@@ -55,10 +55,28 @@ class AsyncChoicesForm extends React.Component {
         <Field name="country" type="select" choices={choices} required>
           Country {choices.length ? null : <small>(Loading)</small>}
         </Field>
+        <Field name="country" type="select-menu" choices={choices} required>
+          Country {choices.length ? null : <small>(Loading)</small>}
+        </Field>
       </Formol>
     )
   }
 }
+
+const objectChoices = persons.reduce(
+  (choices, person) => ({
+    ...choices,
+    [`${person.gender === 'woman' ? 'Ms.' : 'M.'} ${person.firstname} ${
+      person.name
+    }`]: person,
+  }),
+  { 'M. No Object': 'I am no object' }
+)
+
+const stressedChoices = new Array(5000).fill().reduce((choices, _, i) => {
+  choices[`Element #${i}`] = `${i}`
+  return choices
+}, {})
 
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
@@ -157,4 +175,87 @@ storiesOf('Miscellaneous', module)
     withStateForm(props => <AsyncChoicesForm {...props} />, {
       country: 'France',
     })
+  )
+  .add(
+    'Non string select values',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <Field name="simple" type="select" choices={objectChoices}>
+            Object select
+          </Field>
+          <Field multiple name="multiple" type="select" choices={objectChoices}>
+            Object select multiple
+          </Field>
+          <Field name="simple-menu" type="select-menu" choices={objectChoices}>
+            Object select menu
+          </Field>
+          <Field
+            multiple
+            name="multiple-menu"
+            type="select-menu"
+            choices={objectChoices}
+          >
+            Object select multiple menu
+          </Field>
+        </Formol>
+      ),
+      {
+        simple: {
+          id: 'dkschrute',
+          name: 'K. Schrute',
+          firstname: 'Dwight',
+          gender: 'man',
+        },
+        multiple: [
+          {
+            id: 'pbeesly',
+            name: 'Beesly',
+            firstname: 'Pam',
+            gender: 'woman',
+          },
+          {
+            id: 'dkschrute',
+            name: 'K. Schrute',
+            firstname: 'Dwight',
+            gender: 'man',
+          },
+        ],
+        'simple-menu': {
+          id: 'dkschrute',
+          name: 'K. Schrute',
+          firstname: 'Dwight',
+          gender: 'man',
+        },
+        'multiple-menu': [
+          {
+            id: 'pbeesly',
+            name: 'Beesly',
+            firstname: 'Pam',
+            gender: 'woman',
+          },
+          {
+            id: 'dkschrute',
+            name: 'K. Schrute',
+            firstname: 'Dwight',
+            gender: 'man',
+          },
+        ],
+      }
+    )
+  )
+  .add(
+    'Select menu stress test',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <Field name="stressed" type="select-menu" choices={stressedChoices}>
+            Stressed select
+          </Field>
+        </Formol>
+      ),
+      {
+        stressed: '12',
+      }
+    )
   )

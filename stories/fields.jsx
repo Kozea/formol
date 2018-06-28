@@ -1,4 +1,4 @@
-import { boolean, number, text } from 'addon-knobs-null-number-fix'
+import { boolean, number, text } from '@storybook/addon-knobs'
 import React from 'react'
 
 import Formol, { Field } from '../src'
@@ -52,6 +52,39 @@ export const countries = [
   'Spain',
   'Sweden',
   'United Kingdom',
+]
+
+export const persons = [
+  {
+    id: 'mscott',
+    name: 'Scott',
+    firstname: 'Michael',
+    gender: 'man',
+  },
+  {
+    id: 'dkschrute',
+    name: 'K. Schrute',
+    firstname: 'Dwight',
+    gender: 'man',
+  },
+  {
+    id: 'jhalpert',
+    name: 'Halpert',
+    firstname: 'Jim',
+    gender: 'man',
+  },
+  {
+    id: 'pbeesly',
+    name: 'Beesly',
+    firstname: 'Pam',
+    gender: 'woman',
+  },
+  {
+    id: 'rhoward',
+    name: 'Howard',
+    firstname: 'Ryan',
+    gender: 'man',
+  },
 ]
 
 // eslint-disable-next-line react/display-name

@@ -1,7 +1,13 @@
 import React from 'react'
 
-import { block, normalizeChoices, normalizeMultipleProps } from '../utils'
+import { block } from '../utils'
+import choicesAdapter from '../utils/choicesAdapter'
+import memoizedChoices from '../utils/memoizedChoices'
+import multipleAdapter from '../utils/multipleAdapter'
 
+@multipleAdapter
+@choicesAdapter
+@memoizedChoices
 @block
 export default class SelectField extends React.PureComponent {
   constructor(props) {
@@ -19,29 +25,27 @@ export default class SelectField extends React.PureComponent {
   }
 
   render(b) {
-    const normalizedChoices = normalizeChoices(this.props)
     const {
+      choices,
       i18n,
       readOnly,
       className,
       elementRef,
-      choices,
       onChange,
       ...props
     } = this.props
     if (readOnly) {
       props.disabled = true
     }
-
     return (
       <select
         ref={elementRef}
         className={b.mix(className)}
         onChange={this.handleChange}
-        {...normalizeMultipleProps(props)}
+        {...props}
       >
-        {normalizedChoices.every(([k]) => k) && <option value="" />}
-        {normalizedChoices.map(([label, key]) => (
+        {choices.every(([k]) => k) && <option value="" />}
+        {choices.map(([label, key]) => (
           <option key={key} value={key}>
             {label}
           </option>
