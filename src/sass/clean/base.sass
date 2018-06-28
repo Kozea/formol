@@ -5,75 +5,13 @@
 @import variables
 
 
+// formol general style
+@import Formol
+
+// specific fields from external libs
 @import async/HTMLField
 
+// specific fields
 @import fields/BooleanField
 @import fields/FileField
 @import fields/SwitchButton
-
-
-// form
-.Formol_Formol
-  font-family: sans-serif
-
-
-// field group
-.Formol_Field
-  margin: 2em 0
-
-
-// field label
-.Formol_Field__label-text
-  transition: color .2s
-
-  &::after
-    content: '•'
-    display: inline-block
-    font-size: 1.75em
-    line-height: 0
-    margin-left: .25em
-    opacity: .15
-    transition: opacity .2s
-    vertical-align: middle
-
-
-// field
-.Formol_Field__label
-  .Formol_Field__field
-    color: $color
-
-  input, textarea
-    border: transparent
-    border-bottom: solid 2px rgba($color-action, .65)
-    border-radius: 0
-    padding: .75em .25em
-    transition: background-color .2s
-
-
-// field's states
-.Formol_Field--modified, .Formol_Field:hover
-  opacity: 1
-
-  .Formol_Field__label-text
-    &::after
-      color: $color-action
-
-.Formol_Field--error, .Formol_Field--error:hover
-  color: $error
-
-  .Formol_Field__label-text
-    &::after
-      color: inherit
-
-  .Formol_Field__label
-    input, textarea
-      border-bottom-color: $error
-
-.Formol_Field--focus, .Formol_Field--modified, .Formol_Field--error
-  .Formol_Field__label-text
-    &::after
-      opacity: .75
-
-.Formol_Field--focus
-  .Formol_Field__label-text
-    color: $color-action

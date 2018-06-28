@@ -2,132 +2,19 @@
 @import variables
 
 
-// @import specific fields
+// formol general style
+@import Formol
+
+// specific fields from external libs
 @import async/CalendarField
 @import async/HTMLField
 @import async/PasswordStrengthField
 @import async/SelectMenuField
 
+// specific fields
 @import fields/BooleanField
 @import fields/ColorField
 @import fields/FileField
 @import fields/PasswordField
 @import fields/Preview
 @import fields/SwitchButton
-
-
-// form
-.Formol_Formol
-  box-sizing: border-box
-  color: $color
-  font-size: $font-size
-  padding: 0 1em
-
-  &--errors
-    box-shadow: -1px 0 0 $error
-
-  &--loading
-    opacity: .5
-
-
-// field group
-.Formol_Field
-  color: rgba($color, .65)
-  margin: 1em 0
-
-
-// field label
-.Formol_Field__label-text
-  font-size: $font-size * .85
-  order: -1
-  transition: color .2s
-  width: 100%
-
-
-// field
-.Formol_Field__label
-  align-items: flex-start
-  display: flex
-  flex-wrap: wrap
-  justify-content: flex-start
-
-  .Formol_Field__field
-    box-shadow: none
-    color: inherit
-    font: inherit
-    margin: .5em 0
-    outline: none
-
-  input, textarea
-    border: solid 1px
-    border-radius: .15em
-    box-sizing: border-box
-    max-width: 100%
-    padding: .75em
-    transition: border-color .2s
-
-  textarea
-    width: 100%
-
-
-// field's states
-.Formol_Field--modified, .Formol_Field:hover
-  color: $color
-
-.Formol_Field--error
-  color: $error
-  box-shadow: none
-
-.Formol_Field--focus
-  color: $color
-
-.Formol_Field__error
-  font-size: $font-size * .85
-  font-style: italic
-
-  &::before
-    background-color: currentColor
-    content: ''
-    display: inline-block
-    height: 1px
-    margin-right: .5em
-    vertical-align: middle
-    width: 1em
-
-
-// form required
-.Formol_Field--required
-  .Formol_Field__label-text
-    &::before
-      content: '* '
-
-
-// form units
-.Formol_Field__unit
-  align-self: center
-  margin-left: .5em
-
-
-// form inliner
-.Formol_Inliner
-  margin: -1em 0 1em
-
-  .Formol_Field
-    display: inline-block
-    margin: 1em 0 0
-
-
-// form submit and cancel buttons
-.Formol_Formol__submit, .Formol_Formol__cancel
-  cursor: pointer
-  font: inherit
-
-.Formol_Formol__submit
-  margin-right: 1em
-  margin-top: 1.5em
-
-.Formol_Formol__cancel
-  background: 0
-  border: 0
-  font-size: $font-size * .85
-  padding: 0
