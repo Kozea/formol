@@ -1,3 +1,7 @@
+### [1.2.6](https://github.com/Kozea/formol/compare/v1.2.5...v1.2.6)
+
+- Add focus color for default theme. Fix #27
+
 ### [1.2.5](https://github.com/Kozea/formol/compare/v1.2.4...v1.2.5)
 
 - Sass files organization
