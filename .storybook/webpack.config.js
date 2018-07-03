@@ -7,18 +7,16 @@ const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
 
 module.exports = (baseConfig, env) => {
   baseConfig.entry.preview.unshift('regenerator-runtime/runtime.js')
-  fs
-    .readdirSync(path.join(rootDir, 'src', 'sass'))
-    .map(
-      theme =>
-        (baseConfig.entry[theme] = path.join(
-          rootDir,
-          'src',
-          'sass',
-          theme,
-          'base.sass'
-        ))
-    )
+  fs.readdirSync(path.join(rootDir, 'src', 'sass')).forEach(
+    theme =>
+      theme.endsWith('.sass') &&
+      (baseConfig.entry[theme.slice(0, -5)] = path.join(
+        rootDir,
+        'src',
+        'sass',
+        theme
+      ))
+  )
   baseConfig.module.rules[0] = {
     test: /\.jsx?$/,
     include: dir(),

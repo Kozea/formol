@@ -14,7 +14,14 @@ export default {
     ...fs
       .readdirSync(path.join(__dirname, 'src', 'sass'))
       .reduce((themes, theme) => {
-        themes[theme] = path.join(__dirname, 'src', 'sass', theme, 'base.sass')
+        if (theme.endsWith('.sass')) {
+          themes[theme.slice(0, -5)] = path.join(
+            __dirname,
+            'src',
+            'sass',
+            theme
+          )
+        }
         return themes
       }, {}),
   },
