@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 
-import CopyWebpackPlugin from 'copy-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
@@ -42,12 +41,6 @@ export default {
       openAnalyzer: false,
       logLevel: 'error',
     }),
-    new CopyWebpackPlugin([
-      {
-        from: path.join(__dirname, 'src', 'sass'),
-        to: path.join(__dirname, 'lib', 'sass'),
-      },
-    ]),
   ],
   module: {
     rules: [
