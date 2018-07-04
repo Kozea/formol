@@ -163,7 +163,10 @@ storiesOf('Formol exemples', module)
         <h1>Item and state handling</h1>
         <h2> Without item property</h2>
         <p>Form is self reset after a successful submit</p>
-        <Formol {...props}>
+        <Formol
+          {...props}
+          classes={{ submit: 'i-am-submit', cancel: 'i-am-cancel' }}
+        >
           <Field pattern={/\w+\d{2}/.source} required>
             Login
           </Field>
