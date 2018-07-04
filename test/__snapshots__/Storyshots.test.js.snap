@@ -8212,7 +8212,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           }
         }
       >
-        <span
+        <div
           className={
             Block {
               "block": "RangeField",
@@ -8233,78 +8233,16 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           }
         >
           0
-        </span>
-        <input
-          className={
-            Block {
-              "block": "InputField",
-              "cache": Array [],
-              "element": null,
-              "mixed": Array [
-                Block {
-                  "block": "NumberField",
-                  "cache": Array [],
-                  "element": null,
-                  "mixed": Array [
-                    Block {
-                      "block": "RangeField",
-                      "cache": Array [],
-                      "element": "range",
-                      "mixed": Array [],
-                      "modifier": Object {},
-                      "s": "Formol_RangeField__range",
-                      "settings": Object {
-                        "cache": false,
-                        "elementDelimiter": "__",
-                        "modifierDelimiter": "--",
-                        "modifierValueDelimiter": "-",
-                        "namespace": "Formol_",
-                      },
-                      "subs": Array [],
-                    },
-                  ],
-                  "modifier": Object {},
-                  "s": "Formol_NumberField Formol_RangeField__range",
-                  "settings": Object {
-                    "cache": false,
-                    "elementDelimiter": "__",
-                    "modifierDelimiter": "--",
-                    "modifierValueDelimiter": "-",
-                    "namespace": "Formol_",
-                  },
-                  "subs": Array [],
-                },
-              ],
-              "modifier": Object {},
-              "s": "Formol_InputField Formol_NumberField Formol_RangeField__range",
-              "settings": Object {
-                "cache": false,
-                "elementDelimiter": "__",
-                "modifierDelimiter": "--",
-                "modifierValueDelimiter": "-",
-                "namespace": "Formol_",
-              },
-              "subs": Array [],
-            }
-          }
-          name="range"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          placeholder="range"
-          type="range"
-          value=""
-        />
-        <span
+        </div>
+        <div
           className={
             Block {
               "block": "RangeField",
               "cache": Array [],
-              "element": "value",
+              "element": "value-wrapper",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_RangeField__value",
+              "s": "Formol_RangeField__value-wrapper",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -8316,10 +8254,94 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
             }
           }
         >
-          ?
-        </span>
-         / 
-        <span
+          <input
+            className={
+              Block {
+                "block": "InputField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "NumberField",
+                    "cache": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "RangeField",
+                        "cache": Array [],
+                        "element": "range",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_RangeField__range",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_NumberField Formol_RangeField__range",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_InputField Formol_NumberField Formol_RangeField__range",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            max={100}
+            min={0}
+            name="range"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="range"
+            type="range"
+            value=""
+          />
+          <span
+            className={
+              Block {
+                "block": "RangeField",
+                "cache": Array [],
+                "element": "value",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_RangeField__value",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            
+          </span>
+        </div>
+        <div
           className={
             Block {
               "block": "RangeField",
@@ -8340,7 +8362,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           }
         >
           100
-        </span>
+        </div>
       </div>
       <span
         className={
@@ -16036,7 +16058,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           }
         }
       >
-        <span
+        <div
           className={
             Block {
               "block": "RangeField",
@@ -16057,78 +16079,16 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           }
         >
           0
-        </span>
-        <input
-          className={
-            Block {
-              "block": "InputField",
-              "cache": Array [],
-              "element": null,
-              "mixed": Array [
-                Block {
-                  "block": "NumberField",
-                  "cache": Array [],
-                  "element": null,
-                  "mixed": Array [
-                    Block {
-                      "block": "RangeField",
-                      "cache": Array [],
-                      "element": "range",
-                      "mixed": Array [],
-                      "modifier": Object {},
-                      "s": "Formol_RangeField__range",
-                      "settings": Object {
-                        "cache": false,
-                        "elementDelimiter": "__",
-                        "modifierDelimiter": "--",
-                        "modifierValueDelimiter": "-",
-                        "namespace": "Formol_",
-                      },
-                      "subs": Array [],
-                    },
-                  ],
-                  "modifier": Object {},
-                  "s": "Formol_NumberField Formol_RangeField__range",
-                  "settings": Object {
-                    "cache": false,
-                    "elementDelimiter": "__",
-                    "modifierDelimiter": "--",
-                    "modifierValueDelimiter": "-",
-                    "namespace": "Formol_",
-                  },
-                  "subs": Array [],
-                },
-              ],
-              "modifier": Object {},
-              "s": "Formol_InputField Formol_NumberField Formol_RangeField__range",
-              "settings": Object {
-                "cache": false,
-                "elementDelimiter": "__",
-                "modifierDelimiter": "--",
-                "modifierValueDelimiter": "-",
-                "namespace": "Formol_",
-              },
-              "subs": Array [],
-            }
-          }
-          name="range"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          placeholder="range"
-          type="range"
-          value="range"
-        />
-        <span
+        </div>
+        <div
           className={
             Block {
               "block": "RangeField",
               "cache": Array [],
-              "element": "value",
+              "element": "value-wrapper",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_RangeField__value",
+              "s": "Formol_RangeField__value-wrapper",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -16140,10 +16100,94 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
             }
           }
         >
-          range
-        </span>
-         / 
-        <span
+          <input
+            className={
+              Block {
+                "block": "InputField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "NumberField",
+                    "cache": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "RangeField",
+                        "cache": Array [],
+                        "element": "range",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_RangeField__range",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_NumberField Formol_RangeField__range",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_InputField Formol_NumberField Formol_RangeField__range",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            max={100}
+            min={0}
+            name="range"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="range"
+            type="range"
+            value="range"
+          />
+          <span
+            className={
+              Block {
+                "block": "RangeField",
+                "cache": Array [],
+                "element": "value",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_RangeField__value",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            range
+          </span>
+        </div>
+        <div
           className={
             Block {
               "block": "RangeField",
@@ -16164,7 +16208,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           }
         >
           100
-        </span>
+        </div>
       </div>
       <span
         className={

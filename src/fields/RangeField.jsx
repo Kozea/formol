@@ -5,19 +5,38 @@ import NumberField from './NumberField'
 
 @block
 export default class RangeField extends React.PureComponent {
+  static defaultProps = {
+    min: 0,
+    max: 100,
+  }
+
   render(b) {
-    const { className, noLabels, ...props } = this.props
+    const { className, noLabels, min, max, value, ...props } = this.props
+    const range = (
+      <NumberField
+        className={b.e('range')}
+        min={min}
+        max={max}
+        value={value}
+        {...props}
+      />
+    )
     return (
       <div className={b.mix(className)}>
-        {!noLabels && <span className={b.e('min')}>{props.min || 0}</span>}
-        <NumberField className={b.e('range')} {...props} />
-        {!noLabels && (
-          <span className={b.e('value')}>
-            {[null, void 0, ''].includes(props.value) ? '?' : props.value}
-          </span>
+        {noLabels ? (
+          range
+        ) : (
+          <>
+            <div className={b.e('min')}>{min}</div>
+            <div className={b.e('value-wrapper')}>
+              {range}
+              <span className={b.e('value')}>
+                {[null, void 0, ''].includes(value) ? '' : value}
+              </span>
+            </div>
+            <div className={b.e('max')}>{max}</div>
+          </>
         )}
-        {!noLabels && ' / '}
-        {!noLabels && <span className={b.e('max')}>{props.max || 100}</span>}
       </div>
     )
   }
