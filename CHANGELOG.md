@@ -1,3 +1,8 @@
+### [1.3.1](https://github.com/Kozea/formol/compare/v1.3.0...v1.3.1)
+
+- Add a NoRequestNeeded exception to allow unrest onCreate/onSend methods to skip the request (and therefore avoid valid and error messages)
+- Don't duplicate sass now that src is bundled
+
 ## [1.3.0](https://github.com/Kozea/formol/compare/v1.2.6...v1.3.0)
 
 - Bundle source code and a pkg.module field to allow in your app building and code-splitting (with webpack you will have to add the `node_modules/src/formol` directory to the include of your babel rule)
