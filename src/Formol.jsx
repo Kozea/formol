@@ -75,6 +75,7 @@ export default class Formol extends React.PureComponent {
     types: {},
     i18n: 'en',
     focusNextOnEnter: false,
+    classes: {},
   }
 
   constructor(props) {
@@ -350,6 +351,7 @@ export default class Formol extends React.PureComponent {
       noCancel,
       allowUnmodifiedSubmit,
       extra,
+      classes,
     } = this.props
     const { loading, context, modified } = this.state
     return (
@@ -375,7 +377,7 @@ export default class Formol extends React.PureComponent {
             />
             <button
               onClick={this.handleSubmit}
-              className={b.e('submit')}
+              className={b.e('submit').mix(classes.submit)}
               disabled={!modified && !allowUnmodifiedSubmit}
               type="button"
             >
@@ -384,7 +386,7 @@ export default class Formol extends React.PureComponent {
             {!noCancel && (
               <button
                 onClick={this.handleCancel}
-                className={b.e('cancel')}
+                className={b.e('cancel').mix(classes.cancel)}
                 disabled={!modified}
                 type="button"
               >
