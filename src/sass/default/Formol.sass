@@ -60,16 +60,20 @@
   color: $formol-color-action
 
   .Formol_Field__field
-    border-color: $formol-color-action
     color: $formol-color
+
+    &:not(select)
+      border-color: $formol-color-action
 
 .Formol_Field--error, .Formol_Field--error:hover
   color: $formol-color-error
   box-shadow: none
 
   .Formol_Field__field
-    border-color: $formol-color-error
     color: $formol-color
+
+    &:not(select)
+      border-color: $formol-color-error
 
 .Formol_Field__error
   font-size: $formol-font-size * .85
