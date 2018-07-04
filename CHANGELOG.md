@@ -1,3 +1,11 @@
+## [1.3.0](https://github.com/Kozea/formol/compare/v1.2.6...v1.3.0)
+
+- Bundle source code and a pkg.module field to allow in your app building and code-splitting (with webpack you will have to add the `node_modules/src/formol` directory to the include of your babel rule)
+- Add Formol classes property to specify additional classes on buttons
+- Make sass importable without editing includePath
+- Input text is always in basic color
+- Range field improvements
+
 ### [1.2.6](https://github.com/Kozea/formol/compare/v1.2.5...v1.2.6)
 
 - Add focus color for default theme. Fix #27
