@@ -34,6 +34,7 @@
   justify-content: flex-start
 
   .Formol_Field__field
+    background-color: transparent
     box-shadow: none
     color: inherit
     font: inherit
@@ -56,12 +57,20 @@
 .Formol_Field--modified, .Formol_Field:hover
   color: $formol-color
 
-.Formol_Field--error
+.Formol_Field--focus, .Formol_Field--focus:hover
+  color: $formol-color-action
+
+  .Formol_Field__field
+    border-color: $formol-color-action
+    color: $formol-color
+
+.Formol_Field--error, .Formol_Field--error:hover
   color: $formol-color-error
   box-shadow: none
 
-.Formol_Field--focus, .Formol_Field--focus:hover
-  color: $formol-color-action
+  .Formol_Field__field
+    border-color: $formol-color-error
+    color: $formol-color
 
 .Formol_Field__error
   font-size: $formol-font-size * .85

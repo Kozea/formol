@@ -44,17 +44,6 @@
     &::after
       color: $formol-color-action
 
-.Formol_Field--error, .Formol_Field--error:hover
-  color: $formol-color-error
-
-  .Formol_Field__label-text
-    &::after
-      color: inherit
-
-  .Formol_Field__label
-    input, textarea
-      border-bottom-color: $formol-color-error
-
 .Formol_Field--focus, .Formol_Field--modified, .Formol_Field--error
   .Formol_Field__label-text
     &::after
@@ -63,3 +52,15 @@
 .Formol_Field--focus
   .Formol_Field__label-text
     color: $formol-color-action
+
+.Formol_Field--error, .Formol_Field--error:hover
+  &, & .Formol_Field__label-text
+    color: $formol-color-error
+
+  .Formol_Field__label-text
+    &::after
+      color: inherit
+
+  .Formol_Field__label
+    input, textarea
+      border-bottom-color: $formol-color-error
