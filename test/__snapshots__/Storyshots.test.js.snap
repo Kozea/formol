@@ -9348,7 +9348,7 @@ Area"
         onKeyDown={[Function]}
         placeholder="datetime-local"
         type="datetime-local"
-        value="datetime-local"
+        value="2018-08-01T17:14"
       />
       <span
         className={
@@ -23999,7 +23999,7 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
         onKeyDown={[Function]}
         placeholder="datetime-local"
         type="datetime-local"
-        value="datetime-local"
+        value="2018-08-01T17:14"
       />
       <span
         className={
