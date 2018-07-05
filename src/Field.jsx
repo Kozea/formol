@@ -180,6 +180,7 @@ export default class Field extends React.PureComponent {
         })}
       >
         <Label className={b.e('label')}>
+          {children && <span className={b.e('title')}>{children}</span>}
           <TypeField
             name={name}
             value={value}
@@ -195,7 +196,6 @@ export default class Field extends React.PureComponent {
             {...props}
           />
           {unit && <div className={b.e('unit')}>{unit}</div>}
-          {children && <span className={b.e('title')}>{children}</span>}
           {extras}
         </Label>
         {error && <div className={b.e('error-text')}>{error}</div>}
