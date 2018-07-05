@@ -187,7 +187,7 @@ export default class Field extends React.PureComponent {
             readOnly={readOnly}
             i18n={i18n}
             elementRef={this.element}
-            className={b.e('field')}
+            className={b.e('element')}
             onFocus={this.handleFocus}
             onBlur={this.handleBlur}
             onChange={this.handleChange}
@@ -195,10 +195,10 @@ export default class Field extends React.PureComponent {
             {...props}
           />
           {unit && <div className={b.e('unit')}>{unit}</div>}
-          {children && <span className={b.e('label-text')}>{children}</span>}
+          {children && <span className={b.e('title')}>{children}</span>}
           {extras}
         </Label>
-        {error && <div className={b.e('error')}>{error}</div>}
+        {error && <div className={b.e('error-text')}>{error}</div>}
       </div>
     )
   }
