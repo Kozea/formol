@@ -28949,12 +28949,12 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
           "error": false,
           "focus": false,
           "modified": false,
-          "name": "filedrop",
+          "name": "file",
           "readOnly": undefined,
           "required": false,
-          "type": "filedrop",
+          "type": "file",
         },
-        "s": "Formol_Field Formol_Field--type-filedrop Formol_Field--name-filedrop",
+        "s": "Formol_Field Formol_Field--type-file Formol_Field--name-file",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -28966,7 +28966,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -28986,52 +28986,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
         }
       }
     >
-      <input
-        accept="image/*"
-        className={
-          Block {
-            "block": "InputField",
-            "cache": Array [],
-            "element": null,
-            "mixed": Array [
-              Block {
-                "block": "Field",
-                "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
-                "modifier": Object {},
-                "s": "Formol_Field__field",
-                "settings": Object {
-                  "cache": false,
-                  "elementDelimiter": "__",
-                  "modifierDelimiter": "--",
-                  "modifierValueDelimiter": "-",
-                  "namespace": "Formol_",
-                },
-                "subs": Array [],
-              },
-            ],
-            "modifier": Object {},
-            "s": "Formol_InputField Formol_Field__field",
-            "settings": Object {
-              "cache": false,
-              "elementDelimiter": "__",
-              "modifierDelimiter": "--",
-              "modifierValueDelimiter": "-",
-              "namespace": "Formol_",
-            },
-            "subs": Array [],
-          }
-        }
-        name="filedrop"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        placeholder="Drop an image"
-        type="filedrop"
-        value=""
-      />
+      Loading
       <span
         className={
           Block {
@@ -29054,7 +29009,7 @@ exports[`Storyshots Native and Contrib fields From libraries 1`] = `
       >
         File
       </span>
-    </label>
+    </div>
   </div>
   <div
     className={
