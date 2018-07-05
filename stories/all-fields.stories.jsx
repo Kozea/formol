@@ -15,37 +15,32 @@ const filterDefined = o =>
   }, {})
 
 storiesOf('Field Test', module)
-
-const fieldStory = storiesOf('Field Test/Fields', module).addDecorator(
-  withKnobs
-)
-Object.entries(typeFields).forEach(([name, TypeField]) => {
-  fieldStory.add(
-    `${name} field`,
+  .addDecorator(withKnobs)
+  .add(
+    'All fields',
     withStateForm(props => (
       <Formol {...props}>
-        <h1>{name}</h1>
-        <TypeField {...filterDefined(knobs(name))} />
+        <h1>All fields</h1>
+        {Object.entries(typeFields).map(([name, TypeField]) => (
+          <TypeField key={name} {...filterDefined(knobs(name))} />
+        ))}
       </Formol>
     ))
   )
-})
-
-const requiredFieldStory = storiesOf(
-  'Field Test/Fields with initial value',
-  module
-).addDecorator(withKnobs)
-Object.entries(typeFields).forEach(([name, TypeField]) => {
-  requiredFieldStory.add(
-    `${name} field`,
+  .add(
+    'All fields with initial value',
     withStateForm(
       props => (
         <Formol {...props}>
-          <h1>{name}</h1>
-          <TypeField {...filterDefined(knobs(name))} />
+          <h1>All fields</h1>
+          {Object.entries(typeFields).map(([name, TypeField]) => (
+            <TypeField key={name} {...filterDefined(knobs(name))} />
+          ))}
         </Formol>
       ),
-      { [name]: testFieldValue(name) }
+      Object.entries(typeFields).reduce((values, [name]) => {
+        values[name] = testFieldValue(name)
+        return values
+      }, {})
     )
   )
-})
