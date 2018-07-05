@@ -2,115 +2,81 @@ import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Formol, { Field } from '../src'
+import Formol from '../src'
+import { knobs, testFieldValue, typeFields } from './fields'
 import { withStateForm } from './utils'
 
-storiesOf('Native and Contrib fields', module)
-  .addDecorator(withKnobs)
-  .add(
-    'Native fields',
+const filterDefined = o =>
+  Object.entries(o).reduce((filtered, [k, v]) => {
+    if (v || v === 0) {
+      filtered[k] = v
+    }
+    return filtered
+  }, {})
+
+storiesOf('Field Test', module)
+
+const fieldStory = storiesOf('Field Test/Fields', module).addDecorator(
+  withKnobs
+)
+Object.entries(typeFields).forEach(([name, TypeField]) => {
+  fieldStory.add(
+    `${name} field`,
     withStateForm(props => (
       <Formol {...props}>
-        <Field name="text">Text</Field>
-        <Field type="area" name="area">
-          Area
-        </Field>
-        <Field type="email" name="email">
-          E-mail
-        </Field>
-        <Field type="number" name="number">
-          Number
-        </Field>
-        <Field type="password" name="password">
-          Password
-        </Field>
-        <Field type="tel" name="tel">
-          Phone number
-        </Field>
-        <Field
-          name="select"
-          type="select"
-          choices={{
-            'Choice 1': 'key1',
-            'Choice 2': 'key2',
-            'Choice 3': 'key3',
-          }}
-        >
-          Select
-        </Field>
-        <Field
-          type="checkbox"
-          name="checkbox"
-          choices={{
-            'Choice 1': 'c1',
-            'Choice 2': 'c2',
-          }}
-        >
-          Checkbox
-        </Field>
-        <Field
-          type="radio"
-          name="radio"
-          choices={{
-            'Choice 1': 'c1',
-            'Choice 2': 'c2',
-          }}
-        >
-          Radio
-        </Field>
-        <Field type="checkbox" name="simple-checkbox">
-          Checkbox
-        </Field>
+        <h1>{name}</h1>
+        <TypeField {...filterDefined(knobs(name))} />
+      </Formol>
+    ))
+  )
+})
+
+const requiredFieldStory = storiesOf(
+  'Field Test/Fields with initial value',
+  module
+).addDecorator(withKnobs)
+Object.entries(typeFields).forEach(([name, TypeField]) => {
+  requiredFieldStory.add(
+    `${name} field`,
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>{name}</h1>
+          <TypeField {...filterDefined(knobs(name))} />
+        </Formol>
+      ),
+      { [name]: testFieldValue(name) }
+    )
+  )
+})
+
+storiesOf('Field Test', module)
+  .addDecorator(withKnobs)
+  .add(
+    'All fields',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>All fields</h1>
+        {Object.entries(typeFields).map(([name, TypeField]) => (
+          <TypeField key={name} {...filterDefined(knobs(name))} />
+        ))}
       </Formol>
     ))
   )
   .add(
-    'From libraries',
-    withStateForm(props => (
-      <Formol {...props}>
-        <Field type="switch" name="switch">
-          Switch
-        </Field>
-        <Field
-          name="select-menu"
-          type="select-menu"
-          choices={{
-            'Choice 1': 'key1',
-            'Choice 2': 'key2',
-            'Choice 3': 'key3',
-          }}
-        >
-          Select Menu
-        </Field>
-        <Field
-          name="select-menu-multiple"
-          type="select-menu"
-          multiple
-          choices={{
-            'Choice 1': 'key1',
-            'Choice 2': 'key2',
-            'Choice 3': 'key3',
-          }}
-        >
-          Multiple Select Menu
-        </Field>
-        <Field type="calendar" name="calendar">
-          Calendar
-        </Field>
-        <Field type="html" name="html">
-          HTML
-        </Field>
-        <Field
-          type="filedrop"
-          name="filedrop"
-          accept="image/*"
-          placeholder="Drop an image"
-        >
-          File
-        </Field>
-        <Field type="password-strength" name="password-strength">
-          Password strength
-        </Field>
-      </Formol>
-    ))
+    'All fields with initial value',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>All fields</h1>
+          {Object.entries(typeFields).map(([name, TypeField]) => (
+            <TypeField key={name} {...filterDefined(knobs(name))} />
+          ))}
+        </Formol>
+      ),
+      Object.entries(typeFields).reduce((values, [name]) => {
+        values[name] = testFieldValue(name)
+        return values
+      }, {})
+    )
   )

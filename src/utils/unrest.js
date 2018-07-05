@@ -1,5 +1,14 @@
 import { diff } from './object'
 
+function NoRequestNeeded(message) {
+  this.name = 'NoRequestNeeded'
+  this.message = message
+  this.stack = new Error().stack
+}
+NoRequestNeeded.prototype = new Error()
+
+export { NoRequestNeeded }
+
 export default ({ pk, onCreate, onPatch, onValid, onError, onFail }) => async (
   transientItem,
   item,
@@ -24,6 +33,9 @@ export default ({ pk, onCreate, onPatch, onValid, onError, onFail }) => async (
   try {
     report = await onSend(...args)
   } catch (err) {
+    if (err instanceof NoRequestNeeded) {
+      return {}
+    }
     onFail && onFail(err, mode)
     return
   }

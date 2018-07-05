@@ -10,7 +10,6 @@ setOptions({
 function loadStories() {
   require('../stories/exemples.stories.jsx')
   require('../stories/fields.stories.jsx')
-  require('../stories/fields-test.stories.jsx')
   require('../stories/conditionals.stories.jsx')
   require('../stories/formatters.stories.jsx')
   require('../stories/validators.stories.jsx')
