@@ -13,13 +13,12 @@ export default class FieldSet extends React.PureComponent {
       isChecked,
       value,
       choices,
-      className,
       elementRef,
       onChange,
       ...props
     } = this.props
     return (
-      <fieldset className={b.mix(className)} ref={elementRef}>
+      <fieldset className={b} ref={elementRef}>
         {choices.map(([choiceLabel, choice]) => (
           <label
             key={choice}
