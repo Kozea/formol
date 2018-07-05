@@ -30190,9 +30190,9 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "name": "checkbox",
           "readOnly": undefined,
           "required": false,
-          "type": "checkbox",
+          "type": "checkbox-set",
         },
-        "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-checkbox",
+        "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-checkbox",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -30204,7 +30204,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -30224,27 +30224,37 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         }
       }
     >
-      <input
-        checked=""
-        choices={
-          Object {
-            "Choice 1": "c1",
-            "Choice 2": "c2",
-          }
-        }
+      <fieldset
         className={
           Block {
-            "block": "BooleanField",
+            "block": "FieldSet",
             "cache": Array [],
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "CheckboxSetField",
                 "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__field",
+                "s": "Formol_CheckboxSetField Formol_Field__field",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -30256,7 +30266,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__field",
+            "s": "Formol_FieldSet Formol_CheckboxSetField Formol_Field__field",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -30267,13 +30277,152 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "subs": Array [],
           }
         }
-        name="checkbox"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        type="checkbox"
-      />
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "cache": Array [],
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="checkbox"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "cache": Array [],
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 1
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "cache": Array [],
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="checkbox"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="checkbox"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "cache": Array [],
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 2
+          </span>
+        </label>
+      </fieldset>
       <span
         className={
           Block {
@@ -30296,7 +30445,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
       >
         Checkbox
       </span>
-    </label>
+    </div>
   </div>
   <div
     className={
@@ -30312,9 +30461,9 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
           "name": "radio",
           "readOnly": undefined,
           "required": false,
-          "type": "radio",
+          "type": "radio-set",
         },
-        "s": "Formol_Field Formol_Field--type-radio Formol_Field--name-radio",
+        "s": "Formol_Field Formol_Field--type-radio-set Formol_Field--name-radio",
         "settings": Object {
           "cache": false,
           "elementDelimiter": "__",
@@ -30326,7 +30475,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
       }
     }
   >
-    <label
+    <div
       className={
         Block {
           "block": "Field",
@@ -30346,27 +30495,37 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
         }
       }
     >
-      <input
-        checked=""
-        choices={
-          Object {
-            "Choice 1": "c1",
-            "Choice 2": "c2",
-          }
-        }
+      <fieldset
         className={
           Block {
-            "block": "BooleanField",
+            "block": "FieldSet",
             "cache": Array [],
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "RadioSetField",
                 "cache": Array [],
-                "element": "field",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "field",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__field",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__field",
+                "s": "Formol_RadioSetField Formol_Field__field",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -30378,7 +30537,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__field",
+            "s": "Formol_FieldSet Formol_RadioSetField Formol_Field__field",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -30389,13 +30548,152 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
             "subs": Array [],
           }
         }
-        name="radio"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        type="radio"
-      />
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "cache": Array [],
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "cache": Array [],
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 1
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "cache": Array [],
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "cache": false,
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_BooleanField",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "cache": Array [],
+                "element": "label-text",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__label-text",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            Choice 2
+          </span>
+        </label>
+      </fieldset>
       <span
         className={
           Block {
@@ -30418,7 +30716,7 @@ exports[`Storyshots Native and Contrib fields Native fields 1`] = `
       >
         Radio
       </span>
-    </label>
+    </div>
   </div>
   <div
     className={

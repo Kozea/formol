@@ -39,7 +39,7 @@ storiesOf('Native and Contrib fields', module)
           Select
         </Field>
         <Field
-          type="checkbox"
+          type="checkbox-set"
           name="checkbox"
           choices={{
             'Choice 1': 'c1',
@@ -49,7 +49,7 @@ storiesOf('Native and Contrib fields', module)
           Checkbox
         </Field>
         <Field
-          type="radio"
+          type="radio-set"
           name="radio"
           choices={{
             'Choice 1': 'c1',
