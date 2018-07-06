@@ -6,15 +6,19 @@
   border: solid 1px
   border-radius: .15em
   margin: .5em 0
+  padding: 0
   position: relative
   max-width: 100%
-  width: 50em
+  width: $formol-big-field-size
 
   &__hidden-input
     +hidden-input
 
+  .rdw-editor-wrapper
+    border-color: inherit
+
   .rdw-editor-toolbar
-    border-bottom-color: $formol-color
+    border-bottom-color: inherit
     margin-bottom: 0
     opacity: 1
     transition: padding .35s, opacity .35s

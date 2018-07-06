@@ -1,47 +1,45 @@
 @import ../variables
 
 
-// radio and checkbox
-.Formol_Field--type-checkbox, .Formol_Field--type-radio, .Formol_FieldSet
-  margin: 2em 0
-
-  input
-    box-shadow: none
-
-  .Formol_Field__label, .Formol_FieldSet__label
+// boolean element
+.Formol_Field--type-checkbox .Formol_Field, .Formol_Field--type-radio .Formol_Field, .Formol_Field--type-checkbox-set .Formol_FieldSet, .Formol_Field--type-radio-set .Formol_FieldSet
+  &__label
     align-items: center
     border: solid 1px
     border-radius: .15em
     box-sizing: border-box
+    box-shadow: none
+    color: $formol-color-inactive
     cursor: pointer
-    flex-direction: row
-    flex-wrap: nowrap
-    max-width: 100%
-    padding: .85em
-    width: max-content
-    width: -moz-max-content
-    width: -webkit-max-content
-
-    &-text
-      font-size: $formol-font-size * .85
-      margin-left: .5em
-      order: initial
-
-  .Formol_Field__field
-    margin: 0
-
-// radio-set and checkbox-set
-.Formol_FieldSet
-  border: 0
-  padding: 0
-  width: 100%
-
-  .Formol_FieldSet__label
     display: inline-flex
-    margin: 0 .5em .5em 0
-
-    &:not(.Formol_FieldSet__label--on)
-      color: rgba($formol-color, .65)
+    font: inherit
+    margin: .5em 0
+    max-width: 100%
+    padding: .75em
+    transition: color .2s, border-color .2s
 
     &:hover
       color: $formol-color
+
+    &--on, &--on:hover
+      color: inherit
+
+  &__title
+    font-size: $formol-font-size
+    margin-left: .5em
+    order: 1
+
+
+// fieldset
+.Formol_Field--type-checkbox-set, .Formol_Field--type-radio-set
+  .Formol_FieldSet
+    border: 0
+    margin: .5em 0
+    padding: 0
+
+    &__label
+      margin: 0 .5em .5em 0
+
+
+.Formol_BooleanField
+  margin: 0
