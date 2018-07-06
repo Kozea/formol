@@ -81,10 +81,10 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -255,10 +255,10 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -373,10 +373,10 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -581,10 +581,10 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -697,10 +697,10 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -902,10 +902,10 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -1076,10 +1076,10 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -1281,10 +1281,10 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -1455,10 +1455,10 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -1571,10 +1571,10 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -1777,10 +1777,10 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -1953,10 +1953,10 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               Block {
                 "block": "Field",
                 "cache": Array [],
-                "element": "label-text",
+                "element": "title",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_Field__label-text",
+                "s": "Formol_Field__title",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -2073,10 +2073,10 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               Block {
                 "block": "Field",
                 "cache": Array [],
-                "element": "label-text",
+                "element": "title",
                 "mixed": Array [],
                 "modifier": Object {},
-                "s": "Formol_Field__label-text",
+                "s": "Formol_Field__title",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -2280,10 +2280,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -2397,10 +2397,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -2513,10 +2513,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -2647,10 +2647,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -2781,10 +2781,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -2978,10 +2978,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3051,10 +3051,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3185,10 +3185,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3319,10 +3319,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3453,10 +3453,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3587,10 +3587,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3721,10 +3721,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3855,10 +3855,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -3989,10 +3989,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -4250,10 +4250,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -4408,10 +4408,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -4481,10 +4481,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -4656,10 +4656,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -4731,10 +4731,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -4848,10 +4848,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -6655,10 +6655,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -6772,10 +6772,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -8577,10 +8577,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -8650,10 +8650,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -8851,10 +8851,10 @@ exports[`Storyshots Field Test All fields 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9013,10 +9013,10 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9130,10 +9130,10 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9247,10 +9247,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9381,10 +9381,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9515,10 +9515,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9712,10 +9712,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9785,10 +9785,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -9919,10 +9919,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10053,10 +10053,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10187,10 +10187,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10321,10 +10321,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10455,10 +10455,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10589,10 +10589,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10723,10 +10723,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -10984,10 +10984,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -11142,10 +11142,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -11215,10 +11215,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -11390,10 +11390,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -11465,10 +11465,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -11582,10 +11582,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -13389,10 +13389,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -13506,10 +13506,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -15311,10 +15311,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -15384,10 +15384,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -15585,10 +15585,10 @@ Area"
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -15747,10 +15747,10 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -15952,10 +15952,10 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -16116,10 +16116,10 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -16322,10 +16322,10 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -18216,10 +18216,10 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -18439,10 +18439,10 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -18662,10 +18662,10 @@ exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -18885,10 +18885,10 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -19108,10 +19108,10 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -19270,10 +19270,10 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -19432,10 +19432,10 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -19679,10 +19679,10 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -19902,10 +19902,10 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20125,10 +20125,10 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20411,10 +20411,10 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20575,10 +20575,10 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20781,10 +20781,10 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -22675,10 +22675,10 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -23025,10 +23025,10 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -23315,10 +23315,10 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -23477,10 +23477,10 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -23741,10 +23741,10 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -23964,10 +23964,10 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -24170,10 +24170,10 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -24393,10 +24393,10 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -24616,10 +24616,10 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -24822,10 +24822,10 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -24986,10 +24986,10 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -25192,10 +25192,10 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -27086,10 +27086,10 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -27309,10 +27309,10 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -27532,10 +27532,10 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -27755,10 +27755,10 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -27978,10 +27978,10 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -28140,10 +28140,10 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -28302,10 +28302,10 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -28549,10 +28549,10 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -28772,10 +28772,10 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -28995,10 +28995,10 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -29281,10 +29281,10 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -29445,10 +29445,10 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -29651,10 +29651,10 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -31545,10 +31545,10 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -31895,10 +31895,10 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -32185,10 +32185,10 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -32347,10 +32347,10 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -32611,10 +32611,10 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -32834,10 +32834,10 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33040,10 +33040,10 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33263,10 +33263,10 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33486,10 +33486,10 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33602,10 +33602,10 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33718,10 +33718,10 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33835,10 +33835,10 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -33997,10 +33997,10 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -34202,10 +34202,10 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -34407,10 +34407,10 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -34612,10 +34612,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -34730,10 +34730,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -34847,10 +34847,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -35108,10 +35108,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -35242,10 +35242,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -35315,10 +35315,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -35729,10 +35729,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -35864,10 +35864,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -36000,10 +36000,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -36133,10 +36133,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -36269,10 +36269,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -36386,10 +36386,10 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -36592,10 +36592,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -36710,10 +36710,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -36827,10 +36827,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -37088,10 +37088,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -37222,10 +37222,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -37295,10 +37295,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -37709,10 +37709,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -37883,10 +37883,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -38018,10 +38018,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -38154,10 +38154,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -38287,10 +38287,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -38423,10 +38423,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -38540,10 +38540,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -38753,10 +38753,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -38871,10 +38871,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -39191,10 +39191,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -39309,10 +39309,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -39595,10 +39595,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -39713,10 +39713,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -39999,10 +39999,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -40117,10 +40117,10 @@ Array [
             Block {
               "block": "Field",
               "cache": Array [],
-              "element": "label-text",
+              "element": "title",
               "mixed": Array [],
               "modifier": Object {},
-              "s": "Formol_Field__label-text",
+              "s": "Formol_Field__title",
               "settings": Object {
                 "cache": false,
                 "elementDelimiter": "__",
@@ -40404,10 +40404,10 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -40537,10 +40537,10 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -40653,10 +40653,10 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -40769,10 +40769,10 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -40885,10 +40885,10 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -41018,10 +41018,10 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -41836,10 +41836,10 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -41952,10 +41952,10 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42076,10 +42076,10 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42241,10 +42241,10 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42374,10 +42374,10 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42490,10 +42490,10 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42606,10 +42606,10 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42722,10 +42722,10 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -42855,10 +42855,10 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -43673,10 +43673,10 @@ exports[`Storyshots Miscellaneous Fast HTML Field 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -43835,10 +43835,10 @@ exports[`Storyshots Miscellaneous Non string select values 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -43985,10 +43985,10 @@ exports[`Storyshots Miscellaneous Non string select values 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -44141,10 +44141,10 @@ exports[`Storyshots Miscellaneous Non string select values 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -44214,10 +44214,10 @@ exports[`Storyshots Miscellaneous Non string select values 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -44376,10 +44376,10 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -44538,10 +44538,10 @@ exports[`Storyshots Validators Complex field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -44763,10 +44763,10 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -44879,10 +44879,10 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45084,10 +45084,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45219,10 +45219,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45354,10 +45354,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45489,10 +45489,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45624,10 +45624,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45759,10 +45759,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -45894,10 +45894,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -46029,10 +46029,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -46164,10 +46164,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -46299,10 +46299,10 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           Block {
             "block": "Field",
             "cache": Array [],
-            "element": "label-text",
+            "element": "title",
             "mixed": Array [],
             "modifier": Object {},
-            "s": "Formol_Field__label-text",
+            "s": "Formol_Field__title",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",

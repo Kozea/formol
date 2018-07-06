@@ -188,7 +188,7 @@ export default class Field extends React.PureComponent {
       >
         <Label className={b.e('label').m(classNameModifiers.label)}>
           {children && (
-            <span className={b.e('label-text').m(classNameModifiers.labelText)}>
+            <span className={b.e('title').m(classNameModifiers.labelText)}>
             {children}
             </span>
           )}
