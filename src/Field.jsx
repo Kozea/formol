@@ -13,6 +13,7 @@ let UNAMED_COUNT = 0
 @block
 export default class Field extends React.PureComponent {
   static defaultProps = {
+    type: 'text',
     formatter: v => v,
     normalizer: v => (v && v.trim ? v.trim() : v),
     unformatter: v => v,
@@ -152,7 +153,6 @@ export default class Field extends React.PureComponent {
     } = this.getProps(this.props)
 
     const {
-      item,
       transientItem,
       types,
       i18n,
@@ -169,7 +169,7 @@ export default class Field extends React.PureComponent {
       throw new Error('Field must be used inside Form')
     }
 
-    const TypeField = types[type] || InputField
+    const TypeField = types[type]
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error =
       enteredFields.includes(name) && errors[name] ? errors[name] : null
