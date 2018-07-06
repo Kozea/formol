@@ -40328,6 +40328,9 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
   }
   onSubmit={[Function]}
 >
+  <h1>
+    Edition of nested object properties in an empty object
+  </h1>
   <div
     className={
       Block {
@@ -41757,6 +41760,9 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
   }
   onSubmit={[Function]}
 >
+  <h1>
+    Select fields with asynchronously loaded choices
+  </h1>
   <div
     className={
       Block {
@@ -42159,6 +42165,9 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
   }
   onSubmit={[Function]}
 >
+  <h1>
+    Edition of nested object properties in an existing object
+  </h1>
   <div
     className={
       Block {
@@ -43750,6 +43759,9 @@ exports[`Storyshots Miscellaneous Non string select values 1`] = `
   }
   onSubmit={[Function]}
 >
+  <h1>
+    Select with objects as choices
+  </h1>
   <div
     className={
       Block {
@@ -44288,6 +44300,9 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
   }
   onSubmit={[Function]}
 >
+  <h1>
+    Select with a huge number of choice
+  </h1>
   <div
     className={
       Block {

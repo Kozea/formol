@@ -44,13 +44,21 @@ class AsyncChoicesForm extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ choices: countries }), 1000)
+    this.timeout = setTimeout(() => this.setState({ choices: countries }), 1000)
   }
+
+  componentWillUnmount() {
+    this.timeout && clearTimeout(this.timeout)
+    this.timeout = null
+  }
+
+  timeout = null
 
   render() {
     const { choices } = this.state
     return (
       <Formol {...this.props}>
+        <h1>Select fields with asynchronously loaded choices</h1>
         <Field>Text</Field>
         <Field name="country" type="select" choices={choices} required>
           Country {choices.length ? null : <small>(Loading)</small>}
@@ -98,6 +106,7 @@ storiesOf('Miscellaneous', module)
     'Adding a nested item',
     withStateForm(props => (
       <Formol {...props}>
+        <h1>Edition of nested object properties in an empty object</h1>
         <Field type="number">Identifier</Field>
         <Field name="properties.name">Properties -&gt; Name</Field>
         <Field name="properties.root.realm">
@@ -125,6 +134,7 @@ storiesOf('Miscellaneous', module)
     withStateForm(
       props => (
         <Formol {...props}>
+          <h1>Edition of nested object properties in an existing object</h1>
           <Field type="number">Identifier</Field>
           <Field name="properties.name">Properties -&gt; Name</Field>
           <Field name="properties.root.realm">
@@ -181,6 +191,7 @@ storiesOf('Miscellaneous', module)
     withStateForm(
       props => (
         <Formol {...props}>
+          <h1>Select with objects as choices</h1>
           <Field name="simple" type="select" choices={objectChoices}>
             Object select
           </Field>
@@ -249,6 +260,7 @@ storiesOf('Miscellaneous', module)
     withStateForm(
       props => (
         <Formol {...props}>
+          <h1>Select with a huge number of choice</h1>
           <Field name="stressed" type="select-menu" choices={stressedChoices}>
             Stressed select
           </Field>

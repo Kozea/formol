@@ -27,7 +27,7 @@ export default class FieldSet extends React.PureComponent {
             <BooleanField
               {...props}
               type={type}
-              checked={isChecked(choice, value)}
+              value={isChecked(choice, value)}
               onChange={checked => onChange(choice, value, checked)}
             />
             <span className={b.e('title')}>{choiceLabel}</span>
