@@ -353,7 +353,9 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "cache": false,
@@ -2051,7 +2053,9 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               "cache": Array [],
               "element": "label",
               "mixed": Array [],
-              "modifier": Object {},
+              "modifier": Object {
+                "on": "",
+              },
               "s": "Formol_Field__label",
               "settings": Object {
                 "cache": false,
@@ -4707,7 +4711,9 @@ exports[`Storyshots Field Test All fields 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "cache": false,
@@ -6629,7 +6635,9 @@ exports[`Storyshots Field Test All fields 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "cache": false,
@@ -11437,8 +11445,10 @@ Area"
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -13359,8 +13369,10 @@ Area"
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -16084,7 +16096,9 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "cache": false,
@@ -20541,7 +20555,9 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "cache": false,
@@ -24950,8 +24966,10 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
@@ -29407,8 +29425,10 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
           "cache": Array [],
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "cache": false,
             "elementDelimiter": "__",
