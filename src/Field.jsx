@@ -16,6 +16,7 @@ export default class Field extends React.PureComponent {
     formatter: v => v,
     normalizer: v => (v && v.trim ? v.trim() : v),
     unformatter: v => v,
+    classNameModifiers: {},
   }
 
   constructor(props) {
@@ -71,11 +72,15 @@ export default class Field extends React.PureComponent {
   }
 
   getProps(props) {
+    // Put this in HOC?
     const TypeField = props.context.types[props.type] || InputField
+    const itemValue = get(props.context.item, this.name)
+    const transientValue = get(props.context.transientItem, this.name)
+    const value = props.formatter(transientValue)
     const propsOverrideFromField = TypeField.defaultFieldProps
       ? Object.entries(TypeField.defaultFieldProps).reduce(
           (newProps, [name, getter]) => {
-            newProps[name] = getter(props)
+            newProps[name] = getter(props, value)
             return newProps
           },
           {}
@@ -85,6 +90,8 @@ export default class Field extends React.PureComponent {
     return {
       ...props,
       name: this.name,
+      value,
+      modified: itemValue !== transientValue,
       ...propsOverrideFromField,
       ...props.conditionalContext.propsOverride,
     }
@@ -126,7 +133,9 @@ export default class Field extends React.PureComponent {
   render(b) {
     const {
       name,
+      value,
       type,
+      modified,
       className,
       validator,
       readOnly: fieldReadOnly,
@@ -138,6 +147,7 @@ export default class Field extends React.PureComponent {
       children,
       context,
       conditionalContext,
+      classNameModifiers,
       ...props
     } = this.getProps(this.props)
 
@@ -158,10 +168,6 @@ export default class Field extends React.PureComponent {
     if (!transientItem) {
       throw new Error('Field must be used inside Form')
     }
-    const itemValue = get(item, name)
-    const transientValue = get(transientItem, name)
-    const modified = itemValue !== transientValue
-    const value = formatter(transientValue)
 
     const TypeField = types[type] || InputField
     const Label = TypeField.formolFieldLabelElement || 'label'
@@ -177,10 +183,15 @@ export default class Field extends React.PureComponent {
           required: !!props.required,
           modified,
           focus,
+          ...classNameModifiers.field,
         })}
       >
-        <Label className={b.e('label')}>
-          {children && <span className={b.e('title')}>{children}</span>}
+        <Label className={b.e('label').m(classNameModifiers.label)}>
+          {children && (
+            <span className={b.e('label-text').m(classNameModifiers.labelText)}>
+            {children}
+            </span>
+          )}
           <TypeField
             name={name}
             value={value}
@@ -195,10 +206,16 @@ export default class Field extends React.PureComponent {
             onKeyDown={handleKeyDown}
             {...props}
           />
-          {unit && <div className={b.e('unit')}>{unit}</div>}
+          {unit && (
+            <div className={b.e('unit').m(classNameModifiers.unit)}>{unit}</div>
+          )}
           {extras}
         </Label>
-        {error && <div className={b.e('error-text')}>{error}</div>}
+        {error && (
+          <div className={b.e('error').m(classNameModifiers.error)}>
+            {error}
+          </div>
+        )}
       </div>
     )
   }
