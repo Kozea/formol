@@ -46,8 +46,9 @@ export default class SelectMenuField extends React.PureComponent {
   }
 
   componentDidMount() {
-    const { elementRef } = this.props
-    elementRef.current = this.select._selectRef.input.input
+    const { className, elementRef } = this.props
+    elementRef.current = this.select._selectRef.value
+    elementRef.current.classList.add(className)
   }
 
   componentWillUnmount() {
@@ -71,14 +72,14 @@ export default class SelectMenuField extends React.PureComponent {
       readOnly,
       value,
       choices,
-      ...inputProps
+      ...props
     } = this.props
     const { options, filterOptions } = this.state
-    delete inputProps.onChange
+    delete props.onChange
 
     return (
       <VirtualizedSelect
-        className={b.mix(className).s}
+        className={b.s}
         ref={ref => (this.select = ref)}
         disabled={readOnly /* There's no readOnly */}
         options={options}
@@ -86,7 +87,9 @@ export default class SelectMenuField extends React.PureComponent {
         multi={multiple}
         value={value}
         onChange={this.handleChange}
-        {...inputProps}
+        joinValues
+        inputProps={{ className: b.e('input').s }}
+        {...props}
       />
     )
   }
