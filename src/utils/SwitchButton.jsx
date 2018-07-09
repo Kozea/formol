@@ -10,17 +10,9 @@ export default class SwitchButton extends React.PureComponent {
     name: Math.random(),
   }
   render(b) {
-    const {
-      type,
-      name,
-      label,
-      labelRight,
-      mode,
-      className,
-      ...props
-    } = this.props
+    const { type, name, label, labelRight, mode, ...props } = this.props
     return (
-      <div className={b.mix(className).m({ mode })}>
+      <div className={b.m({ mode })}>
         {label && <label htmlFor={name}>{label}</label>}
         <BooleanField id={name} name={name} type="checkbox" {...props} />
         <label htmlFor={name} />

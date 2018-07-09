@@ -223,7 +223,7 @@ export default class FileField extends React.PureComponent {
     }
 
     return (
-      <div className={b.mix(className).m({ invalid: !!rejected.length })}>
+      <div className={b.m({ invalid: !!rejected.length })}>
         <Dropzone
           accept={accept || 'image/*'}
           className={b.e('dropzone').s}
@@ -249,7 +249,7 @@ export default class FileField extends React.PureComponent {
         </Dropzone>
         {multiple && <div className={b.e('previews')}>{preview}</div>}
         <input
-          className={b.e('hidden-input')}
+          className={b.mix(className).e('hidden-input')}
           ref={elementRef}
           {...inputProps}
           defaultValue={FileField.valueToField(value, multiple)}
