@@ -117,7 +117,7 @@ export default class HTMLField extends React.PureComponent {
       },
     }
     return (
-      <div className={b.mix(className)}>
+      <div className={b}>
         <Editor
           editorClassName={b.e('editor')}
           editorState={editorState}
@@ -135,7 +135,7 @@ export default class HTMLField extends React.PureComponent {
           wrapperClassName={b.e('wrapper')}
         />
         <input
-          className={b.e('hidden-input')}
+          className={b.e('hidden-input').mix(className)}
           ref={elementRef}
           {...props}
           defaultValue={value}

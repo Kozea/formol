@@ -58,7 +58,7 @@ export default class PasswordStrengthField extends React.PureComponent {
     return (
       <div className={b.e('wrapper')}>
         <ReactPasswordStrength
-          className={b.mix(className).s}
+          className={b.e('strength').s}
           /* eslint-disable-next-line react/jsx-handler-names */
           changeCallback={this.handleChange}
           defaultValue={value}
@@ -68,6 +68,7 @@ export default class PasswordStrengthField extends React.PureComponent {
             onBlur: this.handleBlur,
             ...props,
             type,
+            className: b.mix(className).s,
           }}
           scoreWords={[
             i18n.passwordStrength.weak,
