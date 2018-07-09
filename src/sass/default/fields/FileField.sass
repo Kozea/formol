@@ -4,7 +4,10 @@
 
 
 .Formol_FileField
+  @extend .Formol_Field__element
+  border-style: dashed
   color: inherit
+  padding: 0
   position: relative
   width: 100%
 
@@ -13,12 +16,6 @@
 
 
   &__dropzone
-    border: dashed 1px
-    cursor: pointer
-    margin: 1em
-    transition: border-color .2s
-    width: calc(100% - 2em)
-
     > input[type="file"]
       // This is an important hack to avoid the :
       // "An invalid form control with name="..."
@@ -26,11 +23,12 @@
       display: block !important
       +hidden-input
 
-
   &__placeholder
     align-items: flex-start
+    cursor: pointer
     display: flex
     flex-wrap: wrap
+    transition: color .2s
     width: 100%
 
     > svg

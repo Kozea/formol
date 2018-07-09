@@ -2,10 +2,12 @@
   max-width: 100%
   width: $formol-medium-field-size
 
-  .Formol_Field
-    &__element
-      padding: 0
-
   .Select-control
-    background-color: transparent
-    border: 0
+    @extend .Formol_Field__element
+    box-shadow: none
+    color: inherit
+    padding: 0
+
+    // *
+      color: inherit
+      font: inherit
