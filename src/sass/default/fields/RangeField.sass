@@ -4,17 +4,15 @@
       color: $formol-color-action
 
     &__element
+      +hidden-field__element
       background-color: transparent
-      border: 0
       color: inherit
-      padding-left: 0
-      padding-right: 0
-
 
 
 .Formol_RangeField
   align-items: center
   display: flex
+  margin: $formol-field-margin 0 calc(#{$formol-field-margin} + 1.5em)
 
   &__range
     border: 0
@@ -22,6 +20,7 @@
 
   &__value-wrapper
     color: inherit
+    margin: 0 .5em
     position: relative
     transition: color .25s
 
