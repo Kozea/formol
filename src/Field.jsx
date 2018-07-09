@@ -212,7 +212,7 @@ export default class Field extends React.PureComponent {
           {extras}
         </Label>
         {error && (
-          <div className={b.e('error').m(classNameModifiers.error)}>
+          <div className={b.e('error-text').m(classNameModifiers.error)}>
             {error}
           </div>
         )}
