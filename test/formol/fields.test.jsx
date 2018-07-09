@@ -93,8 +93,9 @@ describe('Formol field', () => {
     ).toEqual('baz')
   })
   it('handles modifications', () => {
+    const onChange = jest.fn()
     const wrapper = mount(
-      <Formol item={{ foo: 'bar' }}>
+      <Formol item={{ foo: 'bar' }} onChange={onChange}>
         <Field name="foo" />
       </Formol>
     )
@@ -108,6 +109,9 @@ describe('Formol field', () => {
     expect(cancel().props().disabled).toBeTruthy()
     input().simulate('change', { target: { value: 'ba' } })
     input().simulate('change', { target: { value: 'baz' } })
+    expect(onChange).toHaveBeenCalledTimes(2)
+    expect(onChange).toHaveBeenCalledWith({ foo: 'baz' })
+
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
   })
