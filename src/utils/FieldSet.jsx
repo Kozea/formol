@@ -30,7 +30,7 @@ export default class FieldSet extends React.PureComponent {
               value={isChecked(choice, value)}
               onChange={checked => onChange(choice, value, checked)}
             />
-            <span className={b.e('label-text')}>{choiceLabel}</span>
+            <span className={b.e('title')}>{choiceLabel}</span>
           </label>
         ))}
       </fieldset>

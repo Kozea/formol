@@ -1,21 +1,35 @@
+.Formol_Field--type-range
+  .Formol_Field
+    &--focus
+      color: $formol-color-action
+
+    &__element
+      +hidden-field__element
+      background-color: transparent
+      color: inherit
+
+
 .Formol_RangeField
   align-items: center
   display: flex
+  margin: $formol-field-margin 0 calc(#{$formol-field-margin} + 1.5em)
 
-  .Formol_RangeField__range
+  &__range
     border: 0
     padding: 0
 
+  &__value-wrapper
+    color: inherit
+    margin: 0 .5em
+    position: relative
+    transition: color .25s
 
-.Formol_RangeField__value-wrapper
-  position: relative
+  &__value
+    left: 0
+    text-align: center
+    top: 100%
+    width: 100%
+    position: absolute
 
-.Formol_RangeField__value
-  top: 100%
-  left: 0
-  text-align: center
-  width: 100%
-  position: absolute
-
-.Formol_RangeField__min, .Formol_RangeField__max
-  font-size: $formol-font-size / 1.25
+  &__min, &__max
+    font-size: $formol-font-size / 1.25

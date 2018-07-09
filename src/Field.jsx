@@ -187,6 +187,11 @@ export default class Field extends React.PureComponent {
         })}
       >
         <Label className={b.e('label').m(classNameModifiers.label)}>
+          {children && (
+            <span className={b.e('title').m(classNameModifiers.labelText)}>
+            {children}
+            </span>
+          )}
           <TypeField
             name={name}
             value={value}
@@ -194,7 +199,7 @@ export default class Field extends React.PureComponent {
             readOnly={readOnly}
             i18n={i18n}
             elementRef={this.element}
-            className={b.e('field')}
+            className={b.e('element')}
             onFocus={this.handleFocus}
             onBlur={this.handleBlur}
             onChange={this.handleChange}
@@ -204,15 +209,10 @@ export default class Field extends React.PureComponent {
           {unit && (
             <div className={b.e('unit').m(classNameModifiers.unit)}>{unit}</div>
           )}
-          {children && (
-            <span className={b.e('label-text').m(classNameModifiers.labelText)}>
-              {children}
-            </span>
-          )}
           {extras}
         </Label>
         {error && (
-          <div className={b.e('error').m(classNameModifiers.error)}>
+          <div className={b.e('error-text').m(classNameModifiers.error)}>
             {error}
           </div>
         )}

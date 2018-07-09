@@ -1,0 +1,30 @@
+// @import variables
+
+
+// field group
+.Formol_Field
+
+  // states
+  &:hover, &--modified, &--focus, &--error
+    .Formol_Field__title::after
+      opacity: 1
+
+
+  // elements
+  &__title
+    &::after
+      color: inherit
+      content: '•'
+      display: inline-block
+      font-size: 1.75em
+      line-height: 0
+      margin-left: .25em
+      opacity: .15
+      transition: opacity .2s
+      vertical-align: middle
+
+  &__element
+    border-width: 0
+    border-bottom-width: 2px
+    border-radius: 0
+    transition: background-color .2s, border-color .2s

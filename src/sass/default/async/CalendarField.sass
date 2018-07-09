@@ -1,3 +1,6 @@
-.Formol_CalendarField
-  display: flex
-  flex-direction: column
+.Formol_Field--type-calendar
+  .Formol_CalendarField
+    @extend .Formol_Field__element
+
+    &__field
+      +hidden-field__element

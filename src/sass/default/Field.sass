@@ -1,0 +1,68 @@
+.Formol_Field
+  +field-colors($formol-color-inactive)
+  margin: $formol-field-margin 0
+  max-width: 100%
+  width: max-content
+  width: -moz-max-content
+  width: -webkit-max-content
+
+  &--required &__title
+    &::before
+      content: '* '
+
+  // states
+  &:hover
+    +field-colors($formol-color)
+
+  &--modified, &--modified:hover
+    +field-colors($formol-color)
+
+  &--focus, &--focus:hover
+    +field-colors($formol-color-action)
+
+  &--error, &--error:hover
+    +field-colors($formol-color-error)
+    box-shadow: none
+
+
+  // elements
+  &__label
+    color: inherit
+
+  &__title
+    color: inherit
+    display: block
+    font-size: $formol-font-size * .85
+    transition: color .2s
+    width: 100%
+
+  &__element
+    background-color: $formol-background-color
+    border: solid 1px
+    border-color: inherit
+    border-radius: .15em
+    box-sizing: border-box
+    box-shadow: none
+    color: $formol-color
+    font: inherit
+    margin: .5em 0
+    max-width: 100%
+    padding: $formol-field-padding
+    transition: border-color .2s
+
+  &__unit
+    display: inline-block
+    margin-left: .75em
+
+  &__error-text
+    font-size: $formol-font-size * .85
+    font-style: italic
+
+    &::before
+      background-color: currentColor
+      content: ''
+      display: inline-block
+      height: 1px
+      margin-right: .5em
+      vertical-align: middle
+      width: 1em
