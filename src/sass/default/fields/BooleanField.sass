@@ -1,6 +1,3 @@
-@import ../variables
-
-
 // boolean element
 .Formol_Field--type-checkbox .Formol_Field, .Formol_Field--type-radio .Formol_Field, .Formol_Field--type-checkbox-set .Formol_FieldSet, .Formol_Field--type-radio-set .Formol_FieldSet
   &__label
@@ -29,7 +26,7 @@
 
     &__label
       @extend .Formol_Field
-      margin: 0 .5em .5em 0
+      margin: 0 calc(#{$formol-field-margin} / 2) calc(#{$formol-field-margin} / 2) 0
 
 
 .Formol_BooleanField
