@@ -3,12 +3,10 @@
 
 
 .Formol_HTMLField
-  border: solid 1px
-  border-radius: .15em
-  margin: .5em 0
+  @extend .Formol_Field__element
+  cursor: text
   padding: 0
   position: relative
-  max-width: 100%
   width: $formol-big-field-size
 
   &__hidden-input

@@ -8,10 +8,7 @@
 
 
 .Formol_FileField
-  border: solid 1px
-  box-sizing: border-box
-  margin: .5em 0
-  padding: .5em
+  color: inherit
   position: relative
   width: 100%
 
@@ -19,94 +16,95 @@
     +hidden-input
 
 
-.Formol_FileField__dropzone
-  border: dashed 1px
-  cursor: pointer
-  margin: 1em
-  width: calc(100% - 2em)
+  &__dropzone
+    border: dashed 1px
+    cursor: pointer
+    margin: 1em
+    transition: border-color .2s
+    width: calc(100% - 2em)
 
-  > input[type="file"]
-    // This is an important hack to avoid the :
-    // "An invalid form control with name="..."
-    // is not focusable." error at validation
-    display: block !important
-    +hidden-input
+    > input[type="file"]
+      // This is an important hack to avoid the :
+      // "An invalid form control with name="..."
+      // is not focusable." error at validation
+      display: block !important
+      +hidden-input
 
 
-.Formol_FileField__placeholder
-  align-items: flex-start
-  display: flex
-  flex-wrap: wrap
-  width: 100%
-
-  > svg
-    display: block
-    font-size: $formol-font-size * 2
-    margin: 1em auto .1em
+  &__placeholder
+    align-items: flex-start
+    display: flex
+    flex-wrap: wrap
     width: 100%
 
-  > span
-    display: block
-    font-size: $formol-font-size * .85
-    margin: 0 auto 3em
+    > svg
+      display: block
+      font-size: $formol-font-size * 2
+      margin: 1em auto .1em
+      width: 100%
+
+    > span
+      display: block
+      font-size: $formol-font-size * .85
+      margin: 0 auto 3em
 
 
-.Formol_FileField__previews
-  align-items: flex-start
-  display: flex
-  flex-wrap: wrap
+  &__previews
+    align-items: flex-start
+    display: flex
+    flex-wrap: wrap
 
-.Formol_FileField__preview
-  border: solid 1px
-  margin: 1em
-  min-width: 8em
-  max-width: 10em
-  position: relative
+  &__preview
+    border: solid 1px
+    margin: 1em
+    min-width: 8em
+    max-width: 10em
+    position: relative
 
-  img
-    max-width: 100%
+    img
+      max-width: 100%
 
-  &-caption
-    box-sizing: border-box
-    border-top: solid 1px
-    font-size: $formol-font-size * .75
-    padding: .5em
+    &-caption
+      box-sizing: border-box
+      border-top: solid 1px
+      font-size: $formol-font-size * .75
+      padding: .5em
 
-  &-name, &-size, &-type
-    display: block
-    margin: .25rem .5rem
+    &-name, &-size, &-type
+      display: block
+      margin: .25rem .5rem
 
-  &-name
-    line-height: 1.5
-    max-height: calc(1em * 1.5)
-    overflow: hidden
-    text-overflow: ellipsis
-    transition: max-height .25s
-    width: calc(100% - 1rem)
+    &-name
+      line-height: 1.5
+      max-height: calc(1em * 1.5)
+      overflow: hidden
+      text-overflow: ellipsis
+      transition: max-height .25s
+      width: calc(100% - 1rem)
 
-    &:hover
-      max-height: 10em
+      &:hover
+        max-height: 10em
 
-  color: $formol-color
-  &--error
-    color: $formol-color-error
-
-
-.Formol_FileField__close
-  border: solid 1px
-  cursor: pointer
-  font-size: 0
-  background-color: #fff
-  padding: 0
-  position: absolute
-  right: -1px
-  top: -1px
-  transition: background-color .25s
-
-  svg
-    font-size: 1rem
-    margin: .5em
+    color: $formol-color
+    &--error
+      color: $formol-color-error
 
 
-.Formol_FileField__image-delete
-  min-height: 3em
+  &__close
+    border: solid 1px
+    cursor: pointer
+    font-size: 0
+    background-color: #fff
+    padding: 0
+    position: absolute
+    right: -1px
+    top: -1px
+    transition: background-color .25s
+
+    svg
+      font-size: 1rem
+      margin: .5em
+
+
+  &__image-delete
+    min-height: 3em

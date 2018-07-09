@@ -1,3 +1,7 @@
+@import mixins
+@import variables
+
+
 .Formol_Field
   +field-colors($formol-color-inactive)
   margin: 1em 0
@@ -11,16 +15,16 @@
       content: '* '
 
   // states
-  &:hover:not(&--error):not(&--focus)
+  &:hover
     +field-colors($formol-color)
 
-  &--modified
+  &--modified, &--modified:hover
     +field-colors($formol-color)
 
-  &--focus
+  &--focus, &--focus:hover
     +field-colors($formol-color-action)
 
-  &--error
+  &--error, &--error:hover
     +field-colors($formol-color-error)
     box-shadow: none
 
@@ -37,7 +41,9 @@
     width: 100%
 
   &__element
+    background-color: transparent
     border: solid 1px
+    border-color: inherit
     border-radius: .15em
     box-sizing: border-box
     box-shadow: none
@@ -45,7 +51,7 @@
     font: inherit
     margin: .5em 0
     max-width: 100%
-    padding: .75em
+    padding: $formol-field-padding
     transition: border-color .2s
 
   &__unit

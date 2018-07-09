@@ -4,22 +4,12 @@
 // boolean element
 .Formol_Field--type-checkbox .Formol_Field, .Formol_Field--type-radio .Formol_Field, .Formol_Field--type-checkbox-set .Formol_FieldSet, .Formol_Field--type-radio-set .Formol_FieldSet
   &__label
+    @extend .Formol_Field__element
     align-items: center
-    border: solid 1px
-    border-radius: .15em
-    box-sizing: border-box
-    box-shadow: none
     color: $formol-color-inactive
     cursor: pointer
     display: inline-flex
-    font: inherit
-    margin: .5em 0
-    max-width: 100%
-    padding: .75em
     transition: color .2s, border-color .2s
-
-    &:hover
-      color: $formol-color
 
     &--on, &--on:hover
       color: inherit
@@ -38,6 +28,7 @@
     padding: 0
 
     &__label
+      @extend .Formol_Field
       margin: 0 .5em .5em 0
 
 

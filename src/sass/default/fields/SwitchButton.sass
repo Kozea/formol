@@ -1,11 +1,11 @@
 @import ../mixins
 
+
 .Formol_Field--type-switch
   margin: 1em 0
   position: relative
 
-  .Formol_Field
-    &__element
+  .Formol_Field__label > .Formol_Field__element
       border: 0
       color: inherit
       margin: .75em 0
@@ -17,16 +17,15 @@
 
   // Switch
   input[type='checkbox'] + label
+    @extend .Formol_Field__element
     align-items: center
-    border: solid 1px
     border-radius: 1em
-    box-sizing: border-box
+    color: inherit
     display: inline-flex
     flex-direction: row
     height: 1.5em
     margin: 0 .5em
     padding: .25em
-    outline: none
     user-select: none
     vertical-align: middle
     width: 3em
