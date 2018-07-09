@@ -14,7 +14,7 @@ export default class RangeField extends React.PureComponent {
     const { className, noLabels, min, max, value, ...props } = this.props
     const range = (
       <NumberField
-        className={b.e('range')}
+        className={b.e('range').mix(className)}
         min={min}
         max={max}
         value={value}
@@ -22,7 +22,7 @@ export default class RangeField extends React.PureComponent {
       />
     )
     return (
-      <div className={b.mix(className)}>
+      <div className={b}>
         {noLabels ? (
           range
         ) : (
