@@ -31,3 +31,19 @@
 
 .Formol_BooleanField
   margin: 0
+
+
+
+.Formol_Field--type-checkbox.Formol_Field--readOnly .Formol_Field, .Formol_Field--type-radio.Formol_Field--readOnly .Formol_Field, .Formol_Field--type-checkbox-set.Formol_Field--readOnly .Formol_FieldSet, .Formol_Field--type-radio-set.Formol_Field--readOnly .Formol_FieldSet
+  margin: 0
+
+  &__title
+    margin-left: 0
+
+  &__label
+    +read-only-field__element
+    display: none
+    padding: 0
+
+    &--on
+      display: block

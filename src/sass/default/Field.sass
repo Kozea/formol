@@ -10,6 +10,23 @@
     &::before
       content: '* '
 
+  &--readOnly
+    &.Formol_Field--required
+      .Formol_Field__title::before
+        display: none
+
+    .Formol_Field
+      &__title
+        font-size: $formol-font-size * .7
+
+      &__element
+        +read-only-field__element
+
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+      -webkit-appearance: none
+      margin: 0
+
+
   // states
   &:hover
     +field-colors($formol-color)

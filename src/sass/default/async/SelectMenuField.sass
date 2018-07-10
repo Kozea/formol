@@ -8,6 +8,14 @@
     color: inherit
     padding: 0
 
-    // *
-      color: inherit
-      font: inherit
+
+.Formol_Field--readOnly
+  .Select-control
+    +read-only-field__element
+
+  .Select-value
+    padding: 0 !important
+
+
+  .Select.is-disabled > .Select-control
+    background-color: transparent
