@@ -72,7 +72,7 @@ describe('Formol field', () => {
     expect(field.find('InputField').props().value).toEqual('bar')
     expect(field.find('input').props().value).toEqual('bar')
   })
-  it('handles changes', () => {
+  it('handles changes', async () => {
     const wrapper = mount(
       <Formol item={{ foo: 'bar' }}>
         <Field name="foo" />
@@ -83,8 +83,12 @@ describe('Formol field', () => {
     const input = () => field().find('input')
 
     expect(input().props().value).toEqual('bar')
-    input().simulate('change', { target: { value: 'ba' } })
-    input().simulate('change', { target: { value: 'baz' } })
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'ba' } })
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
+
     expect(input().props().value).toEqual('baz')
     expect(
       field()
@@ -92,7 +96,7 @@ describe('Formol field', () => {
         .props().value
     ).toEqual('baz')
   })
-  it('handles modifications', () => {
+  it('handles modifications', async () => {
     const onChange = jest.fn()
     const wrapper = mount(
       <Formol item={{ foo: 'bar' }} onChange={onChange}>
@@ -107,15 +111,19 @@ describe('Formol field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    input().simulate('change', { target: { value: 'ba' } })
-    input().simulate('change', { target: { value: 'baz' } })
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'ba' } })
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
+
     expect(onChange).toHaveBeenCalledTimes(2)
     expect(onChange).toHaveBeenCalledWith({ foo: 'baz' })
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
   })
-  it('cancels changes', () => {
+  it('cancels changes', async () => {
     const wrapper = mount(
       <Formol item={{ foo: 'bar' }}>
         <Field name="foo" />
@@ -129,8 +137,12 @@ describe('Formol field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    input().simulate('change', { target: { value: 'ba' } })
-    input().simulate('change', { target: { value: 'baz' } })
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'ba' } })
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
+
     expect(input().props().value).toEqual('baz')
     expect(
       field()
@@ -139,7 +151,9 @@ describe('Formol field', () => {
     ).toEqual('baz')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
-    cancel().simulate('click')
+
+    await cancel().simulate('click')
+
     expect(input().props().value).toEqual('bar')
     expect(
       field()
@@ -163,9 +177,14 @@ describe('Formol field', () => {
     const submit = () => wrapper.find('.Formol_Formol__submit')
 
     expect(input().props().value).toEqual('bar')
-    input().simulate('change', { target: { value: 'ba' } })
-    input().simulate('change', { target: { value: 'baz' } })
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'ba' } })
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
+
     await submit().simulate('click')
+
     expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith({ foo: 'baz' }, { foo: 'bar' }, [
       'foo',
