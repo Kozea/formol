@@ -6,6 +6,7 @@ export default (resolve, options) => {
   return class AsyncWrapper extends React.PureComponent {
     constructor(props) {
       super(props)
+      this._promise = null
       this.state = {
         Component: null,
         error: null,
@@ -16,17 +17,17 @@ export default (resolve, options) => {
       this.unmounted = false
       const { Component } = this.state
       if (!Component) {
-        this.resolve()
+        this._promise = this.resolve()
       }
-    }
-
-    componentWillUnmount() {
-      this.unmounted = true
     }
 
     componentDidCatch(error, info) {
       this.setState({ error })
       console.error(error, info)
+    }
+
+    componentWillUnmount() {
+      this.unmounted = true
     }
 
     async resolve() {
