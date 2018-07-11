@@ -21,6 +21,7 @@ describe('Email field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('email')
     expect(input().props().value).toEqual('foo@bar.baz')
 
     await input().simulate('focus')

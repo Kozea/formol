@@ -21,6 +21,7 @@ describe('Text field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('text')
     expect(input().props().value).toEqual('foo')
 
     await input().simulate('focus')

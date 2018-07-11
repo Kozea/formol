@@ -93,6 +93,7 @@ describe('Number field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('number')
     expect(input().props().value).toEqual(42)
 
     await input().simulate('focus')
