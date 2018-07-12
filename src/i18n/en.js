@@ -20,6 +20,9 @@ export default {
   html: {
     placeholder: 'Enter text here',
   },
+  tel: {
+    pattern: /\d{3}[-]\d{3}[-]\d{4}/,
+  },
   passwordStrength: {
     weak: 'weak',
     okay: 'okay',

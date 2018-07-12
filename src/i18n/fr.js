@@ -17,6 +17,9 @@ export default {
     rejectedMultiple: 'Certains de vos fichiers ne sont pas valides.',
     noFile: 'Aucun fichier',
   },
+  tel: {
+    pattern: /^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[.\-\s]?\d\d){4}$/,
+  },
   html: {
     placeholder: 'Entrez votre texte ici...',
   },
