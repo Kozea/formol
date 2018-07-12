@@ -1,91 +1,84 @@
 import React from 'react'
-import FaEye from 'react-icons/lib/fa/eye'
-import FaEyeSlash from 'react-icons/lib/fa/eye-slash'
-import ReactPasswordStrength from 'react-password-strength'
+import zxcvbn from 'zxcvbn'
 
 import { block } from '../utils'
+import PasswordField from '../fields/PasswordField'
 
+/* Inspired from https://github.com/mmw/react-password-strength
+   Forked here to handle a value instead of a defaultValue and
+   props change
+*/
 @block
 export default class PasswordStrengthField extends React.PureComponent {
+  static getState(value, minLength, userInputs) {
+    return {
+      value,
+      score:
+        !value || value.length < minLength
+          ? -1 // Too short
+          : zxcvbn(value, userInputs).score,
+    }
+  }
+
+  static defaultProps = {
+    minLength: 5,
+    minScore: 3,
+  }
+
   constructor(props) {
     super(props)
     this.state = {
-      type: 'password',
+      value: null,
+      score: -1,
     }
     this.handleChange = this.handleChange.bind(this)
-    this.handleBlur = this.handleBlur.bind(this)
-    this.handleVisibilityChange = this.handleVisibilityChange.bind(this)
   }
 
-  componentDidMount() {
-    const { elementRef } = this.props
-    elementRef.current = this.passwordInput.reactPasswordStrengthInput
+  static getDerivedStateFromProps(
+    { value, userInputs, minLength },
+    { value: oldValue }
+  ) {
+    if (value !== oldValue) {
+      return PasswordStrengthField.getState(value, minLength, userInputs)
+    }
+    return null
   }
 
-  componentWillUnmount() {
-    const { elementRef } = this.props
-    elementRef.current = null
-  }
-
-  handleChange({ password, isValid }) {
-    const { onChange } = this.props
-    onChange(isValid ? password : void 0)
-  }
-
-  handleBlur(e) {
-    const { onBlur } = this.props
-    this.setState({ type: 'password' })
-    return onBlur(e)
-  }
-
-  handleVisibilityChange() {
-    const { type } = this.state
-    this.setState({ type: type === 'password' ? 'text' : 'password' })
+  handleChange(value) {
+    const { i18n, minScore, minLength, userInputs, onChange } = this.props
+    const state = PasswordStrengthField.getState(value, minLength, userInputs)
+    this.setState(state)
+    onChange(value, state.score < minScore ? i18n.passwordStrength.error : '')
   }
 
   render(b) {
     const {
       className,
-      name,
-      value,
       i18n,
-      elementRef,
-      onBlur,
+      minScore,
+      scoreWords,
+      onChange,
       ...props
     } = this.props
-    const { type } = this.state
+    const { score } = this.state
+    const description = (scoreWords || [
+      i18n.passwordStrength.tooshort,
+      i18n.passwordStrength.weak,
+      i18n.passwordStrength.okay,
+      i18n.passwordStrength.good,
+      i18n.passwordStrength.strong,
+      i18n.passwordStrength.stronger,
+    ])[score + 1]
 
     return (
-      <div className={b.e('wrapper')}>
-        <ReactPasswordStrength
-          className={b.e('strength').s}
-          /* eslint-disable-next-line react/jsx-handler-names */
-          changeCallback={this.handleChange}
-          defaultValue={value}
-          ref={ref => (this.passwordInput = ref)}
-          inputProps={{
-            name,
-            onBlur: this.handleBlur,
-            ...props,
-            type,
-            className: b.mix(className).s,
-          }}
-          scoreWords={[
-            i18n.passwordStrength.weak,
-            i18n.passwordStrength.okay,
-            i18n.passwordStrength.good,
-            i18n.passwordStrength.strong,
-            i18n.passwordStrength.stronger,
-          ]}
-          tooShortWord={i18n.passwordStrength.tooshort}
+      <div className={b.m({ score: score + 1 })}>
+        <PasswordField
+          className={b.mix(className)}
+          onChange={this.handleChange}
+          {...props}
         />
-        <button
-          type="button"
-          className={b.e('eye')}
-          onClick={this.handleVisibilityChange}
-        >
-          {type === 'text' ? <FaEyeSlash /> : <FaEye />}
-        </button>
+        <div className={b.e('strength')} />
+        <span className={b.e('description')}>{description}</span>
       </div>
     )
   }

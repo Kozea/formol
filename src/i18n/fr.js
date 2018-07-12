@@ -27,6 +27,7 @@ export default {
     strong: 'sécurisé',
     stronger: 'très sécurisé',
     tooshort: 'trop court',
+    error: 'Veuillez entrer un mot de passe plus sécurisé.',
   },
   money: {
     unit: '€',

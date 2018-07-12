@@ -27,6 +27,7 @@ export default {
     strong: 'strong',
     stronger: 'stronger',
     tooshort: 'too short',
+    error: 'Please choose a more secure password.',
   },
   money: {
     unit: '$',

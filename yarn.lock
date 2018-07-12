@@ -8100,13 +8100,6 @@ react-onclickoutside@^6.5.0:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.1.tgz#6a5b5b8b4eae6b776259712c89c8a2b36b17be93"
 
-react-password-strength@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/react-password-strength/-/react-password-strength-2.3.1.tgz#a88721e72e5377fd28989dd666aaea060779b142"
-  dependencies:
-    prop-types "^15.6.0"
-    zxcvbn "^4.3.0"
-
 react-reconciler@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.7.0.tgz#9614894103e5f138deeeb5eabaf3ee80eb1d026d"
@@ -10207,6 +10200,6 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zxcvbn@^4.3.0:
+zxcvbn@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/zxcvbn/-/zxcvbn-4.4.2.tgz#28ec17cf09743edcab056ddd8b1b06262cc73c30"
