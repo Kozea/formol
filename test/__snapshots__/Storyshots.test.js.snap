@@ -10863,7 +10863,7 @@ Area"
             onKeyDown={[Function]}
             placeholder="range"
             type="range"
-            value="range"
+            value={42}
           />
           <span
             className={
@@ -10885,7 +10885,7 @@ Area"
               }
             }
           >
-            range
+            42
           </span>
         </div>
         <div
@@ -31678,7 +31678,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
             onKeyDown={[Function]}
             placeholder="range"
             type="range"
-            value="range"
+            value={42}
           />
           <span
             className={
@@ -31700,7 +31700,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
               }
             }
           >
-            range
+            42
           </span>
         </div>
         <div

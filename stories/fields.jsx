@@ -114,6 +114,7 @@ export const testFieldValue = name =>
     area: 'Text\nArea',
     email: 'email@exemple.com',
     number: 12,
+    range: 42,
     tel: '1-541-754-3010',
     radio: true,
     checkbox: true,
