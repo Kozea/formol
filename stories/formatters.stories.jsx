@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/react'
 import { withKnobs } from '@storybook/addon-knobs'
+import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
@@ -26,6 +26,23 @@ const numberWithSpace = v =>
         .reverse()
         .join('')
         .trim()
+    : ''
+
+const rgbToHex = rgb => {
+  if (!rgb) {
+    return ''
+  }
+  const [r, g, b] = rgb.match(/\d+/g).map(x => parseInt(x))
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`
+}
+
+const hexToRgb = hex =>
+  hex
+    ? `rgb(${hex
+        .substring(1)
+        .match(/.{2}/g)
+        .map(x => parseInt(x, 16))
+        .join(', ')}`
     : ''
 
 storiesOf('Formatters', module)
@@ -90,6 +107,14 @@ storiesOf('Formatters', module)
             Big number (actually a formatted string)
           </Field>
           <Field
+            name="rgbcolor"
+            type="color"
+            formatter={rgbToHex}
+            unformatter={hexToRgb}
+          >
+            rgb(r, g, b) color
+          </Field>
+          <Field
             name="creditcard"
             pattern="\d{4}-\d{4}-\d{4}-\d{4}"
             formatter={creditCard}
@@ -116,6 +141,7 @@ storiesOf('Formatters', module)
       {
         money: 42,
         bignumber: '0123456789',
+        rgbcolor: 'rgb(255, 125, 2)',
         persons: [
           {
             id: 'mscott',

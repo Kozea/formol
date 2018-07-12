@@ -33648,6 +33648,139 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "error": false,
           "focus": false,
           "modified": false,
+          "name": "rgbcolor",
+          "readOnly": undefined,
+          "required": false,
+          "type": "color",
+        },
+        "s": "Formol_Field Formol_Field--type-color Formol_Field--name-rgbcolor",
+        "settings": Object {
+          "cache": false,
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "cache": Array [],
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "cache": false,
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "cache": Array [],
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        rgb(r, g, b) color
+      </span>
+      <input
+        className={
+          Block {
+            "block": "InputField",
+            "cache": Array [],
+            "element": null,
+            "mixed": Array [
+              Block {
+                "block": "ColorField",
+                "cache": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_ColorField Formol_Field__element",
+                "settings": Object {
+                  "cache": false,
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              },
+            ],
+            "modifier": Object {},
+            "s": "Formol_InputField Formol_ColorField Formol_Field__element",
+            "settings": Object {
+              "cache": false,
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        name="rgbcolor"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        type="color"
+        value="#ff7d02"
+      />
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "cache": Array [],
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
           "name": "creditcard",
           "readOnly": undefined,
           "required": false,
