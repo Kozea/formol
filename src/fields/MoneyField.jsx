@@ -40,7 +40,7 @@ export default class MoneyField extends React.PureComponent {
           // Convert back exponential notation to classic number
           onChange(
             value && value.includes('e')
-              ? parseFloat(value).toFixed(precision)
+              ? parseFloat(value).toFixed(order)
               : value
           )
         }
