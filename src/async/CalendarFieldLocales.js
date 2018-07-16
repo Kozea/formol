@@ -1,8 +1,6 @@
 import { format, parse, toDate } from 'date-fns'
 import localeFr from 'date-fns/locale/fr'
 
-export { localeFr }
-
 export const localeDateFormatFr = (date, dateFormat = 'D MMMM YYYY') =>
   format(toDate(date), dateFormat, { locale: localeFr })
 
@@ -30,13 +28,18 @@ export const formatDateFr = (date, format_ = 'L') =>
 export const parseDateFr = (str, format_ = 'L') =>
   parse(str, format_, new Date(), { locale: localeFr })
 
-export const CalendarFr = {
-  formatDay: formatDayFr,
-  formatMonthTitle: formatMonthTitleFr,
-  formatWeekdayShort: formatWeekdayShortFr,
-  formatWeekdayLong: formatWeekdayLongFr,
-  getFirstDayOfWeek: getFirstDayOfWeekFr,
-  getMonths: getMonthsFr,
-  formatDate: formatDateFr,
-  parseDate: parseDateFr,
+export default {
+  fr: {
+    calendar: {
+      formatDay: formatDayFr,
+      formatMonthTitle: formatMonthTitleFr,
+      formatWeekdayShort: formatWeekdayShortFr,
+      formatWeekdayLong: formatWeekdayLongFr,
+      getFirstDayOfWeek: getFirstDayOfWeekFr,
+      getMonths: getMonthsFr,
+      formatDate: formatDateFr,
+      parseDate: parseDateFr,
+    },
+    date: localeFr,
+  },
 }

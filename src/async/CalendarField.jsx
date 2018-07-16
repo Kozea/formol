@@ -5,10 +5,9 @@ import React from 'react'
 import DayPickerInput from 'react-day-picker/DayPickerInput'
 
 import { block } from '../utils'
-import { CalendarFr, localeFr } from './CalendarFieldLocale'
+import locales from './CalendarFieldLocales'
 
 const isDate = d => d instanceof Date && !isNaN(d.valueOf())
-const voidIfNaN = d => (isNaN(d.valueOf()) ? void 0 : d)
 
 @block
 export default class CalendarField extends React.PureComponent {
@@ -31,7 +30,7 @@ export default class CalendarField extends React.PureComponent {
 
   handleChange(newDate) {
     const { i18n, onChange } = this.props
-    const locale = i18n.calendar.locale === 'fr' ? localeFr : void 0
+    const locale = (locales[i18n.calendar.locale] || {}).date
     onChange(
       isDate(newDate)
         ? format(newDate, 'YYYY-MM-DD', { locale })
@@ -54,7 +53,7 @@ export default class CalendarField extends React.PureComponent {
       onChange,
       ...inputProps
     } = this.props
-    const locale = i18n.calendar.locale === 'fr' ? localeFr : void 0
+    const locale = (locales[i18n.calendar.locale] || {}).date
     const dateFormat = userFormat || i18n.calendar.dateFormat
     const datePattern = pattern || i18n.calendar.datePattern
     const maybeDate = parse(value, 'YYYY-MM-DD', new Date(), { locale })
@@ -87,14 +86,13 @@ export default class CalendarField extends React.PureComponent {
         formatDate={(value_, format_) => format(value_, format_, { locale })}
         parseDate={(value_, format_) =>
           datePattern.exec(value_)
-            ? voidIfNaN(parse(value_, format_, new Date(), { locale }))
+            ? parse(value_, format_, new Date(), { locale })
             : void 0
         }
-        dayPickerProps={
-          i18n.calendar.locale === 'fr'
-            ? { locale: 'fr', localeUtils: CalendarFr }
-            : {}
-        }
+        dayPickerProps={{
+          locale: i18n.calendar.locale,
+          localeUtils: (locales[i18n.calendar.locale] || {}).calendar,
+        }}
         onDayChange={this.handleChange}
         inputProps={{
           ...inputProps,
