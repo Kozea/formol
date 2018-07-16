@@ -15,47 +15,38 @@
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook-debug": "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
+    "storybook-debug":
+      "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001 -c .storybook",
     "storybook-deploy": "storybook-to-ghpages"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json"
-    ],
-    "modulePaths": [
-      "<rootDir>/src"
-    ],
-    "moduleDirectories": [
-      "node_modules"
-    ],
+    "moduleFileExtensions": ["js", "jsx", "json"],
+    "modulePaths": ["<rootDir>/src"],
+    "moduleDirectories": ["node_modules"],
     "moduleNameMapper": {
       "\\.(css|sass)$": "<rootDir>/test/styleMock.js"
     },
-    "setupFiles": [
-      "<rootDir>/test/setup.js"
-    ]
+    "setupFiles": ["<rootDir>/test/setup.js"]
   },
   "pre-commit": "lint,test",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.51",
-    "@babel/core": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-decorators": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "@babel/preset-react": "^7.0.0-beta.51",
-    "@babel/register": "^7.0.0-beta.51",
+    "@babel/cli": "^7.0.0-beta.53",
+    "@babel/core": "^7.0.0-beta.53",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.53",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.53",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.53",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.53",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.53",
+    "@babel/preset-env": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0-beta.53",
+    "@babel/register": "^7.0.0-beta.53",
     "@dump247/storybook-state": "^1.5.0",
-    "@storybook/addon-knobs": "^4.0.0-alpha.10",
-    "@storybook/addon-options": "^4.0.0-alpha.10",
-    "@storybook/addon-storyshots": "^4.0.0-alpha.10",
-    "@storybook/addon-storysource": "^4.0.0-alpha.10",
-    "@storybook/addons": "^4.0.0-alpha.10",
-    "@storybook/react": "^4.0.0-alpha.10",
+    "@storybook/addon-knobs": "^4.0.0-alpha.14",
+    "@storybook/addon-options": "^4.0.0-alpha.14",
+    "@storybook/addon-storyshots": "^4.0.0-alpha.14",
+    "@storybook/addon-storysource": "^4.0.0-alpha.14",
+    "@storybook/addons": "^4.0.0-alpha.14",
+    "@storybook/react": "^4.0.0-alpha.14",
     "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
@@ -64,8 +55,8 @@
     "babel-plugin-add-react-static-displayname": "^0.0.2",
     "babel-plugin-dynamic-import-node": "^2.0.0",
     "coveralls": "^3.0.0",
-    "css-loader": "^0.28.11",
-    "date-fns": "2.0.0-alpha.7",
+    "css-loader": "^1.0.0",
+    "date-fns": "2.0.0-alpha.12",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "npm:enzyme-react-adapter-future",
     "eslint": "^5.0.1",
@@ -89,10 +80,7 @@
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.8"
   },
-  "files": [
-    "lib/",
-    "src/"
-  ],
+  "files": ["lib/", "src/"],
   "importSort": {
     ".js, .jsx": {
       "parser": "babylon",
@@ -116,7 +104,7 @@
     "zxcvbn": "^4.4.2"
   },
   "peerDependencies": {
-    "date-fns": "^2.0.0-alpha.7",
+    "date-fns": "^2.0.0-alpha.12",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "react-icons": "^2.2.7"

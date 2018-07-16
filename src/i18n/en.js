@@ -7,7 +7,7 @@ export default {
   required: 'Please fill out this field',
   // CalendarField
   calendar: {
-    dateFormat: 'MM/DD/YYYY',
+    dateFormat: 'MM/dd/yyyy',
     datePattern: /^(0[0-9]|10|11|12)\/([0-2][0-9]|30|31)\/[0-9]{4}$/,
     dateError: 'Date must match mm/dd/yyyy format',
     locale: 'en',

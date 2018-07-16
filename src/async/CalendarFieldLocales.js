@@ -1,45 +1,19 @@
-import { format, parse, toDate } from 'date-fns'
+import { format, toDate } from 'date-fns'
 import localeFr from 'date-fns/locale/fr'
 
-export const localeDateFormatFr = (date, dateFormat = 'D MMMM YYYY') =>
-  format(toDate(date), dateFormat, { locale: localeFr })
-
-export const formatDayFr = day => localeDateFormatFr(day, 'ddd ll')
-
-export const formatMonthTitleFr = date => localeDateFormatFr(date, 'MMMM YYYY')
-
-export const formatWeekdayShortFr = day =>
-  localeFr.localize.weekday(day, { type: 'short' }).replace(/.$/, '')
-
-export const formatWeekdayLongFr = day =>
-  localeFr.localize.weekday(day, { type: 'long' })
-
-// Fix this when date-fns has a first day of week
-export const getFirstDayOfWeekFr = () => 1
-
-export const getMonthsFr = () =>
-  Array(12)
-    .fill()
-    .map((_, i) => localeFr.localize.months(i, { type: 'long' }))
-
-export const formatDateFr = (date, format_ = 'L') =>
-  localeDateFormatFr(date, format_)
-
-export const parseDateFr = (str, format_ = 'L') =>
-  parse(str, format_, new Date(), { locale: localeFr })
+const getCalendarLocaleUtils = (locale, fdow = 0) => ({
+  formatDay: date => format(toDate(date), 'PPPP', { locale }),
+  formatMonthTitle: date => format(toDate(date), 'MMMM yyyy', { locale }),
+  formatWeekdayLong: day => locale.localize.day(day, { width: 'wide' }),
+  formatWeekdayShort: day =>
+    locale.localize.day(day, { width: 'abbreviated' }).replace(/.$/, ''),
+  // Fix this when date-fns has a first day of week
+  getFirstDayOfWeek: () => fdow,
+})
 
 export default {
   fr: {
-    calendar: {
-      formatDay: formatDayFr,
-      formatMonthTitle: formatMonthTitleFr,
-      formatWeekdayShort: formatWeekdayShortFr,
-      formatWeekdayLong: formatWeekdayLongFr,
-      getFirstDayOfWeek: getFirstDayOfWeekFr,
-      getMonths: getMonthsFr,
-      formatDate: formatDateFr,
-      parseDate: parseDateFr,
-    },
+    calendar: getCalendarLocaleUtils(localeFr),
     date: localeFr,
   },
 }

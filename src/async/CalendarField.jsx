@@ -33,7 +33,7 @@ export default class CalendarField extends React.PureComponent {
     const locale = (locales[i18n.calendar.locale] || {}).date
     onChange(
       isDate(newDate)
-        ? format(newDate, 'YYYY-MM-DD', { locale })
+        ? format(newDate, 'yyyy-MM-dd', { locale })
         : newDate || null
     )
   }
@@ -56,7 +56,7 @@ export default class CalendarField extends React.PureComponent {
     const locale = (locales[i18n.calendar.locale] || {}).date
     const dateFormat = userFormat || i18n.calendar.dateFormat
     const datePattern = pattern || i18n.calendar.datePattern
-    const maybeDate = parse(value, 'YYYY-MM-DD', new Date(), { locale })
+    const maybeDate = parse(value, 'yyyy-MM-dd', new Date(), { locale })
     const date = isDate(maybeDate) ? maybeDate : value
     if (readOnly || disabled) {
       return (
