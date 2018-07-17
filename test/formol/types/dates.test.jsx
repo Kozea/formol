@@ -47,7 +47,6 @@ import Formol, { Field } from '../../../src'
           </Field>
         </Formol>
       )
-      debugger
       const input = () =>
         wrapper
           .find('Field')
