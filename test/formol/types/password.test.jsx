@@ -25,9 +25,7 @@ describe('Password field', () => {
     expect(input().props().value).toEqual('passw0rd')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'u#@*/p=u58+e' },
-    })
+    await input().simulate('change', { target: { value: 'u#@*/p=u58+e' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('u#@*/p=u58+e')
@@ -64,9 +62,7 @@ describe('Password field', () => {
     expect(input().props().value).toEqual('passw0rd')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'u#@*/p=u58+e' },
-    })
+    await input().simulate('change', { target: { value: 'u#@*/p=u58+e' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('u#@*/p=u58+e')
@@ -97,9 +93,7 @@ describe('Password field', () => {
     expect(input().props().type).toEqual('text')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'u#@*/p=u58+e' },
-    })
+    await input().simulate('change', { target: { value: 'u#@*/p=u58+e' } })
     await input().simulate('blur')
     // bluring the field should restore password type
     expect(input().props().type).toEqual('password')

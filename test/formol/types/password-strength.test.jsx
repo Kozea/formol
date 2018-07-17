@@ -31,9 +31,7 @@ describe('Password Strength field', () => {
     expect(input().props().value).toEqual('r"/*Nb+4)23')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'u#@*/p=u58+e' },
-    })
+    await input().simulate('change', { target: { value: 'u#@*/p=u58+e' } })
     await input().simulate('blur')
     expect(input().props().value).toEqual('u#@*/p=u58+e')
     expect(submit().props().disabled).toBeFalsy()
@@ -75,9 +73,7 @@ describe('Password Strength field', () => {
     expect(input().props().value).toEqual('r"/*Nb+4)23')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'u#@*/p=u58+e' },
-    })
+    await input().simulate('change', { target: { value: 'u#@*/p=u58+e' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('u#@*/p=u58+e')
@@ -114,9 +110,7 @@ describe('Password Strength field', () => {
     expect(input().props().type).toEqual('text')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'u#@*/p=u58+e' },
-    })
+    await input().simulate('change', { target: { value: 'u#@*/p=u58+e' } })
     await input().simulate('blur')
     // bluring the field should restore password type
     expect(input().props().type).toEqual('password')
@@ -163,9 +157,7 @@ describe('Password Strength field', () => {
     expect(strength()).toEqual('stronger')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'passw0rd' },
-    })
+    await input().simulate('change', { target: { value: 'passw0rd' } })
     expect(strength()).toEqual('weak')
     await input().simulate('blur')
     expect(error()).toEqual('Please choose a more secure password.')
@@ -179,9 +171,7 @@ describe('Password Strength field', () => {
     expect(onSubmit).not.toHaveBeenCalled()
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'iamsecret' },
-    })
+    await input().simulate('change', { target: { value: 'iamsecret' } })
     expect(strength()).toEqual('okay')
     await input().simulate('blur')
     expect(error()).toEqual('Please choose a more secure password.')
@@ -195,9 +185,7 @@ describe('Password Strength field', () => {
     expect(onSubmit).not.toHaveBeenCalled()
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '2sht' },
-    })
+    await input().simulate('change', { target: { value: '2sht' } })
     expect(strength()).toEqual('too short')
     await input().simulate('blur')
     expect(error()).toEqual('Please choose a more secure password.')

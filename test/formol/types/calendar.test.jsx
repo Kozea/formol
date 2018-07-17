@@ -30,9 +30,7 @@ describe('Calendar field', () => {
     expect(input().props().value).toEqual('07/24/2018')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '12/11/2010' },
-    })
+    await input().simulate('change', { target: { value: '12/11/2010' } })
     await input().simulate('blur')
     expect(input().props().value).toEqual('12/11/2010')
     expect(submit().props().disabled).toBeFalsy()
@@ -73,9 +71,7 @@ describe('Calendar field', () => {
     expect(input().props().value).toEqual('07/24/2018')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '12/11/2010' },
-    })
+    await input().simulate('change', { target: { value: '12/11/2010' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('12/11/2010')
@@ -113,9 +109,7 @@ describe('Calendar field', () => {
     expect(input().props().value).toEqual('07/24/2018')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '25/35/1802' },
-    })
+    await input().simulate('change', { target: { value: '25/35/1802' } })
     await input().simulate('blur')
     expect(error()).toEqual('Constraints not satisfied')
 

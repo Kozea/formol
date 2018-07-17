@@ -24,9 +24,7 @@ describe('Textarea field', () => {
     expect(input().props().value).toEqual('foo\nbar')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'foo\nbar\nbaz' },
-    })
+    await input().simulate('change', { target: { value: 'foo\nbar\nbaz' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('foo\nbar\nbaz')
@@ -63,9 +61,7 @@ describe('Textarea field', () => {
     expect(input().props().value).toEqual('foo\nbar')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'foo\nbar\nbaz' },
-    })
+    await input().simulate('change', { target: { value: 'foo\nbar\nbaz' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('foo\nbar\nbaz')

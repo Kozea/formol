@@ -25,9 +25,7 @@ describe('Color field', () => {
     expect(input().props().value).toEqual('#bada55')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '#c0ffee' },
-    })
+    await input().simulate('change', { target: { value: '#c0ffee' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('#c0ffee')
@@ -64,9 +62,7 @@ describe('Color field', () => {
     expect(input().props().value).toEqual('#bada55')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '#c0ffee' },
-    })
+    await input().simulate('change', { target: { value: '#c0ffee' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('#c0ffee')
@@ -97,9 +93,7 @@ describe('Color field', () => {
     expect(input().props().value).toEqual('#bada55')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'not an color' },
-    })
+    await input().simulate('change', { target: { value: 'not an color' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
       'not an color is not a valid color'

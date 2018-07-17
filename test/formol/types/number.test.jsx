@@ -24,9 +24,7 @@ describe('Number field', () => {
     expect(input().props().value).toEqual(42)
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 1337 },
-    })
+    await input().simulate('change', { target: { value: 1337 } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual(1337)
@@ -61,9 +59,7 @@ describe('Number field', () => {
     expect(input().props().value).toEqual(42)
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 1337 },
-    })
+    await input().simulate('change', { target: { value: 1337 } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual(1337)
@@ -97,9 +93,7 @@ describe('Number field', () => {
     expect(input().props().value).toEqual(42)
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 4000 },
-    })
+    await input().simulate('change', { target: { value: 4000 } })
     await input().simulate('blur')
 
     expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
@@ -117,9 +111,7 @@ describe('Number field', () => {
     expect(input().props().value).toEqual(4000)
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 1664 },
-    })
+    await input().simulate('change', { target: { value: 1664 } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
@@ -151,9 +143,7 @@ describe('Number field', () => {
     expect(input().props().value).toEqual(42)
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'not a number' },
-    })
+    await input().simulate('change', { target: { value: 'not a number' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('')

@@ -62,9 +62,7 @@ import Formol, { Field } from '../../../src'
       expect(input().props().value).toEqual(value1)
 
       await input().simulate('focus')
-      await input().simulate('change', {
-        target: { value: value2 },
-      })
+      await input().simulate('change', { target: { value: value2 } })
       await input().simulate('blur')
 
       expect(input().props().value).toEqual(value2)
@@ -103,9 +101,7 @@ import Formol, { Field } from '../../../src'
       expect(input().props().value).toEqual(value1)
 
       await input().simulate('focus')
-      await input().simulate('change', {
-        target: { value: value2 },
-      })
+      await input().simulate('change', { target: { value: value2 } })
       await input().simulate('blur')
 
       expect(input().props().value).toEqual(value2)

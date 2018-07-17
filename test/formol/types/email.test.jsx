@@ -25,9 +25,7 @@ describe('Email field', () => {
     expect(input().props().value).toEqual('foo@bar.baz')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'fuu@bar.baz' },
-    })
+    await input().simulate('change', { target: { value: 'fuu@bar.baz' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('fuu@bar.baz')
@@ -64,9 +62,7 @@ describe('Email field', () => {
     expect(input().props().value).toEqual('foo@bar.baz')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'fuu@bar.baz' },
-    })
+    await input().simulate('change', { target: { value: 'fuu@bar.baz' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('fuu@bar.baz')
@@ -97,9 +93,7 @@ describe('Email field', () => {
     expect(input().props().value).toEqual('foo@bar.baz')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'not an email' },
-    })
+    await input().simulate('change', { target: { value: 'not an email' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
       'Constraints not satisfied'
@@ -116,9 +110,7 @@ describe('Email field', () => {
     expect(input().props().value).toEqual('not an email')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'bar@bar.bar' },
-    })
+    await input().simulate('change', { target: { value: 'bar@bar.bar' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 

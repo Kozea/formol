@@ -29,9 +29,7 @@ describe('Money field', () => {
     expect(unit().text()).toEqual('$')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '2.5' },
-    })
+    await input().simulate('change', { target: { value: '2.5' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('2.50')
@@ -39,9 +37,7 @@ describe('Money field', () => {
     expect(cancel().props().disabled).toBeFalsy()
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '3.14159265359879' },
-    })
+    await input().simulate('change', { target: { value: '3.14159265359879' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('3.14')
@@ -49,9 +45,7 @@ describe('Money field', () => {
     expect(cancel().props().disabled).toBeFalsy()
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '3.141592653e4' },
-    })
+    await input().simulate('change', { target: { value: '3.141592653e4' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('31415.93')
@@ -59,9 +53,7 @@ describe('Money field', () => {
     expect(cancel().props().disabled).toBeFalsy()
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '15' },
-    })
+    await input().simulate('change', { target: { value: '15' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('15')
@@ -69,9 +61,7 @@ describe('Money field', () => {
     expect(cancel().props().disabled).toBeFalsy()
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '' },
-    })
+    await input().simulate('change', { target: { value: '' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('')
@@ -104,9 +94,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('1.5084')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '3.14159265359879' },
-    })
+    await input().simulate('change', { target: { value: '3.14159265359879' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('3.1415')
@@ -154,9 +142,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('1.50')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '2.5' },
-    })
+    await input().simulate('change', { target: { value: '2.5' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('2.50')
@@ -193,9 +179,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('1.50')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '2.5' },
-    })
+    await input().simulate('change', { target: { value: '2.5' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('2.50')
@@ -229,9 +213,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('1.50')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '-5' },
-    })
+    await input().simulate('change', { target: { value: '-5' } })
     await input().simulate('blur')
 
     expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
@@ -249,9 +231,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('-5')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '25.25' },
-    })
+    await input().simulate('change', { target: { value: '25.25' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
@@ -283,9 +263,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('1.50')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'not a money' },
-    })
+    await input().simulate('change', { target: { value: 'not a money' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('')
@@ -310,9 +288,7 @@ describe('Money field', () => {
     expect(input().props().value).toEqual('1.50')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '1.256' },
-    })
+    await input().simulate('change', { target: { value: '1.256' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
       'Constraints not satisfied'

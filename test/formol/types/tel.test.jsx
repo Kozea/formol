@@ -25,9 +25,7 @@ describe('Tel field', () => {
     expect(input().props().value).toEqual('311-555-2368')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '311-555-1212' },
-    })
+    await input().simulate('change', { target: { value: '311-555-1212' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('311-555-1212')
@@ -64,9 +62,7 @@ describe('Tel field', () => {
     expect(input().props().value).toEqual('311-555-2368')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '311-555-1212' },
-    })
+    await input().simulate('change', { target: { value: '311-555-1212' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('311-555-1212')
@@ -97,9 +93,7 @@ describe('Tel field', () => {
     expect(input().props().value).toEqual('311-555-2368')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'not an tel' },
-    })
+    await input().simulate('change', { target: { value: 'not an tel' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
       'Constraints not satisfied'
@@ -116,9 +110,7 @@ describe('Tel field', () => {
     expect(input().props().value).toEqual('not an tel')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: '888-235-5678' },
-    })
+    await input().simulate('change', { target: { value: '888-235-5678' } })
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 

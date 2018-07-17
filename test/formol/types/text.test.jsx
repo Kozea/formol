@@ -25,9 +25,7 @@ describe('Text field', () => {
     expect(input().props().value).toEqual('foo')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'foo bar' },
-    })
+    await input().simulate('change', { target: { value: 'foo bar' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('foo bar')
@@ -64,9 +62,7 @@ describe('Text field', () => {
     expect(input().props().value).toEqual('foo')
 
     await input().simulate('focus')
-    await input().simulate('change', {
-      target: { value: 'foo bar' },
-    })
+    await input().simulate('change', { target: { value: 'foo bar' } })
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('foo bar')
