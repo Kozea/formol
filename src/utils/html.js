@@ -10,5 +10,8 @@ const toHTML = content => draftToHtml(convertToRaw(content))
 export const HTMLToEditor = html =>
   EditorState.createWithContent(fromHTML(html))
 
+export const normalize = (value, fast) =>
+  fast ? value : value === '<p></p>\n' ? '' : value ? value.trim() : ''
+
 export const editorToHTML = editorState =>
-  toHTML(editorState.getCurrentContent())
+  normalize(toHTML(editorState.getCurrentContent()))

@@ -1,12 +1,12 @@
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import 'draft-js/dist/Draft.css'
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 
+import { Editor } from 'react-draft-wysiwyg'
 import { EditorState } from 'draft-js'
 import React from 'react'
-import { Editor } from 'react-draft-wysiwyg'
 
+import { HTMLToEditor, editorToHTML, normalize } from '../utils/html'
 import { block, readAsBase64 } from '../utils'
-import { HTMLToEditor, editorToHTML } from '../utils/html'
 
 const stateFromValue = (value, fast) => {
   if (!value) {
@@ -29,9 +29,6 @@ const inputValue = (v, fast) =>
       ? ''
       : '_'
     : v
-
-const normalize = (value, fast) =>
-  fast ? value : value === '<p></p>\n' ? '' : value ? value.trim() : ''
 
 @block
 export default class HTMLField extends React.PureComponent {
