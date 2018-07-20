@@ -85,11 +85,7 @@ describe('Radio field', () => {
         .find('Field')
         .find('input')
         .first()
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
     expect(input().props().checked).toEqual(false)
     expect(input().props().disabled).toEqual(true)
   })
