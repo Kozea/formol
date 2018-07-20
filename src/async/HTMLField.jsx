@@ -135,7 +135,7 @@ export default class HTMLField extends React.PureComponent {
           className={b.e('hidden-input').mix(className)}
           ref={elementRef}
           {...props}
-          defaultValue={value}
+          defaultValue={inputValue(value, fast)}
           type="text"
         />
       </div>
