@@ -1,10 +1,9 @@
 import React from 'react'
 
-import ConditionalContextWrapper from './ConditionalContext'
-import InputField from './fields/InputField'
-import FormolContextWrapper from './FormolContext'
 import { block } from './utils'
 import { diff, get } from './utils/object'
+import ConditionalContextWrapper from './ConditionalContext'
+import FormolContextWrapper from './FormolContext'
 
 let UNAMED_COUNT = 0
 
@@ -74,7 +73,10 @@ export default class Field extends React.PureComponent {
 
   getProps(props) {
     // Put this in HOC?
-    const TypeField = props.context.types[props.type] || InputField
+    const TypeField = props.context.types[props.type]
+    if (!TypeField) {
+      throw new Error(`Unknown type "${props.type}" for field "${this.name}"`)
+    }
     const itemValue = get(props.context.item, this.name)
     const transientValue = get(props.context.transientItem, this.name)
     const value = props.formatter(transientValue)
@@ -93,6 +95,7 @@ export default class Field extends React.PureComponent {
       name: this.name,
       value,
       modified: itemValue !== transientValue,
+      TypeField,
       ...propsOverrideFromField,
       ...props.conditionalContext.propsOverride,
     }
@@ -149,12 +152,12 @@ export default class Field extends React.PureComponent {
       context,
       conditionalContext,
       classNameModifiers,
+      TypeField,
       ...props
     } = this.getProps(this.props)
 
     const {
       transientItem,
-      types,
       i18n,
       errors,
       readOnly: formReadOnly,
@@ -169,7 +172,6 @@ export default class Field extends React.PureComponent {
       throw new Error('Field must be used inside Form')
     }
 
-    const TypeField = types[type]
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error =
       enteredFields.includes(name) && errors[name] ? errors[name] : null
@@ -189,7 +191,7 @@ export default class Field extends React.PureComponent {
         <Label className={b.e('label').m(classNameModifiers.label)}>
           {children && (
             <span className={b.e('title').m(classNameModifiers.labelText)}>
-            {children}
+              {children}
             </span>
           )}
           <TypeField

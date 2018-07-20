@@ -190,4 +190,19 @@ describe('Formol field', () => {
       'foo',
     ])
   })
+  it('raises on unknown field', () => {
+    // Prevent console.error from cluttering the output
+    jest.spyOn(console, 'error')
+    global.console.error.mockImplementation(() => {})
+
+    expect(() =>
+      mount(
+        <Formol>
+          <Field type="temperature" name="foo" />
+        </Formol>
+      )
+    ).toThrow('Unknown type "temperature" for field "foo"')
+
+    global.console.error.mockRestore()
+  })
 })
