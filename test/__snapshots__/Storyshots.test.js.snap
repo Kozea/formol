@@ -44156,9 +44156,6 @@ exports[`Storyshots Miscellaneous Non string select values 1`] = `
         }
       >
         <option
-          value=""
-        />
-        <option
           value="I am no object"
         >
           M. No Object

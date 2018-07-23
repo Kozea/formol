@@ -44,7 +44,7 @@ export default class SelectField extends React.PureComponent {
         onChange={this.handleChange}
         {...props}
       >
-        {choices.every(([k]) => k) && <option value="" />}
+        {!props.multiple && choices.every(([k]) => k) && <option value="" />}
         {choices.map(([label, key]) => (
           <option key={key} value={key}>
             {label}
