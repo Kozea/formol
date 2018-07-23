@@ -104,7 +104,7 @@
     "zxcvbn": "^4.4.2"
   },
   "peerDependencies": {
-    "date-fns": "^2.0.0-alpha.12",
+    "date-fns": "^2.0.0-alpha.11",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "react-icons": "^2.2.7"
