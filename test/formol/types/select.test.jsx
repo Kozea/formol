@@ -298,7 +298,7 @@ describe('Select field', () => {
     const wrapper = mount(
       <Formol onSubmit={onSubmit} item={{ select: 'II' }}>
         <Field type="select" readOnly>
-          Checkbox
+          Select
         </Field>
       </Formol>
     )
