@@ -90,6 +90,8 @@ describe('Select Menu field', () => {
       ['selectMenu']
     )
     expect(input().props().value).toEqual('##formol_memo_0')
+
+    wrapper.unmount()
   })
   it('cancels changes', async () => {
     const onSubmit = jest.fn()
@@ -377,5 +379,77 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
     expect(input().props().disabled).toEqual(true)
+  })
+  it('handles correctly choices change', async () => {
+    const onSubmit = jest.fn()
+    class ChoicesChanger extends React.Component {
+      state = {
+        choices: {
+          one: 1,
+          two: 'II',
+          three: true,
+        },
+      }
+
+      render() {
+        const { choices } = this.state
+        return (
+          <Formol onSubmit={onSubmit} item={{ selectMenu: 'II' }}>
+            <a
+              className="changer"
+              onClick={() =>
+                this.setState({ choices: { un: 'I', deux: 2, trois: true } })
+              }
+            />
+            <Field type="select-menu" choices={choices}>
+              Select Menu
+            </Field>
+          </Formol>
+        )
+      }
+    }
+    const wrapper = mount(<ChoicesChanger />)
+    const asyncWrapper = () => wrapper.find('AsyncWrapper')
+    expect(asyncWrapper().text()).toEqual('Loading')
+    await asyncWrapper().instance()._promise
+    wrapper.update()
+    expect(asyncWrapper().text()).not.toEqual('Loading')
+
+    const changer = () => wrapper.find('.changer')
+
+    const selectControl = () => wrapper.find('.Select-control')
+    const selectOptions = () => wrapper.find('.VirtualizedSelectOption')
+    const selectMenu = () => wrapper.find('.Select-menu')
+    const selectInput = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .at(1)
+
+    await selectInput().simulate('focus')
+    await selectControl().simulate('mousedown', { button: 0 })
+
+    // Faking the sizer size otherwise options are not displayed
+    const sizer = selectMenu().getDOMNode()
+    Object.defineProperty(sizer, 'offsetWidth', {
+      value: 1337,
+    })
+    Object.defineProperty(sizer, 'offsetHeight', {
+      value: 1664,
+    })
+
+    wrapper
+      .find('AutoSizer')
+      .instance()
+      ._onResize()
+    wrapper.update()
+
+    expect(selectOptions()).toHaveLength(3)
+
+    expect(selectOptions().map(v => v.text())).toEqual(['one', 'two', 'three'])
+
+    await changer().simulate('click')
+
+    expect(selectOptions().map(v => v.text())).toEqual(['un', 'deux', 'trois'])
   })
 })
