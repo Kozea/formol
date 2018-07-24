@@ -2,8 +2,9 @@ import 'react-select/dist/react-select.css'
 import 'react-virtualized-select/styles.css'
 
 import React from 'react'
-import createFilterOptions from 'react-select-fast-filter-options'
 import VirtualizedSelect from 'react-virtualized-select'
+import createFilterOptions from 'react-select-fast-filter-options'
+import deepEqual from 'deep-equal'
 
 import { block } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
@@ -29,8 +30,7 @@ export default class SelectMenuField extends React.PureComponent {
   static getDerivedStateFromProps(nextProps, prevState) {
     const { choices } = nextProps
     let state = null
-
-    if (choices !== prevState._rawChoices) {
+    if (!deepEqual(choices, prevState._rawChoices, { strict: true })) {
       const options = choices.map(([label, choice]) => ({
         value: choice,
         label,
