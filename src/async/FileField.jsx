@@ -180,9 +180,9 @@ export default class FileField extends React.PureComponent {
           ) : null}
         </div>
         <figcaption className={b.e('preview-caption')}>
-          <span className={b.e('preview-name')}>{fileKey} </span>
+          <span className={b.e('preview-name')}>{fileKey}</span>
           {file.size && (
-            <span className={b.e('preview-size')}>{fileSize(file.size)} </span>
+            <span className={b.e('preview-size')}>{fileSize(file.size)}</span>
           )}
           {file.type && (
             <span className={b.e('preview-type')}>{file.type}</span>
