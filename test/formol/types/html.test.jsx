@@ -350,7 +350,7 @@ describe('Html field', () => {
     expect(ok().props().disabled).toBeTruthy()
 
     const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'application/svg+xml',
+      type: 'image/svg+xml',
     })
 
     await file().simulate('change', { target: { files: [blob] } })
@@ -369,7 +369,7 @@ describe('Html field', () => {
 
     const expectedHtml =
       '<p></p>\n' +
-      `<img src="data:application/svg+xml;base64,${molecule}" alt="" style="float:none;height: auto;width: auto"/>\n` + // eslint-disable-line max-len
+      `<img src="data:image/svg+xml;base64,${molecule}" alt="" style="float:none;height: auto;width: auto"/>\n` + // eslint-disable-line max-len
       '<p>foo</p>'
     expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
