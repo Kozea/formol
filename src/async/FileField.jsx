@@ -4,7 +4,7 @@ import Dropzone from 'react-dropzone'
 import FaTrash from 'react-icons/lib/fa/trash'
 import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
 
-import { block, fileSize, nameExt, readAsBase64, staticUrl } from '../utils'
+import { block, fileSize, nameExt, readAsBase64 } from '../utils'
 import multipleAdapter from '../utils/multipleAdapter'
 import Preview from '../utils/Preview'
 
@@ -163,12 +163,7 @@ export default class FileField extends React.PureComponent {
         key={fileKey}
       >
         <div className={b.e('image-delete')}>
-          <Preview
-            src={file.url && staticUrl(file.url)}
-            data={file.data}
-            mime={file.type}
-            ext={file.ext}
-          />
+          <Preview data={file.data} mime={file.type} ext={file.ext} />
           {!readOnly && !disabled ? (
             <button
               className={b.e('close')}

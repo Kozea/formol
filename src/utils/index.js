@@ -19,12 +19,4 @@ export const fileSize = size => {
 }
 export const nameExt = name => name.match(/(.+?)(?:\.([^.]+))?$/).slice(1, 3)
 
-export const staticUrl = (path, hasStatic) =>
-  encodeURI(`${hasStatic ? '/' : '/static/'}${path}`)
-
-export const moneyFormat = price =>
-  Intl.NumberFormat('fr', { style: 'currency', currency: 'EUR' }).format(
-    price / 100
-  )
-
 export const block = blockMaker({ namespace: 'Formol_' })
