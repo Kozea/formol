@@ -1,11 +1,12 @@
-import { storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
 import React from 'react'
 
-import Formol, { Conditional, Field, Inliner } from '../src'
+import { storiesOf } from '@storybook/react'
+import { withKnobs } from '@storybook/addon-knobs'
+
+import molecule from '../test/samples/molecule.svg.base64'
 import { countries } from './fields'
-import molecule from './molecule.svg.base64'
 import { withStateForm } from './utils'
+import Formol, { Conditional, Field, Inliner } from '../src'
 
 const personExemple = {
   firstname: 'Liza',

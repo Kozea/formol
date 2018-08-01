@@ -2,7 +2,7 @@ import { boolean, number, text } from '@storybook/addon-knobs'
 import React from 'react'
 
 import Formol, { Field } from '../src'
-import molecule from './molecule.svg.base64'
+import molecule from '../test/samples/molecule.svg.base64'
 
 const choices = {
   White: '#ffffff',

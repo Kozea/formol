@@ -3,7 +3,7 @@ import React from 'react'
 
 import Formol, { Field } from '../../../src'
 import { HTMLToEditor, editorToHTML } from '../../../src/utils/html'
-import molecule from '../../../stories/molecule.svg.base64'
+import molecule from '../../samples/molecule.svg.base64'
 
 const voidSelection = () => () => ({
   anchorNode: null,

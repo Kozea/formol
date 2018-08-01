@@ -3,8 +3,8 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import Formol, { Field } from '../../../src'
-import molecule from '../../../stories/molecule.svg.base64'
-import pixel from '../../../stories/pixel.png.base64'
+import molecule from '../../samples/molecule.svg.base64'
+import pixel from '../../samples/pixel.png.base64'
 
 describe('File field', () => {
   it('handles changes in simple', async () => {
