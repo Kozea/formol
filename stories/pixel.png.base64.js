@@ -1,0 +1,1 @@
+export default 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJgggw=' // eslint-disable-line max-len
