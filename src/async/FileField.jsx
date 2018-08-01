@@ -11,27 +11,30 @@ import Preview from '../utils/Preview'
 const key = file => [file.name, file.ext].join('.')
 
 const rename = files =>
-  files.reduce(
-    ({ renamed, counter }, file) => {
-      const name = file.name.replace(/--\d+$/, '')
-      const k = key({ ...file, name })
-      const newCounter = {
-        ...counter,
-        [k]: k in counter ? counter[k] + 1 : 0,
-      }
-      return {
-        counter: newCounter,
-        renamed: [
-          ...renamed,
-          {
-            ...file,
-            name: newCounter[k] ? `${name}--${newCounter[k]}` : name,
-          },
-        ],
-      }
-    },
-    { renamed: [], counter: {} }
-  ).renamed
+  files
+    .reverse()
+    .reduce(
+      ({ renamed, counter }, file) => {
+        const name = file.name.replace(/--\d+$/, '')
+        const k = key({ ...file, name })
+        const newCounter = {
+          ...counter,
+          [k]: k in counter ? counter[k] + 1 : 0,
+        }
+        return {
+          counter: newCounter,
+          renamed: [
+            ...renamed,
+            {
+              ...file,
+              name: newCounter[k] ? `${name}--${newCounter[k]}` : name,
+            },
+          ],
+        }
+      },
+      { renamed: [], counter: {} }
+    )
+    .renamed.reverse()
 
 @multipleAdapter
 @block
