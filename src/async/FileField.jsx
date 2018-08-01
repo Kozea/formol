@@ -60,28 +60,27 @@ export default class FileField extends React.PureComponent {
     this.handleRemove = this.handleRemove.bind(this)
   }
 
-  static getDerivedStateFromProps(newProps, { value: oldValue }) {
+  static getDerivedStateFromProps(
+    newProps,
+    { value: oldValue, rejected: oldRejected }
+  ) {
     const {
       multiple,
       elementRef: { current },
       value: rawValue,
     } = newProps
     const value = FileField.valueToField(rawValue, multiple)
-    if (value !== oldValue) {
+    if (!deepEqual(value, oldValue)) {
+      const rejected = oldRejected.filter(
+        f => (multiple ? value.split(',').includes(f) : value === f)
+      )
       current && (current.value = value)
       return {
         value,
-        rejected: [],
+        rejected,
       }
     }
     return null
-  }
-  componentDidUpdate({ value: oldValue }, { rejected: oldRejected }) {
-    const { value } = this.props
-    const { rejected } = this.state
-    if (rejected !== oldRejected || !deepEqual(value, oldValue)) {
-      this.handleChange(value, rejected)
-    }
   }
 
   async fileToObject(file) {
@@ -147,11 +146,11 @@ export default class FileField extends React.PureComponent {
 
     const newValue = FileField.valueToField(changed, multiple)
     current.value = newValue
+    this.handleChange(changed, rejected)
     this.setState({
       value: newValue,
       rejected,
     })
-    this.handleChange(changed, rejected)
     e.stopPropagation()
     onBlur()
   }
