@@ -26,7 +26,8 @@
     "moduleNameMapper": {
       "\\.(css|sass)$": "<rootDir>/test/styleMock.js"
     },
-    "setupFiles": ["<rootDir>/test/setup.js"]
+    "setupFiles": ["<rootDir>/test/setup.js"],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
   },
   "pre-commit": "lint,test",
   "devDependencies": {
