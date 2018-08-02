@@ -4,6 +4,3 @@ import Adapter from 'enzyme-adapter-react-16'
 
 defaultSettings.cache = false
 configure({ adapter: new Adapter() })
-
-// Increase global timeout because travis can be very long
-jest.setTimeout(50000)

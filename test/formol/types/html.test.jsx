@@ -301,87 +301,91 @@ describe('Html field', () => {
     expect(field().props().value).toEqual('')
     expect(input().props().defaultValue).toEqual('')
   })
-  it('uploads files as base64', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol onSubmit={onSubmit} item={{ html: '<p>foo</p>' }}>
-        <Field type="html">Html</Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+  it(
+    'uploads files as base64',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol onSubmit={onSubmit} item={{ html: '<p>foo</p>' }}>
+          <Field type="html">Html</Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const field = () => wrapper.find('HTMLField').first()
-    const input = () =>
-      wrapper
-        .find('.Formol_Field__element')
-        .find('input')
-        .first()
+      const field = () => wrapper.find('HTMLField').first()
+      const input = () =>
+        wrapper
+          .find('.Formol_Field__element')
+          .find('input')
+          .first()
 
-    const image = () =>
-      wrapper
-        .find('.rdw-image-wrapper')
-        .find('.rdw-option-wrapper')
-        .first()
-    const file = () =>
-      wrapper
-        .find('.rdw-image-modal-upload-option-input')
-        .find('input')
-        .first()
-    const ok = () =>
-      wrapper
-        .find('.rdw-image-wrapper')
-        .find('.rdw-image-modal')
-        .find('.rdw-image-modal-btn')
-        .first()
+      const image = () =>
+        wrapper
+          .find('.rdw-image-wrapper')
+          .find('.rdw-option-wrapper')
+          .first()
+      const file = () =>
+        wrapper
+          .find('.rdw-image-modal-upload-option-input')
+          .find('input')
+          .first()
+      const ok = () =>
+        wrapper
+          .find('.rdw-image-wrapper')
+          .find('.rdw-image-modal')
+          .find('.rdw-image-modal-btn')
+          .first()
 
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    expect(field().props().type).toEqual('html')
-    expect(input().props().type).toEqual('text')
-    expect(field().props().value).toEqual('<p>foo</p>')
-    expect(input().props().defaultValue).toEqual('<p>foo</p>')
-    await image().simulate('click')
-    expect(ok().props().disabled).toBeTruthy()
+      expect(field().props().type).toEqual('html')
+      expect(input().props().type).toEqual('text')
+      expect(field().props().value).toEqual('<p>foo</p>')
+      expect(input().props().defaultValue).toEqual('<p>foo</p>')
+      await image().simulate('click')
+      expect(ok().props().disabled).toBeTruthy()
 
-    const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'image/svg+xml',
-    })
+      const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
+        type: 'image/svg+xml',
+      })
 
-    await file().simulate('change', { target: { files: [blob] } })
+      await file().simulate('change', { target: { files: [blob] } })
 
-    // Wait for upload to finish
-    await forCondition(() => !ok().props().disabled, wrapper)
+      // Wait for upload to finish
+      await forCondition(() => !ok().props().disabled, wrapper)
 
-    expect(ok().props().disabled).toBeFalsy()
+      expect(ok().props().disabled).toBeFalsy()
 
-    await ok().simulate('click')
+      await ok().simulate('click')
 
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+      await submit().simulate('click')
 
-    const expectedHtml =
-      '<p></p>\n' +
-      `<img src="data:image/svg+xml;base64,${molecule}" alt="" style="float:none;height: auto;width: auto"/>\n` + // eslint-disable-line max-len
-      '<p>foo</p>'
-    expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith(
-      {
-        html: expectedHtml,
-      },
-      { html: '<p>foo</p>' },
-      ['html']
-    )
-    expect(field().props().value).toEqual(expectedHtml)
-    expect(input().props().defaultValue).toEqual(expectedHtml)
-  })
+      const expectedHtml =
+        '<p></p>\n' +
+        `<img src="data:image/svg+xml;base64,${molecule}" alt="" style="float:none;height: auto;width: auto"/>\n` + // eslint-disable-line max-len
+        '<p>foo</p>'
+      expect(onSubmit).toHaveBeenCalled()
+      expect(onSubmit).toHaveBeenCalledWith(
+        {
+          html: expectedHtml,
+        },
+        { html: '<p>foo</p>' },
+        ['html']
+      )
+      expect(field().props().value).toEqual(expectedHtml)
+      expect(input().props().defaultValue).toEqual(expectedHtml)
+    },
+    30000
+  )
 })

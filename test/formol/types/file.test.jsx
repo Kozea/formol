@@ -15,296 +15,284 @@ export const forCondition = async (condition, wrapper) => {
 }
 
 describe('File field', () => {
-  it('handles changes in simple', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
-          file: {
-            data: pixel,
-            ext: 'png',
-            name: 'pixel',
-            size: 67,
-            type: 'image/png',
-          },
-        }}
-      >
-        <Field type="file">File</Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
-
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
-
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
-
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
-
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(wrapper.find('.Formol_FileField__dropzone')).not.toHaveLength(0)
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
-
-    await fileInput().simulate('focus')
-
-    const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'image/svg+xml',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
-
-    await fileInput().simulate('blur')
-
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
-
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
-
-    expect(input().props().defaultValue).toEqual('molecule.svg')
-
-    await submit().simulate('click')
-
-    expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith(
-      {
-        file: {
-          data: molecule,
-          ext: 'svg',
-          name: 'molecule',
-          size: 1086,
-          type: 'image/svg+xml',
-        },
-      },
-      {
-        file: {
-          data: pixel,
-          ext: 'png',
-          name: 'pixel',
-          size: 67,
-          type: 'image/png',
-        },
-      },
-      ['file']
-    )
-    expect(input().props().defaultValue).toEqual('molecule.svg')
-
-    wrapper.unmount()
-  })
-  it('cancels changes', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
-          file: {
-            data: pixel,
-            ext: 'png',
-            name: 'pixel',
-            size: 67,
-            type: 'image/png',
-          },
-        }}
-      >
-        <Field type="file">File</Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
-
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
-
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
-
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
-
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
-
-    await fileInput().simulate('focus')
-
-    const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'image/svg+xml',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
-
-    await fileInput().simulate('blur')
-
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
-
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
-
-    expect(input().props().defaultValue).toEqual('molecule.svg')
-
-    await cancel().simulate('click')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(input().props().defaultValue).toEqual('pixel.png')
-  })
-  it('handles changes with multiple values', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
-          file: [
-            {
+  it(
+    'handles changes in simple',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: {
               data: pixel,
               ext: 'png',
               name: 'pixel',
               size: 67,
               type: 'image/png',
             },
-          ],
-        }}
-      >
-        <Field type="file" multiple>
-          File
-        </Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+          }}
+        >
+          <Field type="file">File</Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
 
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(wrapper.find('.Formol_FileField__dropzone')).not.toHaveLength(0)
 
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    await fileInput().simulate('focus')
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'image/svg+xml',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
+      await fileInput().simulate('focus')
 
-    await fileInput().simulate('blur')
+      const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
+        type: 'image/svg+xml',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
 
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
+      await fileInput().simulate('blur')
 
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
 
-    expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+      expect(input().props().defaultValue).toEqual('molecule.svg')
 
-    expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith(
-      {
-        file: [
-          {
+      await submit().simulate('click')
+
+      expect(onSubmit).toHaveBeenCalled()
+      expect(onSubmit).toHaveBeenCalledWith(
+        {
+          file: {
             data: molecule,
             ext: 'svg',
             name: 'molecule',
             size: 1086,
             type: 'image/svg+xml',
           },
-          {
+        },
+        {
+          file: {
             data: pixel,
             ext: 'png',
             name: 'pixel',
             size: 67,
             type: 'image/png',
           },
-        ],
-      },
-      {
-        file: [
-          {
-            data: pixel,
-            ext: 'png',
-            name: 'pixel',
-            size: 67,
-            type: 'image/png',
-          },
-        ],
-      },
-      ['file']
-    )
-    expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+        },
+        ['file']
+      )
+      expect(input().props().defaultValue).toEqual('molecule.svg')
 
-    wrapper.unmount()
-  })
-  it('cancels changes in multiple', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
+      wrapper.unmount()
+    },
+    30000
+  )
+  it(
+    'cancels changes',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: {
+              data: pixel,
+              ext: 'png',
+              name: 'pixel',
+              size: 67,
+              type: 'image/png',
+            },
+          }}
+        >
+          <Field type="file">File</Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
+
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
+
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
+
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
+
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
+
+      await fileInput().simulate('focus')
+
+      const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
+        type: 'image/svg+xml',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
+
+      await fileInput().simulate('blur')
+
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
+
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
+
+      expect(input().props().defaultValue).toEqual('molecule.svg')
+
+      await cancel().simulate('click')
+
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
+
+      expect(input().props().defaultValue).toEqual('pixel.png')
+    },
+    30000
+  )
+  it(
+    'handles changes with multiple values',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: [
+              {
+                data: pixel,
+                ext: 'png',
+                name: 'pixel',
+                size: 67,
+                type: 'image/png',
+              },
+            ],
+          }}
+        >
+          <Field type="file" multiple>
+            File
+          </Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
+
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
+
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
+
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
+
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
+
+      await fileInput().simulate('focus')
+
+      const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
+        type: 'image/svg+xml',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
+
+      await fileInput().simulate('blur')
+
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
+
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
+
+      expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+
+      await submit().simulate('click')
+
+      expect(onSubmit).toHaveBeenCalled()
+      expect(onSubmit).toHaveBeenCalledWith(
+        {
+          file: [
+            {
+              data: molecule,
+              ext: 'svg',
+              name: 'molecule',
+              size: 1086,
+              type: 'image/svg+xml',
+            },
+            {
+              data: pixel,
+              ext: 'png',
+              name: 'pixel',
+              size: 67,
+              type: 'image/png',
+            },
+          ],
+        },
+        {
           file: [
             {
               data: pixel,
@@ -314,76 +302,195 @@ describe('File field', () => {
               type: 'image/png',
             },
           ],
-        }}
-      >
-        <Field type="file" multiple>
-          File
-        </Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+        },
+        ['file']
+      )
+      expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.unmount()
+    },
+    30000
+  )
+  it(
+    'cancels changes in multiple',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: [
+              {
+                data: pixel,
+                ext: 'png',
+                name: 'pixel',
+                size: 67,
+                type: 'image/png',
+              },
+            ],
+          }}
+        >
+          <Field type="file" multiple>
+            File
+          </Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
 
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
 
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    await fileInput().simulate('focus')
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'image/svg+xml',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
+      await fileInput().simulate('focus')
 
-    await fileInput().simulate('blur')
+      const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
+        type: 'image/svg+xml',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
 
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
+      await fileInput().simulate('blur')
 
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
 
-    expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
 
-    await cancel().simulate('click')
+      expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      await cancel().simulate('click')
 
-    expect(input().props().defaultValue).toEqual('pixel.png')
-  })
-  it('handles same file upload', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
+
+      expect(input().props().defaultValue).toEqual('pixel.png')
+    },
+    30000
+  )
+  it(
+    'handles same file upload',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: [
+              {
+                data: pixel,
+                ext: 'png',
+                name: 'pixel',
+                size: 67,
+                type: 'image/png',
+              },
+            ],
+          }}
+        >
+          <Field type="file" multiple>
+            File
+          </Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
+
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
+
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
+
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
+
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
+
+      await fileInput().simulate('focus')
+
+      const blob = new File([Buffer.from(pixel, 'base64')], 'pixel.png', {
+        type: 'image/png',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
+
+      await fileInput().simulate('blur')
+
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
+
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
+
+      expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
+
+      await submit().simulate('click')
+
+      expect(onSubmit).toHaveBeenCalled()
+      expect(onSubmit).toHaveBeenCalledWith(
+        {
+          file: [
+            {
+              data: pixel,
+              ext: 'png',
+              name: 'pixel--1',
+              size: 68,
+              type: 'image/png',
+            },
+            {
+              data: pixel,
+              ext: 'png',
+              name: 'pixel',
+              size: 67,
+              type: 'image/png',
+            },
+          ],
+        },
+        {
           file: [
             {
               data: pixel,
@@ -393,102 +500,15 @@ describe('File field', () => {
               type: 'image/png',
             },
           ],
-        }}
-      >
-        <Field type="file" multiple>
-          File
-        </Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+        },
+        ['file']
+      )
+      expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
-
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
-
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
-
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
-
-    await fileInput().simulate('focus')
-
-    const blob = new File([Buffer.from(pixel, 'base64')], 'pixel.png', {
-      type: 'image/png',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
-
-    await fileInput().simulate('blur')
-
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
-
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
-
-    expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
-
-    await submit().simulate('click')
-
-    expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith(
-      {
-        file: [
-          {
-            data: pixel,
-            ext: 'png',
-            name: 'pixel--1',
-            size: 68,
-            type: 'image/png',
-          },
-          {
-            data: pixel,
-            ext: 'png',
-            name: 'pixel',
-            size: 67,
-            type: 'image/png',
-          },
-        ],
-      },
-      {
-        file: [
-          {
-            data: pixel,
-            ext: 'png',
-            name: 'pixel',
-            size: 67,
-            type: 'image/png',
-          },
-        ],
-      },
-      ['file']
-    )
-    expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
-
-    wrapper.unmount()
-  })
+      wrapper.unmount()
+    },
+    30000
+  )
   it('handles uploaded file deletion', async () => {
     const onSubmit = jest.fn()
     const wrapper = mount(
@@ -733,272 +753,284 @@ describe('File field', () => {
 
     wrapper.unmount()
   })
-  it('respects default type accept parameter', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
-          file: [
-            {
-              data: pixel,
-              ext: 'png',
-              name: 'pixel',
-              size: 67,
-              type: 'image/png',
-            },
-          ],
-        }}
-      >
-        <Field type="file">File</Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+  it(
+    'respects default type accept parameter',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: [
+              {
+                data: pixel,
+                ext: 'png',
+                name: 'pixel',
+                size: 67,
+                type: 'image/png',
+              },
+            ],
+          }}
+        >
+          <Field type="file">File</Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
 
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    await fileInput().simulate('focus')
+      await fileInput().simulate('focus')
 
-    const blob = new File([Buffer.from(pdf, 'base64')], 'blank.pdf', {
-      type: 'application/pdf',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
+      const blob = new File([Buffer.from(pdf, 'base64')], 'blank.pdf', {
+        type: 'application/pdf',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
 
-    await fileInput().simulate('blur')
+      await fileInput().simulate('blur')
 
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
 
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('blank.pdf')
+      expect(input().props().defaultValue).toEqual('blank.pdf')
 
-    expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
-      'Please select a valid file.'
-    )
+      expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
+        'Please select a valid file.'
+      )
 
-    await submit().simulate('click')
+      await submit().simulate('click')
 
-    expect(onSubmit).not.toHaveBeenCalled()
+      expect(onSubmit).not.toHaveBeenCalled()
 
-    expect(input().props().defaultValue).toEqual('blank.pdf')
+      expect(input().props().defaultValue).toEqual('blank.pdf')
 
-    const close = () => wrapper.find('.Formol_FileField__close')
-    await close().simulate('click')
+      const close = () => wrapper.find('.Formol_FileField__close')
+      await close().simulate('click')
 
-    expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
-    expect(input().props().defaultValue).toEqual('')
+      expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
+      expect(input().props().defaultValue).toEqual('')
 
-    wrapper.unmount()
-  })
-  it('respects default type accept parameter', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
-          file: [
-            {
-              data: pixel,
-              ext: 'png',
-              name: 'pixel',
-              size: 67,
-              type: 'image/png',
-            },
-          ],
-        }}
-      >
-        <Field type="file">File</Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+      wrapper.unmount()
+    },
+    30000
+  )
+  it(
+    'respects default type accept parameter',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: [
+              {
+                data: pixel,
+                ext: 'png',
+                name: 'pixel',
+                size: 67,
+                type: 'image/png',
+              },
+            ],
+          }}
+        >
+          <Field type="file">File</Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
 
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    await fileInput().simulate('focus')
+      await fileInput().simulate('focus')
 
-    const blob = new File([Buffer.from(pdf, 'base64')], 'blank.pdf', {
-      type: 'application/pdf',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
+      const blob = new File([Buffer.from(pdf, 'base64')], 'blank.pdf', {
+        type: 'application/pdf',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
 
-    await fileInput().simulate('blur')
+      await fileInput().simulate('blur')
 
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
 
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('blank.pdf')
+      expect(input().props().defaultValue).toEqual('blank.pdf')
 
-    expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
-      'Please select a valid file.'
-    )
+      expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
+        'Please select a valid file.'
+      )
 
-    await cancel().simulate('click')
+      await cancel().simulate('click')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
+      expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
 
-    wrapper.unmount()
-  })
-  it('cancels rejected files', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol
-        onSubmit={onSubmit}
-        item={{
-          file: [
-            {
-              data: pixel,
-              ext: 'png',
-              name: 'pixel',
-              size: 67,
-              type: 'image/png',
-            },
-          ],
-        }}
-      >
-        <Field type="file" multiple>
-          File
-        </Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
+      wrapper.unmount()
+    },
+    30000
+  )
+  it(
+    'cancels rejected files',
+    async () => {
+      const onSubmit = jest.fn()
+      const wrapper = mount(
+        <Formol
+          onSubmit={onSubmit}
+          item={{
+            file: [
+              {
+                data: pixel,
+                ext: 'png',
+                name: 'pixel',
+                size: 67,
+                type: 'image/png',
+              },
+            ],
+          }}
+        >
+          <Field type="file" multiple>
+            File
+          </Field>
+        </Formol>
+      )
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+      const fileInput = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
 
-    const preview = sub =>
-      wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
+      const preview = sub =>
+        wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    expect(preview()).toHaveLength(1)
-    expect(preview('name').text()).toEqual('pixel.png')
-    expect(preview('size').text()).toEqual('67 o')
-    expect(preview('type').text()).toEqual('image/png')
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(preview()).toHaveLength(1)
+      expect(preview('name').text()).toEqual('pixel.png')
+      expect(preview('size').text()).toEqual('67 o')
+      expect(preview('type').text()).toEqual('image/png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    await fileInput().simulate('focus')
+      await fileInput().simulate('focus')
 
-    const blob = new File([Buffer.from(pdf, 'base64')], 'blank.pdf', {
-      type: 'application/pdf',
-    })
-    await fileInput().simulate('change', { target: { files: [blob] } })
+      const blob = new File([Buffer.from(pdf, 'base64')], 'blank.pdf', {
+        type: 'application/pdf',
+      })
+      await fileInput().simulate('change', { target: { files: [blob] } })
 
-    await fileInput().simulate('blur')
+      await fileInput().simulate('blur')
 
-    // Wait for upload to finish
-    await forCondition(() => !submit().props().disabled, wrapper)
+      // Wait for upload to finish
+      await forCondition(() => !submit().props().disabled, wrapper)
 
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('blank.pdf,pixel.png')
+      expect(input().props().defaultValue).toEqual('blank.pdf,pixel.png')
 
-    expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
-      'Some of your files are invalid. (blank.pdf)'
-    )
+      expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
+        'Some of your files are invalid. (blank.pdf)'
+      )
 
-    await submit().simulate('click')
+      await submit().simulate('click')
 
-    expect(onSubmit).not.toHaveBeenCalled()
+      expect(onSubmit).not.toHaveBeenCalled()
 
-    expect(input().props().defaultValue).toEqual('blank.pdf,pixel.png')
+      expect(input().props().defaultValue).toEqual('blank.pdf,pixel.png')
 
-    await cancel().simulate('click')
+      await cancel().simulate('click')
 
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().defaultValue).toEqual('pixel.png')
 
-    expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
+      expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
 
-    wrapper.unmount()
-  })
+      wrapper.unmount()
+    },
+    30000
+  )
   it('respects readOnly parameter', async () => {
     const onSubmit = jest.fn()
     const wrapper = mount(
