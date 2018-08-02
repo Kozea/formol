@@ -1,8 +1,10 @@
-import { mount } from 'enzyme'
 import React from 'react'
 
-import Formol, { Field } from '../../../src'
+import { mount } from 'enzyme'
+
 import { HTMLToEditor, editorToHTML } from '../../../src/utils/html'
+import { forCondition } from './file.test'
+import Formol, { Field } from '../../../src'
 import molecule from '../../samples/molecule.svg.base64'
 
 const voidSelection = () => () => ({
@@ -356,10 +358,10 @@ describe('Html field', () => {
     await file().simulate('change', { target: { files: [blob] } })
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 10))
-    wrapper.update()
+    await forCondition(() => !ok().props().disabled, wrapper)
 
     expect(ok().props().disabled).toBeFalsy()
+
     await ok().simulate('click')
 
     expect(submit().props().disabled).toBeFalsy()

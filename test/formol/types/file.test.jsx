@@ -7,6 +7,13 @@ import pdf from '../../samples/blank.pdf.base64'
 import molecule from '../../samples/molecule.svg.base64'
 import pixel from '../../samples/pixel.png.base64'
 
+export const forCondition = async (condition, wrapper) => {
+  while (!condition()) {
+    await new Promise(resolve => setTimeout(resolve, 1))
+    wrapper.update()
+  }
+}
+
 describe('File field', () => {
   it('handles changes in simple', async () => {
     const onSubmit = jest.fn()
@@ -71,8 +78,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -168,8 +174,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -248,8 +253,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -360,8 +364,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -440,8 +443,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -794,8 +796,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -883,8 +884,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
@@ -971,8 +971,7 @@ describe('File field', () => {
     await fileInput().simulate('blur')
 
     // Wait for upload to finish
-    await new Promise(resolve => setTimeout(resolve, 50))
-    wrapper.update()
+    await forCondition(() => !submit().props().disabled, wrapper)
 
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
