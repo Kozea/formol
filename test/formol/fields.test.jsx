@@ -205,4 +205,37 @@ describe('Formol field', () => {
 
     global.console.error.mockRestore()
   })
+  it('raises on field outside of form', () => {
+    // // Prevent console.error from cluttering the output
+    jest.spyOn(console, 'error')
+    global.console.error.mockImplementation(() => {})
+
+    expect(() =>
+      mount(
+        <div>
+          <Field name="foo" />
+        </div>
+      )
+    ).toThrow('Field must be used inside Form')
+
+    global.console.error.mockRestore()
+  })
+  it('raises when setting the value attribute on field', () => {
+    // // Prevent console.error from cluttering the output
+    jest.spyOn(console, 'error')
+    global.console.error.mockImplementation(() => {})
+
+    expect(() =>
+      mount(
+        <Formol>
+          <Field name="foo" value="bar" />
+        </Formol>
+      )
+    ).toThrow(
+      'Do not use value on fields. ' +
+        'Set a value for this field in the form item attribute.'
+    )
+
+    global.console.error.mockRestore()
+  })
 })
