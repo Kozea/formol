@@ -23,10 +23,14 @@ export default class Field extends React.PureComponent {
     super(props)
     if (props.value) {
       throw new Error(
-        `Do not use value on fields.
-        Set a value for this field in the form item attribute.`
+        'Do not use value on fields. ' +
+          'Set a value for this field in the form item attribute.'
       )
     }
+    if (!props.context.transientItem) {
+      throw new Error('Field must be used inside Form')
+    }
+
     if (props.name) {
       this.name = props.name
     } else if (typeof props.children === 'string') {
@@ -157,7 +161,6 @@ export default class Field extends React.PureComponent {
     } = this.getProps(this.props)
 
     const {
-      transientItem,
       i18n,
       errors,
       readOnly: formReadOnly,
@@ -167,10 +170,6 @@ export default class Field extends React.PureComponent {
 
     const readOnly = formReadOnly || fieldReadOnly
     const { focus } = this.state
-
-    if (!transientItem) {
-      throw new Error('Field must be used inside Form')
-    }
 
     const Label = TypeField.formolFieldLabelElement || 'label'
     const error =
