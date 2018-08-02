@@ -395,12 +395,29 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "CheckboxField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_CheckboxField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -412,7 +429,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -2083,12 +2100,29 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
                 "element": null,
                 "mixed": Array [
                   Block {
-                    "block": "Field",
+                    "block": "CheckboxField",
                     "cache": Array [],
-                    "element": "element",
-                    "mixed": Array [],
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "cache": Array [],
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "cache": false,
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
                     "modifier": Object {},
-                    "s": "Formol_Field__element",
+                    "s": "Formol_CheckboxField Formol_Field__element",
                     "settings": Object {
                       "cache": false,
                       "elementDelimiter": "__",
@@ -2100,7 +2134,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_BooleanField Formol_Field__element",
+                "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -4738,12 +4772,29 @@ exports[`Storyshots Field Test All fields 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "RadioField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_RadioField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -4755,7 +4806,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_RadioField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -6662,12 +6713,29 @@ exports[`Storyshots Field Test All fields 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "CheckboxField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_CheckboxField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -6679,7 +6747,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -11469,12 +11537,29 @@ Area"
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "RadioField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_RadioField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -11486,7 +11571,7 @@ Area"
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_RadioField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -13393,12 +13478,29 @@ Area"
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "CheckboxField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_CheckboxField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -13410,7 +13512,7 @@ Area"
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -16120,12 +16222,29 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "CheckboxField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_CheckboxField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -16137,7 +16256,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -20579,12 +20698,29 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "RadioField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_RadioField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -20596,7 +20732,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_RadioField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -24987,12 +25123,29 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "CheckboxField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_CheckboxField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -25004,7 +25157,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",
@@ -29446,12 +29599,29 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "Field",
+                "block": "RadioField",
                 "cache": Array [],
-                "element": "element",
-                "mixed": Array [],
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "Field",
+                    "cache": Array [],
+                    "element": "element",
+                    "mixed": Array [],
+                    "modifier": Object {},
+                    "s": "Formol_Field__element",
+                    "settings": Object {
+                      "cache": false,
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
                 "modifier": Object {},
-                "s": "Formol_Field__element",
+                "s": "Formol_RadioField Formol_Field__element",
                 "settings": Object {
                   "cache": false,
                   "elementDelimiter": "__",
@@ -29463,7 +29633,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_BooleanField Formol_Field__element",
+            "s": "Formol_BooleanField Formol_RadioField Formol_Field__element",
             "settings": Object {
               "cache": false,
               "elementDelimiter": "__",

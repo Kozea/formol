@@ -1,8 +1,12 @@
-import deepEqual from 'deep-equal'
 import React from 'react'
+import deepEqual from 'deep-equal'
 
+import { FormolContext } from './FormolContext'
+import { block } from './utils'
+import { get, insert, isModified } from './utils/object'
 import BooleanField from './fields/BooleanField'
 import CalendarField from './fields/CalendarField'
+import CheckboxField from './fields/CheckboxField'
 import CheckboxSetField from './fields/CheckboxSetField'
 import ColorField from './fields/ColorField'
 import DateField from './fields/DateField'
@@ -16,6 +20,7 @@ import MonthField from './fields/MonthField'
 import NumberField from './fields/NumberField'
 import PasswordField from './fields/PasswordField'
 import PasswordStrengthField from './fields/PasswordStrengthField'
+import RadioField from './fields/RadioField'
 import RadioSetField from './fields/RadioSetField'
 import RangeField from './fields/RangeField'
 import SelectField from './fields/SelectField'
@@ -25,11 +30,8 @@ import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
 import TimeField from './fields/TimeField'
 import WeekField from './fields/WeekField'
-import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
-import { block } from './utils'
-import { get, insert, isModified } from './utils/object'
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
@@ -56,9 +58,9 @@ export default class Formol extends React.PureComponent {
     calendar: CalendarField,
     switch: SwitchField,
     html: HTMLField,
-    radio: BooleanField,
+    radio: RadioField,
     'radio-set': RadioSetField,
-    checkbox: BooleanField,
+    checkbox: CheckboxField,
     'checkbox-set': CheckboxSetField,
     file: FileField,
     select: SelectField,

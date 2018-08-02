@@ -4,12 +4,6 @@ import { block } from '../utils'
 
 @block
 export default class BooleanField extends React.PureComponent {
-  static defaultFieldProps = {
-    classNameModifiers: (_, value) => ({
-      label: { on: value },
-    }),
-  }
-
   render(b) {
     const {
       value,
