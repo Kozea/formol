@@ -56,23 +56,6 @@ export default class Conditional extends React.PureComponent {
     return null
   }
 
-  componentDidUpdate() {
-    const {
-      show,
-      context: { handleChange, transientItem, unregister },
-    } = this.props
-
-    if (show && !show(transientItem)) {
-      // This is mandatory for removing values when using Conditional
-      this.names.map(unregister)
-      this.names.map(name => {
-        if (get(transientItem, name)) {
-          handleChange(name, void 0)
-        }
-      })
-    }
-  }
-
   register(name) {
     if (!this.names.includes(name)) {
       this.names.push(name)

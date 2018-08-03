@@ -46,13 +46,18 @@ export default class Field extends React.PureComponent {
     this.state = {
       focus: false,
     }
-    props.context.register(props.name, this.element, props.validator)
-    props.conditionalContext.register &&
-      props.conditionalContext.register(props.name)
 
     this.handleChange = this.handleChange.bind(this)
     this.handleFocus = this.handleFocus.bind(this)
     this.handleBlur = this.handleBlur.bind(this)
+  }
+
+  componentDidMount() {
+    const { name, validator, context, conditionalContext } = this.getProps(
+      this.props
+    )
+    context.register(name, this.element, validator)
+    conditionalContext.register && conditionalContext.register(name)
   }
 
   componentDidUpdate(oldProps) {
@@ -72,6 +77,15 @@ export default class Field extends React.PureComponent {
         ))
     ) {
       handleChanged(name)
+    }
+  }
+
+  componentWillUnmount() {
+    const { name, context, conditionalContext } = this.getProps(this.props)
+    context.unregister(name)
+    conditionalContext.unregister && conditionalContext.unregister(name)
+    if (get(context.transientItem, name) !== void 0) {
+      this.handleChange()
     }
   }
 
