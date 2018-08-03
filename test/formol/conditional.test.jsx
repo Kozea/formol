@@ -98,6 +98,7 @@ describe('Conditional field', () => {
       ['ok', 'why']
     )
     expect(input().props().value).toEqual('bar')
+    wrapper.unmount()
   })
   it('disables fields dependending on other value', async () => {
     const onSubmit = jest.fn()
@@ -164,6 +165,77 @@ describe('Conditional field', () => {
         .at(2)
         .find('input')
         .props().disabled
+    ).toBeTruthy()
+  })
+  it('handles props changing', async () => {
+    class PropsChangingForm extends React.Component {
+      state = { conditionalProps: { disabled: ({ ok }) => ok } }
+
+      render() {
+        const { conditionalProps } = this.state
+
+        return (
+          <Formol item={{ ok: true }}>
+            <Field name="ok" type="switch" />
+            <button
+              className="change"
+              onClick={() =>
+                this.setState({
+                  conditionalProps: { readOnly: ({ ok }) => ok },
+                })
+              }
+            />
+            <Conditional {...conditionalProps}>
+              <Field name="why" />
+            </Conditional>
+          </Formol>
+        )
+      }
+    }
+
+    const wrapper = mount(<PropsChangingForm />)
+
+    const fields = () => wrapper.find('Field')
+    expect(fields()).toHaveLength(2)
+
+    expect(
+      fields()
+        .at(0)
+        .props().name
+    ).toEqual('ok')
+    expect(
+      fields()
+        .at(1)
+        .props().name
+    ).toEqual('why')
+
+    expect(
+      fields()
+        .at(1)
+        .find('input')
+        .props().disabled
+    ).toBeTruthy()
+    expect(
+      fields()
+        .at(1)
+        .find('input')
+        .props().readOnly
+    ).toBeFalsy()
+
+    const change = () => wrapper.find('button.change')
+    await change().simulate('click')
+
+    expect(
+      fields()
+        .at(1)
+        .find('input')
+        .props().disabled
+    ).toBeFalsy()
+    expect(
+      fields()
+        .at(1)
+        .find('input')
+        .props().readOnly
     ).toBeTruthy()
   })
 })

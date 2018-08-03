@@ -1,9 +1,8 @@
-import deepEqual from 'deep-equal'
 import React from 'react'
+import deepEqual from 'deep-equal'
 
 import { ConditionalContext } from './ConditionalContext'
 import FormolContextWrapper from './FormolContext'
-import { get } from './utils/object'
 
 @FormolContextWrapper
 export default class Conditional extends React.PureComponent {
@@ -29,6 +28,7 @@ export default class Conditional extends React.PureComponent {
         ),
       },
       currentProps: { show, ...callableProps },
+      transientItem,
     }
   }
 
@@ -38,17 +38,16 @@ export default class Conditional extends React.PureComponent {
     this.state = Conditional.contextFromProps(props, {
       conditionalContext: {
         register: this.register.bind(this),
+        unregister: this.unregister.bind(this),
       },
     })
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const { children, context, ...nextCallableProps } = nextProps
+    const { transientItem } = context
     if (
-      !deepEqual(
-        nextProps.context.transientItem,
-        prevState.conditionalContext.transientItem
-      ) ||
+      !deepEqual(transientItem, prevState.transientItem) ||
       !deepEqual(nextCallableProps, prevState.currentProps)
     ) {
       return Conditional.contextFromProps(nextProps, prevState)
@@ -57,15 +56,11 @@ export default class Conditional extends React.PureComponent {
   }
 
   register(name) {
-    if (!this.names.includes(name)) {
-      this.names.push(name)
-    }
+    this.names.push(name)
   }
 
   unregister(name) {
-    if (this.names.includes(name)) {
-      this.names.splice(this.names.indexOf(name), 1)
-    }
+    this.names.splice(this.names.indexOf(name), 1)
   }
 
   render() {
