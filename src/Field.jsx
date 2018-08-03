@@ -85,9 +85,7 @@ export default class Field extends React.PureComponent {
     const { name, context, conditionalContext } = this.getProps(this.props)
     context.unregister(name)
     conditionalContext.unregister && conditionalContext.unregister(name)
-    if (get(context.transientItem, name) !== void 0) {
-      this.handleChange()
-    }
+    this.handleChange()
   }
 
   getProps(rawProps) {
