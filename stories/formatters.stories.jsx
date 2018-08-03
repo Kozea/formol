@@ -42,7 +42,7 @@ const hexToRgb = hex =>
         .substring(1)
         .match(/.{2}/g)
         .map(x => parseInt(x, 16))
-        .join(', ')}`
+        .join(', ')})`
     : ''
 
 storiesOf('Formatters', module)
@@ -64,7 +64,10 @@ storiesOf('Formatters', module)
       props => (
         <Formol {...props}>
           <h1>Field to item formatter</h1>
-          <Field name="strnumber" unformatter={v => +v.replace(/\D/g, '')}>
+          <Field
+            name="strnumber"
+            unformatter={v => v && +v.toString().replace(/\D/g, '')}
+          >
             String cleaned and parsed as a number
           </Field>
         </Formol>
@@ -78,7 +81,10 @@ storiesOf('Formatters', module)
       props => (
         <Formol {...props}>
           <h1>Field normalizer</h1>
-          <Field name="strnumber" normalizer={v => v && +v.replace(/\D/g, '')}>
+          <Field
+            name="strnumber"
+            normalizer={v => v && +v.toString().replace(/\D/g, '')}
+          >
             String cleaned and parsed as a number on blur
           </Field>
         </Formol>
@@ -95,7 +101,7 @@ storiesOf('Formatters', module)
           <Field
             name="money"
             formatter={v => (v ? `${v} $` : '')}
-            unformatter={v => +v.replace(/\D/g, '') || ''}
+            unformatter={v => (v && +v.toString().replace(/\D/g, '')) || ''}
           >
             Money
           </Field>
@@ -109,6 +115,11 @@ storiesOf('Formatters', module)
           <Field
             name="rgbcolor"
             type="color"
+            validator={v =>
+              v &&
+              !v.match(/rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)/) &&
+              `${v} is not a valid color`
+            }
             formatter={rgbToHex}
             unformatter={hexToRgb}
           >
@@ -132,7 +143,9 @@ storiesOf('Formatters', module)
               {}
             )}
             formatter={currentPersons => currentPersons.map(({ id }) => id)}
-            unformatter={ids => persons.filter(({ id }) => ids.includes(id))}
+            unformatter={ids =>
+              persons.filter(({ id }) => ids && ids.includes(id))
+            }
           >
             Persons
           </Field>
