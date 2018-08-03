@@ -311,4 +311,31 @@ describe('Select field', () => {
     expect(cancel().props().disabled).toBeTruthy()
     expect(input().props().disabled).toEqual(true)
   })
+  it('handles edge case of multiple and non array value and vice versa', () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ select: [] }}>
+        <Field type="select">Select</Field>
+      </Formol>
+    )
+    const select = w => w.find('Field').find('select')
+    expect(select(wrapper).props().value).toEqual('')
+
+    const wrapper2 = mount(
+      <Formol onSubmit={onSubmit} item={{ select: 'II' }}>
+        <Field type="select" multiple>
+          Select
+        </Field>
+      </Formol>
+    )
+    expect(select(wrapper2).props().value).toEqual(['II'])
+    const wrapper3 = mount(
+      <Formol onSubmit={onSubmit}>
+        <Field type="select" multiple>
+          Select
+        </Field>
+      </Formol>
+    )
+    expect(select(wrapper3).props().value).toEqual([])
+  })
 })

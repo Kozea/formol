@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default (resolve, options) => {
-  const { path, Loading, Error } = options || {}
-
-  return class AsyncWrapper extends React.PureComponent {
+export default resolve =>
+  class AsyncWrapper extends React.PureComponent {
     constructor(props) {
       super(props)
       this._promise = null
@@ -15,15 +13,7 @@ export default (resolve, options) => {
 
     componentDidMount() {
       this.unmounted = false
-      const { Component } = this.state
-      if (!Component) {
-        this._promise = this.resolve()
-      }
-    }
-
-    componentDidCatch(error, info) {
-      this.setState({ error })
-      console.error(error, info)
+      this._promise = this.resolve()
     }
 
     componentWillUnmount() {
@@ -33,7 +23,7 @@ export default (resolve, options) => {
     async resolve() {
       try {
         const module = await resolve()
-        const Component = path ? module[path] : module.default || module
+        const Component = module.default
         AsyncWrapper.module = module
         if (!this.unmounted) {
           this.setState({ Component })
@@ -49,12 +39,11 @@ export default (resolve, options) => {
     render() {
       const { Component, error } = this.state
       if (error) {
-        return Error ? <Error error={error} /> : 'Error'
+        return 'Error'
       }
       if (!Component) {
-        return Loading ? <Loading /> : 'Loading'
+        return 'Loading'
       }
       return <Component {...this.props} />
     }
   }
-}

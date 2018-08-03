@@ -388,4 +388,19 @@ describe('Html field', () => {
     },
     30000
   )
+  it('understands empty value', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ html: '<p></p>\n' }}>
+        <Field type="html">Html</Field>
+      </Formol>
+    )
+    const asyncWrapper = () => wrapper.find('AsyncWrapper')
+    expect(asyncWrapper().text()).toEqual('Loading')
+    await asyncWrapper().instance()._promise
+    wrapper.update()
+    expect(asyncWrapper().text()).not.toEqual('Loading')
+
+    // Can't really test anything here for now
+  })
 })

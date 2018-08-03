@@ -7,7 +7,6 @@ export const readAsBase64 = file =>
     }
     const reader = new FileReader()
     reader.onload = e => resolve(e.target.result)
-    reader.onerror = e => reject(e)
     reader.readAsDataURL(file)
   })
 

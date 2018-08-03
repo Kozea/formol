@@ -4,32 +4,13 @@ import { block } from './'
 
 const b = block('Preview')
 
-export default function Preview({ src, data, ext, mime }) {
-  if (!data && !src) {
-    return null
+export default function Preview({ data, ext, mime }) {
+  if (mime === 'image/svg+xml') {
+    ext = 'svg'
+  } else {
+    ;[, ext] = mime.split('/')
   }
-  if (mime) {
-    if (mime === 'image/svg+xml') {
-      ext = 'svg'
-    } else {
-      ;[, ext] = mime.split('/')
-    }
-  }
-  if (data && !data.startsWith('blob') && !data.startsWith('data')) {
-    if (!mime) {
-      if (ext === 'svg') {
-        mime = 'image/svg+xml'
-      } else if (ext === 'pdf') {
-        mime = 'application/pdf'
-      } else {
-        mime = `image/${ext}`
-      }
-    }
-    data = `data:${mime};base64,${data}`
-  }
-  if (!data) {
-    data = src
-  }
+  data = `data:${mime};base64,${data}`
   const type = ext.toLowerCase()
   if (['pdf', 'svg'].includes(type)) {
     return <object data={data} className={b.m({ type: 'pdf' })} />

@@ -21,7 +21,7 @@ export default function memoizedChoices(WrappedComponent) {
       const { choices, multiple, value } = nextProps
       let state = null
 
-      if (choices !== prevState._rawChoices) {
+      if (!deepEqual(choices, prevState._rawChoices)) {
         const newMemo = {}
         const normalizedChoices = choices.map(([key, val], i) => {
           if (typeof val === 'string') {
@@ -54,6 +54,7 @@ export default function memoizedChoices(WrappedComponent) {
         state = {
           ...(state || {}),
           value: newValue,
+          _rawValue: value,
         }
       }
       return state

@@ -6,7 +6,7 @@ export default function multipleAdapter(WrappedComponent) {
       const { value, multiple, ...props } = this.props
       let normalizedValue = value
       if (!multiple && Array.isArray(value)) {
-        normalizedValue = value.length ? value[0] : null
+        normalizedValue = value.length ? value[0] : ''
       }
       if (multiple && !Array.isArray(value)) {
         normalizedValue =
