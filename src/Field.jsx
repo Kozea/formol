@@ -7,18 +7,19 @@ import FormolContextWrapper from './FormolContext'
 
 let UNAMED_COUNT = 0
 
+// These aren't static because we need to know which props has been given
+const defaultProps = {
+  type: 'text',
+  formatter: v => v,
+  normalizer: v => (v && v.trim ? v.trim() : v),
+  unformatter: v => v,
+  classNameModifiers: {},
+}
+
 @ConditionalContextWrapper
 @FormolContextWrapper
 @block
 export default class Field extends React.PureComponent {
-  static defaultProps = {
-    type: 'text',
-    formatter: v => v,
-    normalizer: v => (v && v.trim ? v.trim() : v),
-    unformatter: v => v,
-    classNameModifiers: {},
-  }
-
   constructor(props) {
     super(props)
     if (props.value) {
@@ -89,8 +90,9 @@ export default class Field extends React.PureComponent {
     }
   }
 
-  getProps(props) {
+  getProps(rawProps) {
     // Put this in HOC?
+    const props = { ...defaultProps, ...rawProps }
     const TypeField = props.context.types[props.type]
     if (!TypeField) {
       throw new Error(`Unknown type "${props.type}" for field "${this.name}"`)
@@ -98,7 +100,7 @@ export default class Field extends React.PureComponent {
     const itemValue = get(props.context.item, this.name)
     const transientValue = get(props.context.transientItem, this.name)
     const value = props.formatter(transientValue)
-    const propsOverrideFromField = TypeField.defaultFieldProps
+    const propsDefaultsFromField = TypeField.defaultFieldProps
       ? Object.entries(TypeField.defaultFieldProps).reduce(
           (newProps, [name, getter]) => {
             newProps[name] = getter(props, value)
@@ -109,12 +111,13 @@ export default class Field extends React.PureComponent {
       : {}
 
     return {
-      ...props,
       name: this.name,
       value,
       modified: itemValue !== transientValue,
       TypeField,
-      ...propsOverrideFromField,
+      ...defaultProps,
+      ...propsDefaultsFromField,
+      ...rawProps,
       ...props.conditionalContext.propsOverride,
     }
   }
