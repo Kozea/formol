@@ -3,7 +3,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import { HTMLToEditor, editorToHTML } from '../../../src/utils/html'
-import { forCondition } from './file.test'
+import { forCondition } from '../../helpers'
 import Formol, { Field } from '../../../src'
 import molecule from '../../samples/molecule.svg.base64'
 

@@ -3,10 +3,9 @@ import React from 'react'
 
 import { mount } from 'enzyme'
 
-import EmailField from '../../src/fields/EmailField'
+import { forCondition } from '../helpers'
 import Formol, { Field } from '../../src'
 import InputField from '../../src/fields/InputField'
-import TelField from '../../src/fields/TelField'
 
 describe('Formol', () => {
   it('is mountable and unmountable', () => {
@@ -295,4 +294,54 @@ describe('Formol', () => {
     expect(input1().props().value).toEqual(42)
     expect(input2().props().value).toEqual(43)
   })
+  it(
+    'errors on bad submit return value',
+    async () => {
+      jest.spyOn(console, 'error')
+      const consoleErrorTracer = jest.fn()
+      global.console.error.mockImplementation(consoleErrorTracer)
+      const onSubmit = () => ({ badValue: 12 })
+
+      const wrapper = mount(
+        <Formol onSubmit={onSubmit} item={{ text: 'foo' }}>
+          <Field type="text">Text</Field>
+        </Formol>
+      )
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
+      const submit = () => wrapper.find('.Formol_Formol__submit')
+      const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+      expect(submit().props().disabled).toBeTruthy()
+      expect(cancel().props().disabled).toBeTruthy()
+      expect(input().props().type).toEqual('text')
+      expect(input().props().value).toEqual('foo')
+
+      await input().simulate('focus')
+      await input().simulate('change', { target: { value: 'foo bar' } })
+      await input().simulate('blur')
+
+      expect(input().props().value).toEqual('foo bar')
+      expect(submit().props().disabled).toBeFalsy()
+      expect(cancel().props().disabled).toBeFalsy()
+
+      await submit().simulate('click')
+
+      await forCondition(() => consoleErrorTracer.mock.calls.length, wrapper)
+
+      expect(consoleErrorTracer).toHaveBeenCalled()
+      expect(consoleErrorTracer).toHaveBeenCalledWith(
+        'onSubmit return value must be a mapping of server errors ' +
+          "(ie: { fieldName: 'error' }) got:",
+        { badValue: 12 }
+      )
+
+      expect(input().props().value).toEqual('foo bar')
+      global.console.error.mockRestore()
+    },
+    30000
+  )
 })

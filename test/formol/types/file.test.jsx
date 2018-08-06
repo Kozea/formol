@@ -2,17 +2,11 @@ import React from 'react'
 
 import { mount } from 'enzyme'
 
+import { forCondition } from '../../helpers'
 import Formol, { Field } from '../../../src'
-import pdf from '../../samples/blank.pdf.base64'
 import molecule from '../../samples/molecule.svg.base64'
+import pdf from '../../samples/blank.pdf.base64'
 import pixel from '../../samples/pixel.png.base64'
-
-export const forCondition = async (condition, wrapper) => {
-  while (!condition()) {
-    await new Promise(resolve => setTimeout(resolve, 1))
-    wrapper.update()
-  }
-}
 
 describe('File field', () => {
   it(

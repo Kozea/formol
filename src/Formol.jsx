@@ -227,10 +227,11 @@ export default class Formol extends React.PureComponent {
         Object.values(errors).some(v => v && typeof v !== 'string')
       ) {
         console.error(
-          `onSubmit return value must be a mapping of server errors
-            (ie: { fieldName: 'error' }) got:`,
+          'onSubmit return value must be a mapping of server errors ' +
+            "(ie: { fieldName: 'error' }) got:",
           errors
         )
+        return
       }
       if (errors) {
         // There are some errors, setting them
