@@ -168,9 +168,7 @@ export default class Formol extends React.PureComponent {
   }
 
   unregister(name) {
-    if (this.fields.names.includes(name)) {
-      this.fields.names.splice(this.fields.names.indexOf(name), 1)
-    }
+    this.fields.names.splice(this.fields.names.indexOf(name), 1)
     delete this.fields.elements[name]
     delete this.fields.validators[name]
   }
