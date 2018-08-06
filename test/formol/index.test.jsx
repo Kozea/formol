@@ -1,8 +1,12 @@
+/* eslint-disable react/no-multi-comp */
 import React from 'react'
 
 import { mount } from 'enzyme'
 
+import EmailField from '../../src/fields/EmailField'
 import Formol, { Field } from '../../src'
+import InputField from '../../src/fields/InputField'
+import TelField from '../../src/fields/TelField'
 
 describe('Formol', () => {
   it('is mountable and unmountable', () => {
@@ -57,5 +61,163 @@ describe('Formol', () => {
         .map(p => p.type())
         .slice(1)
     ).toEqual(['input', 'button', 'button', 'code'])
+  })
+  it('can become readonly', async () => {
+    const onSubmit = jest.fn()
+    class ReadOnlyChanger extends React.Component {
+      state = {
+        readOnly: false,
+      }
+
+      render() {
+        const { readOnly } = this.state
+        return (
+          <Formol onSubmit={onSubmit} readOnly={readOnly}>
+            <a
+              className="changer"
+              onClick={() => this.setState({ readOnly: true })}
+            />
+            <Field>Text</Field>
+          </Formol>
+        )
+      }
+    }
+    const wrapper = mount(<ReadOnlyChanger />)
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const changer = () => wrapper.find('.changer')
+
+    expect(input().props().readOnly).toBeFalsy()
+
+    await changer().simulate('click')
+
+    expect(input().props().readOnly).toBeTruthy()
+  })
+  it('can change item', async () => {
+    const onSubmit = jest.fn()
+    class ItemChanger extends React.Component {
+      state = {
+        item: { text: 'foo' },
+      }
+
+      render() {
+        const { item } = this.state
+        return (
+          <Formol onSubmit={onSubmit} item={item}>
+            <a
+              className="changer"
+              onClick={() => this.setState({ item: { text: 'baz' } })}
+            />
+            <Field>Text</Field>
+          </Formol>
+        )
+      }
+    }
+    const wrapper = mount(<ItemChanger />)
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const changer = () => wrapper.find('.changer')
+
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+
+    expect(input().props().type).toEqual('text')
+    expect(input().props().value).toEqual('foo')
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'bar' } })
+    await input().simulate('blur')
+
+    expect(input().props().value).toEqual('bar')
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
+
+    await changer().simulate('click')
+
+    expect(input().props().value).toEqual('baz')
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+  })
+  it('can change types', async () => {
+    const onSubmit = jest.fn()
+    const VolumeField = () => <InputField type="volume" />
+    const TemperatureField = () => <InputField type="temperature" />
+
+    class ReadOnlyChanger extends React.Component {
+      state = {
+        types: { other: VolumeField },
+      }
+
+      render() {
+        const { types } = this.state
+        return (
+          <Formol onSubmit={onSubmit} types={types}>
+            <a
+              className="changer"
+              onClick={() =>
+                this.setState({ types: { other: TemperatureField } })
+              }
+            />
+            <Field type="other">Text</Field>
+          </Formol>
+        )
+      }
+    }
+    const wrapper = mount(<ReadOnlyChanger />)
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const changer = () => wrapper.find('.changer')
+
+    expect(input().props().type).toEqual('volume')
+
+    await changer().simulate('click')
+
+    expect(input().props().type).toEqual('temperature')
+  })
+  it('can change lang', async () => {
+    const onSubmit = jest.fn()
+    class I18nChanger extends React.Component {
+      state = {
+        i18n: 'en',
+      }
+
+      render() {
+        const { i18n } = this.state
+        return (
+          <Formol onSubmit={onSubmit} i18n={i18n}>
+            <a
+              className="changer"
+              onClick={() => this.setState({ i18n: 'fr' })}
+            />
+            <Field>Text</Field>
+          </Formol>
+        )
+      }
+    }
+    const wrapper = mount(<I18nChanger />)
+
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+    const changer = () => wrapper.find('.changer')
+
+    expect(submit().text()).toEqual('Submit')
+    expect(cancel().text()).toEqual('Cancel')
+
+    await changer().simulate('click')
+
+    expect(submit().text()).toEqual('Envoyer')
+    expect(cancel().text()).toEqual('Annuler')
   })
 })
