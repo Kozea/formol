@@ -213,6 +213,7 @@ export default class Formol extends React.PureComponent {
     const { transientItem } = this.state.context
     const { current: form } = this.form
     this.validateForm()
+    debugger
     if (form.checkValidity()) {
       await this.asyncSetState({ loading: true })
       const errors =
@@ -233,12 +234,10 @@ export default class Formol extends React.PureComponent {
         )
         return
       }
-      if (errors) {
-        // There are some errors, setting them
-        this.setStateContext({ errors })
-      }
+      // Setting errors or removing them if there are no more
+      this.setStateContext({ errors })
 
-      if (!errors || !Object.keys(errors).length) {
+      if (!Object.keys(errors).length) {
         // No errors on submit
         if (item === emptyItem) {
           // Resetting form if no item was given
@@ -313,9 +312,6 @@ export default class Formol extends React.PureComponent {
       const focused = e.target
       if (!e.ctrlKey) {
         if (focused.tagName === 'TEXTAREA') {
-          return
-        }
-        if (focused.getAttribute('contenteditable')) {
           return
         }
       }
