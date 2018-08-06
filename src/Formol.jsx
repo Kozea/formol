@@ -111,6 +111,7 @@ export default class Formol extends React.PureComponent {
         handleChanged: this.handleChanged.bind(this),
       },
       modified: false,
+      _i18nKey: props.i18n,
     }
     this.errorsFromFields = {}
     this.handleCancel = this.handleCancel.bind(this)
@@ -137,11 +138,15 @@ export default class Formol extends React.PureComponent {
     ) {
       context.types = nextTypes
     }
-    if (nextProps.i18n !== prevState.context.i18n) {
+    if (nextProps.i18n !== prevState._i18nKey) {
       context.i18n = Formol.i18n[nextProps.i18n]
     }
     if (Object.keys(context).length) {
-      return { context: { ...prevState.context, ...context }, modified }
+      return {
+        context: { ...prevState.context, ...context },
+        modified,
+        _i18nKey: nextProps.i18n,
+      }
     }
     return null
   }
