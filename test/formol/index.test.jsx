@@ -220,4 +220,79 @@ describe('Formol', () => {
     expect(submit().text()).toEqual('Envoyer')
     expect(cancel().text()).toEqual('Annuler')
   })
+  it('validates the form with validator', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol
+        onSubmit={onSubmit}
+        item={{ number1: 42, number2: 49 }}
+        validator={({ number1, number2 }) => ({
+          number2:
+            number2 <= number1
+              ? 'Number 2 should be greater than Number 1'
+              : '',
+        })}
+      >
+        <Field type="number" max={2000}>
+          Number 1
+        </Field>
+        <Field type="number" max={50}>
+          Number 2
+        </Field>
+      </Formol>
+    )
+    const input1 = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const input2 = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .at(1)
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+    expect(input1().props().type).toEqual('number')
+    expect(input1().props().value).toEqual(42)
+    expect(input2().props().type).toEqual('number')
+    expect(input2().props().value).toEqual(49)
+
+    await input2().simulate('focus')
+    await input2().simulate('change', { target: { value: 21 } })
+    await input2().simulate('blur')
+
+    expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
+      'Number 2 should be greater than Number 1'
+    )
+
+    expect(input2().props().value).toEqual(21)
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
+
+    await submit().simulate('click')
+
+    expect(onSubmit).not.toHaveBeenCalled()
+
+    expect(input2().props().value).toEqual(21)
+
+    await input2().simulate('focus')
+    await input2().simulate('change', { target: { value: 43 } })
+    await input2().simulate('blur')
+    expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
+
+    await submit().simulate('click')
+
+    expect(onSubmit).toHaveBeenCalled()
+    expect(onSubmit).toHaveBeenCalledWith(
+      { number1: 42, number2: 43 },
+      { number1: 42, number2: 49 },
+      ['number1', 'number2']
+    )
+    expect(input1().props().value).toEqual(42)
+    expect(input2().props().value).toEqual(43)
+  })
 })
