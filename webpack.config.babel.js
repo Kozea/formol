@@ -93,6 +93,6 @@ export default {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.mjs', '.js', '.jsx'],
   },
 }
