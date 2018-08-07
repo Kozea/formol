@@ -27,7 +27,8 @@
       "\\.(css|sass)$": "<rootDir>/test/styleMock.js"
     },
     "setupFiles": ["<rootDir>/test/setup.js"],
-    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "testURL": "http://localhost/"
   },
   "pre-commit": "lint,test",
   "devDependencies": {
