@@ -9,4 +9,4 @@ export ConditionalContextWrapper, {
 } from './ConditionalContext'
 
 export SwitchButton from './utils/SwitchButton'
-export unrest, { NoRequestNeeded } from './utils/unrest'
+export unrest, { NoRequestNeeded } from './ext/unrest'

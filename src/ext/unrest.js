@@ -1,4 +1,4 @@
-import { diff } from './object'
+import { diff } from '../utils/object'
 
 function NoRequestNeeded(message) {
   this.name = 'NoRequestNeeded'
