@@ -1,3 +1,10 @@
+# [2.0.0](https://github.com/Kozea/formol/compare/v1.3.1...v2.0.0)
+
+- 100% test coverage
+- Fix lots of minor bugs and unnecessary renders
+- Dead code removal
+- Cosmetic fixes
+
 ### [1.3.1](https://github.com/Kozea/formol/compare/v1.3.0...v1.3.1)
 
 - Add a NoRequestNeeded exception to allow unrest onCreate/onSend methods to skip the request (and therefore avoid valid and error messages)
