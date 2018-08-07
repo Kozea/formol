@@ -213,7 +213,6 @@ export default class Formol extends React.PureComponent {
     const { transientItem } = this.state.context
     const { current: form } = this.form
     this.validateForm()
-    debugger
     if (form.checkValidity()) {
       await this.asyncSetState({ loading: true })
       const errors =

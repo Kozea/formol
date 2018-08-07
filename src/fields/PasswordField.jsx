@@ -1,6 +1,5 @@
 import React from 'react'
-import FaEye from 'react-icons/lib/fa/eye'
-import FaEyeSlash from 'react-icons/lib/fa/eye-slash'
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
 
 import { block } from '../utils'
 import InputField from './InputField'

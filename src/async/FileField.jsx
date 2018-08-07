@@ -1,8 +1,8 @@
 import deepEqual from 'deep-equal'
 import React from 'react'
 import Dropzone from 'react-dropzone'
-import FaTrash from 'react-icons/lib/fa/trash'
-import MdCloudUpload from 'react-icons/lib/md/cloud-upload'
+import { FaTrash } from 'react-icons/fa'
+import { MdCloudUpload } from 'react-icons/md'
 
 import { block, fileSize, nameExt, readAsBase64 } from '../utils'
 import multipleAdapter from '../utils/multipleAdapter'
