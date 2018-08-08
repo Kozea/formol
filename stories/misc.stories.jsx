@@ -271,3 +271,31 @@ storiesOf('Miscellaneous', module)
       }
     )
   )
+  .add(
+    'Select menu long options',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Select with long options</h1>
+          <Field
+            name="looong"
+            type="select-menu"
+            multiple
+            choices={{
+              'A normal option': 'normal',
+              'A very very very very long option': 'long',
+              'A very very very very very very very very loooooooonnnnng option':
+                'verylong',
+              'A very very very very very very very very very very very very very loooooooooooooooooonnnnnnnnng option':
+                'veryverylong',
+            }}
+          >
+            Stressed select
+          </Field>
+        </Formol>
+      ),
+      {
+        looong: 'verylong',
+      }
+    )
+  )
