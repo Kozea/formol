@@ -1,3 +1,7 @@
+### [2.0.2](https://github.com/Kozea/formol/compare/v2.0.1...v2.0.2)
+
+- Field refactoring, props processing refactored in a HOC and some rendering optimization.
+
 ### [2.0.1](https://github.com/Kozea/formol/compare/v2.0.0...v2.0.1)
 
 - Upgrade bemboo to 2.0.0
