@@ -1,13 +1,8 @@
 import React from 'react'
 
-import ConditionalContextWrapper from './ConditionalContext'
-import FormolContextWrapper from './FormolContext'
 import { block } from './utils'
 import fieldPropsAdapter from './utils/fieldPropsAdapter'
-import { get } from './utils/object'
 
-@ConditionalContextWrapper
-@FormolContextWrapper
 @fieldPropsAdapter
 @block
 export default class Field extends React.PureComponent {
@@ -24,24 +19,18 @@ export default class Field extends React.PureComponent {
   }
 
   componentDidMount() {
-    const { name, validator, context, conditionalContext } = this.props
-    context.register(name, this.element, validator)
-    conditionalContext.register && conditionalContext.register(name)
+    const { register, name, validator } = this.props
+    register(name, this.element, validator)
   }
 
   componentWillUnmount() {
-    const { name, context, conditionalContext } = this.props
-    context.unregister(name)
-    conditionalContext.unregister && conditionalContext.unregister(name)
+    const { unregister, name } = this.props
+    unregister(name)
     this.handleChange()
   }
 
   handleChange(value, error) {
-    const {
-      name,
-      unformatter,
-      context: { handleChange },
-    } = this.props
+    const { name, unformatter, handleChange } = this.props
     handleChange(name, unformatter(value), error)
   }
 
@@ -52,12 +41,7 @@ export default class Field extends React.PureComponent {
   }
 
   handleBlur() {
-    const {
-      name,
-      normalizer,
-      context: { transientItem, handleChange, handleEntered },
-    } = this.props
-    const value = get(transientItem, name)
+    const { name, value, normalizer, handleChange, handleEntered } = this.props
     // Normalize data
     const normalized = normalizer(value)
     if (normalized !== value) {
@@ -77,34 +61,28 @@ export default class Field extends React.PureComponent {
       modified,
       className,
       validator,
-      readOnly: fieldReadOnly,
+      readOnly,
       unit,
       extras,
       formatter,
       normalizer,
       unformatter,
       children,
-      context,
-      conditionalContext,
       classNameModifiers,
       TypeField,
+      i18n,
+      error,
+      handleChange,
+      handleEntered,
+      handleKeyDown,
+      register,
+      unregister,
       ...props
     } = this.props
 
-    const {
-      i18n,
-      errors,
-      readOnly: formReadOnly,
-      enteredFields,
-      handleKeyDown,
-    } = context
-
-    const readOnly = formReadOnly || fieldReadOnly
     const { focus } = this.state
 
     const Label = TypeField.formolFieldLabelElement || 'label'
-    const error =
-      enteredFields.includes(name) && errors[name] ? errors[name] : null
     return (
       <div
         className={b.mix(className).m({

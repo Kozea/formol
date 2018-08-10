@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ConditionalContextWrapper from '../ConditionalContext'
+import FormolContextWrapper from '../FormolContext'
 import { diff, get } from './object'
 
 let UNAMED_COUNT = 0
@@ -14,7 +16,9 @@ const defaultProps = {
 }
 
 export default function fieldPropsAdapter(WrappedComponent) {
-  return class FieldPropsAdapter extends React.PureComponent {
+  @ConditionalContextWrapper
+  @FormolContextWrapper
+  class FieldPropsAdapter extends React.PureComponent {
     constructor(props) {
       super(props)
       if (props.value) {
@@ -36,7 +40,9 @@ export default function fieldPropsAdapter(WrappedComponent) {
       } else {
         this.name = `field-${++UNAMED_COUNT}`
       }
-      this.t = new Date().getTime()
+
+      this.register = this.register.bind(this)
+      this.unregister = this.unregister.bind(this)
     }
 
     componentDidUpdate(oldProps) {
@@ -58,6 +64,18 @@ export default function fieldPropsAdapter(WrappedComponent) {
       }
     }
 
+    register(name, element, validator) {
+      const { context, conditionalContext } = this.props
+      context.register(name, element, validator)
+      conditionalContext.register && conditionalContext.register(name)
+    }
+
+    unregister(name) {
+      const { context, conditionalContext } = this.props
+      context.unregister(name)
+      conditionalContext.unregister && conditionalContext.unregister(name)
+    }
+
     render() {
       const props = { ...defaultProps, ...this.props }
       const TypeField = props.context.types[props.type]
@@ -77,7 +95,20 @@ export default function fieldPropsAdapter(WrappedComponent) {
           )
         : {}
 
-      const finalProps = {
+      const {
+        context: {
+          readOnly: formReadOnly,
+          i18n,
+          errors,
+          enteredFields,
+          handleChange,
+          handleEntered,
+          handleKeyDown,
+        },
+        conditionalContext,
+        readOnly,
+        ...finalProps
+      } = {
         name: this.name,
         value,
         modified: itemValue !== transientValue,
@@ -88,7 +119,24 @@ export default function fieldPropsAdapter(WrappedComponent) {
         ...props.conditionalContext.propsOverride,
       }
 
-      return <WrappedComponent {...finalProps} />
+      return (
+        <WrappedComponent
+          {...finalProps}
+          readOnly={formReadOnly || readOnly}
+          i18n={i18n}
+          error={
+            enteredFields.includes(this.name) && errors[this.name]
+              ? errors[this.name]
+              : null
+          }
+          handleChange={handleChange}
+          handleEntered={handleEntered}
+          handleKeyDown={handleKeyDown}
+          register={this.register}
+          unregister={this.unregister}
+        />
+      )
     }
   }
+  return FieldPropsAdapter
 }

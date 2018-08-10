@@ -1,12 +1,11 @@
+import { withKnobs } from '@storybook/addon-knobs'
+import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import { storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
-
+import Formol, { Conditional, Field, Inliner } from '../src'
 import molecule from '../test/samples/molecule.svg.base64'
 import { countries } from './fields'
 import { withStateForm } from './utils'
-import Formol, { Conditional, Field, Inliner } from '../src'
 
 const personExemple = {
   firstname: 'Liza',
@@ -30,6 +29,12 @@ const personExemple = {
   address: '12 Norfolk St',
   zip: '69030',
   city: 'Haigler',
+}
+
+const sex = {
+  Woman: 'woman',
+  Man: 'man',
+  Other: 'other',
 }
 
 storiesOf('Formol exemples', module)
@@ -59,16 +64,7 @@ storiesOf('Formol exemples', module)
         >
           Avatar
         </Field>
-        <Field
-          required
-          type="radio-set"
-          name="sex"
-          choices={{
-            Woman: 'woman',
-            Man: 'man',
-            Other: 'other',
-          }}
-        >
+        <Field required type="radio-set" name="sex" choices={sex}>
           Gender
         </Field>
         <Conditional show={item => item.sex && item.sex !== 'man'}>
