@@ -8,6 +8,19 @@
     color: inherit
     padding: 0
 
+  .Select--multi .Select-value
+    display: inline-flex
+
+  .Select-menu-outer
+    > * > * > * > *
+      position: relative
+
+      > *
+        // max-width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        width: 100%
 
 .Formol_Field--readOnly
   .Select-control
