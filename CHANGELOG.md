@@ -1,3 +1,7 @@
+### [2.0.3](https://github.com/Kozea/formol/compare/v2.0.2...v2.0.3)
+
+- Fix long labels style in select menu. Fix #35
+
 ### [2.0.2](https://github.com/Kozea/formol/compare/v2.0.1...v2.0.2)
 
 - Field refactoring, props processing refactored in a HOC and some rendering optimization.
