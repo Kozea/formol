@@ -1,3 +1,7 @@
+### [2.0.4](https://github.com/Kozea/formol/compare/v2.0.3...v2.0.4)
+
+- Add an easing on opacity transition for form loading.
+
 ### [2.0.3](https://github.com/Kozea/formol/compare/v2.0.2...v2.0.3)
 
 - Fix long labels style in select menu. Fix #35
