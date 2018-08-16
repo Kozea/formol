@@ -1,14 +1,11 @@
-import 'react-select/dist/react-select.css'
-import 'react-virtualized-select/styles.css'
-
-import React from 'react'
-import VirtualizedSelect from 'react-virtualized-select'
-import createFilterOptions from 'react-select-fast-filter-options'
 import deepEqual from 'deep-equal'
+import React from 'react'
+import Select from 'react-select'
 
 import { block } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
 import memoizedChoices from '../utils/memoizedChoices'
+import MenuList from '../utils/MenuList'
 import multipleAdapter from '../utils/multipleAdapter'
 
 @multipleAdapter
@@ -25,6 +22,7 @@ export default class SelectMenuField extends React.PureComponent {
     }
 
     this.handleChange = this.handleChange.bind(this)
+    this.select = React.createRef()
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -37,7 +35,6 @@ export default class SelectMenuField extends React.PureComponent {
       }))
       state = {
         options,
-        filterOptions: createFilterOptions({ options }),
         _rawChoices: choices,
       }
     }
@@ -47,7 +44,7 @@ export default class SelectMenuField extends React.PureComponent {
 
   componentDidMount() {
     const { className, elementRef } = this.props
-    elementRef.current = this.select._selectRef.value
+    elementRef.current = this.select.current.select.inputRef
     elementRef.current.classList.add(className)
   }
 
@@ -74,18 +71,24 @@ export default class SelectMenuField extends React.PureComponent {
       choices,
       ...props
     } = this.props
-    const { options, filterOptions } = this.state
+    const { options } = this.state
     delete props.onChange
 
+    const fullValue = multiple
+      ? value.map(single => options.find(({ value: v }) => v === single))
+      : options.find(({ value: v }) => v === value) || null
+
+    const components = options.length > 30 ? { MenuList } : {}
+
     return (
-      <VirtualizedSelect
+      <Select
         className={b.s}
-        ref={ref => (this.select = ref)}
+        ref={this.select}
         disabled={readOnly /* There's no readOnly */}
         options={options}
-        filterOptions={filterOptions}
-        multi={multiple}
-        value={value}
+        isMulti={multiple}
+        value={fullValue}
+        components={components}
         onChange={this.handleChange}
         joinValues
         inputProps={{ className: b.e('input').s }}
