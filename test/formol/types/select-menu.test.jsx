@@ -1,4 +1,11 @@
 import { mount } from 'enzyme'
+import {
+  ExactWordIndexStrategy,
+  LowerCaseSanitizer,
+  SimpleTokenizer,
+  StopWordsTokenizer,
+  TfIdfSearchIndex,
+} from 'js-search'
 import React from 'react'
 
 import Formol, { Field } from '../../../src'
@@ -30,17 +37,21 @@ describe('Select Menu field', () => {
       wrapper
         .find('Field')
         .find('input')
-        .first()
+        .at(1)
 
-    const selectValue = () => wrapper.find('.Select-value')
-    const selectControl = () => wrapper.find('.Select-control')
-    const selectOptions = () => wrapper.find('.VirtualizedSelectOption')
-    const selectMenu = () => wrapper.find('.Select-menu')
+    const singleValue = () => wrapper.find('SingleValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
     const selectInput = () =>
       wrapper
         .find('Field')
         .find('input')
-        .at(1)
+        .first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -49,25 +60,11 @@ describe('Select Menu field', () => {
     expect(cancel().props().disabled).toBeTruthy()
 
     expect(input().props().value).toEqual('II')
-    expect(selectValue().text()).toEqual('two')
+    expect(singleValue().text()).toEqual('two')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
-
-    // Faking the sizer size otherwise options are not displayed
-    const sizer = selectMenu().getDOMNode()
-    Object.defineProperty(sizer, 'offsetWidth', {
-      value: 1337,
-    })
-    Object.defineProperty(sizer, 'offsetHeight', {
-      value: 1664,
-    })
-    wrapper
-      .find('AutoSizer')
-      .instance()
-      ._onResize()
-    wrapper.update()
 
     expect(selectOptions()).toHaveLength(3)
     await selectOptions()
@@ -119,17 +116,20 @@ describe('Select Menu field', () => {
       wrapper
         .find('Field')
         .find('input')
+        .at(1)
+    const singleValue = () => wrapper.find('SingleValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
         .first()
-
-    const selectValue = () => wrapper.find('.Select-value')
-    const selectControl = () => wrapper.find('.Select-control')
-    const selectOptions = () => wrapper.find('.VirtualizedSelectOption')
-    const selectMenu = () => wrapper.find('.Select-menu')
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
     const selectInput = () =>
       wrapper
         .find('Field')
         .find('input')
-        .at(1)
+        .first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -138,25 +138,11 @@ describe('Select Menu field', () => {
     expect(cancel().props().disabled).toBeTruthy()
 
     expect(input().props().value).toEqual('##formol_memo_0')
-    expect(selectValue().text()).toEqual('one')
+    expect(singleValue().text()).toEqual('one')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
-
-    // Faking the sizer size otherwise options are not displayed
-    const sizer = selectMenu().getDOMNode()
-    Object.defineProperty(sizer, 'offsetWidth', {
-      value: 1337,
-    })
-    Object.defineProperty(sizer, 'offsetHeight', {
-      value: 1664,
-    })
-    wrapper
-      .find('AutoSizer')
-      .instance()
-      ._onResize()
-    wrapper.update()
 
     expect(selectOptions()).toHaveLength(3)
     await selectOptions()
@@ -204,57 +190,49 @@ describe('Select Menu field', () => {
       wrapper
         .find('Field')
         .find('input')
-        .first()
+        .at(1)
 
-    const selectValue = () => wrapper.find('.Select-value')
-    const selectControl = () => wrapper.find('.Select-control')
-    const selectOptions = () => wrapper.find('.VirtualizedSelectOption')
-    const selectMenu = () => wrapper.find('.Select-menu')
+    const multiValue = () => wrapper.find('MultiValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
     const selectInput = () =>
       wrapper
         .find('Field')
         .find('input')
-        .at(1)
+        .first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    expect(input().props().value).toEqual('##formol_memo_0,II')
+    expect(input().props().value).toEqual('##formol_memo_0__/__II')
 
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
 
-    // Faking the sizer size otherwise options are not displayed
-    const sizer = selectMenu().getDOMNode()
-    Object.defineProperty(sizer, 'offsetWidth', {
-      value: 1337,
-    })
-    Object.defineProperty(sizer, 'offsetHeight', {
-      value: 1664,
-    })
-    wrapper
-      .find('AutoSizer')
-      .instance()
-      ._onResize()
-    wrapper.update()
-
     expect(selectOptions()).toHaveLength(1)
     await selectOptions()
       .at(0)
       .simulate('click')
     expect(selectOptions()).toHaveLength(0)
-    await selectValue()
+    await multiValue()
       .at(0)
-      .find('.Select-value-icon')
-      .simulate('mousedown')
+      .find('MultiValueRemove')
+      .find('div')
+      .first()
+      .simulate('click')
 
     await selectInput().simulate('blur')
 
-    expect(input().props().value).toEqual('II,##formol_memo_2')
+    expect(input().props().value).toEqual('II__/__##formol_memo_2')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -266,7 +244,7 @@ describe('Select Menu field', () => {
       { selectMenu: [1, 'II'] },
       ['selectMenu']
     )
-    expect(input().props().value).toEqual('II,##formol_memo_2')
+    expect(input().props().value).toEqual('II__/__##formol_memo_2')
   })
   it('cancels changes in multiple', async () => {
     const onSubmit = jest.fn()
@@ -295,57 +273,50 @@ describe('Select Menu field', () => {
       wrapper
         .find('Field')
         .find('input')
-        .first()
+        .at(1)
 
-    const selectValue = () => wrapper.find('.Select-value')
-    const selectControl = () => wrapper.find('.Select-control')
-    const selectOptions = () => wrapper.find('.VirtualizedSelectOption')
-    const selectMenu = () => wrapper.find('.Select-menu')
+    const multiValue = () => wrapper.find('MultiValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
     const selectInput = () =>
       wrapper
         .find('Field')
         .find('input')
-        .at(1)
+        .first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    expect(input().props().value).toEqual('##formol_memo_0,II')
+    expect(input().props().value).toEqual('##formol_memo_0__/__II')
 
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
 
-    // Faking the sizer size otherwise options are not displayed
-    const sizer = selectMenu().getDOMNode()
-    Object.defineProperty(sizer, 'offsetWidth', {
-      value: 1337,
-    })
-    Object.defineProperty(sizer, 'offsetHeight', {
-      value: 1664,
-    })
-    wrapper
-      .find('AutoSizer')
-      .instance()
-      ._onResize()
-    wrapper.update()
-
     expect(selectOptions()).toHaveLength(1)
     await selectOptions()
       .at(0)
       .simulate('click')
+
     expect(selectOptions()).toHaveLength(0)
-    await selectValue()
+    await multiValue()
       .at(0)
-      .find('.Select-value-icon')
-      .simulate('mousedown')
+      .find('MultiValueRemove')
+      .find('div')
+      .first()
+      .simulate('click')
 
     await selectInput().simulate('blur')
 
-    expect(input().props().value).toEqual('II,##formol_memo_2')
+    expect(input().props().value).toEqual('II__/__##formol_memo_2')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -354,7 +325,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('##formol_memo_0,II')
+    expect(input().props().value).toEqual('##formol_memo_0__/__II')
   })
   it('sets disabled when readOnly', async () => {
     const onSubmit = jest.fn()
@@ -371,7 +342,11 @@ describe('Select Menu field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () => wrapper.find('Field').find('input')
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -417,32 +392,20 @@ describe('Select Menu field', () => {
 
     const changer = () => wrapper.find('.changer')
 
-    const selectControl = () => wrapper.find('.Select-control')
-    const selectOptions = () => wrapper.find('.VirtualizedSelectOption')
-    const selectMenu = () => wrapper.find('.Select-menu')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectInput = () =>
       wrapper
         .find('Field')
         .find('input')
-        .at(1)
+        .first()
 
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
-
-    // Faking the sizer size otherwise options are not displayed
-    const sizer = selectMenu().getDOMNode()
-    Object.defineProperty(sizer, 'offsetWidth', {
-      value: 1337,
-    })
-    Object.defineProperty(sizer, 'offsetHeight', {
-      value: 1664,
-    })
-
-    wrapper
-      .find('AutoSizer')
-      .instance()
-      ._onResize()
-    wrapper.update()
 
     expect(selectOptions()).toHaveLength(3)
 
@@ -451,5 +414,142 @@ describe('Select Menu field', () => {
     await changer().simulate('click')
 
     expect(selectOptions().map(v => v.text())).toEqual(['un', 'deux', 'trois'])
+  })
+  it('filters options', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ selectMenu: null }}>
+        <Field
+          type="select-menu"
+          choices={{
+            one: 1,
+            two: 'II',
+            three: true,
+          }}
+        >
+          Select Menu
+        </Field>
+      </Formol>
+    )
+    const asyncWrapper = () => wrapper.find('AsyncWrapper')
+    expect(asyncWrapper().text()).toEqual('Loading')
+    await asyncWrapper().instance()._promise
+    wrapper.update()
+    expect(asyncWrapper().text()).not.toEqual('Loading')
+
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .at(1)
+
+    const singleValue = () => wrapper.find('SingleValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
+    const selectInput = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+
+    expect(input().props().value).toEqual('')
+    expect(singleValue()).toHaveLength(0)
+    expect(selectOptions()).toHaveLength(0)
+    expect(selectMenu()).toHaveLength(0)
+    await selectInput().simulate('focus')
+    await selectControl().simulate('mousedown', { button: 0 })
+    // Hard setting value since the react-select
+    // handler is based on e.currentTarget
+    selectInput().getDOMNode().value = 'o'
+    await selectInput().simulate('change', { target: { value: 'o' } })
+
+    expect(selectOptions()).toHaveLength(2)
+
+    selectInput().getDOMNode().value = 'oo'
+    await selectInput().simulate('change', { target: { value: 'oo' } })
+
+    expect(selectOptions()).toHaveLength(0)
+  })
+  it('respects filter options', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ selectMenu: null }}>
+        <Field
+          type="select-menu"
+          choices={{
+            one: 1,
+            two: 'II',
+            three: true,
+          }}
+          indexStrategy={new ExactWordIndexStrategy()}
+          searchIndex={new TfIdfSearchIndex()}
+          tokenizer={new StopWordsTokenizer(new SimpleTokenizer())}
+          indexes={['label']}
+          sanitizer={new LowerCaseSanitizer()}
+        >
+          Select Menu
+        </Field>
+      </Formol>
+    )
+    const asyncWrapper = () => wrapper.find('AsyncWrapper')
+    expect(asyncWrapper().text()).toEqual('Loading')
+    await asyncWrapper().instance()._promise
+    wrapper.update()
+    expect(asyncWrapper().text()).not.toEqual('Loading')
+
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .at(1)
+
+    const singleValue = () => wrapper.find('SingleValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
+    const selectInput = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+
+    expect(input().props().value).toEqual('')
+    expect(singleValue()).toHaveLength(0)
+    expect(selectOptions()).toHaveLength(0)
+    expect(selectMenu()).toHaveLength(0)
+    await selectInput().simulate('focus')
+    await selectControl().simulate('mousedown', { button: 0 })
+    // Hard setting value since the react-select
+    // handler is based on e.currentTarget
+    selectInput().getDOMNode().value = 'o'
+    await selectInput().simulate('change', { target: { value: 'o' } })
+
+    expect(selectOptions()).toHaveLength(0)
+
+    selectInput().getDOMNode().value = 'ONE'
+    await selectInput().simulate('change', { target: { value: 'ONE' } })
+
+    expect(selectOptions()).toHaveLength(1)
   })
 })
