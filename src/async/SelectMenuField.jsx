@@ -5,14 +5,15 @@ import {
   UnorderedSearchIndex,
 } from 'js-search'
 import React from 'react'
-import { makeAnimated } from 'react-select'
-import Select from 'react-select'
+import Select, { makeAnimated } from 'react-select'
 
 import { block } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
 import memoizedChoices from '../utils/memoizedChoices'
 import MenuList from '../utils/MenuList'
 import multipleAdapter from '../utils/multipleAdapter'
+
+export const DELIMITER = '__/__'
 
 @multipleAdapter
 @choicesAdapter
@@ -26,7 +27,9 @@ export default class SelectMenuField extends React.PureComponent {
       search: null,
       filterOptions: null,
       options: [],
+      value: null,
       _rawChoices: null,
+      _rawValue: null,
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -43,9 +46,13 @@ export default class SelectMenuField extends React.PureComponent {
       indexStrategy,
       sanitizer,
       tokenizer,
+      elementRef: { current },
       indexes,
+      value,
+      multiple,
     } = nextProps
     let state = null
+
     if (!deepEqual(choices, prevState._rawChoices, { strict: true })) {
       const options = choices.map(([label, choice]) => ({
         value: choice,
@@ -80,19 +87,19 @@ export default class SelectMenuField extends React.PureComponent {
         _rawChoices: choices,
       }
     }
+    if (!deepEqual(value, prevState._rawValue, { strict: true })) {
+      const opts = state ? state.options : prevState.options
+      state = {
+        ...(state === null ? {} : state),
+        value: multiple
+          ? value.map(single => opts.find(({ value: v }) => v === single))
+          : opts.find(({ value: v }) => v === value) || null,
+        _rawValue: value,
+      }
+      current && (current.value = value)
+    }
 
     return state
-  }
-
-  componentDidMount() {
-    const { className, elementRef } = this.props
-    elementRef.current = this.select.current.select.inputRef
-    elementRef.current.classList.add(className)
-  }
-
-  componentWillUnmount() {
-    const { elementRef } = this.props
-    elementRef.current = null
   }
 
   handleChange(newValue) {
@@ -123,7 +130,7 @@ export default class SelectMenuField extends React.PureComponent {
       multiple,
       readOnly,
       disabled,
-      value,
+      value: rawValue,
       choices,
       searchIndex,
       indexStrategy,
@@ -131,33 +138,45 @@ export default class SelectMenuField extends React.PureComponent {
       tokenizer,
       indexes,
       windowThreshold,
+      elementRef,
       onChange,
       animated,
+      styles,
       ...props
     } = this.props
-    const { options } = this.state
-
-    const fullValue = multiple
-      ? value.map(single => options.find(({ value: v }) => v === single))
-      : options.find(({ value: v }) => v === value) || null
+    const { value, options } = this.state
 
     return (
-      <Select
-        className={b.s}
-        ref={this.select}
-        isDisabled={disabled || readOnly /* There's no readOnly */}
-        options={options}
-        isMulti={multiple}
-        value={fullValue}
-        components={{ ...(animated === false ? {} : makeAnimated()), MenuList }}
-        onChange={this.handleChange}
-        onInputChange={this.handleInputChange}
-        delimiter="__/__"
-        isClearable
-        inputProps={{ className: b.e('input').s }}
-        filterOption={this.filter}
-        {...props}
-      />
+      <div className={b}>
+        <Select
+          ref={this.select}
+          isDisabled={disabled || readOnly /* There's no readOnly */}
+          options={options}
+          isMulti={multiple}
+          value={value}
+          components={{
+            ...(animated === false ? {} : makeAnimated()),
+            MenuList,
+          }}
+          onChange={this.handleChange}
+          onInputChange={this.handleInputChange}
+          delimiter={DELIMITER}
+          styles={styles}
+          isClearable
+          filterOption={this.filter}
+        />
+        {
+          // We have to add another input field since the
+          // react-select one is not overridable
+        }
+        <input
+          className={b.mix(className).e('hidden-input')}
+          ref={elementRef}
+          {...props}
+          defaultValue={multiple ? rawValue.join(DELIMITER) : rawValue}
+          type="text"
+        />
+      </div>
     )
   }
 }

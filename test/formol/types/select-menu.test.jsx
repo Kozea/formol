@@ -34,10 +34,7 @@ describe('Select Menu field', () => {
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
     const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
     const selectControl = () =>
@@ -59,7 +56,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('II')
+    expect(input().props().defaultValue).toEqual('II')
     expect(singleValue().text()).toEqual('two')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -76,7 +73,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().value).toEqual('##formol_memo_0')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0')
 
     await submit().simulate('click')
 
@@ -86,7 +83,7 @@ describe('Select Menu field', () => {
       { selectMenu: 'II' },
       ['selectMenu']
     )
-    expect(input().props().value).toEqual('##formol_memo_0')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0')
 
     wrapper.unmount()
   })
@@ -113,10 +110,8 @@ describe('Select Menu field', () => {
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
     const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
+
     const singleValue = () => wrapper.find('SingleValue')
     const selectControl = () =>
       wrapper
@@ -137,7 +132,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('##formol_memo_0')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0')
     expect(singleValue().text()).toEqual('one')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -154,14 +149,14 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().value).toEqual('II')
+    expect(input().props().defaultValue).toEqual('II')
 
     await cancel().simulate('click')
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('##formol_memo_0')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0')
   })
   it('handles changes with multiple values', async () => {
     const onSubmit = jest.fn()
@@ -187,10 +182,7 @@ describe('Select Menu field', () => {
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
     const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const multiValue = () => wrapper.find('MultiValue')
     const selectControl = () =>
@@ -211,7 +203,7 @@ describe('Select Menu field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    expect(input().props().value).toEqual('##formol_memo_0__/__II')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0__/__II')
 
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -232,7 +224,7 @@ describe('Select Menu field', () => {
 
     await selectInput().simulate('blur')
 
-    expect(input().props().value).toEqual('II__/__##formol_memo_2')
+    expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -244,7 +236,7 @@ describe('Select Menu field', () => {
       { selectMenu: [1, 'II'] },
       ['selectMenu']
     )
-    expect(input().props().value).toEqual('II__/__##formol_memo_2')
+    expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
   })
   it('cancels changes in multiple', async () => {
     const onSubmit = jest.fn()
@@ -270,10 +262,7 @@ describe('Select Menu field', () => {
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
     const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const multiValue = () => wrapper.find('MultiValue')
     const selectControl = () =>
@@ -294,7 +283,7 @@ describe('Select Menu field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    expect(input().props().value).toEqual('##formol_memo_0__/__II')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0__/__II')
 
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -316,7 +305,7 @@ describe('Select Menu field', () => {
 
     await selectInput().simulate('blur')
 
-    expect(input().props().value).toEqual('II__/__##formol_memo_2')
+    expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -325,7 +314,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('##formol_memo_0__/__II')
+    expect(input().props().defaultValue).toEqual('##formol_memo_0__/__II')
   })
   it('sets disabled when readOnly', async () => {
     const onSubmit = jest.fn()
@@ -364,19 +353,24 @@ describe('Select Menu field', () => {
           two: 'II',
           three: true,
         },
+        required: false,
       }
 
       render() {
-        const { choices } = this.state
+        const { choices, required } = this.state
         return (
           <Formol onSubmit={onSubmit} item={{ selectMenu: 'II' }}>
             <a
               className="changer"
               onClick={() =>
-                this.setState({ choices: { un: 'I', deux: 2, trois: true } })
+                choices.one === 1
+                  ? this.setState({
+                      choices: { un: 'I', deux: 2, trois: true },
+                    })
+                  : this.setState({ required: true })
               }
             />
-            <Field type="select-menu" choices={choices}>
+            <Field type="select-menu" choices={choices} required={required}>
               Select Menu
             </Field>
           </Formol>
@@ -392,6 +386,8 @@ describe('Select Menu field', () => {
 
     const changer = () => wrapper.find('.changer')
 
+    const input = () =>
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
     const selectControl = () =>
       wrapper
         .find('Control')
@@ -407,6 +403,8 @@ describe('Select Menu field', () => {
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
 
+    expect(input().props().required).toBeFalsy()
+
     expect(selectOptions()).toHaveLength(3)
 
     expect(selectOptions().map(v => v.text())).toEqual(['one', 'two', 'three'])
@@ -414,6 +412,11 @@ describe('Select Menu field', () => {
     await changer().simulate('click')
 
     expect(selectOptions().map(v => v.text())).toEqual(['un', 'deux', 'trois'])
+
+    await changer().simulate('click')
+
+    expect(selectOptions().map(v => v.text())).toEqual(['un', 'deux', 'trois'])
+    expect(input().props().required).toBeTruthy()
   })
   it('filters options', async () => {
     const onSubmit = jest.fn()
@@ -439,10 +442,7 @@ describe('Select Menu field', () => {
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
     const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
     const selectControl = () =>
@@ -464,7 +464,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('')
+    expect(input().props().defaultValue).toEqual('')
     expect(singleValue()).toHaveLength(0)
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -510,10 +510,7 @@ describe('Select Menu field', () => {
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
     const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
     const selectControl = () =>
@@ -535,7 +532,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().value).toEqual('')
+    expect(input().props().defaultValue).toEqual('')
     expect(singleValue()).toHaveLength(0)
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
