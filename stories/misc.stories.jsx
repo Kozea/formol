@@ -264,10 +264,38 @@ storiesOf('Miscellaneous', module)
           <Field name="stressed" type="select-menu" choices={stressedChoices}>
             Stressed select
           </Field>
+          <Field
+            name="multiStressed"
+            type="select-menu"
+            choices={stressedChoices}
+            multiple
+          >
+            Multi Stressed select
+          </Field>
         </Formol>
       ),
       {
         stressed: '12',
+        multiStressed: [
+          '12',
+          '123',
+          '213',
+          '987',
+          '2810',
+          '3',
+          '1938',
+          '3432',
+          '3923',
+          '191',
+          '533',
+          '2734',
+          '2892',
+          '9',
+          '82',
+          '812',
+          '871',
+          '918',
+        ],
       }
     )
   )

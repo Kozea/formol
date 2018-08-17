@@ -1,4 +1,9 @@
 import deepEqual from 'deep-equal'
+import {
+  AllSubstringsIndexStrategy,
+  Search,
+  UnorderedSearchIndex,
+} from 'js-search'
 import React from 'react'
 import Select from 'react-select'
 
@@ -16,25 +21,61 @@ export default class SelectMenuField extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {
+      inputValue: null,
+      search: null,
       filterOptions: null,
       options: [],
       _rawChoices: null,
     }
 
     this.handleChange = this.handleChange.bind(this)
+    this.handleInputChange = this.handleInputChange.bind(this)
+    this.filter = this.filter.bind(this)
     this.select = React.createRef()
+    this.searchResults = null
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    const { choices } = nextProps
+    const {
+      choices,
+      searchIndex,
+      indexStrategy,
+      sanitizer,
+      tokenizer,
+      indexes,
+    } = nextProps
     let state = null
     if (!deepEqual(choices, prevState._rawChoices, { strict: true })) {
       const options = choices.map(([label, choice]) => ({
         value: choice,
         label,
       }))
+
+      // Prepare a searcher
+      const search = new Search('value')
+      search.searchIndex = searchIndex || new UnorderedSearchIndex()
+      search.indexStrategy = indexStrategy || new AllSubstringsIndexStrategy()
+      if (sanitizer) {
+        search.sanitizer = sanitizer
+      }
+
+      if (tokenizer) {
+        search.tokenizer = tokenizer
+      }
+
+      if (indexes) {
+        indexes.forEach(index => {
+          search.addIndex(index)
+        })
+      } else {
+        search.addIndex('label')
+      }
+
+      search.addDocuments(options)
+
       state = {
         options,
+        search,
         _rawChoices: choices,
       }
     }
@@ -61,37 +102,58 @@ export default class SelectMenuField extends React.PureComponent {
     )
   }
 
+  handleInputChange(inputValue) {
+    const { search } = this.state
+    this.setState({ inputValue })
+    this.searchResults = inputValue
+      ? search.search(inputValue).map(({ value }) => value)
+      : null
+  }
+
+  filter({ value }) {
+    // Looking up in the precomputed results
+    return this.searchResults ? this.searchResults.indexOf(value) > -1 : true
+  }
+
   render(b) {
     const {
       i18n,
       className,
       multiple,
       readOnly,
+      disabled,
       value,
       choices,
+      searchIndex,
+      indexStrategy,
+      sanitizer,
+      tokenizer,
+      indexes,
+      windowThreshold,
+      onChange,
       ...props
     } = this.props
     const { options } = this.state
-    delete props.onChange
 
     const fullValue = multiple
       ? value.map(single => options.find(({ value: v }) => v === single))
       : options.find(({ value: v }) => v === value) || null
 
-    const components = options.length > 30 ? { MenuList } : {}
-
     return (
       <Select
         className={b.s}
         ref={this.select}
-        disabled={readOnly /* There's no readOnly */}
+        isDisabled={disabled || readOnly /* There's no readOnly */}
         options={options}
         isMulti={multiple}
         value={fullValue}
-        components={components}
+        components={{ MenuList }}
         onChange={this.handleChange}
-        joinValues
+        onInputChange={this.handleInputChange}
+        delimiter="__/__"
+        isClearable
         inputProps={{ className: b.e('input').s }}
+        filterOption={this.filter}
         {...props}
       />
     )

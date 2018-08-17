@@ -109,12 +109,12 @@
     "draft-js": "^0.10.5",
     "draftjs-to-html": "^0.8.4",
     "html-to-draftjs": "^1.4.0",
+    "js-search": "^1.4.2",
     "react-day-picker": "^7.1.9",
     "react-draft-wysiwyg": "^1.12.13",
     "react-dropzone": "^4.3.0",
     "react-icons": "^3.0.5",
     "react-select": "^2.0.0",
-    "react-select-fast-filter-options": "^0.2.3",
     "react-window": "^1.1.1",
     "regenerator-runtime": "^0.12.1",
     "zxcvbn": "^4.4.2"
