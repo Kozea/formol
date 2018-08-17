@@ -4,7 +4,7 @@ import React from 'react'
 import Formol, { Field } from '../src'
 import molecule from '../test/samples/molecule.svg.base64'
 
-const choices = {
+export const colorChoices = {
   White: '#ffffff',
   Silver: '#c0c0c0',
   Gray: '#808080',
@@ -95,10 +95,10 @@ const makeField = (name, extraProps) => props => (
 )
 
 const extrasProps = {
-  'checkbox-set': { choices },
-  'radio-set': { choices },
-  select: { choices },
-  'select-menu': { choices },
+  'checkbox-set': { choices: colorChoices },
+  'radio-set': { choices: colorChoices },
+  select: { choices: colorChoices },
+  'select-menu': { choices: colorChoices },
 }
 
 export const typeFields = Object.keys(Formol.defaultTypes).reduce(

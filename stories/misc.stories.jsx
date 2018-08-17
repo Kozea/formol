@@ -7,7 +7,7 @@ import React from 'react'
 
 import Formol, { Field } from '../src'
 import { HTMLToEditor, editorToHTML } from '../src/utils/html'
-import { countries, persons } from './fields'
+import { colorChoices, countries, persons } from './fields'
 import { withStateForm } from './utils'
 
 class FastHTMLFieldFormol extends React.Component {
@@ -324,6 +324,39 @@ storiesOf('Miscellaneous', module)
       ),
       {
         looong: 'verylong',
+      }
+    )
+  )
+  .add(
+    'Select menu with option style',
+    withStateForm(
+      props => {
+        const colorize = (styles, { data }) => ({
+          ...styles,
+          color: data.value,
+        })
+
+        return (
+          <Formol {...props}>
+            <h1>Select with colored options</h1>
+            <Field
+              name="color"
+              type="select-menu"
+              multiple
+              choices={colorChoices}
+              styles={{
+                option: colorize,
+                multiValueLabel: colorize,
+                multiValueRemove: colorize,
+              }}
+            >
+              Color
+            </Field>
+          </Formol>
+        )
+      },
+      {
+        color: '808000',
       }
     )
   )

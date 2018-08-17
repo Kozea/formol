@@ -5,6 +5,7 @@ import {
   UnorderedSearchIndex,
 } from 'js-search'
 import React from 'react'
+import { makeAnimated } from 'react-select'
 import Select from 'react-select'
 
 import { block } from '../utils'
@@ -131,6 +132,7 @@ export default class SelectMenuField extends React.PureComponent {
       indexes,
       windowThreshold,
       onChange,
+      animated,
       ...props
     } = this.props
     const { options } = this.state
@@ -147,7 +149,7 @@ export default class SelectMenuField extends React.PureComponent {
         options={options}
         isMulti={multiple}
         value={fullValue}
-        components={{ MenuList }}
+        components={{ ...(animated === false ? {} : makeAnimated()), MenuList }}
         onChange={this.handleChange}
         onInputChange={this.handleInputChange}
         delimiter="__/__"

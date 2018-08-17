@@ -421,6 +421,7 @@ describe('Select Menu field', () => {
       <Formol onSubmit={onSubmit} item={{ selectMenu: null }}>
         <Field
           type="select-menu"
+          animated={false}
           choices={{
             one: 1,
             two: 'II',
