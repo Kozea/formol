@@ -37,7 +37,7 @@ export default function memoizedChoices(WrappedComponent) {
           _rawChoices: choices,
         }
       }
-      if (value !== prevState._rawValue) {
+      if (state || value !== prevState._rawValue) {
         const { objectMemo } = state || prevState
         let newValue = value
         if (Object.keys(objectMemo).length) {

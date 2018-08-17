@@ -38796,6 +38796,76 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
       Loading
     </label>
   </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "complex",
+          "readOnly": undefined,
+          "required": true,
+          "type": "select-menu",
+        },
+        "s": "Formol_Field Formol_Field--type-select-menu Formol_Field--name-complex Formol_Field--required",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Complex 
+        <small>
+          (Loading)
+        </small>
+      </span>
+      Loading
+    </label>
+  </div>
   <input
     style={
       Object {

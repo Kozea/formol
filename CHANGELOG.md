@@ -1,3 +1,7 @@
+### [2.0.5](https://github.com/Kozea/formol/compare/v2.0.4...v2.0.5)
+
+- Fix non-string values not set for async loaded non-string choices.
+
 ### [2.0.4](https://github.com/Kozea/formol/compare/v2.0.3...v2.0.4)
 
 - Add an easing on opacity transition for form loading.

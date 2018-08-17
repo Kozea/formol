@@ -41,10 +41,14 @@ class FastHTMLFieldFormol extends React.Component {
 class AsyncChoicesForm extends React.Component {
   state = {
     choices: [],
+    objectChoices: [],
   }
 
   componentDidMount() {
-    this.timeout = setTimeout(() => this.setState({ choices: countries }), 1000)
+    this.timeout = setTimeout(
+      () => this.setState({ choices: countries, objectChoices }),
+      1000
+    )
   }
 
   componentWillUnmount() {
@@ -55,7 +59,7 @@ class AsyncChoicesForm extends React.Component {
   timeout = null
 
   render() {
-    const { choices } = this.state
+    const { choices, objectChoices } = this.state
     return (
       <Formol {...this.props}>
         <h1>Select fields with asynchronously loaded choices</h1>
@@ -65,6 +69,14 @@ class AsyncChoicesForm extends React.Component {
         </Field>
         <Field name="country" type="select-menu" choices={choices} required>
           Country {choices.length ? null : <small>(Loading)</small>}
+        </Field>
+        <Field
+          name="complex"
+          type="select-menu"
+          choices={objectChoices}
+          required
+        >
+          Complex {objectChoices.length ? null : <small>(Loading)</small>}
         </Field>
       </Formol>
     )
@@ -184,6 +196,12 @@ storiesOf('Miscellaneous', module)
     'Asynchronous choices',
     withStateForm(props => <AsyncChoicesForm {...props} />, {
       country: 'France',
+      complex: {
+        id: 'dkschrute',
+        name: 'K. Schrute',
+        firstname: 'Dwight',
+        gender: 'man',
+      },
     })
   )
   .add(
