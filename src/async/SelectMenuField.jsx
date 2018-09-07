@@ -140,6 +140,9 @@ export default class SelectMenuField extends React.PureComponent {
       windowThreshold,
       elementRef,
       onChange,
+      onFocus,
+      onBlur,
+      onKeyDown,
       animated,
       styles,
       ...props
@@ -159,6 +162,9 @@ export default class SelectMenuField extends React.PureComponent {
             MenuList,
           }}
           onChange={this.handleChange}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          onKeyDown={onKeyDown}
           onInputChange={this.handleInputChange}
           delimiter={DELIMITER}
           styles={styles}
