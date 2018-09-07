@@ -2,11 +2,15 @@
   max-width: 100%
   width: $formol-medium-field-size
 
-  .Select-control
+  .Formol_SelectMenuField
     @extend .Formol_Field__element
     box-shadow: none
     color: inherit
     padding: 0
+
+    > * > *
+      border: 0 !important
+      box-shadow: none !important
 
   .Select--multi .Select-value
     display: inline-flex
