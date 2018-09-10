@@ -63,11 +63,12 @@ export default class Themes extends React.Component {
               color: '#555',
             }}
           >
-            {themes.map(t => (
-              <option key={t} value={t}>
-                {t}
-              </option>
-            ))}
+            {themes &&
+              themes.map(t => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
           </select>
         </label>
       </div>

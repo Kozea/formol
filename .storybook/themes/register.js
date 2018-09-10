@@ -3,8 +3,8 @@ import React from 'react'
 
 import Themes from '.'
 
-addons.register('formol/themes', api => {
-  addons.addPanel('formol/themes/panel', {
+addons.register('formol_themes', api => {
+  addons.addPanel('formol_themes/panel', {
     title: 'Themes',
     render: () => <Themes api={api} />,
   })

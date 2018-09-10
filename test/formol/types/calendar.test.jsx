@@ -114,7 +114,7 @@ describe('Calendar field', () => {
     expect(error()).toEqual('Constraints not satisfied')
 
     // Bad values are cleared here
-    expect(input().props().value).toEqual('')
+    expect(input().props().value).toEqual('25/35/1802')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
   })

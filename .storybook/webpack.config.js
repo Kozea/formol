@@ -6,17 +6,33 @@ const rootDir = path.join(__dirname, '..')
 const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
 
 module.exports = (baseConfig, env) => {
-  baseConfig.entry.preview.unshift('regenerator-runtime/runtime.js')
-  fs.readdirSync(path.join(rootDir, 'src', 'sass')).forEach(
-    theme =>
-      theme.endsWith('.sass') &&
-      (baseConfig.entry[theme.slice(0, -5)] = path.join(
-        rootDir,
-        'src',
-        'sass',
-        theme
-      ))
-  )
+  baseConfig.entry.manager.unshift('regenerator-runtime/runtime.js')
+  baseConfig.entry.iframe.unshift('regenerator-runtime/runtime.js')
+  const themes = fs
+    .readdirSync(path.join(rootDir, 'src', 'sass'))
+    .map(
+      theme =>
+        theme.endsWith('.sass') &&
+        (baseConfig.entry[theme.slice(0, -5)] = path.join(
+          rootDir,
+          'src',
+          'sass',
+          theme
+        )) &&
+        theme.slice(0, -5)
+    )
+    .filter(t => t)
+
+  // Patching the new Generate Page Webpack Plugin to re-add the styles.
+  const oldHead = baseConfig.plugins[0].options.headHtmlSnippet
+  baseConfig.plugins[0].options.headHtmlSnippet = entry =>
+    (oldHead(entry) || '') +
+      (entry === 'iframe'
+        ? themes
+            .map(theme => `<link href="${theme}.css" rel="stylesheet">`)
+            .join('\n')
+        : '') || null
+
   baseConfig.module.rules[0] = {
     test: /\.jsx?$/,
     include: dir(),
