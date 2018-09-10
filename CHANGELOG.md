@@ -1,3 +1,8 @@
+## [2.1.0](https://github.com/Kozea/formol/compare/v2.0.5...v2.1.0)
+
+- Migrate to react-select 2
+- Minor fixes
+
 ### [2.0.5](https://github.com/Kozea/formol/compare/v2.0.4...v2.0.5)
 
 - Fix non-string values not set for async loaded non-string choices.
