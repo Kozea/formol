@@ -2,7 +2,7 @@ import deepEqual from 'deep-equal'
 import React from 'react'
 
 export default function memoizedChoices(WrappedComponent) {
-  return class MemoizedChoices extends React.PureComponent {
+  class MemoizedChoices extends React.PureComponent {
     static memoPrefix = '##formol_memo_'
 
     constructor(props) {
@@ -82,4 +82,10 @@ export default function memoizedChoices(WrappedComponent) {
       )
     }
   }
+
+  MemoizedChoices.defaultFieldProps = WrappedComponent.defaultFieldProps
+  MemoizedChoices.formolFieldLabelElement =
+    WrappedComponent.formolFieldLabelElement
+
+  return MemoizedChoices
 }

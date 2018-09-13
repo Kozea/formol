@@ -1,11 +1,18 @@
 import React from 'react'
 
 import { block } from '../utils'
+import choicesAdapter from '../utils/choicesAdapter'
 import FieldSet from '../utils/FieldSet'
+import memoizedChoices from '../utils/memoizedChoices'
 
+@choicesAdapter
+@memoizedChoices
 @block
 export default class RadioSetField extends React.PureComponent {
   static formolFieldLabelElement = 'div'
+  static defaultFieldProps = {
+    multiple: () => false,
+  }
 
   render(b) {
     const { type, i18n, onChange, readOnly, className, ...props } = this.props

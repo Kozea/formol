@@ -205,7 +205,7 @@ storiesOf('Miscellaneous', module)
     })
   )
   .add(
-    'Non string select values',
+    'Non string choices values',
     withStateForm(
       props => (
         <Formol {...props}>
@@ -226,6 +226,12 @@ storiesOf('Miscellaneous', module)
             choices={objectChoices}
           >
             Object select multiple menu
+          </Field>
+          <Field name="radio" type="radio-set" choices={objectChoices}>
+            Radio
+          </Field>
+          <Field name="checkbox" type="checkbox-set" choices={objectChoices}>
+            Checkbox
           </Field>
         </Formol>
       ),
@@ -262,6 +268,26 @@ storiesOf('Miscellaneous', module)
             name: 'Beesly',
             firstname: 'Pam',
             gender: 'woman',
+          },
+          {
+            id: 'dkschrute',
+            name: 'K. Schrute',
+            firstname: 'Dwight',
+            gender: 'man',
+          },
+        ],
+        radio: {
+          id: 'rhoward',
+          name: 'Howard',
+          firstname: 'Ryan',
+          gender: 'man',
+        },
+        checkbox: [
+          {
+            id: 'rhoward',
+            name: 'Howard',
+            firstname: 'Ryan',
+            gender: 'man',
           },
           {
             id: 'dkschrute',

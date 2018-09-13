@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function choicesAdapter(WrappedComponent) {
-  return class ChoicesAdapter extends React.PureComponent {
+  class ChoicesAdapter extends React.PureComponent {
     render() {
       const { choices, ...props } = this.props
       const normalizedChoices = Array.isArray(choices)
@@ -10,4 +10,9 @@ export default function choicesAdapter(WrappedComponent) {
       return <WrappedComponent choices={normalizedChoices} {...props} />
     }
   }
+
+  ChoicesAdapter.defaultFieldProps = WrappedComponent.defaultFieldProps
+  ChoicesAdapter.formolFieldLabelElement =
+    WrappedComponent.formolFieldLabelElement
+  return ChoicesAdapter
 }

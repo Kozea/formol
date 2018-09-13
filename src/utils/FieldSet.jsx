@@ -2,9 +2,7 @@ import React from 'react'
 
 import BooleanField from '../fields/BooleanField'
 import { block } from '../utils'
-import choicesAdapter from './choicesAdapter'
 
-@choicesAdapter
 @block
 export default class FieldSet extends React.PureComponent {
   render(b) {

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function multipleAdapter(WrappedComponent) {
-  return class MultipleAdapter extends React.PureComponent {
+  class MultipleAdapter extends React.PureComponent {
     render() {
       const { value, multiple, ...props } = this.props
       let normalizedValue = value
@@ -21,4 +21,9 @@ export default function multipleAdapter(WrappedComponent) {
       )
     }
   }
+
+  MultipleAdapter.defaultFieldProps = WrappedComponent.defaultFieldProps
+  MultipleAdapter.formolFieldLabelElement =
+    WrappedComponent.formolFieldLabelElement
+  return MultipleAdapter
 }
