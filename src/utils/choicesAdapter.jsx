@@ -5,7 +5,7 @@ export default function choicesAdapter(WrappedComponent) {
     render() {
       const { choices, ...props } = this.props
       const normalizedChoices = Array.isArray(choices)
-        ? choices.map(c => [c, c])
+        ? choices.map(c => (Array.isArray(c) ? c : [c, c]))
         : Object.entries(choices || {})
       return <WrappedComponent choices={normalizedChoices} {...props} />
     }
