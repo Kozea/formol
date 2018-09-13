@@ -39063,6 +39063,1822 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
 </form>
 `;
 
+exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    Field set with raw labels
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "color",
+          "readOnly": undefined,
+          "required": false,
+          "type": "radio-set",
+        },
+        "s": "Formol_Field Formol_Field--type-radio-set Formol_Field--name-color",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <div
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        Color
+      </span>
+      <fieldset
+        className={
+          Block {
+            "block": "FieldSet",
+            "element": null,
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_FieldSet",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+      >
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #ffffff;\\">White</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #c0c0c0;\\">Silver</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #808080;\\">Gray</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: 0;\\">Black</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #ff0000;\\">Red</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #800000;\\">Maroon</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #ffff00;\\">Yellow</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #808000;\\">Olive</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #00ff00;\\">Lime</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #008000;\\">Green</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #00ffff;\\">Aqua</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #008080;\\">Teal</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #0000ff;\\">Blue</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #000080;\\">Navy</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #ff00ff;\\">Fuchsia</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+        <label
+          className={
+            Block {
+              "block": "FieldSet",
+              "element": "label",
+              "mixed": Array [],
+              "modifier": Object {
+                "on": false,
+              },
+              "s": "Formol_FieldSet__label",
+              "settings": Object {
+                "elementDelimiter": "__",
+                "modifierDelimiter": "--",
+                "modifierValueDelimiter": "-",
+                "namespace": "Formol_",
+              },
+              "subs": Array [],
+            }
+          }
+        >
+          <input
+            checked={false}
+            className={
+              Block {
+                "block": "BooleanField",
+                "element": null,
+                "mixed": Array [
+                  Block {
+                    "block": "RadioSetField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "Field",
+                        "element": "element",
+                        "mixed": Array [],
+                        "modifier": Object {},
+                        "s": "Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_RadioSetField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  },
+                ],
+                "modifier": Object {},
+                "s": "Formol_BooleanField Formol_RadioSetField Formol_Field__element",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+            multiple={false}
+            name="color"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="radio"
+          />
+          <span
+            className={
+              Block {
+                "block": "FieldSet",
+                "element": "title",
+                "mixed": Array [],
+                "modifier": Object {},
+                "s": "Formol_FieldSet__title",
+                "settings": Object {
+                  "elementDelimiter": "__",
+                  "modifierDelimiter": "--",
+                  "modifierValueDelimiter": "-",
+                  "namespace": "Formol_",
+                },
+                "subs": Array [],
+              }
+            }
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div style=\\"color: #800080;\\">Purple</div>",
+                }
+              }
+            />
+          </span>
+        </label>
+      </fieldset>
+    </div>
+  </div>
+  <input
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="submit"
+  />
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
 exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
 <form
   className={

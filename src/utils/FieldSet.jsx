@@ -12,9 +12,11 @@ export default class FieldSet extends React.PureComponent {
       value,
       choices,
       elementRef,
+      dangerousRawHTMLLabels,
       onChange,
       ...props
     } = this.props
+
     return (
       <fieldset className={b} ref={elementRef}>
         {choices.map(([choiceLabel, choice]) => (
@@ -28,7 +30,14 @@ export default class FieldSet extends React.PureComponent {
               value={isChecked(choice, value)}
               onChange={checked => onChange(choice, value, checked)}
             />
-            <span className={b.e('title')}>{choiceLabel}</span>
+            <span className={b.e('title')}>
+              {dangerousRawHTMLLabels ? (
+                // eslint-disable-next-line react/no-danger
+                <span dangerouslySetInnerHTML={{ __html: choiceLabel }} />
+              ) : (
+                choiceLabel
+              )}
+            </span>
           </label>
         ))}
       </fieldset>

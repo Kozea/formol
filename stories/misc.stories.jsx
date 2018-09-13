@@ -404,3 +404,27 @@ storiesOf('Miscellaneous', module)
       }
     )
   )
+  .add(
+    'Dangerous field set raw labels',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Field set with raw labels</h1>
+          <Field
+            name="color"
+            type="radio-set"
+            choices={Object.entries(colorChoices).map(([k, v]) => [
+              `<div style="color: ${v};">${k}</div>`,
+              v,
+            ])}
+            dangerousRawHTMLLabels
+          >
+            Color
+          </Field>
+        </Formol>
+      ),
+      {
+        color: '808000',
+      }
+    )
+  )
