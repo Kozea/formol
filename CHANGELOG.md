@@ -1,3 +1,11 @@
+## [2.2.0](https://github.com/Kozea/formol/compare/v2.1.0...v2.2.0)
+
+- Fix choices as array of pairs
+- Make Radio/Checkbox-SetFields handle non-string value like Selects.
+- Fix decorators to keep known static attributes.
+- Add `dangerousRawHTMLLabels` option for FieldSets to allow raw html in labels.
+- Fix #38 and style disable state for form's button
+
 ## [2.1.0](https://github.com/Kozea/formol/compare/v2.0.5...v2.1.0)
 
 - Migrate to react-select 2
