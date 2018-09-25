@@ -2679,11 +2679,6 @@ exports[`Storyshots Field Test All fields 1`] = `
           type="button"
         >
           <svg
-            attr={
-              Object {
-                "viewBox": "0 0 576 512",
-              }
-            }
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -8877,11 +8872,6 @@ Area"
           type="button"
         >
           <svg
-            attr={
-              Object {
-                "viewBox": "0 0 576 512",
-              }
-            }
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -18656,11 +18646,6 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           type="button"
         >
           <svg
-            attr={
-              Object {
-                "viewBox": "0 0 576 512",
-              }
-            }
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -26846,11 +26831,6 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           type="button"
         >
           <svg
-            attr={
-              Object {
-                "viewBox": "0 0 576 512",
-              }
-            }
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -36072,11 +36052,6 @@ Array [
             type="button"
           >
             <svg
-              attr={
-                Object {
-                  "viewBox": "0 0 576 512",
-                }
-              }
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -36477,11 +36452,6 @@ Array [
             type="button"
           >
             <svg
-              attr={
-                Object {
-                  "viewBox": "0 0 576 512",
-                }
-              }
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -36852,11 +36822,6 @@ Array [
             type="button"
           >
             <svg
-              attr={
-                Object {
-                  "viewBox": "0 0 576 512",
-                }
-              }
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -37227,11 +37192,6 @@ Array [
             type="button"
           >
             <svg
-              attr={
-                Object {
-                  "viewBox": "0 0 576 512",
-                }
-              }
               fill="currentColor"
               height="1em"
               stroke="currentColor"
