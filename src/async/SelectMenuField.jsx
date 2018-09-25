@@ -130,6 +130,7 @@ export default class SelectMenuField extends React.PureComponent {
       multiple,
       readOnly,
       disabled,
+      placeholder,
       value: rawValue,
       choices,
       searchIndex,
@@ -155,6 +156,7 @@ export default class SelectMenuField extends React.PureComponent {
           ref={this.select}
           isDisabled={disabled || readOnly /* There's no readOnly */}
           options={options}
+          placeholder={placeholder}
           isMulti={multiple}
           value={value}
           components={{
