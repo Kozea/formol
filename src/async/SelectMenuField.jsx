@@ -10,7 +10,7 @@ import Select, { makeAnimated } from 'react-select'
 import { block } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
 import memoizedChoices from '../utils/memoizedChoices'
-import MenuList from '../utils/MenuList'
+import getMenuList from '../utils/MenuList'
 import multipleAdapter from '../utils/multipleAdapter'
 
 export const DELIMITER = '__/__'
@@ -146,6 +146,8 @@ export default class SelectMenuField extends React.PureComponent {
       onKeyDown,
       animated,
       styles,
+      listApproximatedLengthBreak,
+      listDefaultHeight,
       ...props
     } = this.props
     const { value, options } = this.state
@@ -161,7 +163,10 @@ export default class SelectMenuField extends React.PureComponent {
           value={value}
           components={{
             ...(animated === false ? {} : makeAnimated()),
-            MenuList,
+            MenuList: getMenuList(
+              listDefaultHeight,
+              listApproximatedLengthBreak
+            ),
           }}
           onChange={this.handleChange}
           onFocus={onFocus}
