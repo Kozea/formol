@@ -19,7 +19,6 @@ export default class MenuList extends React.PureComponent {
     if (children.length !== state.childrenSize) {
       // We must reset cache at least if chilren length changes
       state._list.current && state._list.current.resetAfterIndex(0)
-      state._list.current && console.log('Reset')
       return {
         childrenSize: children.length,
       }
