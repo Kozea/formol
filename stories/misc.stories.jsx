@@ -353,21 +353,16 @@ storiesOf('Miscellaneous', module)
             name="looong"
             type="select-menu"
             multiple
-            choices={{
-              'A normal option': 'normal',
-              'A very very very very long option': 'long',
-              'A very very very very very very very very loooooooonnnnng option':
-                'verylong',
-              'A very very very very very very very very very very very very very loooooooooooooooooonnnnnnnnng option':
-                'veryverylong',
-            }}
+            choices={new Array(40)
+              .fill()
+              .map((_, i) => [`A ${'long '.repeat(i)} option`, i])}
           >
             Stressed select
           </Field>
         </Formol>
       ),
       {
-        looong: 'verylong',
+        looong: [4, 8, 12, 15],
       }
     )
   )
