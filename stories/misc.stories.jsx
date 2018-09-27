@@ -355,7 +355,7 @@ storiesOf('Miscellaneous', module)
             multiple
             choices={new Array(40)
               .fill()
-              .map((_, i) => [`A ${'long '.repeat(i)} option`, i])}
+              .map((_, i) => [`A ${'long '.repeat(i)}option`, i])}
           >
             Stressed select
           </Field>

@@ -1,29 +1,70 @@
 import React from 'react'
-import { FixedSizeList } from 'react-window'
+import { VariableSizeList } from 'react-window'
 
-const height = 35
+const sum = (a, b) => a + b
 
 export default class MenuList extends React.PureComponent {
+  constructor(props) {
+    super(props)
+
+    this.list = React.createRef()
+
+    this.state = {
+      childrenSize: 0,
+      _list: this.list,
+    }
+  }
+
+  static getDerivedStateFromProps({ children }, state) {
+    if (children.length !== state.childrenSize) {
+      // We must reset cache at least if chilren length changes
+      state._list.current && state._list.current.resetAfterIndex(0)
+      state._list.current && console.log('Reset')
+      return {
+        childrenSize: children.length,
+      }
+    }
+    return null
+  }
+
   render() {
     let { children } = this.props
     const { options, maxHeight, getValue, innerRef } = this.props
     const [value] = getValue()
-    const initialOffset = options.indexOf(value) * height
 
     if (!Array.isArray(children)) {
       children = [children]
     }
 
+    // Waiting for https://github.com/bvaughn/react-window/issues/6
+    const heights = children.map(
+      ({ props: { label } }) =>
+        8 + 8 + 19 * Math.ceil((label || '_').length / 50)
+    )
+    const totalHeight = heights.reduce(sum)
+    const height = Math.min(maxHeight, totalHeight)
+    const itemCount = children.length
+    // initialScrollOffset is wrong if the list is sorted
+    const currentIndex =
+      options.length === children.length ? options.indexOf(value) : 0
+    const initialScrollOffset =
+      currentIndex > 0 ? heights.slice(0, currentIndex).reduce(sum) : 0
+    const estimatedItemSize = Math.floor(totalHeight / itemCount)
+
+    const itemSize = index => heights[index]
+
     return (
       <div ref={innerRef}>
-        <FixedSizeList
-          height={Math.min(maxHeight, height * children.length)}
-          itemCount={children.length}
-          itemSize={height}
-          initialScrollOffset={initialOffset}
+        <VariableSizeList
+          ref={this.list}
+          height={height}
+          itemCount={itemCount}
+          itemSize={itemSize}
+          estimatedItemSize={estimatedItemSize}
+          initialScrollOffset={initialScrollOffset}
         >
           {({ index, style }) => <div style={style}>{children[index]}</div>}
-        </FixedSizeList>
+        </VariableSizeList>
       </div>
     )
   }
