@@ -18,13 +18,7 @@
   optionalDependencies:
     chokidar "^2.0.3"
 
-"@babel/code-frame@7.0.0-beta.46":
-  version "7.0.0-beta.46"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.46.tgz#e0d002100805daab1461c0fcb32a07e304f3a4f4"
-  dependencies:
-    "@babel/highlight" "7.0.0-beta.46"
-
-"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
+"@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
   dependencies:
@@ -209,14 +203,6 @@
     "@babel/template" "^7.1.0"
     "@babel/traverse" "^7.1.0"
     "@babel/types" "^7.0.0"
-
-"@babel/highlight@7.0.0-beta.46":
-  version "7.0.0-beta.46"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.46.tgz#c553c51e65f572bdedd6eff66fc0bb563016645e"
-  dependencies:
-    chalk "^2.0.0"
-    esutils "^2.0.2"
-    js-tokens "^3.0.0"
 
 "@babel/highlight@^7.0.0":
   version "7.0.0"
@@ -736,7 +722,7 @@
     find-root "^1.1.0"
     source-map "^0.7.2"
 
-"@emotion/cache@^0.8.7", "@emotion/cache@^0.8.8":
+"@emotion/cache@^0.8.8":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-0.8.8.tgz#2c3bd1aa5fdb88f1cc2325176a3f3201739e726c"
   dependencies:
@@ -744,17 +730,7 @@
     "@emotion/stylis" "^0.7.1"
     "@emotion/utils" "^0.8.2"
 
-"@emotion/core@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-0.13.0.tgz#199b08ed25b8e72fbaa46f2de4fc58d1ab4c0f3b"
-  dependencies:
-    "@emotion/cache" "^0.8.7"
-    "@emotion/css" "^0.9.7"
-    "@emotion/serialize" "^0.9.0"
-    "@emotion/sheet" "^0.8.0"
-    "@emotion/utils" "^0.8.1"
-
-"@emotion/core@~0.13.0":
+"@emotion/core@^0.13.1":
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-0.13.1.tgz#4fa4983e18dbf089fa16584486c8033ca50013ea"
   dependencies:
@@ -764,7 +740,7 @@
     "@emotion/sheet" "^0.8.1"
     "@emotion/utils" "^0.8.2"
 
-"@emotion/css@^0.9.7", "@emotion/css@^0.9.8":
+"@emotion/css@^0.9.8":
   version "0.9.8"
   resolved "https://registry.yarnpkg.com/@emotion/css/-/css-0.9.8.tgz#43fd45c576656d4ed9cc3b8b427c66a2ed6af30a"
   dependencies:
@@ -785,14 +761,14 @@
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
 
-"@emotion/provider@0.11.1":
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/@emotion/provider/-/provider-0.11.1.tgz#65267dea4a67a4488ba46316420f6238f0d1c644"
+"@emotion/provider@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@emotion/provider/-/provider-0.11.2.tgz#7099f1df5641969ee4d6ff5cf1561295914030aa"
   dependencies:
-    "@emotion/cache" "^0.8.7"
-    "@emotion/weak-memoize" "^0.1.2"
+    "@emotion/cache" "^0.8.8"
+    "@emotion/weak-memoize" "^0.1.3"
 
-"@emotion/serialize@^0.9.0", "@emotion/serialize@^0.9.1":
+"@emotion/serialize@^0.9.1":
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-0.9.1.tgz#a494982a6920730dba6303eb018220a2b629c145"
   dependencies:
@@ -801,11 +777,11 @@
     "@emotion/unitless" "^0.6.7"
     "@emotion/utils" "^0.8.2"
 
-"@emotion/sheet@^0.8.0", "@emotion/sheet@^0.8.1":
+"@emotion/sheet@^0.8.1":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-0.8.1.tgz#6eed686c927a1c39f5045ec45ecfa36de896819d"
 
-"@emotion/styled-base@^0.10.5", "@emotion/styled-base@^0.10.6":
+"@emotion/styled-base@^0.10.6":
   version "0.10.6"
   resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-0.10.6.tgz#c95631b6b4f19da97e7b44ee4e3ee1931afde264"
   dependencies:
@@ -813,13 +789,7 @@
     "@emotion/serialize" "^0.9.1"
     "@emotion/utils" "^0.8.2"
 
-"@emotion/styled@0.10.5":
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-0.10.5.tgz#4a0d3e5c80f8e80112af6d398ca06098e5b82775"
-  dependencies:
-    "@emotion/styled-base" "^0.10.5"
-
-"@emotion/styled@~0.10.5":
+"@emotion/styled@^0.10.6":
   version "0.10.6"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-0.10.6.tgz#1f6af1d3d4bf9fdeb05a4d220046ce11ad21a7ca"
   dependencies:
@@ -837,11 +807,11 @@
   version "0.6.7"
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.6.7.tgz#53e9f1892f725b194d5e6a1684a7b394df592397"
 
-"@emotion/utils@^0.8.1", "@emotion/utils@^0.8.2":
+"@emotion/utils@^0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
 
-"@emotion/weak-memoize@^0.1.2":
+"@emotion/weak-memoize@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.1.3.tgz#b700d97385fa91affed60c71dfd51c67e9dad762"
 
@@ -852,18 +822,6 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@ndelangen/react-treebeard@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ndelangen/react-treebeard/-/react-treebeard-3.0.1.tgz#644f959a7fff26f2f3e4753c6804be36ab1e6921"
-  dependencies:
-    "@emotion/core" "~0.13.0"
-    "@emotion/styled" "~0.10.5"
-    babel-runtime "^6.23.0"
-    deep-equal "^1.0.1"
-    prop-types "^15.6.2"
-    shallowequal "^1.1.0"
-    velocity-react "^1.3.1"
-
 "@nodelib/fs.stat@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
@@ -872,14 +830,14 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@storybook/addon-knobs@^4.0.0-alpha.21":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-4.0.0-alpha.22.tgz#af5215ed8ac7ba8f20b1738709378d4091f6fc7b"
+"@storybook/addon-knobs@^4.0.0-alpha.22":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-4.0.0-alpha.23.tgz#8a0ab8467bcd80831f55b6b3fbdcfc2f5e6f4faa"
   dependencies:
-    "@emotion/styled" "0.10.5"
-    "@storybook/addons" "4.0.0-alpha.22"
-    "@storybook/components" "4.0.0-alpha.22"
-    "@storybook/core-events" "4.0.0-alpha.22"
+    "@emotion/styled" "^0.10.6"
+    "@storybook/addons" "4.0.0-alpha.23"
+    "@storybook/components" "4.0.0-alpha.23"
+    "@storybook/core-events" "4.0.0-alpha.23"
     copy-to-clipboard "^3.0.8"
     escape-html "^1.0.3"
     fast-deep-equal "^2.0.1"
@@ -891,69 +849,69 @@
     react-lifecycles-compat "^3.0.4"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-options@^4.0.0-alpha.21":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-4.0.0-alpha.22.tgz#bb6dfefef4437dc8d59b80bf23f395475d37d52b"
+"@storybook/addon-options@^4.0.0-alpha.22":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-4.0.0-alpha.23.tgz#a1fb990d53c0fc7c76e4b7c8db28212b7dc479b2"
   dependencies:
-    "@storybook/addons" "4.0.0-alpha.22"
+    "@storybook/addons" "4.0.0-alpha.23"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-storyshots@^4.0.0-alpha.21":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-4.0.0-alpha.22.tgz#75ec52b0fedeae0ae3fdb8368045e47b759e182e"
+"@storybook/addon-storyshots@^4.0.0-alpha.22":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-4.0.0-alpha.23.tgz#9703d8521ad40356522c2937fc4f79ac027fabdb"
   dependencies:
     "@babel/runtime" "^7.0.0"
-    "@storybook/addons" "4.0.0-alpha.22"
+    "@storybook/addons" "4.0.0-alpha.23"
     glob "^7.1.3"
     global "^4.3.2"
     jest-specific-snapshot "^1.0.0"
     read-pkg-up "^4.0.0"
 
-"@storybook/addon-storysource@^4.0.0-alpha.21":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-4.0.0-alpha.22.tgz#3ee9a0265fc31e643c92d573eba29c4e0f102f67"
+"@storybook/addon-storysource@^4.0.0-alpha.22":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-4.0.0-alpha.23.tgz#81da5419f44d1f67adc361a3f559250d4470ce17"
   dependencies:
     "@babel/runtime" "^7.0.0"
-    "@storybook/addons" "4.0.0-alpha.22"
-    "@storybook/components" "4.0.0-alpha.22"
+    "@storybook/addons" "4.0.0-alpha.23"
+    "@storybook/components" "4.0.0-alpha.23"
     estraverse "^4.2.0"
     loader-utils "^1.1.0"
     prettier "^1.14.0"
     prop-types "^15.6.2"
     react-syntax-highlighter "^8.0.1"
 
-"@storybook/addons@4.0.0-alpha.22", "@storybook/addons@^4.0.0-alpha.21":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.0-alpha.22.tgz#08d89396fff216c0d5aa305f7ac851b6bc34b6cf"
+"@storybook/addons@4.0.0-alpha.23", "@storybook/addons@^4.0.0-alpha.22":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.0-alpha.23.tgz#329ba88b2da6652dfaadb71e9913df590920c7eb"
   dependencies:
-    "@storybook/channels" "4.0.0-alpha.22"
-    "@storybook/components" "4.0.0-alpha.22"
+    "@storybook/channels" "4.0.0-alpha.23"
+    "@storybook/components" "4.0.0-alpha.23"
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
-"@storybook/channel-postmessage@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-4.0.0-alpha.22.tgz#cbd57546164785491e7088d27db994cc672cb02c"
+"@storybook/channel-postmessage@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-4.0.0-alpha.23.tgz#88acc717839b541d998b78c2aaee65b3675763fb"
   dependencies:
-    "@storybook/channels" "4.0.0-alpha.22"
+    "@storybook/channels" "4.0.0-alpha.23"
     global "^4.3.2"
     json-stringify-safe "^5.0.1"
 
-"@storybook/channels@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.0-alpha.22.tgz#6a6361f0719acb5f36f62814c8ae50e79094c55e"
+"@storybook/channels@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.0-alpha.23.tgz#5a2b24682c9d05f4d2b157f44b403bdc4bf5886e"
 
-"@storybook/client-logger@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.0-alpha.22.tgz#eb09675df98e1db818e1fdc7021e98a21c292dd8"
+"@storybook/client-logger@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.0-alpha.23.tgz#be024926f8a330a56f58a450e79043cc21356636"
 
-"@storybook/components@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.0-alpha.22.tgz#e79dca0fcff5f99070a2eeb9d0c75eafa8e9b727"
+"@storybook/components@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.0-alpha.23.tgz#b73b2edab0955de722699f949d1fcdd06cdda383"
   dependencies:
-    "@emotion/core" "0.13.0"
-    "@emotion/provider" "0.11.1"
-    "@emotion/styled" "0.10.5"
+    "@emotion/core" "^0.13.1"
+    "@emotion/provider" "^0.11.2"
+    "@emotion/styled" "^0.10.6"
     global "^4.3.2"
     lodash.pick "^4.4.0"
     lodash.throttle "^4.1.1"
@@ -963,32 +921,32 @@
     react-textarea-autosize "^7.0.4"
     render-fragment "^0.1.1"
 
-"@storybook/core-events@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-4.0.0-alpha.22.tgz#c68fc7dff20bfe6399102c0b785dbb3f1c4e6938"
+"@storybook/core-events@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-4.0.0-alpha.23.tgz#6051cc877c6b0a1dafcdd8b19c24b4d0fb53e865"
 
-"@storybook/core@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-4.0.0-alpha.22.tgz#24a553942e19a851f8cdd9f574b74ca9174b7ae1"
+"@storybook/core@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-4.0.0-alpha.23.tgz#e3610b9fc9871bd46a41f561d271e2e1fb34ebed"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.1.0"
     "@babel/plugin-transform-regenerator" "^7.0.0"
     "@babel/plugin-transform-runtime" "^7.1.0"
     "@babel/preset-env" "^7.1.0"
     "@babel/runtime" "^7.0.0"
-    "@emotion/core" "0.13.0"
-    "@emotion/provider" "0.11.1"
-    "@emotion/styled" "0.10.5"
-    "@storybook/addons" "4.0.0-alpha.22"
-    "@storybook/channel-postmessage" "4.0.0-alpha.22"
-    "@storybook/client-logger" "4.0.0-alpha.22"
-    "@storybook/core-events" "4.0.0-alpha.22"
-    "@storybook/node-logger" "4.0.0-alpha.22"
-    "@storybook/ui" "4.0.0-alpha.22"
+    "@emotion/core" "^0.13.1"
+    "@emotion/provider" "^0.11.2"
+    "@emotion/styled" "^0.10.6"
+    "@storybook/addons" "4.0.0-alpha.23"
+    "@storybook/channel-postmessage" "4.0.0-alpha.23"
+    "@storybook/client-logger" "4.0.0-alpha.23"
+    "@storybook/core-events" "4.0.0-alpha.23"
+    "@storybook/node-logger" "4.0.0-alpha.23"
+    "@storybook/ui" "4.0.0-alpha.23"
     airbnb-js-shims "^1 || ^2"
     autoprefixer "^9.1.3"
     babel-plugin-macros "^2.2.2"
-    babel-preset-minify canary
+    babel-preset-minify "^0.5.0"
     case-sensitive-paths-webpack-plugin "^2.1.2"
     chalk "^2.4.1"
     commander "^2.17.0"
@@ -1011,7 +969,7 @@
     prop-types "^15.6.2"
     qs "^6.5.2"
     raw-loader "^0.5.1"
-    react-dev-utils "6.0.0-next.3e165448"
+    react-dev-utils "6.0.0-next.2150693d"
     redux "^4.0.0"
     resolve "^1.8.1"
     semver "^5.5.1"
@@ -1021,9 +979,9 @@
     svg-url-loader "^2.3.2"
     universal-dotenv "^1.9.0"
     url-loader "^1.1.1"
-    webpack "^4.17.1"
-    webpack-dev-middleware "^3.2.0"
-    webpack-hot-middleware "^2.22.3"
+    webpack "^4.20.0"
+    webpack-dev-middleware "^3.4.0"
+    webpack-hot-middleware "^2.24.2"
 
 "@storybook/mantra-core@^1.7.2":
   version "1.7.2"
@@ -1033,9 +991,9 @@
     "@storybook/react-simple-di" "^1.2.1"
     babel-runtime "6.x.x"
 
-"@storybook/node-logger@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-4.0.0-alpha.22.tgz#16b1b1d439a00a60266cf60fd5ddd07d089631a3"
+"@storybook/node-logger@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-4.0.0-alpha.23.tgz#176c24f30605415f2a85ac0ecf4039010562435f"
   dependencies:
     "@babel/runtime" "^7.0.0"
     npmlog "^4.1.2"
@@ -1072,21 +1030,21 @@
   dependencies:
     babel-runtime "^6.5.0"
 
-"@storybook/react@^4.0.0-alpha.21":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-4.0.0-alpha.22.tgz#35aa5db02f31097dc3b205f5f580f92f58a277f7"
+"@storybook/react@^4.0.0-alpha.22":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-4.0.0-alpha.23.tgz#204b48273d8d3ce28f002129c2783eb166e008b3"
   dependencies:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
     "@babel/runtime" "^7.0.0"
-    "@emotion/styled" "0.10.5"
-    "@storybook/core" "4.0.0-alpha.22"
+    "@emotion/styled" "^0.10.6"
+    "@storybook/core" "4.0.0-alpha.23"
     babel-plugin-react-docgen "^2.0.0-babel7.0"
     common-tags "^1.8.0"
     global "^4.3.2"
     lodash.flattendeep "^4.4.0"
     prop-types "^15.6.2"
-    react-dev-utils "6.0.0-next.3e165448"
+    react-dev-utils "6.0.0-next.2150693d"
 
 "@storybook/storybook-deployer@^2.3.0":
   version "2.3.0"
@@ -1097,16 +1055,15 @@
     shelljs "^0.8.1"
     yargs "^11.0.0"
 
-"@storybook/ui@4.0.0-alpha.22":
-  version "4.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-4.0.0-alpha.22.tgz#3ace9a54f814a380b915a31ebbd342269eff371c"
+"@storybook/ui@4.0.0-alpha.23":
+  version "4.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-4.0.0-alpha.23.tgz#611b62964d288bb8d69a27c7e6a42973bc71cb74"
   dependencies:
-    "@emotion/core" "0.13.0"
-    "@emotion/provider" "0.11.1"
-    "@emotion/styled" "0.10.5"
-    "@ndelangen/react-treebeard" "^3.0.0"
-    "@storybook/components" "4.0.0-alpha.22"
-    "@storybook/core-events" "4.0.0-alpha.22"
+    "@emotion/core" "^0.13.1"
+    "@emotion/provider" "^0.11.2"
+    "@emotion/styled" "^0.10.6"
+    "@storybook/components" "4.0.0-alpha.23"
+    "@storybook/core-events" "4.0.0-alpha.23"
     "@storybook/mantra-core" "^1.7.2"
     "@storybook/podda" "^1.2.3"
     "@storybook/react-komposer" "^2.0.4"
@@ -1124,6 +1081,7 @@
     react-fuzzy "^0.5.2"
     react-lifecycles-compat "^3.0.4"
     react-modal "^3.5.1"
+    react-treebeard "^3.1.0"
 
 "@types/node@*":
   version "10.9.4"
@@ -1648,9 +1606,9 @@ babel-core@^7.0.0-bridge.0:
   version "7.0.0-bridge.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
 
-babel-eslint@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-9.0.0.tgz#7d9445f81ed9f60aff38115f838970df9f2b6220"
+babel-eslint@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.0.tgz#0bb43e6b11a119bf3defbb1ee2521f42e2d413c9"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.0.0"
@@ -1680,17 +1638,13 @@ babel-helper-flip-expressions@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/babel-helper-flip-expressions/-/babel-helper-flip-expressions-0.4.3.tgz#3696736a128ac18bc25254b5f40a22ceb3c1d3fd"
 
-babel-helper-flip-expressions@^0.5.0-alpha.e9f96ffe:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-helper-flip-expressions/-/babel-helper-flip-expressions-0.5.0-alpha.e9f96ffe.tgz#fa3929314172a13a56cbc82b395c4e2c6c098025"
-
 babel-helper-is-nodes-equiv@^0.0.1:
   version "0.0.1"
   resolved "http://registry.npmjs.org/babel-helper-is-nodes-equiv/-/babel-helper-is-nodes-equiv-0.0.1.tgz#34e9b300b1479ddd98ec77ea0bbe9342dfe39684"
 
-babel-helper-is-void-0@^0.5.0-alpha.e9f96ffe:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-helper-is-void-0/-/babel-helper-is-void-0-0.5.0-alpha.e9f96ffe.tgz#e1c0c51dad35638c1c1c2e2f6f1069a9fe0be0af"
+babel-helper-is-void-0@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-helper-is-void-0/-/babel-helper-is-void-0-0.4.3.tgz#7d9c01b4561e7b95dbda0f6eee48f5b60e67313e"
 
 babel-helper-mark-eval-scopes@^0.4.3:
   version "0.4.3"
@@ -1782,17 +1736,17 @@ babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.2.2:
     cosmiconfig "^5.0.5"
     resolve "^1.8.1"
 
-babel-plugin-minify-builtins@^0.5.0-alpha.9+7002b8c:
+babel-plugin-minify-builtins@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-builtins/-/babel-plugin-minify-builtins-0.5.0.tgz#31eb82ed1a0d0efdc31312f93b6e4741ce82c36b"
 
-babel-plugin-minify-constant-folding@^0.5.0-alpha.9+7002b8c:
+babel-plugin-minify-constant-folding@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-constant-folding/-/babel-plugin-minify-constant-folding-0.5.0.tgz#f84bc8dbf6a561e5e350ff95ae216b0ad5515b6e"
   dependencies:
     babel-helper-evaluate-path "^0.5.0"
 
-babel-plugin-minify-dead-code-elimination@^0.5.0-alpha.9+7002b8c:
+babel-plugin-minify-dead-code-elimination@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-dead-code-elimination/-/babel-plugin-minify-dead-code-elimination-0.5.0.tgz#d23ef5445238ad06e8addf5c1cf6aec835bcda87"
   dependencies:
@@ -1801,37 +1755,37 @@ babel-plugin-minify-dead-code-elimination@^0.5.0-alpha.9+7002b8c:
     babel-helper-remove-or-void "^0.4.3"
     lodash.some "^4.6.0"
 
-babel-plugin-minify-flip-comparisons@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-minify-flip-comparisons/-/babel-plugin-minify-flip-comparisons-0.5.0-alpha.e9f96ffe.tgz#a0443772d1e0b8c6c06499cf9ac27979519a3bd4"
+babel-plugin-minify-flip-comparisons@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-minify-flip-comparisons/-/babel-plugin-minify-flip-comparisons-0.4.3.tgz#00ca870cb8f13b45c038b3c1ebc0f227293c965a"
   dependencies:
-    babel-helper-is-void-0 "^0.5.0-alpha.e9f96ffe"
+    babel-helper-is-void-0 "^0.4.3"
 
-babel-plugin-minify-guarded-expressions@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-minify-guarded-expressions/-/babel-plugin-minify-guarded-expressions-0.5.0-alpha.e9f96ffe.tgz#48a9040c4863ce079840f1f7c7b80b9056bc20a7"
+babel-plugin-minify-guarded-expressions@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-minify-guarded-expressions/-/babel-plugin-minify-guarded-expressions-0.4.3.tgz#cc709b4453fd21b1f302877444c89f88427ce397"
   dependencies:
-    babel-helper-flip-expressions "^0.5.0-alpha.e9f96ffe"
+    babel-helper-flip-expressions "^0.4.3"
 
-babel-plugin-minify-infinity@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-minify-infinity/-/babel-plugin-minify-infinity-0.5.0-alpha.e9f96ffe.tgz#1eff5cf31e4400202a53ebb90f28083c4d0d06bc"
+babel-plugin-minify-infinity@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-minify-infinity/-/babel-plugin-minify-infinity-0.4.3.tgz#dfb876a1b08a06576384ef3f92e653ba607b39ca"
 
-babel-plugin-minify-mangle-names@^0.5.0-alpha.9+7002b8c:
+babel-plugin-minify-mangle-names@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-mangle-names/-/babel-plugin-minify-mangle-names-0.5.0.tgz#bcddb507c91d2c99e138bd6b17a19c3c271e3fd3"
   dependencies:
     babel-helper-mark-eval-scopes "^0.4.3"
 
-babel-plugin-minify-numeric-literals@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-minify-numeric-literals/-/babel-plugin-minify-numeric-literals-0.5.0-alpha.e9f96ffe.tgz#07be5d3fed33f2d740a706a14b24439161c840ee"
+babel-plugin-minify-numeric-literals@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-minify-numeric-literals/-/babel-plugin-minify-numeric-literals-0.4.3.tgz#8e4fd561c79f7801286ff60e8c5fd9deee93c0bc"
 
-babel-plugin-minify-replace@^0.5.0-alpha.9+7002b8c:
+babel-plugin-minify-replace@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-replace/-/babel-plugin-minify-replace-0.5.0.tgz#d3e2c9946c9096c070efc96761ce288ec5c3f71c"
 
-babel-plugin-minify-simplify@^0.5.0-alpha.9+7002b8c:
+babel-plugin-minify-simplify@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-simplify/-/babel-plugin-minify-simplify-0.5.0.tgz#1f090018afb90d8b54d3d027fd8a4927f243da6f"
   dependencies:
@@ -1839,11 +1793,11 @@ babel-plugin-minify-simplify@^0.5.0-alpha.9+7002b8c:
     babel-helper-is-nodes-equiv "^0.0.1"
     babel-helper-to-multiple-sequence-expressions "^0.5.0"
 
-babel-plugin-minify-type-constructors@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-minify-type-constructors/-/babel-plugin-minify-type-constructors-0.5.0-alpha.e9f96ffe.tgz#116b76e4b4953c89f2c836769eec9464643e6b46"
+babel-plugin-minify-type-constructors@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-minify-type-constructors/-/babel-plugin-minify-type-constructors-0.4.3.tgz#1bc6f15b87f7ab1085d42b330b717657a2156500"
   dependencies:
-    babel-helper-is-void-0 "^0.5.0-alpha.e9f96ffe"
+    babel-helper-is-void-0 "^0.4.3"
 
 babel-plugin-react-docgen@^2.0.0-babel7.0:
   version "2.0.0"
@@ -1864,53 +1818,53 @@ babel-plugin-syntax-object-rest-spread@^6.13.0:
   version "6.13.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
 
-babel-plugin-transform-inline-consecutive-adds@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-consecutive-adds/-/babel-plugin-transform-inline-consecutive-adds-0.5.0-alpha.e9f96ffe.tgz#d485c6ca183e15e865fec5731aadc831e2083022"
+babel-plugin-transform-inline-consecutive-adds@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-consecutive-adds/-/babel-plugin-transform-inline-consecutive-adds-0.4.3.tgz#323d47a3ea63a83a7ac3c811ae8e6941faf2b0d1"
 
-babel-plugin-transform-member-expression-literals@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-member-expression-literals/-/babel-plugin-transform-member-expression-literals-6.10.0-alpha.f95869d4.tgz#272ebd2a2d4341b86c24dcd84374ae5aa3702874"
+babel-plugin-transform-member-expression-literals@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-member-expression-literals/-/babel-plugin-transform-member-expression-literals-6.9.4.tgz#37039c9a0c3313a39495faac2ff3a6b5b9d038bf"
 
-babel-plugin-transform-merge-sibling-variables@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-merge-sibling-variables/-/babel-plugin-transform-merge-sibling-variables-6.10.0-alpha.f95869d4.tgz#48a330d28293e318d07175c260c74859e7398b43"
+babel-plugin-transform-merge-sibling-variables@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-merge-sibling-variables/-/babel-plugin-transform-merge-sibling-variables-6.9.4.tgz#85b422fc3377b449c9d1cde44087203532401dae"
 
-babel-plugin-transform-minify-booleans@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-minify-booleans/-/babel-plugin-transform-minify-booleans-6.10.0-alpha.f95869d4.tgz#1deef69c22135038a91de1f5d13d759e3464c43c"
+babel-plugin-transform-minify-booleans@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-minify-booleans/-/babel-plugin-transform-minify-booleans-6.9.4.tgz#acbb3e56a3555dd23928e4b582d285162dd2b198"
 
-babel-plugin-transform-property-literals@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-property-literals/-/babel-plugin-transform-property-literals-6.10.0-alpha.f95869d4.tgz#37127aaa04125c3d08bf95cdb5a8f1d2e44ca453"
+babel-plugin-transform-property-literals@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-property-literals/-/babel-plugin-transform-property-literals-6.9.4.tgz#98c1d21e255736573f93ece54459f6ce24985d39"
   dependencies:
     esutils "^2.0.2"
 
-babel-plugin-transform-regexp-constructors@^0.5.0-alpha.9+7002b8c:
-  version "0.5.0-alpha.e9f96ffe"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-regexp-constructors/-/babel-plugin-transform-regexp-constructors-0.5.0-alpha.e9f96ffe.tgz#8d7a283d3bd1645018dbce73e7e3846a68267e66"
+babel-plugin-transform-regexp-constructors@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-regexp-constructors/-/babel-plugin-transform-regexp-constructors-0.4.3.tgz#58b7775b63afcf33328fae9a5f88fbd4fb0b4965"
 
-babel-plugin-transform-remove-console@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.10.0-alpha.f95869d4.tgz#c5717af9f76918b2821cfaef44d8245d4ea9422c"
+babel-plugin-transform-remove-console@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.9.4.tgz#b980360c067384e24b357a588d807d3c83527780"
 
-babel-plugin-transform-remove-debugger@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-remove-debugger/-/babel-plugin-transform-remove-debugger-6.10.0-alpha.f95869d4.tgz#1fc35c29c7c0878cf30e558a733651906e888e44"
+babel-plugin-transform-remove-debugger@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-debugger/-/babel-plugin-transform-remove-debugger-6.9.4.tgz#42b727631c97978e1eb2d199a7aec84a18339ef2"
 
-babel-plugin-transform-remove-undefined@^0.5.0-alpha.9+7002b8c:
+babel-plugin-transform-remove-undefined@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-undefined/-/babel-plugin-transform-remove-undefined-0.5.0.tgz#80208b31225766c630c97fa2d288952056ea22dd"
   dependencies:
     babel-helper-evaluate-path "^0.5.0"
 
-babel-plugin-transform-simplify-comparison-operators@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-simplify-comparison-operators/-/babel-plugin-transform-simplify-comparison-operators-6.10.0-alpha.f95869d4.tgz#f5499a6dc3ed686bda53363866b67dda774c5bed"
+babel-plugin-transform-simplify-comparison-operators@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-simplify-comparison-operators/-/babel-plugin-transform-simplify-comparison-operators-6.9.4.tgz#f62afe096cab0e1f68a2d753fdf283888471ceb9"
 
-babel-plugin-transform-undefined-to-void@^6.10.0-alpha.9+7002b8c:
-  version "6.10.0-alpha.f95869d4"
-  resolved "http://registry.npmjs.org/babel-plugin-transform-undefined-to-void/-/babel-plugin-transform-undefined-to-void-6.10.0-alpha.f95869d4.tgz#175a1a3090e616403f8c819cdcea1aecb66523b2"
+babel-plugin-transform-undefined-to-void@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-undefined-to-void/-/babel-plugin-transform-undefined-to-void-6.9.4.tgz#be241ca81404030678b748717322b89d0c8fe280"
 
 babel-preset-jest@^23.2.0:
   version "23.2.0"
@@ -1919,32 +1873,32 @@ babel-preset-jest@^23.2.0:
     babel-plugin-jest-hoist "^23.2.0"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
 
-babel-preset-minify@canary:
-  version "0.5.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/babel-preset-minify/-/babel-preset-minify-0.5.0-alpha.9.tgz#7e3bddf24c044eaaa8b93b8223e7bf693cd84128"
+babel-preset-minify@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-minify/-/babel-preset-minify-0.5.0.tgz#e25bb8d3590087af02b650967159a77c19bfb96b"
   dependencies:
-    babel-plugin-minify-builtins "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-constant-folding "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-dead-code-elimination "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-flip-comparisons "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-guarded-expressions "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-infinity "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-mangle-names "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-numeric-literals "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-replace "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-simplify "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-minify-type-constructors "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-transform-inline-consecutive-adds "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-transform-member-expression-literals "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-merge-sibling-variables "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-minify-booleans "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-property-literals "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-regexp-constructors "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-transform-remove-console "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-remove-debugger "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-remove-undefined "^0.5.0-alpha.9+7002b8c"
-    babel-plugin-transform-simplify-comparison-operators "^6.10.0-alpha.9+7002b8c"
-    babel-plugin-transform-undefined-to-void "^6.10.0-alpha.9+7002b8c"
+    babel-plugin-minify-builtins "^0.5.0"
+    babel-plugin-minify-constant-folding "^0.5.0"
+    babel-plugin-minify-dead-code-elimination "^0.5.0"
+    babel-plugin-minify-flip-comparisons "^0.4.3"
+    babel-plugin-minify-guarded-expressions "^0.4.3"
+    babel-plugin-minify-infinity "^0.4.3"
+    babel-plugin-minify-mangle-names "^0.5.0"
+    babel-plugin-minify-numeric-literals "^0.4.3"
+    babel-plugin-minify-replace "^0.5.0"
+    babel-plugin-minify-simplify "^0.5.0"
+    babel-plugin-minify-type-constructors "^0.4.3"
+    babel-plugin-transform-inline-consecutive-adds "^0.4.3"
+    babel-plugin-transform-member-expression-literals "^6.9.4"
+    babel-plugin-transform-merge-sibling-variables "^6.9.4"
+    babel-plugin-transform-minify-booleans "^6.9.4"
+    babel-plugin-transform-property-literals "^6.9.4"
+    babel-plugin-transform-regexp-constructors "^0.4.3"
+    babel-plugin-transform-remove-console "^6.9.4"
+    babel-plugin-transform-remove-debugger "^6.9.4"
+    babel-plugin-transform-remove-undefined "^0.5.0"
+    babel-plugin-transform-simplify-comparison-operators "^6.9.4"
+    babel-plugin-transform-undefined-to-void "^6.9.4"
     lodash.isplainobject "^4.0.6"
 
 babel-register@^6.26.0:
@@ -3858,21 +3812,9 @@ find-cache-dir@^2.0.0:
     make-dir "^1.0.0"
     pkg-dir "^3.0.0"
 
-find-file-up@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/find-file-up/-/find-file-up-1.0.2.tgz#4d53664bc128cf793901497f4b13558d979755ca"
-  dependencies:
-    resolve-dir "^1.0.0"
-
 find-line-column@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/find-line-column/-/find-line-column-0.5.2.tgz#db00238ff868551a182e74a103416d295a98c8ca"
-
-find-pkg@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/find-pkg/-/find-pkg-1.0.0.tgz#96db242e001c7c55025d32213302ea3aba677177"
-  dependencies:
-    find-file-up "^1.0.2"
 
 find-root@^1.0.0, find-root@^1.1.0:
   version "1.1.0"
@@ -4186,18 +4128,6 @@ globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
 
-globby@8.0.1, globby@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-8.0.1.tgz#b5ad48b8aa80b35b814fc1281ecc851f1d2b5b50"
-  dependencies:
-    array-union "^1.0.1"
-    dir-glob "^2.0.0"
-    fast-glob "^2.0.2"
-    glob "^7.1.2"
-    ignore "^3.3.5"
-    pify "^3.0.0"
-    slash "^1.0.0"
-
 globby@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-5.0.0.tgz#ebd84667ca0dbb330b99bcfc68eac2bc54370e0d"
@@ -4208,6 +4138,18 @@ globby@^5.0.0:
     object-assign "^4.0.1"
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
+
+globby@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-8.0.1.tgz#b5ad48b8aa80b35b814fc1281ecc851f1d2b5b50"
+  dependencies:
+    array-union "^1.0.1"
+    dir-glob "^2.0.0"
+    fast-glob "^2.0.2"
+    glob "^7.1.2"
+    ignore "^3.3.5"
+    pify "^3.0.0"
+    slash "^1.0.0"
 
 globule@^1.0.0:
   version "1.2.1"
@@ -5461,13 +5403,13 @@ js-search@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/js-search/-/js-search-1.4.2.tgz#59a91e117d6badb20bf0d7643ba7577d5a81d7e2"
 
-js-tokens@^3.0.0, js-tokens@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
-
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
+js-tokens@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
 js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.7.0, js-yaml@^3.9.0:
   version "3.12.0"
@@ -7282,11 +7224,11 @@ react-day-picker@^7.2.4:
   dependencies:
     prop-types "^15.6.2"
 
-react-dev-utils@6.0.0-next.3e165448:
-  version "6.0.0-next.3e165448"
-  resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-6.0.0-next.3e165448.tgz#d573ed0ba692f6cee23166f99204e5761df0897c"
+react-dev-utils@6.0.0-next.2150693d:
+  version "6.0.0-next.2150693d"
+  resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-6.0.0-next.2150693d.tgz#42216e01d389f68fdc8a94cdd44d95d480304256"
   dependencies:
-    "@babel/code-frame" "7.0.0-beta.46"
+    "@babel/code-frame" "7.0.0"
     address "1.0.3"
     browserslist "3.2.6"
     chalk "2.4.1"
@@ -7294,18 +7236,16 @@ react-dev-utils@6.0.0-next.3e165448:
     detect-port-alt "1.1.6"
     escape-string-regexp "1.0.5"
     filesize "3.6.1"
-    find-pkg "1.0.0"
     global-modules "1.0.0"
-    globby "8.0.1"
     gzip-size "4.1.0"
     inquirer "5.1.0"
     is-root "1.0.0"
     opn "5.3.0"
     pkg-up "2.0.0"
-    react-error-overlay "5.0.0-next.3e165448"
+    react-error-overlay "5.0.0-next.2150693d"
     recursive-readdir "2.2.2"
     shell-quote "1.6.1"
-    sockjs-client "1.1.4"
+    sockjs-client "1.1.5"
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
@@ -7340,16 +7280,16 @@ react-draft-wysiwyg@^1.12.13:
     linkify-it "^2.0.3"
     prop-types "^15.6.0"
 
-react-dropzone@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-5.1.0.tgz#04993c1fd45316a39da1d8c77c5f73a9c0f79b89"
+react-dropzone@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-5.1.1.tgz#b05613ea22f1ab71aa1f7cf5367df7b19468a2f3"
   dependencies:
     attr-accept "^1.1.3"
     prop-types "^15.6.2"
 
-react-error-overlay@5.0.0-next.3e165448:
-  version "5.0.0-next.3e165448"
-  resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.0-next.3e165448.tgz#2cbd10780c1fa9c7e35d6e443773e18948b7ee49"
+react-error-overlay@5.0.0-next.2150693d:
+  version "5.0.0-next.2150693d"
+  resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.0-next.2150693d.tgz#72ca7fe78eb3e503060c276105a717c24c87087c"
 
 react-fuzzy@^0.5.2:
   version "0.5.2"
@@ -7486,6 +7426,18 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.1:
     loose-envify "^1.3.1"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
+
+react-treebeard@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-treebeard/-/react-treebeard-3.1.0.tgz#e380b9e75f900e538044280ac365d29092583642"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@emotion/core" "^0.13.1"
+    "@emotion/styled" "^0.10.6"
+    deep-equal "^1.0.1"
+    prop-types "^15.6.2"
+    shallowequal "^1.1.0"
+    velocity-react "^1.4.1"
 
 react-window@^1.1.2:
   version "1.1.2"
@@ -8208,9 +8160,9 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-sockjs-client@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/sockjs-client/-/sockjs-client-1.1.4.tgz#5babe386b775e4cf14e7520911452654016c8b12"
+sockjs-client@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/sockjs-client/-/sockjs-client-1.1.5.tgz#1bb7c0f7222c40f42adf14f4442cbd1269771a83"
   dependencies:
     debug "^2.6.6"
     eventsource "0.1.6"
@@ -8977,7 +8929,7 @@ velocity-animate@^1.4.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/velocity-animate/-/velocity-animate-1.5.2.tgz#5a351d75fca2a92756f5c3867548b873f6c32105"
 
-velocity-react@^1.3.1:
+velocity-react@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/velocity-react/-/velocity-react-1.4.1.tgz#1d0b41859cdf2521c08a8b57f44e93ed2d54b5fc"
   dependencies:
@@ -9069,7 +9021,7 @@ webpack-cli@^3.1.1:
     v8-compile-cache "^2.0.2"
     yargs "^12.0.2"
 
-webpack-dev-middleware@^3.2.0:
+webpack-dev-middleware@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-3.4.0.tgz#1132fecc9026fd90f0ecedac5cbff75d1fb45890"
   dependencies:
@@ -9078,7 +9030,7 @@ webpack-dev-middleware@^3.2.0:
     range-parser "^1.0.3"
     webpack-log "^2.0.0"
 
-webpack-hot-middleware@^2.22.3:
+webpack-hot-middleware@^2.24.2:
   version "2.24.2"
   resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.24.2.tgz#0d2deeb813f67693e2997b87c3a9d9be324575dd"
   dependencies:
@@ -9101,9 +9053,38 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.17.1, webpack@^4.20.0:
+webpack@^4.20.0:
   version "4.20.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.20.0.tgz#626551271362274e2e80991ad9de76f31f90e57d"
+  dependencies:
+    "@webassemblyjs/ast" "1.7.8"
+    "@webassemblyjs/helper-module-context" "1.7.8"
+    "@webassemblyjs/wasm-edit" "1.7.8"
+    "@webassemblyjs/wasm-parser" "1.7.8"
+    acorn "^5.6.2"
+    acorn-dynamic-import "^3.0.0"
+    ajv "^6.1.0"
+    ajv-keywords "^3.1.0"
+    chrome-trace-event "^1.0.0"
+    enhanced-resolve "^4.1.0"
+    eslint-scope "^4.0.0"
+    json-parse-better-errors "^1.0.2"
+    loader-runner "^2.3.0"
+    loader-utils "^1.1.0"
+    memory-fs "~0.4.1"
+    micromatch "^3.1.8"
+    mkdirp "~0.5.0"
+    neo-async "^2.5.0"
+    node-libs-browser "^2.0.0"
+    schema-utils "^0.4.4"
+    tapable "^1.1.0"
+    uglifyjs-webpack-plugin "^1.2.4"
+    watchpack "^1.5.0"
+    webpack-sources "^1.3.0"
+
+webpack@^4.20.2:
+  version "4.20.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.20.2.tgz#89f6486b6bb276a91b0823453d377501fc625b5a"
   dependencies:
     "@webassemblyjs/ast" "1.7.8"
     "@webassemblyjs/helper-module-context" "1.7.8"
