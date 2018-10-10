@@ -145,6 +145,7 @@ export const testFieldValue = name =>
 
 export const knobs = name => {
   const knob = {
+    title: text('Title', name, name),
     required: boolean('Required', false, name),
     readOnly: boolean('Read Only', false, name),
     disabled: boolean('Disabled', false, name),

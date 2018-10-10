@@ -2106,6 +2106,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="text"
     >
       <span
         className={
@@ -2213,6 +2214,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="area"
     >
       <span
         className={
@@ -2319,6 +2321,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="email"
     >
       <span
         className={
@@ -2441,6 +2444,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="number"
     >
       <span
         className={
@@ -2563,6 +2567,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="password"
     >
       <span
         className={
@@ -2742,6 +2747,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="password-strength"
     >
       <span
         className={
@@ -2809,6 +2815,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="tel"
     >
       <span
         className={
@@ -2932,6 +2939,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="color"
     >
       <span
         className={
@@ -3054,6 +3062,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="date"
     >
       <span
         className={
@@ -3176,6 +3185,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="time"
     >
       <span
         className={
@@ -3298,6 +3308,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="datetime-local"
     >
       <span
         className={
@@ -3420,6 +3431,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="month"
     >
       <span
         className={
@@ -3542,6 +3554,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="week"
     >
       <span
         className={
@@ -3664,6 +3677,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="range"
     >
       <span
         className={
@@ -3901,6 +3915,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="money"
     >
       <span
         className={
@@ -4045,6 +4060,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="calendar"
     >
       <span
         className={
@@ -4112,6 +4128,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="switch"
     >
       <span
         className={
@@ -4269,6 +4286,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="html"
     >
       <span
         className={
@@ -4338,6 +4356,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="radio"
     >
       <span
         className={
@@ -4460,6 +4479,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="radio-set"
     >
       <span
         className={
@@ -6115,6 +6135,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="checkbox"
     >
       <span
         className={
@@ -6237,6 +6258,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="checkbox-set"
     >
       <span
         className={
@@ -7890,6 +7912,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="file"
     >
       <span
         className={
@@ -7957,6 +7980,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="select"
     >
       <span
         className={
@@ -8148,6 +8172,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      title="select-menu"
     >
       <span
         className={
@@ -8298,6 +8323,7 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
           "subs": Array [],
         }
       }
+      title="text"
     >
       <span
         className={
@@ -8405,6 +8431,7 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
           "subs": Array [],
         }
       }
+      title="area"
     >
       <span
         className={
@@ -8512,6 +8539,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="email"
     >
       <span
         className={
@@ -8634,6 +8662,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="number"
     >
       <span
         className={
@@ -8756,6 +8785,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="password"
     >
       <span
         className={
@@ -8935,6 +8965,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="password-strength"
     >
       <span
         className={
@@ -9002,6 +9033,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="tel"
     >
       <span
         className={
@@ -9125,6 +9157,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="color"
     >
       <span
         className={
@@ -9247,6 +9280,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="date"
     >
       <span
         className={
@@ -9369,6 +9403,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="time"
     >
       <span
         className={
@@ -9491,6 +9526,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="datetime-local"
     >
       <span
         className={
@@ -9613,6 +9649,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="month"
     >
       <span
         className={
@@ -9735,6 +9772,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="week"
     >
       <span
         className={
@@ -9857,6 +9895,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="range"
     >
       <span
         className={
@@ -10094,6 +10133,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="money"
     >
       <span
         className={
@@ -10238,6 +10278,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="calendar"
     >
       <span
         className={
@@ -10305,6 +10346,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="switch"
     >
       <span
         className={
@@ -10462,6 +10504,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="html"
     >
       <span
         className={
@@ -10531,6 +10574,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="radio"
     >
       <span
         className={
@@ -10653,6 +10697,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="radio-set"
     >
       <span
         className={
@@ -12308,6 +12353,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="checkbox"
     >
       <span
         className={
@@ -12430,6 +12476,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="checkbox-set"
     >
       <span
         className={
@@ -14083,6 +14130,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="file"
     >
       <span
         className={
@@ -14150,6 +14198,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="select"
     >
       <span
         className={
@@ -14341,6 +14390,7 @@ Area"
           "subs": Array [],
         }
       }
+      title="select-menu"
     >
       <span
         className={
@@ -14491,6 +14541,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
           "subs": Array [],
         }
       }
+      title="area"
     >
       <span
         className={
@@ -14680,6 +14731,7 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
           "subs": Array [],
         }
       }
+      title="calendar"
     >
       <span
         className={
@@ -14832,6 +14884,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
           "subs": Array [],
         }
       }
+      title="checkbox"
     >
       <span
         className={
@@ -15037,6 +15090,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           "subs": Array [],
         }
       }
+      title="checkbox-set"
     >
       <span
         className={
@@ -16773,6 +16827,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
           "subs": Array [],
         }
       }
+      title="color"
     >
       <span
         className={
@@ -16978,6 +17033,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
           "subs": Array [],
         }
       }
+      title="date"
     >
       <span
         className={
@@ -17183,6 +17239,7 @@ exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
           "subs": Array [],
         }
       }
+      title="datetime-local"
     >
       <span
         className={
@@ -17388,6 +17445,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
           "subs": Array [],
         }
       }
+      title="email"
     >
       <span
         className={
@@ -17593,6 +17651,7 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
           "subs": Array [],
         }
       }
+      title="file"
     >
       <span
         className={
@@ -17743,6 +17802,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
           "subs": Array [],
         }
       }
+      title="html"
     >
       <span
         className={
@@ -17893,6 +17953,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
           "subs": Array [],
         }
       }
+      title="money"
     >
       <span
         className={
@@ -18120,6 +18181,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
           "subs": Array [],
         }
       }
+      title="month"
     >
       <span
         className={
@@ -18325,6 +18387,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
           "subs": Array [],
         }
       }
+      title="number"
     >
       <span
         className={
@@ -18530,6 +18593,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           "subs": Array [],
         }
       }
+      title="password"
     >
       <span
         className={
@@ -18792,6 +18856,7 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
           "subs": Array [],
         }
       }
+      title="password-strength"
     >
       <span
         className={
@@ -18944,6 +19009,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
           "subs": Array [],
         }
       }
+      title="radio"
     >
       <span
         className={
@@ -19149,6 +19215,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           "subs": Array [],
         }
       }
+      title="radio-set"
     >
       <span
         className={
@@ -20885,6 +20952,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           "subs": Array [],
         }
       }
+      title="range"
     >
       <span
         className={
@@ -21205,6 +21273,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           "subs": Array [],
         }
       }
+      title="select"
     >
       <span
         className={
@@ -21479,6 +21548,7 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
           "subs": Array [],
         }
       }
+      title="select-menu"
     >
       <span
         className={
@@ -21629,6 +21699,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           "subs": Array [],
         }
       }
+      title="switch"
     >
       <span
         className={
@@ -21869,6 +21940,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
           "subs": Array [],
         }
       }
+      title="tel"
     >
       <span
         className={
@@ -22075,6 +22147,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
           "subs": Array [],
         }
       }
+      title="text"
     >
       <span
         className={
@@ -22265,6 +22338,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
           "subs": Array [],
         }
       }
+      title="time"
     >
       <span
         className={
@@ -22470,6 +22544,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
           "subs": Array [],
         }
       }
+      title="week"
     >
       <span
         className={
@@ -22675,6 +22750,7 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
           "subs": Array [],
         }
       }
+      title="area"
     >
       <span
         className={
@@ -22865,6 +22941,7 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
           "subs": Array [],
         }
       }
+      title="calendar"
     >
       <span
         className={
@@ -23017,6 +23094,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
           "subs": Array [],
         }
       }
+      title="checkbox"
     >
       <span
         className={
@@ -23222,6 +23300,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           "subs": Array [],
         }
       }
+      title="checkbox-set"
     >
       <span
         className={
@@ -24958,6 +25037,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
           "subs": Array [],
         }
       }
+      title="color"
     >
       <span
         className={
@@ -25163,6 +25243,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           "subs": Array [],
         }
       }
+      title="date"
     >
       <span
         className={
@@ -25368,6 +25449,7 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
           "subs": Array [],
         }
       }
+      title="datetime-local"
     >
       <span
         className={
@@ -25573,6 +25655,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
           "subs": Array [],
         }
       }
+      title="email"
     >
       <span
         className={
@@ -25778,6 +25861,7 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
           "subs": Array [],
         }
       }
+      title="file"
     >
       <span
         className={
@@ -25928,6 +26012,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
           "subs": Array [],
         }
       }
+      title="html"
     >
       <span
         className={
@@ -26078,6 +26163,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
           "subs": Array [],
         }
       }
+      title="money"
     >
       <span
         className={
@@ -26305,6 +26391,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
           "subs": Array [],
         }
       }
+      title="month"
     >
       <span
         className={
@@ -26510,6 +26597,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
           "subs": Array [],
         }
       }
+      title="number"
     >
       <span
         className={
@@ -26715,6 +26803,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           "subs": Array [],
         }
       }
+      title="password"
     >
       <span
         className={
@@ -26977,6 +27066,7 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
           "subs": Array [],
         }
       }
+      title="password-strength"
     >
       <span
         className={
@@ -27129,6 +27219,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
           "subs": Array [],
         }
       }
+      title="radio"
     >
       <span
         className={
@@ -27334,6 +27425,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           "subs": Array [],
         }
       }
+      title="radio-set"
     >
       <span
         className={
@@ -29070,6 +29162,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           "subs": Array [],
         }
       }
+      title="range"
     >
       <span
         className={
@@ -29390,6 +29483,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           "subs": Array [],
         }
       }
+      title="select"
     >
       <span
         className={
@@ -29664,6 +29758,7 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
           "subs": Array [],
         }
       }
+      title="select-menu"
     >
       <span
         className={
@@ -29814,6 +29909,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           "subs": Array [],
         }
       }
+      title="switch"
     >
       <span
         className={
@@ -30054,6 +30150,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
           "subs": Array [],
         }
       }
+      title="tel"
     >
       <span
         className={
@@ -30260,6 +30357,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
           "subs": Array [],
         }
       }
+      title="text"
     >
       <span
         className={
@@ -30450,6 +30548,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
           "subs": Array [],
         }
       }
+      title="time"
     >
       <span
         className={
@@ -30655,6 +30754,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
           "subs": Array [],
         }
       }
+      title="week"
     >
       <span
         className={
@@ -32017,6 +32117,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      title="Your first name"
     >
       <span
         className={
@@ -32125,6 +32226,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      title="Your name"
     >
       <span
         className={
@@ -32232,6 +32334,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      title="Your country"
     >
       <span
         className={

@@ -44,13 +44,19 @@ storiesOf('Formol exemples', module)
     withStateForm(props => (
       <Formol {...props}>
         <h1>Create your profile</h1>
-        <Field autoFocus required name="firstname">
+        <Field autoFocus required name="firstname" title="Your first name">
           First name
         </Field>
-        <Field required name="name">
+        <Field required name="name" title="Your name">
           Name
         </Field>
-        <Field required name="country" choices={countries} type="select">
+        <Field
+          required
+          name="country"
+          choices={countries}
+          type="select"
+          title="Your country"
+        >
           Country
         </Field>
         <Field required type="email" name="email">
