@@ -9,22 +9,10 @@ export default (listDefaultHeight = 19, listApproximatedLengthBreak = 50) =>
       super(props)
 
       this.list = React.createRef()
-
-      this.state = {
-        childrenSize: 0,
-        _list: this.list,
-      }
     }
 
-    static getDerivedStateFromProps({ children }, state) {
-      if (children.length !== state.childrenSize) {
-        // We must reset cache at least if chilren length changes
-        state._list.current && state._list.current.resetAfterIndex(0)
-        return {
-          childrenSize: children.length,
-        }
-      }
-      return null
+    componentDidMount() {
+      this.list.current.resetAfterIndex(0)
     }
 
     render() {
