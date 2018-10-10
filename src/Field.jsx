@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaQuestionCircle } from 'react-icons/fa'
 
 import { block } from './utils'
 import fieldPropsAdapter from './utils/fieldPropsAdapter'
@@ -104,6 +105,7 @@ export default class Field extends React.PureComponent {
           {children && (
             <span className={b.e('title').m(classNameModifiers.labelText)}>
               {children}
+              {title && <FaQuestionCircle />}
             </span>
           )}
           <TypeField
