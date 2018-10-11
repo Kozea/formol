@@ -1,4 +1,4 @@
-import { withState } from '@dump247/storybook-state'
+import { withState } from 'storybook4-state'
 import { boolean, number, select } from '@storybook/addon-knobs'
 
 import Formol from '../src'

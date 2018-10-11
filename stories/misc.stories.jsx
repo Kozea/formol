@@ -1,6 +1,6 @@
 /* eslint-disable react/no-multi-comp */
 
-import { withState } from '@dump247/storybook-state'
+import { withState } from 'storybook4-state'
 import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'

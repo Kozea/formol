@@ -5,7 +5,7 @@ import Themes from '.'
 
 addons.register('formol_themes', api => {
   addons.addPanel('formol_themes/panel', {
-    title: 'Themes',
-    render: () => <Themes api={api} />,
+    title: 'Formol Themes',
+    render: ({ active }) => <Themes api={api} active={active} />,
   })
 })

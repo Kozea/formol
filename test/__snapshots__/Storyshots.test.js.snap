@@ -39124,6 +39124,12 @@ Array [
 ]
 `;
 
+exports[`Storyshots Home Home 1`] = `
+<h1>
+  Welcome!
+</h1>
+`;
+
 exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
 <form
   className={

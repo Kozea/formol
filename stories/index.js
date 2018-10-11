@@ -1,0 +1,8 @@
+require('./home.stories.jsx')
+require('./exemples.stories.jsx')
+require('./fields.stories.jsx')
+require('./all-fields.stories.jsx')
+require('./conditionals.stories.jsx')
+require('./formatters.stories.jsx')
+require('./validators.stories.jsx')
+require('./misc.stories.jsx')

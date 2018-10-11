@@ -35,9 +35,13 @@ export default class Themes extends React.Component {
   }
 
   render() {
+    const { active } = this.props
     const { currentTheme, themes, devMode } = this.state
     if (devMode) {
       return 'Currently running in dev mode, no themes available.'
+    }
+    if (!active) {
+      return null
     }
     return (
       <div style={{ display: 'flex', flex: 1 }}>
