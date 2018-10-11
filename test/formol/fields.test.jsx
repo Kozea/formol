@@ -190,6 +190,123 @@ describe('Formol field', () => {
       'foo',
     ])
   })
+  it('handles dom validation', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol item={{ foo: 'bar' }} onSubmit={onSubmit}>
+        <Field name="foo" pattern="b\w+" required />
+      </Formol>
+    )
+    // Using getter here as https://github.com/airbnb/enzyme/issues/76
+    const field = () => wrapper.find('Field')
+    const input = () => field().find('input')
+
+    const error = () => wrapper.find('.Formol_Field__error-text')
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+
+    expect(input().props().value).toEqual('bar')
+    expect(error()).not.toHaveLength()
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: '' } })
+    await input().simulate('blur')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).not.toHaveBeenCalled()
+    expect(input().props().value).toEqual('')
+    expect(error()).not.toHaveLength()
+
+    expect(error()).toHaveLength(1)
+    expect(error().text()).toEqual('Constraints not satisfied')
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'faz' } })
+    await input().simulate('blur')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).not.toHaveBeenCalled()
+    expect(input().props().value).toEqual('faz')
+
+    expect(error()).toHaveLength(1)
+    expect(error().text()).toEqual('Constraints not satisfied')
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
+
+    expect(input().props().value).toEqual('baz')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).toHaveBeenCalledWith({ foo: 'baz' }, { foo: 'bar' }, [
+      'foo',
+    ])
+  })
+  it('handles custom dom validation messages', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol item={{ foo: 'bar' }} onSubmit={onSubmit}>
+        <Field
+          name="foo"
+          pattern="b\w+"
+          required
+          validityErrors={({ patternMismatch }) => {
+            if (patternMismatch) {
+              return 'Must start with a b'
+            }
+          }}
+        />
+      </Formol>
+    )
+    // Using getter here as https://github.com/airbnb/enzyme/issues/76
+    const field = () => wrapper.find('Field')
+    const input = () => field().find('input')
+
+    const error = () => wrapper.find('.Formol_Field__error-text')
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+
+    expect(input().props().value).toEqual('bar')
+    expect(error()).not.toHaveLength()
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: '' } })
+    await input().simulate('blur')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).not.toHaveBeenCalled()
+    expect(input().props().value).toEqual('')
+    expect(error()).not.toHaveLength()
+
+    expect(error()).toHaveLength(1)
+    expect(error().text()).toEqual('Constraints not satisfied')
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'faz' } })
+    await input().simulate('blur')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).not.toHaveBeenCalled()
+    expect(input().props().value).toEqual('faz')
+
+    expect(error()).toHaveLength(1)
+    expect(error().text()).toEqual('Must start with a b')
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
+
+    expect(input().props().value).toEqual('baz')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).toHaveBeenCalledWith({ foo: 'baz' }, { foo: 'bar' }, [
+      'foo',
+    ])
+  })
   it('raises on unknown field', () => {
     // Prevent console.error from cluttering the output
     jest.spyOn(console, 'error')

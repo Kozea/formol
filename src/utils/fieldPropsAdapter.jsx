@@ -64,9 +64,9 @@ export default function fieldPropsAdapter(WrappedComponent) {
       }
     }
 
-    register(name, element, validator) {
+    register(name, element, validator, validityErrors) {
       const { context, conditionalContext } = this.props
-      context.register(name, element, validator)
+      context.register(name, element, validator, validityErrors)
       conditionalContext.register && conditionalContext.register(name)
     }
 

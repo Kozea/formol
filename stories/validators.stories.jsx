@@ -14,6 +14,38 @@ const isPrime = n =>
 storiesOf('Validators', module)
   .addDecorator(withKnobs)
   .add(
+    'DOM validation',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>Simple dom validation</h1>
+        <Field
+          name="hexColor"
+          required
+          minLength={4}
+          pattern="#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})"
+          title="A hexadecimal color: (i.e. #3c23ad)"
+          validityErrors={({ valueMissing, patternMismatch, tooShort }) => {
+            if (valueMissing) {
+              return 'A color connot be empty, we need a color!'
+            }
+            if (tooShort) {
+              return 'A color cannot be that short'
+            }
+            if (patternMismatch) {
+              return (
+                'A color must have a # followed by ' +
+                '3 or 6 hexadecimal digit'
+              )
+            }
+          }}
+        >
+          Hexadecimal color validated by a regexp pattern with custom error
+          messages
+        </Field>
+      </Formol>
+    ))
+  )
+  .add(
     'Complex field validation',
     withStateForm(props => (
       <Formol {...props}>

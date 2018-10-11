@@ -20,8 +20,8 @@ export default class Field extends React.PureComponent {
   }
 
   componentDidMount() {
-    const { register, name, validator } = this.props
-    register(name, this.element, validator)
+    const { register, name, validator, validityErrors } = this.props
+    register(name, this.element, validator, validityErrors)
   }
 
   componentWillUnmount() {
@@ -74,6 +74,7 @@ export default class Field extends React.PureComponent {
       TypeField,
       i18n,
       error,
+      validityErrors,
       handleChange,
       handleEntered,
       handleKeyDown,

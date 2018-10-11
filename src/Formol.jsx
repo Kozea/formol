@@ -91,6 +91,7 @@ export default class Formol extends React.PureComponent {
       names: [],
       elements: {},
       validators: {},
+      validityErrors: {},
     }
 
     this.state = {
@@ -166,16 +167,18 @@ export default class Formol extends React.PureComponent {
     this.mounted = false
   }
 
-  register(name, element, validator) {
+  register(name, element, validator, validityErrors) {
     this.fields.names.push(name)
     this.fields.elements[name] = element
     this.fields.validators[name] = validator
+    this.fields.validityErrors[name] = validityErrors
   }
 
   unregister(name) {
     this.fields.names.splice(this.fields.names.indexOf(name), 1)
     delete this.fields.elements[name]
     delete this.fields.validators[name]
+    delete this.fields.validityErrors[name]
   }
 
   setStateNewItem(transientItem, extra = {}) {
@@ -278,7 +281,7 @@ export default class Formol extends React.PureComponent {
   validateForm(newTransientItem) {
     const { validator } = this.props
     const { transientItem } = this.state.context
-    const { elements, validators } = this.fields
+    const { elements, validators, validityErrors } = this.fields
     const item = newTransientItem || transientItem
     const normalize = v => (typeof v === 'string' && v ? v : '')
     // Resetting all custom validity before validation
@@ -297,7 +300,9 @@ export default class Formol extends React.PureComponent {
           current.setCustomValidity(validity[name])
         } else {
           // If there's already a DOM validation error
-          validity[name] = current.validationMessage
+          validity[name] =
+            (validityErrors[name] && validityErrors[name](current.validity)) ||
+            current.validationMessage
         }
       }
       return validity
