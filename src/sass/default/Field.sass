@@ -26,25 +26,6 @@
       -webkit-appearance: none
       margin: 0
 
-  // title explanation
-  &__label
-    &[title]
-      .Formol_Field
-        &__title
-          &::after
-            border: solid 1px
-            border-radius: 100%
-            content: '?'
-            color: inherit
-            display: inline-block
-            font-weight: bold
-            height: 1.25em
-            line-height: 1.25
-            margin-left: .5em
-            text-align: center
-            width: 1.25em
-
-
   // states
   &:hover
     +field-colors($formol-color)
@@ -73,6 +54,9 @@
     font-size: $formol-font-size * .85
     transition: color .2s
     width: 100%
+
+    > svg
+      margin-left: .5em
 
   &__element
     background-color: $formol-background-color

@@ -1,3 +1,7 @@
+### [2.2.4](https://github.com/Kozea/formol/compare/v2.2.3...v2.2.4)
+
+- Add title Field prop for adding tooltips to fields
+
 ### [2.2.3](https://github.com/Kozea/formol/compare/v2.2.2...v2.2.3)
 
 - Add listDefaultHeight and listApproximatedLengthBreak options to customize the very bad select-menu item height heuristic
