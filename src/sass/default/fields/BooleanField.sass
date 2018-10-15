@@ -11,8 +11,6 @@
     &--on, &--on:hover
       color: inherit
 
-    &--focus, &--focus:hover
-      color: $formol-color-action
 
   &__title
     font-size: $formol-font-size
@@ -31,6 +29,8 @@
       @extend .Formol_Field
       margin: 0 calc(#{$formol-field-margin} / 2) calc(#{$formol-field-margin} / 2) 0
 
+      &--focus, &--focus:hover
+        color: $formol-color-action
 
 .Formol_BooleanField
   margin: 0

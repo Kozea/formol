@@ -5,6 +5,13 @@ import { block } from '../utils'
 
 @block
 export default class FieldSet extends React.PureComponent {
+  constructor(props) {
+    super(props)
+    this.state = {
+      focused: null,
+    }
+  }
+
   render(b) {
     const {
       type,
@@ -17,16 +24,28 @@ export default class FieldSet extends React.PureComponent {
       ...props
     } = this.props
 
+    const { focused } = this.state
+
     return (
       <fieldset className={b} ref={elementRef}>
         {choices.map(([choiceLabel, choice]) => (
           <label
             key={choice}
-            className={b.e('label').m({ on: isChecked(choice, value) })}
+            className={b
+              .e('label')
+              .m({ on: isChecked(choice, value), focused: focused === choice })}
           >
             <BooleanField
               {...props}
               type={type}
+              onFocus={() => {
+                this.setState({ focused: choice })
+                props.onFocus()
+              }}
+              onBlur={() => {
+                this.setState({ focused: null })
+                props.onBlur()
+              }}
               value={isChecked(choice, value)}
               onChange={checked => onChange(choice, value, checked)}
             />

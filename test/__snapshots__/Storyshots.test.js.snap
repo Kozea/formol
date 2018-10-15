@@ -4866,6 +4866,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -4964,6 +4965,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5062,6 +5064,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5160,6 +5163,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5258,6 +5262,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5356,6 +5361,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5454,6 +5460,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5552,6 +5559,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5650,6 +5658,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5748,6 +5757,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5846,6 +5856,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -5944,6 +5955,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6042,6 +6054,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6140,6 +6153,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6238,6 +6252,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6336,6 +6351,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6679,6 +6695,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6777,6 +6794,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6875,6 +6893,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -6973,6 +6992,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7071,6 +7091,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7169,6 +7190,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7267,6 +7289,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7365,6 +7388,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7463,6 +7487,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7561,6 +7586,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7659,6 +7685,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7757,6 +7784,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7855,6 +7883,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -7953,6 +7982,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -8051,6 +8081,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -8149,6 +8180,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -11509,6 +11541,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -11607,6 +11640,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -11705,6 +11739,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -11803,6 +11838,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -11901,6 +11937,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -11999,6 +12036,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12097,6 +12135,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -12195,6 +12234,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12293,6 +12333,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12391,6 +12432,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12489,6 +12531,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12587,6 +12630,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12685,6 +12729,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12783,6 +12828,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12881,6 +12927,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -12979,6 +13026,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -13322,6 +13370,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -13420,6 +13469,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -13518,6 +13568,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -13616,6 +13667,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -13714,6 +13766,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -13812,6 +13865,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -13910,6 +13964,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -14008,6 +14063,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14106,6 +14162,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14204,6 +14261,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14302,6 +14360,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14400,6 +14459,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14498,6 +14558,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14596,6 +14657,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14694,6 +14756,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -14792,6 +14855,7 @@ Area"
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16055,6 +16119,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16153,6 +16218,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16251,6 +16317,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16349,6 +16416,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16447,6 +16515,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16545,6 +16614,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16643,6 +16713,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16741,6 +16812,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16839,6 +16911,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -16937,6 +17010,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -17035,6 +17109,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -17133,6 +17208,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -17231,6 +17307,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -17329,6 +17406,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -17427,6 +17505,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -17525,6 +17604,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20401,6 +20481,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20499,6 +20580,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20597,6 +20679,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20695,6 +20778,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20793,6 +20877,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20891,6 +20976,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -20989,6 +21075,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21087,6 +21174,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21185,6 +21273,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21283,6 +21372,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21381,6 +21471,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21479,6 +21570,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21577,6 +21669,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21675,6 +21768,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21773,6 +21867,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -21871,6 +21966,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -24690,6 +24786,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -24788,6 +24885,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -24886,6 +24984,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -24984,6 +25083,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25082,6 +25182,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25180,6 +25281,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -25278,6 +25380,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -25376,6 +25479,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25474,6 +25578,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25572,6 +25677,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25670,6 +25776,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25768,6 +25875,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25866,6 +25974,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -25964,6 +26073,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -26062,6 +26172,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -26160,6 +26271,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29036,6 +29148,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29134,6 +29247,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29232,6 +29346,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29330,6 +29445,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29428,6 +29544,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29526,6 +29643,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29624,6 +29742,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -29722,6 +29841,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29820,6 +29940,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -29918,6 +30039,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -30016,6 +30138,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -30114,6 +30237,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -30212,6 +30336,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -30310,6 +30435,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -30408,6 +30534,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -30506,6 +30633,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -34734,6 +34862,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -34832,6 +34961,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -34930,6 +35060,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -36558,6 +36689,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -36656,6 +36788,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -36754,6 +36887,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -49730,6 +49864,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -49833,6 +49968,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -49936,6 +50072,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -50039,6 +50176,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -50142,6 +50280,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": true,
                     },
                     "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -50245,6 +50384,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": true,
                     },
                     "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -50348,6 +50488,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -50451,6 +50592,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -50554,6 +50696,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -50657,6 +50800,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -50760,6 +50904,7 @@ rules
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
+                      "focused": false,
                       "on": false,
                     },
                     "s": "Formol_FieldSet__label",
@@ -51610,6 +51755,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -51707,6 +51853,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -51804,6 +51951,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -51901,6 +52049,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -51998,6 +52147,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -52095,6 +52245,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -52803,6 +52954,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -52906,6 +53058,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53009,6 +53162,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53112,6 +53266,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53215,6 +53370,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53318,6 +53474,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53421,6 +53578,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53524,6 +53682,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53627,6 +53786,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53730,6 +53890,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53833,6 +53994,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -53936,6 +54098,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -54039,6 +54202,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -54142,6 +54306,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -54245,6 +54410,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -54348,6 +54514,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -55179,6 +55346,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -55276,6 +55444,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -55373,6 +55542,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -55470,6 +55640,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -55567,6 +55738,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -55664,6 +55836,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -56496,6 +56669,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -56593,6 +56767,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -56690,6 +56865,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -56787,6 +56963,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -56884,6 +57061,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -56981,6 +57159,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -57163,6 +57342,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -57260,6 +57440,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -57357,6 +57538,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
@@ -57454,6 +57636,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -57551,6 +57734,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": false,
               },
               "s": "Formol_FieldSet__label",
@@ -57648,6 +57832,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
               "element": "label",
               "mixed": Array [],
               "modifier": Object {
+                "focused": false,
                 "on": true,
               },
               "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
