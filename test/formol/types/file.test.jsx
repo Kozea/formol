@@ -12,6 +12,7 @@ describe('File field', () => {
   it(
     'handles changes in simple',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -114,6 +115,7 @@ describe('File field', () => {
   it(
     'cancels changes',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -193,6 +195,7 @@ describe('File field', () => {
   it(
     'handles changes with multiple values',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -308,6 +311,7 @@ describe('File field', () => {
   it(
     'cancels changes in multiple',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -391,6 +395,7 @@ describe('File field', () => {
   it(
     'handles same file upload',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -504,6 +509,7 @@ describe('File field', () => {
     30000
   )
   it('handles uploaded file deletion', async () => {
+    window.URL.createObjectURL = () => ''
     const onSubmit = jest.fn()
     const wrapper = mount(
       <Formol
@@ -606,6 +612,7 @@ describe('File field', () => {
     wrapper.unmount()
   })
   it('handles uploaded file deletion on multiple', async () => {
+    window.URL.createObjectURL = () => ''
     const onSubmit = jest.fn()
     const wrapper = mount(
       <Formol
@@ -750,6 +757,7 @@ describe('File field', () => {
   it(
     'respects default type accept parameter',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -842,6 +850,7 @@ describe('File field', () => {
   it(
     'respects default type accept parameter',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -931,6 +940,7 @@ describe('File field', () => {
   it(
     'cancels rejected files',
     async () => {
+      window.URL.createObjectURL = () => ''
       const onSubmit = jest.fn()
       const wrapper = mount(
         <Formol
@@ -1026,6 +1036,7 @@ describe('File field', () => {
     30000
   )
   it('respects readOnly parameter', async () => {
+    window.URL.createObjectURL = () => ''
     const onSubmit = jest.fn()
     const wrapper = mount(
       <Formol
@@ -1058,6 +1069,7 @@ describe('File field', () => {
     wrapper.unmount()
   })
   it('respects readOnly parameter when empty', async () => {
+    window.URL.createObjectURL = () => ''
     const onSubmit = jest.fn()
     const wrapper = mount(
       <Formol onSubmit={onSubmit} item={{}}>

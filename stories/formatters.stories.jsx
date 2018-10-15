@@ -134,20 +134,21 @@ storiesOf('Formatters', module)
             Credit Card
           </Field>
           <Field
-            name="persons"
-            type="select-menu"
-            multiple
-            choices={persons.reduce(
-              (choices, { id, name, firstname }) =>
-                (choices[`${name} ${firstname}`] = id) && choices,
-              {}
-            )}
-            formatter={currentPersons => currentPersons.map(({ id }) => id)}
-            unformatter={ids =>
-              persons.filter(({ id }) => ids && ids.includes(id))
-            }
+            name="iLetters"
+            type="number"
+            min={0}
+            formatter={s => s && s.length}
+            unformatter={n => 'i'.repeat(n)}
           >
-            Persons
+            I letters
+          </Field>
+          <Field
+            name="numberOfI"
+            formatter={n => 'i'.repeat(n)}
+            unformatter={s => s && s.length}
+            pattern="i*"
+          >
+            Number of letter i
           </Field>
         </Formol>
       ),
@@ -155,26 +156,8 @@ storiesOf('Formatters', module)
         money: 42,
         bignumber: '0123456789',
         rgbcolor: 'rgb(255, 125, 2)',
-        persons: [
-          {
-            id: 'mscott',
-            name: 'Scott',
-            firstname: 'Michael',
-            gender: 'man',
-          },
-          {
-            id: 'dkschrute',
-            name: 'K. Schrute',
-            firstname: 'Dwight',
-            gender: 'man',
-          },
-          {
-            id: 'pbeesly',
-            name: 'Beesly',
-            firstname: 'Pam',
-            gender: 'woman',
-          },
-        ],
+        iLetters: 'iiiiiiiiiiii',
+        numberOfI: 7,
       }
     )
   )

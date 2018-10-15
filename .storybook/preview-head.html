@@ -7,11 +7,13 @@ window.addEventListener('DOMContentLoaded', function() {
     .filter(link => link.href.endsWith('.css'))
     .reduce(function(themes, link) {
       var name = link.href.replace(baseUrl, '')
-      themes.push(name)
-      if (name !== 'default.css') {
-        link.parentNode.removeChild(link)
-      } else {
+      if (name === 'default.css') {
         link.setAttribute('id', 'current-theme')
+        themes.push(name)
+      }
+      else if (name != 'iframe.css') {
+        link.parentNode.removeChild(link)
+        themes.push(name)
       }
       return themes
     }, [])
