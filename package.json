@@ -1,6 +1,6 @@
 {
   "name": "formol",
-  "version": "2.2.4",
+  "version": "2.3.1",
   "description": "An opiniated react form framework.",
   "main": "lib/formol.js",
   "module": "src/index.js",
@@ -86,8 +86,8 @@
     "pre-commit": "^1.2.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-test-renderer": "^16.5.2",
     "react-syntax-highlighter": "^9.0.0",
+    "react-test-renderer": "^16.5.2",
     "sass-loader": "^7.1.0",
     "scudd": "^0.0.1",
     "storybook4-state": "^1.5.0",

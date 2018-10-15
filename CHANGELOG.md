@@ -1,10 +1,20 @@
+### [2.3.1](https://github.com/Kozea/formol/compare/v2.3.0...v2.3.1)
+
+- Repair publishing by removing home from storyshots
+
+## [2.3.0](https://github.com/Kozea/formol/compare/v2.2.4...v2.3.0)
+
+- Add `validityErrors` field prop to add custom validation error messages
+- Add i18n for select-menu
+- Fix focus on field-set
+
 ### [2.2.4](https://github.com/Kozea/formol/compare/v2.2.3...v2.2.4)
 
 - Add title Field prop for adding tooltips to fields
 
 ### [2.2.3](https://github.com/Kozea/formol/compare/v2.2.2...v2.2.3)
 
-- Add listDefaultHeight and listApproximatedLengthBreak options to customize the very bad select-menu item height heuristic
+- Add `listDefaultHeight` and `listApproximatedLengthBreak` options to customize the very bad select-menu item height heuristic
 
 ### [2.2.2](https://github.com/Kozea/formol/compare/v2.2.1...v2.2.2)
 
