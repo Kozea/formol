@@ -21,7 +21,7 @@ export default {
     pattern: /^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[.\-\s]?\d\d){4}$/,
   },
   html: {
-    placeholder: 'Entrez votre texte ici...',
+    placeholder: 'Entrez votre texte ici…',
   },
   passwordStrength: {
     weak: 'très peu sécurisé',
@@ -35,5 +35,10 @@ export default {
   money: {
     unit: '€',
     precision: 2,
+  },
+  selectMenu: {
+    noOptions: () => 'Aucun résultat',
+    loading: () => 'Chargement',
+    select: 'Sélectionner…',
   },
 }

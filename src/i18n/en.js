@@ -36,4 +36,9 @@ export default {
     unit: '$',
     precision: 2,
   },
+  selectMenu: {
+    noOptions: () => 'No options',
+    loading: () => 'Loading',
+    select: 'Select…',
+  },
 }

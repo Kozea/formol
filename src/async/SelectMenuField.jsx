@@ -158,7 +158,7 @@ export default class SelectMenuField extends React.PureComponent {
           ref={this.select}
           isDisabled={disabled || readOnly /* There's no readOnly */}
           options={options}
-          placeholder={placeholder}
+          placeholder={placeholder || i18n.selectMenu.select}
           isMulti={multiple}
           value={value}
           components={{
@@ -177,6 +177,8 @@ export default class SelectMenuField extends React.PureComponent {
           styles={styles}
           isClearable
           filterOption={this.filter}
+          noOptionsMessage={i18n.selectMenu.noOptions}
+          loadingMessage={i18n.selectMenu.loading}
         />
         {
           // We have to add another input field since the
