@@ -3,15 +3,14 @@ import './home.sass'
 
 import { Block } from 'bemboo'
 import React from 'react'
+
+import { storiesOf } from '@storybook/react'
 import SyntaxHighlighter, {
   registerLanguage,
 } from 'react-syntax-highlighter/prism-light'
 import jsx from 'react-syntax-highlighter/languages/prism/jsx'
 import prism from 'react-syntax-highlighter/styles/prism/prism'
 
-import { storiesOf } from '@storybook/react'
-
-import { colorChoices } from './fields'
 import Formol, { Conditional, Field, Inliner } from '../src'
 import pkg from '../package.json'
 
@@ -171,8 +170,71 @@ storiesOf('Home', module).add('Home', () => (
     <h1 className={b.e('hero')}>
       Formol <small className={b.e('version')}>{pkg.version}</small>
     </h1>
+    <article className={b.e('highlights')}>
+      Formol is a full featured object edition oriented form framework for
+      React.
+      <ul>
+        <li>Native field types</li>
+        <li>
+          Powerful non-native field types, based on well known libraries:
+          <ul>
+            <li>
+              <a href="https://jpuri.github.io/react-draft-wysiwyg">
+                react-draft-wysiwyg
+              </a>
+            </li>
+            <li>
+              <a href="https://react-select.com">react-select</a>
+            </li>
+            <li>
+              <a href="https://react-dropzone.netlify.com">react-dropzone</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Enhanced native dom validation with cross field validation support
+        </li>
+        <li>
+          Dynamic forms with dynamic field attributes based on fields values
+        </li>
+        <li>
+          Lightweight (20kb gz) with webpack code-splitting (total: ~600kb gz)
+        </li>
+        <li>Support style theming (with currently two bundled)</li>
+        <li>
+          Works well with <a href="https://kozea.github.io/unrest/">unrest</a>{' '}
+          and{' '}
+          <a href="https://github.com/Kozea/redux-api-unrest">
+            redux-api-unrest
+          </a>
+        </li>
+      </ul>
+    </article>
+    <article className={b.e('quick-start')}>
+      <h2>Quick start</h2>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        yarn install formol
+      </SyntaxHighlighter>
+      <p>
+        (Optional but very recommended) Enable code-splitting with webpack by
+        adding to your jsx babel rule in your webpack.config.js:
+      </p>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        include: &quot;node_modules/formol&quot;
+      </SyntaxHighlighter>
+      <p>
+        Now you are all set. Next you can browse this storybook to find most
+        formol features illustrated with state interaction (state tab),
+        attribute live editting (knobs tab) and source code (story tab) on the
+        right panel.
+      </p>
+      <p>
+        But before going too deep, let’s take a look at the two following
+        exemples:
+      </p>
+    </article>
     <article className={b.e('exemple')}>
-      <h2>Formol is an simple and elegant form library for React.</h2>
+      <h3>Formol is a simple and elegant form library for React.</h3>
       <div className={b.e('side-by-side')}>
         <SyntaxHighlighter language="jsx" style={prism}>
           {dedent`
@@ -191,7 +253,7 @@ storiesOf('Home', module).add('Home', () => (
       </div>
     </article>
     <article className={b.e('exemple')}>
-      <h2>Yet it is quite a powerful one</h2>
+      <h3>Yet it is quite a powerful one</h3>
       <div className={b.e('side-by-side')}>
         <SyntaxHighlighter language="jsx" style={prism}>
           {dedent`

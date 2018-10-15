@@ -39349,6 +39349,249 @@ exports[`Storyshots Home Home 1`] = `
     className={
       Block {
         "block": "Home",
+        "element": "highlights",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Home__highlights",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    Formol is a full featured object edition oriented form framework for React.
+    <ul>
+      <li>
+        Native field types
+      </li>
+      <li>
+        Powerful non-native field types, based on well known libraries:
+        <ul>
+          <li>
+            <a
+              href="https://jpuri.github.io/react-draft-wysiwyg"
+            >
+              react-draft-wysiwyg
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://react-select.com"
+            >
+              react-select
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://react-dropzone.netlify.com"
+            >
+              react-dropzone
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Enhanced native dom validation with cross field validation support
+      </li>
+      <li>
+        Dynamic forms with dynamic field attributes based on fields values
+      </li>
+      <li>
+        Lightweight (20kb gz) with webpack code-splitting (total: ~600kb gz)
+      </li>
+      <li>
+        Support style theming (with currently two bundled)
+      </li>
+      <li>
+        Works well with 
+        <a
+          href="https://kozea.github.io/unrest/"
+        >
+          unrest
+        </a>
+         
+        and
+         
+        <a
+          href="https://github.com/Kozea/redux-api-unrest"
+        >
+          redux-api-unrest
+        </a>
+      </li>
+    </ul>
+  </article>
+  <article
+    className={
+      Block {
+        "block": "Home",
+        "element": "quick-start",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Home__quick-start",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <h2>
+      Quick start
+    </h2>
+    <pre
+      style={
+        Object {
+          "MozHyphens": "none",
+          "MozTabSize": "4",
+          "OTabSize": "4",
+          "WebkitHyphens": "none",
+          "background": "#f5f2f0",
+          "color": "black",
+          "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+          "hyphens": "none",
+          "lineHeight": "1.5",
+          "margin": ".5em 0",
+          "msHyphens": "none",
+          "overflow": "auto",
+          "padding": "1em",
+          "tabSize": "4",
+          "textAlign": "left",
+          "textShadow": "0 1px white",
+          "whiteSpace": "pre",
+          "wordBreak": "normal",
+          "wordSpacing": "normal",
+          "wordWrap": "normal",
+        }
+      }
+    >
+      <code
+        style={
+          Object {
+            "MozHyphens": "none",
+            "MozTabSize": "4",
+            "OTabSize": "4",
+            "WebkitHyphens": "none",
+            "background": "none",
+            "color": "black",
+            "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+            "hyphens": "none",
+            "lineHeight": "1.5",
+            "msHyphens": "none",
+            "tabSize": "4",
+            "textAlign": "left",
+            "textShadow": "0 1px white",
+            "whiteSpace": "pre",
+            "wordBreak": "normal",
+            "wordSpacing": "normal",
+            "wordWrap": "normal",
+          }
+        }
+      >
+        yarn install formol
+      </code>
+    </pre>
+    <p>
+      (Optional but very recommended) Enable code-splitting with webpack by adding to your jsx babel rule in your webpack.config.js:
+    </p>
+    <pre
+      style={
+        Object {
+          "MozHyphens": "none",
+          "MozTabSize": "4",
+          "OTabSize": "4",
+          "WebkitHyphens": "none",
+          "background": "#f5f2f0",
+          "color": "black",
+          "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+          "hyphens": "none",
+          "lineHeight": "1.5",
+          "margin": ".5em 0",
+          "msHyphens": "none",
+          "overflow": "auto",
+          "padding": "1em",
+          "tabSize": "4",
+          "textAlign": "left",
+          "textShadow": "0 1px white",
+          "whiteSpace": "pre",
+          "wordBreak": "normal",
+          "wordSpacing": "normal",
+          "wordWrap": "normal",
+        }
+      }
+    >
+      <code
+        style={
+          Object {
+            "MozHyphens": "none",
+            "MozTabSize": "4",
+            "OTabSize": "4",
+            "WebkitHyphens": "none",
+            "background": "none",
+            "color": "black",
+            "fontFamily": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+            "hyphens": "none",
+            "lineHeight": "1.5",
+            "msHyphens": "none",
+            "tabSize": "4",
+            "textAlign": "left",
+            "textShadow": "0 1px white",
+            "whiteSpace": "pre",
+            "wordBreak": "normal",
+            "wordSpacing": "normal",
+            "wordWrap": "normal",
+          }
+        }
+      >
+        include
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#690",
+            }
+          }
+        >
+          "node_modules/formol"
+        </span>
+      </code>
+    </pre>
+    <p>
+      Now you are all set. Next you can browse this storybook to find most formol features illustrated with state interaction (state tab), attribute live editting (knobs tab) and source code (story tab) on the right panel.
+    </p>
+    <p>
+      But before going too deep, let’s take a look at the two following exemples:
+    </p>
+  </article>
+  <article
+    className={
+      Block {
+        "block": "Home",
         "element": "exemple",
         "mixed": Array [],
         "modifier": Object {},
@@ -39363,9 +39606,9 @@ exports[`Storyshots Home Home 1`] = `
       }
     }
   >
-    <h2>
-      Formol is an simple and elegant form library for React.
-    </h2>
+    <h3>
+      Formol is a simple and elegant form library for React.
+    </h3>
     <div
       className={
         Block {
@@ -40526,9 +40769,9 @@ exports[`Storyshots Home Home 1`] = `
       }
     }
   >
-    <h2>
+    <h3>
       Yet it is quite a powerful one
-    </h2>
+    </h3>
     <div
       className={
         Block {
