@@ -33,7 +33,7 @@ export default class FieldSet extends React.PureComponent {
             key={choice}
             className={b
               .e('label')
-              .m({ on: isChecked(choice, value), focused: focused === choice })}
+              .m({ on: isChecked(choice, value), focus: focused === choice })}
           >
             <BooleanField
               {...props}
