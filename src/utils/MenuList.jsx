@@ -7,13 +7,12 @@ export default (listDefaultHeight = 19, listApproximatedLengthBreak = 50) =>
   class MenuList extends React.PureComponent {
     constructor(props) {
       super(props)
-      this.list = React.createRef()
       this.itemSize = this.itemSize.bind(this)
 
       this.state = {
         rawChildren: null,
         maxHeight: null,
-        _list: this.list,
+        initialScrollOffset: 0,
       }
     }
 
@@ -48,10 +47,6 @@ export default (listDefaultHeight = 19, listApproximatedLengthBreak = 50) =>
         )
 
         const estimatedItemSize = Math.floor(totalHeight / itemCount)
-        if (initialScrollOffset !== state.initialScrollOffset) {
-          state._list.current &&
-            state._list.current.scrollTo(initialScrollOffset)
-        }
 
         return {
           height,
@@ -84,7 +79,6 @@ export default (listDefaultHeight = 19, listApproximatedLengthBreak = 50) =>
       return (
         <div ref={innerRef}>
           <VariableSizeList
-            ref={this.list}
             height={height}
             itemCount={itemCount}
             itemSize={this.itemSize}

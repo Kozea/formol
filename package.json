@@ -37,7 +37,8 @@
       "<rootDir>/test/setup.js"
     ],
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!src/i18n/*"
     ],
     "testURL": "http://localhost/"
   },

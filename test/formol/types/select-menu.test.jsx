@@ -550,4 +550,87 @@ describe('Select Menu field', () => {
 
     expect(selectOptions()).toHaveLength(1)
   })
+  it('handles lot of choices', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ selectMenu: '4831' }}>
+        <Field
+          type="select-menu"
+          choices={Array(5000)
+            .fill()
+            .map((_, i) => `${i}`)}
+        >
+          Select Menu
+        </Field>
+      </Formol>
+    )
+    const asyncWrapper = () => wrapper.find('AsyncWrapper')
+    expect(asyncWrapper().text()).toEqual('Loading')
+    await asyncWrapper().instance()._promise
+    wrapper.update()
+    expect(asyncWrapper().text()).not.toEqual('Loading')
+
+    const input = () =>
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
+
+    const singleValue = () => wrapper.find('SingleValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
+    const selectInput = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+
+    expect(input().props().defaultValue).toEqual('4831')
+    expect(singleValue().text()).toEqual('4831')
+    expect(selectOptions()).toHaveLength(0)
+    expect(selectMenu()).toHaveLength(0)
+    await selectInput().simulate('focus')
+    await selectControl().simulate('mousedown', { button: 0 })
+
+    await selectInput().simulate('focus')
+    // Hard setting value since the react-select
+    // handler is based on e.currentTarget
+    selectInput().getDOMNode().value = '834'
+    await selectInput().simulate('change', { target: { value: '834' } })
+
+    expect(selectOptions()).toHaveLength(5)
+    await selectOptions()
+      .at(3)
+      .simulate('click')
+
+    selectInput().getDOMNode().value = '83'
+    await selectInput().simulate('change', { target: { value: '83' } })
+
+    await selectInput().simulate('blur')
+
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
+
+    expect(input().props().defaultValue).toEqual('3834')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).toHaveBeenCalled()
+    expect(onSubmit).toHaveBeenCalledWith(
+      { selectMenu: '3834' },
+      { selectMenu: '4831' },
+      ['selectMenu']
+    )
+    expect(input().props().defaultValue).toEqual('3834')
+
+    wrapper.unmount()
+  })
 })

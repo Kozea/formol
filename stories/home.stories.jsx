@@ -3,7 +3,6 @@ import './home.sass'
 
 import { Block } from 'bemboo'
 import React from 'react'
-
 import { storiesOf } from '@storybook/react'
 import SyntaxHighlighter, {
   registerLanguage,
@@ -63,7 +62,7 @@ const Exemple2 = () => (
       firstname:
         (firstname ? firstname.length : 0) + (lastname ? lastname.length : 0) <=
         6
-          ? 'Your fullname must be greater than 6 characters.'
+          ? 'Your full name must be greater than 6 characters.'
           : null,
     })}
     // eslint-disable-next-line no-alert
@@ -98,7 +97,7 @@ const Exemple2 = () => (
       type="select-menu"
       choices={[
         'Africa',
-        'Antartica',
+        'Antarctica',
         'Asia',
         'Europe',
         'North America',
@@ -213,6 +212,11 @@ storiesOf('Home', module)
               redux-api-unrest
             </a>
           </li>
+          <li>
+            <a href="https://coveralls.io/github/Kozea/formol">
+              100% test coverage
+            </a>
+          </li>
         </ul>
       </article>
       <article className={b.e('quick-start')}>
@@ -292,7 +296,7 @@ storiesOf('Home', module)
               firstname:
                 (firstname ? firstname.length : 0) +
                 (lastname ? lastname.length : 0) <= 6
-                  ? 'Your fullname must be greater than 6 characters.'
+                  ? 'Your full name must be greater than 6 characters.'
                   : null,
             })}
             // eslint-disable-next-line no-alert
@@ -329,7 +333,7 @@ storiesOf('Home', module)
               type="select-menu"
               choices={[
                 'Africa',
-                'Antartica',
+                'Antarctica',
                 'Asia',
                 'Europe',
                 'North America',

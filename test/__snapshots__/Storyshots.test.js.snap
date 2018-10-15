@@ -39422,6 +39422,13 @@ exports[`Storyshots Home Home 1`] = `
           redux-api-unrest
         </a>
       </li>
+      <li>
+        <a
+          href="https://coveralls.io/github/Kozea/formol"
+        >
+          100% test coverage
+        </a>
+      </li>
     </ul>
   </article>
   <article
@@ -42145,7 +42152,7 @@ rules
               }
             }
           >
-            'Your fullname must be greater than 6 characters.'
+            'Your full name must be greater than 6 characters.'
           </span>
           
         
@@ -44862,7 +44869,7 @@ rules
                   }
                 }
               >
-                'Antartica'
+                'Antarctica'
               </span>
               <span
                 className={
