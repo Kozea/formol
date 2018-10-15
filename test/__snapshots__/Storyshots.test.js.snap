@@ -39498,7 +39498,7 @@ exports[`Storyshots Home Home 1`] = `
       </code>
     </pre>
     <p>
-      (Optional but very recommended) Enable code-splitting with webpack by adding to your jsx babel rule in your webpack.config.js:
+      Optional but very recommended, enable code-splitting with webpack by adding to your jsx babel rule in your webpack.config.js:
     </p>
     <pre
       style={
@@ -39549,7 +39549,130 @@ exports[`Storyshots Home Home 1`] = `
           }
         }
       >
-        include
+        module
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          {
+        </span>
+        
+rules
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          [
+        </span>
+        
+  
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          {
+        </span>
+        
+    test
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#e90",
+            }
+          }
+        >
+          /.js$/
+        </span>
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          ,
+        </span>
+        
+    include
         <span
           className={
             Array [
@@ -39579,10 +39702,167 @@ exports[`Storyshots Home Home 1`] = `
         >
           "node_modules/formol"
         </span>
+          
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "slategray",
+            }
+          }
+        >
+          // &lt;- this line allows formol
+        </span>
+        
+    use
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          {
+        </span>
+                                  
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "slategray",
+            }
+          }
+        >
+          //    to be built alongside
+        </span>
+        
+      loader
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#690",
+            }
+          }
+        >
+          "babel-loader"
+        </span>
+                
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "slategray",
+            }
+          }
+        >
+          //    your project
+        </span>
+        
+    
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          }
+        </span>
+        
+  
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          }
+        </span>
+        
+
+        <span
+          className={
+            Array [
+              "token",
+            ]
+          }
+          style={
+            Object {
+              "color": "#999",
+            }
+          }
+        >
+          ]
+        </span>
+        
+
       </code>
     </pre>
     <p>
-      Now you are all set. Next you can browse this storybook to find most formol features illustrated with state interaction (state tab), attribute live editting (knobs tab) and source code (story tab) on the right panel.
+      Now you are all set. Next you can browse this storybook to find most formol features illustrated with state interaction (state tab), attribute live editing (knobs tab) and source code (story tab) on the right panel.
     </p>
     <p>
       But before going too deep, let’s take a look at the two following exemples:
@@ -39607,7 +39887,7 @@ exports[`Storyshots Home Home 1`] = `
     }
   >
     <h3>
-      Formol is a simple and elegant form library for React.
+      Simple and elegant
     </h3>
     <div
       className={
@@ -40770,7 +41050,7 @@ exports[`Storyshots Home Home 1`] = `
     }
   >
     <h3>
-      Yet it is quite a powerful one
+      Powerful
     </h3>
     <div
       className={
@@ -40839,6 +41119,548 @@ exports[`Storyshots Home Home 1`] = `
             }
           }
         >
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#07a",
+              }
+            }
+          >
+            const
+          </span>
+           item 
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "background": "hsla(0, 0%, 100%, .5)",
+                "color": "#9a6e3a",
+              }
+            }
+          >
+            =
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            {
+          </span>
+          
+  firstname
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            'John'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+  lastname
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            'Doe'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+  birth
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            '1988-04-12'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+  address
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            {
+          </span>
+          
+    zip
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            '82937'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+    city
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            'Los Angeles'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+    continent
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            'North America'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+  
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            }
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+  fastShipping
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#905",
+              }
+            }
+          >
+            true
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+  colors
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            :
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            [
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            '#00ffff'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+           
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            '#008000'
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ]
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            ,
+          </span>
+          
+
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#999",
+              }
+            }
+          >
+            }
+          </span>
+          
+
+
           <span
             className={
               Array [
@@ -41662,6 +42484,37 @@ exports[`Storyshots Home Home 1`] = `
             }
           >
             }
+          </span>
+          
+  submitText
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "background": "hsla(0, 0%, 100%, .5)",
+                "color": "#9a6e3a",
+              }
+            }
+          >
+            =
+          </span>
+          <span
+            className={
+              Array [
+                "token",
+              ]
+            }
+            style={
+              Object {
+                "color": "#690",
+              }
+            }
+          >
+            "Show me the new item"
           </span>
           
 
@@ -44883,7 +45736,7 @@ exports[`Storyshots Home Home 1`] = `
               >
                 "
               </span>
-              checkbox
+              switch
               <span
                 className={
                   Array [
@@ -46220,7 +47073,7 @@ exports[`Storyshots Home Home 1`] = `
                   }
                 }
               >
-                'This price equals the number of letters in this form '
+                'This price equals the number of letters '
               </span>
                
               <span
@@ -46252,10 +47105,94 @@ exports[`Storyshots Home Home 1`] = `
                   }
                 }
               >
-                '(because why not)'
+                'in this form (because why not)'
               </span>
               
       
+              <span
+                className={
+                  Array [
+                    "token",
+                  ]
+                }
+                style={
+                  Object {
+                    "color": "#999",
+                  }
+                }
+              >
+                }
+              </span>
+            </span>
+            
+      
+            <span
+              className={
+                Array [
+                  "token",
+                ]
+              }
+              style={
+                Object {
+                  "color": "#690",
+                }
+              }
+            >
+              max
+            </span>
+            <span
+              className={
+                Array [
+                  "token",
+                  "script",
+                  "language-javascript",
+                ]
+              }
+              style={Object {}}
+            >
+              <span
+                className={
+                  Array [
+                    "token",
+                    "script-punctuation",
+                  ]
+                }
+                style={
+                  Object {
+                    "color": "#999",
+                  }
+                }
+              >
+                =
+              </span>
+              <span
+                className={
+                  Array [
+                    "token",
+                  ]
+                }
+                style={
+                  Object {
+                    "color": "#999",
+                  }
+                }
+              >
+                {
+              </span>
+              <span
+                className={
+                  Array [
+                    "token",
+                  ]
+                }
+                style={
+                  Object {
+                    "color": "#905",
+                  }
+                }
+              >
+                100
+              </span>
               <span
                 className={
                   Array [
@@ -46553,7 +47490,7 @@ exports[`Storyshots Home Home 1`] = `
               >
                 "
               </span>
-              color
+              colors
               <span
                 className={
                   Array [
@@ -48372,9 +49309,9 @@ exports[`Storyshots Home Home 1`] = `
                 "name": "fastShipping",
                 "readOnly": undefined,
                 "required": false,
-                "type": "checkbox",
+                "type": "switch",
               },
-              "s": "Formol_Field Formol_Field--type-checkbox Formol_Field--name-fastShipping",
+              "s": "Formol_Field Formol_Field--type-switch Formol_Field--name-fastShipping",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -48391,10 +49328,8 @@ exports[`Storyshots Home Home 1`] = `
                 "block": "Field",
                 "element": "label",
                 "mixed": Array [],
-                "modifier": Object {
-                  "on": true,
-                },
-                "s": "Formol_Field__label Formol_Field__label--on",
+                "modifier": Object {},
+                "s": "Formol_Field__label",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -48443,45 +49378,16 @@ exports[`Storyshots Home Home 1`] = `
                 />
               </svg>
             </span>
-            <input
-              checked={true}
+            <div
               className={
                 Block {
-                  "block": "BooleanField",
+                  "block": "SwitchButton",
                   "element": null,
-                  "mixed": Array [
-                    Block {
-                      "block": "CheckboxField",
-                      "element": null,
-                      "mixed": Array [
-                        Block {
-                          "block": "Field",
-                          "element": "element",
-                          "mixed": Array [],
-                          "modifier": Object {},
-                          "s": "Formol_Field__element",
-                          "settings": Object {
-                            "elementDelimiter": "__",
-                            "modifierDelimiter": "--",
-                            "modifierValueDelimiter": "-",
-                            "namespace": "Formol_",
-                          },
-                          "subs": Array [],
-                        },
-                      ],
-                      "modifier": Object {},
-                      "s": "Formol_CheckboxField Formol_Field__element",
-                      "settings": Object {
-                        "elementDelimiter": "__",
-                        "modifierDelimiter": "--",
-                        "modifierValueDelimiter": "-",
-                        "namespace": "Formol_",
-                      },
-                      "subs": Array [],
-                    },
-                  ],
-                  "modifier": Object {},
-                  "s": "Formol_BooleanField Formol_CheckboxField Formol_Field__element",
+                  "mixed": Array [],
+                  "modifier": Object {
+                    "mode": "switch",
+                  },
+                  "s": "Formol_SwitchButton Formol_SwitchButton--mode-switch",
                   "settings": Object {
                     "elementDelimiter": "__",
                     "modifierDelimiter": "--",
@@ -48491,13 +49397,77 @@ exports[`Storyshots Home Home 1`] = `
                   "subs": Array [],
                 }
               }
-              name="fastShipping"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              type="checkbox"
-            />
+            >
+              <label
+                htmlFor="fastShipping"
+              >
+                No
+              </label>
+              <input
+                checked={true}
+                className={
+                  Block {
+                    "block": "BooleanField",
+                    "element": null,
+                    "mixed": Array [
+                      Block {
+                        "block": "SwitchField",
+                        "element": null,
+                        "mixed": Array [
+                          Block {
+                            "block": "Field",
+                            "element": "element",
+                            "mixed": Array [],
+                            "modifier": Object {},
+                            "s": "Formol_Field__element",
+                            "settings": Object {
+                              "elementDelimiter": "__",
+                              "modifierDelimiter": "--",
+                              "modifierValueDelimiter": "-",
+                              "namespace": "Formol_",
+                            },
+                            "subs": Array [],
+                          },
+                        ],
+                        "modifier": Object {},
+                        "s": "Formol_SwitchField Formol_Field__element",
+                        "settings": Object {
+                          "elementDelimiter": "__",
+                          "modifierDelimiter": "--",
+                          "modifierValueDelimiter": "-",
+                          "namespace": "Formol_",
+                        },
+                        "subs": Array [],
+                      },
+                    ],
+                    "modifier": Object {},
+                    "s": "Formol_BooleanField Formol_SwitchField Formol_Field__element",
+                    "settings": Object {
+                      "elementDelimiter": "__",
+                      "modifierDelimiter": "--",
+                      "modifierValueDelimiter": "-",
+                      "namespace": "Formol_",
+                    },
+                    "subs": Array [],
+                  }
+                }
+                id="fastShipping"
+                name="fastShipping"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                type="checkbox"
+              />
+              <label
+                htmlFor="fastShipping"
+              />
+              <label
+                htmlFor="fastShipping"
+              >
+                Yes
+              </label>
+            </div>
           </label>
         </div>
         <div
@@ -48630,6 +49600,7 @@ exports[`Storyshots Home Home 1`] = `
                 }
               }
               disabled={true}
+              max={100}
               min={0}
               name="price"
               onBlur={[Function]}
@@ -48673,12 +49644,12 @@ exports[`Storyshots Home Home 1`] = `
                 "error": false,
                 "focus": false,
                 "modified": false,
-                "name": "color",
+                "name": "colors",
                 "readOnly": undefined,
                 "required": false,
                 "type": "checkbox-set",
               },
-              "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-color",
+              "s": "Formol_Field Formol_Field--type-checkbox-set Formol_Field--name-colors",
               "settings": Object {
                 "elementDelimiter": "__",
                 "modifierDelimiter": "--",
@@ -48725,7 +49696,7 @@ exports[`Storyshots Home Home 1`] = `
                 }
               }
             >
-              Choose some colors
+              Choose your colors
             </span>
             <fieldset
               className={
@@ -48814,7 +49785,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -48917,7 +49888,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49020,7 +49991,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49123,7 +50094,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49164,9 +50135,9 @@ exports[`Storyshots Home Home 1`] = `
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
-                      "on": false,
+                      "on": true,
                     },
-                    "s": "Formol_FieldSet__label",
+                    "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
                     "settings": Object {
                       "elementDelimiter": "__",
                       "modifierDelimiter": "--",
@@ -49178,7 +50149,7 @@ exports[`Storyshots Home Home 1`] = `
                 }
               >
                 <input
-                  checked={false}
+                  checked={true}
                   className={
                     Block {
                       "block": "BooleanField",
@@ -49226,7 +50197,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49267,9 +50238,9 @@ exports[`Storyshots Home Home 1`] = `
                     "element": "label",
                     "mixed": Array [],
                     "modifier": Object {
-                      "on": false,
+                      "on": true,
                     },
-                    "s": "Formol_FieldSet__label",
+                    "s": "Formol_FieldSet__label Formol_FieldSet__label--on",
                     "settings": Object {
                       "elementDelimiter": "__",
                       "modifierDelimiter": "--",
@@ -49281,7 +50252,7 @@ exports[`Storyshots Home Home 1`] = `
                 }
               >
                 <input
-                  checked={false}
+                  checked={true}
                   className={
                     Block {
                       "block": "BooleanField",
@@ -49329,7 +50300,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49432,7 +50403,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49535,7 +50506,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49638,7 +50609,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49741,7 +50712,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49844,7 +50815,7 @@ exports[`Storyshots Home Home 1`] = `
                     }
                   }
                   multiple={true}
-                  name="color"
+                  name="colors"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -49910,7 +50881,7 @@ exports[`Storyshots Home Home 1`] = `
           onClick={[Function]}
           type="button"
         >
-          Submit
+          Show me the new item
         </button>
         <button
           className={
