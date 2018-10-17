@@ -20,6 +20,10 @@ export const DELIMITER = '__/__'
 @memoizedChoices
 @block
 export default class SelectMenuField extends React.PureComponent {
+  static defaultProps = {
+    virtualizedThreshold: 100,
+  }
+
   constructor(props) {
     super(props)
     this.state = {
@@ -148,10 +152,11 @@ export default class SelectMenuField extends React.PureComponent {
       styles,
       listApproximatedLengthBreak,
       listDefaultHeight,
+      virtualizedThreshold,
       ...props
     } = this.props
     const { value, options } = this.state
-
+    const virtualized = options.length > virtualizedThreshold
     return (
       <div className={b}>
         <Select
@@ -163,10 +168,14 @@ export default class SelectMenuField extends React.PureComponent {
           value={value}
           components={{
             ...(animated === false ? {} : makeAnimated()),
-            MenuList: getMenuList(
-              listDefaultHeight,
-              listApproximatedLengthBreak
-            ),
+            ...(virtualized
+              ? {
+                  MenuList: getMenuList(
+                    listDefaultHeight,
+                    listApproximatedLengthBreak
+                  ),
+                }
+              : {}),
           }}
           onChange={this.handleChange}
           onFocus={onFocus}

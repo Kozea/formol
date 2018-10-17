@@ -173,5 +173,8 @@ export const knobs = name => {
   if (name === 'money') {
     knob.precision = number('Precision', null, {}, name)
   }
+  if (name === 'select-menu') {
+    knob.virtualizedThreshold = number('Virtualized Threshold', null, {}, name)
+  }
   return knob
 }
