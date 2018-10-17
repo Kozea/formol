@@ -1,3 +1,9 @@
+### [2.3.2](https://github.com/Kozea/formol/compare/v2.3.1...v2.3.2)
+
+- Add a `virtualizedThreshold` to virtualize select-menu choices only if it exceeds a defined number of options (100 by default)
+- Keep select-menu virtualized focused element into view (#39)
+- Cosmetic improvement for read-only and switch button
+
 ### [2.3.1](https://github.com/Kozea/formol/compare/v2.3.0...v2.3.1)
 
 - Repair publishing by removing home from storyshots

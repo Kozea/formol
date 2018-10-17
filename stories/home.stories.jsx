@@ -175,8 +175,7 @@ storiesOf('Home', module)
         Formol <small className={b.e('version')}>{pkg.version}</small>
       </h1>
       <article className={b.e('highlights')}>
-        Formol is a full featured object edition oriented form framework for
-        React.
+        Formol is a full featured object edition form framework for React.
         <ul>
           <li>Native field types</li>
           <li>
