@@ -19,12 +19,18 @@
       &__title
         font-size: $formol-font-size * .7
 
-      &__element
-        +read-only-field__element
+    .Formol_InputField, .Formol_TextAreaField, .Formol_PasswordField__wrapper, .Formol_FileField, .Formol_HTMLField
+      +read-only-field__element
 
-    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
-      -webkit-appearance: none
-      margin: 0
+    .Formol_Field
+      &--type-date, &--type-time
+        &__element[type=date]
+          -moz-appearance: textfield
+          border: none
+          clip-path: inset(0 17px 0 0)
+          outline: none
+          outline: 0
+
 
   // states
   &:hover
