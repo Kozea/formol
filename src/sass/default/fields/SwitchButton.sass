@@ -1,16 +1,25 @@
 .Formol_Field--type-switch
   position: relative
 
-  .Formol_Field__label > .Formol_Field__element
+  .Formol_Field__label
+    > .Formol_Field__element
       background-color: transparent
       border: 0
       color: inherit
       margin: .75em 0
       padding: 0
 
+    &--on
+      color: $formol-color
+
+      input[type='checkbox'] + label
+        &::after
+          color: $formol-color-action
+
   label
     cursor: pointer
     display: inline-block
+
 
   // Switch
 .Formol_SwitchButton
