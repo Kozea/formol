@@ -5,6 +5,12 @@ import SwitchButton from '../utils/SwitchButton'
 
 @block
 export default class SwitchField extends React.PureComponent {
+  static defaultFieldProps = {
+    classNameModifiers: (_, value) => ({
+      label: { on: value },
+    }),
+  }
+
   render(b) {
     const {
       type,

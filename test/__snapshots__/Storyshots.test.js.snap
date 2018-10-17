@@ -58,7 +58,9 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "elementDelimiter": "__",
@@ -824,7 +826,9 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "elementDelimiter": "__",
@@ -1169,7 +1173,9 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "elementDelimiter": "__",
@@ -1621,7 +1627,9 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "elementDelimiter": "__",
@@ -4389,7 +4397,9 @@ exports[`Storyshots Field Test All fields 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "elementDelimiter": "__",
@@ -11064,8 +11074,10 @@ Area"
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "elementDelimiter": "__",
             "modifierDelimiter": "--",
@@ -22974,7 +22986,9 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
+          "modifier": Object {
+            "on": "",
+          },
           "s": "Formol_Field__label",
           "settings": Object {
             "elementDelimiter": "__",
@@ -31641,8 +31655,10 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "elementDelimiter": "__",
             "modifierDelimiter": "--",
@@ -37014,8 +37030,10 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           "block": "Field",
           "element": "label",
           "mixed": Array [],
-          "modifier": Object {},
-          "s": "Formol_Field__label",
+          "modifier": Object {
+            "on": true,
+          },
+          "s": "Formol_Field__label Formol_Field__label--on",
           "settings": Object {
             "elementDelimiter": "__",
             "modifierDelimiter": "--",
