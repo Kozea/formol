@@ -87,6 +87,83 @@ describe('Select Menu field', () => {
 
     wrapper.unmount()
   })
+  it('handles changes in simple but virtualized', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ selectMenu: 'II' }}>
+        <Field
+          type="select-menu"
+          choices={{
+            one: 1,
+            two: 'II',
+            three: true,
+          }}
+          virtualizedThreshold={2}
+        >
+          Select Menu
+        </Field>
+      </Formol>
+    )
+    const asyncWrapper = () => wrapper.find('AsyncWrapper')
+    expect(asyncWrapper().text()).toEqual('Loading')
+    await asyncWrapper().instance()._promise
+    wrapper.update()
+    expect(asyncWrapper().text()).not.toEqual('Loading')
+
+    const input = () =>
+      wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
+
+    const singleValue = () => wrapper.find('SingleValue')
+    const selectControl = () =>
+      wrapper
+        .find('Control')
+        .find('div')
+        .first()
+    const selectOptions = () => wrapper.find('MenuList').find('Option')
+    const selectMenu = () => wrapper.find('Menu')
+    const selectInput = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+
+    expect(input().props().defaultValue).toEqual('II')
+    expect(singleValue().text()).toEqual('two')
+    expect(selectOptions()).toHaveLength(0)
+    expect(selectMenu()).toHaveLength(0)
+    await selectInput().simulate('focus')
+    await selectControl().simulate('mousedown', { button: 0 })
+
+    expect(selectOptions()).toHaveLength(3)
+    await selectOptions()
+      .at(0)
+      .simulate('click')
+
+    await selectInput().simulate('blur')
+
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
+
+    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+
+    await submit().simulate('click')
+
+    expect(onSubmit).toHaveBeenCalled()
+    expect(onSubmit).toHaveBeenCalledWith(
+      { selectMenu: 1 },
+      { selectMenu: 'II' },
+      ['selectMenu']
+    )
+    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+
+    wrapper.unmount()
+  })
   it('cancels changes', async () => {
     const onSubmit = jest.fn()
     const wrapper = mount(
@@ -550,7 +627,7 @@ describe('Select Menu field', () => {
 
     expect(selectOptions()).toHaveLength(1)
   })
-  it('handles lot of choices', async () => {
+  it('handles lot of choices with virtualization', async () => {
     const onSubmit = jest.fn()
     const wrapper = mount(
       <Formol onSubmit={onSubmit} item={{ selectMenu: '4831' }}>
@@ -603,6 +680,11 @@ describe('Select Menu field', () => {
     await selectInput().simulate('focus')
     // Hard setting value since the react-select
     // handler is based on e.currentTarget
+    selectInput().getDOMNode().value = '8341'
+    await selectInput().simulate('change', { target: { value: '8341' } })
+
+    expect(selectOptions()).toHaveLength(0)
+
     selectInput().getDOMNode().value = '834'
     await selectInput().simulate('change', { target: { value: '834' } })
 

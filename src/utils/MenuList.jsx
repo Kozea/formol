@@ -46,18 +46,13 @@ export default (listDefaultHeight = 19, listApproximatedLengthBreak = 50) =>
         const height = Math.min(maxHeight, totalHeight)
         const itemCount = children.length
 
-        const focusedIndex = children.findIndex(
-          ({ props: { isFocused } }) => isFocused
-        )
-
         const currentIndex = Math.max(
-          0,
-          focusedIndex === -1
-            ? children.findIndex(({ props: { isSelected } }) => isSelected)
-            : focusedIndex
+          children.findIndex(({ props: { isFocused } }) => isFocused),
+          0
         )
 
         const estimatedItemSize = Math.floor(totalHeight / itemCount)
+
         return {
           height,
           itemCount,
