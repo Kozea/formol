@@ -1,3 +1,8 @@
+### [2.3.3](https://github.com/Kozea/formol/compare/v2.3.2...v2.3.3)
+
+- Remove form buttons when no onSubmit is provided.
+- Cosmetic fix for Inliner
+
 ### [2.3.2](https://github.com/Kozea/formol/compare/v2.3.1...v2.3.2)
 
 - Add a `virtualizedThreshold` to virtualize select-menu choices only if it exceeds a defined number of options (100 by default)
