@@ -1,4 +1,5 @@
 /* eslint-disable react/no-multi-comp */
+
 import React from 'react'
 
 import { mount } from 'enzyme'
@@ -13,18 +14,22 @@ describe('Formol', () => {
     expect(wrapper.find('form')).toBeTruthy()
     expect(wrapper.unmount()).toBeTruthy()
   })
-  it('contains a submit button', () => {
+  it('does not contains a submit button by default', () => {
     const wrapper = mount(<Formol />)
+    expect(wrapper.find('.Formol_Formol__submit')).toHaveLength(0)
+  })
+  it('contains a submit button when onSubmit is provided', () => {
+    const wrapper = mount(<Formol onSubmit={() => {}} />)
     expect(wrapper.find('.Formol_Formol__submit')).toBeTruthy()
     expect(wrapper.find('.Formol_Formol__submit').text()).toEqual('Submit')
   })
   it('contains a cancel button', () => {
-    const wrapper = mount(<Formol />)
+    const wrapper = mount(<Formol onSubmit={() => {}} />)
     expect(wrapper.find('.Formol_Formol__cancel')).toBeTruthy()
     expect(wrapper.find('.Formol_Formol__cancel').text()).toEqual('Cancel')
   })
   it('contains nothing else', () => {
-    const wrapper = mount(<Formol />)
+    const wrapper = mount(<Formol onSubmit={() => {}} />)
     expect(
       wrapper
         .find('form')

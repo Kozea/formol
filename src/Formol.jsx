@@ -1,7 +1,9 @@
-import deepEqual from 'deep-equal'
 import React from 'react'
+import deepEqual from 'deep-equal'
 
-import BooleanField from './fields/BooleanField'
+import { FormolContext } from './FormolContext'
+import { block } from './utils'
+import { get, insert, isModified } from './utils/object'
 import CalendarField from './fields/CalendarField'
 import CheckboxField from './fields/CheckboxField'
 import CheckboxSetField from './fields/CheckboxSetField'
@@ -27,11 +29,8 @@ import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
 import TimeField from './fields/TimeField'
 import WeekField from './fields/WeekField'
-import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
-import { block } from './utils'
-import { get, insert, isModified } from './utils/object'
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
@@ -358,6 +357,7 @@ export default class Formol extends React.PureComponent {
       allowUnmodifiedSubmit,
       extra,
       classes,
+      onSubmit,
     } = this.props
     const { loading, context, modified } = this.state
     return (
@@ -372,35 +372,36 @@ export default class Formol extends React.PureComponent {
         <FormolContext.Provider value={context}>
           {children}
         </FormolContext.Provider>
-        {!readOnly && (
-          <>
-            {/* This input is required to validate the form
+        {!readOnly &&
+          onSubmit && (
+            <>
+              {/* This input is required to validate the form
               if reportValidity isn't available */}
-            <input
-              type="submit"
-              ref={this.submit}
-              style={{ display: 'none' }}
-            />
-            <button
-              onClick={this.handleSubmit}
-              className={b.e('submit').mix(classes.submit)}
-              disabled={!modified && !allowUnmodifiedSubmit}
-              type="button"
-            >
-              {submitText || context.i18n.submit}
-            </button>
-            {!noCancel && (
+              <input
+                type="submit"
+                ref={this.submit}
+                style={{ display: 'none' }}
+              />
               <button
-                onClick={this.handleCancel}
-                className={b.e('cancel').mix(classes.cancel)}
-                disabled={!modified}
+                onClick={this.handleSubmit}
+                className={b.e('submit').mix(classes.submit)}
+                disabled={!modified && !allowUnmodifiedSubmit}
                 type="button"
               >
-                {cancelText || context.i18n.cancel}
+                {submitText || context.i18n.submit}
               </button>
-            )}
-          </>
-        )}
+              {!noCancel && (
+                <button
+                  onClick={this.handleCancel}
+                  className={b.e('cancel').mix(classes.cancel)}
+                  disabled={!modified}
+                  type="button"
+                >
+                  {cancelText || context.i18n.cancel}
+                </button>
+              )}
+            </>
+          )}
         {extra && extra(this.state)}
       </form>
     )

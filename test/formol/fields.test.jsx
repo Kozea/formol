@@ -106,11 +106,6 @@ describe('Formol field', () => {
     // Using getter here as https://github.com/airbnb/enzyme/issues/76
     const field = () => wrapper.find('Field')
     const input = () => field().find('input')
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 'ba' } })
@@ -119,13 +114,10 @@ describe('Formol field', () => {
 
     expect(onChange).toHaveBeenCalledTimes(2)
     expect(onChange).toHaveBeenCalledWith({ foo: 'baz' })
-
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
   })
   it('cancels changes', async () => {
     const wrapper = mount(
-      <Formol item={{ foo: 'bar' }}>
+      <Formol item={{ foo: 'bar' }} onSubmit={() => {}}>
         <Field name="foo" />
       </Formol>
     )
