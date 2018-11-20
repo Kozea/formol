@@ -7,27 +7,18 @@
     box-shadow: none
     color: inherit
     padding: 0
+    position: relative
 
-    > * > *
-      border: 0 !important
-      box-shadow: none !important
+    &__hidden-input
+      +hidden-input
+
+    &__control
+      border: 0
+      box-shadow: none
 
     &__menu
-      border: solid 1px $formol-color-action !important
-
-  .Select--multi .Select-value
-    display: inline-flex
-
-  .Select-menu-outer
-    > * > * > * > *
-      position: relative
-
-      > *
-        // max-width: 100%
-        overflow: hidden
-        text-overflow: ellipsis
-        white-space: nowrap
-        width: 100%
+      border: solid 1px $formol-color-action
+      box-shadow: none
 
 .Formol_Field--readOnly
   .Select-control
@@ -39,16 +30,3 @@
 
   .Select.is-disabled > .Select-control
     background-color: transparent
-
-.Formol_SelectMenuField
-  position: relative
-
-  &__hidden-input
-    +hidden-input
-
-  .css-1rtrksz
-    max-width: 100%
-
-    > div
-      max-width: 100%
-      width: auto !important
