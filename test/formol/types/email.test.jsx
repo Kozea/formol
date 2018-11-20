@@ -38,7 +38,8 @@ describe('Email field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { email: 'fuu@bar.baz' },
       { email: 'foo@bar.baz' },
-      ['email']
+      ['email'],
+      true
     )
     expect(input().props().value).toEqual('fuu@bar.baz')
   })
@@ -120,7 +121,8 @@ describe('Email field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { email: 'bar@bar.bar' },
       { email: 'foo@bar.baz' },
-      ['email']
+      ['email'],
+      true
     )
     expect(input().props().value).toEqual('bar@bar.bar')
   })

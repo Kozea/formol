@@ -103,7 +103,8 @@ describe('File field', () => {
             type: 'image/png',
           },
         },
-        ['file']
+        ['file'],
+        true
       )
       expect(input().props().defaultValue).toEqual('molecule.svg')
 
@@ -299,7 +300,8 @@ describe('File field', () => {
             },
           ],
         },
-        ['file']
+        ['file'],
+        true
       )
       expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
 
@@ -499,7 +501,8 @@ describe('File field', () => {
             },
           ],
         },
-        ['file']
+        ['file'],
+        true
       )
       expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
 
@@ -604,7 +607,8 @@ describe('File field', () => {
           },
         ],
       },
-      ['file']
+      ['file'],
+      true
     )
     expect(input().props().defaultValue).toEqual('')
 
@@ -747,7 +751,8 @@ describe('File field', () => {
           },
         ],
       },
-      ['file']
+      ['file'],
+      true
     )
     expect(input().props().defaultValue).toEqual('molecule.svg')
 

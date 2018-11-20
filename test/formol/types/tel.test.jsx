@@ -38,7 +38,8 @@ describe('Tel field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { tel: '311-555-1212' },
       { tel: '311-555-2368' },
-      ['tel']
+      ['tel'],
+      true
     )
     expect(input().props().value).toEqual('311-555-1212')
   })
@@ -120,7 +121,8 @@ describe('Tel field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { tel: '888-235-5678' },
       { tel: '311-555-2368' },
-      ['tel']
+      ['tel'],
+      true
     )
     expect(input().props().value).toEqual('888-235-5678')
   })

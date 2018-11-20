@@ -102,9 +102,12 @@ describe('Select field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ select: 1 }, { select: 'II' }, [
-      'select',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { select: 1 },
+      { select: 'II' },
+      ['select'],
+      true
+    )
     expect(select().props().value).toEqual('##formol_memo_0')
   })
   it('cancels changes', async () => {
@@ -240,7 +243,8 @@ describe('Select field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { select: ['II', true] },
       { select: [1, 'II'] },
-      ['select']
+      ['select'],
+      true
     )
     expect(select().props().value).toEqual(['II', '##formol_memo_2'])
   })

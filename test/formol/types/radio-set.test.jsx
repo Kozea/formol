@@ -56,7 +56,8 @@ describe('Radio Set field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { radioSet: true },
       { radioSet: 'II' },
-      ['radioSet']
+      ['radioSet'],
+      true
     )
 
     expectValues(false, false, true)

@@ -38,7 +38,8 @@ describe('Color field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { color: '#c0ffee' },
       { color: '#bada55' },
-      ['color']
+      ['color'],
+      true
     )
     expect(input().props().value).toEqual('#c0ffee')
   })
@@ -122,7 +123,8 @@ describe('Color field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { color: '#deadbe' },
       { color: '#bada55' },
-      ['color']
+      ['color'],
+      true
     )
     expect(input().props().value).toEqual('#deadbe')
   })

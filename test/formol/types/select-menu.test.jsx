@@ -81,7 +81,8 @@ describe('Select Menu field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: 1 },
       { selectMenu: 'II' },
-      ['selectMenu']
+      ['selectMenu'],
+      true
     )
     expect(input().props().defaultValue).toEqual('##formol_memo_0')
 
@@ -158,7 +159,8 @@ describe('Select Menu field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: 1 },
       { selectMenu: 'II' },
-      ['selectMenu']
+      ['selectMenu'],
+      true
     )
     expect(input().props().defaultValue).toEqual('##formol_memo_0')
 
@@ -311,7 +313,8 @@ describe('Select Menu field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: ['II', true] },
       { selectMenu: [1, 'II'] },
-      ['selectMenu']
+      ['selectMenu'],
+      true
     )
     expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
   })
@@ -709,7 +712,8 @@ describe('Select Menu field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: '3834' },
       { selectMenu: '4831' },
-      ['selectMenu']
+      ['selectMenu'],
+      true
     )
     expect(input().props().defaultValue).toEqual('3834')
 

@@ -38,7 +38,8 @@ describe('Checkbox field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { checkbox: false },
       { checkbox: true },
-      ['checkbox']
+      ['checkbox'],
+      true
     )
     expect(input().props().checked).toEqual(false)
   })

@@ -43,7 +43,8 @@ describe('Password Strength field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { password: 'u#@*/p=u58+e' },
       { password: 'r"/*Nb+4)23' },
-      ['password']
+      ['password'],
+      true
     )
     expect(input().props().value).toEqual('u#@*/p=u58+e')
   })

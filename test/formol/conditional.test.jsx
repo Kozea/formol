@@ -57,7 +57,8 @@ describe('Conditional field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { ok: false, whynot: 'foo' },
       { ok: false },
-      ['ok', 'whynot']
+      ['ok', 'whynot'],
+      true
     )
     expect(input().props().value).toEqual('foo')
 
@@ -95,7 +96,8 @@ describe('Conditional field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { ok: true, why: 'bar' },
       { ok: false },
-      ['ok', 'why']
+      ['ok', 'why'],
+      true
     )
     expect(input().props().value).toEqual('bar')
     wrapper.unmount()

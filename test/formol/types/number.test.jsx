@@ -34,9 +34,12 @@ describe('Number field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ number: 1337 }, { number: 42 }, [
-      'number',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { number: 1337 },
+      { number: 42 },
+      ['number'],
+      true
+    )
     expect(input().props().value).toEqual(1337)
   })
   it('cancels changes', async () => {
@@ -118,9 +121,12 @@ describe('Number field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ number: 1664 }, { number: 42 }, [
-      'number',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { number: 1664 },
+      { number: 42 },
+      ['number'],
+      true
+    )
     expect(input().props().value).toEqual(1664)
   })
   it('prevents change when not a number', async () => {

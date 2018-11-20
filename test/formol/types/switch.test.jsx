@@ -35,9 +35,12 @@ describe('Switch field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ switch: true }, { switch: false }, [
-      'switch',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { switch: true },
+      { switch: false },
+      ['switch'],
+      true
+    )
     expect(input().props().checked).toEqual(true)
   })
   it('cancels changes', async () => {

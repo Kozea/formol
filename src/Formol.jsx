@@ -212,13 +212,14 @@ export default class Formol extends React.PureComponent {
 
   async handleSubmit() {
     const { item, onSubmit } = this.props
+    const { modified } = this.state
     const { transientItem } = this.state.context
     const { current: form } = this.form
     this.validateForm()
     if (form.checkValidity()) {
       await this.asyncSetState({ loading: true })
       const errors =
-        (await onSubmit(transientItem, item, this.fields.names)) || {}
+        (await onSubmit(transientItem, item, this.fields.names, modified)) || {}
       if (!this.mounted) {
         // Protect from unmounting in onSubmit
         return

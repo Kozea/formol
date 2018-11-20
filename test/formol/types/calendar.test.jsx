@@ -42,7 +42,8 @@ describe('Calendar field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { calendar: '2010-12-11' },
       { calendar: '2018-07-24' },
-      ['calendar']
+      ['calendar'],
+      true
     )
     expect(input().props().value).toEqual('12/11/2010')
   })
@@ -224,7 +225,8 @@ describe('Calendar field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { calendar: '2018-07-02' },
       { calendar: '2018-07-24' },
-      ['calendar']
+      ['calendar'],
+      true
     )
     expect(input().props().value).toEqual('07/02/2018')
     expect(wrapper.unmount()).toBeTruthy()
@@ -318,7 +320,8 @@ describe('Calendar field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { calendar: '2018-07-02' },
       { calendar: '2018-07-24' },
-      ['calendar']
+      ['calendar'],
+      true
     )
     expect(input().props().value).toEqual('02/07/2018')
     expect(wrapper.unmount()).toBeTruthy()

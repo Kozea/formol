@@ -4,7 +4,6 @@ import React from 'react'
 import Formol, { Field } from '../../../src'
 
 // These fields are not really testable for now
-
 ;[
   {
     type: 'date',
@@ -74,7 +73,8 @@ import Formol, { Field } from '../../../src'
       expect(onSubmit).toHaveBeenCalledWith(
         { [type]: value2 },
         { [type]: value1 },
-        [type]
+        [type],
+        true
       )
       expect(input().props().value).toEqual(value2)
     })

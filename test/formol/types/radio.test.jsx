@@ -35,9 +35,12 @@ describe('Radio field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ radio: true }, { radio: false }, [
-      'radio',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { radio: true },
+      { radio: false },
+      ['radio'],
+      true
+    )
     expect(input().props().checked).toEqual(true)
   })
   it('cancels changes', async () => {

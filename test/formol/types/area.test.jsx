@@ -37,7 +37,8 @@ describe('Textarea field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { area: 'foo\nbar\nbaz' },
       { area: 'foo\nbar' },
-      ['area']
+      ['area'],
+      true
     )
     expect(input().props().value).toEqual('foo\nbar\nbaz')
   })

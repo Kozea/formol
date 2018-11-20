@@ -106,9 +106,12 @@ describe('Formol', () => {
       await submit().simulate('click')
 
       expect(onSubmit).toHaveBeenCalled()
-      expect(onSubmit).toHaveBeenCalledWith({ text: 'bar' }, { text: 'foo' }, [
-        'text',
-      ])
+      expect(onSubmit).toHaveBeenCalledWith(
+        { text: 'bar' },
+        { text: 'foo' },
+        ['text'],
+        true
+      )
       await forCondition(
         () => wrapper.find('.Formol_Field__error-text').length,
         wrapper
@@ -125,9 +128,12 @@ describe('Formol', () => {
       await submit().simulate('click')
 
       expect(onSubmit).toHaveBeenCalled()
-      expect(onSubmit).toHaveBeenCalledWith({ text: 'baz' }, { text: 'foo' }, [
-        'text',
-      ])
+      expect(onSubmit).toHaveBeenCalledWith(
+        { text: 'baz' },
+        { text: 'foo' },
+        ['text'],
+        true
+      )
       await forCondition(
         () => !wrapper.find('.Formol_Field__error-text').length,
         wrapper
@@ -365,7 +371,8 @@ describe('Formol', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { number1: 42, number2: 43 },
       { number1: 42, number2: 49 },
-      ['number1', 'number2']
+      ['number1', 'number2'],
+      true
     )
     expect(input1().props().value).toEqual(42)
     expect(input2().props().value).toEqual(43)
@@ -552,7 +559,12 @@ describe('Formol', () => {
       await submit().simulate('click')
 
       expect(onSubmit).toHaveBeenCalled()
-      expect(onSubmit).toHaveBeenCalledWith({ text: 'foo bar' }, {}, ['text'])
+      expect(onSubmit).toHaveBeenCalledWith(
+        { text: 'foo bar' },
+        {},
+        ['text'],
+        true
+      )
       await forCondition(() => !input().props().value, wrapper)
       expect(input().props().value).toEqual('')
     },

@@ -38,7 +38,8 @@ describe('Text field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { text: 'foo bar' },
       { text: 'foo' },
-      ['text']
+      ['text'],
+      true
     )
     expect(input().props().value).toEqual('foo bar')
   })

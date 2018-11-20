@@ -178,9 +178,12 @@ describe('Formol field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ foo: 'baz' }, { foo: 'bar' }, [
-      'foo',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { foo: 'baz' },
+      { foo: 'bar' },
+      ['foo'],
+      true
+    )
   })
   it('handles dom validation', async () => {
     const onSubmit = jest.fn()
@@ -232,9 +235,12 @@ describe('Formol field', () => {
 
     await submit().simulate('click')
 
-    expect(onSubmit).toHaveBeenCalledWith({ foo: 'baz' }, { foo: 'bar' }, [
-      'foo',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { foo: 'baz' },
+      { foo: 'bar' },
+      ['foo'],
+      true
+    )
   })
   it('handles custom dom validation messages', async () => {
     const onSubmit = jest.fn()
@@ -295,9 +301,12 @@ describe('Formol field', () => {
 
     await submit().simulate('click')
 
-    expect(onSubmit).toHaveBeenCalledWith({ foo: 'baz' }, { foo: 'bar' }, [
-      'foo',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { foo: 'baz' },
+      { foo: 'bar' },
+      ['foo'],
+      true
+    )
   })
   it('raises on unknown field', () => {
     // Prevent console.error from cluttering the output

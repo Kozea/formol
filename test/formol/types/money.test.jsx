@@ -155,7 +155,8 @@ describe('Money field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { money: '2.50' },
       { money: '1.50' },
-      ['money']
+      ['money'],
+      true
     )
     expect(input().props().value).toEqual('2.50')
   })
@@ -238,9 +239,12 @@ describe('Money field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ money: '25' }, { money: '1.50' }, [
-      'money',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { money: '25' },
+      { money: '1.50' },
+      ['money'],
+      true
+    )
     expect(input().props().value).toEqual('25')
   })
   it.skip('prevents change when not a money', async () => {

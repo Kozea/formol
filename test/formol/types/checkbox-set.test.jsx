@@ -56,7 +56,8 @@ describe('Checkbox Set field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { checkboxSet: [1, true, 'II'] },
       { checkboxSet: [1, true] },
-      ['checkboxSet']
+      ['checkboxSet'],
+      true
     )
 
     expectValues(true, true, true)

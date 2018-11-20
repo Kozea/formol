@@ -99,7 +99,8 @@ describe('Html field', () => {
     expect(onSubmit).toHaveBeenCalledWith(
       { html: '<p>f<strong>oo</strong></p>' },
       { html: '<p>foo</p>' },
-      ['html']
+      ['html'],
+      true
     )
     expect(field().props().value).toEqual('<p>f<strong>oo</strong></p>')
     expect(input().props().defaultValue).toEqual('<p>f<strong>oo</strong></p>')
@@ -381,7 +382,8 @@ describe('Html field', () => {
           html: expectedHtml,
         },
         { html: '<p>foo</p>' },
-        ['html']
+        ['html'],
+        true
       )
       expect(field().props().value).toEqual(expectedHtml)
       expect(input().props().defaultValue).toEqual(expectedHtml)

@@ -43,9 +43,12 @@ describe('Range field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ range: 96 }, { range: 42 }, [
-      'range',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { range: 96 },
+      { range: 42 },
+      ['range'],
+      true
+    )
     expect(input().props().value).toEqual(96)
   })
   it('cancels changes', async () => {
@@ -127,9 +130,12 @@ describe('Range field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ range: 1664 }, { range: 42 }, [
-      'range',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { range: 1664 },
+      { range: 42 },
+      ['range'],
+      true
+    )
     expect(input().props().value).toEqual(1664)
   })
   it('prevents change when not a range', async () => {
@@ -277,9 +283,12 @@ describe('Range field', () => {
     await submit().simulate('click')
 
     expect(onSubmit).toHaveBeenCalled()
-    expect(onSubmit).toHaveBeenCalledWith({ range: 18 }, { range: 42 }, [
-      'range',
-    ])
+    expect(onSubmit).toHaveBeenCalledWith(
+      { range: 18 },
+      { range: 42 },
+      ['range'],
+      true
+    )
     expect(input().props().value).toEqual(18)
   })
   it('respects noLabel prop', () => {
