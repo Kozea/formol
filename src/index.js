@@ -10,3 +10,13 @@ export ConditionalContextWrapper, {
 
 export SwitchButton from './utils/SwitchButton'
 export unrest, { NoRequestNeeded } from './ext/unrest'
+export {
+  nullishToEmptyString,
+  emptyStringToNull,
+  get,
+  set,
+  copy,
+  insert,
+  diff,
+  isModified,
+} from './utils/object'
