@@ -160,6 +160,8 @@ export default class SelectMenuField extends React.PureComponent {
     return (
       <div className={b}>
         <Select
+          className={b.e('select')}
+          classNamePrefix={b.s}
           ref={this.select}
           isDisabled={disabled || readOnly /* There's no readOnly */}
           options={options}
