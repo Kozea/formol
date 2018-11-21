@@ -1,5 +1,7 @@
 import { withOptions } from '@storybook/addon-options'
 import { addDecorator, configure } from '@storybook/react'
+import regeneratorRuntime from 'regenerator-runtime'
+global.regeneratorRuntime = regeneratorRuntime
 
 addDecorator(
   withOptions({

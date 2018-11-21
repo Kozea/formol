@@ -4,16 +4,14 @@ import './home.sass'
 import { Block } from 'bemboo'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import SyntaxHighlighter, {
-  registerLanguage,
-} from 'react-syntax-highlighter/prism-light'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import jsx from 'react-syntax-highlighter/languages/prism/jsx'
 import prism from 'react-syntax-highlighter/styles/prism/prism'
 
 import Formol, { Conditional, Field, Inliner } from '../src'
 import pkg from '../package.json'
 
-registerLanguage('jsx', jsx)
+SyntaxHighlighter.registerLanguage('jsx', jsx)
 
 const dedent = (strs, ...values) => {
   const str = strs
