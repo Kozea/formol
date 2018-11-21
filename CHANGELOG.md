@@ -1,3 +1,9 @@
+## [2.4.0](https://github.com/Kozea/formol/compare/v2.3.3...v2.4.0)
+
+- Add `modified` argument to onSubmit for forms with `allowUnmodifiedSubmit`.
+- Make object utils importable.
+- Better select-menu cosmetics
+
 ### [2.3.3](https://github.com/Kozea/formol/compare/v2.3.2...v2.3.3)
 
 - Remove form buttons when no onSubmit is provided.
