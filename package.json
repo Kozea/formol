@@ -51,6 +51,7 @@
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
@@ -106,6 +107,7 @@
     }
   },
   "dependencies": {
+    "@babel/runtime": "^7.1.5",
     "bemboo": "^2.0.0",
     "deep-equal": "^1.0.1",
     "draft-js": "^0.10.5",
@@ -118,7 +120,6 @@
     "react-icons": "^3.2.2",
     "react-select": "^2.1.1",
     "react-window": "^1.2.4",
-    "regenerator-runtime": "^0.13.1",
     "zxcvbn": "^4.4.2"
   },
   "peerDependencies": {

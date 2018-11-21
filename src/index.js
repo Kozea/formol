@@ -1,8 +1,4 @@
 // This is not optimal, we might need to find a better solution
-import regeneratorRuntime from 'regenerator-runtime'
-
-global.regeneratorRuntime = regeneratorRuntime
-
 export default from './Formol'
 export Field from './Field'
 export Inliner from './Inliner'

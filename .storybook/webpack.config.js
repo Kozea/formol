@@ -56,6 +56,7 @@ module.exports = (baseConfig, env) => {
         ['@babel/plugin-proposal-decorators', { legacy: true }],
         'add-react-static-displayname',
         ['@babel/plugin-proposal-class-properties', { loose: true }],
+        '@babel/plugin-transform-runtime',
       ],
     },
   }

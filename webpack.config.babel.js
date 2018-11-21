@@ -9,7 +9,7 @@ import config from './package.json'
 export default {
   mode: 'production',
   entry: {
-    formol: ['regenerator-runtime/runtime.js', './src'],
+    formol: ['./src'],
     ...fs
       .readdirSync(path.join(__dirname, 'src', 'sass'))
       .reduce((themes, theme) => {
@@ -70,6 +70,7 @@ export default {
             ['@babel/plugin-proposal-decorators', { legacy: true }],
             'add-react-static-displayname',
             ['@babel/plugin-proposal-class-properties', { loose: true }],
+            '@babel/plugin-transform-runtime',
           ],
         },
       },
