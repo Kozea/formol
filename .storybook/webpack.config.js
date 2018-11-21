@@ -6,8 +6,6 @@ const rootDir = path.join(__dirname, '..')
 const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
 
 module.exports = (baseConfig, env) => {
-  baseConfig.entry.manager.unshift('regenerator-runtime/runtime.js')
-  baseConfig.entry.iframe.unshift('regenerator-runtime/runtime.js')
   const themes = fs
     .readdirSync(path.join(rootDir, 'src', 'sass'))
     .map(
@@ -46,7 +44,7 @@ module.exports = (baseConfig, env) => {
         [
           '@babel/preset-env',
           {
-            targets: { browsers: ['> 3%', 'last 2 versions', 'not ie <= 10'] },
+            targets: { browsers: ['defaults'] },
             modules: false,
           },
         ],
