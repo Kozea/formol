@@ -1,3 +1,7 @@
+### [2.4.1](https://github.com/Kozea/formol/compare/v2.4.1...v2.4.1)
+
+- Use @babel/plugin-transform-runtime rather than medling with globals
+
 ## [2.4.0](https://github.com/Kozea/formol/compare/v2.3.3...v2.4.0)
 
 - Add `modified` argument to onSubmit for forms with `allowUnmodifiedSubmit`.
