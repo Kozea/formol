@@ -71,8 +71,8 @@ export default class FileField extends React.PureComponent {
     } = newProps
     const value = FileField.valueToField(rawValue, multiple)
     if (!deepEqual(value, oldValue)) {
-      const rejected = oldRejected.filter(
-        f => (multiple ? value.split(',').includes(f) : value === f)
+      const rejected = oldRejected.filter(f =>
+        multiple ? value.split(',').includes(f) : value === f
       )
       current && (current.value = value)
       return {
@@ -233,16 +233,24 @@ export default class FileField extends React.PureComponent {
           multiple={multiple}
           onDrop={this.handleDrop}
         >
-          <div className={b.e('placeholder')}>
-            {!multiple && preview ? (
-              preview
-            ) : (
-              <>
-                <MdCloudUpload />
-                <span>{placeholder}</span>
-              </>
-            )}
-          </div>
+          {({ getRootProps, getInputProps, isDragActive }) => (
+            <div
+              {...getRootProps()}
+              className={b.e('dropzone-wrapper').m({ isDragActive })}
+            >
+              ￼ <input {...getInputProps()} />
+              <div className={b.e('placeholder')}>
+                {!multiple && preview ? (
+                  preview
+                ) : (
+                  <>
+                    <MdCloudUpload />
+                    <span>{placeholder}</span>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
         </Dropzone>
         {multiple && <div className={b.e('previews')}>{preview}</div>}
         <input
