@@ -64,6 +64,7 @@ export default class Field extends React.PureComponent {
       className,
       validator,
       readOnly,
+      disabled,
       unit,
       extras,
       formatter,
@@ -92,6 +93,7 @@ export default class Field extends React.PureComponent {
           type,
           name,
           error: !!error,
+          disabled,
           readOnly,
           required: !!props.required,
           modified,
@@ -113,6 +115,7 @@ export default class Field extends React.PureComponent {
             name={name}
             value={value}
             type={type}
+            disabled={disabled}
             readOnly={readOnly}
             i18n={i18n}
             elementRef={this.element}
