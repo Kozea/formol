@@ -63,6 +63,7 @@ export default class CalendarField extends React.PureComponent {
         <input
           type="text"
           className={b.mix(className)}
+          placeholder={placeholder || dateFormat}
           readOnly={readOnly}
           disabled={disabled}
           value={isDate(maybeDate) ? format(date, dateFormat) : value}
