@@ -6,7 +6,7 @@ import { EditorState } from 'draft-js'
 import React from 'react'
 
 import { HTMLToEditor, editorToHTML, normalize } from '../utils/html'
-import { block, readAsBase64 } from '../utils'
+import { block, noOp, readAsBase64 } from '../utils'
 
 const stateFromValue = (value, fast) => {
   if (!value) {
@@ -135,7 +135,8 @@ export default class HTMLField extends React.PureComponent {
           className={b.e('hidden-input').mix(className)}
           ref={elementRef}
           {...props}
-          defaultValue={inputValue(value, fast)}
+          value={inputValue(value, fast)}
+          onChange={noOp}
           type="text"
         />
       </div>

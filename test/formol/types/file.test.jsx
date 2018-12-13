@@ -62,7 +62,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -79,7 +79,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('molecule.svg')
+      expect(input().props().value).toEqual('molecule.svg')
 
       await submit().simulate('click')
 
@@ -106,7 +106,7 @@ describe('File field', () => {
         ['file'],
         true
       )
-      expect(input().props().defaultValue).toEqual('molecule.svg')
+      expect(input().props().value).toEqual('molecule.svg')
 
       wrapper.unmount()
     },
@@ -164,7 +164,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -181,14 +181,14 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('molecule.svg')
+      expect(input().props().value).toEqual('molecule.svg')
 
       await cancel().simulate('click')
 
       expect(submit().props().disabled).toBeTruthy()
       expect(cancel().props().disabled).toBeTruthy()
 
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
     },
     30000
   )
@@ -248,7 +248,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -265,7 +265,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+      expect(input().props().value).toEqual('molecule.svg,pixel.png')
 
       await submit().simulate('click')
 
@@ -303,7 +303,7 @@ describe('File field', () => {
         ['file'],
         true
       )
-      expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+      expect(input().props().value).toEqual('molecule.svg,pixel.png')
 
       wrapper.unmount()
     },
@@ -365,7 +365,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -382,14 +382,14 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('molecule.svg,pixel.png')
+      expect(input().props().value).toEqual('molecule.svg,pixel.png')
 
       await cancel().simulate('click')
 
       expect(submit().props().disabled).toBeTruthy()
       expect(cancel().props().disabled).toBeTruthy()
 
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
     },
     30000
   )
@@ -449,7 +449,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -466,7 +466,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
+      expect(input().props().value).toEqual('pixel--1.png,pixel.png')
 
       await submit().simulate('click')
 
@@ -504,7 +504,7 @@ describe('File field', () => {
         ['file'],
         true
       )
-      expect(input().props().defaultValue).toEqual('pixel--1.png,pixel.png')
+      expect(input().props().value).toEqual('pixel--1.png,pixel.png')
 
       wrapper.unmount()
     },
@@ -576,7 +576,7 @@ describe('File field', () => {
         .text()
     ).toEqual('image/png')
 
-    expect(input().props().defaultValue).toEqual('pixel.png')
+    expect(input().props().value).toEqual('pixel.png')
 
     expect(close()).toHaveLength(1)
 
@@ -587,7 +587,7 @@ describe('File field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('')
+    expect(input().props().value).toEqual('')
 
     await submit().simulate('click')
 
@@ -610,7 +610,7 @@ describe('File field', () => {
       ['file'],
       true
     )
-    expect(input().props().defaultValue).toEqual('')
+    expect(input().props().value).toEqual('')
 
     wrapper.unmount()
   })
@@ -703,7 +703,7 @@ describe('File field', () => {
         .at(1)
         .text()
     ).toEqual('image/svg+xml')
-    expect(input().props().defaultValue).toEqual('pixel.png,molecule.svg')
+    expect(input().props().value).toEqual('pixel.png,molecule.svg')
 
     expect(close()).toHaveLength(2)
 
@@ -716,7 +716,7 @@ describe('File field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('molecule.svg')
+    expect(input().props().value).toEqual('molecule.svg')
 
     await submit().simulate('click')
 
@@ -754,7 +754,7 @@ describe('File field', () => {
       ['file'],
       true
     )
-    expect(input().props().defaultValue).toEqual('molecule.svg')
+    expect(input().props().value).toEqual('molecule.svg')
 
     wrapper.unmount()
   })
@@ -812,7 +812,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -829,7 +829,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('blank.pdf')
+      expect(input().props().value).toEqual('blank.pdf')
 
       expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
         'Please select a valid file.'
@@ -839,13 +839,13 @@ describe('File field', () => {
 
       expect(onSubmit).not.toHaveBeenCalled()
 
-      expect(input().props().defaultValue).toEqual('blank.pdf')
+      expect(input().props().value).toEqual('blank.pdf')
 
       const close = () => wrapper.find('.Formol_FileField__close')
       await close().simulate('click')
 
       expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
-      expect(input().props().defaultValue).toEqual('')
+      expect(input().props().value).toEqual('')
 
       wrapper.unmount()
     },
@@ -905,7 +905,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -922,7 +922,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('blank.pdf')
+      expect(input().props().value).toEqual('blank.pdf')
 
       expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
         'Please select a valid file.'
@@ -933,7 +933,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeTruthy()
       expect(cancel().props().disabled).toBeTruthy()
 
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
 
@@ -997,7 +997,7 @@ describe('File field', () => {
       expect(preview('name').text()).toEqual('pixel.png')
       expect(preview('size').text()).toEqual('67 o')
       expect(preview('type').text()).toEqual('image/png')
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       await fileInput().simulate('focus')
 
@@ -1014,7 +1014,7 @@ describe('File field', () => {
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      expect(input().props().defaultValue).toEqual('blank.pdf,pixel.png')
+      expect(input().props().value).toEqual('blank.pdf,pixel.png')
 
       expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
         'Some of your files are invalid. (blank.pdf)'
@@ -1024,14 +1024,14 @@ describe('File field', () => {
 
       expect(onSubmit).not.toHaveBeenCalled()
 
-      expect(input().props().defaultValue).toEqual('blank.pdf,pixel.png')
+      expect(input().props().value).toEqual('blank.pdf,pixel.png')
 
       await cancel().simulate('click')
 
       expect(submit().props().disabled).toBeTruthy()
       expect(cancel().props().disabled).toBeTruthy()
 
-      expect(input().props().defaultValue).toEqual('pixel.png')
+      expect(input().props().value).toEqual('pixel.png')
 
       expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
 

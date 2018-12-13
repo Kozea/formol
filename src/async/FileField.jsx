@@ -1,12 +1,12 @@
-import deepEqual from 'deep-equal'
-import React from 'react'
-import Dropzone from 'react-dropzone'
 import { FaTrash } from 'react-icons/fa'
 import { MdCloudUpload } from 'react-icons/md'
+import Dropzone from 'react-dropzone'
+import React from 'react'
+import deepEqual from 'deep-equal'
 
-import { block, fileSize, nameExt, readAsBase64 } from '../utils'
-import multipleAdapter from '../utils/multipleAdapter'
+import { block, fileSize, nameExt, noOp, readAsBase64 } from '../utils'
 import Preview from '../utils/Preview'
+import multipleAdapter from '../utils/multipleAdapter'
 
 const key = file => [file.name, file.ext].join('.')
 
@@ -249,7 +249,8 @@ export default class FileField extends React.PureComponent {
           className={b.mix(className).e('hidden-input')}
           ref={elementRef}
           {...inputProps}
-          defaultValue={FileField.valueToField(value, multiple)}
+          value={FileField.valueToField(value, multiple)}
+          onChange={noOp}
           type="text" // We need a text input instead of the file one
           // because file inputs are read-only
         />

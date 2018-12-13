@@ -1,4 +1,3 @@
-import deepEqual from 'deep-equal'
 import {
   AllSubstringsIndexStrategy,
   Search,
@@ -6,11 +5,12 @@ import {
 } from 'js-search'
 import React from 'react'
 import Select, { makeAnimated } from 'react-select'
+import deepEqual from 'deep-equal'
 
-import { block } from '../utils'
+import { block, noOp } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
-import memoizedChoices from '../utils/memoizedChoices'
 import getMenuList from '../utils/MenuList'
+import memoizedChoices from '../utils/memoizedChoices'
 import multipleAdapter from '../utils/multipleAdapter'
 
 export const DELIMITER = '__/__'
@@ -199,7 +199,8 @@ export default class SelectMenuField extends React.PureComponent {
           className={b.mix(className).e('hidden-input')}
           ref={elementRef}
           {...props}
-          defaultValue={multiple ? rawValue.join(DELIMITER) : rawValue}
+          value={multiple ? rawValue.join(DELIMITER) : rawValue}
+          onChange={noOp}
           type="text"
         />
       </div>

@@ -5,7 +5,7 @@ import { block } from '../utils'
 import PasswordField from '../fields/PasswordField'
 
 /* Inspired from https://github.com/mmw/react-password-strength
-   Forked here to handle a value instead of a defaultValue and
+   Forked here to handle a value instead of a value and
    props change
 */
 @block

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { mount } from 'enzyme'
 
-import { readAsBase64 } from '../../src/utils'
+import { noOp, readAsBase64 } from '../../src/utils'
 import Async from '../../src/utils/Async'
 import Preview from '../../src/utils/Preview'
 
@@ -52,4 +52,8 @@ describe('Async', () => {
 describe('readAsBase64', () => {
   it('errors on empty file', () =>
     expect(readAsBase64()).rejects.toEqual(new Error('No file was given')))
+})
+
+describe('noOp', () => {
+  it('does nothing', () => expect(noOp()).toBeUndefined())
 })

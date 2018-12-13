@@ -19,3 +19,5 @@ export const fileSize = size => {
 export const nameExt = name => name.match(/(.+?)(?:\.([^.]+))?$/).slice(1, 3)
 
 export const block = blockMaker({ namespace: 'Formol_' })
+
+export const noOp = () => {}

@@ -75,7 +75,7 @@ describe('Html field', () => {
     expect(input().props().type).toEqual('text')
     expect(fooSpan().text()).toEqual('foo')
     expect(field().props().value).toEqual('<p>foo</p>')
-    expect(input().props().defaultValue).toEqual('<p>foo</p>')
+    expect(input().props().value).toEqual('<p>foo</p>')
 
     await fooSpan().simulate('focus')
 
@@ -89,7 +89,7 @@ describe('Html field', () => {
     await bold().simulate('click')
 
     expect(field().props().value).toEqual('<p>f<strong>oo</strong></p>')
-    expect(input().props().defaultValue).toEqual('<p>f<strong>oo</strong></p>')
+    expect(input().props().value).toEqual('<p>f<strong>oo</strong></p>')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -103,7 +103,7 @@ describe('Html field', () => {
       true
     )
     expect(field().props().value).toEqual('<p>f<strong>oo</strong></p>')
-    expect(input().props().defaultValue).toEqual('<p>f<strong>oo</strong></p>')
+    expect(input().props().value).toEqual('<p>f<strong>oo</strong></p>')
   })
   it('cancels changes', async () => {
     const onSubmit = jest.fn()
@@ -137,7 +137,7 @@ describe('Html field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
     expect(field().props().value).toEqual('<p>foo</p>')
-    expect(input().props().defaultValue).toEqual('<p>foo</p>')
+    expect(input().props().value).toEqual('<p>foo</p>')
 
     await fooSpan().simulate('focus')
 
@@ -151,14 +151,14 @@ describe('Html field', () => {
     await bold().simulate('click')
 
     expect(field().props().value).toEqual('<p>f<strong>oo</strong></p>')
-    expect(input().props().defaultValue).toEqual('<p>f<strong>oo</strong></p>')
+    expect(input().props().value).toEqual('<p>f<strong>oo</strong></p>')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
     await cancel().simulate('click')
 
     expect(field().props().value).toEqual('<p>foo</p>')
-    expect(input().props().defaultValue).toEqual('<p>foo</p>')
+    expect(input().props().value).toEqual('<p>foo</p>')
   })
   it('handles changes in fast mode', async () => {
     const onSubmit = jest.fn()
@@ -198,7 +198,7 @@ describe('Html field', () => {
     expect(input().props().type).toEqual('text')
     expect(fooSpan().text()).toEqual('foo')
     expect(editorToHTML(field().props().value)).toEqual('<p>foo</p>')
-    // expect(input().props().defaultValue).toEqual('<p>foo</p>')
+    // expect(input().props().value).toEqual('<p>foo</p>')
 
     await fooSpan().simulate('focus')
 
@@ -263,7 +263,7 @@ describe('Html field', () => {
     expect(input().props().type).toEqual('text')
     expect(fooSpan()).toHaveLength(0)
     expect(field().props().value).toEqual('')
-    expect(input().props().defaultValue).toEqual('')
+    expect(input().props().value).toEqual('')
   })
   it('works with no initial value in fast mode', async () => {
     const onSubmit = jest.fn()
@@ -300,7 +300,7 @@ describe('Html field', () => {
     expect(input().props().type).toEqual('text')
     expect(fooSpan()).toHaveLength(0)
     expect(field().props().value).toEqual('')
-    expect(input().props().defaultValue).toEqual('')
+    expect(input().props().value).toEqual('')
   })
   it(
     'uploads files as base64',
@@ -350,7 +350,7 @@ describe('Html field', () => {
       expect(field().props().type).toEqual('html')
       expect(input().props().type).toEqual('text')
       expect(field().props().value).toEqual('<p>foo</p>')
-      expect(input().props().defaultValue).toEqual('<p>foo</p>')
+      expect(input().props().value).toEqual('<p>foo</p>')
       await image().simulate('click')
       expect(ok().props().disabled).toBeTruthy()
 
@@ -386,7 +386,7 @@ describe('Html field', () => {
         true
       )
       expect(field().props().value).toEqual(expectedHtml)
-      expect(input().props().defaultValue).toEqual(expectedHtml)
+      expect(input().props().value).toEqual(expectedHtml)
     },
     30000
   )

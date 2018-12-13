@@ -56,7 +56,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('II')
+    expect(input().props().value).toEqual('II')
     expect(singleValue().text()).toEqual('two')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -73,7 +73,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+    expect(input().props().value).toEqual('##formol_memo_0')
 
     await submit().simulate('click')
 
@@ -84,7 +84,7 @@ describe('Select Menu field', () => {
       ['selectMenu'],
       true
     )
-    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+    expect(input().props().value).toEqual('##formol_memo_0')
 
     wrapper.unmount()
   })
@@ -134,7 +134,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('II')
+    expect(input().props().value).toEqual('II')
     expect(singleValue().text()).toEqual('two')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -151,7 +151,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+    expect(input().props().value).toEqual('##formol_memo_0')
 
     await submit().simulate('click')
 
@@ -162,7 +162,7 @@ describe('Select Menu field', () => {
       ['selectMenu'],
       true
     )
-    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+    expect(input().props().value).toEqual('##formol_memo_0')
 
     wrapper.unmount()
   })
@@ -211,7 +211,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+    expect(input().props().value).toEqual('##formol_memo_0')
     expect(singleValue().text()).toEqual('one')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -228,14 +228,14 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('II')
+    expect(input().props().value).toEqual('II')
 
     await cancel().simulate('click')
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('##formol_memo_0')
+    expect(input().props().value).toEqual('##formol_memo_0')
   })
   it('handles changes with multiple values', async () => {
     const onSubmit = jest.fn()
@@ -282,7 +282,7 @@ describe('Select Menu field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    expect(input().props().defaultValue).toEqual('##formol_memo_0__/__II')
+    expect(input().props().value).toEqual('##formol_memo_0__/__II')
 
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -303,7 +303,7 @@ describe('Select Menu field', () => {
 
     await selectInput().simulate('blur')
 
-    expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
+    expect(input().props().value).toEqual('II__/__##formol_memo_2')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -316,7 +316,7 @@ describe('Select Menu field', () => {
       ['selectMenu'],
       true
     )
-    expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
+    expect(input().props().value).toEqual('II__/__##formol_memo_2')
   })
   it('cancels changes in multiple', async () => {
     const onSubmit = jest.fn()
@@ -363,7 +363,7 @@ describe('Select Menu field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    expect(input().props().defaultValue).toEqual('##formol_memo_0__/__II')
+    expect(input().props().value).toEqual('##formol_memo_0__/__II')
 
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -385,7 +385,7 @@ describe('Select Menu field', () => {
 
     await selectInput().simulate('blur')
 
-    expect(input().props().defaultValue).toEqual('II__/__##formol_memo_2')
+    expect(input().props().value).toEqual('II__/__##formol_memo_2')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
@@ -394,7 +394,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('##formol_memo_0__/__II')
+    expect(input().props().value).toEqual('##formol_memo_0__/__II')
   })
   it('sets disabled when readOnly', async () => {
     const onSubmit = jest.fn()
@@ -544,7 +544,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('')
+    expect(input().props().value).toEqual('')
     expect(singleValue()).toHaveLength(0)
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -612,7 +612,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('')
+    expect(input().props().value).toEqual('')
     expect(singleValue()).toHaveLength(0)
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -673,7 +673,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
 
-    expect(input().props().defaultValue).toEqual('4831')
+    expect(input().props().value).toEqual('4831')
     expect(singleValue().text()).toEqual('4831')
     expect(selectOptions()).toHaveLength(0)
     expect(selectMenu()).toHaveLength(0)
@@ -704,7 +704,7 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    expect(input().props().defaultValue).toEqual('3834')
+    expect(input().props().value).toEqual('3834')
 
     await submit().simulate('click')
 
@@ -715,7 +715,7 @@ describe('Select Menu field', () => {
       ['selectMenu'],
       true
     )
-    expect(input().props().defaultValue).toEqual('3834')
+    expect(input().props().value).toEqual('3834')
 
     wrapper.unmount()
   })
