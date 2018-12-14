@@ -17,5 +17,18 @@
     "add-react-static-displayname",
     ["@babel/plugin-proposal-class-properties", { "loose": true }],
     "@babel/plugin-transform-runtime"
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": ["@babel/preset-react", "@babel/preset-env"],
+      "plugins": [
+        "dynamic-import-node",
+        "@babel/plugin-proposal-export-default-from",
+        "@babel/plugin-proposal-object-rest-spread",
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        "@babel/plugin-transform-runtime"
+      ]
+    }
+  }
 }
