@@ -10,6 +10,7 @@
     &::before
       content: '* '
 
+
   &--readOnly
     &.Formol_Field--required
       .Formol_Field__title::before
@@ -30,6 +31,15 @@
           clip-path: inset(0 17px 0 0)
           outline: none
           outline: 0
+
+
+  &--disabled
+    // cursor: default
+    opacity: .75
+
+    .Formol_Field__label
+      &, & *
+        cursor: default
 
 
   // states
