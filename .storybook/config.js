@@ -1,6 +1,5 @@
-import { withOptions } from '@storybook/addon-options'
 import { addDecorator, configure } from '@storybook/react'
-import { withCssResources } from '@storybook/addon-cssresources'
+import { withOptions } from '@storybook/addon-options'
 
 const themes = ['default.css', 'clean.css']
 
@@ -9,16 +8,6 @@ addDecorator(
     name: 'Formol',
     url: 'https://github.com/Kozea/formol',
     addonPanelInRight: true,
-  })
-)
-
-addDecorator(
-  withCssResources({
-    cssresources: themes.map(theme => ({
-      name: `Theme: ${theme}`,
-      code: `<link rel="stylesheet" type="text/css" href="${theme}"></link>`,
-      picked: theme === 'default.css',
-    })),
   })
 )
 

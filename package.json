@@ -9,14 +9,15 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf lib && webpack",
+    "build-addons": "babel storybook-addon-theme/src --out-dir storybook-addon-theme/lib",
     "lint": "eslint src",
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepublish": "npm run build",
-    "storybook": "start-storybook -p 9001",
+    "storybook": "npm run build-addons && start-storybook -p 9001",
     "storybook-debug": "node --inspect-brk ./node_modules/.bin/start-storybook -p 9001",
-    "storybook-deploy": "storybook-to-ghpages"
+    "storybook-deploy": "npm run build-addons && storybook-to-ghpages"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -55,7 +56,6 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "@storybook/addon-cssresources": "^4.1.1",
     "@storybook/addon-knobs": "^4.1.1",
     "@storybook/addon-options": "^4.1.1",
     "@storybook/addon-storyshots": "^4.1.1",

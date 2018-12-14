@@ -1,4 +1,10 @@
-### [2.4.1](https://github.com/Kozea/formol/compare/v2.4.1...v2.4.1)
+### [2.4.2](https://github.com/Kozea/formol/compare/v2.4.1...v2.4.2)
+
+- Style disabled state
+- Upgrade dependencies and fix dropzone
+- Adapt to storybook 4.1
+
+### [2.4.1](https://github.com/Kozea/formol/compare/v2.4.0...v2.4.1)
 
 - Use @babel/plugin-transform-runtime rather than medling with globals
 

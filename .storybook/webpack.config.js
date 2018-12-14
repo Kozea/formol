@@ -17,6 +17,35 @@ module.exports = (baseConfig, env) => {
       return themeName
     })
 
+  baseConfig.module.rules[0] = {
+    test: /\.jsx?$/,
+    include: dir(),
+    exclude: dir('node_modules'),
+    loader: 'babel-loader',
+    options: {
+      cacheDirectory: true,
+      babelrc: false,
+      presets: [
+        '@babel/preset-react',
+        [
+          '@babel/preset-env',
+          {
+            targets: { browsers: ['defaults'] },
+            modules: false,
+          },
+        ],
+      ],
+      plugins: [
+        '@babel/plugin-proposal-export-default-from',
+        '@babel/plugin-syntax-dynamic-import',
+        '@babel/plugin-proposal-object-rest-spread',
+        ['@babel/plugin-proposal-decorators', { legacy: true }],
+        'add-react-static-displayname',
+        ['@babel/plugin-proposal-class-properties', { loose: true }],
+        '@babel/plugin-transform-runtime',
+      ],
+    },
+  }
   // Add styles loaders (and the storysource hack)
   baseConfig.module.rules.push(
     {
@@ -42,8 +71,7 @@ module.exports = (baseConfig, env) => {
       enforce: 'pre',
     }
   )
-  // HTMLWebpackPlugin: Prevent themes to be added in the html
-  baseConfig.plugins[0].options.excludeChunks.push(...themes)
+
   // Extract themes as css files
   baseConfig.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }))
   return baseConfig

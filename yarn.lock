@@ -1061,7 +1061,7 @@
     "@emotion/serialize" "^0.9.1"
     "@emotion/utils" "^0.8.2"
 
-"@emotion/styled@0.10.6", "@emotion/styled@^0.10.6":
+"@emotion/styled@^0.10.6":
   version "0.10.6"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-0.10.6.tgz#1f6af1d3d4bf9fdeb05a4d220046ce11ad21a7ca"
   integrity sha512-DFNW8jlMjy1aYCj/PKsvBoJVZAQXzjmSCwtKXLs31qZzNPaUEPbTYSIKnMUtIiAOYsu0pUTGXM+l0a+MYNm4lA==
@@ -1105,21 +1105,6 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
-
-"@storybook/addon-cssresources@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-cssresources/-/addon-cssresources-4.1.1.tgz#ff97112f0cf22d1f78b3c96e30c04f65a976ea0d"
-  integrity sha512-ISLV+DFQ+ERqDo1a+2cUXukE91dgoeKw4Ae/L3JuDtMleF1St/0rY3PGLi5Cp9TD0ulIqf0QnI84x+qZtzVpZw==
-  dependencies:
-    "@emotion/styled" "0.10.6"
-    "@storybook/addons" "4.1.1"
-    "@storybook/components" "4.1.1"
-    "@storybook/core-events" "4.1.1"
-    core-js "^2.5.7"
-    global "^4.3.2"
-    prop-types "^15.6.2"
-    react-syntax-highlighter "^10.0.0"
-    util-deprecate "^1.0.2"
 
 "@storybook/addon-knobs@^4.1.1":
   version "4.1.1"
