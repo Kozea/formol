@@ -1,5 +1,10 @@
-### [2.4.2](https://github.com/Kozea/formol/compare/v2.4.1...v2.4.2)
+## [2.5.0](https://github.com/Kozea/formol/compare/v2.4.2...v2.5.0)
 
+- Rework submit mecanism by using native onSubmit (fix weird enter key behavior)
+- Add unmodified title on disabled form buttons
+- Remove `focusNextOnEnter` prop
+- Fix disabled style
+- Fix missing disabled placeholder in CalendarField
 - Style disabled state
 - Upgrade dependencies and fix dropzone
 - Adapt to storybook 4.1
