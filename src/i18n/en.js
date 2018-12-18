@@ -5,6 +5,7 @@ export default {
   submit: 'Submit',
   cancel: 'Cancel',
   required: 'Please fill out this field',
+  unmodified: 'No change in form',
   // CalendarField
   calendar: {
     dateFormat: 'MM/dd/yyyy',

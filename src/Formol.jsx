@@ -320,6 +320,8 @@ export default class Formol extends React.PureComponent {
       onSubmit,
     } = this.props
     const { loading, context, modified } = this.state
+    const { i18n } = context
+
     return (
       <form
         className={b.mix(className).m({
@@ -337,18 +339,22 @@ export default class Formol extends React.PureComponent {
             <button
               className={b.e('submit').mix(classes.submit)}
               disabled={!modified && !allowUnmodifiedSubmit}
+              title={
+                modified || allowUnmodifiedSubmit ? void 0 : i18n.unmodified
+              }
               type="submit"
             >
-              {submitText || context.i18n.submit}
+              {submitText || i18n.submit}
             </button>
             {!noCancel && (
               <button
                 onClick={this.handleCancel}
                 className={b.e('cancel').mix(classes.cancel)}
                 disabled={!modified}
+                title={modified ? void 0 : i18n.unmodified}
                 type="button"
               >
-                {cancelText || context.i18n.cancel}
+                {cancelText || i18n.cancel}
               </button>
             )}
           </>

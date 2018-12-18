@@ -5,6 +5,7 @@ export default {
   submit: 'Envoyer',
   cancel: 'Annuler',
   required: 'Veuillez renseigner ce champ',
+  unmodified: 'Auncun changement dans le formulaire',
   // CalendarField
   calendar: {
     dateFormat: 'dd/MM/yyyy',
