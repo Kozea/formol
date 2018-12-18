@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rimraf lib && webpack",
     "build-addons": "babel storybook-addon-theme/src --out-dir storybook-addon-theme/lib",
-    "lint": "eslint src",
+    "lint": "eslint src stories storybook-addon-theme/src/* test",
+    "fix": "prettier --write **/*.{js,jsx}",
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",

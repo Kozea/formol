@@ -32,9 +32,10 @@ describe('Tel field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { tel: '311-555-1212' },
       { tel: '311-555-2368' },
@@ -104,9 +105,7 @@ describe('Tel field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     expect(input().props().value).toEqual('not an tel')
 
@@ -115,9 +114,8 @@ describe('Tel field', () => {
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
-    expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
       { tel: '888-235-5678' },
       { tel: '311-555-2368' },

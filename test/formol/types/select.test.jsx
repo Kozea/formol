@@ -99,9 +99,10 @@ describe('Select field', () => {
 
     expect(select().props().value).toEqual('##formol_memo_0')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { select: 1 },
       { select: 'II' },
@@ -237,9 +238,10 @@ describe('Select field', () => {
 
     expect(select().props().value).toEqual(['II', '##formol_memo_2'])
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { select: ['II', true] },
       { select: [1, 'II'] },

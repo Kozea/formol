@@ -25,7 +25,7 @@ const personExemple = {
   pregnant: true,
   weight: 64,
   height: 1.78,
-  phone: '1-541-754-3010',
+  phone: '541-754-3010',
   address: '12 Norfolk St',
   zip: '69030',
   city: 'Haigler',

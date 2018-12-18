@@ -32,9 +32,10 @@ describe('Email field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { email: 'fuu@bar.baz' },
       { email: 'foo@bar.baz' },
@@ -104,9 +105,7 @@ describe('Email field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     expect(input().props().value).toEqual('not an email')
 
@@ -115,9 +114,8 @@ describe('Email field', () => {
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
-    expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
       { email: 'bar@bar.bar' },
       { email: 'foo@bar.baz' },

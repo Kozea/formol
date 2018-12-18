@@ -67,9 +67,10 @@ import Formol, { Field } from '../../../src'
       expect(submit().props().disabled).toBeFalsy()
       expect(cancel().props().disabled).toBeFalsy()
 
-      await submit().simulate('click')
+      expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-      expect(onSubmit).toHaveBeenCalled()
+      await submit().simulate('submit')
+
       expect(onSubmit).toHaveBeenCalledWith(
         { [type]: value2 },
         { [type]: value1 },

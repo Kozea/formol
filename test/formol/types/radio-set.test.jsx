@@ -50,9 +50,10 @@ describe('Radio Set field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { radioSet: true },
       { radioSet: 'II' },

@@ -19,8 +19,8 @@ export const set = (data, key, value, noArray = false) =>
           ? (pointer[part] = noArray
               ? {}
               : isNaN(key.split('.')[i + 1])
-                ? {}
-                : [])
+              ? {}
+              : [])
           : pointer[part],
       data
     )[key.split('.').slice(-1)[0]] = emptyStringToNull(value))

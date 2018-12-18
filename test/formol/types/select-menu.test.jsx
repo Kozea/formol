@@ -75,9 +75,10 @@ describe('Select Menu field', () => {
 
     expect(input().props().value).toEqual('##formol_memo_0')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: 1 },
       { selectMenu: 'II' },
@@ -153,9 +154,10 @@ describe('Select Menu field', () => {
 
     expect(input().props().value).toEqual('##formol_memo_0')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: 1 },
       { selectMenu: 'II' },
@@ -307,9 +309,10 @@ describe('Select Menu field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: ['II', true] },
       { selectMenu: [1, 'II'] },
@@ -706,9 +709,10 @@ describe('Select Menu field', () => {
 
     expect(input().props().value).toEqual('3834')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { selectMenu: '3834' },
       { selectMenu: '4831' },

@@ -149,9 +149,10 @@ describe('Money field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { money: '2.50' },
       { money: '1.50' },
@@ -225,9 +226,7 @@ describe('Money field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     expect(input().props().value).toEqual('-5')
 
@@ -236,9 +235,8 @@ describe('Money field', () => {
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
-    expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
       { money: '25' },
       { money: '1.50' },
@@ -302,8 +300,6 @@ describe('Money field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
   })
 })

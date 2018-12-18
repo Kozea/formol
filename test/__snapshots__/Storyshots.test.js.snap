@@ -171,7 +171,6 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="checkbox"
         />
         <label
@@ -286,7 +285,6 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -411,19 +409,10 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="checkbox"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -442,8 +431,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -603,7 +591,6 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -710,20 +697,11 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -742,8 +720,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -944,7 +921,6 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="checkbox"
         />
         <label
@@ -1059,20 +1035,11 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -1091,8 +1058,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -1293,7 +1259,6 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="checkbox"
         />
         <label
@@ -1408,7 +1373,6 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -1516,20 +1480,11 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -1548,8 +1503,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -1750,7 +1704,6 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="checkbox"
         />
         <label
@@ -1867,7 +1820,6 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="text"
             value=""
           />
@@ -1994,21 +1946,12 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
         </label>
       </div>
     </li>
   </ul>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -2027,8 +1970,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -2203,7 +2145,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="text"
         type="text"
         value=""
@@ -2329,7 +2270,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="area"
         value=""
       />
@@ -2469,7 +2409,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="email"
         type="email"
         value=""
@@ -2610,7 +2549,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="number"
         type="number"
         value=""
@@ -2769,7 +2707,6 @@ exports[`Storyshots Field Test All fields 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="password"
           type="password"
           value=""
@@ -3035,7 +2972,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{3}[-]\\\\d{3}[-]\\\\d{4}"
         placeholder="tel"
         type="tel"
@@ -3177,7 +3113,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="color"
         type="color"
         value=""
@@ -3318,7 +3253,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="date"
         type="date"
         value=""
@@ -3459,7 +3393,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="time"
         type="time"
         value=""
@@ -3600,7 +3533,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="datetime-local"
         type="datetime-local"
         value=""
@@ -3741,7 +3673,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="month"
         type="month"
         value=""
@@ -3882,7 +3813,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="week"
         type="week"
         value=""
@@ -4096,7 +4026,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="range"
             type="range"
             value=""
@@ -4280,7 +4209,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="money"
         step="0.01"
         type="number"
@@ -4557,7 +4485,6 @@ exports[`Storyshots Field Test All fields 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="switch"
           type="checkbox"
         />
@@ -4795,7 +4722,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="radio"
         type="radio"
       />
@@ -4976,7 +4902,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5075,7 +5000,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5174,7 +5098,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5273,7 +5196,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5372,7 +5294,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5471,7 +5392,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5570,7 +5490,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5669,7 +5588,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5768,7 +5686,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5867,7 +5784,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -5966,7 +5882,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -6065,7 +5980,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -6164,7 +6078,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -6263,7 +6176,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -6362,7 +6274,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -6461,7 +6372,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -6626,7 +6536,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="checkbox"
         type="checkbox"
       />
@@ -6807,7 +6716,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -6906,7 +6814,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7005,7 +6912,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7104,7 +7010,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7203,7 +7108,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7302,7 +7206,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7401,7 +7304,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7500,7 +7402,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7599,7 +7500,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7698,7 +7598,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7797,7 +7696,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7896,7 +7794,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -7995,7 +7892,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -8094,7 +7990,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -8193,7 +8088,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -8292,7 +8186,6 @@ exports[`Storyshots Field Test All fields 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -8525,7 +8418,6 @@ exports[`Storyshots Field Test All fields 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="select"
         type="select"
         value=""
@@ -8702,14 +8594,6 @@ exports[`Storyshots Field Test All fields 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -8728,8 +8612,7 @@ exports[`Storyshots Field Test All fields 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -8904,7 +8787,6 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="text"
         type="text"
         value="text"
@@ -9030,7 +8912,6 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="area"
         value="Text
 Area"
@@ -9171,7 +9052,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="email"
         type="email"
         value="email@exemple.com"
@@ -9312,7 +9192,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="number"
         type="number"
         value={12}
@@ -9471,7 +9350,6 @@ Area"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="password"
           type="password"
           value="password"
@@ -9737,11 +9615,10 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{3}[-]\\\\d{3}[-]\\\\d{4}"
         placeholder="tel"
         type="tel"
-        value="1-541-754-3010"
+        value="541-754-3010"
       />
     </label>
   </div>
@@ -9879,7 +9756,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="color"
         type="color"
         value="#123456"
@@ -10020,7 +9896,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="date"
         type="date"
         value="2018-08-01"
@@ -10161,7 +10036,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="time"
         type="time"
         value="17:14"
@@ -10302,7 +10176,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="datetime-local"
         type="datetime-local"
         value="2018-08-01T17:14"
@@ -10443,7 +10316,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="month"
         type="month"
         value="2018-08"
@@ -10584,7 +10456,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="week"
         type="week"
         value="2018-W12"
@@ -10798,7 +10669,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="range"
             type="range"
             value={42}
@@ -10982,7 +10852,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="money"
         step="0.01"
         type="number"
@@ -11259,7 +11128,6 @@ Area"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="switch"
           type="checkbox"
         />
@@ -11497,7 +11365,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="radio"
         type="radio"
       />
@@ -11678,7 +11545,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -11777,7 +11643,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -11876,7 +11741,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -11975,7 +11839,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12074,7 +11937,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12173,7 +12035,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12272,7 +12133,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12371,7 +12231,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12470,7 +12329,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12569,7 +12427,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12668,7 +12525,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12767,7 +12623,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12866,7 +12721,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -12965,7 +12819,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -13064,7 +12917,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -13163,7 +13015,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -13328,7 +13179,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="checkbox"
         type="checkbox"
       />
@@ -13509,7 +13359,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -13608,7 +13457,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -13707,7 +13555,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -13806,7 +13653,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -13905,7 +13751,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14004,7 +13849,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14103,7 +13947,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14202,7 +14045,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14301,7 +14143,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14400,7 +14241,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14499,7 +14339,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14598,7 +14437,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14697,7 +14535,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14796,7 +14633,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14895,7 +14731,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -14994,7 +14829,6 @@ Area"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -15227,7 +15061,6 @@ Area"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="select"
         type="select"
         value="#800000"
@@ -15404,14 +15237,6 @@ Area"
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -15430,8 +15255,7 @@ Area"
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -15606,20 +15430,11 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="area"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -15638,8 +15453,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -15781,14 +15595,6 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -15807,8 +15613,7 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -16001,20 +15806,11 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="checkbox"
         type="checkbox"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -16033,8 +15829,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -16265,7 +16060,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16364,7 +16158,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16463,7 +16256,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16562,7 +16354,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16661,7 +16452,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16760,7 +16550,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16859,7 +16648,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -16958,7 +16746,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17057,7 +16844,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17156,7 +16942,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17255,7 +17040,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17354,7 +17138,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17453,7 +17236,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17552,7 +17334,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17651,7 +17432,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17750,7 +17530,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -17778,14 +17557,6 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -17804,8 +17575,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -17995,21 +17765,12 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="color"
         type="color"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -18028,8 +17789,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -18219,21 +17979,12 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="date"
         type="date"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -18252,8 +18003,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -18443,21 +18193,12 @@ exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="datetime-local"
         type="datetime-local"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -18476,8 +18217,7 @@ exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -18667,21 +18407,12 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="email"
         type="email"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -18700,8 +18431,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -18843,14 +18573,6 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
       Loading
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -18869,8 +18591,7 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -19012,14 +18733,6 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       Loading
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -19038,8 +18751,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -19230,7 +18942,6 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="money"
         step="0.01"
         type="number"
@@ -19258,14 +18969,6 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -19284,8 +18987,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -19475,21 +19177,12 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="month"
         type="month"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -19508,8 +19201,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -19699,21 +19391,12 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="number"
         type="number"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -19732,8 +19415,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -19941,7 +19623,6 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="password"
           type="password"
           value=""
@@ -19987,14 +19668,6 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -20013,8 +19686,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -20156,14 +19828,6 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -20182,8 +19846,7 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -20376,20 +20039,11 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="radio"
         type="radio"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -20408,8 +20062,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -20640,7 +20293,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -20739,7 +20391,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -20838,7 +20489,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -20937,7 +20587,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21036,7 +20685,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21135,7 +20783,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21234,7 +20881,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21333,7 +20979,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21432,7 +21077,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21531,7 +21175,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21630,7 +21273,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21729,7 +21371,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21828,7 +21469,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -21927,7 +21567,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -22026,7 +21665,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -22125,7 +21763,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -22153,14 +21790,6 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -22179,8 +21808,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -22443,7 +22071,6 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="range"
             type="range"
             value=""
@@ -22492,14 +22119,6 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -22518,8 +22137,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -22694,7 +22312,6 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="select"
         type="select"
         value=""
@@ -22785,14 +22402,6 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
       </select>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -22811,8 +22420,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -22954,14 +22562,6 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -22980,8 +22580,7 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -23200,7 +22799,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="switch"
           type="checkbox"
         />
@@ -23215,14 +22813,6 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -23241,8 +22831,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -23432,7 +23021,6 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{3}[-]\\\\d{3}[-]\\\\d{4}"
         placeholder="tel"
         type="tel"
@@ -23440,14 +23028,6 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -23466,8 +23046,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -23642,21 +23221,12 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="text"
         type="text"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -23675,8 +23245,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -23866,21 +23435,12 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="time"
         type="time"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -23899,8 +23459,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -24090,21 +23649,12 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="week"
         type="week"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -24123,8 +23673,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -24299,21 +23848,12 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="area"
         value="Text
 Area"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -24332,8 +23872,7 @@ Area"
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -24475,14 +24014,6 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -24501,8 +24032,7 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -24695,20 +24225,11 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="checkbox"
         type="checkbox"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -24727,8 +24248,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -24959,7 +24479,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25058,7 +24577,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25157,7 +24675,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25256,7 +24773,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25355,7 +24871,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25454,7 +24969,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25553,7 +25067,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25652,7 +25165,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25751,7 +25263,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25850,7 +25361,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -25949,7 +25459,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -26048,7 +25557,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -26147,7 +25655,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -26246,7 +25753,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -26345,7 +25851,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -26444,7 +25949,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="checkbox-set"
             type="checkbox"
           />
@@ -26472,14 +25976,6 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -26498,8 +25994,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -26689,21 +26184,12 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="color"
         type="color"
         value="#123456"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -26722,8 +26208,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -26913,21 +26398,12 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="date"
         type="date"
         value="2018-08-01"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -26946,8 +26422,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -27137,21 +26612,12 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="datetime-local"
         type="datetime-local"
         value="2018-08-01T17:14"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -27170,8 +26636,7 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -27361,21 +26826,12 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="email"
         type="email"
         value="email@exemple.com"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -27394,8 +26850,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -27537,14 +26992,6 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
       Loading
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -27563,8 +27010,7 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -27706,14 +27152,6 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       Loading
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -27732,8 +27170,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -27924,7 +27361,6 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="money"
         step="0.01"
         type="number"
@@ -27952,14 +27388,6 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -27978,8 +27406,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -28169,21 +27596,12 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="month"
         type="month"
         value="2018-08"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -28202,8 +27620,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -28393,21 +27810,12 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="number"
         type="number"
         value={12}
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -28426,8 +27834,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -28635,7 +28042,6 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="password"
           type="password"
           value="password"
@@ -28681,14 +28087,6 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -28707,8 +28105,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -28850,14 +28247,6 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -28876,8 +28265,7 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -29070,20 +28458,11 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="radio"
         type="radio"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -29102,8 +28481,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -29334,7 +28712,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -29433,7 +28810,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -29532,7 +28908,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -29631,7 +29006,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -29730,7 +29104,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -29829,7 +29202,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -29928,7 +29300,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30027,7 +29398,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30126,7 +29496,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30225,7 +29594,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30324,7 +29692,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30423,7 +29790,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30522,7 +29888,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30621,7 +29986,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30720,7 +30084,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30819,7 +30182,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="radio-set"
             type="radio"
           />
@@ -30847,14 +30209,6 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -30873,8 +30227,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -31137,7 +30490,6 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             placeholder="range"
             type="range"
             value={42}
@@ -31186,14 +30538,6 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -31212,8 +30556,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -31388,7 +30731,6 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="select"
         type="select"
         value="#800000"
@@ -31479,14 +30821,6 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
       </select>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -31505,8 +30839,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -31648,14 +30981,6 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -31674,8 +30999,7 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -31894,7 +31218,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           placeholder="switch"
           type="checkbox"
         />
@@ -31909,14 +31232,6 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
       </div>
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -31935,8 +31250,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -32126,22 +31440,13 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{3}[-]\\\\d{3}[-]\\\\d{4}"
         placeholder="tel"
         type="tel"
-        value="1-541-754-3010"
+        value="541-754-3010"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -32160,8 +31465,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -32336,21 +31640,12 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="text"
         type="text"
         value="text"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -32369,8 +31664,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -32560,21 +31854,12 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="time"
         type="time"
         value="17:14"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -32593,8 +31878,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -32784,21 +32068,12 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         placeholder="week"
         type="week"
         value="2018-W12"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -32817,8 +32092,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -32975,7 +32249,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="42 $"
       />
@@ -33082,7 +32355,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="0 123 456 789"
       />
@@ -33204,7 +32476,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="color"
         value="#ff7d02"
       />
@@ -33311,7 +32582,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{4}-\\\\d{4}-\\\\d{4}-\\\\d{4}"
         type="text"
         value=""
@@ -33435,7 +32705,6 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="number"
         value={12}
       />
@@ -33542,21 +32811,12 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="i*"
         type="text"
         value="iiiiiii"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -33575,8 +32835,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -33733,20 +32992,11 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value={1337}
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -33765,8 +33015,7 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -33923,20 +33172,11 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value={1337}
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -33955,8 +33195,7 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -34113,20 +33352,11 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="Non empty"
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -34145,8 +33375,7 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -34322,7 +33551,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="text"
         value=""
@@ -34448,7 +33676,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="text"
         value=""
@@ -34574,7 +33801,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="select"
         value=""
@@ -34841,7 +34067,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="email"
         value=""
@@ -35073,7 +34298,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="radio"
           />
@@ -35172,7 +34396,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="radio"
           />
@@ -35271,7 +34494,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="radio"
           />
@@ -35416,7 +34638,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         step="1"
         type="number"
         value=""
@@ -35541,7 +34762,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         step="0.01"
         type="number"
         value=""
@@ -35664,7 +34884,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{3}[-]\\\\d{3}[-]\\\\d{4}"
         type="tel"
         value=""
@@ -35772,7 +34991,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -35897,7 +35115,6 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           size={5}
           type="text"
           value=""
@@ -36005,21 +35222,12 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="text"
           value=""
         />
       </label>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -36038,8 +35246,7 @@ exports[`Storyshots Formol exemples Adding a person 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -36197,7 +35404,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="text"
         value="Liza"
@@ -36305,7 +35511,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="text"
         value="Houston"
@@ -36413,7 +35618,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="select"
         value="Germany"
@@ -36680,7 +35884,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="email"
         value="houston.liza@exemple.com"
@@ -36912,7 +36115,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="radio"
           />
@@ -37011,7 +36213,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="radio"
           />
@@ -37110,7 +36311,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="radio"
           />
@@ -37283,7 +36483,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="checkbox"
         />
         <label
@@ -37414,7 +36613,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         step="1"
         type="number"
         value={64}
@@ -37539,7 +36737,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         step="0.01"
         type="number"
         value={1.78}
@@ -37662,10 +36859,9 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="\\\\d{3}[-]\\\\d{3}[-]\\\\d{4}"
         type="tel"
-        value="1-541-754-3010"
+        value="541-754-3010"
       />
     </label>
   </div>
@@ -37770,7 +36966,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="12 Norfolk St"
       />
@@ -37895,7 +37090,6 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           size={5}
           type="text"
           value="69030"
@@ -38003,21 +37197,12 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           type="text"
           value="Haigler"
         />
       </label>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -38036,8 +37221,7 @@ exports[`Storyshots Formol exemples Editing a person 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -38201,7 +37385,6 @@ Array [
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           pattern="\\\\w+\\\\d{2}"
           required={true}
           type="text"
@@ -38343,7 +37526,6 @@ Array [
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="password"
             value=""
@@ -38389,14 +37571,6 @@ Array [
         </div>
       </label>
     </div>
-    <input
-      style={
-        Object {
-          "display": "none",
-        }
-      }
-      type="submit"
-    />
     <button
       className={
         Block {
@@ -38430,8 +37604,7 @@ Array [
         }
       }
       disabled={true}
-      onClick={[Function]}
-      type="button"
+      type="submit"
     >
       Submit
     </button>
@@ -38603,7 +37776,6 @@ Array [
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           pattern="\\\\w+\\\\d{2}"
           required={true}
           type="text"
@@ -38745,7 +37917,6 @@ Array [
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="password"
             value=""
@@ -38791,14 +37962,6 @@ Array [
         </div>
       </label>
     </div>
-    <input
-      style={
-        Object {
-          "display": "none",
-        }
-      }
-      type="submit"
-    />
     <button
       className={
         Block {
@@ -38817,8 +37980,7 @@ Array [
         }
       }
       disabled={true}
-      onClick={[Function]}
-      type="button"
+      type="submit"
     >
       Submit
     </button>
@@ -38975,7 +38137,6 @@ Array [
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           pattern="\\\\w+\\\\d{2}"
           required={true}
           type="text"
@@ -39117,7 +38278,6 @@ Array [
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="password"
             value=""
@@ -39163,14 +38323,6 @@ Array [
         </div>
       </label>
     </div>
-    <input
-      style={
-        Object {
-          "display": "none",
-        }
-      }
-      type="submit"
-    />
     <button
       className={
         Block {
@@ -39189,8 +38341,7 @@ Array [
         }
       }
       disabled={true}
-      onClick={[Function]}
-      type="button"
+      type="submit"
     >
       Submit
     </button>
@@ -39347,7 +38498,6 @@ Array [
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={[Function]}
           pattern="\\\\w+\\\\d{2}"
           required={true}
           type="text"
@@ -39489,7 +38639,6 @@ Array [
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             required={true}
             type="password"
             value=""
@@ -39535,14 +38684,6 @@ Array [
         </div>
       </label>
     </div>
-    <input
-      style={
-        Object {
-          "display": "none",
-        }
-      }
-      type="submit"
-    />
     <button
       className={
         Block {
@@ -39561,8 +38702,7 @@ Array [
         }
       }
       disabled={false}
-      onClick={[Function]}
-      type="button"
+      type="submit"
     >
       Submit
     </button>
@@ -39735,7 +38875,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="number"
         value=""
       />
@@ -39842,7 +38981,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -39949,7 +39087,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -40056,7 +39193,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -40178,7 +39314,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="number"
         value=""
       />
@@ -40341,7 +39476,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -40439,7 +39573,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -40537,7 +39670,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -40635,7 +39767,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -40733,7 +39864,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -40831,7 +39961,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -40858,14 +39987,6 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -40884,8 +40005,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -41042,7 +40162,6 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -41152,7 +40271,6 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="select"
         value="France"
@@ -41305,14 +40423,6 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -41331,8 +40441,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -41545,7 +40654,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -41649,7 +40757,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -41753,7 +40860,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -41857,7 +40963,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -41961,7 +41066,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42065,7 +41169,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42169,7 +41272,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42273,7 +41375,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42377,7 +41478,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42481,7 +41581,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42585,7 +41684,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42689,7 +41787,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42793,7 +41890,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -42897,7 +41993,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -43001,7 +42096,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -43105,7 +42199,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -43138,14 +42231,6 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -43164,8 +42249,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -43337,7 +42421,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="number"
         value={4}
       />
@@ -43444,7 +42527,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="paul"
       />
@@ -43551,7 +42633,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="*"
       />
@@ -43658,7 +42739,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value="extra info"
       />
@@ -43780,7 +42860,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="number"
         value={42}
       />
@@ -43943,7 +43022,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -44041,7 +43119,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -44139,7 +43216,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -44237,7 +43313,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -44335,7 +43410,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -44433,7 +43507,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -44460,14 +43533,6 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -44486,8 +43551,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -44611,14 +43675,6 @@ exports[`Storyshots Miscellaneous Fast HTML Field 1`] = `
       Loading
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -44637,8 +43693,7 @@ exports[`Storyshots Miscellaneous Fast HTML Field 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -44795,7 +43850,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="select"
         value="##formol_memo_2"
       >
@@ -44937,7 +43991,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="select"
         value={
           Array [
@@ -45272,7 +44325,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -45370,7 +44422,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -45468,7 +44519,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -45566,7 +44616,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -45664,7 +44713,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -45762,7 +44810,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="radio"
           />
           <span
@@ -45946,7 +44993,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -46044,7 +45090,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -46142,7 +45187,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -46240,7 +45284,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -46338,7 +45381,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -46436,7 +45478,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
             type="checkbox"
           />
           <span
@@ -46463,14 +45504,6 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
       </fieldset>
     </div>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -46489,8 +45522,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -46614,14 +45646,6 @@ exports[`Storyshots Miscellaneous Select menu long options 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -46640,8 +45664,7 @@ exports[`Storyshots Miscellaneous Select menu long options 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -46833,14 +45856,6 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -46859,8 +45874,7 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -46984,14 +45998,6 @@ exports[`Storyshots Miscellaneous Select menu with option style 1`] = `
       Loading
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -47010,8 +46016,7 @@ exports[`Storyshots Miscellaneous Select menu with option style 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -47185,21 +46190,12 @@ exports[`Storyshots Validators Complex field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -47218,8 +46214,7 @@ exports[`Storyshots Validators Complex field validation 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -47376,7 +46371,6 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
@@ -47483,20 +46477,11 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         type="text"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -47515,8 +46500,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -47689,7 +46673,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -47813,7 +46796,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -47937,7 +46919,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48061,7 +47042,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48185,7 +47165,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48309,7 +47288,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48433,7 +47411,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48557,7 +47534,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48681,7 +47657,6 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
@@ -48805,21 +47780,12 @@ exports[`Storyshots Validators Cross field validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         required={true}
         type="number"
         value=""
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -48838,8 +47804,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>
@@ -49015,7 +47980,6 @@ exports[`Storyshots Validators DOM validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
         pattern="#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})"
         required={true}
         type="text"
@@ -49023,14 +47987,6 @@ exports[`Storyshots Validators DOM validation 1`] = `
       />
     </label>
   </div>
-  <input
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="submit"
-  />
   <button
     className={
       Block {
@@ -49049,8 +48005,7 @@ exports[`Storyshots Validators DOM validation 1`] = `
       }
     }
     disabled={true}
-    onClick={[Function]}
-    type="button"
+    type="submit"
   >
     Submit
   </button>

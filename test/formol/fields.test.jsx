@@ -175,9 +175,10 @@ describe('Formol field', () => {
     await input().simulate('change', { target: { value: 'baz' } })
     await input().simulate('blur')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { foo: 'baz' },
       { foo: 'bar' },
@@ -206,9 +207,7 @@ describe('Formol field', () => {
     await input().simulate('change', { target: { value: '' } })
     await input().simulate('blur')
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
     expect(input().props().value).toEqual('')
     expect(error()).not.toHaveLength()
 
@@ -219,9 +218,8 @@ describe('Formol field', () => {
     await input().simulate('change', { target: { value: 'faz' } })
     await input().simulate('blur')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
-    expect(onSubmit).not.toHaveBeenCalled()
     expect(input().props().value).toEqual('faz')
 
     expect(error()).toHaveLength(1)
@@ -233,7 +231,7 @@ describe('Formol field', () => {
 
     expect(input().props().value).toEqual('baz')
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
     expect(onSubmit).toHaveBeenCalledWith(
       { foo: 'baz' },
@@ -272,9 +270,8 @@ describe('Formol field', () => {
     await input().simulate('change', { target: { value: '' } })
     await input().simulate('blur')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
-    expect(onSubmit).not.toHaveBeenCalled()
     expect(input().props().value).toEqual('')
     expect(error()).not.toHaveLength()
 
@@ -285,9 +282,8 @@ describe('Formol field', () => {
     await input().simulate('change', { target: { value: 'faz' } })
     await input().simulate('blur')
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
-    expect(onSubmit).not.toHaveBeenCalled()
     expect(input().props().value).toEqual('faz')
 
     expect(error()).toHaveLength(1)
@@ -299,7 +295,7 @@ describe('Formol field', () => {
 
     expect(input().props().value).toEqual('baz')
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
     expect(onSubmit).toHaveBeenCalledWith(
       { foo: 'baz' },

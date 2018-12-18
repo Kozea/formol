@@ -75,7 +75,6 @@ export default class Formol extends React.PureComponent {
     item: emptyItem,
     types: {},
     i18n: 'en',
-    focusNextOnEnter: false,
     classes: {},
   }
 
@@ -83,7 +82,6 @@ export default class Formol extends React.PureComponent {
     super(props)
     const { item, types, i18n, readOnly } = props
     this.form = React.createRef()
-    this.submit = React.createRef()
     this.mounted = false
 
     this.fields = {
@@ -105,7 +103,6 @@ export default class Formol extends React.PureComponent {
         enteredFields: [],
         register: this.register.bind(this),
         unregister: this.unregister.bind(this),
-        handleKeyDown: this.handleKeyDown.bind(this),
         handleEntered: this.handleEntered.bind(this),
         handleChange: this.handleChange.bind(this),
         handleChanged: this.handleChanged.bind(this),
@@ -210,48 +207,44 @@ export default class Formol extends React.PureComponent {
     })
   }
 
-  async handleSubmit() {
-    const { item, onSubmit } = this.props
+  async handleSubmit(e) {
+    const { item, allowUnmodifiedSubmit, onSubmit } = this.props
     const { modified } = this.state
     const { transientItem } = this.state.context
-    const { current: form } = this.form
-    this.validateForm()
-    if (form.checkValidity()) {
-      await this.asyncSetState({ loading: true })
-      const errors =
-        (await onSubmit(transientItem, item, this.fields.names, modified)) || {}
-      if (!this.mounted) {
-        // Protect from unmounting in onSubmit
-        return
-      }
-      await this.asyncSetState({ loading: false })
-      if (
-        (errors && errors.constructor !== Object) ||
-        Object.values(errors).some(v => v && typeof v !== 'string')
-      ) {
-        console.error(
-          'onSubmit return value must be a mapping of server errors ' +
-            "(ie: { fieldName: 'error' }) got:",
-          errors
-        )
-        return
-      }
-      // Setting errors or removing them if there are no more
-      this.setStateContext({ errors })
 
-      if (!Object.keys(errors).length) {
-        // No errors on submit
-        if (item === emptyItem) {
-          // Resetting form if no item was given
-          this.handleCancel()
-        }
+    e.preventDefault()
+    if (!modified && !allowUnmodifiedSubmit) {
+      return
+    }
+
+    await this.asyncSetState({ loading: true })
+    const errors =
+      (await onSubmit(transientItem, item, this.fields.names, modified)) || {}
+    if (!this.mounted) {
+      // Protect from unmounting in onSubmit
+      return
+    }
+    await this.asyncSetState({ loading: false })
+    if (
+      (errors && errors.constructor !== Object) ||
+      Object.values(errors).some(v => v && typeof v !== 'string')
+    ) {
+      console.error(
+        'onSubmit return value must be a mapping of server errors ' +
+          "(ie: { fieldName: 'error' }) got:",
+        errors
+      )
+      return
+    }
+    // Setting errors or removing them if there are no more
+    this.setStateContext({ errors })
+
+    if (!Object.keys(errors).length) {
+      // No errors on submit
+      if (item === emptyItem) {
+        // Resetting form if no item was given
+        this.handleCancel()
       }
-    } else if (form.reportValidity) {
-      form.reportValidity()
-    } else {
-      // Would be better to always use form.reportValidity
-      // but browser support is not as good
-      this.submit.current && this.submit.current.click()
     }
   }
 
@@ -273,78 +266,44 @@ export default class Formol extends React.PureComponent {
   }
 
   handleChanged() {
-    const { transientItem } = this.state.context
-    const errors = this.validateForm(transientItem)
+    const errors = this.validateForm()
     this.setStateContext({ errors })
   }
 
-  validateForm(newTransientItem) {
+  validateForm() {
     const { validator } = this.props
     const { transientItem } = this.state.context
     const { elements, validators, validityErrors } = this.fields
-    const item = newTransientItem || transientItem
+
     const normalize = v => (typeof v === 'string' && v ? v : '')
     // Resetting all custom validity before validation
     Object.entries(elements).forEach(
       ([name, { current }]) =>
         current && !this.errorsFromFields[name] && current.setCustomValidity('')
     )
-    return Object.entries(elements).reduce((validity, [name, { current }]) => {
-      if (validators[name]) {
-        validity[name] =
-          normalize(validators[name](item[name])) || normalize(validity[name])
-      }
-      validity[name] = validity[name] || ''
-      if (current) {
-        if (current.checkValidity()) {
-          current.setCustomValidity(validity[name])
-        } else {
-          // If there's already a DOM validation error
+    return Object.entries(elements).reduce(
+      (validity, [name, { current }]) => {
+        if (validators[name]) {
           validity[name] =
-            (validityErrors[name] && validityErrors[name](current.validity)) ||
-            current.validationMessage
+            normalize(validators[name](transientItem[name])) ||
+            normalize(validity[name])
         }
-      }
-      return validity
-    }, validator ? validator(item) : {})
-  }
-
-  handleKeyDown(e) {
-    const { focusNextOnEnter } = this.props
-    if (focusNextOnEnter && e.keyCode === 13) {
-      // GORE HACK but it makes everything simpler
-      const focused = e.target
-      if (!e.ctrlKey) {
-        if (focused.tagName === 'TEXTAREA' || focused.contentEditable) {
-          return
+        validity[name] = validity[name] || ''
+        if (current) {
+          if (current.checkValidity()) {
+            current.setCustomValidity(validity[name])
+          } else {
+            // If there's already a DOM validation error
+            validity[name] =
+              (validityErrors[name] &&
+                validityErrors[name](current.validity)) ||
+              current.validationMessage
+          }
         }
-      }
-      const fields = [...this.form.current.querySelectorAll('.Formol_Field')]
-      const focusables = fields.map(field => [
-        ...field.querySelectorAll(`
-            input:not([disabled]):not([tabindex='-1']),
-            select:not([disabled]):not([tabindex='-1']),
-            textarea:not([disabled]):not([tabindex='-1']),
-            [tabindex]:not([tabindex='-1']),
-            [contentEditable=true]:not([tabindex='-1'])
-          `),
-      ])
-      const focusedFieldIndex = focusables.findIndex(focusableFields =>
-        focusableFields.includes(focused)
-      )
-      const step = e.shiftKey ? -1 : +1
-      const nextFieldIndex = (focusedFieldIndex + step) % fields.length
-      if (step === 1 && focusedFieldIndex === fields.length - 1) {
-        this.handleSubmit(e)
-        e.preventDefault()
-        return false
-      }
-      // Let's focus the first focusable
-      const [nextFieldFirstFocusable] = focusables[nextFieldIndex]
-      nextFieldFirstFocusable.focus()
-      e.preventDefault()
-      return false
-    }
+        return validity
+      },
+      validator ? validator(transientItem) : {}
+    )
   }
 
   render(b) {
@@ -367,42 +326,33 @@ export default class Formol extends React.PureComponent {
           loading,
           errors: !!Object.values(context.errors).some(e => e),
         })}
-        onSubmit={e => e.preventDefault()}
+        onSubmit={this.handleSubmit}
         ref={this.form}
       >
         <FormolContext.Provider value={context}>
           {children}
         </FormolContext.Provider>
-        {!readOnly &&
-          onSubmit && (
-            <>
-              {/* This input is required to validate the form
-              if reportValidity isn't available */}
-              <input
-                type="submit"
-                ref={this.submit}
-                style={{ display: 'none' }}
-              />
+        {!readOnly && onSubmit && (
+          <>
+            <button
+              className={b.e('submit').mix(classes.submit)}
+              disabled={!modified && !allowUnmodifiedSubmit}
+              type="submit"
+            >
+              {submitText || context.i18n.submit}
+            </button>
+            {!noCancel && (
               <button
-                onClick={this.handleSubmit}
-                className={b.e('submit').mix(classes.submit)}
-                disabled={!modified && !allowUnmodifiedSubmit}
+                onClick={this.handleCancel}
+                className={b.e('cancel').mix(classes.cancel)}
+                disabled={!modified}
                 type="button"
               >
-                {submitText || context.i18n.submit}
+                {cancelText || context.i18n.cancel}
               </button>
-              {!noCancel && (
-                <button
-                  onClick={this.handleCancel}
-                  className={b.e('cancel').mix(classes.cancel)}
-                  disabled={!modified}
-                  type="button"
-                >
-                  {cancelText || context.i18n.cancel}
-                </button>
-              )}
-            </>
-          )}
+            )}
+          </>
+        )}
         {extra && extra(this.state)}
       </form>
     )

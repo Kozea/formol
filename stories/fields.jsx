@@ -115,7 +115,7 @@ export const testFieldValue = name =>
     email: 'email@exemple.com',
     number: 12,
     range: 42,
-    tel: '1-541-754-3010',
+    tel: '541-754-3010',
     radio: true,
     checkbox: true,
     'checkbox-set': ['#800000', '#ffff00'],

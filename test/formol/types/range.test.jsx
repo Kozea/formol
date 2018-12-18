@@ -40,9 +40,10 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-    expect(onSubmit).toHaveBeenCalled()
+    await submit().simulate('submit')
+
     expect(onSubmit).toHaveBeenCalledWith(
       { range: 96 },
       { range: 42 },
@@ -116,9 +117,7 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     expect(input().props().value).toEqual(4000)
 
@@ -127,9 +126,8 @@ describe('Range field', () => {
     await input().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
-    expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
       { range: 1664 },
       { range: 42 },
@@ -195,9 +193,7 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
   })
   it('prevents change when not in custom range', async () => {
     const onSubmit = jest.fn()
@@ -237,9 +233,7 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 1 } })
@@ -252,9 +246,7 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     await input().simulate('focus')
     await input().simulate('change', {
@@ -269,9 +261,7 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 18 } })
@@ -280,9 +270,8 @@ describe('Range field', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
+    await submit().simulate('submit')
 
-    expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
       { range: 18 },
       { range: 42 },

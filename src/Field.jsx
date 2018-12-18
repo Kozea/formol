@@ -78,7 +78,6 @@ export default class Field extends React.PureComponent {
       validityErrors,
       handleChange,
       handleEntered,
-      handleKeyDown,
       register,
       unregister,
       ...props
@@ -123,7 +122,6 @@ export default class Field extends React.PureComponent {
             onFocus={this.handleFocus}
             onBlur={this.handleBlur}
             onChange={this.handleChange}
-            onKeyDown={handleKeyDown}
             {...props}
           />
           {unit && (

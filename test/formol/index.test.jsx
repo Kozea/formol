@@ -34,13 +34,7 @@ describe('Formol', () => {
         .find('form')
         .children()
         .map(e => e.type())
-    ).toEqual(['input', 'button', 'button'])
-  })
-  it('does nothing on form submit', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(<Formol onSubmit={onSubmit} />)
-    await wrapper.find('form').simulate('submit')
-    expect(onSubmit).not.toHaveBeenCalled()
+    ).toEqual(['button', 'button'])
   })
   it('renders extra attribute', () => {
     const onSubmit = jest.fn()
@@ -63,86 +57,82 @@ describe('Formol', () => {
         .children()
         .map(p => p.type())
         .slice(1)
-    ).toEqual(['input', 'button', 'button', 'code'])
+    ).toEqual(['button', 'button', 'code'])
   })
-  it(
-    'handles server field errors',
-    async () => {
-      const onSubmit = jest.fn(
-        ({ text }) =>
-          ({
-            bar: { text: 'Server side error' },
-            baz: {},
-          }[text])
-      )
-      const wrapper = mount(
-        <Formol onSubmit={onSubmit} item={{ text: 'foo' }}>
-          <Field type="text">Text</Field>
-        </Formol>
-      )
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
-      const submit = () => wrapper.find('.Formol_Formol__submit')
-      const cancel = () => wrapper.find('.Formol_Formol__cancel')
+  it('handles server field errors', async () => {
+    const onSubmit = jest.fn(
+      ({ text }) =>
+        ({
+          bar: { text: 'Server side error' },
+          baz: {},
+        }[text])
+    )
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ text: 'foo' }}>
+        <Field type="text">Text</Field>
+      </Formol>
+    )
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-      expect(submit().props().disabled).toBeTruthy()
-      expect(cancel().props().disabled).toBeTruthy()
-      expect(input().props().type).toEqual('text')
-      expect(input().props().value).toEqual('foo')
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('text')
+    expect(input().props().value).toEqual('foo')
 
-      await input().simulate('focus')
-      await input().simulate('change', { target: { value: 'bar' } })
-      await input().simulate('blur')
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'bar' } })
+    await input().simulate('blur')
 
-      expect(input().props().value).toEqual('bar')
-      expect(submit().props().disabled).toBeFalsy()
-      expect(cancel().props().disabled).toBeFalsy()
+    expect(input().props().value).toEqual('bar')
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
 
-      expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
+    expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
-      await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
 
-      expect(onSubmit).toHaveBeenCalled()
-      expect(onSubmit).toHaveBeenCalledWith(
-        { text: 'bar' },
-        { text: 'foo' },
-        ['text'],
-        true
-      )
-      await forCondition(
-        () => wrapper.find('.Formol_Field__error-text').length,
-        wrapper
-      )
-      expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
-        'Server side error'
-      )
-      expect(input().props().value).toEqual('bar')
+    await submit().simulate('submit')
 
-      await input().simulate('focus')
-      await input().simulate('change', { target: { value: 'baz' } })
-      await input().simulate('blur')
+    expect(onSubmit).toHaveBeenCalledWith(
+      { text: 'bar' },
+      { text: 'foo' },
+      ['text'],
+      true
+    )
+    await forCondition(
+      () => wrapper.find('.Formol_Field__error-text').length,
+      wrapper
+    )
+    expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
+      'Server side error'
+    )
+    expect(input().props().value).toEqual('bar')
 
-      await submit().simulate('click')
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'baz' } })
+    await input().simulate('blur')
 
-      expect(onSubmit).toHaveBeenCalled()
-      expect(onSubmit).toHaveBeenCalledWith(
-        { text: 'baz' },
-        { text: 'foo' },
-        ['text'],
-        true
-      )
-      await forCondition(
-        () => !wrapper.find('.Formol_Field__error-text').length,
-        wrapper
-      )
-      expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
-      expect(input().props().value).toEqual('baz')
-    },
-    30000
-  )
+    await submit().simulate('submit')
+
+    expect(onSubmit).toHaveBeenCalledWith(
+      { text: 'baz' },
+      { text: 'foo' },
+      ['text'],
+      true
+    )
+    await forCondition(
+      () => !wrapper.find('.Formol_Field__error-text').length,
+      wrapper
+    )
+    expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
+    expect(input().props().value).toEqual('baz')
+  }, 30000)
   it('can become readonly', async () => {
     const onSubmit = jest.fn()
     class ReadOnlyChanger extends React.Component {
@@ -354,9 +344,7 @@ describe('Formol', () => {
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
-    await submit().simulate('click')
-
-    expect(onSubmit).not.toHaveBeenCalled()
+    expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     expect(input2().props().value).toEqual(21)
 
@@ -365,9 +353,9 @@ describe('Formol', () => {
     await input2().simulate('blur')
     expect(wrapper.find('.Formol_Field__error-text').length).toEqual(0)
 
-    await submit().simulate('click')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
+    await submit().simulate('submit')
 
-    expect(onSubmit).toHaveBeenCalled()
     expect(onSubmit).toHaveBeenCalledWith(
       { number1: 42, number2: 43 },
       { number1: 42, number2: 49 },
@@ -377,227 +365,147 @@ describe('Formol', () => {
     expect(input1().props().value).toEqual(42)
     expect(input2().props().value).toEqual(43)
   })
-  it(
-    'errors on bad submit return value',
-    async () => {
-      jest.spyOn(console, 'error')
-      const consoleErrorTracer = jest.fn()
-      global.console.error.mockImplementation(consoleErrorTracer)
-      const onSubmit = () => ({ badValue: 12 })
+  it('errors on bad submit return value', async () => {
+    jest.spyOn(console, 'error')
+    const consoleErrorTracer = jest.fn()
+    global.console.error.mockImplementation(consoleErrorTracer)
+    const onSubmit = () => ({ badValue: 12 })
 
-      const wrapper = mount(
-        <Formol onSubmit={onSubmit} item={{ text: 'foo' }}>
-          <Field type="text">Text</Field>
-        </Formol>
-      )
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
-      const submit = () => wrapper.find('.Formol_Formol__submit')
-      const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-      expect(submit().props().disabled).toBeTruthy()
-      expect(cancel().props().disabled).toBeTruthy()
-      expect(input().props().type).toEqual('text')
-      expect(input().props().value).toEqual('foo')
-
-      await input().simulate('focus')
-      await input().simulate('change', { target: { value: 'foo bar' } })
-      await input().simulate('blur')
-
-      expect(input().props().value).toEqual('foo bar')
-      expect(submit().props().disabled).toBeFalsy()
-      expect(cancel().props().disabled).toBeFalsy()
-
-      await submit().simulate('click')
-
-      await forCondition(() => consoleErrorTracer.mock.calls.length, wrapper)
-
-      expect(consoleErrorTracer).toHaveBeenCalled()
-      expect(consoleErrorTracer).toHaveBeenCalledWith(
-        'onSubmit return value must be a mapping of server errors ' +
-          "(ie: { fieldName: 'error' }) got:",
-        { badValue: 12 }
-      )
-
-      expect(input().props().value).toEqual('foo bar')
-      global.console.error.mockRestore()
-    },
-    30000
-  )
-  it(
-    'use reportValidity on submit if available',
-    async () => {
-      const onSubmit = jest.fn()
-      const wrapper = mount(
-        <Formol onSubmit={onSubmit} item={{ number: 31 }}>
-          <Field type="number" max={2000}>
-            Number
-          </Field>
-        </Formol>
-      )
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
-      const submit = () => wrapper.find('.Formol_Formol__submit')
-      const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-      expect(submit().props().disabled).toBeTruthy()
-      expect(cancel().props().disabled).toBeTruthy()
-      expect(input().props().type).toEqual('number')
-      expect(input().props().value).toEqual(31)
-
-      await input().simulate('focus')
-      await input().simulate('change', { target: { value: 9999 } })
-      await input().simulate('blur')
-
-      expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
-        'Constraints not satisfied'
-      )
-      expect(input().props().value).toEqual(9999)
-      expect(submit().props().disabled).toBeFalsy()
-      expect(cancel().props().disabled).toBeFalsy()
-
-      const reportValidity = jest.spyOn(
-        wrapper.instance().form.current,
-        'reportValidity'
-      )
-
-      await submit().simulate('click')
-
-      await forCondition(() => reportValidity.mock.calls.length, wrapper)
-
-      expect(reportValidity).toHaveBeenCalled()
-
-      expect(onSubmit).not.toHaveBeenCalled()
-    },
-    30000
-  )
-  it(
-    'use hidden input if reportValidity is not available',
-    async () => {
-      const onSubmit = jest.fn()
-      const wrapper = mount(
-        <Formol onSubmit={onSubmit} item={{ number: 31 }}>
-          <Field type="number" max={2000}>
-            Number
-          </Field>
-        </Formol>
-      )
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
-      const submit = () => wrapper.find('.Formol_Formol__submit')
-      const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-      expect(submit().props().disabled).toBeTruthy()
-      expect(cancel().props().disabled).toBeTruthy()
-      expect(input().props().type).toEqual('number')
-      expect(input().props().value).toEqual(31)
-
-      await input().simulate('focus')
-      await input().simulate('change', { target: { value: 9999 } })
-      await input().simulate('blur')
-
-      expect(wrapper.find('.Formol_Field__error-text').text()).toEqual(
-        'Constraints not satisfied'
-      )
-      expect(input().props().value).toEqual(9999)
-      expect(submit().props().disabled).toBeFalsy()
-      expect(cancel().props().disabled).toBeFalsy()
-
-      wrapper.instance().form.current.reportValidity = null
-
-      const submitSpy = jest.spyOn(wrapper.instance().submit.current, 'click')
-
-      await submit().simulate('click')
-
-      await forCondition(() => submitSpy.mock.calls.length, wrapper)
-
-      expect(submitSpy).toHaveBeenCalled()
-
-      expect(onSubmit).not.toHaveBeenCalled()
-    },
-    30000
-  )
-  it(
-    'resets form values after submit if not item was given',
-    async () => {
-      const onSubmit = jest.fn()
-      const wrapper = mount(
-        <Formol onSubmit={onSubmit}>
-          <Field type="text">Text</Field>
-        </Formol>
-      )
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
-      const submit = () => wrapper.find('.Formol_Formol__submit')
-      const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-      expect(submit().props().disabled).toBeTruthy()
-      expect(cancel().props().disabled).toBeTruthy()
-      expect(input().props().type).toEqual('text')
-      expect(input().props().value).toEqual('')
-
-      await input().simulate('focus')
-      await input().simulate('change', { target: { value: 'foo bar' } })
-      await input().simulate('blur')
-
-      expect(input().props().value).toEqual('foo bar')
-      expect(submit().props().disabled).toBeFalsy()
-      expect(cancel().props().disabled).toBeFalsy()
-
-      await submit().simulate('click')
-
-      expect(onSubmit).toHaveBeenCalled()
-      expect(onSubmit).toHaveBeenCalledWith(
-        { text: 'foo bar' },
-        {},
-        ['text'],
-        true
-      )
-      await forCondition(() => !input().props().value, wrapper)
-      expect(input().props().value).toEqual('')
-    },
-    30000
-  )
-  it('honors focusNextOnEnter', async () => {
     const wrapper = mount(
-      <Formol focusNextOnEnter>
+      <Formol onSubmit={onSubmit} item={{ text: 'foo' }}>
         <Field type="text">Text</Field>
-        <Field type="number">Number</Field>
-        <Field type="area">Area</Field>
       </Formol>
     )
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
-    const input = n =>
-      n === 2
-        ? wrapper
-            .find('Field')
-            .find('textarea')
-            .first()
-        : wrapper
-            .find('Field')
-            .find('input')
-            .at(n)
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('text')
+    expect(input().props().value).toEqual('foo')
 
-    await input(0).simulate('focus')
-    await input(0).simulate('keydown', { keyCode: 13 })
-    await input(1).simulate('keydown', { keyCode: 13 })
-    await input(2).simulate('keydown', { keyCode: 13 })
-    await input(2).simulate('keydown', { keyCode: 13, ctrlKey: true })
-    await input(0).simulate('keydown', { keyCode: 13 })
-    await input(1).simulate('keydown', { keyCode: 13, shiftKey: true })
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'foo bar' } })
+    await input().simulate('blur')
 
-    await input(0).simulate('keydown', { keyCode: 47 })
-  })
+    expect(input().props().value).toEqual('foo bar')
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
+
+    await submit().simulate('submit')
+
+    await forCondition(() => consoleErrorTracer.mock.calls.length, wrapper)
+
+    expect(consoleErrorTracer).toHaveBeenCalled()
+    expect(consoleErrorTracer).toHaveBeenCalledWith(
+      'onSubmit return value must be a mapping of server errors ' +
+        "(ie: { fieldName: 'error' }) got:",
+      { badValue: 12 }
+    )
+
+    expect(input().props().value).toEqual('foo bar')
+    global.console.error.mockRestore()
+  }, 30000)
+
+  it('resets form values after submit if not item was given', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit}>
+        <Field type="text">Text</Field>
+      </Formol>
+    )
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('text')
+    expect(input().props().value).toEqual('')
+
+    await input().simulate('focus')
+    await input().simulate('change', { target: { value: 'foo bar' } })
+    await input().simulate('blur')
+
+    expect(input().props().value).toEqual('foo bar')
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeFalsy()
+
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
+
+    await submit().simulate('submit')
+
+    expect(onSubmit).toHaveBeenCalledWith(
+      { text: 'foo bar' },
+      {},
+      ['text'],
+      true
+    )
+    await forCondition(() => !input().props().value, wrapper)
+    expect(input().props().value).toEqual('')
+  }, 30000)
+
+  it('does not call onSubmit with no modifications', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit} item={{ text: 'txt' }}>
+        <Field type="text">Text</Field>
+      </Formol>
+    )
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeTruthy()
+    expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('text')
+    expect(input().props().value).toEqual('txt')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
+
+    await submit().simulate('submit')
+    expect(onSubmit).not.toHaveBeenCalled()
+  }, 30000)
+
+  it('does call onSubmit with no modifications but allowUnmodifiedSubmit', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol allowUnmodifiedSubmit onSubmit={onSubmit} item={{ text: 'txt' }}>
+        <Field type="text">Text</Field>
+      </Formol>
+    )
+    const input = () =>
+      wrapper
+        .find('Field')
+        .find('input')
+        .first()
+    const submit = () => wrapper.find('.Formol_Formol__submit')
+    const cancel = () => wrapper.find('.Formol_Formol__cancel')
+
+    expect(submit().props().disabled).toBeFalsy()
+    expect(cancel().props().disabled).toBeTruthy()
+    expect(input().props().type).toEqual('text')
+    expect(input().props().value).toEqual('txt')
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
+
+    await submit().simulate('submit')
+    expect(onSubmit).toHaveBeenCalledWith(
+      { text: 'txt' },
+      { text: 'txt' },
+      ['text'],
+      false
+    )
+  }, 30000)
 })

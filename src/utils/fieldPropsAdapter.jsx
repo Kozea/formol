@@ -103,7 +103,6 @@ export default function fieldPropsAdapter(WrappedComponent) {
           enteredFields,
           handleChange,
           handleEntered,
-          handleKeyDown,
         },
         conditionalContext,
         readOnly,
@@ -131,7 +130,6 @@ export default function fieldPropsAdapter(WrappedComponent) {
           }
           handleChange={handleChange}
           handleEntered={handleEntered}
-          handleKeyDown={handleKeyDown}
           register={this.register}
           unregister={this.unregister}
         />
