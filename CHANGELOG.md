@@ -1,3 +1,8 @@
+### [2.5.1](https://github.com/Kozea/formol/compare/v2.5.0...v2.5.1)
+
+- Fix handleSubmit being called on enter even when onSubmit is not defined
+- Dependencies upgrade
+
 ## [2.5.0](https://github.com/Kozea/formol/compare/v2.4.2...v2.5.0)
 
 - Rework submit mecanism by using native onSubmit (fix weird enter key behavior)
