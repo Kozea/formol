@@ -213,7 +213,7 @@ export default class Formol extends React.PureComponent {
     const { transientItem } = this.state.context
 
     e.preventDefault()
-    if (!modified && !allowUnmodifiedSubmit) {
+    if (!onSubmit || (!modified && !allowUnmodifiedSubmit)) {
       return
     }
 
