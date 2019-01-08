@@ -208,7 +208,11 @@ export default class FileField extends React.PureComponent {
     const { rejected } = this.state
     let preview = null
     if (multiple) {
-      preview = value.map(file => this.renderPreview(b, file))
+      preview = (
+        <div className={b.e('previews')}>
+          {value.map(file => this.renderPreview(b, file))}
+        </div>
+      )
     } else if (value) {
       preview = this.renderPreview(b, value)
     }
@@ -252,7 +256,7 @@ export default class FileField extends React.PureComponent {
             </div>
           )}
         </Dropzone>
-        {multiple && <div className={b.e('previews')}>{preview}</div>}
+        {multiple && preview}
         <input
           className={b.mix(className).e('hidden-input')}
           ref={elementRef}
