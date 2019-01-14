@@ -1,12 +1,14 @@
 .Formol_Formol
+  box-shadow: -1px 0 0 transparent
   box-sizing: border-box
   color: $formol-color
+  padding-left: 0
   font-size: $formol-font-size
-  padding: 0 1em
-  transition: opacity 500ms ease-in
+  transition: box-shadow 250ms 250ms, opacity 500ms ease-in, padding 250ms
 
   &--errors
     box-shadow: -1px 0 0 $formol-color-error
+    padding-left: 1em
 
   &--loading
     opacity: .5
