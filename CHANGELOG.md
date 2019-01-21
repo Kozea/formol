@@ -1,3 +1,8 @@
+### [2.5.3](https://github.com/Kozea/formol/compare/v2.5.2...v2.5.3)
+
+- Only apply error on form when an enteredField has an error. Fix #42
+- Remove Form padding and add transition on Form errors state
+
 ### [2.5.2](https://github.com/Kozea/formol/compare/v2.5.1...v2.5.2)
 
 - Fix readOnly style of FileField previews

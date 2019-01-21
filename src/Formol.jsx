@@ -320,14 +320,13 @@ export default class Formol extends React.PureComponent {
       onSubmit,
     } = this.props
     const { loading, context, modified } = this.state
-    const { i18n } = context
+    const { enteredFields, i18n } = context
+
+    const errors = enteredFields.some(field => context.errors[field])
 
     return (
       <form
-        className={b.mix(className).m({
-          loading,
-          errors: !!Object.values(context.errors).some(e => e),
-        })}
+        className={b.mix(className).m({ loading, errors })}
         onSubmit={this.handleSubmit}
         ref={this.form}
       >
