@@ -1,7 +1,10 @@
 .Formol_Inliner
-  margin: -$formol-field-margin 0
+  margin: -$formol-field-margin / 2 0
 
   .Formol_Field
     display: inline-block
-    margin-right: 1em
+    margin: $formol-field-margin / 2 0
     vertical-align: top
+
+    &:not(:last-of-type)
+      margin-right: 1em
