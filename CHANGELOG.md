@@ -1,3 +1,7 @@
+### [2.5.4](https://github.com/Kozea/formol/compare/v2.5.3...v2.5.4)
+
+- Inliner cosmetics
+
 ### [2.5.3](https://github.com/Kozea/formol/compare/v2.5.2...v2.5.3)
 
 - Only apply error on form when an enteredField has an error. Fix #42
