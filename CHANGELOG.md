@@ -1,3 +1,8 @@
+### [2.5.5](https://github.com/Kozea/formol/compare/v2.5.4...v2.5.5)
+
+- Fix missing position relative when using SwitchButton outside of a formol Form.
+  This fixes a weird bug that caused the page to scroll when toggling the switch state.
+
 ### [2.5.4](https://github.com/Kozea/formol/compare/v2.5.3...v2.5.4)
 
 - Inliner cosmetics
