@@ -55,7 +55,6 @@ export default class FileField extends React.PureComponent {
       value: null,
       rejected: [],
     }
-    this.dropzone = React.createRef()
     this.handleDrop = this.handleDrop.bind(this)
     this.handleRemove = this.handleRemove.bind(this)
   }
@@ -233,7 +232,6 @@ export default class FileField extends React.PureComponent {
           rejectClassName={b.e('dropzone').m({ reject: true }).s}
           disabledClassName={b.e('dropzone').m({ disabled: true }).s}
           name={name}
-          ref={this.dropzone}
           multiple={multiple}
           onDrop={this.handleDrop}
         >
