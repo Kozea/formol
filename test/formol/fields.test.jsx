@@ -201,7 +201,7 @@ describe('Formol field', () => {
     const submit = () => wrapper.find('.Formol_Formol__submit')
 
     expect(input().props().value).toEqual('bar')
-    expect(error()).not.toHaveLength()
+    expect(error()).toHaveLength(0)
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: '' } })
@@ -209,7 +209,6 @@ describe('Formol field', () => {
 
     expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
     expect(input().props().value).toEqual('')
-    expect(error()).not.toHaveLength()
 
     expect(error()).toHaveLength(1)
     expect(error().text()).toEqual('Constraints not satisfied')
@@ -264,7 +263,7 @@ describe('Formol field', () => {
     const submit = () => wrapper.find('.Formol_Formol__submit')
 
     expect(input().props().value).toEqual('bar')
-    expect(error()).not.toHaveLength()
+    expect(error()).toHaveLength(0)
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: '' } })
@@ -273,7 +272,6 @@ describe('Formol field', () => {
     expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
 
     expect(input().props().value).toEqual('')
-    expect(error()).not.toHaveLength()
 
     expect(error()).toHaveLength(1)
     expect(error().text()).toEqual('Constraints not satisfied')
