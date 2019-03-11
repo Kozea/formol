@@ -1,3 +1,8 @@
+### [2.5.6](https://github.com/Kozea/formol/compare/v2.5.5...v2.5.6)
+
+- Dependencies upgrade
+- Migration to storybook 5
+
 ### [2.5.5](https://github.com/Kozea/formol/compare/v2.5.4...v2.5.5)
 
 - Fix missing position relative when using SwitchButton outside of a formol Form.
