@@ -166,7 +166,7 @@ const Exemple2 = () => (
 
 const b = new Block('Home')
 storiesOf('Home', module)
-  .addParameters({ options: { showAddonPanel: false } })
+  .addParameters({ options: { showPanel: false } })
   .add('Home', () => (
     <section className={b}>
       <h1 className={b.e('hero')}>

@@ -5,20 +5,20 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const rootDir = path.join(__dirname, '..')
 const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
 
-module.exports = (baseConfig, env) => {
+module.exports = ({ config }) => {
   // Add themes as entries to compile them as css
-  baseConfig.entry = { main: baseConfig.entry }
+  config.entry = { main: config.entry }
   const themes = fs
     .readdirSync(path.join(rootDir, 'src', 'sass'))
     .filter(theme => theme.endsWith('.sass'))
     .map(theme => {
       const themeName = theme.slice(0, -5)
-      baseConfig.entry[themeName] = path.join(rootDir, 'src', 'sass', theme)
+      config.entry[themeName] = path.join(rootDir, 'src', 'sass', theme)
       return themeName
     })
 
-  baseConfig.module.rules[0] = {
-    test: /\.jsx?$/,
+  config.module.rules[0] = {
+    test: /\.(mjs|jsx?)$/,
     include: dir(),
     exclude: dir('node_modules'),
     loader: 'babel-loader',
@@ -46,12 +46,9 @@ module.exports = (baseConfig, env) => {
       ],
     },
   }
+
   // Add styles loaders (and the storysource hack)
-  baseConfig.module.rules.push(
-    {
-      test: /\.css$/,
-      loader: ['style-loader', 'css-loader'],
-    },
+  config.module.rules.push(
     {
       test: /\.sass$/,
       loader: [
@@ -73,6 +70,6 @@ module.exports = (baseConfig, env) => {
   )
 
   // Extract themes as css files
-  baseConfig.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }))
-  return baseConfig
+  config.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }))
+  return config
 }

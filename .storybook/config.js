@@ -1,14 +1,14 @@
-import { addDecorator, configure } from '@storybook/react'
-import { withOptions } from '@storybook/addon-options'
+import { addParameters, configure } from '@storybook/react'
 
 const themes = ['default.css', 'clean.css']
 
-addDecorator(
-  withOptions({
+addParameters({
+  options: {
     name: 'Formol',
     url: 'https://github.com/Kozea/formol',
-    addonPanelInRight: true,
-  })
-)
+    panelPosition: 'right',
+    showPanel: true,
+  },
+})
 
 configure(() => require('../stories'), module)
