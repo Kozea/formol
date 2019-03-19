@@ -1,3 +1,8 @@
+### [2.5.7](https://github.com/Kozea/formol/compare/v2.5.6...v2.5.7)
+
+- Fix phone pattern being ignored in TelField
+- Dependencies upgrade
+
 ### [2.5.6](https://github.com/Kozea/formol/compare/v2.5.5...v2.5.6)
 
 - Dependencies upgrade
