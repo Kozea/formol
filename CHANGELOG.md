@@ -1,3 +1,7 @@
+### [2.5.8](https://github.com/Kozea/formol/compare/v2.5.7...v2.5.8)
+
+- Fix margin selector on FieldSet\_\_label which made inliner fields not aligned.
+
 ### [2.5.7](https://github.com/Kozea/formol/compare/v2.5.6...v2.5.7)
 
 - Fix phone pattern being ignored in TelField
