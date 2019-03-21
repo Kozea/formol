@@ -26,10 +26,12 @@
 
     &__label
       @extend .Formol_Field
-      margin: 0 calc(#{$formol-field-margin} / 2) calc(#{$formol-field-margin} / 2) 0
 
       &--focus, &--focus:hover
         color: $formol-color-action
+
+  .Formol_FieldSet .Formol_FieldSet__label
+    margin: 0 calc(#{$formol-field-margin} / 2) calc(#{$formol-field-margin} / 2) 0
 
 .Formol_BooleanField
   margin: 0
