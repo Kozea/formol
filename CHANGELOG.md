@@ -1,3 +1,8 @@
+### [2.5.9](https://github.com/Kozea/formol/compare/v2.5.8...v2.5.9)
+
+- Scroll to first field with errors on server validation error.
+- Dependencies upgrade
+
 ### [2.5.8](https://github.com/Kozea/formol/compare/v2.5.7...v2.5.8)
 
 - Fix margin selector on FieldSet\_\_label which made inliner fields not aligned.
