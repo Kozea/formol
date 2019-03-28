@@ -239,6 +239,9 @@ export default class Formol extends React.PureComponent {
     // Setting errors or removing them if there are no more
     this.setStateContext({ errors })
 
+    // Focus error since it does not come from browser it won't focus
+    this.focusFirstError()
+
     if (!Object.keys(errors).length) {
       // No errors on submit
       if (item === emptyItem) {
@@ -304,6 +307,16 @@ export default class Formol extends React.PureComponent {
       },
       validator ? validator(transientItem) : {}
     )
+  }
+
+  focusFirstError() {
+    const { errors } = this.state.context
+    const firstErrorField = Object.entries(errors).find(([, error]) => error)
+    if (!firstErrorField) {
+      return
+    }
+    const [name] = firstErrorField
+    this.fields.elements[name].current.focus()
   }
 
   render(b) {
