@@ -135,3 +135,20 @@ storiesOf('Validators', module)
       </Formol>
     ))
   )
+  .add(
+    'Server side validation',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Server side validation</h1>
+          <Field name="text1">Text 1</Field>
+          <Field name="text2">Text 2</Field>
+        </Formol>
+      ),
+      {},
+      ({ text1, text2 }) => ({
+        text1: text1.match(/^\d/) ? '' : 'Text1 must begin with a number',
+        text2: text2.match(/^\d/) ? 'Text2 mustn’t begin with a number' : '',
+      })
+    )
+  )

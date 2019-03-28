@@ -423,3 +423,40 @@ storiesOf('Miscellaneous', module)
       }
     )
   )
+  .add(
+    'Focus/Scroll on error',
+    withStateForm(
+      props => (
+        <Formol {...props}>
+          <h1>Focus/Scroll on error</h1>
+          {new Array(30).fill().map((_, i) => (
+            <Field
+              name={`text${i}`}
+              // eslint-disable-next-line react/no-array-index-key
+              key={i}
+              validator={
+                i === 2
+                  ? s =>
+                      !s.startsWith('2A') &&
+                      'Text2 should specifically start with 2A'
+                  : void 0
+              }
+            >
+              Text {i}
+            </Field>
+          ))}
+        </Formol>
+      ),
+      new Array(30).fill().reduce((rv, _, i) => {
+        rv[`text${i}`] = `${i}${i === 2 ? 'A' : ''}${i.toString(36)}`
+        return rv
+      }, {}),
+      item =>
+        new Array(30).fill().reduce((rv, _, i) => {
+          rv[`text${i}`] = item[`text${i}`].startsWith(i.toString())
+            ? ''
+            : `Text${i} must begin with {i}`
+          return rv
+        }, {})
+    )
+  )
