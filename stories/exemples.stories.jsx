@@ -37,7 +37,7 @@ const sex = {
   Other: 'other',
 }
 
-storiesOf('Formol exemples', module)
+storiesOf('Exemples', module)
   .addDecorator(withKnobs)
   .add(
     'Adding a person',
