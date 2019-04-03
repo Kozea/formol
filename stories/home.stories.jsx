@@ -230,7 +230,7 @@ storiesOf('Home', module)
           module: {
           rules: [
             {
-              test: /\.js$/,
+              test: /\.(mjs|jsx?)$/,
               include: "node_modules/formol"  // <- this line allows formol
               use: {                          //    to be built alongside
                 loader: "babel-loader"        //    your project
