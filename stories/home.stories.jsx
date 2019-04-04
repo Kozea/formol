@@ -6,12 +6,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import jsx from 'react-syntax-highlighter/dist/languages/prism/jsx'
+import sass from 'react-syntax-highlighter/dist/languages/prism/sass'
 import prism from 'react-syntax-highlighter/dist/styles/prism/prism'
 
 import Formol, { Conditional, Field, Inliner } from '../src'
 import pkg from '../package.json'
 
 SyntaxHighlighter.registerLanguage('jsx', jsx)
+SyntaxHighlighter.registerLanguage('sass', sass)
 
 const dedent = (strs, ...values) => {
   const str = strs
