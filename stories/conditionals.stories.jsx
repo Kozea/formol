@@ -32,10 +32,10 @@ storiesOf('Conditionals', module)
         <Field name="areyouok" type="switch">
           Are you ok?
         </Field>
-        <Conditional disabled={({ areyouok }) => areyouok}>
+        <Conditional disabled={({ areyouok }) => !areyouok}>
           <Field name="why">Why?</Field>
         </Conditional>
-        <Conditional disabled={({ areyouok }) => !areyouok}>
+        <Conditional disabled={({ areyouok }) => areyouok}>
           <Field name="whynot">Why not?</Field>
         </Conditional>
       </Formol>

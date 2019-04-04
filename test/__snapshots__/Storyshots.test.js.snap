@@ -1285,7 +1285,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
         "element": null,
         "mixed": Array [],
         "modifier": Object {
-          "disabled": undefined,
+          "disabled": true,
           "error": false,
           "focus": false,
           "modified": false,
@@ -1294,7 +1294,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "required": false,
           "type": "text",
         },
-        "s": "Formol_Field Formol_Field--type-text Formol_Field--name-why",
+        "s": "Formol_Field Formol_Field--type-text Formol_Field--name-why Formol_Field--disabled",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -1375,6 +1375,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
             "subs": Array [],
           }
         }
+        disabled={true}
         name="why"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1391,7 +1392,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
         "element": null,
         "mixed": Array [],
         "modifier": Object {
-          "disabled": true,
+          "disabled": undefined,
           "error": false,
           "focus": false,
           "modified": false,
@@ -1400,7 +1401,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "required": false,
           "type": "text",
         },
-        "s": "Formol_Field Formol_Field--type-text Formol_Field--name-whynot Formol_Field--disabled",
+        "s": "Formol_Field Formol_Field--type-text Formol_Field--name-whynot",
         "settings": Object {
           "elementDelimiter": "__",
           "modifierDelimiter": "--",
@@ -1481,7 +1482,6 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
             "subs": Array [],
           }
         }
-        disabled={true}
         name="whynot"
         onBlur={[Function]}
         onChange={[Function]}
