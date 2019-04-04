@@ -255,6 +255,7 @@ storiesOf('Home', module)
         <div className={b.e('side-by-side')}>
           <SyntaxHighlighter language="jsx" style={prism}>
             {dedent`
+          import 'formol/lib/default.css'
           import Formol, {Field} from 'formol'
 
           const onSubmit = ({ login, password }) =>
@@ -410,10 +411,114 @@ storiesOf('Home', module)
           <Exemple2 />
         </div>
       </article>
+      <article className={b.e('exemple')}>
+        <h3>Themable</h3>
+        <p>
+          The default theme is accessible by a simple css import (you will need
+          the standard:{' '}
+          <a
+            href="https://github.com/webpack-contrib/css-loader"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            css loader
+          </a>
+          ):
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {"import 'formol/lib/default.css'"}
+          </SyntaxHighlighter>
+        </p>
+        <p>
+          similarly with the clean theme:
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {"import 'formol/lib/clean.css'"}
+          </SyntaxHighlighter>
+        </p>
+        <p>
+          You can also use directly the sass import if you are using{' '}
+          <a
+            href="https://sass-lang.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            sass
+          </a>
+          :
+          <SyntaxHighlighter language="sass" style={prism}>
+            {'@import ~formol/src/sass/default'}
+          </SyntaxHighlighter>
+          with the added benefit that you can override{' '}
+          <a
+            href={
+              'https://github.com/Kozea/formol/blob/master/' +
+              'src/sass/default/_variables.sass'
+            }
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            the formol variables
+          </a>
+          :
+          <SyntaxHighlighter language="sass" style={prism}>
+            {dedent`
+            $formol-color: #ce93d8
+            $formol-color-action: #ba68c8
+            $formol-color-inactive: #e1bee7
+            $formol-color-error: #f06292
+            $formol-background-color: #f3e5f5
+
+            $formol-font-size: 0.9em
+
+            $formol-big-field-size: 70em
+            $formol-medium-field-size: 50em
+
+            $formol-field-margin: 2em
+            $formol-field-padding: 1.5em
+
+            @import ~formol/src/sass/default
+          `}
+          </SyntaxHighlighter>
+          <small>(This is just an exemple please don’t judge me).</small>
+        </p>
+        <p>
+          As a side note if you have some design skills, you are very welcome to
+          add new themes by submitting a{' '}
+          <a
+            href="https://github.com/Kozea/formol/pulls"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            pull request
+          </a>{' '}
+          with your new theme in the{' '}
+          <a
+            href="https://github.com/Kozea/formol/blob/master/src/sass/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            sass directory
+          </a>
+          .
+        </p>
+        <p>
+          The sass is written in a BEM style thanks to{' '}
+          <a
+            href="https://github.com/paradoxxxzero/bemboo"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            bemboo
+          </a>
+          .
+        </p>
+      </article>
       <a href="https://github.com/Kozea/formol/">
         <img
           style={{ position: 'absolute', top: 0, right: 0, border: 0 }}
-          src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+          src={
+            'https://s3.amazonaws.com/github/ribbons/' +
+            'forkme_right_gray_6d6d6d.png'
+          }
           alt="Fork me on GitHub"
         />
       </a>
