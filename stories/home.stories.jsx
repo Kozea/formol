@@ -219,7 +219,7 @@ storiesOf('Home', module)
       <article className={b.e('quick-start')}>
         <h2>Quick start</h2>
         <SyntaxHighlighter language="jsx" style={prism}>
-          yarn install formol
+          yarn add formol
         </SyntaxHighlighter>
         <p>
           Optional but very recommended, enable code-splitting with webpack by
