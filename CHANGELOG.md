@@ -1,3 +1,9 @@
+### [2.5.10](https://github.com/Kozea/formol/compare/v2.5.9...v2.5.10)
+
+- Use es6 regular export from syntax for index. Removes the need of babel
+  @babel/plugin-proposal-export-default-from plugin
+- Dependencies upgrade
+
 ### [2.5.9](https://github.com/Kozea/formol/compare/v2.5.8...v2.5.9)
 
 - Scroll to first field with errors on server validation error.
