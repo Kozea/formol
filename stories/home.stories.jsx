@@ -224,23 +224,61 @@ storiesOf('Home', module)
           yarn add formol
         </SyntaxHighlighter>
         <p>
-          Optional but very recommended, enable code-splitting with webpack by
-          adding to your jsx babel rule in your webpack.config.js:
+          To use webpack code-splitting in formol, you will have to do these
+          modifications to your webpack.config:
         </p>
         <SyntaxHighlighter language="jsx" style={prism}>
           {dedent`
-          module: {
-          rules: [
-            {
-              test: /\.(mjs|jsx?)$/,
-              include: "node_modules/formol"  // <- this line allows formol
-              use: {                          //    to be built alongside
-                loader: "babel-loader"        //    your project
-              }
-            }
-          ]
-        }`}
+            module: {
+              rules: [
+                {
+                  test: /\\.(mjs|jsx?)$/,
+                  exclude: /node_modules\\/(?!(formol)\\/).*/, // <- this line allows formol
+                  use: {                                     //    to be built alongside
+                    loader: 'babel-loader',                  //    your project
+                  },
+                  options: {
+                    presets: [
+                      '@babel/preset-react',
+                      [
+                        '@babel/preset-env',
+                        {
+                          targets: { browsers: 'last 1 version and > 3%' },
+                          modules: false,
+                        },
+                      ],
+                    ],
+                    plugins: [ // <- these plugins are needed to build formol
+                      '@babel/plugin-syntax-dynamic-import',
+                      ['@babel/plugin-proposal-decorators', { legacy: true }],
+                      'add-react-static-displayname',
+                      ['@babel/plugin-proposal-class-properties', { loose: true }],
+                    ],
+                  },
+                },
+              ],
+            },
+            resolve: { // <- these extensions needed to be loaded by webpack
+              extensions: ['.mjs', '.js', '.jsx'],
+            },`}
         </SyntaxHighlighter>
+        <p>
+          See the{' '}
+          <a
+            href="https://github.com/Kozea/formol_starter_pack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            starter pack
+          </a>{' '}
+          for more information
+        </p>
+        <aside className={b.e('nb')}>
+          NB: It is also possible to use the prebuilt version of formol, in this
+          case you will have to copy the javascript files in
+          node_modules/formol/lib in your output.path instead of modifying your
+          webpack config.
+        </aside>
         <p>
           Now you are all set. Next you can browse this storybook to find most
           formol features illustrated with state interaction (state tab),
