@@ -91,7 +91,10 @@ export default class SelectMenuField extends React.PureComponent {
         _rawChoices: choices,
       }
     }
-    if (!deepEqual(value, prevState._rawValue, { strict: true })) {
+    if (
+      !deepEqual(value, prevState._rawValue, { strict: true }) ||
+      (state && state.options)
+    ) {
       const opts = state ? state.options : prevState.options
       state = {
         ...(state === null ? {} : state),

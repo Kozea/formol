@@ -76,7 +76,8 @@ class AsyncChoicesForm extends React.Component {
           choices={objectChoices}
           required
         >
-          Complex {objectChoices.length ? null : <small>(Loading)</small>}
+          Complex
+          {Object.keys(objectChoices).length ? null : <small>(Loading)</small>}
         </Field>
       </Formol>
     )
