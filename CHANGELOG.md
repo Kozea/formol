@@ -1,3 +1,8 @@
+### [2.5.11](https://github.com/Kozea/formol/compare/v2.5.10...v2.5.11)
+
+- Fix select-menu value not being used when async loading choices. (#54)
+- Dependencies upgrade
+
 ### [2.5.10](https://github.com/Kozea/formol/compare/v2.5.9...v2.5.10)
 
 - Use es6 regular export from syntax for index. Removes the need of babel
