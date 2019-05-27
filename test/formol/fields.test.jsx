@@ -17,6 +17,8 @@ describe('Formol field', () => {
       .find('Field')
       .children()
       .first()
+      .children()
+      .first()
     expect(field).toBeTruthy()
     expect(field.hasClass('Formol_Field')).toBeTruthy()
     expect(field.hasClass('Formol_Field--name-field-1')).toBeTruthy()
@@ -37,6 +39,28 @@ describe('Formol field', () => {
     expect(input.props().name).toEqual('field-1')
     expect(input.props().type).toEqual('text')
     expect(input.props().value).toEqual('')
+  })
+  it('is rendered with overriden FieldBase fieldComponent', () => {
+    const wrapper = mount(
+      <Formol>
+        <Field
+          fieldComponent={() => {
+            return <div>TEST</div>
+          }}
+        />
+      </Formol>
+    )
+    expect(wrapper.find('form')).toBeTruthy()
+
+    const field = wrapper
+      .find('Field')
+      .children()
+      .first()
+      .children()
+      .first()
+    expect(field).toBeTruthy()
+    expect(field.type()).toEqual('div')
+    expect(field.props().children).toEqual('TEST')
   })
   it('respects the name attribute', () => {
     const wrapper = mount(
