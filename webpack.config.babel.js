@@ -8,6 +8,7 @@ import config from './package.json'
 
 export default {
   mode: 'production',
+  devtool: 'source-map',
   entry: {
     formol: ['./src'],
     ...fs
