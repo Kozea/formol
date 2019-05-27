@@ -1,3 +1,7 @@
+### [2.5.12](https://github.com/Kozea/formol/compare/v2.5.11...v2.5.12)
+
+- Add source maps to build
+
 ### [2.5.11](https://github.com/Kozea/formol/compare/v2.5.10...v2.5.11)
 
 - Fix select-menu value not being used when async loading choices. (#54)
