@@ -23,3 +23,7 @@ export {
 } from './utils/object'
 
 export * from './FieldBase'
+
+export { default as choicesAdapter } from './utils/choicesAdapter'
+export { default as memoizedChoices } from './utils/memoizedChoices'
+export { default as multipleAdapter } from './utils/multipleAdapter'

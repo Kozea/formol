@@ -8,7 +8,8 @@ import fieldPropsAdapter from './utils/fieldPropsAdapter'
 @block
 export default class Field extends React.PureComponent {
   render(b) {
-    const FieldComp = this.props.fieldComponent || FieldBase
-    return <FieldComp {...this.props} b={b} />
+    const { fieldComponent, ...rest } = this.props
+    const FieldComp = fieldComponent || FieldBase
+    return <FieldComp {...rest} b={b} />
   }
 }
