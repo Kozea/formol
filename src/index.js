@@ -10,6 +10,12 @@ export {
 } from './ConditionalContext'
 
 export { default as SwitchButton } from './utils/SwitchButton'
+export { default as choicesAdapter } from './utils/choicesAdapter'
+export { default as fieldPropsAdapter } from './utils/fieldPropsAdapter'
+export { default as FieldSet } from './utils/FieldSet'
+export { default as multipleAdapter } from './utils/multipleAdapter'
+export { default as memoizedChoices } from './utils/memoizedChoices'
+
 export { default as unrest, NoRequestNeeded } from './ext/unrest'
 export {
   nullishToEmptyString,
