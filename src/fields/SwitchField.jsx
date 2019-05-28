@@ -2,7 +2,9 @@ import React from 'react'
 
 import { block } from '../utils'
 import SwitchButton from '../utils/SwitchButton'
+import withLabel from '../utils/withLabel'
 
+@withLabel
 @block
 export default class SwitchField extends React.PureComponent {
   static defaultFieldProps = {

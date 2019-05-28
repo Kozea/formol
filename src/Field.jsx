@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaQuestionCircle } from 'react-icons/fa'
 
 import { block } from './utils'
 import fieldPropsAdapter from './utils/fieldPropsAdapter'
@@ -56,85 +55,36 @@ export default class Field extends React.PureComponent {
 
   render(b) {
     const {
-      name,
-      value,
-      type,
-      title,
-      modified,
       className,
       validator,
-      readOnly,
-      disabled,
-      unit,
-      extras,
       formatter,
       normalizer,
       unformatter,
-      children,
-      classNameModifiers,
       TypeField,
-      i18n,
-      error,
       validityErrors,
       handleChange,
       handleEntered,
       register,
       unregister,
+      children,
       ...props
     } = this.props
-
     const { focus } = this.state
-
     const Label = TypeField.formolFieldLabelElement || 'label'
+
     return (
-      <div
-        className={b.mix(className).m({
-          type,
-          name,
-          error: !!error,
-          disabled,
-          readOnly,
-          required: !!props.required,
-          modified,
-          focus,
-          ...classNameModifiers.field,
-        })}
-      >
-        <Label
-          className={b.e('label').m(classNameModifiers.label)}
-          title={title}
-        >
-          {children && (
-            <span className={b.e('title').m(classNameModifiers.labelText)}>
-              {children}
-              {title && <FaQuestionCircle />}
-            </span>
-          )}
-          <TypeField
-            name={name}
-            value={value}
-            type={type}
-            disabled={disabled}
-            readOnly={readOnly}
-            i18n={i18n}
-            elementRef={this.element}
-            className={b.e('element')}
-            onFocus={this.handleFocus}
-            onBlur={this.handleBlur}
-            onChange={this.handleChange}
-            {...props}
-          />
-          {unit && (
-            <div className={b.e('unit').m(classNameModifiers.unit)}>{unit}</div>
-          )}
-          {extras}
-        </Label>
-        {error && (
-          <div className={b.e('error-text').m(classNameModifiers.error)}>
-            {error}
-          </div>
-        )}
-      </div>
+      <TypeField
+        elementRef={this.element}
+        className={b.e('element')}
+        onFocus={this.handleFocus}
+        onBlur={this.handleBlur}
+        onChange={this.handleChange}
+        focus={focus}
+        LabelComponent={Label}
+        fieldClassName={b.mix(className)}
+        labelChildren={children}
+        {...props}
+      />
     )
   }
 }

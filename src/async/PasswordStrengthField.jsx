@@ -3,11 +3,14 @@ import zxcvbn from 'zxcvbn'
 
 import { block } from '../utils'
 import PasswordField from '../fields/PasswordField'
+import withLabel from '../utils/withLabel'
 
 /* Inspired from https://github.com/mmw/react-password-strength
    Forked here to handle a value instead of a value and
    props change
 */
+
+@withLabel
 @block
 export default class PasswordStrengthField extends React.PureComponent {
   static getState(value, minLength, userInputs) {

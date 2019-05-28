@@ -2,7 +2,9 @@ import React from 'react'
 
 import { block } from '../utils'
 import BooleanField from './BooleanField'
+import withLabel from '../utils/withLabel'
 
+@withLabel
 @block
 export default class CheckboxField extends React.PureComponent {
   static defaultFieldProps = {

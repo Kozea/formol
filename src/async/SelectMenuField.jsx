@@ -12,12 +12,14 @@ import choicesAdapter from '../utils/choicesAdapter'
 import getMenuList from '../utils/MenuList'
 import memoizedChoices from '../utils/memoizedChoices'
 import multipleAdapter from '../utils/multipleAdapter'
+import withLabel from '../utils/withLabel'
 
 export const DELIMITER = '__/__'
 
 @multipleAdapter
 @choicesAdapter
 @memoizedChoices
+@withLabel
 @block
 export default class SelectMenuField extends React.PureComponent {
   static defaultProps = {

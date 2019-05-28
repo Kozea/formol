@@ -5,10 +5,12 @@ import choicesAdapter from '../utils/choicesAdapter'
 import FieldSet from '../utils/FieldSet'
 import memoizedChoices from '../utils/memoizedChoices'
 import multipleAdapter from '../utils/multipleAdapter'
+import withLabel from '../utils/withLabel'
 
 @multipleAdapter
 @choicesAdapter
 @memoizedChoices
+@withLabel
 @block
 export default class CheckboxSetField extends React.PureComponent {
   static formolFieldLabelElement = 'div'

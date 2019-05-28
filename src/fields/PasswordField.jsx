@@ -3,7 +3,9 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa'
 
 import { block } from '../utils'
 import InputField from './InputField'
+import withLabel from '../utils/withLabel'
 
+@withLabel
 @block
 export default class PasswordField extends React.PureComponent {
   constructor(props) {

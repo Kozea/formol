@@ -7,6 +7,7 @@ import deepEqual from 'deep-equal'
 import { block, fileSize, nameExt, noOp, readAsBase64 } from '../utils'
 import Preview from '../utils/Preview'
 import multipleAdapter from '../utils/multipleAdapter'
+import withLabel from '../utils/withLabel'
 
 const key = file => [file.name, file.ext].join('.')
 
@@ -37,6 +38,7 @@ const rename = files =>
     .renamed.reverse()
 
 @multipleAdapter
+@withLabel
 @block
 export default class FileField extends React.PureComponent {
   static valueToField(value, multiple) {

@@ -4,9 +4,11 @@ import { block } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
 import FieldSet from '../utils/FieldSet'
 import memoizedChoices from '../utils/memoizedChoices'
+import withLabel from '../utils/withLabel'
 
 @choicesAdapter
 @memoizedChoices
+@withLabel
 @block
 export default class RadioSetField extends React.PureComponent {
   static formolFieldLabelElement = 'div'

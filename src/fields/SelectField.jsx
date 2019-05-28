@@ -4,10 +4,12 @@ import { block } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
 import memoizedChoices from '../utils/memoizedChoices'
 import multipleAdapter from '../utils/multipleAdapter'
+import withLabel from '../utils/withLabel'
 
 @multipleAdapter
 @choicesAdapter
 @memoizedChoices
+@withLabel
 @block
 export default class SelectField extends React.PureComponent {
   constructor(props) {

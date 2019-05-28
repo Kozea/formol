@@ -5,10 +5,12 @@ import React from 'react'
 import DayPickerInput from 'react-day-picker/DayPickerInput'
 
 import { block } from '../utils'
+import withLabel from '../utils/withLabel'
 import locales from './CalendarFieldLocales'
 
 const isDate = d => d instanceof Date && !isNaN(d.valueOf())
 
+@withLabel
 @block
 export default class CalendarField extends React.PureComponent {
   constructor(props) {

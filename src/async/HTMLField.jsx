@@ -7,6 +7,7 @@ import React from 'react'
 
 import { HTMLToEditor, editorToHTML, normalize } from '../utils/html'
 import { block, noOp, readAsBase64 } from '../utils'
+import withLabel from '../utils/withLabel'
 
 const stateFromValue = (value, fast) => {
   if (!value) {
@@ -30,6 +31,7 @@ const inputValue = (v, fast) =>
       : '_'
     : v
 
+@withLabel
 @block
 export default class HTMLField extends React.PureComponent {
   constructor(props) {

@@ -1,7 +1,9 @@
 import React from 'react'
 
 import { block } from '../utils'
+import withLabel from '../utils/withLabel'
 
+@withLabel
 @block
 export default class TextAreaField extends React.PureComponent {
   render(b) {

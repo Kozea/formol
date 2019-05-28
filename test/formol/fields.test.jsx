@@ -17,6 +17,8 @@ describe('Formol field', () => {
       .find('Field')
       .children()
       .first()
+      .children()
+      .first()
     expect(field).toBeTruthy()
     expect(field.hasClass('Formol_Field')).toBeTruthy()
     expect(field.hasClass('Formol_Field--name-field-1')).toBeTruthy()
@@ -30,7 +32,7 @@ describe('Formol field', () => {
     expect(label.children()).toHaveLength(1)
 
     const inputField = label.children().first()
-    expect(inputField.type()).toEqual(InputField)
+    expect(inputField.type()).toEqual(InputField.WrappedComponent)
 
     const input = inputField.children().first()
     expect(input.type()).toEqual('input')

@@ -2,7 +2,9 @@ import React from 'react'
 
 import { block } from '../utils'
 import NumberField from './NumberField'
+import withLabel from '../utils/withLabel'
 
+@withLabel
 @block
 export default class RangeField extends React.PureComponent {
   static defaultProps = {
