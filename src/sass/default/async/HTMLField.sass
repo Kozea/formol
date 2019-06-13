@@ -14,16 +14,10 @@
   .rdw-editor-toolbar
     border-bottom-color: inherit
     margin-bottom: 0
-    opacity: 1
-    transition: padding .35s, opacity .35s
-    transition-delay: .65s
 
     & > *
       border-color: inherit
       margin-top: 0
-      transition: margin .5s
-      transition-delay: .25s
-
 
   .rdw-editor-main
     .DraftEditor-root
@@ -50,21 +44,10 @@
     max-width: 100%
 
 
-.Formol_Field--type-html
-  &:not(.Formol_Field--focus)
-    .rdw-editor-toolbar
-      opacity: 0
-      padding: 0
-      position: relative
-      transition-delay: .65s
-      z-index: -1
-
-      & > *
-        margin-top: -5em
-        transition-delay: 1s
-
-
-.Formol_Field--readOnly
+.Formol_Field--readOnly, .Formol_Field--disabled
   .rdw-editor-main
     .DraftEditor-root
       min-height: auto
+
+  .rdw-editor-toolbar
+    display: none
