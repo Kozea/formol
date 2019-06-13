@@ -1,3 +1,7 @@
+### [2.5.13](https://github.com/Kozea/formol/compare/v2.5.12...v2.5.13)
+
+- Remove semi-working autohide of HTMLField (See jpuri/react-draft-wysiwyg#454 )
+
 ### [2.5.12](https://github.com/Kozea/formol/compare/v2.5.11...v2.5.12)
 
 - Add source maps to build
