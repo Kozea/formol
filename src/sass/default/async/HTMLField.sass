@@ -8,46 +8,33 @@
   &__hidden-input
     +hidden-input
 
-  .rdw-editor-wrapper
+  .quill
     border-color: inherit
 
-  .rdw-editor-toolbar
-    border-bottom-color: inherit
-    margin-bottom: 0
-
-    & > *
-      border-color: inherit
-      margin-top: 0
-
-  .rdw-editor-main
-    .DraftEditor-root
+    .ql-container
+      border-bottom-color: inherit
       margin: 0
-      max-height: 50vh
-      min-height: 8em
-      overflow: auto
-      padding: 0 .75em
+      border: none
 
-      .public-DraftEditorPlaceholder-root
-        margin: 1em 0
+      .ql-editor
+        max-height: 50vh
+        min-height: 8em
+        overflow: auto
 
-      .public-DraftEditorPlaceholder-root, .DraftEditor-editorContainer
-        z-index: 0
+    .ql-toolbar
+      border-top: 0
+      border-left: 0
+      border-right: 0
+      border-bottom-color: inherit
 
-
-  .rdw-option-wrapper:hover
-    border-color: $formol-color
-
-  .rdw-option-active
-    border-color: inherit
 
   img
     max-width: 100%
 
 
 .Formol_Field--readOnly, .Formol_Field--disabled
-  .rdw-editor-main
-    .DraftEditor-root
+  .ql-editor
       min-height: auto
 
-  .rdw-editor-toolbar
+  .ql-toolbar
     display: none
