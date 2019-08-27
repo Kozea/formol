@@ -1,8 +1,6 @@
 import React from 'react'
-
 import { mount } from 'enzyme'
 
-import { HTMLToEditor, editorToHTML } from '../../../src/utils/html'
 import { forCondition } from '../../helpers'
 import Formol, { Field } from '../../../src'
 import molecule from '../../samples/molecule.svg.base64'
@@ -33,6 +31,21 @@ const simpleSelection = (node, start, end) => () => ({
   isCollapsed: false,
   rangeCount: 1,
   type: 'Range',
+  setStart() {},
+  setEnd() {},
+  addRange() {},
+  getRangeAt(i) {
+    if (i !== 0) {
+      throw new Error('NotImplemented')
+    }
+    return {
+      startContainer: node,
+      endContainer: node,
+      startOffset: start,
+      endOffset: end,
+      collapsed: start === end,
+    }
+  },
   removeAllRanges() {
     Object.assign(this, voidSelection()())
   },
@@ -40,6 +53,8 @@ const simpleSelection = (node, start, end) => () => ({
 
 describe('Html field', () => {
   it('handles changes', async () => {
+    global.document.getSelection = simpleSelection(null, 0, 0)
+    global.document.createRange = simpleSelection(null, 0, 0)
     const onSubmit = jest.fn()
     const wrapper = mount(
       <Formol onSubmit={onSubmit} item={{ html: '<p>foo</p>' }}>
@@ -58,12 +73,6 @@ describe('Html field', () => {
         .find('.Formol_Field__element')
         .find('input')
         .first()
-    const bold = () => wrapper.find('.rdw-option-wrapper').first()
-
-    const editorContent = () => wrapper.find('.public-DraftEditor-content')
-
-    const fooSpan = () =>
-      wrapper.find('.public-DraftEditor-content DraftEditorTextNode span')
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -73,20 +82,19 @@ describe('Html field', () => {
 
     expect(field().props().type).toEqual('html')
     expect(input().props().type).toEqual('text')
-    expect(fooSpan().text()).toEqual('foo')
+
     expect(field().props().value).toEqual('<p>foo</p>')
     expect(input().props().value).toEqual('<p>foo</p>')
 
-    await fooSpan().simulate('focus')
+    const quill = wrapper
+      .find('Quill')
+      .instance()
+      .getEditor()
 
-    // emulate a selection of "oo"
-    const [fooNode] = fooSpan().getDOMNode().childNodes
-    global.window.getSelection = simpleSelection(fooNode, 1, 3)
-    await editorContent().simulate('select')
-
-    await fooSpan().simulate('blur')
-
-    await bold().simulate('click')
+    wrapper.find('Quill').prop('onFocus')()
+    quill.clipboard.dangerouslyPasteHTML('<p>f<strong>oo</strong></p>')
+    wrapper.find('Quill').prop('onBlur')()
+    wrapper.update()
 
     expect(field().props().value).toEqual('<p>f<strong>oo</strong></p>')
     expect(input().props().value).toEqual('<p>f<strong>oo</strong></p>')
@@ -124,13 +132,8 @@ describe('Html field', () => {
       wrapper
         .find('.Formol_Field__element')
         .find('input')
+
         .first()
-    const bold = () => wrapper.find('.rdw-option-wrapper').first()
-
-    const editorContent = () => wrapper.find('.public-DraftEditor-content')
-
-    const fooSpan = () =>
-      wrapper.find('.public-DraftEditor-content DraftEditorTextNode span')
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -140,16 +143,13 @@ describe('Html field', () => {
     expect(field().props().value).toEqual('<p>foo</p>')
     expect(input().props().value).toEqual('<p>foo</p>')
 
-    await fooSpan().simulate('focus')
+    const quill = wrapper
+      .find('Quill')
+      .instance()
+      .getEditor()
 
-    // emulate a selection of "oo"
-    const [fooNode] = fooSpan().getDOMNode().childNodes
-    global.window.getSelection = simpleSelection(fooNode, 1, 3)
-    await editorContent().simulate('select')
-
-    await fooSpan().simulate('blur')
-
-    await bold().simulate('click')
+    quill.clipboard.dangerouslyPasteHTML('<p>f<strong>oo</strong></p>')
+    wrapper.update()
 
     expect(field().props().value).toEqual('<p>f<strong>oo</strong></p>')
     expect(input().props().value).toEqual('<p>f<strong>oo</strong></p>')
@@ -160,77 +160,6 @@ describe('Html field', () => {
 
     expect(field().props().value).toEqual('<p>foo</p>')
     expect(input().props().value).toEqual('<p>foo</p>')
-  })
-  it('handles changes in fast mode', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol onSubmit={onSubmit} item={{ html: HTMLToEditor('<p>foo</p>') }}>
-        <Field type="html" fast>
-          Html
-        </Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
-
-    const field = () => wrapper.find('HTMLField').first()
-    const input = () =>
-      wrapper
-        .find('.Formol_Field__element')
-        .find('input')
-        .first()
-    const bold = () => wrapper.find('.rdw-option-wrapper').first()
-
-    const editorContent = () => wrapper.find('.public-DraftEditor-content')
-
-    const fooSpan = () =>
-      wrapper.find('.public-DraftEditor-content DraftEditorTextNode span')
-
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(field().props().type).toEqual('html')
-    expect(input().props().type).toEqual('text')
-    expect(fooSpan().text()).toEqual('foo')
-    expect(editorToHTML(field().props().value)).toEqual('<p>foo</p>')
-    // expect(input().props().value).toEqual('<p>foo</p>')
-
-    await fooSpan().simulate('focus')
-
-    // emulate a selection of "oo"
-    const [fooNode] = fooSpan().getDOMNode().childNodes
-    global.window.getSelection = simpleSelection(fooNode, 1, 3)
-    await editorContent().simulate('select')
-
-    await fooSpan().simulate('blur')
-
-    await bold().simulate('click')
-
-    expect(editorToHTML(field().props().value)).toEqual(
-      '<p>f<strong>oo</strong></p>'
-    )
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
-
-    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
-
-    await submit().simulate('submit')
-
-    const [submitArgs] = onSubmit.mock.calls
-    expect(editorToHTML(submitArgs[0].html)).toEqual(
-      '<p>f<strong>oo</strong></p>'
-    )
-    expect(editorToHTML(submitArgs[1].html)).toEqual('<p>foo</p>')
-    expect(submitArgs[2]).toEqual(['html'])
-    expect(editorToHTML(field().props().value)).toEqual(
-      '<p>f<strong>oo</strong></p>'
-    )
   })
   it('works with no initial value', async () => {
     const onSubmit = jest.fn()
@@ -252,9 +181,6 @@ describe('Html field', () => {
         .find('input')
         .first()
 
-    const fooSpan = () =>
-      wrapper.find('.public-DraftEditor-content DraftEditorTextNode span')
-
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -263,137 +189,100 @@ describe('Html field', () => {
 
     expect(field().props().type).toEqual('html')
     expect(input().props().type).toEqual('text')
-    expect(fooSpan()).toHaveLength(0)
+    expect(wrapper.find('Quill').prop('value')).toEqual('')
     expect(field().props().value).toEqual('')
     expect(input().props().value).toEqual('')
   })
-  it('works with no initial value in fast mode', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol onSubmit={onSubmit}>
-        <Field fast type="html">
-          Html
-        </Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
-
-    const field = () => wrapper.find('HTMLField').first()
-    const input = () =>
-      wrapper
-        .find('.Formol_Field__element')
-        .find('input')
-        .first()
-
-    const fooSpan = () =>
-      wrapper.find('.public-DraftEditor-content DraftEditorTextNode span')
-
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(field().props().type).toEqual('html')
-    expect(input().props().type).toEqual('text')
-    expect(fooSpan()).toHaveLength(0)
-    expect(field().props().value).toEqual('')
-    expect(input().props().value).toEqual('')
-  })
-  it('uploads files as base64', async () => {
-    const onSubmit = jest.fn()
-    const wrapper = mount(
-      <Formol onSubmit={onSubmit} item={{ html: '<p>foo</p>' }}>
-        <Field type="html">Html</Field>
-      </Formol>
-    )
-    const asyncWrapper = () => wrapper.find('AsyncWrapper')
-    expect(asyncWrapper().text()).toEqual('Loading')
-    await asyncWrapper().instance()._promise
-    wrapper.update()
-    expect(asyncWrapper().text()).not.toEqual('Loading')
-
-    const field = () => wrapper.find('HTMLField').first()
-    const input = () =>
-      wrapper
-        .find('.Formol_Field__element')
-        .find('input')
-        .first()
-
-    const image = () =>
-      wrapper
-        .find('.rdw-image-wrapper')
-        .find('.rdw-option-wrapper')
-        .first()
-    const file = () =>
-      wrapper
-        .find('.rdw-image-modal-upload-option-input')
-        .find('input')
-        .first()
-    const ok = () =>
-      wrapper
-        .find('.rdw-image-wrapper')
-        .find('.rdw-image-modal')
-        .find('.rdw-image-modal-btn')
-        .first()
-
-    const submit = () => wrapper.find('.Formol_Formol__submit')
-    const cancel = () => wrapper.find('.Formol_Formol__cancel')
-
-    expect(submit().props().disabled).toBeTruthy()
-    expect(cancel().props().disabled).toBeTruthy()
-
-    expect(field().props().type).toEqual('html')
-    expect(input().props().type).toEqual('text')
-    expect(field().props().value).toEqual('<p>foo</p>')
-    expect(input().props().value).toEqual('<p>foo</p>')
-    await image().simulate('click')
-    expect(ok().props().disabled).toBeTruthy()
-
-    const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
-      type: 'image/svg+xml',
-    })
-
-    await file().simulate('change', { target: { files: [blob] } })
-
-    // Wait for upload to finish
-    await forCondition(() => !ok().props().disabled, wrapper)
-
-    expect(ok().props().disabled).toBeFalsy()
-
-    await ok().simulate('click')
-
-    expect(submit().props().disabled).toBeFalsy()
-    expect(cancel().props().disabled).toBeFalsy()
-
-    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
-
-    await submit().simulate('submit')
-
-    const expectedHtml =
-      '<p></p>\n' +
-      `<img src="data:image/svg+xml;base64,${molecule}" alt="" style="float:none;height: auto;width: auto"/>\n` + // eslint-disable-line max-len
-      '<p>foo</p>'
-
-    expect(onSubmit).toHaveBeenCalledWith(
-      {
-        html: expectedHtml,
-      },
-      { html: '<p>foo</p>' },
-      ['html'],
-      true
-    )
-    expect(field().props().value).toEqual(expectedHtml)
-    expect(input().props().value).toEqual(expectedHtml)
-  }, 30000)
+  // it('uploads files as base64', async () => {
+  //   const onSubmit = jest.fn()
+  //   const wrapper = mount(
+  //     <Formol onSubmit={onSubmit} item={{ html: '<p>foo</p>' }}>
+  //       <Field type="html">Html</Field>
+  //     </Formol>
+  //   )
+  //   const asyncWrapper = () => wrapper.find('AsyncWrapper')
+  //   expect(asyncWrapper().text()).toEqual('Loading')
+  //   await asyncWrapper().instance()._promise
+  //   wrapper.update()
+  //   expect(asyncWrapper().text()).not.toEqual('Loading')
+  //
+  //   const field = () => wrapper.find('HTMLField').first()
+  //   const input = () =>
+  //     wrapper
+  //       .find('.Formol_Field__element')
+  //       .find('input')
+  //       .first()
+  //
+  //   const image = () =>
+  //     wrapper
+  //       .find('.rdw-image-wrapper')
+  //       .find('.rdw-option-wrapper')
+  //       .first()
+  //   const file = () =>
+  //     wrapper
+  //       .find('.rdw-image-modal-upload-option-input')
+  //       .find('input')
+  //       .first()
+  //   const ok = () =>
+  //     wrapper
+  //       .find('.rdw-image-wrapper')
+  //       .find('.rdw-image-modal')
+  //       .find('.rdw-image-modal-btn')
+  //       .first()
+  //
+  //   const submit = () => wrapper.find('.Formol_Formol__submit')
+  //   const cancel = () => wrapper.find('.Formol_Formol__cancel')
+  //
+  //   expect(submit().props().disabled).toBeTruthy()
+  //   expect(cancel().props().disabled).toBeTruthy()
+  //
+  //   expect(field().props().type).toEqual('html')
+  //   expect(input().props().type).toEqual('text')
+  //   expect(field().props().value).toEqual('<p>foo</p>')
+  //   expect(input().props().value).toEqual('<p>foo</p>')
+  //   await image().simulate('click')
+  //   expect(ok().props().disabled).toBeTruthy()
+  //
+  //   const blob = new File([Buffer.from(molecule, 'base64')], 'molecule.svg', {
+  //     type: 'image/svg+xml',
+  //   })
+  //
+  //   await file().simulate('change', { target: { files: [blob] } })
+  //
+  //   // Wait for upload to finish
+  //   await forCondition(() => !ok().props().disabled, wrapper)
+  //
+  //   expect(ok().props().disabled).toBeFalsy()
+  //
+  //   await ok().simulate('click')
+  //
+  //   expect(submit().props().disabled).toBeFalsy()
+  //   expect(cancel().props().disabled).toBeFalsy()
+  //
+  //   expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
+  //
+  //   await submit().simulate('submit')
+  //
+  //   const expectedHtml =
+  //     '<p></p>\n' +
+  //     `<img src="data:image/svg+xml;base64,${molecule}" alt="" style="float:none;height: auto;width: auto"/>\n` + // eslint-disable-line max-len
+  //     '<p>foo</p>'
+  //
+  //   expect(onSubmit).toHaveBeenCalledWith(
+  //     {
+  //       html: expectedHtml,
+  //     },
+  //     { html: '<p>foo</p>' },
+  //     ['html'],
+  //     true
+  //   )
+  //   expect(field().props().value).toEqual(expectedHtml)
+  //   expect(input().props().value).toEqual(expectedHtml)
+  // }, 30000)
   it('understands empty value', async () => {
     const onSubmit = jest.fn()
     const wrapper = mount(
-      <Formol onSubmit={onSubmit} item={{ html: '<p></p>\n' }}>
+      <Formol onSubmit={onSubmit} item={{ html: '<p><br></p>' }}>
         <Field type="html">Html</Field>
       </Formol>
     )
