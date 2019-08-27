@@ -4,7 +4,8 @@ import {
   UnorderedSearchIndex,
 } from 'js-search'
 import React from 'react'
-import Select, { makeAnimated } from 'react-select'
+import Select from 'react-select'
+import makeAnimated from 'react-select/animated'
 import deepEqual from 'deep-equal'
 
 import { block, noOp } from '../utils'
