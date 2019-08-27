@@ -6,37 +6,8 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Field } from '../src'
-import { HTMLToEditor, editorToHTML } from '../src/utils/html'
 import { colorChoices, countries, persons } from './fields'
 import { withStateForm } from './utils'
-
-class FastHTMLFieldFormol extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      item: { bightml: HTMLToEditor(props.html) },
-    }
-    this.handleSubmit = this.handleSubmit.bind(this)
-  }
-
-  handleSubmit(item) {
-    const { store } = this.props
-    store.set({ submittedHTML: editorToHTML(item.bightml) })
-    this.setState({ item })
-  }
-
-  render() {
-    const { item } = this.state
-    return (
-      <Formol item={item} onSubmit={this.handleSubmit}>
-        <h1>Showcase of the fast HTMLField attribute</h1>
-        <Field name="bightml" type="html" fast>
-          Big HTML Field
-        </Field>
-      </Formol>
-    )
-  }
-}
 
 class AsyncChoicesForm extends React.Component {
   state = {
@@ -101,20 +72,6 @@ const stressedChoices = new Array(5000).fill().reduce((choices, _, i) => {
 
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
-  .add(
-    'Fast HTML Field',
-    withState({})(({ store }) => (
-      <FastHTMLFieldFormol
-        store={store}
-        html={`
-      <p>
-        <span style="font-size: 96px;">BIG</span>
-        <span style="font-size: 48px;">html</span>
-      </p>
-      `}
-      />
-    ))
-  )
   .add(
     'Adding a nested item',
     withStateForm(props => (
