@@ -47119,7 +47119,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
 </form>
 `;
 
-exports[`Storyshots Miscellaneous HTMLField image upload 1`] = `
+exports[`Storyshots Miscellaneous HTMLField customization 1`] = `
 <form
   className={
     Block {
@@ -47143,7 +47143,7 @@ exports[`Storyshots Miscellaneous HTMLField image upload 1`] = `
   onSubmit={[Function]}
 >
   <h1>
-    HTMLField quill modules
+    HTMLField customization
   </h1>
   <div
     className={

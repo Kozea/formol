@@ -84,13 +84,17 @@ const readFileAsync = file =>
 const customFileUploadModules = {
   toolbar: {
     container: [
-      [{ header: [1, 2, false] }],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ header: [1, 2, 3, 4, 5, 6, false] }, { font: [] }, { size: [] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote', 'code-block'],
+      [{ color: [] }, { background: [] }],
       [
+        { align: [] },
         { list: 'ordered' },
         { list: 'bullet' },
         { indent: '-1' },
         { indent: '+1' },
+        { script: 'sub' },
+        { script: 'super' },
       ],
       ['link', 'image'],
       ['clean'],
@@ -500,10 +504,10 @@ storiesOf('Miscellaneous', module)
     )
   )
   .add(
-    'HTMLField image upload',
+    'HTMLField customization',
     withStateForm(props => (
       <Formol {...props}>
-        <h1>HTMLField quill modules</h1>
+        <h1>HTMLField customization</h1>
         <Field
           name="html"
           type="html"
