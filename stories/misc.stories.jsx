@@ -1,9 +1,9 @@
 /* eslint-disable react/no-multi-comp */
 
-import { withState } from 'storybook4-state'
 import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
+import Delta from 'quill-delta' // eslint-disable-line import/no-extraneous-dependencies
 
 import Formol, { Field } from '../src'
 import { colorChoices, countries, persons } from './fields'
@@ -69,6 +69,81 @@ const stressedChoices = new Array(5000).fill().reduce((choices, _, i) => {
   choices[`Element #${i}`] = `${i}`
   return choices
 }, {})
+
+const readFileAsync = file =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.onload = () => resolve(reader.result)
+    reader.onerror = reject
+    reader.readAsArrayBuffer(file)
+  })
+
+const customFileUploadModules = {
+  toolbar: {
+    container: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [
+        { list: 'ordered' },
+        { list: 'bullet' },
+        { indent: '-1' },
+        { indent: '+1' },
+      ],
+      ['link', 'image'],
+      ['clean'],
+    ],
+    handlers: {
+      image() {
+        let fileInput = this.container.querySelector(
+          'input.ql-image[type=file]'
+        )
+        if (fileInput === null) {
+          fileInput = document.createElement('input')
+          fileInput.setAttribute('type', 'file')
+          fileInput.setAttribute(
+            'accept',
+            'image/png, image/gif, image/jpeg, image/bmp, image/x-icon'
+          )
+          fileInput.classList.add('ql-image')
+          fileInput.addEventListener('change', async () => {
+            if (fileInput.files !== null && fileInput.files[0] !== null) {
+              const [file] = fileInput.files
+              // Upload to your server and get file url:
+              // const response = await fetch(url, {method: 'POST', body: file})
+              // const fileUrl = await response.text()
+
+              // Using the file API in exemple to have an async operation:
+              const fileContent = await readFileAsync(file)
+              const baseSampleUrl =
+                'https://dummyimage.com/600x400/000/fff.png&text='
+              const fileUrl =
+                baseSampleUrl +
+                encodeURIComponent(
+                  `Sample of ${file.name} (${fileContent.byteLength}b)`
+                )
+              // End sample
+
+              const range = this.quill.getSelection(true)
+              this.quill.updateContents(
+                new Delta()
+                  .retain(range.index)
+                  .delete(range.length)
+                  .insert({
+                    image: fileUrl,
+                  }),
+                'user'
+              )
+              this.quill.setSelection(range.index + 1, 'silent')
+              fileInput.value = ''
+            }
+          })
+          this.container.appendChild(fileInput)
+        }
+        fileInput.click()
+      },
+    },
+  },
+}
 
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
@@ -417,4 +492,22 @@ storiesOf('Miscellaneous', module)
           return rv
         }, {})
     )
+  )
+  .add(
+    'HTMLField image upload',
+    withStateForm(props => (
+      <Formol {...props}>
+        <h1>HTMLField quill modules</h1>
+        <Field
+          name="html"
+          type="html"
+          modules={
+            // Important: the modules prop must be a constant
+            customFileUploadModules
+          }
+        >
+          html
+        </Field>
+      </Formol>
+    ))
   )

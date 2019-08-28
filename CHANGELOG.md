@@ -1,4 +1,8 @@
-### [2.5.13](https://github.com/Kozea/formol/compare/v2.5.12...v2.5.13)
+## [2.7.0](https://github.com/Kozea/formol/compare/v2.5.12...v2.6.13)
+
+- BREAKING: Remove react-draft-wysiwyg and replace it by react-quill
+
+### [2.6.13](https://github.com/Kozea/formol/compare/v2.5.12...v2.6.13)
 
 - Remove semi-working autohide of HTMLField (See jpuri/react-draft-wysiwyg#454 )
 

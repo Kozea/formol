@@ -182,8 +182,8 @@ storiesOf('Home', module)
             Powerful non-native field types, based on well known libraries:
             <ul>
               <li>
-                <a href="https://jpuri.github.io/react-draft-wysiwyg">
-                  react-draft-wysiwyg
+                <a href="https://zenoamaro.github.io/react-quill/">
+                  react-quill
                 </a>
               </li>
               <li>

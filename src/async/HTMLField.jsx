@@ -72,6 +72,9 @@ export default class HTMLField extends React.PureComponent {
       toolbar,
       placeholder,
       type,
+      reactQuillRef,
+      modules,
+      formats,
       onChange,
       ...props
     } = this.props
@@ -86,6 +89,9 @@ export default class HTMLField extends React.PureComponent {
           handleReturn={onKeyDown}
           placeholder={placeholder || i18n.html.placeholder}
           readOnly={readOnly || disabled}
+          modules={modules}
+          formats={formats}
+          ref={reactQuillRef}
         />
         <input
           className={b.e('hidden-input').mix(className)}
