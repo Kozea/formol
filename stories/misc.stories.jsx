@@ -3,12 +3,15 @@
 import { withKnobs } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
+import Quill from 'quill' // eslint-disable-line import/no-extraneous-dependencies
 import Delta from 'quill-delta' // eslint-disable-line import/no-extraneous-dependencies
+import ImageResize from 'quill-image-resize-module-react'
 
 import Formol, { Field } from '../src'
 import { colorChoices, countries, persons } from './fields'
 import { withStateForm } from './utils'
 
+Quill.register('modules/imageResize', ImageResize)
 class AsyncChoicesForm extends React.Component {
   state = {
     choices: [],
@@ -142,6 +145,9 @@ const customFileUploadModules = {
         fileInput.click()
       },
     },
+  },
+  imageResize: {
+    parchment: Quill.import('parchment'),
   },
 }
 
