@@ -1,4 +1,4 @@
-## [2.7.0](https://github.com/Kozea/formol/compare/v2.5.12...v2.6.13)
+## [2.7.0](https://github.com/Kozea/formol/compare/v2.6.13...v2.7.0)
 
 - BREAKING: Remove react-draft-wysiwyg and replace it by react-quill
 
