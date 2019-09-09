@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
+const sass = require('dart-sass')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const rootDir = path.join(__dirname, '..')
 const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
@@ -56,7 +57,10 @@ module.exports = ({ config }) => {
         {
           loader: 'sass-loader',
           options: {
-            includePaths: [dir('src')],
+            implementation: sass,
+            sassOptions: {
+              includePaths: [dir('src')],
+            },
           },
         },
       ],

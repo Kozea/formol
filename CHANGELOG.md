@@ -1,3 +1,8 @@
+## [2.7.1](https://github.com/Kozea/formol/compare/v2.7.0...v2.7.1)
+
+- Re-add value from item to transient item in case of dynamic field add
+- Fix new bug from react-select giving null instead of empty list
+
 ## [2.7.0](https://github.com/Kozea/formol/compare/v2.6.13...v2.7.0)
 
 - BREAKING: Remove react-draft-wysiwyg and replace it by react-quill

@@ -164,10 +164,18 @@ export default class Formol extends React.PureComponent {
   }
 
   register(name, element, validator, validityErrors) {
+    const { item, transientItem } = this.state.context
     this.fields.names.push(name)
     this.fields.elements[name] = element
     this.fields.validators[name] = validator
     this.fields.validityErrors[name] = validityErrors
+    // If field is added as a later date we might need to copy its item value
+    // if it's not present in transientItem
+    if (item[name] !== void 0 && item[transientItem] === void 0) {
+      this.setStateContext({
+        transientItem: { ...transientItem, [name]: item[name] },
+      })
+    }
   }
 
   unregister(name) {

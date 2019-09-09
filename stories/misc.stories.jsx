@@ -58,6 +58,38 @@ class AsyncChoicesForm extends React.Component {
   }
 }
 
+class DynamicForm extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      withMailField: false,
+    }
+    this.handleMailFieldToggle = this.handleMailFieldToggle.bind(this)
+  }
+
+  handleMailFieldToggle() {
+    this.setState(({ withMailField }) => ({
+      withMailField: !withMailField,
+    }))
+  }
+
+  render() {
+    const { withMailField } = this.state
+    return (
+      <Formol {...this.props}>
+        <h1>Click the button to toggle the mail field</h1>
+        <button onClick={this.handleMailFieldToggle}>Toggle mail field</button>
+        <Field required>Name</Field>
+        {withMailField && (
+          <Field name="mail" type="email" required>
+            Mail
+          </Field>
+        )}
+      </Formol>
+    )
+  }
+}
+
 const objectChoices = persons.reduce(
   (choices, person) => ({
     ...choices,
@@ -520,4 +552,11 @@ storiesOf('Miscellaneous', module)
         </Field>
       </Formol>
     ))
+  )
+  .add(
+    'Dynamically added field with values',
+    withStateForm(props => <DynamicForm {...props} />, {
+      name: 'formol',
+      mail: 'formol@exemple.com',
+    })
   )

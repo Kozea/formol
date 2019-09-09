@@ -66,7 +66,9 @@ export default function memoizedChoices(WrappedComponent) {
       const getFromMemoMaybe = v =>
         v && v.startsWith(MemoizedChoices.memoPrefix) ? objectMemo[v] : v
       return onChange(
-        multiple ? value.map(getFromMemoMaybe) : getFromMemoMaybe(value)
+        multiple && value
+          ? value.map(getFromMemoMaybe)
+          : getFromMemoMaybe(value)
       )
     }
 
