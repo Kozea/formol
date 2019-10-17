@@ -512,7 +512,7 @@ storiesOf('Miscellaneous', module)
               validator={
                 i === 2
                   ? s =>
-                      !s.startsWith('2A') &&
+                      (!s || !s.startsWith('2A')) &&
                       'Text2 should specifically start with 2A'
                   : void 0
               }
