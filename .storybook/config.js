@@ -4,8 +4,8 @@ const themes = ['default.css', 'clean.css']
 
 addParameters({
   options: {
-    name: 'Formol',
-    url: 'https://github.com/Kozea/formol',
+    brandName: 'Formol',
+    brandUrl: 'https://github.com/Kozea/formol',
     panelPosition: 'right',
     showPanel: true,
   },
