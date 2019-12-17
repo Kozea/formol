@@ -10,6 +10,8 @@ import ImageResize from 'quill-image-resize-module-react'
 import Formol, { Field } from '../src'
 import { colorChoices, countries, persons } from './fields'
 import { withStateForm } from './utils'
+import { FaCheck, FaUndo } from 'react-icons/fa'
+import { IconContext } from 'react-icons/lib/cjs'
 
 Quill.register('modules/imageResize', ImageResize)
 class AsyncChoicesForm extends React.Component {
@@ -187,6 +189,24 @@ const customFileUploadModules = {
   },
 }
 
+function SubmitButton({ children, ...props }) {
+  return (
+    <button {...props}>
+      <IconContext.Provider value={{ color: 'green' }}>
+        <FaCheck /> {children}
+      </IconContext.Provider>
+    </button>
+  )
+}
+function CancelButton({ children, ...props }) {
+  return (
+    <button {...props}>
+      <IconContext.Provider value={{ color: 'red' }}>
+        <FaUndo /> {children}
+      </IconContext.Provider>
+    </button>
+  )
+}
 storiesOf('Miscellaneous', module)
   .addDecorator(withKnobs)
   .add(
@@ -559,4 +579,13 @@ storiesOf('Miscellaneous', module)
       name: 'formol',
       mail: 'formol@exemple.com',
     })
+  )
+  .add(
+    'Custom button components',
+    withStateForm(props => (
+      <Formol {...props} components={{ SubmitButton, CancelButton }}>
+        <h1>HTMLField customization</h1>
+        <Field>Text</Field>
+      </Formol>
+    ))
   )
