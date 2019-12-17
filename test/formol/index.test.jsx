@@ -27,6 +27,50 @@ describe('Formol', () => {
     expect(wrapper.find('.Formol_Formol__cancel')).toBeTruthy()
     expect(wrapper.find('.Formol_Formol__cancel').text()).toEqual('Cancel')
   })
+  it('honors the submit button component', () => {
+    function SubmitButton({ children, className, ...props }) {
+      return (
+        <button className={`${className.s} custom`} {...props}>
+          {children}!
+        </button>
+      )
+    }
+    const wrapper = mount(
+      <Formol onSubmit={() => {}} components={{ SubmitButton }} />
+    )
+    expect(wrapper.find('.Formol_Formol__submit')).toBeTruthy()
+    expect(wrapper.find('.Formol_Formol__submit.custom')).toBeTruthy()
+    expect(wrapper.find('button.Formol_Formol__submit').text()).toEqual(
+      'Submit!'
+    )
+    expect(wrapper.find('.Formol_Formol__cancel')).toBeTruthy()
+    expect(wrapper.find('.Formol_Formol__cancel.custom')).toHaveLength(0)
+    expect(wrapper.find('button.Formol_Formol__cancel').text()).toEqual(
+      'Cancel'
+    )
+  })
+  it('honors the cancel button component', () => {
+    function CancelButton({ children, className, ...props }) {
+      return (
+        <button className={`${className.s} custom`} {...props}>
+          {children}!
+        </button>
+      )
+    }
+    const wrapper = mount(
+      <Formol onSubmit={() => {}} components={{ CancelButton }} />
+    )
+    expect(wrapper.find('.Formol_Formol__submit')).toBeTruthy()
+    expect(wrapper.find('.Formol_Formol__submit.custom')).toHaveLength(0)
+    expect(wrapper.find('button.Formol_Formol__submit').text()).toEqual(
+      'Submit'
+    )
+    expect(wrapper.find('.Formol_Formol__cancel')).toBeTruthy()
+    expect(wrapper.find('.Formol_Formol__cancel.custom')).toBeTruthy()
+    expect(wrapper.find('button.Formol_Formol__cancel').text()).toEqual(
+      'Cancel!'
+    )
+  })
   it('contains nothing else', () => {
     const wrapper = mount(<Formol onSubmit={() => {}} />)
     expect(
@@ -402,7 +446,9 @@ describe('Formol', () => {
     await forCondition(() => consoleErrorTracer.mock.calls.length, wrapper)
 
     expect(consoleErrorTracer).toHaveBeenCalled()
-    expect(consoleErrorTracer).toHaveBeenCalledWith(
+    expect(
+      consoleErrorTracer
+    ).toHaveBeenCalledWith(
       'onSubmit return value must be a mapping of server errors ' +
         "(ie: { fieldName: 'error' }) got:",
       { badValue: 12 }

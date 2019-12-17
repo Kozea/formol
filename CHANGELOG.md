@@ -1,4 +1,8 @@
-## [2.7.1](https://github.com/Kozea/formol/compare/v2.7.0...v2.7.1)
+## [2.8.0](https://github.com/paradoxxxzero/formol/compare/v2.7.1...v2.8.0)
+
+- Add a components props for replacing submit and cancel components.
+
+### [2.7.1](https://github.com/Kozea/formol/compare/v2.7.0...v2.7.1)
 
 - Re-add value from item to transient item in case of dynamic field add
 - Fix new bug from react-select giving null instead of empty list

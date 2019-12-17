@@ -212,7 +212,7 @@ storiesOf('Home', module)
             </a>
           </li>
           <li>
-            <a href="https://coveralls.io/github/Kozea/formol">
+            <a href="https://coveralls.io/github/paradoxxxzero/formol">
               100% test coverage
             </a>
           </li>
@@ -490,7 +490,7 @@ storiesOf('Home', module)
           with the added benefit that you can override{' '}
           <a
             href={
-              'https://github.com/Kozea/formol/blob/master/' +
+              'https://github.com/paradoxxxzero/formol/blob/master/' +
               'src/sass/default/_variables.sass'
             }
             rel="noopener noreferrer"
@@ -524,7 +524,7 @@ storiesOf('Home', module)
           As a side note if you have some design skills, you are very welcome to
           add new themes by submitting a{' '}
           <a
-            href="https://github.com/Kozea/formol/pulls"
+            href="https://github.com/paradoxxxzero/formol/pulls"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -532,7 +532,7 @@ storiesOf('Home', module)
           </a>{' '}
           with your new theme in the{' '}
           <a
-            href="https://github.com/Kozea/formol/blob/master/src/sass/"
+            href="https://github.com/paradoxxxzero/formol/blob/master/src/sass/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -552,7 +552,7 @@ storiesOf('Home', module)
           .
         </p>
       </article>
-      <a href="https://github.com/Kozea/formol/">
+      <a href="https://github.com/paradoxxxzero/formol/">
         <img
           style={{ position: 'absolute', top: 0, right: 0, border: 0 }}
           src={

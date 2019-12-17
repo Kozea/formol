@@ -76,6 +76,7 @@ export default class Formol extends React.PureComponent {
     types: {},
     i18n: 'en',
     classes: {},
+    components: {},
   }
 
   constructor(props) {
@@ -337,11 +338,14 @@ export default class Formol extends React.PureComponent {
       noCancel,
       allowUnmodifiedSubmit,
       extra,
+      components,
       classes,
       onSubmit,
     } = this.props
     const { loading, context, modified } = this.state
     const { enteredFields, i18n } = context
+    const SubmitButton = components.SubmitButton || 'button'
+    const CancelButton = components.CancelButton || 'button'
 
     const errors = enteredFields.some(field => context.errors[field])
 
@@ -356,7 +360,7 @@ export default class Formol extends React.PureComponent {
         </FormolContext.Provider>
         {!readOnly && onSubmit && (
           <>
-            <button
+            <SubmitButton
               className={b.e('submit').mix(classes.submit)}
               disabled={!modified && !allowUnmodifiedSubmit}
               title={
@@ -365,9 +369,9 @@ export default class Formol extends React.PureComponent {
               type="submit"
             >
               {submitText || i18n.submit}
-            </button>
+            </SubmitButton>
             {!noCancel && (
-              <button
+              <CancelButton
                 onClick={this.handleCancel}
                 className={b.e('cancel').mix(classes.cancel)}
                 disabled={!modified}
@@ -375,7 +379,7 @@ export default class Formol extends React.PureComponent {
                 type="button"
               >
                 {cancelText || i18n.cancel}
-              </button>
+              </CancelButton>
             )}
           </>
         )}
