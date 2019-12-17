@@ -1,3 +1,7 @@
+### [2.8.1](https://github.com/Kozea/formol/compare/v2.8.0...v2.8.1)
+
+- Use fast-deep-equal instead of deep-equal
+
 ## [2.8.0](https://github.com/Kozea/formol/compare/v2.7.1...v2.8.0)
 
 - Add a components props for replacing submit and cancel components.

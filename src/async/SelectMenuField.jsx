@@ -6,7 +6,7 @@ import {
 import React from 'react'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
-import deepEqual from 'deep-equal'
+import deepEqual from 'fast-deep-equal'
 
 import { block, noOp } from '../utils'
 import choicesAdapter from '../utils/choicesAdapter'
@@ -58,7 +58,7 @@ export default class SelectMenuField extends React.PureComponent {
     } = nextProps
     let state = null
 
-    if (!deepEqual(choices, prevState._rawChoices, { strict: true })) {
+    if (!deepEqual(choices, prevState._rawChoices)) {
       const options = choices.map(([label, choice]) => ({
         value: choice,
         label,
@@ -92,10 +92,7 @@ export default class SelectMenuField extends React.PureComponent {
         _rawChoices: choices,
       }
     }
-    if (
-      !deepEqual(value, prevState._rawValue, { strict: true }) ||
-      (state && state.options)
-    ) {
+    if (!deepEqual(value, prevState._rawValue) || (state && state.options)) {
       const opts = state ? state.options : prevState.options
       state = {
         ...(state === null ? {} : state),

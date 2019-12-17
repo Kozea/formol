@@ -1,5 +1,5 @@
 import React from 'react'
-import deepEqual from 'deep-equal'
+import deepEqual from 'fast-deep-equal'
 
 import { FormolContext } from './FormolContext'
 import { block } from './utils'
