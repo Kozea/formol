@@ -2,7 +2,7 @@ import { FaTrash } from 'react-icons/fa'
 import { MdCloudUpload } from 'react-icons/md'
 import Dropzone from 'react-dropzone'
 import React from 'react'
-import deepEqual from 'deep-equal'
+import deepEqual from 'fast-deep-equal'
 
 import { block, fileSize, nameExt, noOp, readAsBase64 } from '../utils'
 import Preview from '../utils/Preview'

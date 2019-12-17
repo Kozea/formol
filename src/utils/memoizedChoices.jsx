@@ -1,4 +1,4 @@
-import deepEqual from 'deep-equal'
+import deepEqual from 'fast-deep-equal'
 import React from 'react'
 
 export default function memoizedChoices(WrappedComponent) {
@@ -43,7 +43,7 @@ export default function memoizedChoices(WrappedComponent) {
         if (Object.keys(objectMemo).length) {
           const getToMemoMaybe = val => {
             const memo = Object.entries(objectMemo).find(entry =>
-              deepEqual(entry[1], val, { strict: true })
+              deepEqual(entry[1], val)
             )
             return memo ? memo[0] : val
           }

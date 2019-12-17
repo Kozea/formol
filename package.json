@@ -84,7 +84,7 @@
   "dependencies": {
     "@babel/runtime": "^7.7.6",
     "bemboo": "^2.0.0",
-    "deep-equal": "^2.0.1",
+    "fast-deep-equal": "^3.1.1",
     "js-search": "^1.4.3",
     "react-day-picker": "^7.4.0",
     "react-dropzone": "^10.2.1",

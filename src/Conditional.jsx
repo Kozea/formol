@@ -1,5 +1,5 @@
 import React from 'react'
-import deepEqual from 'deep-equal'
+import deepEqual from 'fast-deep-equal'
 
 import { ConditionalContext } from './ConditionalContext'
 import FormolContextWrapper from './FormolContext'
