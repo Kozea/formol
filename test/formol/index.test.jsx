@@ -1,11 +1,11 @@
 /* eslint-disable react/no-multi-comp */
 
-import React from 'react'
 import { mount } from 'enzyme'
+import React from 'react'
 
-import { forCondition } from '../helpers'
 import Formol, { Field } from '../../src'
 import InputField from '../../src/fields/InputField'
+import { forCondition } from '../helpers'
 
 describe('Formol', () => {
   it('is mountable and unmountable', () => {
@@ -70,6 +70,59 @@ describe('Formol', () => {
     expect(wrapper.find('button.Formol_Formol__cancel').text()).toEqual(
       'Cancel!'
     )
+  })
+  it('honors the ButtonsWrapper component', () => {
+    function ButtonsWrapper({ children }) {
+      return <aside className="i-am-wrapping">{children}</aside>
+    }
+    const wrapper = mount(
+      <Formol onSubmit={() => {}} components={{ ButtonsWrapper }} />
+    )
+    expect(wrapper.find('.Formol_Formol__submit')).toBeTruthy()
+    expect(wrapper.find('.i-am-wrapping > .Formol_Formol__submit')).toBeTruthy()
+    expect(wrapper.find('.Formol_Formol__cancel')).toBeTruthy()
+    expect(wrapper.find('.i-am-wrapping > .Formol_Formol__cancel')).toBeTruthy()
+  })
+  it('honors all the components props', () => {
+    function ButtonsWrapper({ children }) {
+      return <aside className="i-am-wrapping">{children}</aside>
+    }
+    function SubmitButton({ children, className, ...props }) {
+      return (
+        <button className={`${className.s} custom`} {...props}>
+          {children}!
+        </button>
+      )
+    }
+    function CancelButton({ children, className, ...props }) {
+      return (
+        <button className={`${className.s} custom`} {...props}>
+          {children}!
+        </button>
+      )
+    }
+    const wrapper = mount(
+      <Formol
+        onSubmit={() => {}}
+        components={{ SubmitButton, CancelButton, ButtonsWrapper }}
+      />
+    )
+    expect(wrapper.find('.Formol_Formol__submit')).toBeTruthy()
+    expect(wrapper.find('.i-am-wrapping > .Formol_Formol__submit')).toBeTruthy()
+    expect(
+      wrapper.find('.i-am-wrapping > .Formol_Formol__submit.custom')
+    ).toBeTruthy()
+    expect(
+      wrapper.find('.i-am-wrapping button.Formol_Formol__submit').text()
+    ).toEqual('Submit!')
+    expect(wrapper.find('.Formol_Formol__cancel')).toBeTruthy()
+    expect(wrapper.find('.i-am-wrapping > .Formol_Formol__cancel')).toBeTruthy()
+    expect(
+      wrapper.find('.i-am-wrapping > .Formol_Formol__cancel.custom')
+    ).toBeTruthy()
+    expect(
+      wrapper.find('.i-am-wrapping button.Formol_Formol__cancel').text()
+    ).toEqual('Cancel!')
   })
   it('contains nothing else', () => {
     const wrapper = mount(<Formol onSubmit={() => {}} />)
