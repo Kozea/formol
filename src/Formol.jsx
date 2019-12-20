@@ -1,9 +1,6 @@
-import React from 'react'
 import deepEqual from 'fast-deep-equal'
+import React from 'react'
 
-import { FormolContext } from './FormolContext'
-import { block } from './utils'
-import { get, insert, isModified } from './utils/object'
 import CalendarField from './fields/CalendarField'
 import CheckboxField from './fields/CheckboxField'
 import CheckboxSetField from './fields/CheckboxSetField'
@@ -29,8 +26,11 @@ import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
 import TimeField from './fields/TimeField'
 import WeekField from './fields/WeekField'
+import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
+import { block } from './utils'
+import { get, insert, isModified } from './utils/object'
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
@@ -348,6 +348,35 @@ export default class Formol extends React.PureComponent {
     const CancelButton = components.CancelButton || 'button'
 
     const errors = enteredFields.some(field => context.errors[field])
+    let buttons = null
+    if (!readOnly && onSubmit) {
+      buttons = (
+        <>
+          <SubmitButton
+            className={b.e('submit').mix(classes.submit)}
+            disabled={!modified && !allowUnmodifiedSubmit}
+            title={modified || allowUnmodifiedSubmit ? void 0 : i18n.unmodified}
+            type="submit"
+          >
+            {submitText || i18n.submit}
+          </SubmitButton>
+          {!noCancel && (
+            <CancelButton
+              onClick={this.handleCancel}
+              className={b.e('cancel').mix(classes.cancel)}
+              disabled={!modified}
+              title={modified ? void 0 : i18n.unmodified}
+              type="button"
+            >
+              {cancelText || i18n.cancel}
+            </CancelButton>
+          )}
+        </>
+      )
+    }
+    if (components.ButtonsWrapper) {
+      buttons = <components.ButtonsWrapper>{buttons}</components.ButtonsWrapper>
+    }
 
     return (
       <form
@@ -358,31 +387,7 @@ export default class Formol extends React.PureComponent {
         <FormolContext.Provider value={context}>
           {children}
         </FormolContext.Provider>
-        {!readOnly && onSubmit && (
-          <>
-            <SubmitButton
-              className={b.e('submit').mix(classes.submit)}
-              disabled={!modified && !allowUnmodifiedSubmit}
-              title={
-                modified || allowUnmodifiedSubmit ? void 0 : i18n.unmodified
-              }
-              type="submit"
-            >
-              {submitText || i18n.submit}
-            </SubmitButton>
-            {!noCancel && (
-              <CancelButton
-                onClick={this.handleCancel}
-                className={b.e('cancel').mix(classes.cancel)}
-                disabled={!modified}
-                title={modified ? void 0 : i18n.unmodified}
-                type="button"
-              >
-                {cancelText || i18n.cancel}
-              </CancelButton>
-            )}
-          </>
-        )}
+        {buttons}
         {extra && extra(this.state)}
       </form>
     )

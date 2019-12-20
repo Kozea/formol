@@ -1,3 +1,8 @@
+### [2.8.2](https://github.com/Kozea/formol/compare/v2.8.1...v2.8.2)
+
+- Add support for a ButtonsWrapper components prop
+  to add a wrapper around submit and cancel buttons
+
 ### [2.8.1](https://github.com/Kozea/formol/compare/v2.8.0...v2.8.1)
 
 - Use fast-deep-equal instead of deep-equal
