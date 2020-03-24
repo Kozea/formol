@@ -7,12 +7,7 @@ import FormolContextWrapper from './FormolContext'
 @FormolContextWrapper
 export default class Conditional extends React.PureComponent {
   static contextFromProps(
-    {
-      children,
-      show,
-      context: { transientItem },
-      ...callableProps
-    },
+    { children, show, context: { transientItem }, ...callableProps },
     { conditionalContext }
   ) {
     return {

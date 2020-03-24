@@ -1,3 +1,8 @@
+### [2.8.3](https://github.com/Kozea/formol/compare/v2.8.2...v2.8.3)
+
+- Update dependencies (and remove jest 24 transitive dep)
+- Add url native type field
+
 ### [2.8.2](https://github.com/Kozea/formol/compare/v2.8.1...v2.8.2)
 
 - Add support for a ButtonsWrapper components prop
