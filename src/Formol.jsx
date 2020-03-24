@@ -25,12 +25,14 @@ import SwitchField from './fields/SwitchField'
 import TelField from './fields/TelField'
 import TextareaField from './fields/TextareaField'
 import TimeField from './fields/TimeField'
+import UrlField from './fields/UrlField'
 import WeekField from './fields/WeekField'
 import { FormolContext } from './FormolContext'
 import en from './i18n/en'
 import fr from './i18n/fr'
 import { block } from './utils'
 import { get, insert, isModified } from './utils/object'
+
 
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
@@ -46,6 +48,7 @@ export default class Formol extends React.PureComponent {
     password: PasswordField,
     'password-strength': PasswordStrengthField,
     tel: TelField,
+    url: UrlField,
     color: ColorField,
     date: DateField,
     time: TimeField,
