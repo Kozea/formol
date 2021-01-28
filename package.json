@@ -86,6 +86,7 @@
     "bemboo": "^2.0.0",
     "fast-deep-equal": "^3.1.1",
     "js-search": "^2.0.0",
+    "react-datepicker": "^3.4.1",
     "react-day-picker": "^7.4.0",
     "react-dropzone": "^10.2.1",
     "react-icons": "^3.9.0",
