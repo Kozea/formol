@@ -1,14 +1,7 @@
 import { mount } from 'enzyme'
 import React from 'react'
 import Formol, { Field } from '../../../src'
-
 ;[
-  {
-    type: 'date',
-    title: 'Date',
-    value1: '05/27/1988',
-    value2: '12/12/2121',
-  },
   {
     type: 'time',
     title: 'Time',
