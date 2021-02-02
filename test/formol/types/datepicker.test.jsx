@@ -34,9 +34,7 @@ describe('Datepicker field', () => {
     expect(input().props().type).toEqual(nativeType)
     expect(input().props().value).toEqual(value1)
 
-    await input().simulate('focus')
     await input().simulate('change', { target: { value: value2 } })
-    await input().simulate('blur')
 
     expect(input().props().value).toEqual(value2)
     expect(submit().props().disabled).toBeFalsy()
@@ -77,9 +75,7 @@ describe('Datepicker field', () => {
     expect(cancel().props().disabled).toBeTruthy()
     expect(input().props().value).toEqual(value1)
 
-    await input().simulate('focus')
     await input().simulate('change', { target: { value: value2 } })
-    await input().simulate('blur')
 
     expect(input().props().value).toEqual(value2)
     expect(submit().props().disabled).toBeFalsy()
