@@ -1,7 +1,3 @@
-### [2.9.0](https://github.com/Kozea/formol/compare/v2.8.3...v2.9.0)
-
-- Replace native date input by react-datepicker
-
 ### [2.8.3](https://github.com/Kozea/formol/compare/v2.8.2...v2.8.3)
 
 - Update dependencies (and remove jest 24 transitive dep)
