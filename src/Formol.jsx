@@ -6,6 +6,7 @@ import CheckboxField from './fields/CheckboxField'
 import CheckboxSetField from './fields/CheckboxSetField'
 import ColorField from './fields/ColorField'
 import DateField from './fields/DateField'
+import DateNativeField from './fields/DateNativeField'
 import DatetimeLocalField from './fields/DatetimeLocalField'
 import EmailField from './fields/EmailField'
 import FileField from './fields/FileField'
@@ -33,7 +34,6 @@ import fr from './i18n/fr'
 import { block } from './utils'
 import { get, insert, isModified } from './utils/object'
 
-
 // This is a tracer to validate form post first time render.
 const errorsUnknown = {}
 const emptyItem = {}
@@ -51,6 +51,7 @@ export default class Formol extends React.PureComponent {
     url: UrlField,
     color: ColorField,
     date: DateField,
+    'date-native': DateNativeField,
     time: TimeField,
     'datetime-local': DatetimeLocalField,
     month: MonthField,
