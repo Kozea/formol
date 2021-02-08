@@ -97,4 +97,16 @@ describe('Datepicker field', () => {
     wrapper.find('label').simulate('click', event)
     expect(event.preventDefault).toBeCalled()
   })
+  it('renders properly when read only', () => {
+    const wrapper = mount(
+      <Formol item={{ [type]: rawValue1 }}>
+        <Field type="date" readOnly>
+          {title}
+        </Field>
+      </Formol>
+    )
+    const input = () => wrapper.find('input')
+    expect(input().props().readOnly).toBeTruthy()
+    expect(input().props().value).toBe(value1)
+  })
 })
