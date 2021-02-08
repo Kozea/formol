@@ -31,7 +31,7 @@ export default class DateField extends React.PureComponent {
       required,
       name,
       placeholder,
-      disabled
+      disabled,
     } = this.props
     const restOfProps = { onBlur, onFocus, readOnly, required, name, disabled }
     const isLocaleFr = i18n.calendar.locale === 'fr'

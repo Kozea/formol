@@ -21,10 +21,7 @@ export default class HTMLField extends React.PureComponent {
   }
 
   static getDerivedStateFromProps(
-    {
-      elementRef: { current },
-      value,
-    },
+    { elementRef: { current }, value },
     { value: oldValue }
   ) {
     if (value !== oldValue) {
