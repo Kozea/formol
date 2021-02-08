@@ -32,11 +32,12 @@ export default class DateField extends React.PureComponent {
       name,
       placeholder,
       disabled,
+      format: userFormat,
     } = this.props
     const restOfProps = { onBlur, onFocus, readOnly, required, name, disabled }
-    const isLocaleFr = i18n.calendar.locale === 'fr'
-    const locale = isLocaleFr ? fr : enUS
-    const dateFormat = isLocaleFr ? 'dd/MM/yyyy' : 'MM/dd/yyyy'
+    const locales = { fr, en: enUS }
+    const locale = locales[i18n.calendar.locale]
+    const dateFormat = userFormat || i18n.calendar.dateFormat
 
     return (
       <Datepicker
