@@ -20,7 +20,7 @@ export default class DateField extends React.PureComponent {
     const { elementRef } = this.props
     elementRef.current = null
   }
-  render() {
+  render(b) {
     const {
       value,
       onBlur,
@@ -33,6 +33,7 @@ export default class DateField extends React.PureComponent {
       placeholder,
       disabled,
       format: userFormat,
+      className,
     } = this.props
     const restOfProps = { onBlur, onFocus, readOnly, required, name, disabled }
     const locales = { fr, en: enUS }
@@ -50,7 +51,7 @@ export default class DateField extends React.PureComponent {
         isClearable={!(disabled || readOnly)}
         locale={locale}
         dateFormat={dateFormat}
-        className="Formol_InputField Formol_DateField Formol_Field__element"
+        className={b.mix(className).s}
         shouldCloseOnSelect
         showMonthDropdown
         showYearDropdown
