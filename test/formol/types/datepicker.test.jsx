@@ -109,4 +109,25 @@ describe('Datepicker field', () => {
     expect(input().props().readOnly).toBeTruthy()
     expect(input().props().value).toBe(value1)
   })
+  it('handles empty value', async () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount(
+      <Formol onSubmit={onSubmit}>
+        <Field type={type} name={type}>
+          {title}
+        </Field>
+      </Formol>
+    )
+
+    const input = () => wrapper.find(`input[name="${type}"]`)
+    const clearDate = () => wrapper.find('button[aria-label="Close"]')
+
+    expect(input().props().value).toEqual('')
+
+    await input().simulate('change', { target: { value: rawValue1 } })
+    expect(input().props().value).toEqual(value1)
+
+    await clearDate().simulate('click')
+    expect(input().props().value).toEqual('')
+  })
 })
