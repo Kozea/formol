@@ -31,8 +31,9 @@ export default class DateField extends React.PureComponent {
       required,
       name,
       placeholder,
+      disabled
     } = this.props
-    const restOfProps = { onBlur, onFocus, readOnly, required, name }
+    const restOfProps = { onBlur, onFocus, readOnly, required, name, disabled }
     const isLocaleFr = i18n.calendar.locale === 'fr'
     const locale = isLocaleFr ? fr : enUS
     const dateFormat = isLocaleFr ? 'dd/MM/yyyy' : 'MM/dd/yyyy'
@@ -45,7 +46,7 @@ export default class DateField extends React.PureComponent {
           this.setState({ date })
           onChange(date ? format(date, 'yyyy-MM-dd') : '')
         }}
-        isClearable
+        isClearable={!(disabled || readOnly)}
         locale={locale}
         dateFormat={dateFormat}
         className="Formol_InputField Formol_DateField Formol_Field__element"
