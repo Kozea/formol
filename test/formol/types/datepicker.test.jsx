@@ -85,4 +85,14 @@ describe('Datepicker field', () => {
 
     expect(input().props().value).toEqual(value1)
   })
+  it('calls event.preventDefault when type is date', () => {
+    const event = { preventDefault: jest.fn() }
+    jest.spyOn(event, 'preventDefault')
+    const wrapper = mount(<Formol>
+      <Field type="date" />
+    </Formol>)
+
+    wrapper.find('label').simulate('click', event)
+    expect(event.preventDefault).toBeCalled()
+  })
 })
