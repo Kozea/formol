@@ -8828,7 +8828,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           className="react-datepicker__input-container"
         >
           <input
-            className="Formol_DateField Formol_Field__element"
+            className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
             name="date"
             onBlur={[Function]}
@@ -15802,7 +15802,7 @@ Area"
           className="react-datepicker__input-container"
         >
           <input
-            className="Formol_DateField Formol_Field__element"
+            className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
             name="date"
             onBlur={[Function]}
@@ -24080,7 +24080,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
           className="react-datepicker__input-container"
         >
           <input
-            className="Formol_DateField Formol_Field__element"
+            className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
             name="date"
             onBlur={[Function]}
@@ -33030,7 +33030,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           className="react-datepicker__input-container"
         >
           <input
-            className="Formol_DateField Formol_Field__element"
+            className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
             name="date"
             onBlur={[Function]}

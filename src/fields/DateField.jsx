@@ -51,7 +51,7 @@ export default class DateField extends React.PureComponent {
         isClearable={!(disabled || readOnly)}
         locale={locale}
         dateFormat={dateFormat}
-        className={b.mix(className).s}
+        className={b.mix('Formol_InputField').mix(className).s}
         shouldCloseOnSelect
         showMonthDropdown
         showYearDropdown
