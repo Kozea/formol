@@ -2,38 +2,45 @@ import { mount } from 'enzyme'
 import React from 'react'
 import Formol, { Field } from '../../../src'
 
-;[
+const dateMock = [
   {
-    type: 'date',
+    type: 'date-native',
+    nativeType: 'date',
     title: 'Date',
     value1: '05/27/1988',
     value2: '12/12/2121',
   },
   {
     type: 'time',
+    nativeType: 'time',
     title: 'Time',
     value1: '11:59',
     value2: '05:12',
   },
   {
     type: 'datetime-local',
+    nativeType: 'datetime-local',
     title: 'DateTime Local',
     value1: '2008-02-19T18:14',
     value2: '1902-01-10T04:29',
   },
   {
     type: 'month',
+    nativeType: 'month',
     title: 'Month',
     value1: '2148-02',
     value2: '2000-01',
   },
   {
     type: 'week',
+    nativeType: 'week',
     title: 'Week',
     value1: '1998-W12',
     value2: '2100-W03',
   },
-].map(({ type, title, value1, value2 }) =>
+]
+
+dateMock.map(({ type, title, value1, value2, nativeType }) =>
   describe(`${title} field`, () => {
     it('handles changes', async () => {
       const onSubmit = jest.fn()
@@ -54,7 +61,7 @@ import Formol, { Field } from '../../../src'
 
       expect(submit().props().disabled).toBeTruthy()
       expect(cancel().props().disabled).toBeTruthy()
-      expect(input().props().type).toEqual(type)
+      expect(input().props().type).toEqual(nativeType)
       expect(input().props().value).toEqual(value1)
 
       await input().simulate('focus')

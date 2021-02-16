@@ -72,6 +72,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -90,6 +91,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Are you ok?
       </span>
@@ -228,6 +230,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -246,6 +249,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Why not?
       </span>
@@ -336,6 +340,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -354,6 +359,7 @@ exports[`Storyshots Conditionals Grouped conditionals 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         I will try again
       </span>
@@ -536,6 +542,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -554,6 +561,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         What’s your name?
       </span>
@@ -642,6 +650,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -660,6 +669,7 @@ exports[`Storyshots Conditionals Original conditionals 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Say something
       </span>
@@ -826,6 +836,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -844,6 +855,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Are you ok?
       </span>
@@ -982,6 +994,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -1000,6 +1013,7 @@ exports[`Storyshots Conditionals Simple Conditional 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Why not?
       </span>
@@ -1166,6 +1180,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -1184,6 +1199,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Are you ok?
       </span>
@@ -1322,6 +1338,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -1340,6 +1357,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Why?
       </span>
@@ -1429,6 +1447,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -1447,6 +1466,7 @@ exports[`Storyshots Conditionals Simple Conditional on props 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Why not?
       </span>
@@ -1613,6 +1633,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -1631,6 +1652,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Are you ok?
       </span>
@@ -1771,6 +1793,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               "subs": Array [],
             }
           }
+          onClick={[Function]}
         >
           <span
             className={
@@ -1789,6 +1812,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
                 "subs": Array [],
               }
             }
+            id="labelContent"
           >
             Why not?
           </span>
@@ -1881,6 +1905,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
               "subs": Array [],
             }
           }
+          onClick={[Function]}
         >
           <span
             className={
@@ -1899,6 +1924,7 @@ exports[`Storyshots Conditionals Undirect children Conditional 1`] = `
                 "subs": Array [],
               }
             }
+            id="labelContent"
           >
             I will try again
           </span>
@@ -2080,6 +2106,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="Your first name"
     >
       <span
@@ -2099,6 +2126,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         First name
         <svg
@@ -2207,6 +2235,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="Your name"
     >
       <span
@@ -2226,6 +2255,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Name
         <svg
@@ -2333,6 +2363,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="Your country"
     >
       <span
@@ -2352,6 +2383,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Country
         <svg
@@ -2603,6 +2635,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -2621,6 +2654,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         E-mail
       </span>
@@ -2725,6 +2759,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -2743,6 +2778,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Avatar
       </span>
@@ -2793,6 +2829,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -2811,6 +2848,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Gender
       </span>
@@ -3173,6 +3211,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -3191,6 +3230,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Weight
       </span>
@@ -3296,6 +3336,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -3314,6 +3355,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Height
       </span>
@@ -3420,6 +3462,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -3438,6 +3481,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Phone Number
       </span>
@@ -3542,6 +3586,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -3560,6 +3605,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Adress
       </span>
@@ -3666,6 +3712,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -3684,6 +3731,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Zip code
         </span>
@@ -3773,6 +3821,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -3791,6 +3840,7 @@ exports[`Storyshots Exemples Adding a person 1`] = `
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           City
         </span>
@@ -3956,6 +4006,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -3974,6 +4025,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         First name
       </span>
@@ -4064,6 +4116,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -4082,6 +4135,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Name
       </span>
@@ -4171,6 +4225,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -4189,6 +4244,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Country
       </span>
@@ -4422,6 +4478,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -4440,6 +4497,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         E-mail
       </span>
@@ -4544,6 +4602,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -4562,6 +4621,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Avatar
       </span>
@@ -4612,6 +4672,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -4630,6 +4691,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Gender
       </span>
@@ -4994,6 +5056,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -5012,6 +5075,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Pregnant
       </span>
@@ -5150,6 +5214,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -5168,6 +5233,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Weight
       </span>
@@ -5273,6 +5339,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -5291,6 +5358,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Height
       </span>
@@ -5397,6 +5465,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -5415,6 +5484,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Phone Number
       </span>
@@ -5519,6 +5589,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -5537,6 +5608,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Adress
       </span>
@@ -5643,6 +5715,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -5661,6 +5734,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Zip code
         </span>
@@ -5750,6 +5824,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -5768,6 +5843,7 @@ exports[`Storyshots Exemples Editing a person 1`] = `
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           City
         </span>
@@ -5940,6 +6016,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -5958,6 +6035,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Login
         </span>
@@ -6048,6 +6126,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -6066,6 +6145,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Password
         </span>
@@ -6334,6 +6414,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -6352,6 +6433,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Login
         </span>
@@ -6442,6 +6524,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -6460,6 +6543,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Password
         </span>
@@ -6698,6 +6782,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -6716,6 +6801,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Login
         </span>
@@ -6806,6 +6892,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -6824,6 +6911,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Password
         </span>
@@ -7062,6 +7150,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -7080,6 +7169,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Login
         </span>
@@ -7170,6 +7260,7 @@ Array [
             "subs": Array [],
           }
         }
+        onClick={[Function]}
       >
         <span
           className={
@@ -7188,6 +7279,7 @@ Array [
               "subs": Array [],
             }
           }
+          id="labelContent"
         >
           Password
         </span>
@@ -7426,6 +7518,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="text"
     >
       <span
@@ -7445,6 +7538,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         text
         <svg
@@ -7552,6 +7646,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="area"
     >
       <span
@@ -7571,6 +7666,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         area
         <svg
@@ -7677,6 +7773,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="email"
     >
       <span
@@ -7696,6 +7793,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         email
         <svg
@@ -7818,6 +7916,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="number"
     >
       <span
@@ -7837,6 +7936,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         number
         <svg
@@ -7959,6 +8059,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password"
     >
       <span
@@ -7978,6 +8079,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password
         <svg
@@ -8158,6 +8260,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password-strength"
     >
       <span
@@ -8177,6 +8280,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password-strength
         <svg
@@ -8245,6 +8349,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="tel"
     >
       <span
@@ -8264,6 +8369,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         tel
         <svg
@@ -8387,6 +8493,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="url"
     >
       <span
@@ -8406,6 +8513,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         url
         <svg
@@ -8528,6 +8636,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="color"
     >
       <span
@@ -8547,6 +8656,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         color
         <svg
@@ -8669,6 +8779,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="date"
     >
       <span
@@ -8688,8 +8799,119 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         date
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          />
+        </svg>
+      </span>
+      <div
+        className="react-datepicker-wrapper"
+      >
+        <div
+          className="react-datepicker__input-container"
+        >
+          <input
+            className="Formol_DateField Formol_InputField Formol_Field__element"
+            disabled={false}
+            name="date"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="date"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "disabled": undefined,
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "date-native",
+          "readOnly": undefined,
+          "required": false,
+          "type": "date-native",
+        },
+        "s": "Formol_Field Formol_Field--type-date-native Formol_Field--name-date-native",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+      onClick={[Function]}
+      title="date-native"
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        id="labelContent"
+      >
+        date-native
         <svg
           fill="currentColor"
           height="1em"
@@ -8716,7 +8938,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "DateField",
+                "block": "DateNativeField",
                 "element": null,
                 "mixed": Array [
                   Block {
@@ -8735,7 +8957,7 @@ exports[`Storyshots Field Test All fields 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_DateField Formol_Field__element",
+                "s": "Formol_DateNativeField Formol_Field__element",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -8746,7 +8968,7 @@ exports[`Storyshots Field Test All fields 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_InputField Formol_DateField Formol_Field__element",
+            "s": "Formol_InputField Formol_DateNativeField Formol_Field__element",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -8756,11 +8978,11 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
-        name="date"
+        name="date-native"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder="date"
+        placeholder="date-native"
         type="date"
         value=""
       />
@@ -8810,6 +9032,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="time"
     >
       <span
@@ -8829,6 +9052,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         time
         <svg
@@ -8951,6 +9175,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="datetime-local"
     >
       <span
@@ -8970,6 +9195,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         datetime-local
         <svg
@@ -9092,6 +9318,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="month"
     >
       <span
@@ -9111,6 +9338,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         month
         <svg
@@ -9233,6 +9461,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="week"
     >
       <span
@@ -9252,6 +9481,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         week
         <svg
@@ -9374,6 +9604,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="range"
     >
       <span
@@ -9393,6 +9624,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         range
         <svg
@@ -9630,6 +9862,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="money"
     >
       <span
@@ -9649,6 +9882,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         money
         <svg
@@ -9793,6 +10027,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="calendar"
     >
       <span
@@ -9812,6 +10047,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         calendar
         <svg
@@ -9882,6 +10118,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="switch"
     >
       <span
@@ -9901,6 +10138,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         switch
         <svg
@@ -10058,6 +10296,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="html"
     >
       <span
@@ -10077,6 +10316,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         html
         <svg
@@ -10147,6 +10387,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio"
     >
       <span
@@ -10166,6 +10407,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio
         <svg
@@ -10288,6 +10530,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio-set"
     >
       <span
@@ -10307,6 +10550,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio-set
         <svg
@@ -11963,6 +12207,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox"
     >
       <span
@@ -11982,6 +12227,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox
         <svg
@@ -12104,6 +12350,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox-set"
     >
       <span
@@ -12123,6 +12370,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox-set
         <svg
@@ -13777,6 +14025,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="file"
     >
       <span
@@ -13796,6 +14045,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         file
         <svg
@@ -13864,6 +14114,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select"
     >
       <span
@@ -13883,6 +14134,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select
         <svg
@@ -14074,6 +14326,7 @@ exports[`Storyshots Field Test All fields 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select-menu"
     >
       <span
@@ -14093,6 +14346,7 @@ exports[`Storyshots Field Test All fields 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select-menu
         <svg
@@ -14237,6 +14491,7 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="text"
     >
       <span
@@ -14256,6 +14511,7 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         text
         <svg
@@ -14363,6 +14619,7 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="area"
     >
       <span
@@ -14382,6 +14639,7 @@ exports[`Storyshots Field Test All fields with initial value 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         area
         <svg
@@ -14489,6 +14747,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="email"
     >
       <span
@@ -14508,6 +14767,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         email
         <svg
@@ -14630,6 +14890,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="number"
     >
       <span
@@ -14649,6 +14910,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         number
         <svg
@@ -14771,6 +15033,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password"
     >
       <span
@@ -14790,6 +15053,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password
         <svg
@@ -14970,6 +15234,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password-strength"
     >
       <span
@@ -14989,6 +15254,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password-strength
         <svg
@@ -15057,6 +15323,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="tel"
     >
       <span
@@ -15076,6 +15343,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         tel
         <svg
@@ -15199,6 +15467,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="url"
     >
       <span
@@ -15218,6 +15487,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         url
         <svg
@@ -15340,6 +15610,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="color"
     >
       <span
@@ -15359,6 +15630,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         color
         <svg
@@ -15481,6 +15753,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="date"
     >
       <span
@@ -15500,8 +15773,126 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         date
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          />
+        </svg>
+      </span>
+      <div
+        className="react-datepicker-wrapper"
+      >
+        <div
+          className="react-datepicker__input-container"
+        >
+          <input
+            className="Formol_DateField Formol_InputField Formol_Field__element"
+            disabled={false}
+            name="date"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="date"
+            readOnly={false}
+            type="text"
+            value="08/01/2018"
+          />
+          <button
+            aria-label="Close"
+            className="react-datepicker__close-icon"
+            onClick={[Function]}
+            tabIndex={-1}
+            type="button"
+          />
+        </div>
+      </div>
+    </label>
+  </div>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "disabled": undefined,
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "date-native",
+          "readOnly": undefined,
+          "required": false,
+          "type": "date-native",
+        },
+        "s": "Formol_Field Formol_Field--type-date-native Formol_Field--name-date-native",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+      onClick={[Function]}
+      title="date-native"
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        id="labelContent"
+      >
+        date-native
         <svg
           fill="currentColor"
           height="1em"
@@ -15528,7 +15919,7 @@ Area"
             "element": null,
             "mixed": Array [
               Block {
-                "block": "DateField",
+                "block": "DateNativeField",
                 "element": null,
                 "mixed": Array [
                   Block {
@@ -15547,7 +15938,7 @@ Area"
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_DateField Formol_Field__element",
+                "s": "Formol_DateNativeField Formol_Field__element",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -15558,7 +15949,7 @@ Area"
               },
             ],
             "modifier": Object {},
-            "s": "Formol_InputField Formol_DateField Formol_Field__element",
+            "s": "Formol_InputField Formol_DateNativeField Formol_Field__element",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -15568,13 +15959,13 @@ Area"
             "subs": Array [],
           }
         }
-        name="date"
+        name="date-native"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder="date"
+        placeholder="date-native"
         type="date"
-        value="2018-08-01"
+        value="date-native"
       />
     </label>
   </div>
@@ -15622,6 +16013,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="time"
     >
       <span
@@ -15641,6 +16033,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         time
         <svg
@@ -15763,6 +16156,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="datetime-local"
     >
       <span
@@ -15782,6 +16176,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         datetime-local
         <svg
@@ -15904,6 +16299,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="month"
     >
       <span
@@ -15923,6 +16319,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         month
         <svg
@@ -16045,6 +16442,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="week"
     >
       <span
@@ -16064,6 +16462,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         week
         <svg
@@ -16186,6 +16585,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="range"
     >
       <span
@@ -16205,6 +16605,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         range
         <svg
@@ -16442,6 +16843,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="money"
     >
       <span
@@ -16461,6 +16863,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         money
         <svg
@@ -16605,6 +17008,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="calendar"
     >
       <span
@@ -16624,6 +17028,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         calendar
         <svg
@@ -16694,6 +17099,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="switch"
     >
       <span
@@ -16713,6 +17119,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         switch
         <svg
@@ -16870,6 +17277,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="html"
     >
       <span
@@ -16889,6 +17297,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         html
         <svg
@@ -16959,6 +17368,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio"
     >
       <span
@@ -16978,6 +17388,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio
         <svg
@@ -17100,6 +17511,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio-set"
     >
       <span
@@ -17119,6 +17531,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio-set
         <svg
@@ -18775,6 +19188,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox"
     >
       <span
@@ -18794,6 +19208,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox
         <svg
@@ -18916,6 +19331,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox-set"
     >
       <span
@@ -18935,6 +19351,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox-set
         <svg
@@ -20589,6 +21006,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="file"
     >
       <span
@@ -20608,6 +21026,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         file
         <svg
@@ -20676,6 +21095,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select"
     >
       <span
@@ -20695,6 +21115,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select
         <svg
@@ -20886,6 +21307,7 @@ Area"
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select-menu"
     >
       <span
@@ -20905,6 +21327,7 @@ Area"
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select-menu
         <svg
@@ -21049,6 +21472,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="area"
     >
       <span
@@ -21068,6 +21492,7 @@ exports[`Storyshots Field Test/Fields area field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         area
         <svg
@@ -21250,6 +21675,7 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="calendar"
     >
       <span
@@ -21269,6 +21695,7 @@ exports[`Storyshots Field Test/Fields calendar field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         calendar
         <svg
@@ -21415,6 +21842,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox"
     >
       <span
@@ -21434,6 +21862,7 @@ exports[`Storyshots Field Test/Fields checkbox field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox
         <svg
@@ -21632,6 +22061,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox-set"
     >
       <span
@@ -21651,6 +22081,7 @@ exports[`Storyshots Field Test/Fields checkbox-set field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox-set
         <svg
@@ -23381,6 +23812,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="color"
     >
       <span
@@ -23400,6 +23832,7 @@ exports[`Storyshots Field Test/Fields color field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         color
         <svg
@@ -23598,6 +24031,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="date"
     >
       <span
@@ -23617,8 +24051,195 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         date
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          />
+        </svg>
+      </span>
+      <div
+        className="react-datepicker-wrapper"
+      >
+        <div
+          className="react-datepicker__input-container"
+        >
+          <input
+            className="Formol_DateField Formol_InputField Formol_Field__element"
+            disabled={false}
+            name="date"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="date"
+            readOnly={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </label>
+  </div>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    title="No change in form"
+    type="submit"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    title="No change in form"
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
+exports[`Storyshots Field Test/Fields date-native field 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    date-native
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "disabled": undefined,
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "date-native",
+          "readOnly": undefined,
+          "required": false,
+          "type": "date-native",
+        },
+        "s": "Formol_Field Formol_Field--type-date-native Formol_Field--name-date-native",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+      onClick={[Function]}
+      title="date-native"
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        id="labelContent"
+      >
+        date-native
         <svg
           fill="currentColor"
           height="1em"
@@ -23645,7 +24266,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "DateField",
+                "block": "DateNativeField",
                 "element": null,
                 "mixed": Array [
                   Block {
@@ -23664,7 +24285,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_DateField Formol_Field__element",
+                "s": "Formol_DateNativeField Formol_Field__element",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -23675,7 +24296,7 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_InputField Formol_DateField Formol_Field__element",
+            "s": "Formol_InputField Formol_DateNativeField Formol_Field__element",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -23685,11 +24306,11 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
             "subs": Array [],
           }
         }
-        name="date"
+        name="date-native"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder="date"
+        placeholder="date-native"
         type="date"
         value=""
       />
@@ -23815,6 +24436,7 @@ exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="datetime-local"
     >
       <span
@@ -23834,6 +24456,7 @@ exports[`Storyshots Field Test/Fields datetime-local field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         datetime-local
         <svg
@@ -24032,6 +24655,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="email"
     >
       <span
@@ -24051,6 +24675,7 @@ exports[`Storyshots Field Test/Fields email field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         email
         <svg
@@ -24249,6 +24874,7 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="file"
     >
       <span
@@ -24268,6 +24894,7 @@ exports[`Storyshots Field Test/Fields file field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         file
         <svg
@@ -24412,6 +25039,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="html"
     >
       <span
@@ -24431,6 +25059,7 @@ exports[`Storyshots Field Test/Fields html field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         html
         <svg
@@ -24575,6 +25204,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="money"
     >
       <span
@@ -24594,6 +25224,7 @@ exports[`Storyshots Field Test/Fields money field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         money
         <svg
@@ -24814,6 +25445,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="month"
     >
       <span
@@ -24833,6 +25465,7 @@ exports[`Storyshots Field Test/Fields month field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         month
         <svg
@@ -25031,6 +25664,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="number"
     >
       <span
@@ -25050,6 +25684,7 @@ exports[`Storyshots Field Test/Fields number field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         number
         <svg
@@ -25248,6 +25883,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password"
     >
       <span
@@ -25267,6 +25903,7 @@ exports[`Storyshots Field Test/Fields password field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password
         <svg
@@ -25523,6 +26160,7 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password-strength"
     >
       <span
@@ -25542,6 +26180,7 @@ exports[`Storyshots Field Test/Fields password-strength field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password-strength
         <svg
@@ -25688,6 +26327,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio"
     >
       <span
@@ -25707,6 +26347,7 @@ exports[`Storyshots Field Test/Fields radio field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio
         <svg
@@ -25905,6 +26546,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio-set"
     >
       <span
@@ -25924,6 +26566,7 @@ exports[`Storyshots Field Test/Fields radio-set field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio-set
         <svg
@@ -27654,6 +28297,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="range"
     >
       <span
@@ -27673,6 +28317,7 @@ exports[`Storyshots Field Test/Fields range field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         range
         <svg
@@ -27986,6 +28631,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select"
     >
       <span
@@ -28005,6 +28651,7 @@ exports[`Storyshots Field Test/Fields select field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select
         <svg
@@ -28272,6 +28919,7 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select-menu"
     >
       <span
@@ -28291,6 +28939,7 @@ exports[`Storyshots Field Test/Fields select-menu field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select-menu
         <svg
@@ -28437,6 +29086,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="switch"
     >
       <span
@@ -28456,6 +29106,7 @@ exports[`Storyshots Field Test/Fields switch field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         switch
         <svg
@@ -28689,6 +29340,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="tel"
     >
       <span
@@ -28708,6 +29360,7 @@ exports[`Storyshots Field Test/Fields tel field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         tel
         <svg
@@ -28907,6 +29560,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="text"
     >
       <span
@@ -28926,6 +29580,7 @@ exports[`Storyshots Field Test/Fields text field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         text
         <svg
@@ -29109,6 +29764,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="time"
     >
       <span
@@ -29128,6 +29784,7 @@ exports[`Storyshots Field Test/Fields time field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         time
         <svg
@@ -29326,6 +29983,7 @@ exports[`Storyshots Field Test/Fields url field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="url"
     >
       <span
@@ -29345,6 +30003,7 @@ exports[`Storyshots Field Test/Fields url field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         url
         <svg
@@ -29543,6 +30202,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="week"
     >
       <span
@@ -29562,6 +30222,7 @@ exports[`Storyshots Field Test/Fields week field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         week
         <svg
@@ -29760,6 +30421,7 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="area"
     >
       <span
@@ -29779,6 +30441,7 @@ exports[`Storyshots Field Test/Fields with initial value area field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         area
         <svg
@@ -29962,6 +30625,7 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="calendar"
     >
       <span
@@ -29981,6 +30645,7 @@ exports[`Storyshots Field Test/Fields with initial value calendar field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         calendar
         <svg
@@ -30127,6 +30792,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox"
     >
       <span
@@ -30146,6 +30812,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox
         <svg
@@ -30344,6 +31011,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="checkbox-set"
     >
       <span
@@ -30363,6 +31031,7 @@ exports[`Storyshots Field Test/Fields with initial value checkbox-set field 1`] 
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         checkbox-set
         <svg
@@ -32093,6 +32762,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="color"
     >
       <span
@@ -32112,6 +32782,7 @@ exports[`Storyshots Field Test/Fields with initial value color field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         color
         <svg
@@ -32310,6 +32981,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="date"
     >
       <span
@@ -32329,8 +33001,202 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         date
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          />
+        </svg>
+      </span>
+      <div
+        className="react-datepicker-wrapper"
+      >
+        <div
+          className="react-datepicker__input-container"
+        >
+          <input
+            className="Formol_DateField Formol_InputField Formol_Field__element"
+            disabled={false}
+            name="date"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="date"
+            readOnly={false}
+            type="text"
+            value="08/01/2018"
+          />
+          <button
+            aria-label="Close"
+            className="react-datepicker__close-icon"
+            onClick={[Function]}
+            tabIndex={-1}
+            type="button"
+          />
+        </div>
+      </div>
+    </label>
+  </div>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "submit",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__submit",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    title="No change in form"
+    type="submit"
+  >
+    Submit
+  </button>
+  <button
+    className={
+      Block {
+        "block": "Formol",
+        "element": "cancel",
+        "mixed": Array [],
+        "modifier": Object {},
+        "s": "Formol_Formol__cancel",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+    disabled={true}
+    onClick={[Function]}
+    title="No change in form"
+    type="button"
+  >
+    Cancel
+  </button>
+</form>
+`;
+
+exports[`Storyshots Field Test/Fields with initial value date-native field 1`] = `
+<form
+  className={
+    Block {
+      "block": "Formol",
+      "element": null,
+      "mixed": Array [],
+      "modifier": Object {
+        "errors": false,
+        "loading": false,
+      },
+      "s": "Formol_Formol",
+      "settings": Object {
+        "elementDelimiter": "__",
+        "modifierDelimiter": "--",
+        "modifierValueDelimiter": "-",
+        "namespace": "Formol_",
+      },
+      "subs": Array [],
+    }
+  }
+  onSubmit={[Function]}
+>
+  <h1>
+    date-native
+  </h1>
+  <div
+    className={
+      Block {
+        "block": "Field",
+        "element": null,
+        "mixed": Array [],
+        "modifier": Object {
+          "disabled": undefined,
+          "error": false,
+          "focus": false,
+          "modified": false,
+          "name": "date-native",
+          "readOnly": undefined,
+          "required": false,
+          "type": "date-native",
+        },
+        "s": "Formol_Field Formol_Field--type-date-native Formol_Field--name-date-native",
+        "settings": Object {
+          "elementDelimiter": "__",
+          "modifierDelimiter": "--",
+          "modifierValueDelimiter": "-",
+          "namespace": "Formol_",
+        },
+        "subs": Array [],
+      }
+    }
+  >
+    <label
+      className={
+        Block {
+          "block": "Field",
+          "element": "label",
+          "mixed": Array [],
+          "modifier": Object {},
+          "s": "Formol_Field__label",
+          "settings": Object {
+            "elementDelimiter": "__",
+            "modifierDelimiter": "--",
+            "modifierValueDelimiter": "-",
+            "namespace": "Formol_",
+          },
+          "subs": Array [],
+        }
+      }
+      onClick={[Function]}
+      title="date-native"
+    >
+      <span
+        className={
+          Block {
+            "block": "Field",
+            "element": "title",
+            "mixed": Array [],
+            "modifier": Object {},
+            "s": "Formol_Field__title",
+            "settings": Object {
+              "elementDelimiter": "__",
+              "modifierDelimiter": "--",
+              "modifierValueDelimiter": "-",
+              "namespace": "Formol_",
+            },
+            "subs": Array [],
+          }
+        }
+        id="labelContent"
+      >
+        date-native
         <svg
           fill="currentColor"
           height="1em"
@@ -32357,7 +33223,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
             "element": null,
             "mixed": Array [
               Block {
-                "block": "DateField",
+                "block": "DateNativeField",
                 "element": null,
                 "mixed": Array [
                   Block {
@@ -32376,7 +33242,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
                   },
                 ],
                 "modifier": Object {},
-                "s": "Formol_DateField Formol_Field__element",
+                "s": "Formol_DateNativeField Formol_Field__element",
                 "settings": Object {
                   "elementDelimiter": "__",
                   "modifierDelimiter": "--",
@@ -32387,7 +33253,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
               },
             ],
             "modifier": Object {},
-            "s": "Formol_InputField Formol_DateField Formol_Field__element",
+            "s": "Formol_InputField Formol_DateNativeField Formol_Field__element",
             "settings": Object {
               "elementDelimiter": "__",
               "modifierDelimiter": "--",
@@ -32397,13 +33263,13 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
             "subs": Array [],
           }
         }
-        name="date"
+        name="date-native"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder="date"
+        placeholder="date-native"
         type="date"
-        value="2018-08-01"
+        value="date-native"
       />
     </label>
   </div>
@@ -32527,6 +33393,7 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="datetime-local"
     >
       <span
@@ -32546,6 +33413,7 @@ exports[`Storyshots Field Test/Fields with initial value datetime-local field 1`
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         datetime-local
         <svg
@@ -32744,6 +33612,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="email"
     >
       <span
@@ -32763,6 +33632,7 @@ exports[`Storyshots Field Test/Fields with initial value email field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         email
         <svg
@@ -32961,6 +33831,7 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="file"
     >
       <span
@@ -32980,6 +33851,7 @@ exports[`Storyshots Field Test/Fields with initial value file field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         file
         <svg
@@ -33124,6 +33996,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="html"
     >
       <span
@@ -33143,6 +34016,7 @@ exports[`Storyshots Field Test/Fields with initial value html field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         html
         <svg
@@ -33287,6 +34161,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="money"
     >
       <span
@@ -33306,6 +34181,7 @@ exports[`Storyshots Field Test/Fields with initial value money field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         money
         <svg
@@ -33526,6 +34402,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="month"
     >
       <span
@@ -33545,6 +34422,7 @@ exports[`Storyshots Field Test/Fields with initial value month field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         month
         <svg
@@ -33743,6 +34621,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="number"
     >
       <span
@@ -33762,6 +34641,7 @@ exports[`Storyshots Field Test/Fields with initial value number field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         number
         <svg
@@ -33960,6 +34840,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password"
     >
       <span
@@ -33979,6 +34860,7 @@ exports[`Storyshots Field Test/Fields with initial value password field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password
         <svg
@@ -34235,6 +35117,7 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="password-strength"
     >
       <span
@@ -34254,6 +35137,7 @@ exports[`Storyshots Field Test/Fields with initial value password-strength field
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         password-strength
         <svg
@@ -34400,6 +35284,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio"
     >
       <span
@@ -34419,6 +35304,7 @@ exports[`Storyshots Field Test/Fields with initial value radio field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio
         <svg
@@ -34617,6 +35503,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="radio-set"
     >
       <span
@@ -34636,6 +35523,7 @@ exports[`Storyshots Field Test/Fields with initial value radio-set field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         radio-set
         <svg
@@ -36366,6 +37254,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="range"
     >
       <span
@@ -36385,6 +37274,7 @@ exports[`Storyshots Field Test/Fields with initial value range field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         range
         <svg
@@ -36698,6 +37588,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select"
     >
       <span
@@ -36717,6 +37608,7 @@ exports[`Storyshots Field Test/Fields with initial value select field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select
         <svg
@@ -36984,6 +37876,7 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="select-menu"
     >
       <span
@@ -37003,6 +37896,7 @@ exports[`Storyshots Field Test/Fields with initial value select-menu field 1`] =
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         select-menu
         <svg
@@ -37149,6 +38043,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="switch"
     >
       <span
@@ -37168,6 +38063,7 @@ exports[`Storyshots Field Test/Fields with initial value switch field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         switch
         <svg
@@ -37401,6 +38297,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="tel"
     >
       <span
@@ -37420,6 +38317,7 @@ exports[`Storyshots Field Test/Fields with initial value tel field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         tel
         <svg
@@ -37619,6 +38517,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="text"
     >
       <span
@@ -37638,6 +38537,7 @@ exports[`Storyshots Field Test/Fields with initial value text field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         text
         <svg
@@ -37821,6 +38721,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="time"
     >
       <span
@@ -37840,6 +38741,7 @@ exports[`Storyshots Field Test/Fields with initial value time field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         time
         <svg
@@ -38038,6 +38940,7 @@ exports[`Storyshots Field Test/Fields with initial value url field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="url"
     >
       <span
@@ -38057,6 +38960,7 @@ exports[`Storyshots Field Test/Fields with initial value url field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         url
         <svg
@@ -38255,6 +39159,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="week"
     >
       <span
@@ -38274,6 +39179,7 @@ exports[`Storyshots Field Test/Fields with initial value week field 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         week
         <svg
@@ -38472,6 +39378,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -38490,6 +39397,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Money
       </span>
@@ -38578,6 +39486,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -38596,6 +39505,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Big number (actually a formatted string)
       </span>
@@ -38684,6 +39594,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -38702,6 +39613,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         rgb(r, g, b) color
       </span>
@@ -38805,6 +39717,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -38823,6 +39736,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Credit Card
       </span>
@@ -38912,6 +39826,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -38930,6 +39845,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         I letters
       </span>
@@ -39034,6 +39950,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -39052,6 +39969,7 @@ exports[`Storyshots Formatters Bidirectional formatters 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number of letter i
       </span>
@@ -39217,6 +40135,7 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -39235,6 +40154,7 @@ exports[`Storyshots Formatters Field normalizer 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         String cleaned and parsed as a number on blur
       </span>
@@ -39399,6 +40319,7 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -39417,6 +40338,7 @@ exports[`Storyshots Formatters Field to item formatter 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         String cleaned and parsed as a number
       </span>
@@ -39581,6 +40503,7 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -39599,6 +40522,7 @@ exports[`Storyshots Formatters Item to field formatter 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Default value
       </span>
@@ -39763,6 +40687,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -39781,6 +40706,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Identifier
       </span>
@@ -39884,6 +40810,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -39902,6 +40829,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Name
       </span>
@@ -39990,6 +40918,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -40008,6 +40937,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Root -&gt; Realm
       </span>
@@ -40096,6 +41026,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -40114,6 +41045,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Extra -&gt; first array item
       </span>
@@ -40202,6 +41134,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -40220,6 +41153,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Extra -&gt; second array item -&gt; more -&gt; again -&gt; first array item -&gt; hereweare
       </span>
@@ -40323,6 +41257,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -40341,6 +41276,7 @@ exports[`Storyshots Miscellaneous Adding a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Extra -&gt; third array array
       </span>
@@ -41067,6 +42003,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -41085,6 +42022,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text
       </span>
@@ -41173,6 +42111,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -41191,6 +42130,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Country 
         <small>
@@ -41287,6 +42227,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -41305,6 +42246,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Country 
         <small>
@@ -41358,6 +42300,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -41376,6 +42319,7 @@ exports[`Storyshots Miscellaneous Asynchronous choices 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Complex
         <small>
@@ -41505,6 +42449,7 @@ exports[`Storyshots Miscellaneous Custom button components 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -41523,6 +42468,7 @@ exports[`Storyshots Miscellaneous Custom button components 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text
       </span>
@@ -41725,6 +42671,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -41743,6 +42690,7 @@ exports[`Storyshots Miscellaneous Dangerous field set raw labels 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Color
       </span>
@@ -43540,6 +44488,7 @@ exports[`Storyshots Miscellaneous Dynamically added field with values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -43558,6 +44507,7 @@ exports[`Storyshots Miscellaneous Dynamically added field with values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Name
       </span>
@@ -43723,6 +44673,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -43741,6 +44692,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Identifier
       </span>
@@ -43844,6 +44796,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -43862,6 +44815,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Name
       </span>
@@ -43950,6 +44904,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -43968,6 +44923,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Root -&gt; Realm
       </span>
@@ -44056,6 +45012,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -44074,6 +45031,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Extra -&gt; first array item
       </span>
@@ -44162,6 +45120,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -44180,6 +45139,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Extra -&gt; second array item -&gt; more -&gt; again -&gt; first array item -&gt; hereweare
       </span>
@@ -44283,6 +45243,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -44301,6 +45262,7 @@ exports[`Storyshots Miscellaneous Editing a nested item 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Properties -&gt; Extra -&gt; third array array
       </span>
@@ -45027,6 +45989,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45045,6 +46008,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         0
@@ -45134,6 +46098,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45152,6 +46117,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         1
@@ -45241,6 +46207,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45259,6 +46226,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         2
@@ -45348,6 +46316,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45366,6 +46335,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         3
@@ -45455,6 +46425,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45473,6 +46444,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         4
@@ -45562,6 +46534,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45580,6 +46553,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         5
@@ -45669,6 +46643,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45687,6 +46662,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         6
@@ -45776,6 +46752,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45794,6 +46771,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         7
@@ -45883,6 +46861,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -45901,6 +46880,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         8
@@ -45990,6 +46970,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46008,6 +46989,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         9
@@ -46097,6 +47079,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46115,6 +47098,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         10
@@ -46204,6 +47188,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46222,6 +47207,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         11
@@ -46311,6 +47297,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46329,6 +47316,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         12
@@ -46418,6 +47406,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46436,6 +47425,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         13
@@ -46525,6 +47515,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46543,6 +47534,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         14
@@ -46632,6 +47624,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46650,6 +47643,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         15
@@ -46739,6 +47733,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46757,6 +47752,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         16
@@ -46846,6 +47842,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46864,6 +47861,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         17
@@ -46953,6 +47951,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -46971,6 +47970,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         18
@@ -47060,6 +48060,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47078,6 +48079,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         19
@@ -47167,6 +48169,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47185,6 +48188,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         20
@@ -47274,6 +48278,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47292,6 +48297,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         21
@@ -47381,6 +48387,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47399,6 +48406,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         22
@@ -47488,6 +48496,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47506,6 +48515,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         23
@@ -47595,6 +48605,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47613,6 +48624,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         24
@@ -47702,6 +48714,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47720,6 +48733,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         25
@@ -47809,6 +48823,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47827,6 +48842,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         26
@@ -47916,6 +48932,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -47934,6 +48951,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         27
@@ -48023,6 +49041,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48041,6 +49060,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         28
@@ -48130,6 +49150,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48148,6 +49169,7 @@ exports[`Storyshots Miscellaneous Focus/Scroll on error 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 
         29
@@ -48313,6 +49335,7 @@ exports[`Storyshots Miscellaneous HTMLField customization 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48331,6 +49354,7 @@ exports[`Storyshots Miscellaneous HTMLField customization 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         html
       </span>
@@ -48457,6 +49481,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48475,6 +49500,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Object select
       </span>
@@ -48597,6 +49623,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48615,6 +49642,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Object select multiple
       </span>
@@ -48740,6 +49768,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48758,6 +49787,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Object select menu
       </span>
@@ -48808,6 +49838,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48826,6 +49857,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Object select multiple menu
       </span>
@@ -48876,6 +49908,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -48894,6 +49927,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Radio
       </span>
@@ -49544,6 +50578,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -49562,6 +50597,7 @@ exports[`Storyshots Miscellaneous Non string choices values 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Checkbox
       </span>
@@ -50288,6 +51324,7 @@ exports[`Storyshots Miscellaneous Select menu long options 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -50306,6 +51343,7 @@ exports[`Storyshots Miscellaneous Select menu long options 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Stressed select
       </span>
@@ -50432,6 +51470,7 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -50450,6 +51489,7 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Stressed select
       </span>
@@ -50500,6 +51540,7 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -50518,6 +51559,7 @@ exports[`Storyshots Miscellaneous Select menu stress test 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Multi Stressed select
       </span>
@@ -50644,6 +51686,7 @@ exports[`Storyshots Miscellaneous Select menu with option style 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -50662,6 +51705,7 @@ exports[`Storyshots Miscellaneous Select menu with option style 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Color
       </span>
@@ -50788,6 +51832,7 @@ exports[`Storyshots Validators Complex field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -50806,6 +51851,7 @@ exports[`Storyshots Validators Complex field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Prime
       </span>
@@ -50988,6 +52034,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51006,6 +52053,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 1
       </span>
@@ -51094,6 +52142,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51112,6 +52161,7 @@ exports[`Storyshots Validators Cross field and self validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 2
       </span>
@@ -51276,6 +52326,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51294,6 +52345,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         0
@@ -51399,6 +52451,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51417,6 +52470,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         1
@@ -51522,6 +52576,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51540,6 +52595,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         2
@@ -51645,6 +52701,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51663,6 +52720,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         3
@@ -51768,6 +52826,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51786,6 +52845,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         4
@@ -51891,6 +52951,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -51909,6 +52970,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         5
@@ -52014,6 +53076,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -52032,6 +53095,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         6
@@ -52137,6 +53201,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -52155,6 +53220,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         7
@@ -52260,6 +53326,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -52278,6 +53345,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         8
@@ -52383,6 +53451,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -52401,6 +53470,7 @@ exports[`Storyshots Validators Cross field validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Number 
         9
@@ -52582,6 +53652,7 @@ exports[`Storyshots Validators DOM validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
       title="A hexadecimal color: (i.e. #3c23ad)"
     >
       <span
@@ -52601,6 +53672,7 @@ exports[`Storyshots Validators DOM validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Hexadecimal color validated by a regexp pattern with custom error messages
         <svg
@@ -52786,6 +53858,7 @@ exports[`Storyshots Validators Server side validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -52804,6 +53877,7 @@ exports[`Storyshots Validators Server side validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 1
       </span>
@@ -52892,6 +53966,7 @@ exports[`Storyshots Validators Server side validation 1`] = `
           "subs": Array [],
         }
       }
+      onClick={[Function]}
     >
       <span
         className={
@@ -52910,6 +53985,7 @@ exports[`Storyshots Validators Server side validation 1`] = `
             "subs": Array [],
           }
         }
+        id="labelContent"
       >
         Text 2
       </span>
