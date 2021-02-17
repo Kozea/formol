@@ -1,3 +1,8 @@
+### [2.9.0](https://github.com/Kozea/formol/compare/v2.8.3...v2.9.0)
+
+- Change `Field` component of `type="date"` into a datepicker ([react-datepicker](https://github.com/Hacker0x01/react-datepicker))
+- Add `Field` component of `type="date-native"` for browsers date input
+
 ### [2.8.3](https://github.com/Kozea/formol/compare/v2.8.2...v2.8.3)
 
 - Update dependencies (and remove jest 24 transitive dep)
