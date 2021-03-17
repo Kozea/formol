@@ -2,6 +2,7 @@
 
 import { mount } from 'enzyme'
 import React from 'react'
+import { act } from 'react-dom/test-utils'
 
 import Formol, { Field } from '../../src'
 import InputField from '../../src/fields/InputField'
@@ -606,5 +607,29 @@ describe('Formol', () => {
       ['text'],
       false
     )
+  }, 30000)
+
+  it('internal value of modified must be false on successful submit', async () => {
+    const extra = jest.fn()
+    const wrapper = mount(
+      <Formol
+        onSubmit={jest.fn()}
+        item={{ username: '' }}
+        extra={({ modified }) => extra(modified)}
+      >
+        <Field type="text" name="username">
+          Username
+        </Field>
+      </Formol>
+    )
+
+    wrapper.find('input').simulate('change', { target: { value: 'Toto' } })
+    expect(wrapper.getDOMNode().checkValidity()).toBeTruthy()
+    await act(async () => {
+      await wrapper.find('.Formol_Formol__submit').simulate('submit')
+    })
+    const { length } = extra.mock.calls
+    // last value of `modified` must be false
+    expect(extra.mock.calls[length - 1][0]).toBeFalsy()
   }, 30000)
 })

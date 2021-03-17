@@ -266,6 +266,7 @@ export default class Formol extends React.PureComponent {
 
     if (!Object.keys(errors).length) {
       // No errors on submit
+      this.setState({ modified: false })
       if (item === emptyItem) {
         // Resetting form if no item was given
         this.handleCancel()
