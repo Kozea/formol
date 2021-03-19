@@ -242,4 +242,31 @@ describe('Conditional field', () => {
         .props().readOnly
     ).toBeTruthy()
   })
+  it('initializes multiple fields on show condition change', async () => {
+    const wrapper = mount(
+      <Formol
+        item={{
+          switchMe: false,
+          lName: 'Doe',
+          fName: 'John',
+        }}
+      >
+        <Field name="switchMe" type="switch">
+          Switch me
+        </Field>
+        <Conditional show={({ switchMe }) => switchMe}>
+          <Field name="lName">Last name</Field>
+          <Field name="fName">First name</Field>
+        </Conditional>
+      </Formol>
+    )
+    const switchBtn = () => wrapper.find('input[name="switchMe"]')
+
+    await switchBtn().simulate('change', { target: { checked: true } })
+    const lName = () => wrapper.find('input[name="lName"]')
+    const fName = () => wrapper.find('input[name="fName"]')
+
+    expect(lName().props().value).toBe('Doe')
+    expect(fName().props().value).toBe('John')
+  })
 })
