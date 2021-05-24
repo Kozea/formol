@@ -1,3 +1,5 @@
+@use 'sass:math'
+
 .Formol_Field--type-range
   .Formol_Field
     &--focus
@@ -31,4 +33,4 @@
     position: absolute
 
   &__min, &__max
-    font-size: $formol-font-size / 1.25
+    font-size: math.div($formol-font-size, 1.25)

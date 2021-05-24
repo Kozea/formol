@@ -1,9 +1,11 @@
+@use 'sass:math'
+
 .Formol_Inliner
-  margin: -$formol-field-margin / 2 0
+  margin: math.div(-$formol-field-margin, 2) 0
 
   .Formol_Field
     display: inline-block
-    margin: $formol-field-margin / 2 0
+    margin: math.div($formol-field-margin, 2) 0
     vertical-align: top
 
     &:not(:last-of-type)

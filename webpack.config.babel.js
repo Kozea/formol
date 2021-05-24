@@ -3,7 +3,6 @@ import path from 'path'
 
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
-import sass from 'dart-sass'
 
 import config from './package.json'
 
@@ -87,7 +86,6 @@ export default {
           {
             loader: 'sass-loader',
             options: {
-              implementation: sass,
               sassOptions: {
                 includePaths: [path.join(__dirname, 'src')],
               },
