@@ -1,3 +1,7 @@
+### [2.9.2](https://github.com/Kozea/formol/compare/v2.9.1...v2.9.2)
+
+- Make the internal modified state reset to false after successful submit
+
 ### [2.9.1](https://github.com/Kozea/formol/compare/v2.9.0...v2.9.1)
 
 - Fix the `register` function. Multiple `Field` inside `Conditional` are now initializable when mounted.
