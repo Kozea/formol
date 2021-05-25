@@ -1,3 +1,8 @@
+### [2.9.3](https://github.com/Kozea/formol/compare/v2.9.2...v2.9.3)
+
+- Replace `dart-sass` by `sass`
+- Replace all division with slash character `/` by `math.div`
+
 ### [2.9.2](https://github.com/Kozea/formol/compare/v2.9.1...v2.9.2)
 
 - Make the internal modified state reset to false after successful submit
