@@ -34,6 +34,7 @@ export default class DateField extends React.PureComponent {
       disabled,
       format: userFormat,
       className,
+      ...datepickerProps
     } = this.props
     const restOfProps = { onBlur, onFocus, readOnly, required, name, disabled }
     const locales = { fr, en: enUS }
@@ -58,6 +59,7 @@ export default class DateField extends React.PureComponent {
         dropdownMode="select"
         placeholderText={placeholder || dateFormat}
         {...restOfProps}
+        {...datepickerProps}
       />
     )
   }
