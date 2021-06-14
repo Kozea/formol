@@ -1,3 +1,7 @@
+### [2.9.4](https://github.com/Kozea/formol/compare/v2.9.3...v2.9.4)
+
+- Make `Datefield` component accept other `react-datepicker` props
+
 ### [2.9.3](https://github.com/Kozea/formol/compare/v2.9.2...v2.9.3)
 
 - Replace `dart-sass` by `sass`
