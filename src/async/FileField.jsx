@@ -240,7 +240,7 @@ export default class FileField extends React.PureComponent {
               {...getRootProps()}
               className={b.e('dropzone-wrapper').m({ isDragActive })}
             >
-              ￼ <input {...getInputProps()} />
+              <input {...getInputProps()} />
               <div className={b.e('placeholder')}>
                 {!multiple && preview ? (
                   preview
