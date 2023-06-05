@@ -1,3 +1,7 @@
+### [2.9.6](https://github.com/Kozea/formol/compare/v2.9.5...v2.9.6)
+
+- Fix storybook
+
 ### [2.9.5](https://github.com/Kozea/formol/compare/v2.9.4...v2.9.5)
 
 - Remove special character `obj`
