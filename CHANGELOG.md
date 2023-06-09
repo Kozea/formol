@@ -1,3 +1,7 @@
+### [2.10.1](https://github.com/Kozea/formol/compare/v2.10.0...v2.10.1)
+
+- Fix storybook deploy
+
 ### [2.10.0](https://github.com/Kozea/formol/compare/v2.9.6...v2.10.0)
 
 - Use `accent-color` to style radio buttons and checkboxes
