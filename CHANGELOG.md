@@ -1,3 +1,7 @@
+### [2.11.0](https://github.com/Kozea/formol/compare/v2.10.1...v2.11.0)
+
+- Add auto-slash to DateField
+
 ### [2.10.1](https://github.com/Kozea/formol/compare/v2.10.0...v2.10.1)
 
 - Fix storybook deploy
