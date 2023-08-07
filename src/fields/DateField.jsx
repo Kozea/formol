@@ -3,6 +3,7 @@ import Datepicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import { format } from 'date-fns'
 import { fr, enUS } from 'date-fns/locale'
+import MaskedInput from 'react-text-mask'
 
 import { block } from '../utils'
 
@@ -13,7 +14,7 @@ export default class DateField extends React.PureComponent {
   componentDidMount() {
     const { readOnly, disabled, elementRef } = this.props
     if (!(readOnly || disabled)) {
-      elementRef.current = this.datepicker.input
+      elementRef.current = this.datepicker.customInput
     }
   }
   componentWillUnmount() {
@@ -60,6 +61,12 @@ export default class DateField extends React.PureComponent {
         placeholderText={placeholder || dateFormat}
         {...restOfProps}
         {...datepickerProps}
+        customInput={
+          <MaskedInput
+            type="text"
+            mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
+          />
+        }
       />
     )
   }

@@ -8830,6 +8830,20 @@ exports[`Storyshots Field Test All fields 1`] = `
           <input
             className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
+            mask={
+              Array [
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+              ]
+            }
             name="date"
             onBlur={[Function]}
             onChange={[Function]}
@@ -15804,6 +15818,20 @@ Area"
           <input
             className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
+            mask={
+              Array [
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+              ]
+            }
             name="date"
             onBlur={[Function]}
             onChange={[Function]}
@@ -24082,6 +24110,20 @@ exports[`Storyshots Field Test/Fields date field 1`] = `
           <input
             className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
+            mask={
+              Array [
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+              ]
+            }
             name="date"
             onBlur={[Function]}
             onChange={[Function]}
@@ -33032,6 +33074,20 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           <input
             className="Formol_DateField Formol_InputField Formol_Field__element"
             disabled={false}
+            mask={
+              Array [
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                "/",
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+                /\\\\d/,
+              ]
+            }
             name="date"
             onBlur={[Function]}
             onChange={[Function]}
