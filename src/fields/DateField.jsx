@@ -1,7 +1,7 @@
 import React from 'react'
 import Datepicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import { format } from 'date-fns'
+import { format, parse } from 'date-fns'
 import { fr, enUS } from 'date-fns/locale'
 import MaskedInput from 'react-text-mask'
 
@@ -41,14 +41,15 @@ export default class DateField extends React.PureComponent {
     const locales = { fr, en: enUS }
     const locale = locales[i18n.calendar.locale]
     const dateFormat = userFormat || i18n.calendar.dateFormat
+    const isoDateFormat = 'yyyy-MM-dd'
 
     return (
       <Datepicker
         ref={ref => (this.datepicker = ref)}
-        selected={value ? new Date(value) : null}
+        selected={value ? parse(value, isoDateFormat, new Date()) : null}
         onChange={date => {
           this.setState({ date })
-          onChange(date ? format(date, 'yyyy-MM-dd') : '')
+          onChange(date ? format(date, isoDateFormat) : '')
         }}
         isClearable={!(disabled || readOnly)}
         locale={locale}
