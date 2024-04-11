@@ -10,13 +10,17 @@ import PasswordField from '../fields/PasswordField'
 */
 @block
 export default class PasswordStrengthField extends React.PureComponent {
-  static getState(value, minLength, userInputs) {
+  static getState(value, minScore, minLength, userInputs, basic) {
+    const rawScore = zxcvbn(value, userInputs).score
+
     return {
       value,
       score:
         !value || value.length < minLength
           ? -1 // Too short
-          : zxcvbn(value, userInputs).score,
+          : basic
+          ? Math.floor(rawScore / minScore)
+          : rawScore,
     }
   }
 
@@ -35,50 +39,80 @@ export default class PasswordStrengthField extends React.PureComponent {
   }
 
   static getDerivedStateFromProps(
-    { value, userInputs, minLength },
+    { value, userInputs, minLength, minScore, basic },
     { value: oldValue }
   ) {
     if (value !== oldValue) {
-      return PasswordStrengthField.getState(value, minLength, userInputs)
+      return PasswordStrengthField.getState(
+        value,
+        minScore,
+        minLength,
+        userInputs,
+        basic
+      )
     }
     return null
   }
 
   handleChange(value) {
-    const { i18n, minScore, minLength, userInputs, onChange } = this.props
-    const state = PasswordStrengthField.getState(value, minLength, userInputs)
+    const {
+      i18n,
+      minScore,
+      minLength,
+      userInputs,
+      onChange,
+      basic,
+    } = this.props
+    const state = PasswordStrengthField.getState(
+      value,
+      minScore,
+      minLength,
+      userInputs,
+      basic
+    )
     this.setState(state)
-    onChange(value, state.score < minScore ? i18n.passwordStrength.error : '')
+    const isTooWeak = basic ? state.score < 1 : state.score < minScore
+    onChange(value, isTooWeak ? i18n.passwordStrength.error : '')
   }
 
   render(b) {
     const {
       className,
       i18n,
-      minScore,
       scoreWords,
       onChange,
+      minScore,
+      basic,
       ...props
     } = this.props
     const { score } = this.state
-    const description = (scoreWords || [
-      i18n.passwordStrength.tooshort,
-      i18n.passwordStrength.weak,
-      i18n.passwordStrength.okay,
-      i18n.passwordStrength.good,
-      i18n.passwordStrength.strong,
-      i18n.passwordStrength.stronger,
-    ])[score + 1]
+    const strengthLevels = basic
+      ? [
+          i18n.passwordStrength.tooshort,
+          i18n.passwordStrength.weak,
+          i18n.passwordStrength.strong,
+        ]
+      : [
+          i18n.passwordStrength.tooshort,
+          i18n.passwordStrength.weak,
+          i18n.passwordStrength.okay,
+          i18n.passwordStrength.good,
+          i18n.passwordStrength.strong,
+          i18n.passwordStrength.stronger,
+        ]
+    const description = (scoreWords || strengthLevels)[score + 1]
 
     return (
-      <div className={b.m({ score: score + 1 })}>
-        <PasswordField
-          className={b.mix(className)}
-          onChange={this.handleChange}
-          {...props}
-        />
-        <div className={b.e('strength')} />
-        <span className={b.e('description')}>{description}</span>
+      <div className={b.e(`${basic ? 'basic' : 'default'}`)}>
+        <div className={b.m({ score: score + 1 })}>
+          <PasswordField
+            className={b.mix(className)}
+            onChange={this.handleChange}
+            {...props}
+          />
+          <div className={b.e('strength')} />
+          <span className={b.e('description')}>{description}</span>
+        </div>
       </div>
     )
   }

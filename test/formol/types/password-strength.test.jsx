@@ -194,4 +194,46 @@ describe('Password Strength field', () => {
 
     expect(wrapper.getDOMNode().checkValidity()).toBeFalsy()
   })
+
+  describe('basic', () => {
+    it('only uses 3 levels of strength', async () => {
+      const wrapper = mount(
+        <Formol item={{ password: '' }}>
+          <Field type="password-strength" basic>
+            Password
+          </Field>
+        </Formol>
+      )
+
+      const asyncWrapper = () => wrapper.find('AsyncWrapper')
+      expect(asyncWrapper().text()).toEqual('Loading')
+      await asyncWrapper().instance()._promise
+      wrapper.update()
+      expect(asyncWrapper().text()).not.toEqual('Loading')
+
+      const input = () =>
+        wrapper
+          .find('Field')
+          .find('input')
+          .first()
+      const strength = () =>
+        wrapper.find('.Formol_PasswordStrengthField__description').text()
+      const error = () => wrapper.find('.Formol_Field__error-text').text()
+
+      await input().simulate('focus')
+      await input().simulate('change', { target: { value: 'aa' } })
+      expect(strength()).toEqual('too short')
+
+      await input().simulate('change', { target: { value: 'aaaaaa' } })
+      expect(strength()).toEqual('weak')
+
+      await input().simulate('blur')
+      expect(error()).toEqual('Please choose a more secure password.')
+
+      await input().simulate('focus')
+      await input().simulate('change', { target: { value: 'aaaaaaE!1 ;@' } })
+      expect(strength()).toEqual('strong')
+      expect(wrapper.find('.Formol_Field__error-text')).toHaveLength(0)
+    })
+  })
 })
