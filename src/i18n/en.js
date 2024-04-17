@@ -25,12 +25,12 @@ export default {
     pattern: /\d{3}[-]\d{3}[-]\d{4}/,
   },
   passwordStrength: {
+    tooshort: 'too short',
+    tooweak: 'too weak',
     weak: 'weak',
-    okay: 'okay',
-    good: 'good',
+    average: 'average',
     strong: 'strong',
     stronger: 'stronger',
-    tooshort: 'too short',
     error: 'Please choose a more secure password.',
   },
   money: {

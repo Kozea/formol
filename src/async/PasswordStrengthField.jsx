@@ -94,9 +94,9 @@ export default class PasswordStrengthField extends React.PureComponent {
         ]
       : [
           i18n.passwordStrength.tooshort,
+          i18n.passwordStrength.tooweak,
           i18n.passwordStrength.weak,
-          i18n.passwordStrength.okay,
-          i18n.passwordStrength.good,
+          i18n.passwordStrength.average,
           i18n.passwordStrength.strong,
           i18n.passwordStrength.stronger,
         ]

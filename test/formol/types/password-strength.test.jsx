@@ -160,7 +160,7 @@ describe('Password Strength field', () => {
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 'passw0rd' } })
-    expect(strength()).toEqual('weak')
+    expect(strength()).toEqual('too weak')
     await input().simulate('blur')
     expect(error()).toEqual('Please choose a more secure password.')
 
@@ -172,7 +172,7 @@ describe('Password Strength field', () => {
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 'iamsecret' } })
-    expect(strength()).toEqual('okay')
+    expect(strength()).toEqual('weak')
     await input().simulate('blur')
     expect(error()).toEqual('Please choose a more secure password.')
 

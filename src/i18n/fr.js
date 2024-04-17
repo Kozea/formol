@@ -25,12 +25,12 @@ export default {
     placeholder: 'Entrez votre texte ici…',
   },
   passwordStrength: {
-    weak: 'très peu sécurisé',
-    okay: 'peu sécurisé',
-    good: 'correct',
+    tooshort: 'trop court',
+    tooweak: 'très peu sécurisé',
+    weak: 'peu sécurisé',
+    average: 'passable',
     strong: 'sécurisé',
     stronger: 'très sécurisé',
-    tooshort: 'trop court',
     error: 'Veuillez entrer un mot de passe plus sécurisé.',
   },
   money: {
