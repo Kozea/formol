@@ -75,21 +75,16 @@ export default {
         },
       },
       {
-        test: /\.css$/,
-        loader: [MiniCssExtractPlugin.loader, 'css-loader'],
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.sass$/,
-        loader: [
+        test: /\.s[ac]ss$/i,
+        use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           {
             loader: 'sass-loader',
-            options: {
-              sassOptions: {
-                includePaths: [path.join(__dirname, 'src')],
-              },
-            },
           },
         ],
       },

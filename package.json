@@ -55,7 +55,7 @@
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-style-module": "^6.0.0",
     "jest": "^25.1.0",
-    "mini-css-extract-plugin": "^0.9.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "moment": "^2.24.0",
     "pre-commit": "^1.2.2",
     "quill-image-resize-module-react": "^3.0.0",
@@ -67,9 +67,9 @@
     "sass-loader": "^8.0.2",
     "scudd": "^0.0.1",
     "storybook4-state": "^1.5.3",
-    "webpack": "^4.42.1",
-    "webpack-bundle-analyzer": "^3.6.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^5.0.0"
   },
   "files": [
     "lib/",
