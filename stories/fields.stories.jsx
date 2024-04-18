@@ -1,51 +1,39 @@
-import { withKnobs } from '@storybook/addon-knobs'
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-
-import Formol from '../src'
-import { knobs, testFieldValue, typeFields } from './fields'
-import { withStateForm } from './utils'
+import React from 'react';
+import Formol from '../src';
+import { knobs, testFieldValue, typeFields } from './fields';
+import { withStateForm } from './utils';
 
 const filterDefined = o =>
   Object.entries(o).reduce((filtered, [k, v]) => {
     if (v || v === 0) {
-      filtered[k] = v
+      filtered[k] = v;
     }
-    return filtered
-  }, {})
+    return filtered;
+  }, {});
 
-storiesOf('Field Test', module)
+export default {
+  title: 'Field Test/Fields',
+  decorators: [withKnobs],
+};
 
-const fieldStory = storiesOf('Field Test/Fields', module).addDecorator(
-  withKnobs
-)
+// Utility function to create a story for each field type
+const createFieldStory = (TypeField, name, initialValue = {}) => {
+  const StoryComponent = (props) => (
+    <Formol {...props}>
+      <h1>{name}</h1>
+      <TypeField {...filterDefined(knobs(name))} />
+    </Formol>
+  );
+  return withStateForm(StoryComponent, initialValue);
+};
+
+// Stories for fields without initial values
 Object.entries(typeFields).forEach(([name, TypeField]) => {
-  fieldStory.add(
-    `${name} field`,
-    withStateForm(props => (
-      <Formol {...props}>
-        <h1>{name}</h1>
-        <TypeField {...filterDefined(knobs(name))} />
-      </Formol>
-    ))
-  )
-})
+  export const [`${name}Field`] = () => createFieldStory(TypeField, name);
+});
 
-const requiredFieldStory = storiesOf(
-  'Field Test/Fields with initial value',
-  module
-).addDecorator(withKnobs)
+// Stories for fields with initial values
 Object.entries(typeFields).forEach(([name, TypeField]) => {
-  requiredFieldStory.add(
-    `${name} field`,
-    withStateForm(
-      props => (
-        <Formol {...props}>
-          <h1>{name}</h1>
-          <TypeField {...filterDefined(knobs(name))} />
-        </Formol>
-      ),
-      { [name]: testFieldValue(name) }
-    )
-  )
-})
+  const initialValue = { [name]: testFieldValue(name) };
+  export const [`${name}FieldWithInitial`] = () => createFieldStory(TypeField, name, initialValue);
+});
