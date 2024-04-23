@@ -50,7 +50,7 @@ module.exports = ({ config }) => {
   config.module.rules.push(
     {
       test: /\.sass$/,
-      loader: [
+      use: [
         MiniCssExtractPlugin.loader,
         'css-loader',
         {
@@ -62,12 +62,13 @@ module.exports = ({ config }) => {
           },
         },
       ],
-    },
-    {
-      test: /\.stories\.jsx?$/,
-      loaders: [require.resolve('@storybook/addon-storysource/loader')],
-      enforce: 'pre',
     }
+    // },
+    // {
+    //   test: /\.stories\.jsx?$/,
+    //   loaders: [require.resolve('@storybook/addon-storysource/loader')],
+    //   enforce: 'pre',
+    // }
   )
 
   // Extract themes as css files

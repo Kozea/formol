@@ -1,26 +1,20 @@
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
-  // Required
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  addons: [
+    '@storybook/addon-webpack5-compiler-swc',
+    '@storybook/addon-onboarding',
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@chromatic-com/storybook',
+    '@storybook/addon-interactions',
+  ],
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
   },
-
-  stories: ['../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
-
-  // Optional
-  // docs: {
-  //   autodocs: 'tag',
-  // },
-  // staticDirs: ['../public'],
-  addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-storysource',
-    '@storybook/addon-knobs',
-    '@storybook/addon-webpack5-compiler-babel',
-  ],
-
   docs: {
-    autodocs: true,
+    autodocs: 'tag',
   },
 }
 export default config
