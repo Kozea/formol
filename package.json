@@ -87,6 +87,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
+    "@mdx-js/loader": "^3.0.1",
+    "@storybook/addon-docs": "^8.0.9",
     "bemboo": "^2.0.0",
     "fast-deep-equal": "^3.1.1",
     "js-search": "^2.0.0",

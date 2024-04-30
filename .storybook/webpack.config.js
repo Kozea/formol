@@ -3,15 +3,15 @@ const path = require('path')
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const rootDir = path.join(__dirname, '..')
-const dir = pth => (pth ? path.join(rootDir, pth) : rootDir)
+const dir = (pth) => (pth ? path.join(rootDir, pth) : rootDir)
 
 module.exports = ({ config }) => {
   // Add themes as entries to compile them as css
   config.entry = { main: config.entry }
   const themes = fs
     .readdirSync(path.join(rootDir, 'src', 'sass'))
-    .filter(theme => theme.endsWith('.sass'))
-    .map(theme => {
+    .filter((theme) => theme.endsWith('.sass'))
+    .map((theme) => {
       const themeName = theme.slice(0, -5)
       config.entry[themeName] = path.join(rootDir, 'src', 'sass', theme)
       return themeName
@@ -45,6 +45,20 @@ module.exports = ({ config }) => {
       ],
     },
   }
+
+  config.module.rules.push({
+    test: /\.mdx?$/,
+    use: [
+      // Note that Webpack runs right-to-left: `@mdx-js/loader` is used first, then
+      // `babel-loader`.
+      { loader: 'babel-loader', options: {} },
+      {
+        loader: '@mdx-js/loader',
+        /** @type {import('@mdx-js/loader').Options} */
+        options: {},
+      },
+    ],
+  })
 
   // Add styles loaders (and the storysource hack)
   config.module.rules.push(
