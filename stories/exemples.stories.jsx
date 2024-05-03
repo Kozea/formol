@@ -1,5 +1,4 @@
 import { withKnobs } from '@storybook/addon-knobs'
-import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Formol, { Conditional, Field, Inliner } from '../src'
@@ -37,187 +36,194 @@ const sex = {
   Other: 'other',
 }
 
-storiesOf('Exemples', module)
-  .addDecorator(withKnobs)
-  .add(
-    'Adding a person',
-    withStateForm(props => (
-      <Formol {...props}>
-        <h1>Create your profile</h1>
-        <Field autoFocus required name="firstname" title="Your first name">
-          First name
+export default {
+  title: 'Exemples',
+  decorators: [withKnobs],
+}
+
+export const AddingAPerson = withStateForm((props) => (
+  <Formol {...props}>
+    <h1>Create your profile</h1>
+    <Field autoFocus required name="firstname" title="Your first name">
+      First name
+    </Field>
+    <Field required name="name" title="Your name">
+      Name
+    </Field>
+    <Field
+      required
+      name="country"
+      choices={countries}
+      type="select"
+      title="Your country"
+    >
+      Country
+    </Field>
+    <Field required type="email" name="email">
+      E-mail
+    </Field>
+    <Field
+      type="file"
+      name="avatar"
+      accept="image/*"
+      placeholder="Drop your avatar here"
+    >
+      Avatar
+    </Field>
+    <Field required type="radio-set" name="sex" choices={sex}>
+      Gender
+    </Field>
+    <Conditional show={(item) => item.sex && item.sex !== 'man'}>
+      <Field name="pregnant" type="switch">
+        Pregnant
+      </Field>
+    </Conditional>
+    <Field type="number" name="weight" min="0" step="1">
+      Weight
+    </Field>
+    <Field type="number" name="height" min="0" step="0.01" max="3">
+      Height
+    </Field>
+    <Field type="tel" name="phone">
+      Phone Number
+    </Field>
+    <Field name="address">Adress</Field>
+    <Inliner>
+      <Field name="zip" size={5}>
+        Zip code
+      </Field>
+      <Field name="city">City</Field>
+    </Inliner>
+  </Formol>
+))
+
+AddingAPerson.story = {
+  name: 'Adding a person',
+}
+
+export const EditingAPerson = withStateForm(
+  (props) => (
+    <Formol {...props}>
+      <h1>Edit your profile</h1>
+      <Field autoFocus required name="firstname">
+        First name
+      </Field>
+      <Field required>Name</Field>
+      <Field required name="country" choices={countries} type="select">
+        Country
+      </Field>
+      <Field required type="email" name="email">
+        E-mail
+      </Field>
+      <Field
+        type="file"
+        name="avatar"
+        accept="image/*"
+        placeholder="Drop your avatar here"
+      >
+        Avatar
+      </Field>
+      <Field
+        required
+        type="radio-set"
+        name="sex"
+        choices={{
+          Woman: 'woman',
+          Man: 'man',
+          Other: 'other',
+        }}
+      >
+        Gender
+      </Field>
+      <Conditional show={(item) => item.sex && item.sex !== 'man'}>
+        <Field name="pregnant" type="switch">
+          Pregnant
         </Field>
-        <Field required name="name" title="Your name">
-          Name
+      </Conditional>
+      <Field type="number" name="weight" min="0" step="1">
+        Weight
+      </Field>
+      <Field type="number" name="height" min="0" step="0.01" max="3">
+        Height
+      </Field>
+      <Field type="tel" name="phone">
+        Phone Number
+      </Field>
+      <Field name="address">Adress</Field>
+      <Inliner>
+        <Field name="zip" size={5}>
+          Zip code
         </Field>
-        <Field
-          required
-          name="country"
-          choices={countries}
-          type="select"
-          title="Your country"
-        >
-          Country
-        </Field>
-        <Field required type="email" name="email">
-          E-mail
-        </Field>
-        <Field
-          type="file"
-          name="avatar"
-          accept="image/*"
-          placeholder="Drop your avatar here"
-        >
-          Avatar
-        </Field>
-        <Field required type="radio-set" name="sex" choices={sex}>
-          Gender
-        </Field>
-        <Conditional show={item => item.sex && item.sex !== 'man'}>
-          <Field name="pregnant" type="switch">
-            Pregnant
-          </Field>
-        </Conditional>
-        <Field type="number" name="weight" min="0" step="1">
-          Weight
-        </Field>
-        <Field type="number" name="height" min="0" step="0.01" max="3">
-          Height
-        </Field>
-        <Field type="tel" name="phone">
-          Phone Number
-        </Field>
-        <Field name="address">Adress</Field>
-        <Inliner>
-          <Field name="zip" size={5}>
-            Zip code
-          </Field>
-          <Field name="city">City</Field>
-        </Inliner>
-      </Formol>
-    ))
-  )
-  .add(
-    'Editing a person',
-    withStateForm(
-      props => (
-        <Formol {...props}>
-          <h1>Edit your profile</h1>
-          <Field autoFocus required name="firstname">
-            First name
-          </Field>
-          <Field required>Name</Field>
-          <Field required name="country" choices={countries} type="select">
-            Country
-          </Field>
-          <Field required type="email" name="email">
-            E-mail
-          </Field>
-          <Field
-            type="file"
-            name="avatar"
-            accept="image/*"
-            placeholder="Drop your avatar here"
-          >
-            Avatar
-          </Field>
-          <Field
-            required
-            type="radio-set"
-            name="sex"
-            choices={{
-              Woman: 'woman',
-              Man: 'man',
-              Other: 'other',
-            }}
-          >
-            Gender
-          </Field>
-          <Conditional show={item => item.sex && item.sex !== 'man'}>
-            <Field name="pregnant" type="switch">
-              Pregnant
-            </Field>
-          </Conditional>
-          <Field type="number" name="weight" min="0" step="1">
-            Weight
-          </Field>
-          <Field type="number" name="height" min="0" step="0.01" max="3">
-            Height
-          </Field>
-          <Field type="tel" name="phone">
-            Phone Number
-          </Field>
-          <Field name="address">Adress</Field>
-          <Inliner>
-            <Field name="zip" size={5}>
-              Zip code
-            </Field>
-            <Field name="city">City</Field>
-          </Inliner>
-        </Formol>
-      ),
-      personExemple
-    )
-  )
-  .add(
-    'Login form',
-    withStateForm(({ item, transient, ...props }) => (
-      <>
-        <h1>Item and state handling</h1>
-        <h2> Without item property</h2>
-        <p>Form is self reset after a successful submit</p>
-        <Formol
-          {...props}
-          classes={{ submit: 'i-am-submit', cancel: 'i-am-cancel' }}
-        >
-          <Field pattern={/\w+\d{2}/.source} required>
-            Login
-          </Field>
-          <Field type="password" required>
-            Password
-          </Field>
-        </Formol>
-        <h2> With an empty item</h2>
-        <p>
-          Form has no reset after submit and the item stay an empty one,
-          therefore cancel is still available and reset back to the default item
-          which is empty
-        </p>
-        <Formol item={{}} {...props}>
-          <Field pattern={/\w+\d{2}/.source} required>
-            Login
-          </Field>
-          <Field type="password" required>
-            Password
-          </Field>
-        </Formol>
-        <h2> With a controlled item</h2>
-        <p>
-          Item is updated with the submitted one, hence it becomes the new
-          default state
-        </p>
-        <Formol item={item} {...props}>
-          <Field pattern={/\w+\d{2}/.source} required>
-            Login
-          </Field>
-          <Field type="password" required>
-            Password
-          </Field>
-        </Formol>
-        <h2> With a controlled item synchronized with onChange</h2>
-        <p>
-          The item here is continually updated from the transient state, cancel
-          is never available (nor submit without the allowUnmodifiedSubmit
-          property)
-        </p>
-        <Formol item={transient} {...props} allowUnmodifiedSubmit>
-          <Field pattern={/\w+\d{2}/.source} required>
-            Login
-          </Field>
-          <Field type="password" required>
-            Password
-          </Field>
-        </Formol>
-      </>
-    ))
-  )
+        <Field name="city">City</Field>
+      </Inliner>
+    </Formol>
+  ),
+  personExemple
+)
+
+EditingAPerson.story = {
+  name: 'Editing a person',
+}
+
+export const LoginForm = withStateForm(({ item, transient, ...props }) => (
+  <>
+    <h1>Item and state handling</h1>
+    <h2> Without item property</h2>
+    <p>Form is self reset after a successful submit</p>
+    <Formol
+      {...props}
+      classes={{ submit: 'i-am-submit', cancel: 'i-am-cancel' }}
+    >
+      <Field pattern={/\w+\d{2}/.source} required>
+        Login
+      </Field>
+      <Field type="password" required>
+        Password
+      </Field>
+    </Formol>
+    <h2> With an empty item</h2>
+    <p>
+      Form has no reset after submit and the item stay an empty one, therefore
+      cancel is still available and reset back to the default item which is
+      empty
+    </p>
+    <Formol item={{}} {...props}>
+      <Field pattern={/\w+\d{2}/.source} required>
+        Login
+      </Field>
+      <Field type="password" required>
+        Password
+      </Field>
+    </Formol>
+    <h2> With a controlled item</h2>
+    <p>
+      Item is updated with the submitted one, hence it becomes the new default
+      state
+    </p>
+    <Formol item={item} {...props}>
+      <Field pattern={/\w+\d{2}/.source} required>
+        Login
+      </Field>
+      <Field type="password" required>
+        Password
+      </Field>
+    </Formol>
+    <h2> With a controlled item synchronized with onChange</h2>
+    <p>
+      The item here is continually updated from the transient state, cancel is
+      never available (nor submit without the allowUnmodifiedSubmit property)
+    </p>
+    <Formol item={transient} {...props} allowUnmodifiedSubmit>
+      <Field pattern={/\w+\d{2}/.source} required>
+        Login
+      </Field>
+      <Field type="password" required>
+        Password
+      </Field>
+    </Formol>
+  </>
+))
+
+LoginForm.story = {
+  name: 'Login form',
+}
