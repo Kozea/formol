@@ -5,5 +5,3 @@
 An opiniated react form framework.
 
 ## [Check the storybook](https://Kozea.github.io/formol/)
-
-## [Check the starter pack](https://github.com/Kozea/formol_starter_pack/)
