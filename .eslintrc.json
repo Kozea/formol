@@ -415,6 +415,9 @@
     },
     "eslint-plugin-react": {
       "version": "detect"
+    },
+    "react": {
+      "version": "16.14.0"
     }
   }
 }

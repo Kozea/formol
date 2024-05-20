@@ -15845,7 +15845,7 @@ Area"
           />
           <button
             aria-label="Close"
-            className="react-datepicker__close-icon"
+            className="react-datepicker__close-icon undefined"
             onClick={[Function]}
             tabIndex={-1}
             type="button"
@@ -33101,7 +33101,7 @@ exports[`Storyshots Field Test/Fields with initial value date field 1`] = `
           />
           <button
             aria-label="Close"
-            className="react-datepicker__close-icon"
+            className="react-datepicker__close-icon undefined"
             onClick={[Function]}
             tabIndex={-1}
             type="button"
