@@ -1,3 +1,9 @@
+### [3.0.0](https://github.com/Kozea/formol/compare/v2.12.0...v3.0.0)
+
+**Breaking changes:**
+
+- Rework PasswordStrengthField strength levels
+
 ### [2.12.0](https://github.com/Kozea/formol/compare/v2.11.1...v2.12.0)
 
 - Add optional basic prop to PasswordStrengthField
