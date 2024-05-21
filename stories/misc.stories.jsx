@@ -589,3 +589,17 @@ storiesOf('Miscellaneous', module)
       </Formol>
     ))
   )
+  .add(
+    'Basic password-strength field',
+    withStateForm(props => (
+      <Formol {...props} components={{ SubmitButton, CancelButton }}>
+        <h1>Basic password-strength field (3 levels)</h1>
+        <Field type="password-strength" basic>
+          Password
+        </Field>
+
+        <h2>Default password-strength field (6 levels)</h2>
+        <Field type="password-strength">Password</Field>
+      </Formol>
+    ))
+  )
