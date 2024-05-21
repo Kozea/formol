@@ -14,7 +14,9 @@
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "demos": "webpack-dev-server --config webpack.config.demos.js --mode development",
+    "demos-build": "rimraf demos/dist && webpack --config webpack.config.demos.js --mode production"
   },
   "pre-commit": "lint,test",
   "devDependencies": {
@@ -46,6 +48,7 @@
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-style-module": "^6.0.0",
     "jest": "^25.1.0",
+    "html-webpack-plugin": "^4.5.2",
     "mini-css-extract-plugin": "^0.9.0",
     "moment": "^2.24.0",
     "pre-commit": "^1.2.2",
@@ -60,7 +63,8 @@
     "scudd": "^0.0.1",
     "webpack": "^4.42.1",
     "webpack-bundle-analyzer": "^3.6.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.2"
   },
   "files": [
     "lib/",
