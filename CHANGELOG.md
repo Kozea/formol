@@ -1,3 +1,7 @@
+### [2.12.0](https://github.com/Kozea/formol/compare/v2.11.1...v2.12.0)
+
+- Add optional basic prop to PasswordStrengthField
+
 ### [2.11.1](https://github.com/Kozea/formol/compare/v2.11.0...v2.11.1)
 
 - Fix DateField with initial value offset
