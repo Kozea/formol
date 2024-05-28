@@ -1,3 +1,7 @@
+### [3.1.0](https://github.com/Kozea/formol/compare/v3.0.0...v3.1.0)
+
+- Hide password strength feedback while pristine
+
 ### [3.0.0](https://github.com/Kozea/formol/compare/v2.12.0...v3.0.0)
 
 **Breaking changes:**
