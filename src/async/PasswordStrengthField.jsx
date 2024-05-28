@@ -34,6 +34,7 @@ export default class PasswordStrengthField extends React.PureComponent {
     this.state = {
       value: null,
       score: -1,
+      isPristine: true,
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -70,7 +71,10 @@ export default class PasswordStrengthField extends React.PureComponent {
       userInputs,
       basic
     )
-    this.setState(state)
+    this.setState(prevState => ({
+      ...state,
+      isPristine: prevState.isPristine && value.length === 0,
+    }))
     const isTooWeak = basic ? state.score < 1 : state.score < minScore
     onChange(value, isTooWeak ? i18n.passwordStrength.error : '')
   }
@@ -85,7 +89,7 @@ export default class PasswordStrengthField extends React.PureComponent {
       basic,
       ...props
     } = this.props
-    const { score } = this.state
+    const { value, score, isPristine } = this.state
     const strengthLevels = basic
       ? [
           i18n.passwordStrength.tooshort,
@@ -110,8 +114,10 @@ export default class PasswordStrengthField extends React.PureComponent {
             onChange={this.handleChange}
             {...props}
           />
-          <div className={b.e('strength')} />
-          <span className={b.e('description')}>{description}</span>
+          <div className={b.m({ pristine: !value && isPristine })}>
+            <div className={b.e('strength')} />
+            <span className={b.e('description')}>{description}</span>
+          </div>
         </div>
       </div>
     )
