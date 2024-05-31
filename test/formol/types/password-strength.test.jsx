@@ -197,9 +197,7 @@ describe('Password Strength field', () => {
   it('has a pristine state', async () => {
     const wrapper = mount(
       <Formol>
-        <Field type="password-strength">
-          Password
-        </Field>
+        <Field type="password-strength">Password</Field>
       </Formol>
     )
 
