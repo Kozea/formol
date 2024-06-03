@@ -66,6 +66,7 @@ describe('Select Menu field', () => {
     expect(selectOptions()).toHaveLength(3)
     await selectOptions()
       .at(0)
+      .find('div')
       .simulate('click')
 
     await selectInput().simulate('blur')
@@ -145,6 +146,7 @@ describe('Select Menu field', () => {
     expect(selectOptions()).toHaveLength(3)
     await selectOptions()
       .at(0)
+      .find('div')
       .simulate('click')
 
     await selectInput().simulate('blur')
@@ -223,6 +225,7 @@ describe('Select Menu field', () => {
     expect(selectOptions()).toHaveLength(3)
     await selectOptions()
       .at(1)
+      .find('div')
       .simulate('click')
 
     await selectInput().simulate('blur')
@@ -294,6 +297,7 @@ describe('Select Menu field', () => {
     expect(selectOptions()).toHaveLength(1)
     await selectOptions()
       .at(0)
+      .find('div')
       .simulate('click')
     expect(selectOptions()).toHaveLength(0)
     await multiValue()
@@ -376,6 +380,7 @@ describe('Select Menu field', () => {
     expect(selectOptions()).toHaveLength(1)
     await selectOptions()
       .at(0)
+      .find('div')
       .simulate('click')
 
     expect(selectOptions()).toHaveLength(0)
@@ -697,6 +702,7 @@ describe('Select Menu field', () => {
     expect(selectOptions()).toHaveLength(5)
     await selectOptions()
       .at(3)
+      .find('div')
       .simulate('click')
 
     selectInput().getDOMNode().value = '83'
