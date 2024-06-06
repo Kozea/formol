@@ -31,6 +31,10 @@ const initialCrossedState = {
   number2: 2,
 }
 
+const initialDifferedState = {
+  text: 'Saved on submit',
+}
+
 const rgbToHex = rgb => {
   if (!rgb) {
     return ''
@@ -76,6 +80,7 @@ function isPrimeNumber(n) {
 const FeaturesDemo = () => {
   const [formValues, setFormValues] = useState(initialFormState)
   const [crossedValues, setCrossedValues] = useState(initialCrossedState)
+  const [differedValues, setDifferedValues] = useState(initialDifferedState)
 
   return (
     <>
@@ -201,6 +206,22 @@ const FeaturesDemo = () => {
             </Field>
           ))}
         </Formol>
+
+        <div
+          style={{
+            border: '1px solid #bbb',
+            width: 'fit-content',
+            padding: '0 10px',
+          }}
+        >
+          <Formol
+            item={differedValues}
+            onSubmit={item => setDifferedValues(item)}
+            >
+            <h2>Saved on submit</h2>
+            <Field name="text">Text</Field>
+          </Formol>
+        </div>
       </div>
 
       <pre className="panel">
@@ -208,6 +229,9 @@ const FeaturesDemo = () => {
         <br />
         <br />
         {JSON.stringify(crossedValues, null, 2)}
+        <br />
+        <br />
+        {JSON.stringify(differedValues, null, 2)}
       </pre>
     </>
   )
