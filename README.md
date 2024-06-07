@@ -252,3 +252,4 @@ with the added benefit that you can override [the formol variables](https://gith
 3. Tag version bump commit e.g. `git tag v3.0.0` and push it `git push --tags`
 4. `yarn prepublish`
 5. `npm publish` (requires being an npm package maintainer)
+6. `yarn demos-deploy`

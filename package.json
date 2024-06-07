@@ -16,7 +16,8 @@
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepublish": "npm run build",
     "demos": "webpack-dev-server --config webpack.config.demos.js --mode development",
-    "demos-build": "rimraf demos/dist && webpack --config webpack.config.demos.js --mode production"
+    "demos-build": "rimraf demos/dist && webpack --config webpack.config.demos.js --mode production",
+    "demos-deploy": "./demos/deploy.sh"
   },
   "pre-commit": "lint,test",
   "devDependencies": {
