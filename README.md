@@ -1,5 +1,7 @@
 # formol
 
+![Formol logo with Baseline](/assets/formol-baseline-logo.svg)
+
 [![Coverage Status](https://coveralls.io/repos/github/Kozea/formol/badge.svg?branch=master)](https://coveralls.io/github/Kozea/formol?branch=master)
 
 Formol is a full featured object edition form framework for React.
