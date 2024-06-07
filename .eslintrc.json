@@ -177,7 +177,6 @@
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": "off",
     "arrow-body-style": ["error", "as-needed"],
-    "arrow-parens": ["error", "as-needed"],
     "arrow-spacing": "error",
     "accessor-pairs": "off",
     "block-scoped-var": "warn",

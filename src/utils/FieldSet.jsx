@@ -47,7 +47,7 @@ export default class FieldSet extends React.PureComponent {
                 props.onBlur()
               }}
               value={isChecked(choice, value)}
-              onChange={checked => onChange(choice, value, checked)}
+              onChange={(checked) => onChange(choice, value, checked)}
             />
             <span className={b.e('title')}>
               {dangerousRawHTMLLabels ? (

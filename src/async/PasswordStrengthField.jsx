@@ -19,8 +19,8 @@ export default class PasswordStrengthField extends React.PureComponent {
         !value || value.length < minLength
           ? -1 // Too short
           : basic
-          ? Math.floor(rawScore / minScore)
-          : rawScore,
+            ? Math.floor(rawScore / minScore)
+            : rawScore,
     }
   }
 
@@ -56,14 +56,8 @@ export default class PasswordStrengthField extends React.PureComponent {
   }
 
   handleChange(value) {
-    const {
-      i18n,
-      minScore,
-      minLength,
-      userInputs,
-      onChange,
-      basic,
-    } = this.props
+    const { i18n, minScore, minLength, userInputs, onChange, basic } =
+      this.props
     const state = PasswordStrengthField.getState(
       value,
       minScore,
@@ -71,7 +65,7 @@ export default class PasswordStrengthField extends React.PureComponent {
       userInputs,
       basic
     )
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       ...state,
       isPristine: prevState.isPristine && value.length === 0,
     }))
@@ -80,15 +74,8 @@ export default class PasswordStrengthField extends React.PureComponent {
   }
 
   render(b) {
-    const {
-      className,
-      i18n,
-      scoreWords,
-      onChange,
-      minScore,
-      basic,
-      ...props
-    } = this.props
+    const { className, i18n, scoreWords, onChange, minScore, basic, ...props } =
+      this.props
     const { value, score, isPristine } = this.state
     const strengthLevels = basic
       ? [

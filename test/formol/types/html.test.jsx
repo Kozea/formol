@@ -69,10 +69,7 @@ describe('Html field', () => {
 
     const field = () => wrapper.find('HTMLField').first()
     const input = () =>
-      wrapper
-        .find('.Formol_Field__element')
-        .find('input')
-        .first()
+      wrapper.find('.Formol_Field__element').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -86,10 +83,7 @@ describe('Html field', () => {
     expect(field().props().value).toEqual('<p>foo</p>')
     expect(input().props().value).toEqual('<p>foo</p>')
 
-    const quill = wrapper
-      .find('Quill')
-      .instance()
-      .getEditor()
+    const quill = wrapper.find('Quill').instance().getEditor()
 
     wrapper.find('Quill').prop('onFocus')()
     quill.clipboard.dangerouslyPasteHTML('<p>f<strong>oo</strong></p>')
@@ -143,10 +137,7 @@ describe('Html field', () => {
     expect(field().props().value).toEqual('<p>foo</p>')
     expect(input().props().value).toEqual('<p>foo</p>')
 
-    const quill = wrapper
-      .find('Quill')
-      .instance()
-      .getEditor()
+    const quill = wrapper.find('Quill').instance().getEditor()
 
     quill.clipboard.dangerouslyPasteHTML('<p>f<strong>oo</strong></p>')
     wrapper.update()
@@ -176,10 +167,7 @@ describe('Html field', () => {
 
     const field = () => wrapper.find('HTMLField').first()
     const input = () =>
-      wrapper
-        .find('.Formol_Field__element')
-        .find('input')
-        .first()
+      wrapper.find('.Formol_Field__element').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')

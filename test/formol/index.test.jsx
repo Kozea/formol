@@ -131,7 +131,7 @@ describe('Formol', () => {
       wrapper
         .find('form')
         .children()
-        .map(e => e.type())
+        .map((e) => e.type())
     ).toEqual(['button', 'button'])
   })
   it('renders extra attribute', () => {
@@ -153,7 +153,7 @@ describe('Formol', () => {
       wrapper
         .find('form')
         .children()
-        .map(p => p.type())
+        .map((p) => p.type())
         .slice(1)
     ).toEqual(['button', 'button', 'code'])
   })
@@ -163,18 +163,14 @@ describe('Formol', () => {
         ({
           bar: { text: 'Server side error' },
           baz: {},
-        }[text])
+        })[text]
     )
     const wrapper = mount(
       <Formol onSubmit={onSubmit} item={{ text: 'foo' }}>
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -252,11 +248,7 @@ describe('Formol', () => {
       }
     }
     const wrapper = mount(<ReadOnlyChanger />)
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const changer = () => wrapper.find('.changer')
 
     expect(input().props().readOnly).toBeFalsy()
@@ -286,11 +278,7 @@ describe('Formol', () => {
       }
     }
     const wrapper = mount(<ItemChanger />)
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const changer = () => wrapper.find('.changer')
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -342,11 +330,7 @@ describe('Formol', () => {
       }
     }
     const wrapper = mount(<ReadOnlyChanger />)
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const changer = () => wrapper.find('.changer')
 
     expect(input().props().type).toEqual('volume')
@@ -410,16 +394,8 @@ describe('Formol', () => {
         </Field>
       </Formol>
     )
-    const input1 = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
-    const input2 = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input1 = () => wrapper.find('Field').find('input').first()
+    const input2 = () => wrapper.find('Field').find('input').at(1)
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -474,11 +450,7 @@ describe('Formol', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -500,9 +472,7 @@ describe('Formol', () => {
     await forCondition(() => consoleErrorTracer.mock.calls.length, wrapper)
 
     expect(consoleErrorTracer).toHaveBeenCalled()
-    expect(
-      consoleErrorTracer
-    ).toHaveBeenCalledWith(
+    expect(consoleErrorTracer).toHaveBeenCalledWith(
       'onSubmit return value must be a mapping of server errors ' +
         "(ie: { fieldName: 'error' }) got:",
       { badValue: 12 }
@@ -519,11 +489,7 @@ describe('Formol', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -561,11 +527,7 @@ describe('Formol', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -586,11 +548,7 @@ describe('Formol', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 

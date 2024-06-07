@@ -175,7 +175,7 @@ export default class Formol extends React.PureComponent {
     this.fields.validators[name] = validator
     this.fields.validityErrors[name] = validityErrors
 
-    this.setState(prevState => {
+    this.setState((prevState) => {
       const { context: prevContext } = prevState
       const { transientItem: prevTransientItem } = prevContext
 
@@ -207,7 +207,7 @@ export default class Formol extends React.PureComponent {
   }
 
   asyncSetState(state) {
-    return new Promise(resolve => this.setState(state, resolve))
+    return new Promise((resolve) => this.setState(state, resolve))
   }
 
   setStateContext(context, extra = {}) {
@@ -225,7 +225,7 @@ export default class Formol extends React.PureComponent {
   handleEntered(name) {
     const { enteredFields } = this.state.context
     this.setStateContext({
-      enteredFields: [...enteredFields.filter(field => field !== name), name],
+      enteredFields: [...enteredFields.filter((field) => field !== name), name],
     })
   }
 
@@ -249,7 +249,7 @@ export default class Formol extends React.PureComponent {
     await this.asyncSetState({ loading: false })
     if (
       (errors && errors.constructor !== Object) ||
-      Object.values(errors).some(v => v && typeof v !== 'string')
+      Object.values(errors).some((v) => v && typeof v !== 'string')
     ) {
       console.error(
         'onSubmit return value must be a mapping of server errors ' +
@@ -301,7 +301,7 @@ export default class Formol extends React.PureComponent {
     const { transientItem } = this.state.context
     const { elements, validators, validityErrors } = this.fields
 
-    const normalize = v => (typeof v === 'string' && v ? v : '')
+    const normalize = (v) => (typeof v === 'string' && v ? v : '')
     // Resetting all custom validity before validation
     Object.entries(elements).forEach(
       ([name, { current }]) =>
@@ -361,7 +361,7 @@ export default class Formol extends React.PureComponent {
     const SubmitButton = components.SubmitButton || 'button'
     const CancelButton = components.CancelButton || 'button'
 
-    const errors = enteredFields.some(field => context.errors[field])
+    const errors = enteredFields.some((field) => context.errors[field])
     let buttons = null
     if (!readOnly && onSubmit) {
       buttons = (

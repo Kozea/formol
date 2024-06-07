@@ -33,19 +33,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -134,19 +126,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -214,19 +198,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -326,19 +302,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -406,19 +374,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -516,19 +476,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -539,21 +491,9 @@ describe('File field', () => {
     expect(cancel().props().disabled).toBeTruthy()
 
     expect(preview()).toHaveLength(1)
-    expect(
-      preview('name')
-        .at(0)
-        .text()
-    ).toEqual('pixel.png')
-    expect(
-      preview('size')
-        .at(0)
-        .text()
-    ).toEqual('67 o')
-    expect(
-      preview('type')
-        .at(0)
-        .text()
-    ).toEqual('image/png')
+    expect(preview('name').at(0).text()).toEqual('pixel.png')
+    expect(preview('size').at(0).text()).toEqual('67 o')
+    expect(preview('type').at(0).text()).toEqual('image/png')
 
     expect(input().props().value).toEqual('pixel.png')
 
@@ -628,19 +568,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -651,44 +583,18 @@ describe('File field', () => {
     expect(cancel().props().disabled).toBeTruthy()
 
     expect(preview()).toHaveLength(2)
-    expect(
-      preview('name')
-        .at(0)
-        .text()
-    ).toEqual('pixel.png')
-    expect(
-      preview('size')
-        .at(0)
-        .text()
-    ).toEqual('67 o')
-    expect(
-      preview('type')
-        .at(0)
-        .text()
-    ).toEqual('image/png')
-    expect(
-      preview('name')
-        .at(1)
-        .text()
-    ).toEqual('molecule.svg')
-    expect(
-      preview('size')
-        .at(1)
-        .text()
-    ).toEqual('1.06 ko')
-    expect(
-      preview('type')
-        .at(1)
-        .text()
-    ).toEqual('image/svg+xml')
+    expect(preview('name').at(0).text()).toEqual('pixel.png')
+    expect(preview('size').at(0).text()).toEqual('67 o')
+    expect(preview('type').at(0).text()).toEqual('image/png')
+    expect(preview('name').at(1).text()).toEqual('molecule.svg')
+    expect(preview('size').at(1).text()).toEqual('1.06 ko')
+    expect(preview('type').at(1).text()).toEqual('image/svg+xml')
     expect(input().props().value).toEqual('pixel.png,molecule.svg')
 
     expect(close()).toHaveLength(2)
 
     await fileInput().simulate('focus')
-    await close()
-      .at(0)
-      .simulate('click')
+    await close().at(0).simulate('click')
     await fileInput().simulate('blur')
 
     expect(submit().props().disabled).toBeFalsy()
@@ -762,19 +668,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -849,19 +747,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
@@ -937,19 +827,11 @@ describe('File field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .at(1)
+    const input = () => wrapper.find('Field').find('input').at(1)
 
-    const fileInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const fileInput = () => wrapper.find('Field').find('input').first()
 
-    const preview = sub =>
+    const preview = (sub) =>
       wrapper.find(`.Formol_FileField__preview${sub ? `-${sub}` : ''}`)
 
     const submit = () => wrapper.find('.Formol_Formol__submit')

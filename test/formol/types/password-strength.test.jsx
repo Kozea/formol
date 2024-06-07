@@ -17,11 +17,7 @@ describe('Password Strength field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -62,11 +58,7 @@ describe('Password Strength field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -98,11 +90,7 @@ describe('Password Strength field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const eye = () => wrapper.find('Field').find('.Formol_PasswordField__eye')
 
     expect(input().props().value).toEqual('r"/*Nb+4)23')
@@ -141,11 +129,7 @@ describe('Password Strength field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
     const strength = () =>
@@ -207,11 +191,7 @@ describe('Password Strength field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const isPristine = () =>
       wrapper.find('.Formol_PasswordStrengthField--pristine').exists()
 
@@ -243,11 +223,7 @@ describe('Password Strength field', () => {
       wrapper.update()
       expect(asyncWrapper().text()).not.toEqual('Loading')
 
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
+      const input = () => wrapper.find('Field').find('input').first()
       const strength = () =>
         wrapper.find('.Formol_PasswordStrengthField__description').text()
       const error = () => wrapper.find('.Formol_Field__error-text').text()

@@ -43,8 +43,7 @@ const initialState = {
   money: '12.50',
   calendar: '2018-08-01',
   switch: true,
-  html:
-    '<p><span style="color: rgb(251,160,38);">H</span><strong>T</strong><del>M</del><em>L</em></p>', // eslint-disable-line max-len
+  html: '<p><span style="color: rgb(251,160,38);">H</span><strong>T</strong><del>M</del><em>L</em></p>', // eslint-disable-line max-len
   radio: true,
   'radio-set': '#ffff00',
   checkbox: true,
@@ -78,7 +77,7 @@ const AllFieldsDemo = () => {
         <VersionHeader />
 
         <h1>All fields</h1>
-        <Formol item={formValues} onChange={item => setFormValues(item)}>
+        <Formol item={formValues} onChange={(item) => setFormValues(item)}>
           {Object.values(definitions).map(({ name, label, choices }) => (
             <Field key={name} name={name} type={name} choices={choices}>
               {label}

@@ -35,20 +35,20 @@ const initialDifferedState = {
   text: 'Saved on submit',
 }
 
-const rgbToHex = rgb => {
+const rgbToHex = (rgb) => {
   if (!rgb) {
     return ''
   }
-  const [r, g, b] = rgb.match(/\d+/g).map(x => parseInt(x))
+  const [r, g, b] = rgb.match(/\d+/g).map((x) => parseInt(x))
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`
 }
 
-const hexToRgb = hex =>
+const hexToRgb = (hex) =>
   hex
     ? `rgb(${hex
         .substring(1)
         .match(/.{2}/g)
-        .map(x => parseInt(x, 16))
+        .map((x) => parseInt(x, 16))
         .join(', ')})`
     : ''
 
@@ -86,7 +86,7 @@ const FeaturesDemo = () => {
     <>
       <div className="form-container">
         <h1>Features</h1>
-        <Formol item={formValues} onChange={item => setFormValues(item)}>
+        <Formol item={formValues} onChange={(item) => setFormValues(item)}>
           <h2>Conditionals</h2>
           <h3>show</h3>
           <Field name="newsletter.subscribe" type="switch">
@@ -110,14 +110,14 @@ const FeaturesDemo = () => {
 
           <h2>Formatters</h2>
           <h3>Item to field</h3>
-          <Field name="format.text" formatter={v => v.toUpperCase()}>
+          <Field name="format.text" formatter={(v) => v.toUpperCase()}>
             CAPSLOCK
           </Field>
 
           <h3>Field to item</h3>
           <Field
             name="format.number"
-            unformatter={v => v && v.replace(/\D/g, '')}
+            unformatter={(v) => v && v.replace(/\D/g, '')}
           >
             String allowing only numbers
           </Field>
@@ -125,7 +125,7 @@ const FeaturesDemo = () => {
           <h3>Field normalizer</h3>
           <Field
             name="format.numberblur"
-            normalizer={v => v && v.replace(/\D/g, '')}
+            normalizer={(v) => v && v.replace(/\D/g, '')}
           >
             String cleaned and parsed as a number on blur
           </Field>
@@ -134,7 +134,7 @@ const FeaturesDemo = () => {
           <Field
             name="bidir.rgbColor"
             type="color"
-            validator={v =>
+            validator={(v) =>
               v &&
               !v.match(/rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)/) &&
               `${v} is not a valid color`
@@ -173,7 +173,7 @@ const FeaturesDemo = () => {
             type="number"
             min={0}
             max={100000000}
-            validator={v => !isPrimeNumber(v) && `${v} is not a prime number`}
+            validator={(v) => !isPrimeNumber(v) && `${v} is not a prime number`}
           >
             Prime
           </Field>
@@ -181,7 +181,7 @@ const FeaturesDemo = () => {
 
         <Formol
           item={crossedValues}
-          validator={item =>
+          validator={(item) =>
             new Array(3).fill().reduce((validators, _, i) => {
               if (i !== 0) {
                 validators[`number${i}`] =
@@ -193,7 +193,7 @@ const FeaturesDemo = () => {
               return validators
             }, {})
           }
-          onChange={item => setCrossedValues(item)}
+          onChange={(item) => setCrossedValues(item)}
         >
           <h3>Cross field validation</h3>
           {new Array(3).fill().map((_, i) => (
@@ -216,8 +216,8 @@ const FeaturesDemo = () => {
         >
           <Formol
             item={differedValues}
-            onSubmit={item => setDifferedValues(item)}
-            >
+            onSubmit={(item) => setDifferedValues(item)}
+          >
             <h2>Saved on submit</h2>
             <Field name="text">Text</Field>
           </Formol>

@@ -13,10 +13,7 @@ describe('Formol field', () => {
     )
     expect(wrapper.find('form')).toBeTruthy()
 
-    const field = wrapper
-      .find('Field')
-      .children()
-      .first()
+    const field = wrapper.find('Field').children().first()
     expect(field).toBeTruthy()
     expect(field.hasClass('Formol_Field')).toBeTruthy()
     expect(field.hasClass('Formol_Field--name-field-1')).toBeTruthy()
@@ -90,11 +87,7 @@ describe('Formol field', () => {
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('baz')
-    expect(
-      field()
-        .find('InputField')
-        .props().value
-    ).toEqual('baz')
+    expect(field().find('InputField').props().value).toEqual('baz')
   })
   it('handles modifications', async () => {
     const onChange = jest.fn()
@@ -136,22 +129,14 @@ describe('Formol field', () => {
     await input().simulate('blur')
 
     expect(input().props().value).toEqual('baz')
-    expect(
-      field()
-        .find('InputField')
-        .props().value
-    ).toEqual('baz')
+    expect(field().find('InputField').props().value).toEqual('baz')
     expect(submit().props().disabled).toBeFalsy()
     expect(cancel().props().disabled).toBeFalsy()
 
     await cancel().simulate('click')
 
     expect(input().props().value).toEqual('bar')
-    expect(
-      field()
-        .find('InputField')
-        .props().value
-    ).toEqual('bar')
+    expect(field().find('InputField').props().value).toEqual('bar')
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
   })

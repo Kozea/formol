@@ -11,11 +11,7 @@ describe('Range field', () => {
         <Field type="range">Range</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const min = () => wrapper.find('.Formol_RangeField__min')
     const value = () => wrapper.find('.Formol_RangeField__value-wrapper')
     const max = () => wrapper.find('.Formol_RangeField__max')
@@ -59,11 +55,7 @@ describe('Range field', () => {
         <Field type="range">Range</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -92,11 +84,7 @@ describe('Range field', () => {
         </Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -143,11 +131,7 @@ describe('Range field', () => {
         <Field type="range">Range</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -168,11 +152,7 @@ describe('Range field', () => {
         <Field type="range">Range</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -204,11 +184,7 @@ describe('Range field', () => {
         </Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const min = () => wrapper.find('.Formol_RangeField__min')
     const value = () => wrapper.find('.Formol_RangeField__value-wrapper')
     const max = () => wrapper.find('.Formol_RangeField__max')
@@ -289,11 +265,7 @@ describe('Range field', () => {
         </Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const min = () => wrapper.find('.Formol_RangeField__min')
     const value = () => wrapper.find('.Formol_RangeField__value-wrapper')
     const max = () => wrapper.find('.Formol_RangeField__max')

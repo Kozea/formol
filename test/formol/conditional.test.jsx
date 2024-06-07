@@ -27,21 +27,10 @@ describe('Conditional field', () => {
     const fields = () => wrapper.find('Field')
     expect(fields()).toHaveLength(2)
 
-    expect(
-      fields()
-        .at(0)
-        .props().name
-    ).toEqual('ok')
-    expect(
-      fields()
-        .at(1)
-        .props().name
-    ).toEqual('whynot')
+    expect(fields().at(0).props().name).toEqual('ok')
+    expect(fields().at(1).props().name).toEqual('whynot')
 
-    const input = () =>
-      fields()
-        .at(1)
-        .find('input')
+    const input = () => fields().at(1).find('input')
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 'foo' } })
@@ -63,25 +52,14 @@ describe('Conditional field', () => {
     )
     expect(input().props().value).toEqual('foo')
 
-    const ok = () =>
-      fields()
-        .at(0)
-        .find('input')
+    const ok = () => fields().at(0).find('input')
 
     await ok().simulate('focus')
     await ok().simulate('change', { target: { checked: true } })
     await ok().simulate('blur')
 
-    expect(
-      fields()
-        .at(0)
-        .props().name
-    ).toEqual('ok')
-    expect(
-      fields()
-        .at(1)
-        .props().name
-    ).toEqual('why')
+    expect(fields().at(0).props().name).toEqual('ok')
+    expect(fields().at(1).props().name).toEqual('why')
 
     await input().simulate('focus')
     await input().simulate('change', { target: { value: 'bar' } })
@@ -121,55 +99,20 @@ describe('Conditional field', () => {
     const fields = () => wrapper.find('Field')
     expect(fields()).toHaveLength(3)
 
-    expect(
-      fields()
-        .at(0)
-        .props().name
-    ).toEqual('ok')
-    expect(
-      fields()
-        .at(1)
-        .props().name
-    ).toEqual('why')
-    expect(
-      fields()
-        .at(2)
-        .props().name
-    ).toEqual('whynot')
-    expect(
-      fields()
-        .at(1)
-        .find('input')
-        .props().disabled
-    ).toBeTruthy()
-    expect(
-      fields()
-        .at(2)
-        .find('input')
-        .props().disabled
-    ).toBeFalsy()
+    expect(fields().at(0).props().name).toEqual('ok')
+    expect(fields().at(1).props().name).toEqual('why')
+    expect(fields().at(2).props().name).toEqual('whynot')
+    expect(fields().at(1).find('input').props().disabled).toBeTruthy()
+    expect(fields().at(2).find('input').props().disabled).toBeFalsy()
 
-    const ok = () =>
-      fields()
-        .at(0)
-        .find('input')
+    const ok = () => fields().at(0).find('input')
 
     await ok().simulate('focus')
     await ok().simulate('change', { target: { checked: false } })
     await ok().simulate('blur')
 
-    expect(
-      fields()
-        .at(1)
-        .find('input')
-        .props().disabled
-    ).toBeFalsy()
-    expect(
-      fields()
-        .at(2)
-        .find('input')
-        .props().disabled
-    ).toBeTruthy()
+    expect(fields().at(1).find('input').props().disabled).toBeFalsy()
+    expect(fields().at(2).find('input').props().disabled).toBeTruthy()
   })
   it('handles props changing', async () => {
     class PropsChangingForm extends React.Component {
@@ -202,45 +145,17 @@ describe('Conditional field', () => {
     const fields = () => wrapper.find('Field')
     expect(fields()).toHaveLength(2)
 
-    expect(
-      fields()
-        .at(0)
-        .props().name
-    ).toEqual('ok')
-    expect(
-      fields()
-        .at(1)
-        .props().name
-    ).toEqual('why')
+    expect(fields().at(0).props().name).toEqual('ok')
+    expect(fields().at(1).props().name).toEqual('why')
 
-    expect(
-      fields()
-        .at(1)
-        .find('input')
-        .props().disabled
-    ).toBeTruthy()
-    expect(
-      fields()
-        .at(1)
-        .find('input')
-        .props().readOnly
-    ).toBeFalsy()
+    expect(fields().at(1).find('input').props().disabled).toBeTruthy()
+    expect(fields().at(1).find('input').props().readOnly).toBeFalsy()
 
     const change = () => wrapper.find('button.change')
     await change().simulate('click')
 
-    expect(
-      fields()
-        .at(1)
-        .find('input')
-        .props().disabled
-    ).toBeFalsy()
-    expect(
-      fields()
-        .at(1)
-        .find('input')
-        .props().readOnly
-    ).toBeTruthy()
+    expect(fields().at(1).find('input').props().disabled).toBeFalsy()
+    expect(fields().at(1).find('input').props().readOnly).toBeTruthy()
   })
   it('initializes multiple fields on show condition change', async () => {
     const wrapper = mount(

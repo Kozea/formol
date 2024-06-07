@@ -11,11 +11,7 @@ describe('Password field', () => {
         <Field type="password">Password</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -51,11 +47,7 @@ describe('Password field', () => {
         <Field type="password">Password</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -81,11 +73,7 @@ describe('Password field', () => {
         <Field type="password">Password</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const eye = () => wrapper.find('Field').find('.Formol_PasswordField__eye')
 
     expect(input().props().value).toEqual('passw0rd')

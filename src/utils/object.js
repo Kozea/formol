@@ -1,6 +1,6 @@
-export const nullishToEmptyString = v => (v === null || v === void 0 ? '' : v)
+export const nullishToEmptyString = (v) => (v === null || v === void 0 ? '' : v)
 
-export const emptyStringToNull = v => (v === '' ? null : v)
+export const emptyStringToNull = (v) => (v === '' ? null : v)
 
 // Get a sub object value (ie. obj['a.b.0.key'])
 export const get = (data, key) =>
@@ -19,8 +19,8 @@ export const set = (data, key, value, noArray = false) =>
           ? (pointer[part] = noArray
               ? {}
               : isNaN(key.split('.')[i + 1])
-              ? {}
-              : [])
+                ? {}
+                : [])
           : pointer[part],
       data
     )[key.split('.').slice(-1)[0]] = emptyStringToNull(value))

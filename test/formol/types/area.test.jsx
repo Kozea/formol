@@ -11,11 +11,7 @@ describe('Textarea field', () => {
         <Field type="area">Area</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('textarea')
-        .first()
+    const input = () => wrapper.find('Field').find('textarea').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -50,11 +46,7 @@ describe('Textarea field', () => {
         <Field type="area">Area</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('textarea')
-        .first()
+    const input = () => wrapper.find('Field').find('textarea').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 

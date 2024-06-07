@@ -7,7 +7,7 @@ import DayPickerInput from 'react-day-picker/DayPickerInput'
 import { block } from '../utils'
 import locales from './CalendarFieldLocales'
 
-const isDate = d => d instanceof Date && !isNaN(d.valueOf())
+const isDate = (d) => d instanceof Date && !isNaN(d.valueOf())
 
 @block
 export default class CalendarField extends React.PureComponent {
@@ -81,7 +81,7 @@ export default class CalendarField extends React.PureComponent {
           overlay: b.e('overlay').mix('DayPickerInput-Overlay').s,
         }}
         value={date}
-        ref={ref => (this.daypicker = ref)}
+        ref={(ref) => (this.daypicker = ref)}
         placeholder={placeholder || dateFormat}
         format={dateFormat}
         formatDate={(value_, format_) => format(value_, format_, { locale })}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default resolve =>
+export default (resolve) =>
   class AsyncWrapper extends React.PureComponent {
     constructor(props) {
       super(props)

@@ -17,11 +17,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -60,11 +56,7 @@ describe('Calendar field', () => {
     await asyncWrapper().instance()._promise
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -97,11 +89,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
     const error = () => wrapper.find('.Formol_Field__error-text').text()
@@ -133,11 +121,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -160,11 +144,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -185,11 +165,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
     const calendar = () =>
@@ -202,14 +178,10 @@ describe('Calendar field', () => {
     expect(calendar()).toHaveLength(0)
     await input().simulate('focus')
     expect(calendar()).toHaveLength(1)
-    expect(
-      calendar()
-        .find('.DayPicker-Caption')
-        .text()
-    ).toEqual('July 2018')
+    expect(calendar().find('.DayPicker-Caption').text()).toEqual('July 2018')
     await calendar()
       .find('.DayPicker-Day')
-      .forEach(async day => {
+      .forEach(async (day) => {
         if (day.text() === '2') {
           await day.simulate('click')
           return false
@@ -248,11 +220,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
     const calendar = () =>
@@ -280,11 +248,7 @@ describe('Calendar field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
     const calendar = () =>
@@ -297,14 +261,10 @@ describe('Calendar field', () => {
     expect(calendar()).toHaveLength(0)
     await input().simulate('focus')
     expect(calendar()).toHaveLength(1)
-    expect(
-      calendar()
-        .find('.DayPicker-Caption')
-        .text()
-    ).toEqual('juillet 2018')
+    expect(calendar().find('.DayPicker-Caption').text()).toEqual('juillet 2018')
     await calendar()
       .find('.DayPicker-Day')
-      .forEach(async day => {
+      .forEach(async (day) => {
         if (day.text() === '2') {
           await day.simulate('click')
           return false

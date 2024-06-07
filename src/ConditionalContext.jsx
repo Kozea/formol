@@ -4,9 +4,9 @@ export const ConditionalContext = React.createContext({})
 
 export default function ConditionalContextWrapper(Component) {
   // eslint-disable-next-line react/display-name
-  return props => (
+  return (props) => (
     <ConditionalContext.Consumer>
-      {conditionalContext => (
+      {(conditionalContext) => (
         <Component {...props} conditionalContext={conditionalContext} />
       )}
     </ConditionalContext.Consumer>

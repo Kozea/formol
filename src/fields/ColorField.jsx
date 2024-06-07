@@ -6,7 +6,7 @@ import InputField from './InputField'
 @block
 export default class ColorField extends React.PureComponent {
   static defaultFieldProps = {
-    validator: () => v =>
+    validator: () => (v) =>
       v && !v.match(/#[0-9bA-Fa-f]{6}/) && `${v} is not a valid color`,
   }
   render(b) {
