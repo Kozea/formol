@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap')
+
+$grey: #8D929A
+$lightgrey: #F6F8FA
+$navyblue: #190E4F
+$purple: #6E57FF
+$purpleHover: #6E57FF33
+$silver: #CED0D4
+
+$formol-color: $navyblue
+$formol-color-action: $purple
+
 body
+  color: $navyblue
+  font-family: "Inter", sans-serif
+  font-optical-sizing: auto
+  font-style: normal
+  font-variation-settings:"slnt" 0
+  font-weight: normal
   margin: 0
+
+h1
+  color: $navyblue
+  font-weight: 500
+
+h2
+  color: $navyblue
+  font-weight: normal
+
+h3
+  color: $purple
+  font-weight: 500
+
+.flex-container
+  display: flex
 
 .app-container
   box-sizing: border-box
@@ -9,44 +43,74 @@ body
   padding-top: 70px
 
 .navbar
-  background-color: #333
+  border-bottom: 2px solid $silver
   box-sizing: border-box
   display: flex
   height: 70px
-  justify-content: center
+  justify-content: space-between
   padding: 10px
   position: fixed
   top: 0
   width: 100%
   z-index: 1000
 
+  .demo-selector
+    align-items: center
+    display: flex
+    justify-items: center
+
   button
     background-color: #fff
-    border: none
+    border-radius: 4px
+    border: 2px solid transparent
+    color: $purple
     cursor: pointer
     font-size: 16px
+    height: 45px
     margin: 0 10px
     padding: 10px 20px
 
     &:hover
-      background-color: #ddd
+      background-color: $purpleHover
+
+    &.active
+      border-color: $purple
+
+  .github
+    &-link
+      align-items: center
+      border-radius: 4px
+      color: $navyblue !important
+      cursor: pointer
+      display: flex
+      justify-items: center
+      padding: 10px
+      text-decoration: none
+
+      &:hover
+        background-color: $purpleHover
+
+    &-icon
+      height: 1.2em
+      margin-right: 0.5em
+      width: 1.2em
 
 .demo-container
   box-sizing: border-box
   display: grid
-  grid-template-columns: 1fr 40%
   flex: 1
+  grid-template-columns: 1fr 40%
   height: calc(100vh - 70px)
 
 .form-container
   box-sizing: border-box
-  padding: 20px
   overflow-y: auto
+  padding: 0 20px 20px 20px
 
 .panel
-  background-color: #f5f5f5
-  box-sizing: border-box
+  background-color: $lightgrey
   border-left: 1px solid #ccc
+  box-sizing: border-box
   height: 100%
   margin: 0
   overflow-y: auto
@@ -54,5 +118,29 @@ body
   position: relative
 
 pre
+  font-family: "JetBrains Mono", monospace
+  font-optical-sizing: auto
+  font-size: 0.825em
+  font-style: normal
+  font-weight: 400
   white-space: pre-wrap
   word-wrap: break-word
+
+.Formol_Field__title
+  color: $navyblue !important
+  font-weight: 500
+
+.Formol_Formol
+  &__submit, &__cancel
+    background-color: white
+    border-radius: 4px
+    border: 2px solid $purple
+    color: $purple
+    color: $purple
+    height: 40px
+    width: 80px
+
+    &:hover
+      background-color: $purpleHover !important
+
+@import '../src/sass/default'

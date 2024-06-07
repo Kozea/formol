@@ -13,8 +13,25 @@ const App = () => {
   return (
     <div className="app-container">
       <nav className="navbar">
-        <button onClick={() => setCurrentDemo('AllFieldsDemo')}>Fields</button>
-        <button onClick={() => setCurrentDemo('FeaturesDemo')}>Features</button>
+        <img src="./formol-simple-logo.svg" alt="Formol logo" />
+        <div className="demo-selector">
+          <button
+            onClick={() => setCurrentDemo('AllFieldsDemo')}
+            className={currentDemo === 'AllFieldsDemo' ? 'active' : ''}
+          >
+            Fields
+          </button>
+          <button
+            onClick={() => setCurrentDemo('FeaturesDemo')}
+            className={currentDemo === 'FeaturesDemo' ? 'active' : ''}
+          >
+            Features
+          </button>
+        </div>
+        <a href="https://github.com/Kozea/formol" className="github-link">
+          <img src="./github.svg" alt="GitHub icon" className="github-icon" />
+          GitHub
+        </a>
       </nav>
 
       <div className="demo-container">
