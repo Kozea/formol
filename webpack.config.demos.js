@@ -32,11 +32,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.sass$/,
-        loader: [
+        use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           {
@@ -58,7 +58,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'demos', 'public'),
+    static: {
+      directory: path.join(__dirname, 'demos', 'public'),
+    },
     compress: true,
     port: 9000,
   },

@@ -76,11 +76,11 @@ export default {
       },
       {
         test: /\.css$/,
-        loader: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.sass$/,
-        loader: [
+        use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           {
