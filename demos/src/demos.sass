@@ -32,6 +32,10 @@ h3
   color: $purple
   font-weight: 500
 
+h4
+  font-size: 1.15rem
+  font-weight: normal
+
 .flex-container
   display: flex
 
@@ -101,6 +105,27 @@ h3
   flex: 1
   grid-template-columns: 1fr 40%
   height: calc(100vh - 70px)
+
+.demo-header
+  border-bottom: 2px solid $silver
+
+  .logo-version-container
+    align-items: end
+    display: flex
+    flex-direction: row
+
+    .logo-baseline
+      width: 250px
+
+    .version
+      color: $grey
+      font-size: 1.15rem
+      font-weight: 500
+      margin-bottom: 8px
+      margin-left: 20px
+
+  h4
+    margin-top: 10px
 
 .form-container
   box-sizing: border-box
