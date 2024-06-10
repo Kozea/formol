@@ -12,12 +12,14 @@ yarn demos-build
 TEMP_DIR=$(mktemp --directory)
 
 cp demos/dist/* $TEMP_DIR
+cp assets/* $TEMP_DIR
 
 git switch gh-pages
 
 cp $TEMP_DIR/* .
 
 git add demos.js index.html main.css
+git add *.svg *.png
 
 if git diff-index --quiet HEAD --; then
   echo "No changes to commit."
