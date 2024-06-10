@@ -13,7 +13,11 @@ const App = () => {
   return (
     <div className="app-container">
       <nav className="navbar">
-        <img src="./formol-simple-logo.svg" alt="Formol logo" />
+        <img
+          src="./formol-simple-logo.svg"
+          alt="Formol logo"
+          className="navbar-logo"
+        />
         <div className="demo-selector">
           <button
             onClick={() => setCurrentDemo('AllFieldsDemo')}
