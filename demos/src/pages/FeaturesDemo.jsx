@@ -88,7 +88,7 @@ const FeaturesDemo = () => {
         <h1>Features</h1>
         <Formol item={formValues} onChange={item => setFormValues(item)}>
           <h2>Conditionals</h2>
-          <h3>- show</h3>
+          <h3>show</h3>
           <Field name="newsletter.subscribe" type="switch">
             Subscribe to the newsletter
           </Field>
@@ -100,7 +100,7 @@ const FeaturesDemo = () => {
             </div>
           </Conditional>
 
-          <h3>- disabled</h3>
+          <h3>disabled</h3>
           <Field name="edit.enabled" type="switch">
             Edit mode
           </Field>
@@ -109,12 +109,12 @@ const FeaturesDemo = () => {
           </Conditional>
 
           <h2>Formatters</h2>
-          <h3>- Item to field</h3>
+          <h3>Item to field</h3>
           <Field name="format.text" formatter={v => v.toUpperCase()}>
             CAPSLOCK
           </Field>
 
-          <h3>- Field to item</h3>
+          <h3>Field to item</h3>
           <Field
             name="format.number"
             unformatter={v => v && v.replace(/\D/g, '')}
@@ -122,7 +122,7 @@ const FeaturesDemo = () => {
             String allowing only numbers
           </Field>
 
-          <h3>- Field normalizer</h3>
+          <h3>Field normalizer</h3>
           <Field
             name="format.numberblur"
             normalizer={v => v && v.replace(/\D/g, '')}
@@ -130,7 +130,7 @@ const FeaturesDemo = () => {
             String cleaned and parsed as a number on blur
           </Field>
 
-          <h3>- Bidirectional formatter</h3>
+          <h3>Bidirectional formatter</h3>
           <Field
             name="bidir.rgbColor"
             type="color"
@@ -146,7 +146,7 @@ const FeaturesDemo = () => {
           </Field>
 
           <h2>Validators</h2>
-          <h3>- Pattern + custom error messages</h3>
+          <h3>Pattern + custom error messages</h3>
           <Field
             name="valid.color"
             minLength={4}
@@ -167,7 +167,7 @@ const FeaturesDemo = () => {
             Hexadecimal color
           </Field>
 
-          <h3>- Complex</h3>
+          <h3>Complex</h3>
           <Field
             name="prime"
             type="number"
@@ -195,7 +195,7 @@ const FeaturesDemo = () => {
           }
           onChange={item => setCrossedValues(item)}
         >
-          <h3>- Cross field validation</h3>
+          <h3>Cross field validation</h3>
           {new Array(3).fill().map((_, i) => (
             <Field
               key={Object.keys(crossedValues)[i]}
