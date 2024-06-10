@@ -14,7 +14,7 @@ const App = () => {
     <div className="app-container">
       <nav className="navbar">
         <img
-          src="./formol-simple-logo.svg"
+          src="formol-simple-logo.svg"
           alt="Formol logo"
           className="navbar-logo"
         />
@@ -33,7 +33,7 @@ const App = () => {
           </button>
         </div>
         <a href="https://github.com/Kozea/formol" className="github-link">
-          <img src="./github.svg" alt="GitHub icon" className="github-icon" />
+          <img src="github.svg" alt="GitHub icon" className="github-icon" />
           GitHub
         </a>
       </nav>

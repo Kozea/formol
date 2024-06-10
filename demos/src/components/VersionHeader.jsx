@@ -4,7 +4,7 @@ const VersionHeader = () => (
   <div className="demo-header">
     <div className="logo-version-container">
       <img
-        src="../formol-baseline-logo.svg"
+        src="formol-baseline-logo.svg"
         alt="Formol logo with baseline"
         className="logo-baseline"
       />
