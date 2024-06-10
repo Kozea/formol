@@ -5,7 +5,7 @@ $grey: #8D929A
 $lightgrey: #F6F8FA
 $navyblue: #190E4F
 $purple: #6E57FF
-$purpleHover: #6E57FF33
+$purpleHover: $lightgrey
 $silver: #CED0D4
 
 $formol-color: $navyblue
@@ -30,7 +30,17 @@ h2
 
 h3
   color: $purple
+  font-family: 'JetBrains Mono', monospace
   font-weight: 500
+
+  &::before
+    background: $purple
+    content: ''
+    display: inline-block
+    height: 2px
+    margin-right: .25em
+    vertical-align: middle
+    width: 10px
 
 h4
   font-size: 1.15rem
@@ -47,12 +57,12 @@ h4
   padding-top: 70px
 
 .navbar
-  border-bottom: 2px solid $silver
+  border-bottom: 1px solid $silver
   box-sizing: border-box
   display: flex
   height: 70px
   justify-content: space-between
-  padding: 10px
+  padding: 1rem 5rem
   position: fixed
   top: 0
   width: 100%
@@ -67,18 +77,20 @@ h4
     background-color: #fff
     border-radius: 4px
     border: 2px solid transparent
-    color: $purple
+    color: $navyblue
     cursor: pointer
     font-size: 16px
     height: 45px
     margin: 0 10px
     padding: 10px 20px
+    transition: background .3s
 
     &:hover
       background-color: $purpleHover
 
     &.active
       border-color: $purple
+      color: $purple
 
   .github
     &-link
@@ -107,7 +119,7 @@ h4
   height: calc(100vh - 70px)
 
 .demo-header
-  border-bottom: 2px solid $silver
+  border-bottom: 1px solid $silver
 
   .logo-version-container
     align-items: end
@@ -130,16 +142,16 @@ h4
 .form-container
   box-sizing: border-box
   overflow-y: auto
-  padding: 0 20px 20px 20px
+  padding: 1rem 6rem
 
 .panel
   background-color: $lightgrey
-  border-left: 1px solid #ccc
   box-sizing: border-box
   height: 100%
+  line-height: 1.75em
   margin: 0
   overflow-y: auto
-  padding: 20px
+  padding: 2em 4em
   position: relative
 
 pre
@@ -155,17 +167,28 @@ pre
   color: $navyblue !important
   font-weight: 500
 
+.Formol_Field__element
+  border-color: $silver!important
+
+  &:hover, &:focus
+    border-color: $purple!important
+
 .Formol_Formol
   &__submit, &__cancel
     background-color: white
     border-radius: 4px
     border: 2px solid $purple
     color: $purple
-    color: $purple
     height: 40px
     width: 80px
 
     &:hover
       background-color: $purpleHover !important
+
+.Formol_PasswordField__eye svg
+  background-color: $silver!important
+
+.react-datepicker__close-icon::after
+  background-color: $purple!important
 
 @import '../src/sass/default'
