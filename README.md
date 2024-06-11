@@ -15,6 +15,8 @@ Formol is a full featured object edition form framework for React.
 *   Support style theming (with currently two bundled)
 *   Works well with [unrest](https://kozea.github.io/unrest/) and [redux-api-unrest](https://github.com/Kozea/redux-api-unrest)
 
+## [Demos](https://kozea.github.io/formol)
+
 Quick start
 -----------
 
