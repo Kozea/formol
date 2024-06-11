@@ -18,7 +18,7 @@ git switch gh-pages
 
 cp $TEMP_DIR/* .
 
-git add demos.js index.html main.css
+git add index.html demos.*.js demos.*.css
 git add *.svg *.png
 
 if git diff-index --quiet HEAD --; then
