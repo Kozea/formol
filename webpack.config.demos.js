@@ -8,7 +8,7 @@ module.exports = {
   entry: './demos/src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'demos', 'dist'),
-    filename: 'demos.js',
+    filename: 'demos.[contenthash].js',
   },
   module: {
     rules: [
@@ -52,9 +52,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '[name].css' }),
+    new MiniCssExtractPlugin({ filename: 'demos.[contenthash].css' }),
     new HtmlWebpackPlugin({
       template: './demos/public/index.html',
+      filename: 'index.html',
     }),
   ],
   devServer: {

@@ -17,6 +17,8 @@ Formol is a full featured object edition form framework for React.
 *   Support style theming (with currently two bundled)
 *   Works well with [unrest](https://kozea.github.io/unrest/) and [redux-api-unrest](https://github.com/Kozea/redux-api-unrest)
 
+## [Demos](https://kozea.github.io/formol)
+
 Quick start
 -----------
 
@@ -255,3 +257,4 @@ with the added benefit that you can override [the formol variables](https://gith
 3. Tag version bump commit e.g. `git tag v3.0.0` and push it `git push --tags`
 4. `yarn prepublish`
 5. `npm publish` (requires being an npm package maintainer)
+6. `yarn demos-deploy`
