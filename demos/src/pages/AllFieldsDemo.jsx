@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Formol, { Field } from 'formol'
 
+import VersionHeader from '../components/VersionHeader'
 import molecule from '../../../test/samples/molecule.svg.base64'
 
 export const colorChoices = {
@@ -74,6 +75,8 @@ const AllFieldsDemo = () => {
   return (
     <>
       <div className="form-container">
+        <VersionHeader />
+
         <h1>All fields</h1>
         <Formol item={formValues} onChange={item => setFormValues(item)}>
           {Object.values(definitions).map(({ name, label, choices }) => (

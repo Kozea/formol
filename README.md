@@ -1,5 +1,7 @@
 # formol
 
+![Formol logo with Baseline](/assets/formol-baseline-logo.svg)
+
 [![Coverage Status](https://coveralls.io/repos/github/Kozea/formol/badge.svg?branch=master)](https://coveralls.io/github/Kozea/formol?branch=master)
 
 Formol is a full featured object edition form framework for React.
@@ -246,9 +248,10 @@ with the added benefit that you can override [the formol variables](https://gith
 1. Merge the branches (features, fixes) into master
 2. Create release commit:
     1. Update `version` in package.json according to [semantic versioning rules](https://semver.org/)
-    2. Update `CHANGELOG.md` (manually)
-    3. Commit these changes as version bump, e.g. `v3.0.0`
-    4. Push commit onto master
+    2. Update version in demo: `VersionHeader.jsx`
+    3. Update `CHANGELOG.md` (manually)
+    4. Commit these changes as version bump, e.g. `v3.0.0`
+    5. Push commit onto master
 3. Tag version bump commit e.g. `git tag v3.0.0` and push it `git push --tags`
 4. `yarn prepublish`
 5. `npm publish` (requires being an npm package maintainer)
