@@ -412,7 +412,7 @@
         "extensions": [".js", ".jsx"]
       }
     },
-    "eslint-plugin-react": {
+    "react": {
       "version": "detect"
     }
   }
