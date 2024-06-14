@@ -1,0 +1,2007 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap);
+.Formol_Field,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label{color:rgba(89,98,117,.65);margin:1.5em 0;max-width:100%;width:fit-content;width:-moz-fit-content;width:-webkit-fit-content}.Formol_Field .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label .Formol_Field__label,.Formol_Field--type-radio-set .Formol_FieldSet__label .Formol_Field__label{border-color:rgba(89,98,117,.65)}.Formol_Field--required .Formol_Field__title::before{content:"* "}.Formol_Field--readOnly.Formol_Field--required .Formol_Field__title::before{display:none}.Formol_Field--readOnly .Formol_Field__title{font-size:.7em}.Formol_Field--readOnly .Formol_InputField,.Formol_Field--readOnly .Formol_TextAreaField,.Formol_Field--readOnly .Formol_PasswordField__wrapper,.Formol_Field--readOnly .Formol_FileField,.Formol_Field--readOnly .Formol_HTMLField{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#596275;margin:0;padding:.75em 0}.Formol_Field--readOnly .Formol_Field--type-date__element[type=date],.Formol_Field--readOnly .Formol_Field--type-time__element[type=date]{-moz-appearance:textfield;border:none;clip-path:inset(0 17px 0 0);outline:none;outline:0}.Formol_Field--disabled{opacity:.75}.Formol_Field--disabled .Formol_Field__label,.Formol_Field--disabled .Formol_Field__label *{cursor:default}.Formol_Field:hover,.Formol_Field--type-checkbox-set .Formol_FieldSet__label:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label:hover{color:#596275}.Formol_Field:hover .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label:hover .Formol_Field__label,.Formol_Field--type-radio-set .Formol_FieldSet__label:hover .Formol_Field__label{border-color:#596275}.Formol_Field--modified,.Formol_Field--modified:hover{color:#596275}.Formol_Field--modified .Formol_Field__label,.Formol_Field--modified:hover .Formol_Field__label{border-color:#596275}.Formol_Field--focus,.Formol_Field--focus:hover{color:#546de5}.Formol_Field--focus .Formol_Field__label,.Formol_Field--focus:hover .Formol_Field__label{border-color:#546de5}.Formol_Field--focus *:focus,.Formol_Field--focus:hover *:focus{outline:rgba(0,0,0,0)}.Formol_Field--error,.Formol_Field--error:hover{color:#e66767;box-shadow:none}.Formol_Field--error .Formol_Field__label,.Formol_Field--error:hover .Formol_Field__label{border-color:#e66767}.Formol_Field__label{color:inherit}.Formol_Field__title{color:inherit;display:flex;font-size:.85em;transition:color .2s;width:100%}.Formol_Field__title>svg{margin-left:.5em;min-width:1em}.Formol_Field__element,.Formol_SwitchButton input[type=checkbox]+label,.Formol_PasswordField__wrapper,.Formol_FileField,.Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_HTMLField,.Formol_Field--type-calendar .Formol_CalendarField{background-color:rgba(0,0,0,0);border:solid 1px;border-color:inherit;border-radius:.15em;box-sizing:border-box;box-shadow:none;color:#596275;font:inherit;margin:.5em 0;max-width:100%;padding:.75em;transition:border-color .2s}.Formol_Field__unit{display:inline-block;margin-left:.75em}.Formol_Field__error-text{font-size:.85em;font-style:italic}.Formol_Field__error-text::before{background-color:currentColor;content:"";display:inline-block;height:1px;margin-right:.5em;vertical-align:middle;width:1em}.Formol_Formol{box-shadow:-1px 0 0 rgba(0,0,0,0);box-sizing:border-box;color:#596275;padding-left:0;font-size:1em;transition:box-shadow 250ms 250ms,opacity 500ms ease-in,padding 250ms}.Formol_Formol--errors{box-shadow:-1px 0 0 #e66767;padding-left:1em}.Formol_Formol--loading{opacity:.5}.Formol_Formol .Formol_Formol__submit,.Formol_Formol .Formol_Formol__cancel{cursor:pointer;font:inherit}.Formol_Formol .Formol_Formol__submit:disabled,.Formol_Formol .Formol_Formol__cancel:disabled{cursor:not-allowed}.Formol_Formol .Formol_Formol__submit{margin-right:1.5em;margin-top:2em}.Formol_Formol .Formol_Formol__cancel{background:0;border:0;font-size:.85em;margin-bottom:3em;padding:0}.Formol_Inliner{margin:-0.75em 0}.Formol_Inliner .Formol_Field,.Formol_Inliner .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Inliner .Formol_FieldSet__label,.Formol_Inliner .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Inliner .Formol_FieldSet__label{display:inline-block;margin:.75em 0;vertical-align:top}.Formol_Inliner .Formol_Field:not(:last-of-type),.Formol_Inliner .Formol_Field--type-checkbox-set .Formol_FieldSet__label:not(:last-of-type),.Formol_Field--type-checkbox-set .Formol_Inliner .Formol_FieldSet__label:not(:last-of-type),.Formol_Inliner .Formol_Field--type-radio-set .Formol_FieldSet__label:not(:last-of-type),.Formol_Field--type-radio-set .Formol_Inliner .Formol_FieldSet__label:not(:last-of-type){margin-right:1em}.Formol_Field--type-calendar .Formol_CalendarField__field{border:0;margin:0;padding:0}.Formol_Field--readOnly .Formol_CalendarField{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#596275;margin:0;padding:.75em 0}.Formol_HTMLField{cursor:text;padding:0;position:relative;width:50em}.Formol_HTMLField__hidden-input{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_HTMLField .quill{border-color:inherit}.Formol_HTMLField .quill .ql-container{border-bottom-color:inherit;margin:0;border:none}.Formol_HTMLField .quill .ql-container .ql-editor{max-height:50vh;min-height:8em;overflow:auto}.Formol_HTMLField .quill .ql-toolbar{border-top:0;border-left:0;border-right:0;border-bottom-color:inherit}.Formol_HTMLField img{max-width:100%}.Formol_Field--readOnly .ql-editor,.Formol_Field--disabled .ql-editor{min-height:auto}.Formol_Field--readOnly .ql-toolbar,.Formol_Field--disabled .ql-toolbar{display:none}.Formol_Field--type-select-menu{max-width:100%;width:25em}.Formol_Field--type-select-menu .Formol_SelectMenuField{box-shadow:none;color:inherit;padding:0;position:relative}.Formol_Field--type-select-menu .Formol_SelectMenuField__hidden-input{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_Field--type-select-menu .Formol_SelectMenuField__control{border:0;box-shadow:none}.Formol_Field--type-select-menu .Formol_SelectMenuField__menu{border:solid 1px #546de5;box-shadow:none}.Formol_Field--readOnly .Select-control{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#596275;margin:0;padding:.75em 0}.Formol_Field--readOnly .Select-value{padding:0 !important}.Formol_Field--readOnly .Select.is-disabled>.Select-control{background-color:rgba(0,0,0,0)}.Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label{align-items:center;color:rgba(89,98,117,.65);cursor:pointer;display:inline-flex;transition:color .2s,border-color .2s}.Formol_Field--type-checkbox .Formol_Field__label--on,.Formol_Field--type-checkbox .Formol_Field__label--on:hover,.Formol_Field--type-radio .Formol_Field__label--on,.Formol_Field--type-radio .Formol_Field__label--on:hover,.Formol_Field--type-checkbox-set .Formol_FieldSet__label--on,.Formol_Field--type-checkbox-set .Formol_FieldSet__label--on:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label--on,.Formol_Field--type-radio-set .Formol_FieldSet__label--on:hover{color:#596275}.Formol_Field--type-checkbox .Formol_Field__title,.Formol_Field--type-radio .Formol_Field__title,.Formol_Field--type-checkbox-set .Formol_FieldSet__title,.Formol_Field--type-radio-set .Formol_FieldSet__title{font-size:1em;margin-left:.5em;order:1}.Formol_Field--type-checkbox-set .Formol_FieldSet,.Formol_Field--type-radio-set .Formol_FieldSet{border:0;margin:.5em 0;padding:0}.Formol_Field--type-checkbox-set .Formol_FieldSet__label--focus,.Formol_Field--type-checkbox-set .Formol_FieldSet__label--focus:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label--focus,.Formol_Field--type-radio-set .Formol_FieldSet__label--focus:hover{color:#546de5}.Formol_Field--type-checkbox-set .Formol_FieldSet .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet .Formol_FieldSet__label{margin:0 calc(1.5em/2) calc(1.5em/2) 0}.Formol_BooleanField{accent-color:#546de5;margin:0}.Formol_Field--type-checkbox.Formol_Field--readOnly .Formol_Field__label,.Formol_Field--type-radio.Formol_Field--readOnly .Formol_Field__label,.Formol_Field--type-checkbox-set.Formol_Field--readOnly .Formol_FieldSet__label,.Formol_Field--type-radio-set.Formol_Field--readOnly .Formol_FieldSet__label{display:none}.Formol_Field--type-checkbox.Formol_Field--readOnly .Formol_Field__label--on,.Formol_Field--type-radio.Formol_Field--readOnly .Formol_Field__label--on,.Formol_Field--type-checkbox-set.Formol_Field--readOnly .Formol_FieldSet__label--on,.Formol_Field--type-radio-set.Formol_Field--readOnly .Formol_FieldSet__label--on{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#596275;margin:0;padding:.75em 0;display:inline-flex;margin:0 calc(1.5em/2) calc(1.5em/2) 0}.Formol_Field--type-checkbox.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-radio.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-checkbox-set.Formol_Field--disabled .Formol_FieldSet__label,.Formol_Field--type-radio-set.Formol_Field--disabled .Formol_FieldSet__label{cursor:default}.Formol_Field--type-color .Formol_Field__element,.Formol_Field--type-color .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-color input[type=checkbox]+label,.Formol_Field--type-color .Formol_PasswordField__wrapper,.Formol_Field--type-color .Formol_FileField,.Formol_Field--type-color .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-color .Formol_CalendarField,.Formol_Field--type-color .Formol_HTMLField,.Formol_Field--type-color .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-color .Formol_SelectMenuField,.Formol_Field--type-color .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-color .Formol_Field__label,.Formol_Field--type-color .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-color .Formol_Field__label,.Formol_Field--type-color .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-color .Formol_FieldSet__label,.Formol_Field--type-color .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-color .Formol_FieldSet__label{box-sizing:content-box;cursor:pointer;height:1.5em;width:1.5em}.Formol_Field--type-color.Formol_Field--disabled .Formol_Field__element,.Formol_Field--type-color.Formol_Field--disabled .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-color.Formol_Field--disabled input[type=checkbox]+label,.Formol_Field--type-color.Formol_Field--disabled .Formol_PasswordField__wrapper,.Formol_Field--type-color.Formol_Field--disabled .Formol_FileField,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-color.Formol_Field--disabled .Formol_CalendarField,.Formol_Field--type-color.Formol_Field--disabled .Formol_HTMLField,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-color.Formol_Field--disabled .Formol_SelectMenuField,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-color.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-color.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-color.Formol_Field--disabled .Formol_FieldSet__label,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-color.Formol_Field--disabled .Formol_FieldSet__label{cursor:default}.Formol_Field--type-file{max-width:100%;width:50em}.Formol_FileField{border-style:dashed;color:inherit;padding:0;position:relative;width:100%}.Formol_FileField__hidden-input{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_FileField__dropzone>input[type=file]{display:block !important;bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_FileField__placeholder{align-items:flex-start;cursor:pointer;display:flex;flex-wrap:wrap;transition:color .2s;width:100%}.Formol_FileField__placeholder>svg{display:block;font-size:2em;margin:1em auto .1em;width:100%}.Formol_FileField__placeholder>span{display:block;font-size:.85em;margin:0 auto 3em}.Formol_FileField__previews{align-items:flex-start;display:flex;flex-wrap:wrap}.Formol_FileField__preview{border:solid 1px;margin:1em;min-width:8em;max-width:10em;position:relative;color:#596275}.Formol_FileField__preview img{max-width:100%}.Formol_FileField__preview-caption{box-sizing:border-box;border-top:solid 1px;font-size:.75em;padding:.5em}.Formol_FileField__preview-name,.Formol_FileField__preview-size,.Formol_FileField__preview-type{display:block;margin:.25rem .5rem}.Formol_FileField__preview-name{line-height:1.5;max-height:1.5em;overflow:hidden;text-overflow:ellipsis;transition:max-height .25s;width:calc(100% - 1rem)}.Formol_FileField__preview-name:hover{max-height:10em}.Formol_FileField__preview--error{color:#e66767}.Formol_FileField__close{border:solid 1px;cursor:pointer;font-size:0;background-color:#fff;padding:0;position:absolute;right:-1px;top:-1px;transition:background-color .25s}.Formol_FileField__close svg{font-size:1rem;margin:.5em}.Formol_FileField__image-delete{min-height:3em}.Formol_Field--readOnly .Formol_FileField__preview{margin-left:0;margin-top:0}.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field__element[type=number],.Formol_Field--readOnly.Formol_Field--type-number .Formol_SwitchButton input[type=checkbox]+label[type=number],.Formol_SwitchButton .Formol_Field--readOnly.Formol_Field--type-number input[type=checkbox]+label[type=number],.Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_PasswordField__wrapper,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-calendar [type=number].Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_CalendarField,.Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_HTMLField,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-select-menu [type=number].Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_SelectMenuField,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-checkbox [type=number].Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_Field__label,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-radio [type=number].Formol_Field__label,.Formol_Field--type-radio .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_Field__label,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-checkbox-set [type=number].Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_FieldSet__label,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-radio-set [type=number].Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_FieldSet__label,.Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_FileField{-moz-appearance:textfield}.Formol_PasswordField{width:calc(100% - 1.75em)}.Formol_PasswordField__wrapper{cursor:text;max-width:100%;position:relative}.Formol_PasswordField__wrapper .Formol_Field__element,.Formol_PasswordField__wrapper .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_PasswordField__wrapper input[type=checkbox]+label,.Formol_PasswordField__wrapper .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_PasswordField__wrapper .Formol_CalendarField,.Formol_PasswordField__wrapper .Formol_HTMLField,.Formol_PasswordField__wrapper .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_PasswordField__wrapper .Formol_SelectMenuField,.Formol_PasswordField__wrapper .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_PasswordField__wrapper .Formol_Field__label,.Formol_PasswordField__wrapper .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_PasswordField__wrapper .Formol_Field__label,.Formol_PasswordField__wrapper .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_PasswordField__wrapper .Formol_FieldSet__label,.Formol_PasswordField__wrapper .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_PasswordField__wrapper .Formol_FieldSet__label,.Formol_PasswordField__wrapper .Formol_FileField,.Formol_PasswordField__wrapper .Formol_PasswordField__wrapper{border:0;margin:0;padding:0}.Formol_PasswordField__eye{align-items:center;background-color:rgba(0,0,0,0);border:0;cursor:pointer;display:flex;opacity:.75;padding:0;position:absolute;right:.25em;transition:opacity .2s;transform:translateY(-50%);top:50%;z-index:2}.Formol_PasswordField__eye svg{background-color:rgba(89,98,117,.65);border-radius:100%;padding:.45em}.Formol_PasswordField__eye:hover{opacity:1}.Formol_PasswordStrengthField__description{font-size:.85em;margin:.35em 0;transition:color 250ms}.Formol_PasswordStrengthField__strength{height:.15em;transition:background-color 250ms,width 250ms}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__strength{background-color:rgba(89,98,117,.65);width:10%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__description{color:rgba(89,98,117,.65)}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__strength{background-color:rgba(89,98,117,.65);width:28%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__description{color:rgba(89,98,117,.65)}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__strength{background-color:#596275;width:46%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__description{color:#596275}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-3 .Formol_PasswordStrengthField__strength{background-color:#596275;width:64%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-3 .Formol_PasswordStrengthField__description{color:#596275}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-4 .Formol_PasswordStrengthField__strength{background-color:#546de5;width:82%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-4 .Formol_PasswordStrengthField__description{color:#546de5}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-5 .Formol_PasswordStrengthField__strength{background-color:#546de5;width:100%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-5 .Formol_PasswordStrengthField__description{color:#546de5}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__strength{background-color:rgba(89,98,117,.65);width:10%}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__description{color:rgba(89,98,117,.65)}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__strength{background-color:#596275;width:55%}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__description{color:#596275}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__strength{background-color:#546de5;width:100%}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__description{color:#546de5}.Formol_PasswordStrengthField--pristine .Formol_PasswordStrengthField__strength,.Formol_PasswordStrengthField--pristine .Formol_PasswordStrengthField__description{visibility:hidden}.Formol_Field--readOnly .Formol_PasswordStrengthField__strength,.Formol_Field--readOnly .Formol_PasswordStrengthField__description{display:none}.Formol_Preview{display:block;margin:0 auto;max-height:15em;max-width:100%}.Formol_Field--type-range .Formol_Field--focus{color:#546de5}.Formol_Field--type-range .Formol_Field__element,.Formol_Field--type-range .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-range input[type=checkbox]+label,.Formol_Field--type-range .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-range .Formol_CalendarField,.Formol_Field--type-range .Formol_HTMLField,.Formol_Field--type-range .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-range .Formol_SelectMenuField,.Formol_Field--type-range .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-range .Formol_Field__label,.Formol_Field--type-range .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-range .Formol_Field__label,.Formol_Field--type-range .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-range .Formol_FieldSet__label,.Formol_Field--type-range .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-range .Formol_FieldSet__label,.Formol_Field--type-range .Formol_FileField,.Formol_Field--type-range .Formol_PasswordField__wrapper{background-color:rgba(0,0,0,0);color:inherit}.Formol_RangeField{align-items:center;display:flex;margin:1.5em 0 calc(1.5em + 1.5em)}.Formol_RangeField__range{border:0;padding:0}.Formol_RangeField__value-wrapper{color:inherit;margin:0 .5em;position:relative;transition:color .25s}.Formol_RangeField__value{left:0;text-align:center;top:100%;width:100%;position:absolute}.Formol_RangeField__min,.Formol_RangeField__max{font-size:.8em}.Formol_Field--type-switch .Formol_Field__label>.Formol_Field__element,.Formol_Field--type-switch .Formol_SwitchButton .Formol_Field__label>input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-switch .Formol_Field__label>input[type=checkbox]+label,.Formol_Field--type-switch .Formol_Field--type-calendar .Formol_Field__label>.Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-switch .Formol_Field__label>.Formol_CalendarField,.Formol_Field--type-switch .Formol_Field__label>.Formol_HTMLField,.Formol_Field--type-switch .Formol_Field--type-select-menu .Formol_Field__label>.Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-switch .Formol_Field__label>.Formol_SelectMenuField,.Formol_Field--type-switch .Formol_Field--type-checkbox .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-switch .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-switch .Formol_Field--type-radio .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-switch .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-switch .Formol_Field--type-checkbox-set .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-switch .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-switch .Formol_Field--type-radio-set .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-switch .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-switch .Formol_Field__label>.Formol_FileField,.Formol_Field--type-switch .Formol_Field__label>.Formol_PasswordField__wrapper{background-color:rgba(0,0,0,0);border:0;color:inherit;margin:.75em 0;padding:0}.Formol_Field--type-switch .Formol_Field__label--on{color:#596275}.Formol_Field--type-switch .Formol_Field__label--on input[type=checkbox]+label::after{color:#546de5}.Formol_Field--type-switch label{cursor:pointer;display:inline-block}.Formol_SwitchButton{position:relative;margin:1em 0}.Formol_SwitchButton input[type=checkbox]+label{align-items:center;border-radius:1em !important;color:inherit;display:inline-flex;flex-direction:row;height:1.5em;margin:0 .5em;padding:.25em;user-select:none;vertical-align:middle;width:3em}.Formol_SwitchButton input[type=checkbox]+label::after{background-color:currentColor;border-radius:1em;content:"";display:block;height:1em;transition:all .4s;width:1em}.Formol_SwitchButton input[type=checkbox]:checked+label::after{margin-left:1.4em}.Formol_SwitchButton input[type=checkbox]{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_Field--type-area .Formol_Field__element,.Formol_Field--type-area .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-area .Formol_CalendarField,.Formol_Field--type-area .Formol_HTMLField,.Formol_Field--type-area .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-area .Formol_SelectMenuField,.Formol_Field--type-area .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-area .Formol_Field__label,.Formol_Field--type-area .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-area .Formol_Field__label,.Formol_Field--type-area .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-area .Formol_FieldSet__label,.Formol_Field--type-area .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-area .Formol_FieldSet__label,.Formol_Field--type-area .Formol_FileField,.Formol_Field--type-area .Formol_PasswordField__wrapper,.Formol_Field--type-area .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-area input[type=checkbox]+label{max-width:100%;width:50em}
+body{color:#190e4f;font-family:"Inter",sans-serif;font-optical-sizing:auto;font-style:normal;font-variation-settings:"slnt" 0;font-weight:normal;margin:0}h1{color:#190e4f;font-weight:500}h2{color:#190e4f;font-weight:normal}h3{color:#6e57ff;font-family:"JetBrains Mono",monospace;font-weight:500}h3::before{background:#6e57ff;content:"";display:inline-block;height:2px;margin-right:.25em;vertical-align:middle;width:10px}h4{font-size:1.15rem;font-weight:normal}.flex-container{display:flex}.app-container{box-sizing:border-box;display:flex;flex-direction:column;height:100vh;padding-top:70px}.navbar{border-bottom:1px solid #ced0d4;box-sizing:border-box;display:flex;height:70px;justify-content:space-between;padding:1rem 6rem;position:fixed;top:0;width:100%;z-index:1000}.navbar-logo{width:130px}.navbar .demo-selector{align-items:center;display:flex;justify-items:center}.navbar button{background-color:#fff;border-radius:4px;border:2px solid rgba(0,0,0,0);color:#190e4f;cursor:pointer;font-size:16px;margin:0 10px;padding:.5rem 1.5rem;transition:background .3s}.navbar button:hover{background-color:#f6f8fa}.navbar button.active{border-color:#6e57ff;color:#6e57ff}.navbar .github-link{align-items:center;border-radius:4px;color:#190e4f !important;cursor:pointer;display:flex;justify-items:center;padding:.5rem 1rem;text-decoration:none}.navbar .github-link:hover{background-color:#f6f8fa}.navbar .github-icon{height:1.2em;margin-right:.5em;width:1.2em}.demo-container{box-sizing:border-box;display:grid;flex:1;grid-template-columns:1fr 40%;height:calc(100vh - 70px)}.demo-header{border-bottom:1px solid #ced0d4}.demo-header .logo-version-container{align-items:end;display:flex;flex-direction:row}.demo-header .logo-version-container .logo-baseline{margin:1em 0;width:250px}.demo-header .logo-version-container .version{color:#8d929a;font-size:1.15rem;font-weight:500;margin-bottom:.85rem;margin-left:20px}.demo-header h4{margin-top:10px}.form-container{box-sizing:border-box;overflow-y:auto;padding:1rem 6rem}.panel{background-color:#f6f8fa;box-sizing:border-box;height:100%;line-height:1.75em;margin:0;overflow-y:auto;padding:2em 4em;position:relative}pre{font-family:"JetBrains Mono",monospace;font-optical-sizing:auto;font-size:.825em;font-style:normal;font-weight:400;white-space:pre-wrap;word-wrap:break-word}.Formol_Field__title{color:#190e4f !important;font-weight:500}.Formol_Field__element,.Formol_SwitchButton input[type=checkbox]+label,.Formol_PasswordField__wrapper,.Formol_FileField,.Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_HTMLField,.Formol_Field--type-calendar .Formol_CalendarField{border-color:#ced0d4 !important}.Formol_Field__element:hover,.Formol_SwitchButton input[type=checkbox]+label:hover,.Formol_PasswordField__wrapper:hover,.Formol_FileField:hover,.Formol_Field--type-checkbox .Formol_Field__label:hover,.Formol_Field--type-radio .Formol_Field__label:hover,.Formol_Field--type-checkbox-set .Formol_FieldSet__label:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label:hover,.Formol_Field--type-select-menu .Formol_SelectMenuField:hover,.Formol_HTMLField:hover,.Formol_Field--type-calendar .Formol_CalendarField:hover,.Formol_Field__element:focus,.Formol_SwitchButton input[type=checkbox]+label:focus,.Formol_PasswordField__wrapper:focus,.Formol_FileField:focus,.Formol_Field--type-checkbox .Formol_Field__label:focus,.Formol_Field--type-radio .Formol_Field__label:focus,.Formol_Field--type-checkbox-set .Formol_FieldSet__label:focus,.Formol_Field--type-radio-set .Formol_FieldSet__label:focus,.Formol_Field--type-select-menu .Formol_SelectMenuField:focus,.Formol_HTMLField:focus,.Formol_Field--type-calendar .Formol_CalendarField:focus{border-color:#6e57ff !important}.Formol_Formol__submit,.Formol_Formol__cancel{background-color:#fff;border-radius:4px;border:2px solid #6e57ff;color:#6e57ff;height:40px;width:80px}.Formol_Formol__submit:hover,.Formol_Formol__cancel:hover{background-color:#f6f8fa !important}.Formol_PasswordField__eye svg{background-color:#ced0d4 !important}.react-datepicker__close-icon::after{background-color:#6e57ff !important}.Formol_Field,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label{color:rgba(25,14,79,.65);margin:1.5em 0;max-width:100%;width:fit-content;width:-moz-fit-content;width:-webkit-fit-content}.Formol_Field .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label .Formol_Field__label,.Formol_Field--type-radio-set .Formol_FieldSet__label .Formol_Field__label{border-color:rgba(25,14,79,.65)}.Formol_Field--required .Formol_Field__title::before{content:"* "}.Formol_Field--readOnly.Formol_Field--required .Formol_Field__title::before{display:none}.Formol_Field--readOnly .Formol_Field__title{font-size:.7em}.Formol_Field--readOnly .Formol_InputField,.Formol_Field--readOnly .Formol_TextAreaField,.Formol_Field--readOnly .Formol_PasswordField__wrapper,.Formol_Field--readOnly .Formol_FileField,.Formol_Field--readOnly .Formol_HTMLField{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#190e4f;margin:0;padding:.75em 0}.Formol_Field--readOnly .Formol_Field--type-date__element[type=date],.Formol_Field--readOnly .Formol_Field--type-time__element[type=date]{-moz-appearance:textfield;border:none;clip-path:inset(0 17px 0 0);outline:none;outline:0}.Formol_Field--disabled{opacity:.75}.Formol_Field--disabled .Formol_Field__label,.Formol_Field--disabled .Formol_Field__label *{cursor:default}.Formol_Field:hover,.Formol_Field--type-checkbox-set .Formol_FieldSet__label:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label:hover{color:#190e4f}.Formol_Field:hover .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label:hover .Formol_Field__label,.Formol_Field--type-radio-set .Formol_FieldSet__label:hover .Formol_Field__label{border-color:#190e4f}.Formol_Field--modified,.Formol_Field--modified:hover{color:#190e4f}.Formol_Field--modified .Formol_Field__label,.Formol_Field--modified:hover .Formol_Field__label{border-color:#190e4f}.Formol_Field--focus,.Formol_Field--focus:hover{color:#6e57ff}.Formol_Field--focus .Formol_Field__label,.Formol_Field--focus:hover .Formol_Field__label{border-color:#6e57ff}.Formol_Field--focus *:focus,.Formol_Field--focus:hover *:focus{outline:rgba(0,0,0,0)}.Formol_Field--error,.Formol_Field--error:hover{color:#e66767;box-shadow:none}.Formol_Field--error .Formol_Field__label,.Formol_Field--error:hover .Formol_Field__label{border-color:#e66767}.Formol_Field__label{color:inherit}.Formol_Field__title{color:inherit;display:flex;font-size:.85em;transition:color .2s;width:100%}.Formol_Field__title>svg{margin-left:.5em;min-width:1em}.Formol_Field__element,.Formol_SwitchButton input[type=checkbox]+label,.Formol_PasswordField__wrapper,.Formol_FileField,.Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_HTMLField,.Formol_Field--type-calendar .Formol_CalendarField{background-color:rgba(0,0,0,0);border:solid 1px;border-color:inherit;border-radius:.15em;box-sizing:border-box;box-shadow:none;color:#190e4f;font:inherit;margin:.5em 0;max-width:100%;padding:.75em;transition:border-color .2s}.Formol_Field__unit{display:inline-block;margin-left:.75em}.Formol_Field__error-text{font-size:.85em;font-style:italic}.Formol_Field__error-text::before{background-color:currentColor;content:"";display:inline-block;height:1px;margin-right:.5em;vertical-align:middle;width:1em}.Formol_Formol{box-shadow:-1px 0 0 rgba(0,0,0,0);box-sizing:border-box;color:#190e4f;padding-left:0;font-size:1em;transition:box-shadow 250ms 250ms,opacity 500ms ease-in,padding 250ms}.Formol_Formol--errors{box-shadow:-1px 0 0 #e66767;padding-left:1em}.Formol_Formol--loading{opacity:.5}.Formol_Formol .Formol_Formol__submit,.Formol_Formol .Formol_Formol__cancel{cursor:pointer;font:inherit}.Formol_Formol .Formol_Formol__submit:disabled,.Formol_Formol .Formol_Formol__cancel:disabled{cursor:not-allowed}.Formol_Formol .Formol_Formol__submit{margin-right:1.5em;margin-top:2em}.Formol_Formol .Formol_Formol__cancel{background:0;border:0;font-size:.85em;margin-bottom:3em;padding:0}.Formol_Inliner{margin:-0.75em 0}.Formol_Inliner .Formol_Field,.Formol_Inliner .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Inliner .Formol_FieldSet__label,.Formol_Inliner .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Inliner .Formol_FieldSet__label{display:inline-block;margin:.75em 0;vertical-align:top}.Formol_Inliner .Formol_Field:not(:last-of-type),.Formol_Inliner .Formol_Field--type-checkbox-set .Formol_FieldSet__label:not(:last-of-type),.Formol_Field--type-checkbox-set .Formol_Inliner .Formol_FieldSet__label:not(:last-of-type),.Formol_Inliner .Formol_Field--type-radio-set .Formol_FieldSet__label:not(:last-of-type),.Formol_Field--type-radio-set .Formol_Inliner .Formol_FieldSet__label:not(:last-of-type){margin-right:1em}.Formol_Field--type-calendar .Formol_CalendarField__field{border:0;margin:0;padding:0}.Formol_Field--readOnly .Formol_CalendarField{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#190e4f;margin:0;padding:.75em 0}.Formol_HTMLField{cursor:text;padding:0;position:relative;width:50em}.Formol_HTMLField__hidden-input{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_HTMLField .quill{border-color:inherit}.Formol_HTMLField .quill .ql-container{border-bottom-color:inherit;margin:0;border:none}.Formol_HTMLField .quill .ql-container .ql-editor{max-height:50vh;min-height:8em;overflow:auto}.Formol_HTMLField .quill .ql-toolbar{border-top:0;border-left:0;border-right:0;border-bottom-color:inherit}.Formol_HTMLField img{max-width:100%}.Formol_Field--readOnly .ql-editor,.Formol_Field--disabled .ql-editor{min-height:auto}.Formol_Field--readOnly .ql-toolbar,.Formol_Field--disabled .ql-toolbar{display:none}.Formol_Field--type-select-menu{max-width:100%;width:25em}.Formol_Field--type-select-menu .Formol_SelectMenuField{box-shadow:none;color:inherit;padding:0;position:relative}.Formol_Field--type-select-menu .Formol_SelectMenuField__hidden-input{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_Field--type-select-menu .Formol_SelectMenuField__control{border:0;box-shadow:none}.Formol_Field--type-select-menu .Formol_SelectMenuField__menu{border:solid 1px #6e57ff;box-shadow:none}.Formol_Field--readOnly .Select-control{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#190e4f;margin:0;padding:.75em 0}.Formol_Field--readOnly .Select-value{padding:0 !important}.Formol_Field--readOnly .Select.is-disabled>.Select-control{background-color:rgba(0,0,0,0)}.Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet__label{align-items:center;color:rgba(25,14,79,.65);cursor:pointer;display:inline-flex;transition:color .2s,border-color .2s}.Formol_Field--type-checkbox .Formol_Field__label--on,.Formol_Field--type-checkbox .Formol_Field__label--on:hover,.Formol_Field--type-radio .Formol_Field__label--on,.Formol_Field--type-radio .Formol_Field__label--on:hover,.Formol_Field--type-checkbox-set .Formol_FieldSet__label--on,.Formol_Field--type-checkbox-set .Formol_FieldSet__label--on:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label--on,.Formol_Field--type-radio-set .Formol_FieldSet__label--on:hover{color:#190e4f}.Formol_Field--type-checkbox .Formol_Field__title,.Formol_Field--type-radio .Formol_Field__title,.Formol_Field--type-checkbox-set .Formol_FieldSet__title,.Formol_Field--type-radio-set .Formol_FieldSet__title{font-size:1em;margin-left:.5em;order:1}.Formol_Field--type-checkbox-set .Formol_FieldSet,.Formol_Field--type-radio-set .Formol_FieldSet{border:0;margin:.5em 0;padding:0}.Formol_Field--type-checkbox-set .Formol_FieldSet__label--focus,.Formol_Field--type-checkbox-set .Formol_FieldSet__label--focus:hover,.Formol_Field--type-radio-set .Formol_FieldSet__label--focus,.Formol_Field--type-radio-set .Formol_FieldSet__label--focus:hover{color:#6e57ff}.Formol_Field--type-checkbox-set .Formol_FieldSet .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_FieldSet .Formol_FieldSet__label{margin:0 calc(1.5em/2) calc(1.5em/2) 0}.Formol_BooleanField{accent-color:#6e57ff;margin:0}.Formol_Field--type-checkbox.Formol_Field--readOnly .Formol_Field__label,.Formol_Field--type-radio.Formol_Field--readOnly .Formol_Field__label,.Formol_Field--type-checkbox-set.Formol_Field--readOnly .Formol_FieldSet__label,.Formol_Field--type-radio-set.Formol_Field--readOnly .Formol_FieldSet__label{display:none}.Formol_Field--type-checkbox.Formol_Field--readOnly .Formol_Field__label--on,.Formol_Field--type-radio.Formol_Field--readOnly .Formol_Field__label--on,.Formol_Field--type-checkbox-set.Formol_Field--readOnly .Formol_FieldSet__label--on,.Formol_Field--type-radio-set.Formol_Field--readOnly .Formol_FieldSet__label--on{background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#190e4f;margin:0;padding:.75em 0;display:inline-flex;margin:0 calc(1.5em/2) calc(1.5em/2) 0}.Formol_Field--type-checkbox.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-radio.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-checkbox-set.Formol_Field--disabled .Formol_FieldSet__label,.Formol_Field--type-radio-set.Formol_Field--disabled .Formol_FieldSet__label{cursor:default}.Formol_Field--type-color .Formol_Field__element,.Formol_Field--type-color .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-color input[type=checkbox]+label,.Formol_Field--type-color .Formol_PasswordField__wrapper,.Formol_Field--type-color .Formol_FileField,.Formol_Field--type-color .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-color .Formol_CalendarField,.Formol_Field--type-color .Formol_HTMLField,.Formol_Field--type-color .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-color .Formol_SelectMenuField,.Formol_Field--type-color .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-color .Formol_Field__label,.Formol_Field--type-color .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-color .Formol_Field__label,.Formol_Field--type-color .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-color .Formol_FieldSet__label,.Formol_Field--type-color .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-color .Formol_FieldSet__label{box-sizing:content-box;cursor:pointer;height:1.5em;width:1.5em}.Formol_Field--type-color.Formol_Field--disabled .Formol_Field__element,.Formol_Field--type-color.Formol_Field--disabled .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-color.Formol_Field--disabled input[type=checkbox]+label,.Formol_Field--type-color.Formol_Field--disabled .Formol_PasswordField__wrapper,.Formol_Field--type-color.Formol_Field--disabled .Formol_FileField,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-color.Formol_Field--disabled .Formol_CalendarField,.Formol_Field--type-color.Formol_Field--disabled .Formol_HTMLField,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-color.Formol_Field--disabled .Formol_SelectMenuField,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-color.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-color.Formol_Field--disabled .Formol_Field__label,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-color.Formol_Field--disabled .Formol_FieldSet__label,.Formol_Field--type-color.Formol_Field--disabled .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-color.Formol_Field--disabled .Formol_FieldSet__label{cursor:default}.Formol_Field--type-file{max-width:100%;width:50em}.Formol_FileField{border-style:dashed;color:inherit;padding:0;position:relative;width:100%}.Formol_FileField__hidden-input{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_FileField__dropzone>input[type=file]{display:block !important;bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_FileField__placeholder{align-items:flex-start;cursor:pointer;display:flex;flex-wrap:wrap;transition:color .2s;width:100%}.Formol_FileField__placeholder>svg{display:block;font-size:2em;margin:1em auto .1em;width:100%}.Formol_FileField__placeholder>span{display:block;font-size:.85em;margin:0 auto 3em}.Formol_FileField__previews{align-items:flex-start;display:flex;flex-wrap:wrap}.Formol_FileField__preview{border:solid 1px;margin:1em;min-width:8em;max-width:10em;position:relative;color:#190e4f}.Formol_FileField__preview img{max-width:100%}.Formol_FileField__preview-caption{box-sizing:border-box;border-top:solid 1px;font-size:.75em;padding:.5em}.Formol_FileField__preview-name,.Formol_FileField__preview-size,.Formol_FileField__preview-type{display:block;margin:.25rem .5rem}.Formol_FileField__preview-name{line-height:1.5;max-height:1.5em;overflow:hidden;text-overflow:ellipsis;transition:max-height .25s;width:calc(100% - 1rem)}.Formol_FileField__preview-name:hover{max-height:10em}.Formol_FileField__preview--error{color:#e66767}.Formol_FileField__close{border:solid 1px;cursor:pointer;font-size:0;background-color:#fff;padding:0;position:absolute;right:-1px;top:-1px;transition:background-color .25s}.Formol_FileField__close svg{font-size:1rem;margin:.5em}.Formol_FileField__image-delete{min-height:3em}.Formol_Field--readOnly .Formol_FileField__preview{margin-left:0;margin-top:0}.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field__element[type=number],.Formol_Field--readOnly.Formol_Field--type-number .Formol_SwitchButton input[type=checkbox]+label[type=number],.Formol_SwitchButton .Formol_Field--readOnly.Formol_Field--type-number input[type=checkbox]+label[type=number],.Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_PasswordField__wrapper,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-calendar [type=number].Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_CalendarField,.Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_HTMLField,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-select-menu [type=number].Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_SelectMenuField,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-checkbox [type=number].Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_Field__label,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-radio [type=number].Formol_Field__label,.Formol_Field--type-radio .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_Field__label,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-checkbox-set [type=number].Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_FieldSet__label,.Formol_Field--readOnly.Formol_Field--type-number .Formol_Field--type-radio-set [type=number].Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_FieldSet__label,.Formol_Field--readOnly.Formol_Field--type-number [type=number].Formol_FileField{-moz-appearance:textfield}.Formol_PasswordField{width:calc(100% - 1.75em)}.Formol_PasswordField__wrapper{cursor:text;max-width:100%;position:relative}.Formol_PasswordField__wrapper .Formol_Field__element,.Formol_PasswordField__wrapper .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_PasswordField__wrapper input[type=checkbox]+label,.Formol_PasswordField__wrapper .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_PasswordField__wrapper .Formol_CalendarField,.Formol_PasswordField__wrapper .Formol_HTMLField,.Formol_PasswordField__wrapper .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_PasswordField__wrapper .Formol_SelectMenuField,.Formol_PasswordField__wrapper .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_PasswordField__wrapper .Formol_Field__label,.Formol_PasswordField__wrapper .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_PasswordField__wrapper .Formol_Field__label,.Formol_PasswordField__wrapper .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_PasswordField__wrapper .Formol_FieldSet__label,.Formol_PasswordField__wrapper .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_PasswordField__wrapper .Formol_FieldSet__label,.Formol_PasswordField__wrapper .Formol_FileField,.Formol_PasswordField__wrapper .Formol_PasswordField__wrapper{border:0;margin:0;padding:0}.Formol_PasswordField__eye{align-items:center;background-color:rgba(0,0,0,0);border:0;cursor:pointer;display:flex;opacity:.75;padding:0;position:absolute;right:.25em;transition:opacity .2s;transform:translateY(-50%);top:50%;z-index:2}.Formol_PasswordField__eye svg{background-color:rgba(25,14,79,.65);border-radius:100%;padding:.45em}.Formol_PasswordField__eye:hover{opacity:1}.Formol_PasswordStrengthField__description{font-size:.85em;margin:.35em 0;transition:color 250ms}.Formol_PasswordStrengthField__strength{height:.15em;transition:background-color 250ms,width 250ms}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__strength{background-color:rgba(25,14,79,.65);width:10%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__description{color:rgba(25,14,79,.65)}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__strength{background-color:rgba(25,14,79,.65);width:28%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__description{color:rgba(25,14,79,.65)}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__strength{background-color:#190e4f;width:46%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__description{color:#190e4f}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-3 .Formol_PasswordStrengthField__strength{background-color:#190e4f;width:64%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-3 .Formol_PasswordStrengthField__description{color:#190e4f}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-4 .Formol_PasswordStrengthField__strength{background-color:#6e57ff;width:82%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-4 .Formol_PasswordStrengthField__description{color:#6e57ff}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-5 .Formol_PasswordStrengthField__strength{background-color:#6e57ff;width:100%}.Formol_PasswordStrengthField__default .Formol_PasswordStrengthField--score-5 .Formol_PasswordStrengthField__description{color:#6e57ff}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__strength{background-color:rgba(25,14,79,.65);width:10%}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-0 .Formol_PasswordStrengthField__description{color:rgba(25,14,79,.65)}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__strength{background-color:#190e4f;width:55%}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-1 .Formol_PasswordStrengthField__description{color:#190e4f}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__strength{background-color:#6e57ff;width:100%}.Formol_PasswordStrengthField__basic .Formol_PasswordStrengthField--score-2 .Formol_PasswordStrengthField__description{color:#6e57ff}.Formol_PasswordStrengthField--pristine .Formol_PasswordStrengthField__strength,.Formol_PasswordStrengthField--pristine .Formol_PasswordStrengthField__description{visibility:hidden}.Formol_Field--readOnly .Formol_PasswordStrengthField__strength,.Formol_Field--readOnly .Formol_PasswordStrengthField__description{display:none}.Formol_Preview{display:block;margin:0 auto;max-height:15em;max-width:100%}.Formol_Field--type-range .Formol_Field--focus{color:#6e57ff}.Formol_Field--type-range .Formol_Field__element,.Formol_Field--type-range .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-range input[type=checkbox]+label,.Formol_Field--type-range .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-range .Formol_CalendarField,.Formol_Field--type-range .Formol_HTMLField,.Formol_Field--type-range .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-range .Formol_SelectMenuField,.Formol_Field--type-range .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-range .Formol_Field__label,.Formol_Field--type-range .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-range .Formol_Field__label,.Formol_Field--type-range .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-range .Formol_FieldSet__label,.Formol_Field--type-range .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-range .Formol_FieldSet__label,.Formol_Field--type-range .Formol_FileField,.Formol_Field--type-range .Formol_PasswordField__wrapper{background-color:rgba(0,0,0,0);color:inherit}.Formol_RangeField{align-items:center;display:flex;margin:1.5em 0 calc(1.5em + 1.5em)}.Formol_RangeField__range{border:0;padding:0}.Formol_RangeField__value-wrapper{color:inherit;margin:0 .5em;position:relative;transition:color .25s}.Formol_RangeField__value{left:0;text-align:center;top:100%;width:100%;position:absolute}.Formol_RangeField__min,.Formol_RangeField__max{font-size:.8em}.Formol_Field--type-switch .Formol_Field__label>.Formol_Field__element,.Formol_Field--type-switch .Formol_SwitchButton .Formol_Field__label>input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-switch .Formol_Field__label>input[type=checkbox]+label,.Formol_Field--type-switch .Formol_Field--type-calendar .Formol_Field__label>.Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-switch .Formol_Field__label>.Formol_CalendarField,.Formol_Field--type-switch .Formol_Field__label>.Formol_HTMLField,.Formol_Field--type-switch .Formol_Field--type-select-menu .Formol_Field__label>.Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-switch .Formol_Field__label>.Formol_SelectMenuField,.Formol_Field--type-switch .Formol_Field--type-checkbox .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-switch .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-switch .Formol_Field--type-radio .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-switch .Formol_Field__label>.Formol_Field__label,.Formol_Field--type-switch .Formol_Field--type-checkbox-set .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-switch .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-switch .Formol_Field--type-radio-set .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-switch .Formol_Field__label>.Formol_FieldSet__label,.Formol_Field--type-switch .Formol_Field__label>.Formol_FileField,.Formol_Field--type-switch .Formol_Field__label>.Formol_PasswordField__wrapper{background-color:rgba(0,0,0,0);border:0;color:inherit;margin:.75em 0;padding:0}.Formol_Field--type-switch .Formol_Field__label--on{color:#190e4f}.Formol_Field--type-switch .Formol_Field__label--on input[type=checkbox]+label::after{color:#6e57ff}.Formol_Field--type-switch label{cursor:pointer;display:inline-block}.Formol_SwitchButton{position:relative;margin:1em 0}.Formol_SwitchButton input[type=checkbox]+label{align-items:center;border-radius:1em !important;color:inherit;display:inline-flex;flex-direction:row;height:1.5em;margin:0 .5em;padding:.25em;user-select:none;vertical-align:middle;width:3em}.Formol_SwitchButton input[type=checkbox]+label::after{background-color:currentColor;border-radius:1em;content:"";display:block;height:1em;transition:all .4s;width:1em}.Formol_SwitchButton input[type=checkbox]:checked+label::after{margin-left:1.4em}.Formol_SwitchButton input[type=checkbox]{bottom:0;height:0;left:0;margin:auto !important;opacity:0;position:absolute;right:0;width:0;z-index:-1}.Formol_Field--type-area .Formol_Field__element,.Formol_Field--type-area .Formol_Field--type-calendar .Formol_CalendarField,.Formol_Field--type-calendar .Formol_Field--type-area .Formol_CalendarField,.Formol_Field--type-area .Formol_HTMLField,.Formol_Field--type-area .Formol_Field--type-select-menu .Formol_SelectMenuField,.Formol_Field--type-select-menu .Formol_Field--type-area .Formol_SelectMenuField,.Formol_Field--type-area .Formol_Field--type-checkbox .Formol_Field__label,.Formol_Field--type-checkbox .Formol_Field--type-area .Formol_Field__label,.Formol_Field--type-area .Formol_Field--type-radio .Formol_Field__label,.Formol_Field--type-radio .Formol_Field--type-area .Formol_Field__label,.Formol_Field--type-area .Formol_Field--type-checkbox-set .Formol_FieldSet__label,.Formol_Field--type-checkbox-set .Formol_Field--type-area .Formol_FieldSet__label,.Formol_Field--type-area .Formol_Field--type-radio-set .Formol_FieldSet__label,.Formol_Field--type-radio-set .Formol_Field--type-area .Formol_FieldSet__label,.Formol_Field--type-area .Formol_FileField,.Formol_Field--type-area .Formol_PasswordField__wrapper,.Formol_Field--type-area .Formol_SwitchButton input[type=checkbox]+label,.Formol_SwitchButton .Formol_Field--type-area input[type=checkbox]+label{max-width:100%;width:50em}
+/* DayPicker styles */
+
+.DayPicker {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.DayPicker-wrapper {
+  position: relative;
+
+  flex-direction: row;
+  padding-bottom: 1em;
+
+  -webkit-user-select: none;
+
+     -moz-user-select: none;
+
+      -ms-user-select: none;
+
+          user-select: none;
+}
+
+.DayPicker-Months {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.DayPicker-Month {
+  display: table;
+  margin: 0 1em;
+  margin-top: 1em;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  -webkit-user-select: none;
+
+     -moz-user-select: none;
+
+      -ms-user-select: none;
+
+          user-select: none;
+}
+
+.DayPicker-NavBar {
+}
+
+.DayPicker-NavButton {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  left: auto;
+
+  display: inline-block;
+  margin-top: 2px;
+  width: 1.25em;
+  height: 1.25em;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  color: #8B9898;
+  cursor: pointer;
+}
+
+.DayPicker-NavButton:hover {
+  opacity: 0.8;
+}
+
+.DayPicker-NavButton--prev {
+  margin-right: 1.5em;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAAABGdBTUEAALGPC/xhBQAAAVVJREFUWAnN2G0KgjAYwPHpGfRkaZeqvgQaK+hY3SUHrk1YzNLay/OiEFp92I+/Mp2F2Mh2lLISWnflFjzH263RQjzMZ19wgs73ez0o1WmtW+dgA01VxrE3p6l2GLsnBy1VYQOtVSEH/atCCgqpQgKKqYIOiq2CBkqtggLKqQIKgqgCBjpJ2Y5CdJ+zrT9A7HHSTA1dxUdHgzCqJIEwq0SDsKsEg6iqBIEoq/wEcVRZBXFV+QJxV5mBtlDFB5VjYTaGZ2sf4R9PM7U9ZU+lLuaetPP/5Die3ToO1+u+MKtHs06qODB2zBnI/jBd4MPQm1VkY79Tb18gB+C62FdBFsZR6yeIo1YQiLJWMIiqVjQIu1YSCLNWFgijVjYIuhYYCKoWKAiiFgoopxYaKLUWOii2FgkophYp6F3r42W5A9s9OcgNvva8xQaysKXlFytoqdYmQH6tF3toSUo0INq9AAAAAElFTkSuQmCC');
+}
+
+.DayPicker-NavButton--next {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAAABGdBTUEAALGPC/xhBQAAAXRJREFUWAnN119ugjAcwPHWzJ1gnmxzB/BBE0n24m4xfNkTaOL7wOtsl3AXMMb+Vjaa1BG00N8fSEibPpAP3xAKKs2yjzTPH9RAjhEo9WzPr/Vm8zgE0+gXATAxxuxtqeJ9t5tIwv5AtQAApsfT6TPdbp+kUBcgVwvO51KqVhMkXKsVJFXrOkigVhCIs1Y4iKlWZxB1rX4gwlpRIIpa8SDkWmggrFq4IIRaJKCYWnSgnrXIQV1r8YD+1Vrn+bReagysIFfLABRt31v8oBu1xEBttfRbltmfjgEcWh9snUS2kNdBK6WN1vrOWxObWsz+fjxevsxmB1GQDfINWiev83nhaoiB/CoOU438oPrhXS0WpQ9xc1ZQWxWHqUYe0I0qrKCQKjygDlXIQV2r0IF6ViEBxVTBBSFUQQNhVYkHIVeJAtkNsbQ7c1LtzP6FsObhb2rCKv7NBIGoq4SDmKoEgTirXAcJVGkFSVVpgoSrXICGUMUH/QBZNSUy5XWUhwAAAABJRU5ErkJggg==');
+}
+
+.DayPicker-NavButton--interactionDisabled {
+  display: none;
+}
+
+.DayPicker-Caption {
+  display: table-caption;
+  margin-bottom: 0.5em;
+  padding: 0 0.5em;
+  text-align: left;
+}
+
+.DayPicker-Caption > div {
+  font-weight: 500;
+  font-size: 1.15em;
+}
+
+.DayPicker-Weekdays {
+  display: table-header-group;
+  margin-top: 1em;
+}
+
+.DayPicker-WeekdaysRow {
+  display: table-row;
+}
+
+.DayPicker-Weekday {
+  display: table-cell;
+  padding: 0.5em;
+  color: #8B9898;
+  text-align: center;
+  font-size: 0.875em;
+}
+
+.DayPicker-Weekday abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.DayPicker-Body {
+  display: table-row-group;
+}
+
+.DayPicker-Week {
+  display: table-row;
+}
+
+.DayPicker-Day {
+  display: table-cell;
+  padding: 0.5em;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.DayPicker-WeekNumber {
+  display: table-cell;
+  padding: 0.5em;
+  min-width: 1em;
+  border-right: 1px solid #EAECEC;
+  color: #8B9898;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.DayPicker--interactionDisabled .DayPicker-Day {
+  cursor: default;
+}
+
+.DayPicker-Footer {
+  padding-top: 0.5em;
+}
+
+.DayPicker-TodayButton {
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  color: #4A90E2;
+  font-size: 0.875em;
+  cursor: pointer;
+}
+
+/* Default modifiers */
+
+.DayPicker-Day--today {
+  color: #D0021B;
+  font-weight: 700;
+}
+
+.DayPicker-Day--outside {
+  color: #8B9898;
+  cursor: default;
+}
+
+.DayPicker-Day--disabled {
+  color: #DCE0E0;
+  cursor: default;
+  /* background-color: #eff1f1; */
+}
+
+/* Example modifiers */
+
+.DayPicker-Day--sunday {
+  background-color: #F7F8F8;
+}
+
+.DayPicker-Day--sunday:not(.DayPicker-Day--today) {
+  color: #DCE0E0;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  position: relative;
+
+  background-color: #4A90E2;
+  color: #F0F8FF;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside):hover {
+  background-color: #51A0FA;
+}
+
+.DayPicker:not(.DayPicker--interactionDisabled)
+  .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+  background-color: #F0F8FF;
+}
+
+/* DayPickerInput */
+
+.DayPickerInput {
+  display: inline-block;
+}
+
+.DayPickerInput-OverlayWrapper {
+  position: relative;
+}
+
+.DayPickerInput-Overlay {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  margin-left: -8px;
+  position: absolute;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  box-sizing: content-box;
+  position: absolute;
+  border: 8px solid transparent;
+  height: 0;
+  width: 1px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  content: "";
+  z-index: -1;
+  border-width: 8px;
+  left: -8px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  top: 0;
+  margin-top: -8px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  border-top: none;
+  border-bottom-color: #f0f0f0;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  top: -1px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  bottom: 0;
+  margin-bottom: -8px;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  border-bottom: none;
+  border-top-color: #fff;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  bottom: -1px;
+  border-top-color: #aeaeae;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+}
+
+.react-datepicker {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.react-datepicker--time-only .react-datepicker__triangle {
+  left: 35px;
+}
+
+.react-datepicker--time-only .react-datepicker__time-container {
+  border-left: 0;
+}
+
+.react-datepicker--time-only .react-datepicker__time,
+.react-datepicker--time-only .react-datepicker__time-box {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__triangle {
+  position: absolute;
+  left: 50px;
+}
+
+.react-datepicker-popper {
+  z-index: 1;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] {
+  margin-top: 10px;
+}
+
+.react-datepicker-popper[data-placement="bottom-end"] .react-datepicker__triangle, .react-datepicker-popper[data-placement="top-end"] .react-datepicker__triangle {
+  left: auto;
+  right: 50px;
+}
+
+.react-datepicker-popper[data-placement^="top"] {
+  margin-bottom: 10px;
+}
+
+.react-datepicker-popper[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.react-datepicker-popper[data-placement^="right"] .react-datepicker__triangle {
+  left: auto;
+  right: 42px;
+}
+
+.react-datepicker-popper[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.react-datepicker-popper[data-placement^="left"] .react-datepicker__triangle {
+  left: 42px;
+  right: auto;
+}
+
+.react-datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 0.3rem;
+  padding-top: 8px;
+  position: relative;
+}
+
+.react-datepicker__header--time {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.react-datepicker__header--time:not(.react-datepicker__header--time--only) {
+  border-top-left-radius: 0;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-dropdown-container--select,
+.react-datepicker__month-dropdown-container--select,
+.react-datepicker__month-year-dropdown-container--select,
+.react-datepicker__year-dropdown-container--scroll,
+.react-datepicker__month-dropdown-container--scroll,
+.react-datepicker__month-year-dropdown-container--scroll {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.944rem;
+}
+
+.react-datepicker-time__header {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation {
+  background: none;
+  line-height: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 0;
+  padding: 0;
+  border: 0.45rem solid transparent;
+  z-index: 1;
+  height: 10px;
+  width: 10px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation--previous {
+  left: 10px;
+  border-right-color: #ccc;
+}
+
+.react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--previous--disabled, .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--next {
+  right: 10px;
+  border-left-color: #ccc;
+}
+
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: 95px;
+}
+
+.react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--next--disabled, .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--years {
+  position: relative;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__navigation--years-previous {
+  top: 4px;
+  border-top-color: #ccc;
+}
+
+.react-datepicker__navigation--years-previous:hover {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--years-upcoming {
+  top: -4px;
+  border-bottom-color: #ccc;
+}
+
+.react-datepicker__navigation--years-upcoming:hover {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__month-container {
+  float: left;
+}
+
+.react-datepicker__year {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__year-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+}
+
+.react-datepicker__month {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__month .react-datepicker__month-text,
+.react-datepicker__month .react-datepicker__quarter-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+}
+
+.react-datepicker__input-time-container {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin: 5px 0 10px 15px;
+  text-align: left;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__caption {
+  display: inline-block;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container {
+  display: inline-block;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input {
+  width: auto;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-inner-spin-button,
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"] {
+  -moz-appearance: textfield;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__delimiter {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.react-datepicker__time-container {
+  float: right;
+  border-left: 1px solid #aeaeae;
+  width: 85px;
+}
+
+.react-datepicker__time-container--with-today-button {
+  display: inline;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  position: absolute;
+  right: -72px;
+  top: 0;
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  position: relative;
+  background: white;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 85px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+  list-style: none;
+  margin: 0;
+  height: calc(195px + (1.7rem / 2));
+  overflow-y: scroll;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  height: 30px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+  background-color: #216ba5;
+  color: white;
+  font-weight: bold;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
+  color: #ccc;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__week-number {
+  color: #ccc;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable {
+  cursor: pointer;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  white-space: nowrap;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #000;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__month--selected, .react-datepicker__month--in-selecting-range, .react-datepicker__month--in-range,
+.react-datepicker__quarter--selected,
+.react-datepicker__quarter--in-selecting-range,
+.react-datepicker__quarter--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__month--selected:hover, .react-datepicker__month--in-selecting-range:hover, .react-datepicker__month--in-range:hover,
+.react-datepicker__quarter--selected:hover,
+.react-datepicker__quarter--in-selecting-range:hover,
+.react-datepicker__quarter--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__month--disabled,
+.react-datepicker__quarter--disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+.react-datepicker__month--disabled:hover,
+.react-datepicker__quarter--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__day,
+.react-datepicker__month-text,
+.react-datepicker__quarter-text,
+.react-datepicker__year-text {
+  cursor: pointer;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day--today,
+.react-datepicker__month-text--today,
+.react-datepicker__quarter-text--today,
+.react-datepicker__year-text--today {
+  font-weight: bold;
+}
+
+.react-datepicker__day--highlighted,
+.react-datepicker__month-text--highlighted,
+.react-datepicker__quarter-text--highlighted,
+.react-datepicker__year-text--highlighted {
+  border-radius: 0.3rem;
+  background-color: #3dcc4a;
+  color: #fff;
+}
+
+.react-datepicker__day--highlighted:hover,
+.react-datepicker__month-text--highlighted:hover,
+.react-datepicker__quarter-text--highlighted:hover,
+.react-datepicker__year-text--highlighted:hover {
+  background-color: #32be3f;
+}
+
+.react-datepicker__day--highlighted-custom-1,
+.react-datepicker__month-text--highlighted-custom-1,
+.react-datepicker__quarter-text--highlighted-custom-1,
+.react-datepicker__year-text--highlighted-custom-1 {
+  color: magenta;
+}
+
+.react-datepicker__day--highlighted-custom-2,
+.react-datepicker__month-text--highlighted-custom-2,
+.react-datepicker__quarter-text--highlighted-custom-2,
+.react-datepicker__year-text--highlighted-custom-2 {
+  color: green;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover,
+.react-datepicker__month-text--selected:hover,
+.react-datepicker__month-text--in-selecting-range:hover,
+.react-datepicker__month-text--in-range:hover,
+.react-datepicker__quarter-text--selected:hover,
+.react-datepicker__quarter-text--in-selecting-range:hover,
+.react-datepicker__quarter-text--in-range:hover,
+.react-datepicker__year-text--selected:hover,
+.react-datepicker__year-text--in-selecting-range:hover,
+.react-datepicker__year-text--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  border-radius: 0.3rem;
+  background-color: #2a87d0;
+  color: #fff;
+}
+
+.react-datepicker__day--keyboard-selected:hover,
+.react-datepicker__month-text--keyboard-selected:hover,
+.react-datepicker__quarter-text--keyboard-selected:hover,
+.react-datepicker__year-text--keyboard-selected:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--in-selecting-range ,
+.react-datepicker__month-text--in-selecting-range ,
+.react-datepicker__quarter-text--in-selecting-range ,
+.react-datepicker__year-text--in-selecting-range {
+  background-color: rgba(33, 107, 165, 0.5);
+}
+
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__month-text--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__quarter-text--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__year-text--in-range {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.react-datepicker__day--disabled,
+.react-datepicker__month-text--disabled,
+.react-datepicker__quarter-text--disabled,
+.react-datepicker__year-text--disabled {
+  cursor: default;
+  color: #ccc;
+}
+
+.react-datepicker__day--disabled:hover,
+.react-datepicker__month-text--disabled:hover,
+.react-datepicker__quarter-text--disabled:hover,
+.react-datepicker__year-text--disabled:hover {
+  background-color: transparent;
+}
+
+.react-datepicker__month-text.react-datepicker__month--selected:hover, .react-datepicker__month-text.react-datepicker__month--in-range:hover, .react-datepicker__month-text.react-datepicker__quarter--selected:hover, .react-datepicker__month-text.react-datepicker__quarter--in-range:hover,
+.react-datepicker__quarter-text.react-datepicker__month--selected:hover,
+.react-datepicker__quarter-text.react-datepicker__month--in-range:hover,
+.react-datepicker__quarter-text.react-datepicker__quarter--selected:hover,
+.react-datepicker__quarter-text.react-datepicker__quarter--in-range:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover {
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__year-read-view:hover,
+.react-datepicker__month-read-view:hover,
+.react-datepicker__month-year-read-view:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-top-color: #ccc;
+  float: right;
+  margin-left: 20px;
+  top: 8px;
+  position: relative;
+  border-width: 0.45rem;
+}
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+  background-color: #f0f0f0;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 30px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 0.3rem;
+  border: 1px solid #aeaeae;
+}
+
+.react-datepicker__year-dropdown:hover,
+.react-datepicker__month-dropdown:hover,
+.react-datepicker__month-year-dropdown:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-dropdown--scrollable,
+.react-datepicker__month-dropdown--scrollable,
+.react-datepicker__month-year-dropdown--scrollable {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.react-datepicker__year-option,
+.react-datepicker__month-option,
+.react-datepicker__month-year-option {
+  line-height: 20px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__year-option:first-of-type,
+.react-datepicker__month-option:first-of-type,
+.react-datepicker__month-year-option:first-of-type {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:last-of-type,
+.react-datepicker__month-option:last-of-type,
+.react-datepicker__month-year-option:last-of-type {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  background-color: #ccc;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-option--selected,
+.react-datepicker__month-option--selected,
+.react-datepicker__month-year-option--selected {
+  position: absolute;
+  left: 15px;
+}
+
+.react-datepicker__close-icon {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0px 6px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.react-datepicker__close-icon::after {
+  cursor: pointer;
+  background-color: #216ba5;
+  color: #fff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  content: "\00d7";
+}
+
+.react-datepicker__today-button {
+  background: #f0f0f0;
+  border-top: 1px solid #aeaeae;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  clear: left;
+}
+
+.react-datepicker__portal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 2147483647;
+}
+
+.react-datepicker__portal .react-datepicker__day-name,
+.react-datepicker__portal .react-datepicker__day,
+.react-datepicker__portal .react-datepicker__time-name {
+  width: 3rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 400px), (max-height: 550px) {
+  .react-datepicker__portal .react-datepicker__day-name,
+  .react-datepicker__portal .react-datepicker__day,
+  .react-datepicker__portal .react-datepicker__time-name {
+    width: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.react-datepicker__portal .react-datepicker__current-month,
+.react-datepicker__portal .react-datepicker-time__header {
+  font-size: 1.44rem;
+}
+
+.react-datepicker__portal .react-datepicker__navigation {
+  border: 0.81rem solid transparent;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous--disabled, .react-datepicker__portal .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next {
+  border-left-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next--disabled, .react-datepicker__portal .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/*!
+ * Quill Editor v1.3.7
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+.ql-container {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  margin: 0px;
+  position: relative;
+}
+.ql-container.ql-disabled .ql-tooltip {
+  visibility: hidden;
+}
+.ql-container.ql-disabled .ql-editor ul[data-checked] > li::before {
+  pointer-events: none;
+}
+.ql-clipboard {
+  left: -100000px;
+  height: 1px;
+  overflow-y: hidden;
+  position: absolute;
+  top: 50%;
+}
+.ql-clipboard p {
+  margin: 0;
+  padding: 0;
+}
+.ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.ql-editor > * {
+  cursor: text;
+}
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol,
+.ql-editor ul {
+  padding-left: 1.5em;
+}
+.ql-editor ol > li,
+.ql-editor ul > li {
+  list-style-type: none;
+}
+.ql-editor ul > li::before {
+  content: '\2022';
+}
+.ql-editor ul[data-checked=true],
+.ql-editor ul[data-checked=false] {
+  pointer-events: none;
+}
+.ql-editor ul[data-checked=true] > li *,
+.ql-editor ul[data-checked=false] > li * {
+  pointer-events: all;
+}
+.ql-editor ul[data-checked=true] > li::before,
+.ql-editor ul[data-checked=false] > li::before {
+  color: #777;
+  cursor: pointer;
+  pointer-events: all;
+}
+.ql-editor ul[data-checked=true] > li::before {
+  content: '\2611';
+}
+.ql-editor ul[data-checked=false] > li::before {
+  content: '\2610';
+}
+.ql-editor li::before {
+  display: inline-block;
+  white-space: nowrap;
+  width: 1.2em;
+}
+.ql-editor li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+.ql-editor li.ql-direction-rtl::before {
+  margin-left: 0.3em;
+  margin-right: -1.5em;
+}
+.ql-editor ol li:not(.ql-direction-rtl),
+.ql-editor ul li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+.ql-editor ol li.ql-direction-rtl,
+.ql-editor ul li.ql-direction-rtl {
+  padding-right: 1.5em;
+}
+.ql-editor ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+.ql-editor ol li:before {
+  content: counter(list-0, decimal) '. ';
+}
+.ql-editor ol li.ql-indent-1 {
+  counter-increment: list-1;
+}
+.ql-editor ol li.ql-indent-1:before {
+  content: counter(list-1, lower-alpha) '. ';
+}
+.ql-editor ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-2 {
+  counter-increment: list-2;
+}
+.ql-editor ol li.ql-indent-2:before {
+  content: counter(list-2, lower-roman) '. ';
+}
+.ql-editor ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-3 {
+  counter-increment: list-3;
+}
+.ql-editor ol li.ql-indent-3:before {
+  content: counter(list-3, decimal) '. ';
+}
+.ql-editor ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-4 {
+  counter-increment: list-4;
+}
+.ql-editor ol li.ql-indent-4:before {
+  content: counter(list-4, lower-alpha) '. ';
+}
+.ql-editor ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-5 {
+  counter-increment: list-5;
+}
+.ql-editor ol li.ql-indent-5:before {
+  content: counter(list-5, lower-roman) '. ';
+}
+.ql-editor ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-6 {
+  counter-increment: list-6;
+}
+.ql-editor ol li.ql-indent-6:before {
+  content: counter(list-6, decimal) '. ';
+}
+.ql-editor ol li.ql-indent-6 {
+  counter-reset: list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-7 {
+  counter-increment: list-7;
+}
+.ql-editor ol li.ql-indent-7:before {
+  content: counter(list-7, lower-alpha) '. ';
+}
+.ql-editor ol li.ql-indent-7 {
+  counter-reset: list-8 list-9;
+}
+.ql-editor ol li.ql-indent-8 {
+  counter-increment: list-8;
+}
+.ql-editor ol li.ql-indent-8:before {
+  content: counter(list-8, lower-roman) '. ';
+}
+.ql-editor ol li.ql-indent-8 {
+  counter-reset: list-9;
+}
+.ql-editor ol li.ql-indent-9 {
+  counter-increment: list-9;
+}
+.ql-editor ol li.ql-indent-9:before {
+  content: counter(list-9, decimal) '. ';
+}
+.ql-editor .ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 3em;
+}
+.ql-editor li.ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 4.5em;
+}
+.ql-editor .ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 3em;
+}
+.ql-editor li.ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 4.5em;
+}
+.ql-editor .ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 6em;
+}
+.ql-editor li.ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 7.5em;
+}
+.ql-editor .ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 6em;
+}
+.ql-editor li.ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 7.5em;
+}
+.ql-editor .ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 9em;
+}
+.ql-editor li.ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 10.5em;
+}
+.ql-editor .ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 9em;
+}
+.ql-editor li.ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 10.5em;
+}
+.ql-editor .ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 12em;
+}
+.ql-editor li.ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 13.5em;
+}
+.ql-editor .ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 12em;
+}
+.ql-editor li.ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 13.5em;
+}
+.ql-editor .ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 15em;
+}
+.ql-editor li.ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 16.5em;
+}
+.ql-editor .ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 15em;
+}
+.ql-editor li.ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 16.5em;
+}
+.ql-editor .ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 18em;
+}
+.ql-editor li.ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 19.5em;
+}
+.ql-editor .ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 18em;
+}
+.ql-editor li.ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 19.5em;
+}
+.ql-editor .ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 21em;
+}
+.ql-editor li.ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 22.5em;
+}
+.ql-editor .ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 21em;
+}
+.ql-editor li.ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 22.5em;
+}
+.ql-editor .ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 24em;
+}
+.ql-editor li.ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 25.5em;
+}
+.ql-editor .ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 24em;
+}
+.ql-editor li.ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 25.5em;
+}
+.ql-editor .ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 27em;
+}
+.ql-editor li.ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 28.5em;
+}
+.ql-editor .ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 27em;
+}
+.ql-editor li.ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 28.5em;
+}
+.ql-editor .ql-video {
+  display: block;
+  max-width: 100%;
+}
+.ql-editor .ql-video.ql-align-center {
+  margin: 0 auto;
+}
+.ql-editor .ql-video.ql-align-right {
+  margin: 0 0 0 auto;
+}
+.ql-editor .ql-bg-black {
+  background-color: #000;
+}
+.ql-editor .ql-bg-red {
+  background-color: #e60000;
+}
+.ql-editor .ql-bg-orange {
+  background-color: #f90;
+}
+.ql-editor .ql-bg-yellow {
+  background-color: #ff0;
+}
+.ql-editor .ql-bg-green {
+  background-color: #008a00;
+}
+.ql-editor .ql-bg-blue {
+  background-color: #06c;
+}
+.ql-editor .ql-bg-purple {
+  background-color: #93f;
+}
+.ql-editor .ql-color-white {
+  color: #fff;
+}
+.ql-editor .ql-color-red {
+  color: #e60000;
+}
+.ql-editor .ql-color-orange {
+  color: #f90;
+}
+.ql-editor .ql-color-yellow {
+  color: #ff0;
+}
+.ql-editor .ql-color-green {
+  color: #008a00;
+}
+.ql-editor .ql-color-blue {
+  color: #06c;
+}
+.ql-editor .ql-color-purple {
+  color: #93f;
+}
+.ql-editor .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+.ql-editor .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+.ql-editor .ql-size-small {
+  font-size: 0.75em;
+}
+.ql-editor .ql-size-large {
+  font-size: 1.5em;
+}
+.ql-editor .ql-size-huge {
+  font-size: 2.5em;
+}
+.ql-editor .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+.ql-editor .ql-align-center {
+  text-align: center;
+}
+.ql-editor .ql-align-justify {
+  text-align: justify;
+}
+.ql-editor .ql-align-right {
+  text-align: right;
+}
+.ql-editor.ql-blank::before {
+  color: rgba(0,0,0,0.6);
+  content: attr(data-placeholder);
+  font-style: italic;
+  left: 15px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+}
+.ql-snow.ql-toolbar:after,
+.ql-snow .ql-toolbar:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 24px;
+  padding: 3px 5px;
+  width: 28px;
+}
+.ql-snow.ql-toolbar button svg,
+.ql-snow .ql-toolbar button svg {
+  float: left;
+  height: 100%;
+}
+.ql-snow.ql-toolbar button:active:hover,
+.ql-snow .ql-toolbar button:active:hover {
+  outline: none;
+}
+.ql-snow.ql-toolbar input.ql-image[type=file],
+.ql-snow .ql-toolbar input.ql-image[type=file] {
+  display: none;
+}
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button:focus,
+.ql-snow .ql-toolbar button:focus,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active,
+.ql-snow.ql-toolbar .ql-picker-label:hover,
+.ql-snow .ql-toolbar .ql-picker-label:hover,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow.ql-toolbar .ql-picker-item:hover,
+.ql-snow .ql-toolbar .ql-picker-item:hover,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #06c;
+}
+.ql-snow.ql-toolbar button:hover .ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #06c;
+}
+.ql-snow.ql-toolbar button:hover .ql-stroke,
+.ql-snow .ql-toolbar button:hover .ql-stroke,
+.ql-snow.ql-toolbar button:focus .ql-stroke,
+.ql-snow .ql-toolbar button:focus .ql-stroke,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar button:focus .ql-stroke-miter,
+.ql-snow .ql-toolbar button:focus .ql-stroke-miter,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #06c;
+}
+@media (pointer: coarse) {
+  .ql-snow.ql-toolbar button:hover:not(.ql-active),
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) {
+    color: #444;
+  }
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill {
+    fill: #444;
+  }
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter {
+    stroke: #444;
+  }
+}
+.ql-snow {
+  box-sizing: border-box;
+}
+.ql-snow * {
+  box-sizing: border-box;
+}
+.ql-snow .ql-hidden {
+  display: none;
+}
+.ql-snow .ql-out-bottom,
+.ql-snow .ql-out-top {
+  visibility: hidden;
+}
+.ql-snow .ql-tooltip {
+  position: absolute;
+  transform: translateY(10px);
+}
+.ql-snow .ql-tooltip a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.ql-snow .ql-tooltip.ql-flip {
+  transform: translateY(-10px);
+}
+.ql-snow .ql-formats {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ql-snow .ql-formats:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.ql-snow .ql-stroke {
+  fill: none;
+  stroke: #444;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+.ql-snow .ql-stroke-miter {
+  fill: none;
+  stroke: #444;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+}
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: #444;
+}
+.ql-snow .ql-empty {
+  fill: none;
+}
+.ql-snow .ql-even {
+  fill-rule: evenodd;
+}
+.ql-snow .ql-thin,
+.ql-snow .ql-stroke.ql-thin {
+  stroke-width: 1;
+}
+.ql-snow .ql-transparent {
+  opacity: 0.4;
+}
+.ql-snow .ql-direction svg:last-child {
+  display: none;
+}
+.ql-snow .ql-direction.ql-active svg:last-child {
+  display: inline;
+}
+.ql-snow .ql-direction.ql-active svg:first-child {
+  display: none;
+}
+.ql-snow .ql-editor h1 {
+  font-size: 2em;
+}
+.ql-snow .ql-editor h2 {
+  font-size: 1.5em;
+}
+.ql-snow .ql-editor h3 {
+  font-size: 1.17em;
+}
+.ql-snow .ql-editor h4 {
+  font-size: 1em;
+}
+.ql-snow .ql-editor h5 {
+  font-size: 0.83em;
+}
+.ql-snow .ql-editor h6 {
+  font-size: 0.67em;
+}
+.ql-snow .ql-editor a {
+  text-decoration: underline;
+}
+.ql-snow .ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.ql-snow .ql-editor code,
+.ql-snow .ql-editor pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.ql-snow .ql-editor pre {
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.ql-snow .ql-editor code {
+  font-size: 85%;
+  padding: 2px 4px;
+}
+.ql-snow .ql-editor pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+}
+.ql-snow .ql-editor img {
+  max-width: 100%;
+}
+.ql-snow .ql-picker {
+  color: #444;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+}
+.ql-snow .ql-picker-label {
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 2px;
+  position: relative;
+  width: 100%;
+}
+.ql-snow .ql-picker-label::before {
+  display: inline-block;
+  line-height: 22px;
+}
+.ql-snow .ql-picker-options {
+  background-color: #fff;
+  display: none;
+  min-width: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  white-space: nowrap;
+}
+.ql-snow .ql-picker-options .ql-picker-item {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: #ccc;
+  z-index: 2;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-fill {
+  fill: #ccc;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+  stroke: #ccc;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  display: block;
+  margin-top: -1px;
+  top: 100%;
+  z-index: 1;
+}
+.ql-snow .ql-color-picker,
+.ql-snow .ql-icon-picker {
+  width: 28px;
+}
+.ql-snow .ql-color-picker .ql-picker-label,
+.ql-snow .ql-icon-picker .ql-picker-label {
+  padding: 2px 4px;
+}
+.ql-snow .ql-color-picker .ql-picker-label svg,
+.ql-snow .ql-icon-picker .ql-picker-label svg {
+  right: 4px;
+}
+.ql-snow .ql-icon-picker .ql-picker-options {
+  padding: 4px 0px;
+}
+.ql-snow .ql-icon-picker .ql-picker-item {
+  height: 24px;
+  width: 24px;
+  padding: 2px 4px;
+}
+.ql-snow .ql-color-picker .ql-picker-options {
+  padding: 3px 5px;
+  width: 152px;
+}
+.ql-snow .ql-color-picker .ql-picker-item {
+  border: 1px solid transparent;
+  float: left;
+  height: 16px;
+  margin: 2px;
+  padding: 0px;
+  width: 16px;
+}
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  position: absolute;
+  margin-top: -9px;
+  right: 0;
+  top: 50%;
+  width: 18px;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-label]:not([data-label=''])::before {
+  content: attr(data-label);
+}
+.ql-snow .ql-picker.ql-header {
+  width: 98px;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: 'Normal';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: 'Heading 1';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: 'Heading 2';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: 'Heading 3';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: 'Heading 4';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: 'Heading 5';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: 'Heading 6';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  font-size: 2em;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  font-size: 1.5em;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  font-size: 1.17em;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  font-size: 1em;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  font-size: 0.83em;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  font-size: 0.67em;
+}
+.ql-snow .ql-picker.ql-font {
+  width: 108px;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: 'Sans Serif';
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: 'Serif';
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: 'Monospace';
+}
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  font-family: Georgia, Times New Roman, serif;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  font-family: Monaco, Courier New, monospace;
+}
+.ql-snow .ql-picker.ql-size {
+  width: 98px;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: 'Normal';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  content: 'Small';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  content: 'Large';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  content: 'Huge';
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  font-size: 10px;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  font-size: 18px;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  font-size: 32px;
+}
+.ql-snow .ql-color-picker.ql-background .ql-picker-item {
+  background-color: #fff;
+}
+.ql-snow .ql-color-picker.ql-color .ql-picker-item {
+  background-color: #000;
+}
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+}
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+}
+.ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+}
+.ql-toolbar.ql-snow .ql-picker-options {
+  border: 1px solid transparent;
+  box-shadow: rgba(0,0,0,0.2) 0 2px 8px;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #ccc;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  border-color: #ccc;
+}
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item.ql-selected,
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item:hover {
+  border-color: #000;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 0px;
+}
+.ql-snow .ql-tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #ddd;
+  color: #444;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+.ql-snow .ql-tooltip::before {
+  content: "Visit URL:";
+  line-height: 26px;
+  margin-right: 8px;
+}
+.ql-snow .ql-tooltip input[type=text] {
+  display: none;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  height: 26px;
+  margin: 0px;
+  padding: 3px 5px;
+  width: 170px;
+}
+.ql-snow .ql-tooltip a.ql-preview {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.ql-snow .ql-tooltip a.ql-action::after {
+  border-right: 1px solid #ccc;
+  content: 'Edit';
+  margin-left: 16px;
+  padding-right: 8px;
+}
+.ql-snow .ql-tooltip a.ql-remove::before {
+  content: 'Remove';
+  margin-left: 8px;
+}
+.ql-snow .ql-tooltip a {
+  line-height: 26px;
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-preview,
+.ql-snow .ql-tooltip.ql-editing a.ql-remove {
+  display: none;
+}
+.ql-snow .ql-tooltip.ql-editing input[type=text] {
+  display: inline-block;
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+  border-right: 0px;
+  content: 'Save';
+  padding-right: 0px;
+}
+.ql-snow .ql-tooltip[data-mode=link]::before {
+  content: "Enter link:";
+}
+.ql-snow .ql-tooltip[data-mode=formula]::before {
+  content: "Enter formula:";
+}
+.ql-snow .ql-tooltip[data-mode=video]::before {
+  content: "Enter video:";
+}
+.ql-snow a {
+  color: #06c;
+}
+.ql-container.ql-snow {
+  border: 1px solid #ccc;
+}
+
