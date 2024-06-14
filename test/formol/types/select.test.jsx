@@ -31,65 +31,22 @@ describe('Select field', () => {
     expect(select().children()).toHaveLength(4)
     select()
       .children()
-      .forEach(option => expect(option.type()).toEqual('option'))
-    expect(
-      select()
-        .children()
-        .at(0)
-        .text()
-    ).toEqual('')
-    expect(
-      select()
-        .children()
-        .at(1)
-        .text()
-    ).toEqual('one')
-    expect(
-      select()
-        .children()
-        .at(2)
-        .text()
-    ).toEqual('two')
-    expect(
-      select()
-        .children()
-        .at(3)
-        .text()
-    ).toEqual('three')
-    expect(
-      select()
-        .children()
-        .at(0)
-        .props().value
-    ).toEqual('')
-    expect(
-      select()
-        .children()
-        .at(1)
-        .props().value
-    ).toEqual('##formol_memo_0')
-    expect(
-      select()
-        .children()
-        .at(2)
-        .props().value
-    ).toEqual('II')
-    expect(
-      select()
-        .children()
-        .at(3)
-        .props().value
-    ).toEqual('##formol_memo_2')
+      .forEach((option) => expect(option.type()).toEqual('option'))
+    expect(select().children().at(0).text()).toEqual('')
+    expect(select().children().at(1).text()).toEqual('one')
+    expect(select().children().at(2).text()).toEqual('two')
+    expect(select().children().at(3).text()).toEqual('three')
+    expect(select().children().at(0).props().value).toEqual('')
+    expect(select().children().at(1).props().value).toEqual('##formol_memo_0')
+    expect(select().children().at(2).props().value).toEqual('II')
+    expect(select().children().at(3).props().value).toEqual('##formol_memo_2')
 
     expect(select().props().value).toEqual('II')
 
     await select().simulate('focus')
     await select().simulate('change', {
       target: {
-        value: select()
-          .children()
-          .at(1)
-          .props().value,
+        value: select().children().at(1).props().value,
       },
     })
     await select().simulate('blur')
@@ -183,43 +140,13 @@ describe('Select field', () => {
 
     select()
       .children()
-      .forEach(option => expect(option.type()).toEqual('option'))
-    expect(
-      select()
-        .children()
-        .at(0)
-        .text()
-    ).toEqual('one')
-    expect(
-      select()
-        .children()
-        .at(1)
-        .text()
-    ).toEqual('two')
-    expect(
-      select()
-        .children()
-        .at(2)
-        .text()
-    ).toEqual('three')
-    expect(
-      select()
-        .children()
-        .at(0)
-        .props().value
-    ).toEqual('##formol_memo_0')
-    expect(
-      select()
-        .children()
-        .at(1)
-        .props().value
-    ).toEqual('II')
-    expect(
-      select()
-        .children()
-        .at(2)
-        .props().value
-    ).toEqual('##formol_memo_2')
+      .forEach((option) => expect(option.type()).toEqual('option'))
+    expect(select().children().at(0).text()).toEqual('one')
+    expect(select().children().at(1).text()).toEqual('two')
+    expect(select().children().at(2).text()).toEqual('three')
+    expect(select().children().at(0).props().value).toEqual('##formol_memo_0')
+    expect(select().children().at(1).props().value).toEqual('II')
+    expect(select().children().at(2).props().value).toEqual('##formol_memo_2')
 
     expect(select().props().value).toEqual(['##formol_memo_0', 'II'])
     // Simulating removal of first property and the add of the last
@@ -324,7 +251,7 @@ describe('Select field', () => {
         <Field type="select">Select</Field>
       </Formol>
     )
-    const select = w => w.find('Field').find('select')
+    const select = (w) => w.find('Field').find('select')
     expect(select(wrapper).props().value).toEqual('')
 
     const wrapper2 = mount(

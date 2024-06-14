@@ -77,7 +77,7 @@ export default class SelectMenuField extends React.PureComponent {
       }
 
       if (indexes) {
-        indexes.forEach(index => {
+        indexes.forEach((index) => {
           search.addIndex(index)
         })
       } else {
@@ -97,7 +97,7 @@ export default class SelectMenuField extends React.PureComponent {
       state = {
         ...(state === null ? {} : state),
         value: multiple
-          ? value.map(single => opts.find(({ value: v }) => v === single))
+          ? value.map((single) => opts.find(({ value: v }) => v === single))
           : opts.find(({ value: v }) => v === value) || null,
         _rawValue: value,
       }

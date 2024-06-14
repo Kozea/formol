@@ -16,7 +16,7 @@ describe('Formol redux-api-unrest adapter', () => {
     const wrapper = mount(
       <Formol
         onSubmit={unrest({
-          pk: item => ({
+          pk: (item) => ({
             id: item.id,
           }),
           onCreate,
@@ -30,11 +30,7 @@ describe('Formol redux-api-unrest adapter', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -75,7 +71,7 @@ describe('Formol redux-api-unrest adapter', () => {
     const wrapper = mount(
       <Formol
         onSubmit={unrest({
-          pk: item => ({
+          pk: (item) => ({
             id: item.id,
           }),
           onCreate,
@@ -89,11 +85,7 @@ describe('Formol redux-api-unrest adapter', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -140,7 +132,7 @@ describe('Formol redux-api-unrest adapter', () => {
     const wrapper = mount(
       <Formol
         onSubmit={unrest({
-          pk: item => ({
+          pk: (item) => ({
             id: item.id,
           }),
           onCreate,
@@ -154,11 +146,7 @@ describe('Formol redux-api-unrest adapter', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -213,7 +201,7 @@ describe('Formol redux-api-unrest adapter', () => {
     const wrapper = mount(
       <Formol
         onSubmit={unrest({
-          pk: item => ({
+          pk: (item) => ({
             id: item.id,
           }),
           onCreate,
@@ -227,11 +215,7 @@ describe('Formol redux-api-unrest adapter', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -286,7 +270,7 @@ describe('Formol redux-api-unrest adapter', () => {
     const wrapper = mount(
       <Formol
         onSubmit={unrest({
-          pk: item => ({
+          pk: (item) => ({
             id: item.id,
           }),
           onCreate,
@@ -300,11 +284,7 @@ describe('Formol redux-api-unrest adapter', () => {
         <Field type="text">Text</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -354,7 +334,7 @@ describe('Formol redux-api-unrest adapter', () => {
       const wrapper = mount(
         <Formol
           onSubmit={unrest({
-            pk: item => ({
+            pk: (item) => ({
               id: item.id,
             }),
             onCreate,
@@ -368,11 +348,7 @@ describe('Formol redux-api-unrest adapter', () => {
           <Field type="text">Text</Field>
         </Formol>
       )
-      const input = () =>
-        wrapper
-          .find('Field')
-          .find('input')
-          .first()
+      const input = () => wrapper.find('Field').find('input').first()
       const submit = () => wrapper.find('.Formol_Formol__submit')
       const cancel = () => wrapper.find('.Formol_Formol__cancel')
 

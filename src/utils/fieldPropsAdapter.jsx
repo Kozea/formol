@@ -9,9 +9,9 @@ let UNAMED_COUNT = 0
 // These aren't static because we need to know which props has been given
 const defaultProps = {
   type: 'text',
-  formatter: v => v,
-  normalizer: v => (v && v.trim ? v.trim() : v),
-  unformatter: v => v,
+  formatter: (v) => v,
+  normalizer: (v) => (v && v.trim ? v.trim() : v),
+  unformatter: (v) => v,
   classNameModifiers: {},
 }
 
@@ -56,7 +56,7 @@ export default function fieldPropsAdapter(WrappedComponent) {
       if (
         get(transientItem, this.name) !== get(oldTransientItem, this.name) ||
         (Object.keys(propsDiff).length &&
-          !Object.keys(propsDiff).every(prop =>
+          !Object.keys(propsDiff).every((prop) =>
             ['context', 'conditionalContext'].includes(prop)
           ))
       ) {

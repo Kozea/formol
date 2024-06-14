@@ -11,11 +11,7 @@ describe('Email field', () => {
         <Field type="email">Email</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -51,11 +47,7 @@ describe('Email field', () => {
         <Field type="email">Email</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -82,11 +74,7 @@ describe('Email field', () => {
         <Field type="email">Email</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 

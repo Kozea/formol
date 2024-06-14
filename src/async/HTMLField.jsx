@@ -4,7 +4,7 @@ import React from 'react'
 
 import { block, noOp } from '../utils'
 
-export const normalize = value =>
+export const normalize = (value) =>
   value === '<p><br></p>' ? '' : value ? value.trim() : ''
 
 @block

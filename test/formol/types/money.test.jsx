@@ -13,11 +13,7 @@ describe('Money field', () => {
         <Field type="money">Money</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const unit = () => wrapper.find('.Formol_Field__unit')
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -78,11 +74,7 @@ describe('Money field', () => {
         </Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const unit = () => wrapper.find('.Formol_Field__unit')
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -111,11 +103,7 @@ describe('Money field', () => {
         </Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
 
     expect(input().props().type).toEqual('number')
     expect(input().props().min).toEqual(-12)
@@ -129,11 +117,7 @@ describe('Money field', () => {
         <Field type="money">Money</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -168,11 +152,7 @@ describe('Money field', () => {
         <Field type="money">Money</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -201,11 +181,7 @@ describe('Money field', () => {
         </Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -252,11 +228,7 @@ describe('Money field', () => {
         <Field type="money">Money</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 
@@ -277,11 +249,7 @@ describe('Money field', () => {
         <Field type="money">Money</Field>
       </Formol>
     )
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
 

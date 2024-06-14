@@ -27,7 +27,7 @@ describe('Radio Set field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    inputs().map(input => expect(input.props().type).toEqual('radio'))
+    inputs().map((input) => expect(input.props().type).toEqual('radio'))
     const expectValues = (...values) =>
       inputs().map((input, i) =>
         expect(input.props().checked).toEqual(values[i])
@@ -35,15 +35,11 @@ describe('Radio Set field', () => {
 
     expectValues(false, true, false)
 
-    await inputs()
-      .at(2)
-      .simulate('focus')
+    await inputs().at(2).simulate('focus')
     await inputs()
       .at(2)
       .simulate('change', { target: { checked: true } })
-    await inputs()
-      .at(2)
-      .simulate('blur')
+    await inputs().at(2).simulate('blur')
 
     expectValues(false, false, true)
 
@@ -86,7 +82,7 @@ describe('Radio Set field', () => {
 
     expect(submit().props().disabled).toBeTruthy()
     expect(cancel().props().disabled).toBeTruthy()
-    inputs().map(input => expect(input.props().type).toEqual('radio'))
+    inputs().map((input) => expect(input.props().type).toEqual('radio'))
     const expectValues = (...values) =>
       inputs().map((input, i) =>
         expect(input.props().checked).toEqual(values[i])
@@ -94,15 +90,11 @@ describe('Radio Set field', () => {
 
     expectValues(false, true, false)
 
-    await inputs()
-      .at(2)
-      .simulate('focus')
+    await inputs().at(2).simulate('focus')
     await inputs()
       .at(2)
       .simulate('change', { target: { checked: true } })
-    await inputs()
-      .at(2)
-      .simulate('blur')
+    await inputs().at(2).simulate('blur')
 
     expectValues(false, false, true)
 
@@ -125,6 +117,6 @@ describe('Radio Set field', () => {
       </Formol>
     )
     const inputs = () => wrapper.find('Field').find('input')
-    inputs().map(input => expect(input.props().disabled).toEqual(true))
+    inputs().map((input) => expect(input.props().disabled).toEqual(true))
   })
 })

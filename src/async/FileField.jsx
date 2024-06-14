@@ -8,9 +8,9 @@ import { block, fileSize, nameExt, noOp, readAsBase64 } from '../utils'
 import Preview from '../utils/Preview'
 import multipleAdapter from '../utils/multipleAdapter'
 
-const key = file => [file.name, file.ext].join('.')
+const key = (file) => [file.name, file.ext].join('.')
 
-const rename = files =>
+const rename = (files) =>
   files
     .reverse()
     .reduce(
@@ -70,7 +70,7 @@ export default class FileField extends React.PureComponent {
     } = newProps
     const value = FileField.valueToField(rawValue, multiple)
     if (!deepEqual(value, oldValue)) {
-      const rejected = oldRejected.filter(f =>
+      const rejected = oldRejected.filter((f) =>
         multiple ? value.split(',').includes(f) : value === f
       )
       current && (current.value = value)
@@ -113,7 +113,7 @@ export default class FileField extends React.PureComponent {
     } = this.props
     onFocus()
     let { rejected } = this.state
-    rejectedFiles = rejectedFiles.filter(maybeFile => maybeFile.name)
+    rejectedFiles = rejectedFiles.filter((maybeFile) => maybeFile.name)
     const files = await Promise.all(
       acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
     )
@@ -140,8 +140,8 @@ export default class FileField extends React.PureComponent {
       onBlur,
     } = this.props
     onFocus()
-    const changed = multiple ? value.filter(f => key(f) !== key(file)) : null
-    const rejected = this.state.rejected.filter(rej => rej !== key(file))
+    const changed = multiple ? value.filter((f) => key(f) !== key(file)) : null
+    const rejected = this.state.rejected.filter((rej) => rej !== key(file))
 
     const newValue = FileField.valueToField(changed, multiple)
     current.value = newValue
@@ -168,7 +168,7 @@ export default class FileField extends React.PureComponent {
           {!readOnly && !disabled ? (
             <button
               className={b.e('close')}
-              onClick={e => this.handleRemove(e, file)}
+              onClick={(e) => this.handleRemove(e, file)}
               type="button"
             >
               <FaTrash /> Enlever
@@ -209,7 +209,7 @@ export default class FileField extends React.PureComponent {
     if (multiple) {
       preview = (
         <div className={b.e('previews')}>
-          {value.map(file => this.renderPreview(b, file))}
+          {value.map((file) => this.renderPreview(b, file))}
         </div>
       )
     } else if (value) {

@@ -28,7 +28,7 @@ export default class CheckboxSetField extends React.PureComponent {
         isChecked={(choice, value) => value.includes(choice)}
         onChange={(choice, value, checked) =>
           onChange(
-            checked ? [...value, choice] : value.filter(val => val !== choice)
+            checked ? [...value, choice] : value.filter((val) => val !== choice)
           )
         }
         type="checkbox"

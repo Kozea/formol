@@ -19,7 +19,7 @@ export default class SelectField extends React.PureComponent {
     const { multiple, onChange } = this.props
     return onChange(
       multiple
-        ? [...e.target.options].filter(o => o.selected).map(o => o.value)
+        ? [...e.target.options].filter((o) => o.selected).map((o) => o.value)
         : e.target.value
     )
   }

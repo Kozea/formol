@@ -12,7 +12,7 @@ export default class InputField extends React.PureComponent {
       <input
         ref={elementRef}
         className={b.mix(className)}
-        onChange={e => onChange(e.target.value)}
+        onChange={(e) => onChange(e.target.value)}
         {...props}
       />
     )

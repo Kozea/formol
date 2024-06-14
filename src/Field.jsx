@@ -103,7 +103,7 @@ export default class Field extends React.PureComponent {
         <Label
           className={b.e('label').m(classNameModifiers.label)}
           title={title}
-          onClick={evt => {
+          onClick={(evt) => {
             /*
               To prevent the calendar from not closing when the datepicker is
               wrapped inside label. See this issue

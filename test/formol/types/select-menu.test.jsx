@@ -37,18 +37,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -64,10 +56,7 @@ describe('Select Menu field', () => {
     await selectControl().simulate('mousedown', { button: 0 })
 
     expect(selectOptions()).toHaveLength(3)
-    await selectOptions()
-      .at(0)
-      .find('div')
-      .simulate('click')
+    await selectOptions().at(0).find('div').simulate('click')
 
     await selectInput().simulate('blur')
 
@@ -117,18 +106,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -144,10 +125,7 @@ describe('Select Menu field', () => {
     await selectControl().simulate('mousedown', { button: 0 })
 
     expect(selectOptions()).toHaveLength(3)
-    await selectOptions()
-      .at(0)
-      .find('div')
-      .simulate('click')
+    await selectOptions().at(0).find('div').simulate('click')
 
     await selectInput().simulate('blur')
 
@@ -196,18 +174,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -223,10 +193,7 @@ describe('Select Menu field', () => {
     await selectControl().simulate('mousedown', { button: 0 })
 
     expect(selectOptions()).toHaveLength(3)
-    await selectOptions()
-      .at(1)
-      .find('div')
-      .simulate('click')
+    await selectOptions().at(1).find('div').simulate('click')
 
     await selectInput().simulate('blur')
 
@@ -269,18 +236,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const multiValue = () => wrapper.find('MultiValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -295,10 +254,7 @@ describe('Select Menu field', () => {
     await selectControl().simulate('mousedown', { button: 0 })
 
     expect(selectOptions()).toHaveLength(1)
-    await selectOptions()
-      .at(0)
-      .find('div')
-      .simulate('click')
+    await selectOptions().at(0).find('div').simulate('click')
     expect(selectOptions()).toHaveLength(0)
     await multiValue()
       .at(0)
@@ -352,18 +308,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const multiValue = () => wrapper.find('MultiValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -378,10 +326,7 @@ describe('Select Menu field', () => {
     await selectControl().simulate('mousedown', { button: 0 })
 
     expect(selectOptions()).toHaveLength(1)
-    await selectOptions()
-      .at(0)
-      .find('div')
-      .simulate('click')
+    await selectOptions().at(0).find('div').simulate('click')
 
     expect(selectOptions()).toHaveLength(0)
     await multiValue()
@@ -419,11 +364,7 @@ describe('Select Menu field', () => {
     wrapper.update()
     expect(asyncWrapper().text()).not.toEqual('Loading')
 
-    const input = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const input = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -476,17 +417,9 @@ describe('Select Menu field', () => {
 
     const input = () =>
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     await selectInput().simulate('focus')
     await selectControl().simulate('mousedown', { button: 0 })
@@ -495,15 +428,27 @@ describe('Select Menu field', () => {
 
     expect(selectOptions()).toHaveLength(3)
 
-    expect(selectOptions().map(v => v.text())).toEqual(['one', 'two', 'three'])
+    expect(selectOptions().map((v) => v.text())).toEqual([
+      'one',
+      'two',
+      'three',
+    ])
 
     await changer().simulate('click')
 
-    expect(selectOptions().map(v => v.text())).toEqual(['un', 'deux', 'trois'])
+    expect(selectOptions().map((v) => v.text())).toEqual([
+      'un',
+      'deux',
+      'trois',
+    ])
 
     await changer().simulate('click')
 
-    expect(selectOptions().map(v => v.text())).toEqual(['un', 'deux', 'trois'])
+    expect(selectOptions().map((v) => v.text())).toEqual([
+      'un',
+      'deux',
+      'trois',
+    ])
     expect(input().props().required).toBeTruthy()
   })
   it('filters options', async () => {
@@ -533,18 +478,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -601,18 +538,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -662,18 +591,10 @@ describe('Select Menu field', () => {
       wrapper.find('.Formol_SelectMenuField__hidden-input').find('input')
 
     const singleValue = () => wrapper.find('SingleValue')
-    const selectControl = () =>
-      wrapper
-        .find('Control')
-        .find('div')
-        .first()
+    const selectControl = () => wrapper.find('Control').find('div').first()
     const selectOptions = () => wrapper.find('MenuList').find('Option')
     const selectMenu = () => wrapper.find('Menu')
-    const selectInput = () =>
-      wrapper
-        .find('Field')
-        .find('input')
-        .first()
+    const selectInput = () => wrapper.find('Field').find('input').first()
 
     const submit = () => wrapper.find('.Formol_Formol__submit')
     const cancel = () => wrapper.find('.Formol_Formol__cancel')
@@ -700,10 +621,7 @@ describe('Select Menu field', () => {
     await selectInput().simulate('change', { target: { value: '834' } })
 
     expect(selectOptions()).toHaveLength(5)
-    await selectOptions()
-      .at(3)
-      .find('div')
-      .simulate('click')
+    await selectOptions().at(3).find('div').simulate('click')
 
     selectInput().getDOMNode().value = '83'
     await selectInput().simulate('change', { target: { value: '83' } })

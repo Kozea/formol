@@ -4,9 +4,9 @@ export const FormolContext = React.createContext({})
 
 export default function FormolContextWrapper(Component) {
   // eslint-disable-next-line react/display-name
-  return props => (
+  return (props) => (
     <FormolContext.Consumer>
-      {context => <Component {...props} context={context} />}
+      {(context) => <Component {...props} context={context} />}
     </FormolContext.Consumer>
   )
 }

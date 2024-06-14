@@ -45,9 +45,9 @@ export default class DateField extends React.PureComponent {
 
     return (
       <Datepicker
-        ref={ref => (this.datepicker = ref)}
+        ref={(ref) => (this.datepicker = ref)}
         selected={value ? parse(value, isoDateFormat, new Date()) : null}
-        onChange={date => {
+        onChange={(date) => {
           this.setState({ date })
           onChange(date ? format(date, isoDateFormat) : '')
         }}

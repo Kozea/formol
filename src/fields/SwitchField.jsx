@@ -12,14 +12,8 @@ export default class SwitchField extends React.PureComponent {
   }
 
   render(b) {
-    const {
-      type,
-      i18n,
-      leftLabel,
-      rightLabel,
-      className,
-      ...props
-    } = this.props
+    const { type, i18n, leftLabel, rightLabel, className, ...props } =
+      this.props
 
     return (
       <SwitchButton

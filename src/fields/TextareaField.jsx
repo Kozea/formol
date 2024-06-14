@@ -10,7 +10,7 @@ export default class TextAreaField extends React.PureComponent {
       <textarea
         ref={elementRef}
         className={b.mix(className)}
-        onChange={e => onChange(e.target.value)}
+        onChange={(e) => onChange(e.target.value)}
         {...props}
       />
     )
