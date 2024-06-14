@@ -28,6 +28,7 @@ else
   git push origin gh-pages
 fi
 
+git clean --force
 git switch -
 
 rm --recursive --force $TEMP_DIR
