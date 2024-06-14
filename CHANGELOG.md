@@ -1,3 +1,11 @@
+### [4.0.0](https://github.com/Kozea/formol/compare/v3.1.0...v4.0.0)
+
+No breaking change expected.
+
+- Replace Storybook by demos
+- Upgrade webpack from v4 to v5
+- Upgrade prettier from v1 to v3
+
 ### [3.1.0](https://github.com/Kozea/formol/compare/v3.0.0...v3.1.0)
 
 - Hide password strength feedback while pristine
