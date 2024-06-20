@@ -1,3 +1,7 @@
+### [4.0.3](https://github.com/Kozea/formol/compare/v4.0.2...v4.0.3)
+
+- Security fix
+
 ### [4.0.2](https://github.com/Kozea/formol/compare/v4.0.1...v4.0.2)
 
 - Fix missing build
