@@ -15,6 +15,8 @@ cp demos/dist/* $TEMP_DIR
 cp assets/* $TEMP_DIR
 
 git switch gh-pages
+git fetch origin gh-pages
+git reset --hard origin/gh-pages
 
 cp $TEMP_DIR/* .
 
