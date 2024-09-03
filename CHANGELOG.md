@@ -1,3 +1,9 @@
+### [4.0.4](https://github.com/Kozea/formol/compare/v4.0.3...v4.0.4)
+
+- Update webpack (security fix)
+- Update JS dependencies (minor & patches)
+- Handle sass update deprecation warning
+
 ### [4.0.3](https://github.com/Kozea/formol/compare/v4.0.2...v4.0.3)
 
 - Security fix
