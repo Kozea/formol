@@ -1,3 +1,7 @@
+### [4.0.6](https://github.com/Kozea/formol/compare/v4.0.5...v4.0.6)
+
+- Fix English default tel pattern regex
+
 ### [4.0.5](https://github.com/Kozea/formol/compare/v4.0.4...v4.0.5)
 
 - Update dependencies
