@@ -22,7 +22,12 @@ export default {
     placeholder: 'Enter text here',
   },
   tel: {
-    pattern: /\d{3}[-]\d{3}[-]\d{4}/,
+    /*
+     * pattern is validated with v flag
+     * https://stackoverflow.com/a/76287241
+     */
+    // eslint-disable-next-line no-useless-escape
+    pattern: /\d{3}[\-]\d{3}[\-]\d{4}/,
   },
   passwordStrength: {
     tooshort: 'too short',
