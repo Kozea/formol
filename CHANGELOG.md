@@ -1,3 +1,8 @@
+### [4.0.7](https://github.com/Kozea/formol/compare/v4.0.6...v4.0.7)
+
+- Update http-proxy-middleware (security fix)
+- Update dependencies
+
 ### [4.0.6](https://github.com/Kozea/formol/compare/v4.0.5...v4.0.6)
 
 - Fix English default tel pattern regex
