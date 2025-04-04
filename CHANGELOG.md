@@ -1,3 +1,7 @@
+### [4.0.8](https://github.com/Kozea/formol/compare/v4.0.7...v4.0.8)
+
+- Fix typo in French translation
+
 ### [4.0.7](https://github.com/Kozea/formol/compare/v4.0.6...v4.0.7)
 
 - Update http-proxy-middleware (security fix)
