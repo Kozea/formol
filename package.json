@@ -1,6 +1,6 @@
 {
   "name": "formol",
-  "version": "4.0.8",
+  "version": "4.0.9",
   "description": "An opinionated react form framework.",
   "main": "lib/formol.js",
   "module": "src/index.js",

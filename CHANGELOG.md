@@ -1,3 +1,7 @@
+### [4.0.9](https://github.com/Kozea/formol/compare/v4.0.8...v4.0.9)
+
+- Update dependencies
+
 ### [4.0.8](https://github.com/Kozea/formol/compare/v4.0.7...v4.0.8)
 
 - Fix typo in French translation
