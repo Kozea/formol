@@ -5,7 +5,7 @@
   "main": "lib/formol.js",
   "module": "src/index.js",
   "repository": "https://github.com/Kozea/formol",
-  "author": "Florian Mounier",
+  "author": "Kozea dev team <dev@kozea.fr>",
   "license": "MIT",
   "scripts": {
     "build": "rimraf lib && webpack",
