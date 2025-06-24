@@ -245,7 +245,62 @@ with the added benefit that you can override [the formol variables](https://gith
     
     @import ~formol/src/sass/default
     
-## Publish a new release
+## Development
+
+Getting the code and running Formol locally requires a typical yarn‑based workflow:
+
+###  Use yarn v1
+
+1. **Install dependencies**
+
+   ```bash
+   yarn install
+   ```
+
+2. **Check code style**
+
+   ```bash
+   yarn lint
+   ```
+
+   Fix issues automatically when possible:
+
+   ```bash
+   yarn fix
+   ```
+
+3. **Run the unit tests**
+
+   ```bash
+   yarn test
+   ```
+
+   This executes Jest with coverage enabled. You can inspect the HTML coverage report in `coverage/lcov-report/index.html`.
+
+4. **Check the live demos**
+
+   ```bash
+   yarn demos
+   ```
+
+5. **Build the library**
+
+   ```bash
+   yarn build
+   ```
+
+   The compiled production bundle is written to `lib/`.
+
+
+6. **Build the demos**
+
+   ```bash
+   yarn demos-build
+   ```
+
+   The compiled demo bundle is written to `demos/dist/`.
+
+### Publish a new release
 
 1. Merge the branches (features, fixes) into master
 2. Create release commit:
