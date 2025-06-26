@@ -1,3 +1,7 @@
+### [4.0.11](https://github.com/Kozea/formol/compare/v4.0.10...v4.0.11)
+
+- Update dependencies
+
 ### [4.0.10](https://github.com/Kozea/formol/compare/v4.0.9...v4.0.10)
 
 - Update dependencies
