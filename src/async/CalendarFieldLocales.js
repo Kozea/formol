@@ -1,5 +1,5 @@
 import { format, toDate } from 'date-fns'
-import localeFr from 'date-fns/locale/fr'
+import { fr as localeFr } from 'date-fns/locale'
 
 const getCalendarLocaleUtils = (locale, fdow = 0) => ({
   formatDay: (date) => format(toDate(date), 'PPPP', { locale }),
