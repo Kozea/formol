@@ -1,3 +1,8 @@
+### [4.1.0](https://github.com/Kozea/formol/compare/v4.0.11...v4.1.0)
+
+- Document supported node engines (20 → 24)
+- Update dependencies
+
 ### [4.0.11](https://github.com/Kozea/formol/compare/v4.0.10...v4.0.11)
 
 - Update dependencies
