@@ -102,5 +102,8 @@
   },
   "resolutions": {
     "cheerio": "1.0.0-rc.3"
+  },
+  "engines": {
+    "node": "20.x || 22.x || 24.x"
   }
 }
