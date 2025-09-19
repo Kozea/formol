@@ -63,7 +63,7 @@ export default class FileField extends React.PureComponent {
     newProps,
     { value: oldValue, rejected: oldRejected }
   ) {
-    const {
+    let {
       multiple,
       elementRef: { current },
       value: rawValue,
@@ -93,13 +93,16 @@ export default class FileField extends React.PureComponent {
     }
   }
 
-  handleChange(value, rejected) {
+  handleChange(value, rejected, { singleOnly = false } = {}) {
     const { i18n, multiple, onChange } = this.props
-    const error = rejected.length
-      ? multiple
+    let error = ''
+    if (singleOnly) {
+      error = i18n.file.singleOnly
+    } else if (rejected.length) {
+      error = multiple
         ? `${i18n.file.rejectedMultiple} (${rejected.join(', ')})`
         : i18n.file.rejected
-      : ''
+    }
     onChange(value, error)
   }
 
@@ -113,20 +116,26 @@ export default class FileField extends React.PureComponent {
     } = this.props
     onFocus()
     let { rejected } = this.state
+    let newFiles, newValue
+
     rejectedFiles = rejectedFiles.filter((maybeFile) => maybeFile.name)
+    const droppedCount = acceptedFiles.length + rejectedFiles.length
+    const singleOnly = !multiple && droppedCount > 1
     const files = await Promise.all(
       acceptedFiles.concat(rejectedFiles).map(this.fileToObject)
     )
     if (rejectedFiles.length) {
       rejected = [...rejected, ...files.slice(-rejectedFiles.length).map(key)]
     }
-    const newFiles = multiple ? rename([...files, ...value]) : files[0]
-    const newValue = FileField.valueToField(newFiles, multiple)
-    if (!multiple) {
-      rejected = rejected.includes(newValue) ? [newValue] : []
+    if (singleOnly) {
+      newFiles = null
+      newValue = ""
+      rejected = []
+    } else {
+      newFiles = multiple ? rename([...files, ...value]) : files[0]
+      newValue = FileField.valueToField(newFiles, multiple)
     }
-    current.value = newValue
-    this.handleChange(newFiles, rejected)
+    this.handleChange(newFiles, rejected, { singleOnly })
     this.setState({ value: newValue, rejected })
     onBlur()
   }
