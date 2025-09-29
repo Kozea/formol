@@ -1,3 +1,7 @@
+### [4.2.0](https://github.com/Kozea/formol/compare/v4.1.0...v4.2.0)
+
+- Add specific error message to file field
+
 ### [4.1.0](https://github.com/Kozea/formol/compare/v4.0.11...v4.1.0)
 
 - Document supported node engines (20 → 24)
