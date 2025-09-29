@@ -17,6 +17,7 @@ export default {
     rejected: 'Veuillez sélectionner un fichier valide.',
     rejectedMultiple: 'Certains de vos fichiers ne sont pas valides.',
     noFile: 'Aucun fichier',
+    singleOnly: 'Veuillez sélectionner un seul fichier',
   },
   tel: {
     pattern: /^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[.\-\s]?\d\d){4}$/,

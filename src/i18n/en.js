@@ -17,6 +17,7 @@ export default {
     rejected: 'Please select a valid file.',
     rejectedMultiple: 'Some of your files are invalid.',
     noFile: 'No file',
+    singleOnly: 'Please select only one file',
   },
   html: {
     placeholder: 'Enter text here',

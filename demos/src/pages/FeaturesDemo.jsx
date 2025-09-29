@@ -23,6 +23,9 @@ const initialFormState = {
     color: '#c0ffee',
   },
   prime: 127843,
+  single: {
+    image: null,
+  },
 }
 
 const initialCrossedState = {
@@ -176,6 +179,18 @@ const FeaturesDemo = () => {
             validator={(v) => !isPrimeNumber(v) && `${v} is not a prime number`}
           >
             Prime
+          </Field>
+
+          <h2>Cases</h2>
+          <h3>Single file required</h3>
+          <Field
+            name="single.image"
+            type="file"
+            accept="image/*"
+            multiple={false}
+            required
+          >
+            Only 1 image please
           </Field>
         </Formol>
 
