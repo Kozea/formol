@@ -129,7 +129,7 @@ export default class FileField extends React.PureComponent {
     }
     if (singleOnly) {
       newFiles = null
-      newValue = ""
+      newValue = ''
       rejected = []
     } else {
       newFiles = multiple ? rename([...files, ...value]) : files[0]
