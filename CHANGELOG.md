@@ -1,3 +1,8 @@
+### [4.2.1](https://github.com/Kozea/formol/compare/v4.2.0...v4.2.1)
+
+- Update node-forge (security fix)
+- Update dependencies
+
 ### [4.2.0](https://github.com/Kozea/formol/compare/v4.1.0...v4.2.0)
 
 - Add specific error message to file field
