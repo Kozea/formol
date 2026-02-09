@@ -1,3 +1,8 @@
+### [4.2.2](https://github.com/Kozea/formol/compare/v4.2.1...v4.2.2)
+
+- Update webpack (security fix)
+- Update dependencies
+
 ### [4.2.1](https://github.com/Kozea/formol/compare/v4.2.0...v4.2.1)
 
 - Update node-forge (security fix)

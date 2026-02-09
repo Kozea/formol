@@ -8,7 +8,7 @@ const VersionHeader = () => (
         alt="Formol logo with baseline"
         className="logo-baseline"
       />
-      <span className="version">4.2.1</span>
+      <span className="version">4.2.2</span>
     </div>
     <h4>Formol is a full featured object edition form framework for React.</h4>
   </div>
