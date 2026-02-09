@@ -64,7 +64,7 @@
     "sass": "^1.94.2",
     "sass-loader": "^8.0.2",
     "scudd": "^0.0.1",
-    "webpack": "^5.103.0",
+    "webpack": "^5.104.1",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.2"
