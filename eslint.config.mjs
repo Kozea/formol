@@ -4,6 +4,61 @@ import _import from 'eslint-plugin-import'
 import { fixupPluginRules } from '@eslint/compat'
 import globals from 'globals'
 import babelParser from '@babel/eslint-parser'
+import util from 'node:util'
+
+if (!util.styleText) {
+  util.styleText = (style, text) => text
+}
+
+const mapGlobals = (globals) =>
+  Object.fromEntries(
+    Object.entries(globals).map(([key, value]) => [
+      key,
+      value === true ? 'writable' : 'readonly',
+    ])
+  )
+
+const babelParserCompat = {
+  ...babelParser,
+  parseForESLint(...args) {
+    const result = babelParser.parseForESLint(...args)
+    if (result.scopeManager && !result.scopeManager.addGlobals) {
+      result.scopeManager.addGlobals = function (globals) {
+        const globalScope = this.scopes[0]
+        const list = Array.isArray(globals) ? globals : Object.keys(globals)
+        list.forEach((name) => {
+          let variable = globalScope.set.get(name)
+          if (!variable) {
+            variable = {
+              name,
+              scope: globalScope,
+              defs: [],
+              identifiers: [],
+              references: [],
+              descendants: [],
+              eslintImplicitGlobalSetting: 'readonly',
+              eslintExplicitGlobal: false,
+            }
+            globalScope.set.set(name, variable)
+            globalScope.variables.push(variable)
+          }
+
+          // Resolve references in globalScope.through
+          for (let i = 0; i < globalScope.through.length; i++) {
+            const ref = globalScope.through[i]
+            if (ref.identifier.name === name) {
+              ref.resolved = variable
+              variable.references.push(ref)
+              globalScope.through.splice(i, 1)
+              i--
+            }
+          }
+        })
+      }
+    }
+    return result
+  },
+}
 
 export default [
   {
@@ -13,11 +68,11 @@ export default [
   {
     files: ['**/*.{js,jsx,mjs,cjs}'],
     plugins: {
-      react,
+      react: fixupPluginRules(react),
       import: fixupPluginRules(_import),
     },
     languageOptions: {
-      parser: babelParser,
+      parser: babelParserCompat,
       parserOptions: {
         requireConfigFile: false,
         babelOptions: {
@@ -34,9 +89,9 @@ export default [
         },
       },
       globals: {
-        ...globals.browser,
-        ...globals.node,
-        ...globals.jest,
+        ...mapGlobals(globals.browser),
+        ...mapGlobals(globals.node),
+        ...mapGlobals(globals.jest),
       },
       ecmaVersion: 'latest',
       sourceType: 'module',
