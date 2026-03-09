@@ -11,7 +11,6 @@ class OptionWrapper extends React.PureComponent {
 }
 
 export default (listDefaultHeight = 19, listApproximatedLengthBreak = 50) =>
-  // eslint-disable-next-line react/no-multi-comp
   class MenuList extends React.PureComponent {
     constructor(props) {
       super(props)

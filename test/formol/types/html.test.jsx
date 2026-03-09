@@ -1,9 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import { forCondition } from '../../helpers'
 import Formol, { Field } from '../../../src'
-import molecule from '../../samples/molecule.svg.base64'
 
 const voidSelection = () => () => ({
   anchorNode: null,
