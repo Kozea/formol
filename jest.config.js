@@ -8,7 +8,5 @@ module.exports = {
   setupFiles: ['<rootDir>/test/setup.js'],
   collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/i18n/*'],
   testURL: 'http://localhost/',
-  transformIgnorePatterns: [
-    'node_modules/(?!(react-syntax-highlighter|date-fns))',
-  ],
+  transformIgnorePatterns: ['node_modules/(?!(date-fns))'],
 }
