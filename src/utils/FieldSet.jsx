@@ -51,7 +51,6 @@ export default class FieldSet extends React.PureComponent {
             />
             <span className={b.e('title')}>
               {dangerousRawHTMLLabels ? (
-                // eslint-disable-next-line react/no-danger
                 <span dangerouslySetInnerHTML={{ __html: choiceLabel }} />
               ) : (
                 choiceLabel

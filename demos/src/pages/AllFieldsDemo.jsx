@@ -43,7 +43,7 @@ const initialState = {
   money: '12.50',
   calendar: '2018-08-01',
   switch: true,
-  html: '<p><span style="color: rgb(251,160,38);">H</span><strong>T</strong><del>M</del><em>L</em></p>', // eslint-disable-line max-len
+  html: '<p><span style="color: rgb(251,160,38);">H</span><strong>T</strong><del>M</del><em>L</em></p>',
   radio: true,
   'radio-set': '#ffff00',
   checkbox: true,

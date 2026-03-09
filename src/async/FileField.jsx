@@ -107,13 +107,7 @@ export default class FileField extends React.PureComponent {
   }
 
   async handleDrop(acceptedFiles, rejectedFiles) {
-    const {
-      value,
-      multiple,
-      onFocus,
-      onBlur,
-      elementRef: { current },
-    } = this.props
+    const { value, multiple, onFocus, onBlur } = this.props
     onFocus()
     let { rejected } = this.state
     let newFiles, newValue

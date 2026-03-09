@@ -1,5 +1,6 @@
 import { mount } from 'enzyme'
 import React from 'react'
+
 import Formol, { Field } from '../../../src'
 
 const dateMock = [

@@ -17,6 +17,7 @@ describe('Async', () => {
     jest.spyOn(console, 'error')
     global.console.error.mockImplementation(() => {})
 
+    // eslint-disable-next-line import/no-unresolved
     const BrokenAsync = Async(() => import('./unexisting/file.js'))
 
     const wrapper = mount(<BrokenAsync />)
@@ -34,6 +35,7 @@ describe('Async', () => {
     jest.spyOn(console, 'error')
     global.console.error.mockImplementation(() => {})
 
+    // eslint-disable-next-line import/no-unresolved
     const BrokenAsync = Async(() => import('./unexisting/file.js'))
 
     const wrapper = mount(<BrokenAsync />)
