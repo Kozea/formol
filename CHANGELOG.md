@@ -1,3 +1,8 @@
+### [4.3.1](https://github.com/Kozea/formol/compare/v4.3.0...v4.3.1)
+
+- Update yaml (security fix)
+- Update dependencies
+
 ### [4.3.0](https://github.com/Kozea/formol/compare/v4.2.2...v4.3.0)
 
 - Update immutable (security fix)
