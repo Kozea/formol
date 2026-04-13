@@ -1,3 +1,8 @@
+### [4.3.2](https://github.com/Kozea/formol/compare/v4.3.1...v4.3.2)
+
+- Update lodash (security fix)
+- Update dependencies
+
 ### [4.3.1](https://github.com/Kozea/formol/compare/v4.3.0...v4.3.1)
 
 - Update yaml (security fix)
