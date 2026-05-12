@@ -1,3 +1,9 @@
+### [4.3.3](https://github.com/Kozea/formol/compare/v4.3.2...v4.3.3)
+
+- Update fast-uri (security fix)
+- Update @babel/plugin-transform-modules-systemjs (security fix)
+- Update dependencies
+
 ### [4.3.2](https://github.com/Kozea/formol/compare/v4.3.1...v4.3.2)
 
 - Update lodash (security fix)
