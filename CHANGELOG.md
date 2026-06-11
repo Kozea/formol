@@ -1,3 +1,7 @@
+### [4.3.4](https://github.com/Kozea/formol/compare/v4.3.3...v4.3.4)
+
+- Update shell-quote (security fix)
+
 ### [4.3.3](https://github.com/Kozea/formol/compare/v4.3.2...v4.3.3)
 
 - Update fast-uri (security fix)
