@@ -61,12 +61,12 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-test-renderer": "^16.14.0",
-    "sass": "^1.100.0",
+    "sass": "^1.101.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.107.2",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.2.4"
+    "webpack-dev-server": "^5.2.5"
   },
   "files": [
     "lib/",
