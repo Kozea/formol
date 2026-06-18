@@ -1,3 +1,9 @@
+### [5.0.0](https://github.com/Kozea/formol/compare/v4.3.4...v5.0.0)
+
+- Upgrade major versions of SASS/CSS dependencies (#158)
+- Update dependencies
+
+
 ### [4.3.4](https://github.com/Kozea/formol/compare/v4.3.3...v4.3.4)
 
 - Update shell-quote (security fix)
