@@ -1,3 +1,8 @@
+### [5.0.1](https://github.com/Kozea/formol/compare/v5.0.0...v5.0.1)
+
+- Update http-proxy-middleware (security fix)
+- Update dependencies
+
 ### [5.0.0](https://github.com/Kozea/formol/compare/v4.3.4...v5.0.0)
 
 - Upgrade major versions of SASS/CSS dependencies (#158)
