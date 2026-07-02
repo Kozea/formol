@@ -1,8 +1,8 @@
 import React from 'react'
-import zxcvbn from 'zxcvbn'
 
 import { block } from '../utils'
 import PasswordField from '../fields/PasswordField'
+import { getPasswordStrength } from '../utils/password'
 
 /* Inspired from https://github.com/mmw/react-password-strength
    Forked here to handle a value instead of a value and
@@ -10,8 +10,8 @@ import PasswordField from '../fields/PasswordField'
 */
 @block
 export default class PasswordStrengthField extends React.PureComponent {
-  static getState(value, minScore, minLength, userInputs, basic) {
-    const rawScore = zxcvbn(value, userInputs).score
+  static getState(value, minScore, minLength, maxLength, basic) {
+    const rawScore = getPasswordStrength(value, minLength, maxLength).score
 
     return {
       value,
@@ -25,7 +25,8 @@ export default class PasswordStrengthField extends React.PureComponent {
   }
 
   static defaultProps = {
-    minLength: 5,
+    minLength: 8,
+    maxLength: 64,
     minScore: 3,
   }
 
@@ -40,7 +41,7 @@ export default class PasswordStrengthField extends React.PureComponent {
   }
 
   static getDerivedStateFromProps(
-    { value, userInputs, minLength, minScore, basic },
+    { value, minLength, maxLength, minScore, basic },
     { value: oldValue }
   ) {
     if (value !== oldValue) {
@@ -48,7 +49,7 @@ export default class PasswordStrengthField extends React.PureComponent {
         value,
         minScore,
         minLength,
-        userInputs,
+        maxLength,
         basic
       )
     }
@@ -56,13 +57,12 @@ export default class PasswordStrengthField extends React.PureComponent {
   }
 
   handleChange(value) {
-    const { i18n, minScore, minLength, userInputs, onChange, basic } =
-      this.props
+    const { i18n, minScore, minLength, maxLength, onChange, basic } = this.props
     const state = PasswordStrengthField.getState(
       value,
       minScore,
       minLength,
-      userInputs,
+      maxLength,
       basic
     )
     this.setState((prevState) => ({
