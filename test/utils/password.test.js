@@ -61,14 +61,15 @@ describe('getPasswordStrength', () => {
       ['myPass99', 8, 64, 1, 'letters + digits mix: ~45 bits'],
       ['ab12cd34', 8, 64, 1, 'alternating letters and digits: ~47 bits'],
       ['Xy9Zk4Lm', 8, 64, 1, 'mixed case with spaced digits: ~50 bits'],
-
+ 
       ['Password@1254', 8, 64, 3, 'letters + digits + symbol: ~62 bits'],
       ['MyP@ss99!QS', 8, 64, 2, '4 character classes: ~65 bits'],
       ['Kp9#mQ2xL9A', 8, 64, 2, 'mixed case + digits + symbols: ~68 bits'],
       ['Tr0ub4dor&2', 11, 64, 1, '11 varied chars: ~75 bits'],
       ['Ej4*pL9#vC4', 8, 64, 2, '10 chars, 4 classes: ~72 bits'],
-
+ 
       ['P@ssw0rd#Secure12', 8, 64, 4, '16 varied chars: ~85 bits'],
+
       ['MySecureP@ss!2024', 8, 64, 4, '17 chars: ~92 bits'],
       ['Kx9@mQ#pL$vC2*Rt', 8, 64, 4, '16-char mixed set: ~88 bits'],
       ['Tr0ub4d0r&C@tfish9', 8, 64, 4, '19 chars: ~95 bits'],
@@ -80,7 +81,7 @@ describe('getPasswordStrength', () => {
 
       ['le chat mange la souris', 8, 64, 4, 'passphrase example'],
 
-      ['email@exemple.com', 8, 64, 2, 'email adress'],
+      ['email@exemple.com', 8, 64, 1, 'email adress'],
       ['éàôÉÀabc', 8, 64, 1, 'French accents mix: ~50 bits'],
       ['😊😊abcDef', 8, 64, 1, 'Emoji + sequential letters: capped to 1'],
       ['😊😊xYz!12', 8, 64, 1, 'Emoji + mixed case + digits: ~50 bits'],

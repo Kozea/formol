@@ -134,16 +134,12 @@ export const getPasswordStrength = (value, minLength, maxLength) => {
     return { score: 0 }
   }
 
-  if (hasRepeatedCharacters(value)) {
+  if (
+    hasRepeatedCharacters(value) ||
+    hasSequentialPattern(value) ||
+    isEmailAddress(value)
+  ) {
     return { score: 1 }
-  }
-
-  if (hasSequentialPattern(value)) {
-    return { score: 1 }
-  }
-
-  if (isEmailAddress(value)) {
-    return { score: 2 }
   }
 
   const entropy = calculateTotalEntropy(value)
