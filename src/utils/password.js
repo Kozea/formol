@@ -55,8 +55,14 @@ function entropyOfSegment(seg) {
     case 'symbols':
       return Math.log2(30) * seg.value.join('').length
 
-    case 'letters':
-      return Math.log2(26) * seg.value.join('').length
+    case 'letters': {
+      const value = seg.value.join('')
+      const pool =
+        /[a-z]/.test(value) && /[A-Z]/.test(value)
+          ? 52 // Mixed case
+          : 26 // Single case
+      return Math.log2(pool) * value.length
+    }
   }
 }
 
