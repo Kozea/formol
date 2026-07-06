@@ -76,7 +76,7 @@ function isOutsideLengthRange(value, minLength, maxLength) {
 }
 
 function hasRepeatedCharacters(value) {
-  return /(.)\1{2,}/iu.test(value)
+  return /(.+)\1{2,}/iu.test(value)
 }
 
 function hasSequentialPattern(value) {

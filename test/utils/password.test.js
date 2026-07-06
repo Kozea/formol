@@ -18,6 +18,7 @@ describe('getPasswordStrength', () => {
 
       ['aabbccdd', 8, 64, 1, 'repeated pairs'],
       ['ababab12', 8, 64, 1, 'repeated pattern (ab ab ab)'],
+      ['Abc123Abc123Abc123', 8, 64, 1, 'repeated multi-character pattern (Abc123 x3)'],
 
       ['!!!!!!!!', 8, 64, 1, 'repeated special characters'],
       ['1111chat', 8, 64, 1, 'repeated digits at the start'],
