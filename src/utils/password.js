@@ -82,9 +82,9 @@ function hasRepeatedCharacters(value) {
 }
 
 function hasSequentialPattern(value) {
-  const lower = value.toLowerCase()
-  for (let i = 0; i < lower.length - 3; i++) {
-    const slice = lower.slice(i, i + 4)
+  const chars = [...value.toLowerCase()]
+  for (let i = 0; i < chars.length - 3; i++) {
+    const slice = chars.slice(i, i + 4).join('')
     if (SEQUENCES.some((seq) => seq.includes(slice))) {
       return true
     }
