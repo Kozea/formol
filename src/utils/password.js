@@ -26,49 +26,51 @@ const ENTROPY_THRESHOLDS = {
   strong: 80,
 }
 
-function splitPassword(str) {
-  const parts = []
-
-  const letters = str.match(/[a-zA-Z]+/g)
-  if (letters) {
-    parts.push({ type: 'letters', value: letters })
+function calculateTotalEntropy(value) {
+  const chars = [...value]
+  const length = chars.length
+  if (length === 0) {
+    return 0
   }
 
-  const digits = str.match(/[0-9]+/g)
-  if (digits) {
-    parts.push({ type: 'digits', value: digits })
-  }
+  let poolSize = 0
+  let hasLower = false
+  let hasUpper = false
+  let hasDigits = false
+  let hasSymbols = false
+  let hasUnicode = false
 
-  const symbols = str.match(/[^a-zA-Z0-9]+/g)
-  if (symbols) {
-    parts.push({ type: 'symbols', value: symbols })
-  }
-
-  return parts
-}
-
-function entropyOfSegment(seg) {
-  switch (seg.type) {
-    case 'digits':
-      return Math.log2(10) * seg.value.join('').length
-
-    case 'symbols':
-      return Math.log2(30) * seg.value.join('').length
-
-    case 'letters': {
-      const value = seg.value.join('')
-      const pool =
-        /[a-z]/.test(value) && /[A-Z]/.test(value)
-          ? 52 // Mixed case
-          : 26 // Single case
-      return Math.log2(pool) * value.length
+  for (const char of chars) {
+    if (/[a-z]/.test(char)) {
+      hasLower = true
+    } else if (/[A-Z]/.test(char)) {
+      hasUpper = true
+    } else if (/[0-9]/.test(char)) {
+      hasDigits = true
+    } else if (/[!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~\s]/.test(char)) {
+      hasSymbols = true
+    } else {
+      hasUnicode = true
     }
   }
-}
 
-function calculateTotalEntropy(value) {
-  const segments = splitPassword(value)
-  return segments.reduce((total, seg) => total + entropyOfSegment(seg), 0)
+  if (hasLower) {
+    poolSize += 26
+  }
+  if (hasUpper) {
+    poolSize += 26
+  }
+  if (hasDigits) {
+    poolSize += 10
+  }
+  if (hasSymbols) {
+    poolSize += 33
+  }
+  if (hasUnicode) {
+    poolSize += 26
+  }
+
+  return Math.log2(poolSize) * length
 }
 
 function isOutsideLengthRange(value, minLength, maxLength) {
