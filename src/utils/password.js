@@ -73,10 +73,6 @@ function calculateTotalEntropy(value) {
   return Math.log2(poolSize) * length
 }
 
-function isOutsideLengthRange(value, minLength, maxLength) {
-  return [...value].length < minLength || [...value].length > maxLength
-}
-
 function hasRepeatedCharacters(value) {
   return /(.+)\1{2,}/iu.test(value)
 }
@@ -112,12 +108,29 @@ function entropyToScore(entropy) {
   return 4
 }
 
+function lengthToScore(length, minLength) {
+  if (length < minLength) {
+    return 0
+  }
+  if (length < minLength + 2) {
+    return 1
+  }
+  if (length < minLength + 4) {
+    return 2
+  }
+  if (length < minLength + 6) {
+    return 3
+  }
+  return 4
+}
+
 export const getPasswordStrength = (value, minLength, maxLength) => {
   if (!value) {
     return { score: 0 }
   }
 
-  if (isOutsideLengthRange(value, minLength, maxLength)) {
+  const length = [...value].length
+  if (length < minLength || length > maxLength) {
     return { score: 0 }
   }
 
@@ -135,5 +148,7 @@ export const getPasswordStrength = (value, minLength, maxLength) => {
 
   const entropy = calculateTotalEntropy(value)
   const entropyScore = entropyToScore(entropy)
-  return { score: entropyScore }
+  const lengthScore = lengthToScore(length, minLength)
+
+  return { score: Math.min(entropyScore, lengthScore) }
 }

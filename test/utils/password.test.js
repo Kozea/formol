@@ -56,17 +56,17 @@ describe('getPasswordStrength', () => {
 
       ['password', 8, 64, 1, 'common 8-char word: ~37 bits'],
       ['aabbccdd', 8, 64, 1, 'repeated pairs: ~30 bits'],
-      ['Pass1235', 8, 64, 2, 'mixed upper/lower + digits: ~48 bits'],
-      ['Abc12645', 8, 64, 2, '1 uppercase + 3 lowercase + 4 digits: ~43 bits'],
-      ['myPass99', 8, 64, 2, 'letters + digits mix: ~45 bits'],
+      ['Pass1235', 8, 64, 1, 'mixed upper/lower + digits: ~48 bits'],
+      ['Abc12645', 8, 64, 1, '1 uppercase + 3 lowercase + 4 digits: ~43 bits'],
+      ['myPass99', 8, 64, 1, 'letters + digits mix: ~45 bits'],
       ['ab12cd34', 8, 64, 1, 'alternating letters and digits: ~47 bits'],
-      ['Xy9Zk4Lm', 8, 64, 2, 'mixed case with spaced digits: ~50 bits'],
+      ['Xy9Zk4Lm', 8, 64, 1, 'mixed case with spaced digits: ~50 bits'],
 
-      ['Password@1254', 8, 64, 4, 'letters + digits + symbol: ~62 bits'],
-      ['MyP@ss99!QS', 8, 64, 3, '4 character classes: ~65 bits'],
-      ['Kp9#mQ2xL9A', 8, 64, 3, 'mixed case + digits + symbols: ~68 bits'],
-      ['Tr0ub4dor&2', 11, 64, 3, '11 varied chars: ~75 bits'],
-      ['Ej4*pL9#vC4', 8, 64, 3, '10 chars, 4 classes: ~72 bits'],
+      ['Password@1254', 8, 64, 3, 'letters + digits + symbol: ~62 bits'],
+      ['MyP@ss99!QS', 8, 64, 2, '4 character classes: ~65 bits'],
+      ['Kp9#mQ2xL9A', 8, 64, 2, 'mixed case + digits + symbols: ~68 bits'],
+      ['Tr0ub4dor&2', 11, 64, 1, '11 varied chars: ~75 bits'],
+      ['Ej4*pL9#vC4', 8, 64, 2, '10 chars, 4 classes: ~72 bits'],
 
       ['P@ssw0rd#Secure12', 8, 64, 4, '16 varied chars: ~85 bits'],
       ['MySecureP@ss!2024', 8, 64, 4, '17 chars: ~92 bits'],
@@ -81,9 +81,9 @@ describe('getPasswordStrength', () => {
       ['le chat mange la souris', 8, 64, 4, 'passphrase example'],
 
       ['email@exemple.com', 8, 64, 2, 'email adress'],
-      ['éàôÉÀabc', 8, 64, 2, 'French accents mix: ~50 bits'],
+      ['éàôÉÀabc', 8, 64, 1, 'French accents mix: ~50 bits'],
       ['😊😊abcDef', 8, 64, 1, 'Emoji + sequential letters: capped to 1'],
-      ['😊😊xYz!12', 8, 64, 2, 'Emoji + mixed case + digits: ~50 bits'],
+      ['😊😊xYz!12', 8, 64, 1, 'Emoji + mixed case + digits: ~50 bits'],
 
       [
         'bbNBFt2okt4H03fdrFqlwigHxakPPdCZMEbt65MesByuBC1mxaoHRiYwab4FKjLq',
