@@ -1,10 +1,20 @@
-const SEQUENTIAL_PATTERNS = [
-  /(0123|1234|2345|3456|4567|5678|6789|7890)/,
-  /(0987|9876|8765|7654|6543|5432|4321|3210)/,
-  /(abcd|bcde|cdef|defg|efgh|fghi|ghij|hijk|ijkl|jklm|klmn|lmno|mnop|nopq|opqr|pqrs|qrst|rstu|stuv|tuvw|uvwx|vwxy|wxyz)/i,
-  /(zyxw|yxwv|xwvu|wvut|vuts|utsr|tsrq|srqp|rqpo|qpon|ponm|onml|nmlk|mlkj|lkji|kjih|jihg|ihgf|hgfe|gfed|fedc|edcb|dcba)/i,
-  /(azer|zert|erty|qsdf|sdfg|wxcv|xcvb)/i,
-  /(qwer|wert|erty|asdf|sdfg|zxcv|xcvb)/i,
+const SEQUENCES = [
+  'abcdefghijklmnopqrstuvwxyz',
+  'zyxwvutsrqponmlkjihgfedcba',
+  '01234567890',
+  '09876543210',
+  'azertyuiop',
+  'poiuytreza',
+  'qsdfghjklm',
+  'mlkjhgfdsq',
+  'wxcvbn',
+  'nbvcxw',
+  'qwertyuiop',
+  'poiuytrewq',
+  'asdfghjkl',
+  'lkjhgfdsa',
+  'zxcvbnm',
+  'mnbvcxz',
 ]
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
@@ -64,7 +74,14 @@ function hasRepeatedCharacters(value) {
 }
 
 function hasSequentialPattern(value) {
-  return SEQUENTIAL_PATTERNS.some((pattern) => pattern.test(value))
+  const lower = value.toLowerCase()
+  for (let i = 0; i < lower.length - 3; i++) {
+    const slice = lower.slice(i, i + 4)
+    if (SEQUENCES.some((seq) => seq.includes(slice))) {
+      return true
+    }
+  }
+  return false
 }
 
 function isEmailAddress(value) {

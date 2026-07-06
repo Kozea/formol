@@ -96,8 +96,8 @@ describe('getPasswordStrength', () => {
         '65 chars rejected',
       ],
     ])(
-      'password: "%s" → score %i (%s)',
-      (password, minLength, maxLength, expectedScore) => {
+      'password: "%s" (min %s, max %s) → score %i (%s)',
+      (password, minLength, maxLength, expectedScore, description) => {
         const result = getPasswordStrength(password, minLength, maxLength)
         expect(result.score).toBe(expectedScore)
       }
