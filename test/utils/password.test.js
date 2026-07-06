@@ -85,6 +85,20 @@ describe('getPasswordStrength', () => {
       ['😊😊abcDef', 8, 64, 1, 'Emoji + sequential letters: capped to 1'],
       ['😊😊xYz!12', 8, 64, 1, 'Emoji + mixed case + digits: ~50 bits'],
 
+      ['acegikmoqsuwyacegikmoqsuw', 8, 64, 4, '25 non-sequential lowercase letters'],
+      ['aB1!bC2@cD3#dE4$', 8, 64, 4, '16 varied chars without repetition or sequence'],
+      ['Correct Horse Battery Staple', 8, 64, 4, 'Long passphrase: ~180 bits'],
+      [
+        'This is a very long and complex passphrase with symbols! 123',
+        8,
+        128,
+        4,
+        'Very long complex passphrase',
+      ],
+      ['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 8, 64, 1, '32 repeated chars'],
+      ['abcdabcdabcdabcdabcdabcdabcdabcd', 8, 64, 1, 'repeated pattern (abcd x8)'],
+      ['qwertyuiopasdfghjklzxcvbnm', 8, 64, 1, 'long keyboard sequence'],
+
       [
         'bbNBFt2okt4H03fdrFqlwigHxakPPdCZMEbt65MesByuBC1mxaoHRiYwab4FKjLq',
         8,
