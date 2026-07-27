@@ -1,3 +1,7 @@
+### [6.0.0](https://github.com/Kozea/formol/compare/v5.0.1...v6.0.0)
+
+- Drop zxcvbn dependency for password strength
+
 ### [5.0.1](https://github.com/Kozea/formol/compare/v5.0.0...v5.0.1)
 
 - Update http-proxy-middleware (security fix)
