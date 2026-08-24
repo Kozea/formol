@@ -62,7 +62,13 @@ describe('getPasswordStrength', () => {
       ['Kx9@mQ#pL$vC2*Rt!WyZ', 8, 64, 4, '20 chars mixed set: ~108 bits'],
       ['Tr0ub4d0r&C@tfish99#XyZ', 8, 64, 4, '24 chars: ~128 bits'],
       ['le chat mange la souris', 8, 64, 4, 'passphrase example'],
-      ['éàùç🐱漢字ΩЖ', 8, 64, 1, 'unicode-only characters are handled as other'],
+      [
+        'éàùç🐱漢字ΩЖ',
+        8,
+        64,
+        1,
+        'unicode-only characters are handled as other',
+      ],
       ['email@exemple.com', 8, 64, 2, 'email address'],
       [
         'bbNBFt2okt4H03fdrFqlwigHxakPPdCZMEbt65MesByuBC1mxaoHRiYwab4FKjLq',
