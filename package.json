@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rimraf lib && webpack",
     "lint": "eslint src test",
-    "fix": "prettier --write **/*.{js,jsx}",
+    "format": "prettier --write **/*.{js,jsx}",
+    "format:check": "prettier --check **/*.{js,jsx}",
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
@@ -19,7 +20,7 @@
     "demos-build": "rimraf demos/dist && webpack --config webpack.config.demos.js --mode production",
     "demos-deploy": "./demos/deploy.sh"
   },
-  "pre-commit": "lint,test",
+  "pre-commit": "format:check,lint,test",
   "devDependencies": {
     "@babel/cli": "^7.29.7",
     "@babel/core": "^7.29.7",
