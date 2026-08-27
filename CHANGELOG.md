@@ -1,3 +1,9 @@
+### [6.0.2](https://github.com/Kozea/formol/compare/v6.0.1...v6.0.2)
+
+- Update pre-commit hooks
+- Update dependencies
+- Update fast-uri (security fix)
+
 ### [6.0.1](https://github.com/Kozea/formol/compare/v6.0.0...v6.0.1)
 
 - Update postcss (security fix)
