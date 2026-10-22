@@ -1,3 +1,8 @@
+### [6.0.3](https://github.com/Kozea/formol/compare/v6.0.2...v6.0.3)
+
+- Update dependencies (security fixes)
+- Update dependencies
+
 ### [6.0.2](https://github.com/Kozea/formol/compare/v6.0.1...v6.0.2)
 
 - Update pre-commit hooks
