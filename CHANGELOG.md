@@ -1,3 +1,8 @@
+### [6.0.4](https://github.com/Kozea/formol/compare/v6.0.3...v6.0.4)
+
+- Update follow-redirects (security fix)
+- Update dependencies
+
 ### [6.0.3](https://github.com/Kozea/formol/compare/v6.0.2...v6.0.3)
 
 - Update dependencies (security fixes)
